@@ -1,4 +1,14 @@
 const products = {
+    shoes: [
+        { name: "Adidas Campus", price: 499.99, oldPrice: 599.99, image: "images/shoes/adidas/adidas-campus-marrom.jpeg", size: "37/38, 42" },
+        { name: "Adidas Campus", price: 499.99, oldPrice: 599.99, image: "images/shoes/adidas/adidas-campus-preto.jpeg", size: "37" },
+        { name: "Adidas Campus", price: 499.99, oldPrice: 599.99, image: "images/shoes/adidas/adidas-campus-vermelho.jpeg", size: "35" },
+        { name: "Adidas Original", price: 499.99, image: "images/shoes/adidas/adidas-original-beje.jpeg", size: "35, 38, 40" },
+        { name: "Nike", price: 499.99, image: "images/shoes/nike/nike-azul.jpeg", size: "35, 38, 40" },
+        { name: "Nike", price: 499.99, image: "images/shoes/nike/nike-preto.jpeg", size: "35, 38, 40" },
+        { name: "Nike", price: 499.99, image: "images/shoes/nike/nike-vermelho.jpeg", size: "35, 38, 40" },
+        { name: "Vans", price: 499.99, image: "images/shoes/vans/vans.jpeg", size: "35, 38, 40" },
+    ],
     electronics: [
         { name: "Smartphone", price: 499.99, oldPrice: 599.99, image: "images/circle.png", size: "N/A" },
         { name: "Laptop", price: 899.99, image: "images/circle.png", size: "N/A" },
@@ -6,10 +16,10 @@ const products = {
         { name: "Tablet", price: 299.99, oldPrice: 349.99, image: "images/circle.png", size: "N/A" }
     ],
     clothing: [
-        { name: "Camiseta", price: 19.99, image: "images/circle.jpeg", size: "P, M, G" },
-        { name: "Calça Jeans", price: 49.99, oldPrice: 59.99, image: "images/circle.jpeg", size: "M, G" },
-        { name: "Jaqueta", price: 89.99, image: "images/circle.jpeg", size: "P, M, G, GG" },
-        { name: "Shorts", price: 25.99, image: "images/circle.jpeg", size: "M" }
+        { name: "Camiseta", price: 19.99, image: "images/item.jpeg", size: "P, M, G" },
+        { name: "Calça Jeans", price: 49.99, oldPrice: 59.99, image: "images/item.jpeg", size: "M, G" },
+        { name: "Jaqueta", price: 89.99, image: "images/item.jpeg", size: "P, M, G, GG" },
+        { name: "Shorts", price: 25.99, image: "images/item.jpeg", size: "M" }
     ],
     home: [
         { name: "Aspirador de Pó", price: 129.99, oldPrice: 159.99, image: "images/circle.png", size: "N/A" },
@@ -21,6 +31,7 @@ const products = {
 
 // Combine all products from different categories
 const allProducts = [
+    ...products.shoes,
     ...products.electronics,
     ...products.clothing,
     ...products.home
