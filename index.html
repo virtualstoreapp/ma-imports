@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Produtos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MA Imports</h1>
+    </header>
+
+    <nav>
+        <button id="menu-toggle">☰</button>
+        <ul>
+            <li><button onclick="showCategory('all')">Início</button></li>
+            <li><button onclick="showCategory('electronics')">Eletrônicos</button></li>
+            <li><button onclick="showCategory('clothing')">Roupas</button></li>
+            <li><button onclick="showCategory('home')">Eletrodomésticos</button></li>
+        </ul>
+    </nav>
+
+    <div class="catalog">
+        <section id="all">
+            <h2>Todos os Produtos</h2>
+            <ul class="product-list"></ul>
+        </section>
+
+        <section id="electronics" style="display: none;">
+            <h2>Eletrônicos</h2>
+            <ul class="product-list"></ul>
+        </section>
+
+        <section id="clothing" style="display: none;">
+            <h2>Roupas</h2>
+            <ul class="product-list"></ul>
+        </section>
+
+        <section id="home" style="display: none;">
+            <h2>Eletrodomésticos</h2>
+            <ul class="product-list"></ul>
+        </section>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
