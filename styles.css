@@ -25,6 +25,14 @@ header h1 {
   text-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+footer {
+  text-align: center;
+  background-color: #6200ea; /* Primary color used throughout the site */
+  color: #fff;             /* White text for contrast */
+  padding: 10px 0;         /* Vertical padding */
+  margin-top: 20px;        /* Optional: Adds space above the footer */
+}
+
 /* Navigation styles */
 nav {
   margin-bottom: 20px;
