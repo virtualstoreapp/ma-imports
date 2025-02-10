@@ -1,188 +1,180 @@
+/* CSS Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: "Roboto", sans-serif;
-    background-color: #f5f5f5; /* Light grey background */
+  }
+  
+  /* Basic styling */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
     padding: 20px;
-    color: #212121; /* Default text color */
-}
-
-header {
+    color: #212121;
+  }
+  
+  header {
     text-align: center;
     margin-bottom: 20px;
-}
-
-header h1 {
+  }
+  
+  header h1 {
     font-size: 2.5rem;
-    font-weight: 500; /* Semi-bold */
-    color: #6200ea; /* Purple 500 - Material Design primary color */
-    letter-spacing: 1px;
-    margin: 0;
-    padding: 10px 0;
+    color: #6200ea;
     text-transform: uppercase;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
-}
-
-nav {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* Navigation styles */
+  nav {
     margin-bottom: 20px;
+    text-align: center;
     position: relative;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
+  }
+  
+  /* Mobile Menu Toggle Button */
+  #menu-toggle {
+    display: none;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Navigation Menu */
+  #nav-menu {
     list-style: none;
+    display: inline-flex;
     gap: 20px;
-}
-
-nav li {
+    padding: 0;
     margin: 0;
-}
-
-button {
+  }
+  
+  /* Navigation buttons */
+  #nav-menu li button {
     padding: 10px 15px;
     font-size: 16px;
-    background-color: #6200ea; /* Purple 500 - Material Design primary color */
+    background-color: #6200ea;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #3700b3; /* Purple 700 - Darker shade for hover */
-}
-
-button:focus {
-    outline: none;
-}
-
-.catalog {
-    display: grid;
-    gap: 20px;
-}
-
-section h2 {
+    transition: background-color 0.3s;
+  }
+  
+  #nav-menu li button:hover {
+    background-color: #3700b3;
+  }
+  
+  /* Responsive Styles for Mobile */
+  @media (max-width: 768px) {
+    #menu-toggle {
+      display: block;
+    }
+    #nav-menu {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+    }
+    nav.active #nav-menu {
+      display: flex;
+    }
+  }
+  
+  /* Main content */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  #category-heading {
     text-align: center;
-    margin-bottom: 10px;
-    color: #6200ea; /* Purple 500 for section headers */
-}
-
-.product-list {
+    margin-bottom: 20px;
+    color: #6200ea;
+  }
+  
+  /* Product List Grid */
+  #product-list {
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    grid-template-columns: repeat(4, 1fr); /* Default: 4 products per row */
     list-style: none;
-    padding: 0;
-}
-
-.product-item {
-    background-color: #ffffff; /* White background for product items */
+  }
+  
+  /* Product Item Styles */
+  .product-item {
+    background-color: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     overflow: hidden;
     text-align: center;
     padding: 10px;
-    transition: transform 0.3s ease;
-}
-
-.product-item:hover {
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .product-item:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
-}
-
-.product-item img {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  
+  .product-item img {
     width: 100%;
     height: auto;
-    border-bottom: 2px solid #eee; /* Light grey border at the bottom */
-}
-
-.product-details {
+    border-bottom: 2px solid #eee;
+  }
+  
+  .product-details {
     padding: 10px;
-}
-
-.product-details h3 {
+  }
+  
+  .product-details h3 {
     font-size: 1.1rem;
     margin-bottom: 10px;
-    color: #212121; /* Darker text for product names */
-}
-
-.size {
+  }
+  
+  .size {
     font-size: 0.9rem;
-    color: #757575; /* Grey color for sizes */
-}
-
-/* Styles for the prices */
-.price, .old-price, .new-price {
+    color: #757575;
+  }
+  
+  /* Price styles */
+  .price,
+  .old-price,
+  .new-price {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #212121; /* Darker text color for price */
-}
-
-.old-price {
+    color: #212121;
+  }
+  
+  .old-price {
     text-decoration: line-through;
-    color: #9e9e9e; /* Grey for old price */
+    color: #9e9e9e;
     font-size: 1rem;
-}
-
-.new-price {
-    color: #4caf50; /* Green for new price */
-}
-
-/* Responsive styles for mobile and tablet */
-@media (max-width: 1024px) {
-    .product-list {
-        grid-template-columns: repeat(3, 1fr); /* 3 products per row on tablets */
+  }
+  
+  .new-price {
+    color: #4caf50;
+  }
+  
+  /* Responsive Product Grid */
+  @media (max-width: 1024px) {
+    #product-list {
+      grid-template-columns: repeat(3, 1fr);
     }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        gap: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    #product-list {
+      grid-template-columns: repeat(2, 1fr);
     }
-
-    nav.active ul {
-        display: block;
+  }
+  
+  @media (max-width: 480px) {
+    #product-list {
+      grid-template-columns: 1fr;
     }
-
-    /* Menu toggle button is shown on mobile and tablet */
-    nav button#menu-toggle {
-        display: block;
-    }
-}
-
-/* On tablet and smaller screens */
-@media (max-width: 768px) {
-    .product-list {
-        grid-template-columns: repeat(2, 1fr); /* 2 products per row on mobile */
-    }
-
-    /* Ensure the menu toggle button is displayed on smaller devices */
-    nav button#menu-toggle {
-        display: block;
-    }
-}
-
-/* On mobile screens, show 1 product per row */
-@media (max-width: 480px) {
-    .product-list {
-        grid-template-columns: 1fr; /* 1 product per row on smaller screens */
-    }
-
-    /* Ensure the menu toggle button is displayed on mobile */
-    nav button#menu-toggle {
-        display: block;
-    }
-}
-
-/* Hide menu toggle on large screens */
-@media (min-width: 1025px) {
-    nav button#menu-toggle {
-        display: none !important; /* Force the button to be hidden on desktops */
-    }
-}
+  }
+  
