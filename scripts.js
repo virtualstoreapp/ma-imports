@@ -1,99 +1,132 @@
-const products = {
-    shoes: [
-        { name: "Adidas Campus", price: 499.99, oldPrice: 599.99, image: "images/shoes/adidas/adidas-campus-marrom.jpeg", size: "37/38, 42" },
-        { name: "Adidas Campus", price: 499.99, oldPrice: 599.99, image: "images/shoes/adidas/adidas-campus-preto.jpeg", size: "37" },
-        { name: "Adidas Campus", price: 499.99, oldPrice: 599.99, image: "images/shoes/adidas/adidas-campus-vermelho.jpeg", size: "35" },
-        { name: "Adidas Original", price: 499.99, image: "images/shoes/adidas/adidas-original-beje.jpeg", size: "35, 38, 40" },
-        { name: "Nike", price: 499.99, image: "images/shoes/nike/nike-azul.jpeg", size: "35, 38, 40" },
-        { name: "Nike", price: 499.99, image: "images/shoes/nike/nike-preto.jpeg", size: "35, 38, 40" },
-        { name: "Nike", price: 499.99, image: "images/shoes/nike/nike-vermelho.jpeg", size: "35, 38, 40" },
-        { name: "Vans", price: 499.99, image: "images/shoes/vans/vans.jpeg", size: "35, 38, 40" },
-    ],
-    electronics: [
-        { name: "Smartphone", price: 499.99, oldPrice: 599.99, image: "images/circle.png", size: "N/A" },
-        { name: "Laptop", price: 899.99, image: "images/circle.png", size: "N/A" },
-        { name: "Headphones", price: 69.99, image: "images/circle.png", size: "N/A" },
-        { name: "Tablet", price: 299.99, oldPrice: 349.99, image: "images/circle.png", size: "N/A" }
-    ],
-    clothing: [
-        { name: "Camiseta", price: 19.99, image: "images/item.jpeg", size: "P, M, G" },
-        { name: "Calça Jeans", price: 49.99, oldPrice: 59.99, image: "images/item.jpeg", size: "M, G" },
-        { name: "Jaqueta", price: 89.99, image: "images/item.jpeg", size: "P, M, G, GG" },
-        { name: "Shorts", price: 25.99, image: "images/item.jpeg", size: "M" }
-    ],
-    home: [
-        { name: "Aspirador de Pó", price: 129.99, oldPrice: 159.99, image: "images/circle.png", size: "N/A" },
-        { name: "Micro-ondas", price: 79.99, image: "images/circle.png", size: "N/A" },
-        { name: "Liquidificador", price: 39.99, image: "images/circle.png", size: "N/A" },
-        { name: "Cafeteira", price: 59.99, image: "images/circle.png", size: "N/A" }
-    ]
-};
-
-// Combine all products from different categories
-const allProducts = [
-    ...products.shoes,
-    ...products.electronics,
-    ...products.clothing,
-    ...products.home
-];
-
-function formatCurrency(value) {
-    return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(value);
-}
-
-function displayProducts(category) {
-    const categorySection = document.getElementById(category);
-    const productList = categorySection.querySelector('.product-list');
-    productList.innerHTML = ""; // Clear previous products
-
-    const productListData = category === 'all' ? allProducts : products[category];
-
-    productListData.forEach(product => {
-        const productItem = document.createElement('li');
-        productItem.classList.add('product-item');
-
-        let priceHTML = `<span class="price">${formatCurrency(product.price)}</span>`;
-
-        if (product.oldPrice) {
-            priceHTML = `
-                <span class="old-price">${formatCurrency(product.oldPrice)}</span>
-                <span class="new-price">${formatCurrency(product.price)}</span>
-            `;
-        }
-
-        productItem.innerHTML = `
-            <img src="${product.image}" alt="${product.name}" />
-            <div class="product-details">
-                <h3>${product.name}</h3>
-                <span class="size">${product.size !== "N/A" ? `Tamanho: ${product.size}` : ''}</span>
-                ${priceHTML}
-            </div>
-        `;
-        
-        productList.appendChild(productItem);
-    });
-
-    // Hide all sections and display the selected category
-    document.querySelectorAll('section').forEach(section => {
-        section.style.display = 'none';
-    });
-
-    categorySection.style.display = 'block';
-}
-
-// Toggle menu visibility on mobile
-const menuToggle = document.getElementById('menu-toggle');
-const nav = document.querySelector('nav');
-
-menuToggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
-});
-
 document.addEventListener('DOMContentLoaded', () => {
-    // Initially show the "Início" category
-    showCategory('all');
-});
+  // Cache DOM selectors
+  const categoryButtons = document.querySelectorAll('nav button[data-category]');
+  const productListContainer = document.getElementById('product-list');
+  const categoryHeading = document.getElementById('category-heading');
+  
+  // Mobile menu elements
+  const menuToggle = document.getElementById('menu-toggle');
+  const nav = document.querySelector('nav');
 
-function showCategory(category) {
-    displayProducts(category);
-}
+  // Helper: Format numbers as Brazilian currency
+  const formatCurrency = value =>
+    new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(value);
+
+  // Function to fetch data for a given category
+  async function fetchCategoryData(category) {
+    if (category === 'all') {
+      // For the "all" category, fetch all JSON files and combine the results
+      const categories = ['shoes', 'electronics', 'clothing', 'home'];
+      try {
+        const responses = await Promise.all(
+          categories.map(c => fetch(`products/${c}.json`))
+        );
+        const jsonData = await Promise.all(
+          responses.map(response => {
+            if (!response.ok) {
+              throw new Error(`Failed to fetch data for category ${category}`);
+            }
+            return response.json();
+          })
+        );
+        return jsonData.flat();
+      } catch (error) {
+        console.error("Error fetching 'all' category data:", error);
+        return [];
+      }
+    } else {
+      // For a specific category, fetch the corresponding JSON file
+      try {
+        const response = await fetch(`products/${category}.json`);
+        if (!response.ok) {
+          throw new Error(`Failed to fetch data for category ${category}`);
+        }
+        return await response.json();
+      } catch (error) {
+        console.error(`Error fetching data for category ${category}:`, error);
+        return [];
+      }
+    }
+  }
+
+  // Render products based on the selected category
+  async function renderProducts(category) {
+    // Clear current product list
+    productListContainer.innerHTML = '';
+
+    // Update heading based on category
+    if (category === 'all') {
+      categoryHeading.textContent = 'Todos os Produtos';
+    } else {
+      switch (category) {
+        case 'shoes':
+          categoryHeading.textContent = 'Calçados';
+          break;
+        case 'electronics':
+          categoryHeading.textContent = 'Eletrônicos';
+          break;
+        case 'clothing':
+          categoryHeading.textContent = 'Roupas';
+          break;
+        case 'home':
+          categoryHeading.textContent = 'Eletrodomésticos';
+          break;
+        default:
+          categoryHeading.textContent = 'Produtos';
+      }
+    }
+
+    // Fetch data for the selected category
+    const data = await fetchCategoryData(category);
+    data.forEach(product => {
+      const li = document.createElement('li');
+      li.classList.add('product-item');
+
+      const priceHTML = product.oldPrice
+        ? `<span class="old-price">${formatCurrency(product.oldPrice)}</span>
+           <span class="new-price">${formatCurrency(product.price)}</span>`
+        : `<span class="price">${formatCurrency(product.price)}</span>`;
+
+      li.innerHTML = `
+        <img src="${product.image}" alt="${product.name}">
+        <div class="product-details">
+          <h3>${product.name}</h3>
+          ${
+            product.size && product.size !== 'N/A'
+              ? `<span class="size">Tamanho: ${product.size}</span>`
+              : ''
+          }
+          ${priceHTML}
+        </div>
+      `;
+      productListContainer.appendChild(li);
+    });
+
+    // Update the URL hash (for bookmarking or sharing)
+    window.location.hash = category;
+  }
+
+  // Attach click events to each category button
+  categoryButtons.forEach(button => {
+    button.addEventListener('click', async () => {
+      const category = button.getAttribute('data-category');
+      await renderProducts(category);
+      // If the mobile menu is open, close it after selecting a category
+      if (nav.classList.contains('active')) {
+        nav.classList.remove('active');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
+
+  // Mobile menu toggle event
+  menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+    const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+    menuToggle.setAttribute('aria-expanded', String(!expanded));
+  });
+
+  // On page load, check the URL hash and render the corresponding category (default to "all")
+  const initialCategory = window.location.hash.slice(1) || 'all';
+  renderProducts(initialCategory);
+});

@@ -1,54 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo de Produtos</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Produtos</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>MA Imports</h1>
-    </header>
+  <header>
+    <h1>MA Imports</h1>
+  </header>
 
-    <nav>
-        <button id="menu-toggle">☰</button>
-        <ul>
-            <li><button onclick="showCategory('all')">Início</button></li>
-            <li><button onclick="showCategory('shoes')">Calçados</button></li>
-            <li><button onclick="showCategory('electronics')">Eletrônicos</button></li>
-            <li><button onclick="showCategory('clothing')">Roupas</button></li>
-            <li><button onclick="showCategory('home')">Eletrodomésticos</button></li>
-        </ul>
-    </nav>
+  <nav aria-label="Main Navigation">
+    <!-- Mobile Menu Toggle Button -->
+    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+    <ul id="nav-menu">
+      <li><button data-category="all">Início</button></li>
+      <li><button data-category="shoes">Calçados</button></li>
+      <li><button data-category="electronics">Eletrônicos</button></li>
+      <li><button data-category="clothing">Roupas</button></li>
+      <li><button data-category="home">Eletrodomésticos</button></li>
+    </ul>
+  </nav>
 
-    <div class="catalog">
-        <section id="all">
-            <h2>Todos os Produtos</h2>
-            <ul class="product-list"></ul>
-        </section>
+  <main>
+    <!-- Category heading (updates based on selection) -->
+    <h2 id="category-heading">Todos os Produtos</h2>
+    <!-- All products will be rendered inside this container -->
+    <ul id="product-list"></ul>
+  </main>
 
-        <section id="electronics" style="display: none;">
-            <h2>Eletrônicos</h2>
-            <ul class="product-list"></ul>
-        </section>
+  <!-- Footer with visible app version -->
+  <footer>
+    <p>Versão: 0.0.1.b</p>
+  </footer>
 
-        <section id="shoes" style="display: none;">
-            <h2>Calçados</h2>
-            <ul class="product-list"></ul>
-        </section>
-
-        <section id="clothing" style="display: none;">
-            <h2>Roupas</h2>
-            <ul class="product-list"></ul>
-        </section>
-
-        <section id="home" style="display: none;">
-            <h2>Eletrodomésticos</h2>
-            <ul class="product-list"></ul>
-        </section>
-    </div>
-
-    <script src="scripts.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
