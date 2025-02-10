@@ -111,6 +111,14 @@ document.addEventListener('DOMContentLoaded', () => {
     button.addEventListener('click', async () => {
       const category = button.getAttribute('data-category');
       await renderProducts(category);
+
+      // Track the category selection as a custom event in GA4
+      gtag('event', 'select_category', {
+        event_category: 'Navigation',
+        event_label: category,  // e.g., 'shoes', 'electronics', etc.
+        value: 1              // Counts the selection; you can adjust as needed.
+      });
+      
       // If the mobile menu is open, close it after selecting a category
       if (nav.classList.contains('active')) {
         nav.classList.remove('active');
