@@ -1,0 +1,60 @@
+[
+    {
+        "name": "Em breve",
+        "oldPrice": 0.0,
+        "price": 0.0,
+        "image": "images/em-breve.jpg",
+        "size": "N/A"
+    },
+    {
+        "name": "Adidas Campus",
+        "price": 499.99,
+        "oldPrice": 599.99,
+        "image": "images/shoes/adidas/adidas-campus-marrom.jpeg",
+        "size": "37/38, 42"
+    },
+    {
+        "name": "Adidas Campus",
+        "price": 499.99,
+        "oldPrice": 599.99,
+        "image": "images/shoes/adidas/adidas-campus-preto.jpeg",
+        "size": "37"
+    },
+    {
+        "name": "Adidas Campus",
+        "price": 499.99,
+        "oldPrice": 599.99,
+        "image": "images/shoes/adidas/adidas-campus-vermelho.jpeg",
+        "size": "35"
+    },
+    {
+        "name": "Adidas Original",
+        "price": 499.99,
+        "image": "images/shoes/adidas/adidas-original-beje.jpeg",
+        "size": "35, 38, 40"
+    },
+    {
+        "name": "Nike",
+        "price": 499.99,
+        "image": "images/shoes/nike/nike-azul.jpeg",
+        "size": "35, 38, 40"
+    },
+    {
+        "name": "Nike",
+        "price": 499.99,
+        "image": "images/shoes/nike/nike-preto.jpeg",
+        "size": "35, 38, 40"
+    },
+    {
+        "name": "Nike",
+        "price": 499.99,
+        "image": "images/shoes/nike/nike-vermelho.jpeg",
+        "size": "35, 38, 40"
+    },
+    {
+        "name": "Vans",
+        "price": 499.99,
+        "image": "images/shoes/vans/vans.jpeg",
+        "size": "35, 38, 40"
+    }
+]
