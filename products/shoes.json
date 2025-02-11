@@ -1,53 +1,86 @@
 [
     {
-        "name": "Adidas Campus",
-        "price": 499.99,
-        "oldPrice": 599.99,
-        "image": "images/shoes/adidas/adidas-campus-marrom.jpeg",
-        "size": "37/38, 42"
+        "name": "Em breve",
+        "oldPrice": 0.0,
+        "price": 0.0,
+        "image": "images/comming-soon.jpg",
+        "size": "N/A"
     },
     {
-        "name": "Adidas Campus",
-        "price": 499.99,
-        "oldPrice": 599.99,
-        "image": "images/shoes/adidas/adidas-campus-preto.jpeg",
-        "size": "37"
+        "name": "Em breve",
+        "oldPrice": 0.0,
+        "price": 0.0,
+        "image": "images/comming-soon.jpg",
+        "size": "N/A"
     },
     {
-        "name": "Adidas Campus",
-        "price": 499.99,
-        "oldPrice": 599.99,
-        "image": "images/shoes/adidas/adidas-campus-vermelho.jpeg",
-        "size": "35"
+        "name": "Em breve",
+        "oldPrice": 0.0,
+        "price": 0.0,
+        "image": "images/comming-soon.jpg",
+        "size": "N/A"
     },
     {
-        "name": "Adidas Original",
-        "price": 499.99,
-        "image": "images/shoes/adidas/adidas-original-beje.jpeg",
-        "size": "35, 38, 40"
+        "name": "Em breve",
+        "oldPrice": 0.0,
+        "price": 0.0,
+        "image": "images/comming-soon.jpg",
+        "size": "N/A"
     },
     {
-        "name": "Nike",
-        "price": 499.99,
-        "image": "images/shoes/nike/nike-azul.jpeg",
-        "size": "35, 38, 40"
+        "name": "Em breve",
+        "oldPrice": 0.0,
+        "price": 0.0,
+        "image": "images/comming-soon.jpg",
+        "size": "N/A"
     },
     {
-        "name": "Nike",
-        "price": 499.99,
-        "image": "images/shoes/nike/nike-preto.jpeg",
-        "size": "35, 38, 40"
+        "name": "Em breve",
+        "oldPrice": 0.0,
+        "price": 0.0,
+        "image": "images/comming-soon.jpg",
+        "size": "N/A"
     },
     {
-        "name": "Nike",
-        "price": 499.99,
-        "image": "images/shoes/nike/nike-vermelho.jpeg",
-        "size": "35, 38, 40"
+        "name": "Em breve",
+        "oldPrice": 0.0,
+        "price": 0.0,
+        "image": "images/comming-soon.jpg",
+        "size": "N/A"
     },
     {
-        "name": "Vans",
-        "price": 499.99,
-        "image": "images/shoes/vans/vans.jpeg",
-        "size": "35, 38, 40"
+        "name": "Em breve",
+        "oldPrice": 0.0,
+        "price": 0.0,
+        "image": "images/comming-soon.jpg",
+        "size": "N/A"
+    },
+    {
+        "name": "Em breve",
+        "oldPrice": 0.0,
+        "price": 0.0,
+        "image": "images/comming-soon.jpg",
+        "size": "N/A"
+    },
+    {
+        "name": "Em breve",
+        "oldPrice": 0.0,
+        "price": 0.0,
+        "image": "images/comming-soon.jpg",
+        "size": "N/A"
+    },
+    {
+        "name": "Em breve",
+        "oldPrice": 0.0,
+        "price": 0.0,
+        "image": "images/comming-soon.jpg",
+        "size": "N/A"
+    },
+    {
+        "name": "Em breve",
+        "oldPrice": 0.0,
+        "price": 0.0,
+        "image": "images/comming-soon.jpg",
+        "size": "N/A"
     }
 ]
