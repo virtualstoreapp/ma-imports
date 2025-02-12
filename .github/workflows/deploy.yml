@@ -3,7 +3,7 @@ name: Deploy GitHub Pages
 on:
   push:
     branches:
-      - main  # Change this if your default branch is different
+      - main  
 
 jobs:
   deploy:
@@ -20,6 +20,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: .  # The root folder (adjust if your HTML is inside a subfolder)
-          clean: true  # Deletes old files before deploying
-          force: true  # Forces updates even if unchanged
+          folder: .  
+          clean: true  
+          force: true 
