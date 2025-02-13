@@ -1,86 +1,128 @@
 [
     {
-        "name": "Em breve",
+        "name": "[12021658] Nike Shox",
         "oldPrice": 0.0,
         "price": 0.0,
-        "image": "images/comming-soon.jpg",
-        "size": "N/A"
+        "image": "images/shoes/nike/12021658-nike-shox.jpeg",
+        "size": "37"
     },
     {
-        "name": "Em breve",
+        "name": "[12021724] Nike Shox",
         "oldPrice": 0.0,
         "price": 0.0,
-        "image": "images/comming-soon.jpg",
-        "size": "N/A"
+        "image": "images/shoes/nike/12021724-nike-shox.jpeg",
+        "size": "40"
     },
     {
-        "name": "Em breve",
+        "name": "[12021722] Nike Shox Neymar",
         "oldPrice": 0.0,
         "price": 0.0,
-        "image": "images/comming-soon.jpg",
-        "size": "N/A"
+        "image": "images/shoes/nike/12021722-nike-shox-neymar.jpeg",
+        "size": "41"
     },
     {
-        "name": "Em breve",
+        "name": "[12021734] Nike Shox Neymar",
         "oldPrice": 0.0,
         "price": 0.0,
-        "image": "images/comming-soon.jpg",
-        "size": "N/A"
+        "image": "images/shoes/nike/12021734-nike-shox-neymar.jpeg",
+        "size": "41"
     },
     {
-        "name": "Em breve",
+        "name": "[12021718] Nike R4",
         "oldPrice": 0.0,
         "price": 0.0,
-        "image": "images/comming-soon.jpg",
-        "size": "N/A"
+        "image": "images/shoes/nike/12021718-nike-r4.jpeg",
+        "size": "34"
     },
     {
-        "name": "Em breve",
+        "name": "[12021716] Nike R4",
         "oldPrice": 0.0,
         "price": 0.0,
-        "image": "images/comming-soon.jpg",
-        "size": "N/A"
+        "image": "images/shoes/nike/12021716-nike-r4.jpeg",
+        "size": "35"
     },
     {
-        "name": "Em breve",
+        "name": "[12021725] Nike Air",
         "oldPrice": 0.0,
         "price": 0.0,
-        "image": "images/comming-soon.jpg",
-        "size": "N/A"
+        "image": "images/shoes/nike/12021725-nike-air.jpeg",
+        "size": "37"
     },
     {
-        "name": "Em breve",
+        "name": "[12021703] Nike Air Force",
         "oldPrice": 0.0,
         "price": 0.0,
-        "image": "images/comming-soon.jpg",
-        "size": "N/A"
+        "image": "images/shoes/nike/12021703-nike-air-force.jpeg",
+        "size": "39"
     },
     {
-        "name": "Em breve",
+        "name": "[12021710] Nike Air Force",
         "oldPrice": 0.0,
         "price": 0.0,
-        "image": "images/comming-soon.jpg",
-        "size": "N/A"
+        "image": "images/shoes/nike/12021710-nike-air-force.jpeg",
+        "size": "42"
     },
     {
-        "name": "Em breve",
-        "oldPrice": 0.0,
-        "price": 0.0,
-        "image": "images/comming-soon.jpg",
-        "size": "N/A"
+        "name": "[12021739] Nike Air Force",
+        "oldPrice": 219.0,
+        "price": 209.0,
+        "image": "images/shoes/nike/12021739-nike-air-force.jpeg",
+        "size": "42"
     },
     {
-        "name": "Em breve",
-        "oldPrice": 0.0,
-        "price": 0.0,
-        "image": "images/comming-soon.jpg",
-        "size": "N/A"
+        "name": "[12021747] Nike Air Force",
+        "oldPrice": 229,
+        "price": 219,
+        "image": "images/shoes/nike/12021747-nike-air-force.jpeg",
+        "size": "38, 41, 42"
     },
     {
-        "name": "Em breve",
+        "name": "[12021737] Nike Dunk Low Pro",
         "oldPrice": 0.0,
         "price": 0.0,
-        "image": "images/comming-soon.jpg",
-        "size": "N/A"
+        "image": "images/shoes/nike/12021737-nike-dunk-low-pro.jpeg",
+        "size": "35"
+    },
+    {
+        "name": "[12021719] Nike Dunk Low Pro",
+        "oldPrice": 0.0,
+        "price": 0.0,
+        "image": "images/shoes/nike/12021719-nike-dunk-low-pro.jpeg",
+        "size": "36"
+    },
+    {
+        "name": "[12021733] Nike Dunk Low Pro",
+        "oldPrice": 0.0,
+        "price": 0.0,
+        "image": "images/shoes/nike/12021733-nike-dunk-low-pro.jpeg",
+        "size": "42"
+    },
+    {
+        "name": "[12021707] Nike Jordan",
+        "oldPrice": 0.0,
+        "price": 0.0,
+        "image": "images/shoes/nike/12021707-nike-jordan.jpeg",
+        "size": "38"
+    },
+    {
+        "name": "[12021732] Nike Air Jordan",
+        "oldPrice": 0.0,
+        "price": 0.0,
+        "image": "images/shoes/nike/12021732-nike-air-jordan.jpeg",
+        "size": "41"
+    },
+    {
+        "name": "[12021714] Asics",
+        "oldPrice": 0.0,
+        "price": 0.0,
+        "image": "images/shoes/asics/12021714-asics.jpeg",
+        "size": "38"
+    },
+    {
+        "name": "[12021736] Asics",
+        "oldPrice": 0.0,
+        "price": 0.0,
+        "image": "images/shoes/asics/12021736-asics.jpeg",
+        "size": "41"
     }
 ]
