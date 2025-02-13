@@ -1,5 +1,12 @@
 [
     {
+        "name": "Em breve",
+        "oldPrice": 0.0,
+        "price": 0.0,
+        "image": "images/comming-soon.jpg",
+        "size": "N/A"
+    },
+    {
         "name": "Camiseta",
         "price": 19.99,
         "image": "images/item.jpeg",
