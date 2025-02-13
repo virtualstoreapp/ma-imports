@@ -56,13 +56,6 @@
         "size": "35"
     },
     {
-        "name": "[12021725] Nike Air",
-        "oldPrice": 0.0,
-        "price": 0.0,
-        "image": "images/shoes/nike/12021725-nike-air.jpeg",
-        "size": "37"
-    },
-    {
         "name": "[12021703] Nike Air Force",
         "oldPrice": 219.0,
         "price": 209.0,
@@ -99,8 +92,8 @@
     },
     {
         "name": "[12021719] Nike Dunk Low Pro",
-        "oldPrice": 0.0,
-        "price": 0.0,
+        "oldPrice": 159.0,
+        "price": 149.0,
         "image": "images/shoes/nike/12021719-nike-dunk-low-pro.jpeg",
         "size": "36"
     },
@@ -184,7 +177,7 @@
     {
         "name": "[12021714] Asics",
         "oldPrice": 0.0,
-        "price": 0.0,
+        "price": 89.0,
         "image": "images/shoes/asics/12021714-asics.jpeg",
         "size": "38"
     },
