@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (category === 'all') {
       // For the "all" category, fetch all JSON files and combine the results
       // const categories = ['shoes', 'electronics', 'clothing', 'home'];
-      const categories = ['shoes'];
+      const categories = ['shoes', 'slippers'];
       try {
         const responses = await Promise.all(
           categories.map(c => fetch(`products/${c}.json`))
@@ -62,6 +62,9 @@ document.addEventListener('DOMContentLoaded', () => {
       switch (category) {
         case 'shoes':
           categoryHeading.textContent = 'Calçados';
+          break;
+        case 'slippers':
+          categoryHeading.textContent = 'Chinelos';
           break;
         // case 'electronics':
         //   categoryHeading.textContent = 'Eletrônicos';
