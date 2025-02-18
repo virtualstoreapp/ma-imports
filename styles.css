@@ -13,23 +13,29 @@ body {
   color: #212121;
 }
 
+/* Header styling */
 header {
   text-align: center;
   margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+  font-size: 2.5rem;
+  color: #000000;
+  text-transform: uppercase;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-header h1 {
-  font-size: 2.5rem;
-  color: #6200ea;
-  text-transform: uppercase;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.header-logo img {
+  max-width: 150px;
+  display: block;
+  margin: 0 auto 10px;
 }
 
 footer {
   text-align: center;
   color: #757575;
-  padding: 10px 0;         /* Vertical padding */
-  margin-top: 20px;        /* Optional: Adds space above the footer */
+  padding: 10px 0;
+  margin-top: 20px;
 }
 
 /* Navigation styles */
@@ -42,13 +48,14 @@ nav {
 /* Mobile Menu Toggle Button */
 #menu-toggle {
   display: none;
-  background-color: #6200ea;
-  color: white;
+  background-color: #000000; 
+  color: #e4c22b;
   border: none;
   padding: 10px 15px;
   font-size: 20px;
   border-radius: 5px;
   cursor: pointer;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* Navigation Menu */
@@ -64,16 +71,18 @@ nav {
 #nav-menu li button {
   padding: 10px 15px;
   font-size: 16px;
-  background-color: #6200ea;
-  color: white;
+  background-color: #000000; 
+  color: #e4c22b;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 #nav-menu li button:hover {
-  background-color: #3700b3;
+  background-color: #333333; /* Lighter shade for hover */
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* Responsive Styles for Mobile */
@@ -100,7 +109,7 @@ main {
 #category-heading {
   text-align: center;
   margin-bottom: 20px;
-  color: #6200ea;
+  color: #000000;
 }
 
 /* Product List Grid */
@@ -115,7 +124,7 @@ main {
 .product-item {
   background-color: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-align: center;
   padding: 10px;
@@ -124,7 +133,7 @@ main {
 
 .product-item:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .product-item img {
@@ -140,6 +149,7 @@ main {
 .product-details h3 {
   font-size: 1.1rem;
   margin-bottom: 10px;
+  color: #000000;
 }
 
 .size {
@@ -148,9 +158,7 @@ main {
 }
 
 /* Price styles */
-.price,
-.old-price,
-.new-price {
+.price {
   font-size: 1.2rem;
   font-weight: bold;
   color: #212121;
@@ -163,7 +171,9 @@ main {
 }
 
 .new-price {
-  color: #4caf50;
+  color: #4caf50; 
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 /* Responsive Product Grid */
