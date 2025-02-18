@@ -1,0 +1,185 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Catalog Page - Slippers Desktop View Matches snapshot for "Slippers" 1`] = `
+"
+  <header>
+    <div class="header-logo">
+      <img src="images/logo.jpeg" alt="M/A Imports Logo">
+    </div>
+  </header>
+
+  <nav aria-label="Main Navigation">
+    <!-- Mobile Menu Toggle Button -->
+    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+    <ul id="nav-menu">
+      <li><button data-category="all">Início</button></li>
+      <li><button data-category="shoes">Calçados</button></li>
+      <li><button data-category="slippers">Chinelos</button></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Category heading (updates based on selection) -->
+    <h2 id="category-heading">Chinelos</h2>
+    <!-- All products will be rendered inside this container -->
+    <ul id="product-list"></ul>
+  </main>
+
+  <!-- Footer with visible app version -->
+  <footer>
+    <p>Versão: 1.0.4 - 0.28</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+
+"
+`;
+
+exports[`Catalog Page - Slippers Mobile View Matches snapshot for "Slippers" on mobile 1`] = `
+"
+  <header>
+    <div class="header-logo">
+      <img src="images/logo.jpeg" alt="M/A Imports Logo">
+    </div>
+  </header>
+
+  <nav aria-label="Main Navigation" class="">
+    <!-- Mobile Menu Toggle Button -->
+    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+    <ul id="nav-menu">
+      <li><button data-category="all">Início</button></li>
+      <li><button data-category="shoes">Calçados</button></li>
+      <li><button data-category="slippers">Chinelos</button></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Category heading (updates based on selection) -->
+    <h2 id="category-heading">Chinelos</h2>
+    <!-- All products will be rendered inside this container -->
+    <ul id="product-list"><li class="product-item">
+        <img src="images/slippers/tommy-hilfiger/17021140-tommy-hilfiger.jpeg" alt="[17021140] Em breve">
+        <div class="product-details">
+          <h3>[17021140] Em breve</h3>
+          <span class="size">Tamanho: 37/38, 39/40</span>
+          <span class="price">R$&nbsp;29,90</span>
+        </div>
+      </li><li class="product-item">
+        <img src="images/comming-soon.jpg" alt="Em breve">
+        <div class="product-details">
+          <h3>Em breve</h3>
+          
+          <span class="price">R$&nbsp;0,00</span>
+        </div>
+      </li><li class="product-item">
+        <img src="images/comming-soon.jpg" alt="Em breve">
+        <div class="product-details">
+          <h3>Em breve</h3>
+          
+          <span class="price">R$&nbsp;0,00</span>
+        </div>
+      </li><li class="product-item">
+        <img src="images/comming-soon.jpg" alt="Em breve">
+        <div class="product-details">
+          <h3>Em breve</h3>
+          
+          <span class="price">R$&nbsp;0,00</span>
+        </div>
+      </li><li class="product-item">
+        <img src="images/comming-soon.jpg" alt="Em breve">
+        <div class="product-details">
+          <h3>Em breve</h3>
+          
+          <span class="price">R$&nbsp;0,00</span>
+        </div>
+      </li><li class="product-item">
+        <img src="images/comming-soon.jpg" alt="Em breve">
+        <div class="product-details">
+          <h3>Em breve</h3>
+          
+          <span class="price">R$&nbsp;0,00</span>
+        </div>
+      </li><li class="product-item">
+        <img src="images/comming-soon.jpg" alt="Em breve">
+        <div class="product-details">
+          <h3>Em breve</h3>
+          
+          <span class="price">R$&nbsp;0,00</span>
+        </div>
+      </li><li class="product-item">
+        <img src="images/comming-soon.jpg" alt="Em breve">
+        <div class="product-details">
+          <h3>Em breve</h3>
+          
+          <span class="price">R$&nbsp;0,00</span>
+        </div>
+      </li><li class="product-item">
+        <img src="images/slippers/tommy-hilfiger/17021140-tommy-hilfiger.jpeg" alt="[17021140] Em breve">
+        <div class="product-details">
+          <h3>[17021140] Em breve</h3>
+          <span class="size">Tamanho: 37/38, 39/40</span>
+          <span class="price">R$&nbsp;29,90</span>
+        </div>
+      </li><li class="product-item">
+        <img src="images/comming-soon.jpg" alt="Em breve">
+        <div class="product-details">
+          <h3>Em breve</h3>
+          
+          <span class="price">R$&nbsp;0,00</span>
+        </div>
+      </li><li class="product-item">
+        <img src="images/comming-soon.jpg" alt="Em breve">
+        <div class="product-details">
+          <h3>Em breve</h3>
+          
+          <span class="price">R$&nbsp;0,00</span>
+        </div>
+      </li><li class="product-item">
+        <img src="images/comming-soon.jpg" alt="Em breve">
+        <div class="product-details">
+          <h3>Em breve</h3>
+          
+          <span class="price">R$&nbsp;0,00</span>
+        </div>
+      </li><li class="product-item">
+        <img src="images/comming-soon.jpg" alt="Em breve">
+        <div class="product-details">
+          <h3>Em breve</h3>
+          
+          <span class="price">R$&nbsp;0,00</span>
+        </div>
+      </li><li class="product-item">
+        <img src="images/comming-soon.jpg" alt="Em breve">
+        <div class="product-details">
+          <h3>Em breve</h3>
+          
+          <span class="price">R$&nbsp;0,00</span>
+        </div>
+      </li><li class="product-item">
+        <img src="images/comming-soon.jpg" alt="Em breve">
+        <div class="product-details">
+          <h3>Em breve</h3>
+          
+          <span class="price">R$&nbsp;0,00</span>
+        </div>
+      </li><li class="product-item">
+        <img src="images/comming-soon.jpg" alt="Em breve">
+        <div class="product-details">
+          <h3>Em breve</h3>
+          
+          <span class="price">R$&nbsp;0,00</span>
+        </div>
+      </li></ul>
+  </main>
+
+  <!-- Footer with visible app version -->
+  <footer>
+    <p>Versão: 1.0.4 - 0.28</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+
+"
+`;
