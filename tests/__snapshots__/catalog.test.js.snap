@@ -298,7 +298,7 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
 
   <!-- Footer with visible app version -->
   <footer>
-    <p>Versão: 1.0.4 - 0.28</p>
+    <p>Versão: 1.0.5 - 0.28</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -549,7 +549,7 @@ exports[`Catalog Desktop View Matches snapshot for "Shoes" 1`] = `
 
   <!-- Footer with visible app version -->
   <footer>
-    <p>Versão: 1.0.4 - 0.28</p>
+    <p>Versão: 1.0.5 - 0.28</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -641,7 +641,7 @@ exports[`Catalog Desktop View Matches snapshot for "Slippers" 1`] = `
 
   <!-- Footer with visible app version -->
   <footer>
-    <p>Versão: 1.0.4 - 0.28</p>
+    <p>Versão: 1.0.5 - 0.28</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -948,7 +948,7 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
 
   <!-- Footer with visible app version -->
   <footer>
-    <p>Versão: 1.0.4 - 0.28</p>
+    <p>Versão: 1.0.5 - 0.28</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1199,7 +1199,7 @@ exports[`Catalog Mobile View Matches snapshot for "Shoes" on mobile 1`] = `
 
   <!-- Footer with visible app version -->
   <footer>
-    <p>Versão: 1.0.4 - 0.28</p>
+    <p>Versão: 1.0.5 - 0.28</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1291,7 +1291,7 @@ exports[`Catalog Mobile View Matches snapshot for "Slippers" on mobile 1`] = `
 
   <!-- Footer with visible app version -->
   <footer>
-    <p>Versão: 1.0.4 - 0.28</p>
+    <p>Versão: 1.0.5 - 0.28</p>
   </footer>
 
   <script src="scripts.js"></script>
