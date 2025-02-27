@@ -330,7 +330,7 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
           <img src="images/tshirts/louis-vuitton/27020956-louis-vuitton.jpeg" alt="[27020956] Louis Vuitton">
           <div class="product-details">
             <h3>[27020956] Louis Vuitton</h3>
-            <p class="description">Algodão Italiano</p>
+            <p class="description">Algodão Italiano Oversized</p>
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;89,90</span>
           </div>
@@ -844,7 +844,7 @@ exports[`Catalog Desktop View Matches snapshot for "Tshirts" 1`] = `
           <img src="images/tshirts/louis-vuitton/27020956-louis-vuitton.jpeg" alt="[27020956] Louis Vuitton">
           <div class="product-details">
             <h3>[27020956] Louis Vuitton</h3>
-            <p class="description">Algodão Italiano</p>
+            <p class="description">Algodão Italiano Oversized</p>
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;89,90</span>
           </div>
@@ -1262,7 +1262,7 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
           <img src="images/tshirts/louis-vuitton/27020956-louis-vuitton.jpeg" alt="[27020956] Louis Vuitton">
           <div class="product-details">
             <h3>[27020956] Louis Vuitton</h3>
-            <p class="description">Algodão Italiano</p>
+            <p class="description">Algodão Italiano Oversized</p>
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;89,90</span>
           </div>
@@ -1776,7 +1776,7 @@ exports[`Catalog Mobile View Matches snapshot for "Tshirts" on mobile 1`] = `
           <img src="images/tshirts/louis-vuitton/27020956-louis-vuitton.jpeg" alt="[27020956] Louis Vuitton">
           <div class="product-details">
             <h3>[27020956] Louis Vuitton</h3>
-            <p class="description">Algodão Italiano</p>
+            <p class="description">Algodão Italiano Oversized</p>
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;89,90</span>
           </div>
