@@ -1,4 +1,3 @@
-// tests/catalogTestUtils.js
 const fs = require('fs');
 const path = require('path');
 const { waitFor, fireEvent } = require('@testing-library/dom');
@@ -52,7 +51,7 @@ const loadHtml = () => {
  * resetting modules, and dispatching the DOMContentLoaded event.
  */
 const setupDOM = () => {
-  // Remove any custom flags to ensure fresh initialization
+  // Remove any custom flags to ensure fresh initialization (except __isTest)
   delete window.__catalogInitialized;
   document.documentElement.innerHTML = loadHtml();
   jest.resetModules();
@@ -82,7 +81,6 @@ const selectCategory = async (category, expectedHeading) => {
   await waitFor(() => {
     const productList = document.getElementById('product-list');
     expect(productList.children.length).toBeGreaterThan(0);
-    expect(new Set(productList.children).size).toBe(productList.children.length);
   });
 };
 
