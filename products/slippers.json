@@ -3,7 +3,10 @@
         "name": "[17021140] Tommy Hilfiger",
         "oldPrice": 0.0,
         "price": 29.90,
-        "image": "images/slippers/tommy-hilfiger/17021140-tommy-hilfiger.jpeg",
+        "images": [
+            "images/slippers/tommy-hilfiger/17021140-tommy-hilfiger.jpeg",
+            "images/comming-soon.jpg"
+        ],
         "size": "37/38, 39/40"
     },
     {

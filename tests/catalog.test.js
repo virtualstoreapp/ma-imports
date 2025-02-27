@@ -51,10 +51,10 @@ describe('Catalog', () => {
   beforeEach(() => {
     // Reset the DOM and flags
     document.body.innerHTML = '';
-    // Do NOT delete window.__catalogInitialized here now.
+    // Do NOT delete window.__catalogInitialized here, as __isTest flag is used to force reinitialization.
     window.location.hash = ''; // Reset hash state
     setupGlobalFetchMock();
-    setupDOM(); // This should set up the necessary markup.
+    setupDOM(); // This sets up the necessary markup and initializes the catalog.
   });
 
   describe('Desktop View', () => {

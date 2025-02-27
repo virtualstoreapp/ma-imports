@@ -9,7 +9,6 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
   </header>
 
   <nav aria-label="Main Navigation">
-    <!-- Mobile Menu Toggle Button -->
     <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
     <ul id="nav-menu">
       <li><button data-category="all">Início</button></li>
@@ -19,9 +18,7 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
   </nav>
 
   <main>
-    <!-- Category heading (updates based on selection) -->
     <h2 id="category-heading">Todos os Produtos</h2>
-    <!-- All products will be rendered inside this container -->
     <ul id="product-list"><li class="product-item">
           <img src="images/shoes/nike/12021658-nike-shox.jpeg" alt="[12021658] Nike Shox">
           <div class="product-details">
@@ -296,15 +293,29 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
         </li></ul>
   </main>
 
-  <!-- Footer with visible app version -->
+  <!-- Modal container will be injected by the script -->
+  
   <footer>
-    <p>Versão: 1.0.5 - 0.28</p>
+    <p>Versão: 2.0.0 - 0.28</p>
   </footer>
 
   <script src="scripts.js"></script>
 
 
-"
+<div id="product-modal">
+        <div id="modal-content">
+          <button id="modal-close">X</button>
+          <div id="modal-image-container">
+            <img id="modal-image" src="" alt="">
+          </div>
+          <div id="modal-controls">
+            <button id="prev-image">&lt;</button>
+            <button id="zoom-out">-</button>
+            <button id="zoom-in">+</button>
+            <button id="next-image">&gt;</button>
+          </div>
+        </div>
+      </div>"
 `;
 
 exports[`Catalog Desktop View Matches snapshot for "Shoes" 1`] = `
@@ -316,7 +327,6 @@ exports[`Catalog Desktop View Matches snapshot for "Shoes" 1`] = `
   </header>
 
   <nav aria-label="Main Navigation">
-    <!-- Mobile Menu Toggle Button -->
     <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
     <ul id="nav-menu">
       <li><button data-category="all">Início</button></li>
@@ -326,9 +336,7 @@ exports[`Catalog Desktop View Matches snapshot for "Shoes" 1`] = `
   </nav>
 
   <main>
-    <!-- Category heading (updates based on selection) -->
     <h2 id="category-heading">Calçados</h2>
-    <!-- All products will be rendered inside this container -->
     <ul id="product-list"><li class="product-item">
           <img src="images/shoes/nike/12021658-nike-shox.jpeg" alt="[12021658] Nike Shox">
           <div class="product-details">
@@ -547,15 +555,29 @@ exports[`Catalog Desktop View Matches snapshot for "Shoes" 1`] = `
         </li></ul>
   </main>
 
-  <!-- Footer with visible app version -->
+  <!-- Modal container will be injected by the script -->
+  
   <footer>
-    <p>Versão: 1.0.5 - 0.28</p>
+    <p>Versão: 2.0.0 - 0.28</p>
   </footer>
 
   <script src="scripts.js"></script>
 
 
-"
+<div id="product-modal">
+        <div id="modal-content">
+          <button id="modal-close">X</button>
+          <div id="modal-image-container">
+            <img id="modal-image" src="" alt="">
+          </div>
+          <div id="modal-controls">
+            <button id="prev-image">&lt;</button>
+            <button id="zoom-out">-</button>
+            <button id="zoom-in">+</button>
+            <button id="next-image">&gt;</button>
+          </div>
+        </div>
+      </div>"
 `;
 
 exports[`Catalog Desktop View Matches snapshot for "Slippers" 1`] = `
@@ -567,7 +589,6 @@ exports[`Catalog Desktop View Matches snapshot for "Slippers" 1`] = `
   </header>
 
   <nav aria-label="Main Navigation">
-    <!-- Mobile Menu Toggle Button -->
     <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
     <ul id="nav-menu">
       <li><button data-category="all">Início</button></li>
@@ -577,9 +598,7 @@ exports[`Catalog Desktop View Matches snapshot for "Slippers" 1`] = `
   </nav>
 
   <main>
-    <!-- Category heading (updates based on selection) -->
     <h2 id="category-heading">Chinelos</h2>
-    <!-- All products will be rendered inside this container -->
     <ul id="product-list"><li class="product-item">
           <img src="images/slippers/tommy-hilfiger/17021140-tommy-hilfiger.jpeg" alt="[17021140] Tommy Hilfiger">
           <div class="product-details">
@@ -639,15 +658,29 @@ exports[`Catalog Desktop View Matches snapshot for "Slippers" 1`] = `
         </li></ul>
   </main>
 
-  <!-- Footer with visible app version -->
+  <!-- Modal container will be injected by the script -->
+  
   <footer>
-    <p>Versão: 1.0.5 - 0.28</p>
+    <p>Versão: 2.0.0 - 0.28</p>
   </footer>
 
   <script src="scripts.js"></script>
 
 
-"
+<div id="product-modal">
+        <div id="modal-content">
+          <button id="modal-close">X</button>
+          <div id="modal-image-container">
+            <img id="modal-image" src="" alt="">
+          </div>
+          <div id="modal-controls">
+            <button id="prev-image">&lt;</button>
+            <button id="zoom-out">-</button>
+            <button id="zoom-in">+</button>
+            <button id="next-image">&gt;</button>
+          </div>
+        </div>
+      </div>"
 `;
 
 exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] = `
@@ -659,7 +692,6 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
   </header>
 
   <nav aria-label="Main Navigation" class="active">
-    <!-- Mobile Menu Toggle Button -->
     <button id="menu-toggle" aria-expanded="true" aria-controls="nav-menu">☰</button>
     <ul id="nav-menu">
       <li><button data-category="all">Início</button></li>
@@ -669,9 +701,7 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
   </nav>
 
   <main>
-    <!-- Category heading (updates based on selection) -->
     <h2 id="category-heading">Todos os Produtos</h2>
-    <!-- All products will be rendered inside this container -->
     <ul id="product-list"><li class="product-item">
           <img src="images/shoes/nike/12021658-nike-shox.jpeg" alt="[12021658] Nike Shox">
           <div class="product-details">
@@ -946,15 +976,29 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
         </li></ul>
   </main>
 
-  <!-- Footer with visible app version -->
+  <!-- Modal container will be injected by the script -->
+  
   <footer>
-    <p>Versão: 1.0.5 - 0.28</p>
+    <p>Versão: 2.0.0 - 0.28</p>
   </footer>
 
   <script src="scripts.js"></script>
 
 
-"
+<div id="product-modal">
+        <div id="modal-content">
+          <button id="modal-close">X</button>
+          <div id="modal-image-container">
+            <img id="modal-image" src="" alt="">
+          </div>
+          <div id="modal-controls">
+            <button id="prev-image">&lt;</button>
+            <button id="zoom-out">-</button>
+            <button id="zoom-in">+</button>
+            <button id="next-image">&gt;</button>
+          </div>
+        </div>
+      </div>"
 `;
 
 exports[`Catalog Mobile View Matches snapshot for "Shoes" on mobile 1`] = `
@@ -966,7 +1010,6 @@ exports[`Catalog Mobile View Matches snapshot for "Shoes" on mobile 1`] = `
   </header>
 
   <nav aria-label="Main Navigation" class="">
-    <!-- Mobile Menu Toggle Button -->
     <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
     <ul id="nav-menu">
       <li><button data-category="all">Início</button></li>
@@ -976,9 +1019,7 @@ exports[`Catalog Mobile View Matches snapshot for "Shoes" on mobile 1`] = `
   </nav>
 
   <main>
-    <!-- Category heading (updates based on selection) -->
     <h2 id="category-heading">Calçados</h2>
-    <!-- All products will be rendered inside this container -->
     <ul id="product-list"><li class="product-item">
           <img src="images/shoes/nike/12021658-nike-shox.jpeg" alt="[12021658] Nike Shox">
           <div class="product-details">
@@ -1197,15 +1238,29 @@ exports[`Catalog Mobile View Matches snapshot for "Shoes" on mobile 1`] = `
         </li></ul>
   </main>
 
-  <!-- Footer with visible app version -->
+  <!-- Modal container will be injected by the script -->
+  
   <footer>
-    <p>Versão: 1.0.5 - 0.28</p>
+    <p>Versão: 2.0.0 - 0.28</p>
   </footer>
 
   <script src="scripts.js"></script>
 
 
-"
+<div id="product-modal">
+        <div id="modal-content">
+          <button id="modal-close">X</button>
+          <div id="modal-image-container">
+            <img id="modal-image" src="" alt="">
+          </div>
+          <div id="modal-controls">
+            <button id="prev-image">&lt;</button>
+            <button id="zoom-out">-</button>
+            <button id="zoom-in">+</button>
+            <button id="next-image">&gt;</button>
+          </div>
+        </div>
+      </div>"
 `;
 
 exports[`Catalog Mobile View Matches snapshot for "Slippers" on mobile 1`] = `
@@ -1217,7 +1272,6 @@ exports[`Catalog Mobile View Matches snapshot for "Slippers" on mobile 1`] = `
   </header>
 
   <nav aria-label="Main Navigation" class="">
-    <!-- Mobile Menu Toggle Button -->
     <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
     <ul id="nav-menu">
       <li><button data-category="all">Início</button></li>
@@ -1227,9 +1281,7 @@ exports[`Catalog Mobile View Matches snapshot for "Slippers" on mobile 1`] = `
   </nav>
 
   <main>
-    <!-- Category heading (updates based on selection) -->
     <h2 id="category-heading">Chinelos</h2>
-    <!-- All products will be rendered inside this container -->
     <ul id="product-list"><li class="product-item">
           <img src="images/slippers/tommy-hilfiger/17021140-tommy-hilfiger.jpeg" alt="[17021140] Tommy Hilfiger">
           <div class="product-details">
@@ -1289,13 +1341,27 @@ exports[`Catalog Mobile View Matches snapshot for "Slippers" on mobile 1`] = `
         </li></ul>
   </main>
 
-  <!-- Footer with visible app version -->
+  <!-- Modal container will be injected by the script -->
+  
   <footer>
-    <p>Versão: 1.0.5 - 0.28</p>
+    <p>Versão: 2.0.0 - 0.28</p>
   </footer>
 
   <script src="scripts.js"></script>
 
 
-"
+<div id="product-modal">
+        <div id="modal-content">
+          <button id="modal-close">X</button>
+          <div id="modal-image-container">
+            <img id="modal-image" src="" alt="">
+          </div>
+          <div id="modal-controls">
+            <button id="prev-image">&lt;</button>
+            <button id="zoom-out">-</button>
+            <button id="zoom-in">+</button>
+            <button id="next-image">&gt;</button>
+          </div>
+        </div>
+      </div>"
 `;
