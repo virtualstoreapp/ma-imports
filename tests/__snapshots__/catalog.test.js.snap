@@ -358,6 +358,38 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
             <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;79,90</span>
           </div>
+        </li><li class="product-item">
+          <img src="images/comming-soon.jpg" alt="Em breve">
+          <div class="product-details">
+            <h3>Em breve</h3>
+            
+            
+            <span class="price">R$&nbsp;0,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/comming-soon.jpg" alt="Em breve">
+          <div class="product-details">
+            <h3>Em breve</h3>
+            
+            
+            <span class="price">R$&nbsp;0,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/comming-soon.jpg" alt="Em breve">
+          <div class="product-details">
+            <h3>Em breve</h3>
+            
+            
+            <span class="price">R$&nbsp;0,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/comming-soon.jpg" alt="Em breve">
+          <div class="product-details">
+            <h3>Em breve</h3>
+            
+            
+            <span class="price">R$&nbsp;0,00</span>
+          </div>
         </li></ul>
   </main>
 
@@ -840,6 +872,38 @@ exports[`Catalog Desktop View Matches snapshot for "Tshirts" 1`] = `
             <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;79,90</span>
           </div>
+        </li><li class="product-item">
+          <img src="images/comming-soon.jpg" alt="Em breve">
+          <div class="product-details">
+            <h3>Em breve</h3>
+            
+            
+            <span class="price">R$&nbsp;0,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/comming-soon.jpg" alt="Em breve">
+          <div class="product-details">
+            <h3>Em breve</h3>
+            
+            
+            <span class="price">R$&nbsp;0,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/comming-soon.jpg" alt="Em breve">
+          <div class="product-details">
+            <h3>Em breve</h3>
+            
+            
+            <span class="price">R$&nbsp;0,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/comming-soon.jpg" alt="Em breve">
+          <div class="product-details">
+            <h3>Em breve</h3>
+            
+            
+            <span class="price">R$&nbsp;0,00</span>
+          </div>
         </li></ul>
   </main>
 
@@ -1225,6 +1289,38 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
             <p class="description">Algodão Peruano</p>
             <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/comming-soon.jpg" alt="Em breve">
+          <div class="product-details">
+            <h3>Em breve</h3>
+            
+            
+            <span class="price">R$&nbsp;0,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/comming-soon.jpg" alt="Em breve">
+          <div class="product-details">
+            <h3>Em breve</h3>
+            
+            
+            <span class="price">R$&nbsp;0,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/comming-soon.jpg" alt="Em breve">
+          <div class="product-details">
+            <h3>Em breve</h3>
+            
+            
+            <span class="price">R$&nbsp;0,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/comming-soon.jpg" alt="Em breve">
+          <div class="product-details">
+            <h3>Em breve</h3>
+            
+            
+            <span class="price">R$&nbsp;0,00</span>
           </div>
         </li></ul>
   </main>
@@ -1707,6 +1803,38 @@ exports[`Catalog Mobile View Matches snapshot for "Tshirts" on mobile 1`] = `
             <p class="description">Algodão Peruano</p>
             <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/comming-soon.jpg" alt="Em breve">
+          <div class="product-details">
+            <h3>Em breve</h3>
+            
+            
+            <span class="price">R$&nbsp;0,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/comming-soon.jpg" alt="Em breve">
+          <div class="product-details">
+            <h3>Em breve</h3>
+            
+            
+            <span class="price">R$&nbsp;0,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/comming-soon.jpg" alt="Em breve">
+          <div class="product-details">
+            <h3>Em breve</h3>
+            
+            
+            <span class="price">R$&nbsp;0,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/comming-soon.jpg" alt="Em breve">
+          <div class="product-details">
+            <h3>Em breve</h3>
+            
+            
+            <span class="price">R$&nbsp;0,00</span>
           </div>
         </li></ul>
   </main>
