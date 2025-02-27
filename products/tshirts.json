@@ -38,5 +38,33 @@
             "images/tshirts/burberry/27021016-burberry.jpeg"
         ],
         "size": "M"
+    },
+    {
+        "name": "Em breve",
+        "oldPrice": 0.0,
+        "price": 0.0,
+        "image": "images/comming-soon.jpg",
+        "size": "N/A"
+    },
+    {
+        "name": "Em breve",
+        "oldPrice": 0.0,
+        "price": 0.0,
+        "image": "images/comming-soon.jpg",
+        "size": "N/A"
+    },
+    {
+        "name": "Em breve",
+        "oldPrice": 0.0,
+        "price": 0.0,
+        "image": "images/comming-soon.jpg",
+        "size": "N/A"
+    },
+    {
+        "name": "Em breve",
+        "oldPrice": 0.0,
+        "price": 0.0,
+        "image": "images/comming-soon.jpg",
+        "size": "N/A"
     }
 ]
