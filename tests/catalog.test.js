@@ -72,6 +72,11 @@ describe('Catalog', () => {
       clickCategoryButton('slippers');
       await assertRenderedSnapshot("Chinelos");
     });
+
+    it('Matches snapshot for "Tshirts"', async () => {
+      clickCategoryButton('tshirts');
+      await assertRenderedSnapshot("Camisetas");
+    });
   });
 
   describe('Mobile View', () => {
@@ -92,6 +97,11 @@ describe('Catalog', () => {
     it('Matches snapshot for "Slippers" on mobile', async () => {
       await selectMobileCategory("slippers", "Chinelos");
       await assertRenderedSnapshot("Chinelos");
+    });
+
+    it('Matches snapshot for "Tshirts" on mobile', async () => {
+      await selectMobileCategory("tshirts", "Camisetas");
+      await assertRenderedSnapshot("Camisetas");
     });
   });
 });

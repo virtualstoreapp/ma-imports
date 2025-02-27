@@ -15,6 +15,7 @@
       all: 'Todos os Produtos',
       shoes: 'Calçados',
       slippers: 'Chinelos',
+      tshirts: 'Camisetas',
     };
     headingEl.textContent = headings[category] || 'Produtos';
   };
@@ -74,7 +75,6 @@
     };
 
     const open = (product) => {
-      // If multiple images exist, use the "images" array; otherwise, fallback to "image".
       currentImages = Array.isArray(product.images) ? product.images : [product.image];
       currentIndex = 0;
       currentZoom = 1;
@@ -101,7 +101,6 @@
         currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
         currentZoom = 1;
         updateImage();
-        // GA event for navigating to previous image
         if (window.gtag) {
           gtag('event', 'navigate_image', {
             event_category: 'Modal',
@@ -117,7 +116,6 @@
         currentIndex = (currentIndex + 1) % currentImages.length;
         currentZoom = 1;
         updateImage();
-        // GA event for navigating to next image
         if (window.gtag) {
           gtag('event', 'navigate_image', {
             event_category: 'Modal',
@@ -131,7 +129,6 @@
     const adjustZoom = (delta) => {
       currentZoom = Math.max(0.2, currentZoom + delta);
       updateImage();
-      // GA event for zoom actions
       if (window.gtag) {
         const action = delta > 0 ? 'zoom_in' : 'zoom_out';
         gtag('event', action, {
@@ -162,7 +159,7 @@
     const fetchCategoryData = async (category) => {
       try {
         if (category === 'all') {
-          const categories = ['shoes', 'slippers'];
+          const categories = ['shoes', 'slippers', 'tshirts'];
           const responses = await Promise.all(
             categories.map(cat => fetch(`products/${cat}.json`))
           );
@@ -197,18 +194,18 @@
              <span class="new-price">${formatCurrency(product.price)}</span>`
           : `<span class="price">${formatCurrency(product.price)}</span>`;
 
-        // If multiple images exist, use the first image from the array
+        // If there is an array of images, use the first image; otherwise use product.image.
         const imgSrc = Array.isArray(product.images) ? product.images[0] : product.image;
 
         li.innerHTML = `
           <img src="${imgSrc}" alt="${product.name}">
           <div class="product-details">
             <h3>${product.name}</h3>
+            ${product.description ? `<p class="description">${product.description}</p>` : ''}
             ${product.size && product.size !== 'N/A' ? `<span class="size">Tamanho: ${product.size}</span>` : ''}
             ${priceHTML}
           </div>
         `;
-        // GA event for product click
         li.addEventListener('click', () => {
           if (window.gtag) {
             gtag('event', 'product_click', {
@@ -220,7 +217,6 @@
         });
         productListContainer.appendChild(li);
       });
-      // Update URL hash for bookmarking
       window.location.hash = category;
     };
 
@@ -229,7 +225,6 @@
         button.addEventListener('click', async (event) => {
           const category = event.currentTarget.getAttribute('data-category');
           await renderProducts(category);
-          // GA event for category selection
           if (window.gtag) {
             gtag('event', 'select_category', {
               event_category: 'Navigation',
@@ -237,7 +232,6 @@
               value: 1,
             });
           }
-          // Close mobile menu if open
           if (nav.classList.contains('active')) {
             nav.classList.remove('active');
             menuToggle.setAttribute('aria-expanded', 'false');
@@ -257,7 +251,6 @@
     const init = async () => {
       bindCategoryButtons();
       bindMobileMenu();
-      // Render initial category based on URL hash or default to "all"
       const initialCategory = window.location.hash.slice(1) || 'all';
       await renderProducts(initialCategory);
     };
@@ -266,7 +259,7 @@
   })();
 
   // ------------------------------
-  // Initialize modules when DOM is ready
+  // Initialize Catalog on DOM Ready
   // ------------------------------
   const setupCatalog = () => {
     Modal.init();
@@ -279,4 +272,3 @@
     setupCatalog();
   }
 })();
-

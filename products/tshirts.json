@@ -1,0 +1,42 @@
+[
+    {
+        "name": "[27020956] Louis Vuitton",
+        "description": "Algodão Italiano",
+        "oldPrice": 0.0,
+        "price": 89.90,
+        "images": [
+            "images/tshirts/louis-vuitton/27020956-louis-vuitton.jpeg"
+        ],
+        "size": "GG"
+    },
+    {
+        "name": "[27020957] Dolce & Gabbana",
+        "description": "Algodão Peruano",
+        "oldPrice": 0.0,
+        "price": 79.90,
+        "images": [
+            "images/tshirts/dolce-gabbana/27020957-dolce-gabbana.jpeg"
+        ],
+        "size": "GG"
+    },
+    {
+        "name": "[27021001] Emporio Armani",
+        "description": "Algodão Peruano",
+        "oldPrice": 0.0,
+        "price": 79.90,
+        "images": [
+            "images/tshirts/emporio-armani/27021001-emporio-armani.jpeg"
+        ],
+        "size": "M"
+    },
+    {
+        "name": "[27021016] Burberry",
+        "description": "Algodão Peruano",
+        "oldPrice": 0.0,
+        "price": 79.90,
+        "images": [
+            "images/tshirts/burberry/27021016-burberry.jpeg"
+        ],
+        "size": "M"
+    }
+]
