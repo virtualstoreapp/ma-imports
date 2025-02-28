@@ -15,6 +15,8 @@
       shoes: 'Tênis',
       slippers: 'Chinelos',
       tshirts: 'Camisetas',
+      sneakers: 'Sneakers',
+      boots: 'Boots'
     };
     headingEl.textContent = headings[category] || 'Produtos';
   };
@@ -156,6 +158,7 @@
      Catalog Module
   ------------------------- */
   const Catalog = (() => {
+    // Select all menu buttons (including submenu buttons)
     const categoryButtons = document.querySelectorAll('nav button[data-category]');
     const productListContainer = document.getElementById('product-list');
     const categoryHeading = document.getElementById('category-heading');
