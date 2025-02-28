@@ -404,7 +404,7 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
   <!-- Modal container will be injected by the script -->
   
   <footer>
-    <p>Versão: 2.0.2 - 0.32</p>
+    <p>Versão: 2.0.2 - 0.0.37</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -694,7 +694,7 @@ exports[`Catalog Desktop View Matches snapshot for "Shoes" 1`] = `
   <!-- Modal container will be injected by the script -->
   
   <footer>
-    <p>Versão: 2.0.2 - 0.32</p>
+    <p>Versão: 2.0.2 - 0.0.37</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -806,7 +806,7 @@ exports[`Catalog Desktop View Matches snapshot for "Slippers" 1`] = `
   <!-- Modal container will be injected by the script -->
   
   <footer>
-    <p>Versão: 2.0.2 - 0.32</p>
+    <p>Versão: 2.0.2 - 0.0.37</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -926,7 +926,7 @@ exports[`Catalog Desktop View Matches snapshot for "Tshirts" 1`] = `
   <!-- Modal container will be injected by the script -->
   
   <footer>
-    <p>Versão: 2.0.2 - 0.32</p>
+    <p>Versão: 2.0.2 - 0.0.37</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1352,7 +1352,7 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
   <!-- Modal container will be injected by the script -->
   
   <footer>
-    <p>Versão: 2.0.2 - 0.32</p>
+    <p>Versão: 2.0.2 - 0.0.37</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1642,7 +1642,7 @@ exports[`Catalog Mobile View Matches snapshot for "Shoes" on mobile 1`] = `
   <!-- Modal container will be injected by the script -->
   
   <footer>
-    <p>Versão: 2.0.2 - 0.32</p>
+    <p>Versão: 2.0.2 - 0.0.37</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1754,7 +1754,7 @@ exports[`Catalog Mobile View Matches snapshot for "Slippers" on mobile 1`] = `
   <!-- Modal container will be injected by the script -->
   
   <footer>
-    <p>Versão: 2.0.2 - 0.32</p>
+    <p>Versão: 2.0.2 - 0.0.37</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1874,7 +1874,7 @@ exports[`Catalog Mobile View Matches snapshot for "Tshirts" on mobile 1`] = `
   <!-- Modal container will be injected by the script -->
   
   <footer>
-    <p>Versão: 2.0.2 - 0.32</p>
+    <p>Versão: 2.0.2 - 0.0.37</p>
   </footer>
 
   <script src="scripts.js"></script>
