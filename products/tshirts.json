@@ -10,6 +10,16 @@
         "size": "GG"
     },
     {
+        "name": "[2802112] Louis Vuitton",
+        "description": "Algodão Italiano Oversized",
+        "oldPrice": 0.0,
+        "price": 89.90,
+        "images": [
+            "images/tshirts/louis-vuitton/2802112-louis-vuitton.jpeg"
+        ],
+        "size": "M"
+    },
+    {
         "name": "[27020957] Dolce & Gabbana",
         "description": "Algodão Peruano",
         "oldPrice": 0.0,
@@ -40,31 +50,44 @@
         "size": "M"
     },
     {
-        "name": "Em breve",
+        "name": "[28021105] Balmain",
+        "description": "Algodão Italiano Oversized",
         "oldPrice": 0.0,
-        "price": 0.0,
-        "image": "images/comming-soon.jpg",
-        "size": "N/A"
+        "price": 89.90,
+        "images": [
+            "images/tshirts/balmain/28021105-balmain.jpeg"
+        ],
+        "size": "G"
     },
     {
-        "name": "Em breve",
+        "name": "[28021109] Tommy Hilfiger",
+        "description": "Algodão Italiano Oversized",
         "oldPrice": 0.0,
-        "price": 0.0,
-        "image": "images/comming-soon.jpg",
-        "size": "N/A"
+        "price": 89.90,
+        "images": [
+            "images/tshirts/tommy-hilfiger/28021109-tommy-hilfiger.jpeg"
+        ],
+        "size": "G"
     },
     {
-        "name": "Em breve",
+        "name": "[28021122] Tommy Hilfiger",
+        "description": "Algodão Italiano",
         "oldPrice": 0.0,
-        "price": 0.0,
-        "image": "images/comming-soon.jpg",
-        "size": "N/A"
+        "price": 89.90,
+        "images": [
+            "images/tshirts/tommy-hilfiger/28021122-tommy-hilfiger.jpeg"
+        ],
+        "size": "G"
     },
     {
-        "name": "Em breve",
+        "name": "[28021120] Nike",
+        "description": "Algodão Peruano",
         "oldPrice": 0.0,
-        "price": 0.0,
-        "image": "images/comming-soon.jpg",
-        "size": "N/A"
+        "price": 79.90,
+        "images": [
+            "images/tshirts/nike/28021120-nike-front.jpeg",
+            "images/tshirts/nike/28021120-nike-back.jpeg"
+        ],
+        "size": "G"
     }
 ]
