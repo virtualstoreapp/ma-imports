@@ -240,7 +240,6 @@
             }
           }
           const category = button.getAttribute('data-category');
-          console.log(`CATEGORY = ${category}`)
           await renderProducts(category);
           if (window.gtag) {
             gtag('event', 'select_category', {
