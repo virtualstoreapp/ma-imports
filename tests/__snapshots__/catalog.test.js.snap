@@ -335,6 +335,14 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
             <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
+          <img src="images/tshirts/louis-vuitton/2802112-louis-vuitton.jpeg" alt="[2802112] Louis Vuitton">
+          <div class="product-details">
+            <h3>[2802112] Louis Vuitton</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
           <img src="images/tshirts/dolce-gabbana/27020957-dolce-gabbana.jpeg" alt="[27020957] Dolce &amp; Gabbana">
           <div class="product-details">
             <h3>[27020957] Dolce &amp; Gabbana</h3>
@@ -359,36 +367,36 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
             <span class="price">R$&nbsp;79,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
+          <img src="images/tshirts/balmain/28021105-balmain.jpeg" alt="[28021105] Balmain">
           <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
+            <h3>[28021105] Balmain</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
+          <img src="images/tshirts/tommy-hilfiger/28021109-tommy-hilfiger.jpeg" alt="[28021109] Tommy Hilfiger">
           <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
+            <h3>[28021109] Tommy Hilfiger</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
+          <img src="images/tshirts/tommy-hilfiger/28021122-tommy-hilfiger.jpeg" alt="[28021122] Tommy Hilfiger">
           <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
+            <h3>[28021122] Tommy Hilfiger</h3>
+            <p class="description">Algodão Italiano</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
+          <img src="images/tshirts/nike/28021120-nike-front.jpeg" alt="[28021120] Nike">
           <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
+            <h3>[28021120] Nike</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;79,90</span>
           </div>
         </li></ul>
   </main>
@@ -849,6 +857,14 @@ exports[`Catalog Desktop View Matches snapshot for "Tshirts" 1`] = `
             <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
+          <img src="images/tshirts/louis-vuitton/2802112-louis-vuitton.jpeg" alt="[2802112] Louis Vuitton">
+          <div class="product-details">
+            <h3>[2802112] Louis Vuitton</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
           <img src="images/tshirts/dolce-gabbana/27020957-dolce-gabbana.jpeg" alt="[27020957] Dolce &amp; Gabbana">
           <div class="product-details">
             <h3>[27020957] Dolce &amp; Gabbana</h3>
@@ -873,36 +889,36 @@ exports[`Catalog Desktop View Matches snapshot for "Tshirts" 1`] = `
             <span class="price">R$&nbsp;79,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
+          <img src="images/tshirts/balmain/28021105-balmain.jpeg" alt="[28021105] Balmain">
           <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
+            <h3>[28021105] Balmain</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
+          <img src="images/tshirts/tommy-hilfiger/28021109-tommy-hilfiger.jpeg" alt="[28021109] Tommy Hilfiger">
           <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
+            <h3>[28021109] Tommy Hilfiger</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
+          <img src="images/tshirts/tommy-hilfiger/28021122-tommy-hilfiger.jpeg" alt="[28021122] Tommy Hilfiger">
           <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
+            <h3>[28021122] Tommy Hilfiger</h3>
+            <p class="description">Algodão Italiano</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
+          <img src="images/tshirts/nike/28021120-nike-front.jpeg" alt="[28021120] Nike">
           <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
+            <h3>[28021120] Nike</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;79,90</span>
           </div>
         </li></ul>
   </main>
@@ -1267,6 +1283,14 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
             <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
+          <img src="images/tshirts/louis-vuitton/2802112-louis-vuitton.jpeg" alt="[2802112] Louis Vuitton">
+          <div class="product-details">
+            <h3>[2802112] Louis Vuitton</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
           <img src="images/tshirts/dolce-gabbana/27020957-dolce-gabbana.jpeg" alt="[27020957] Dolce &amp; Gabbana">
           <div class="product-details">
             <h3>[27020957] Dolce &amp; Gabbana</h3>
@@ -1291,36 +1315,36 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
             <span class="price">R$&nbsp;79,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
+          <img src="images/tshirts/balmain/28021105-balmain.jpeg" alt="[28021105] Balmain">
           <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
+            <h3>[28021105] Balmain</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
+          <img src="images/tshirts/tommy-hilfiger/28021109-tommy-hilfiger.jpeg" alt="[28021109] Tommy Hilfiger">
           <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
+            <h3>[28021109] Tommy Hilfiger</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
+          <img src="images/tshirts/tommy-hilfiger/28021122-tommy-hilfiger.jpeg" alt="[28021122] Tommy Hilfiger">
           <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
+            <h3>[28021122] Tommy Hilfiger</h3>
+            <p class="description">Algodão Italiano</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
+          <img src="images/tshirts/nike/28021120-nike-front.jpeg" alt="[28021120] Nike">
           <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
+            <h3>[28021120] Nike</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;79,90</span>
           </div>
         </li></ul>
   </main>
@@ -1781,6 +1805,14 @@ exports[`Catalog Mobile View Matches snapshot for "Tshirts" on mobile 1`] = `
             <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
+          <img src="images/tshirts/louis-vuitton/2802112-louis-vuitton.jpeg" alt="[2802112] Louis Vuitton">
+          <div class="product-details">
+            <h3>[2802112] Louis Vuitton</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
           <img src="images/tshirts/dolce-gabbana/27020957-dolce-gabbana.jpeg" alt="[27020957] Dolce &amp; Gabbana">
           <div class="product-details">
             <h3>[27020957] Dolce &amp; Gabbana</h3>
@@ -1805,36 +1837,36 @@ exports[`Catalog Mobile View Matches snapshot for "Tshirts" on mobile 1`] = `
             <span class="price">R$&nbsp;79,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
+          <img src="images/tshirts/balmain/28021105-balmain.jpeg" alt="[28021105] Balmain">
           <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
+            <h3>[28021105] Balmain</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
+          <img src="images/tshirts/tommy-hilfiger/28021109-tommy-hilfiger.jpeg" alt="[28021109] Tommy Hilfiger">
           <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
+            <h3>[28021109] Tommy Hilfiger</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
+          <img src="images/tshirts/tommy-hilfiger/28021122-tommy-hilfiger.jpeg" alt="[28021122] Tommy Hilfiger">
           <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
+            <h3>[28021122] Tommy Hilfiger</h3>
+            <p class="description">Algodão Italiano</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
+          <img src="images/tshirts/nike/28021120-nike-front.jpeg" alt="[28021120] Nike">
           <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
+            <h3>[28021120] Nike</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;79,90</span>
           </div>
         </li></ul>
   </main>
