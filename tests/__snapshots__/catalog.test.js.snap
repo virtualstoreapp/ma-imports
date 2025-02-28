@@ -386,7 +386,7 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
           <img src="images/tshirts/tommy-hilfiger/28021122-tommy-hilfiger.jpeg" alt="[28021122] Tommy Hilfiger">
           <div class="product-details">
             <h3>[28021122] Tommy Hilfiger</h3>
-            <p class="description">Algodão Italiano</p>
+            <p class="description">Algodão Italiano Oversized</p>
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;89,90</span>
           </div>
@@ -404,7 +404,7 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
   <!-- Modal container will be injected by the script -->
   
   <footer>
-    <p>Versão: 2.0.2 - 0.0.37</p>
+    <p>Versão: 2.0.3 - 0.0.37</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -694,7 +694,7 @@ exports[`Catalog Desktop View Matches snapshot for "Shoes" 1`] = `
   <!-- Modal container will be injected by the script -->
   
   <footer>
-    <p>Versão: 2.0.2 - 0.0.37</p>
+    <p>Versão: 2.0.3 - 0.0.37</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -806,7 +806,7 @@ exports[`Catalog Desktop View Matches snapshot for "Slippers" 1`] = `
   <!-- Modal container will be injected by the script -->
   
   <footer>
-    <p>Versão: 2.0.2 - 0.0.37</p>
+    <p>Versão: 2.0.3 - 0.0.37</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -908,7 +908,7 @@ exports[`Catalog Desktop View Matches snapshot for "Tshirts" 1`] = `
           <img src="images/tshirts/tommy-hilfiger/28021122-tommy-hilfiger.jpeg" alt="[28021122] Tommy Hilfiger">
           <div class="product-details">
             <h3>[28021122] Tommy Hilfiger</h3>
-            <p class="description">Algodão Italiano</p>
+            <p class="description">Algodão Italiano Oversized</p>
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;89,90</span>
           </div>
@@ -926,7 +926,7 @@ exports[`Catalog Desktop View Matches snapshot for "Tshirts" 1`] = `
   <!-- Modal container will be injected by the script -->
   
   <footer>
-    <p>Versão: 2.0.2 - 0.0.37</p>
+    <p>Versão: 2.0.3 - 0.0.37</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1334,7 +1334,7 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
           <img src="images/tshirts/tommy-hilfiger/28021122-tommy-hilfiger.jpeg" alt="[28021122] Tommy Hilfiger">
           <div class="product-details">
             <h3>[28021122] Tommy Hilfiger</h3>
-            <p class="description">Algodão Italiano</p>
+            <p class="description">Algodão Italiano Oversized</p>
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;89,90</span>
           </div>
@@ -1352,7 +1352,7 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
   <!-- Modal container will be injected by the script -->
   
   <footer>
-    <p>Versão: 2.0.2 - 0.0.37</p>
+    <p>Versão: 2.0.3 - 0.0.37</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1642,7 +1642,7 @@ exports[`Catalog Mobile View Matches snapshot for "Shoes" on mobile 1`] = `
   <!-- Modal container will be injected by the script -->
   
   <footer>
-    <p>Versão: 2.0.2 - 0.0.37</p>
+    <p>Versão: 2.0.3 - 0.0.37</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1754,7 +1754,7 @@ exports[`Catalog Mobile View Matches snapshot for "Slippers" on mobile 1`] = `
   <!-- Modal container will be injected by the script -->
   
   <footer>
-    <p>Versão: 2.0.2 - 0.0.37</p>
+    <p>Versão: 2.0.3 - 0.0.37</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1856,7 +1856,7 @@ exports[`Catalog Mobile View Matches snapshot for "Tshirts" on mobile 1`] = `
           <img src="images/tshirts/tommy-hilfiger/28021122-tommy-hilfiger.jpeg" alt="[28021122] Tommy Hilfiger">
           <div class="product-details">
             <h3>[28021122] Tommy Hilfiger</h3>
-            <p class="description">Algodão Italiano</p>
+            <p class="description">Algodão Italiano Oversized</p>
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;89,90</span>
           </div>
@@ -1874,7 +1874,7 @@ exports[`Catalog Mobile View Matches snapshot for "Tshirts" on mobile 1`] = `
   <!-- Modal container will be injected by the script -->
   
   <footer>
-    <p>Versão: 2.0.2 - 0.0.37</p>
+    <p>Versão: 2.0.3 - 0.0.37</p>
   </footer>
 
   <script src="scripts.js"></script>
