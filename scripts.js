@@ -11,13 +11,23 @@
   const updateCategoryHeading = (category, headingEl) => {
     const headings = {
       all: 'Todos os Produtos',
-      shoes: 'Calçados',
+      shoes: 'Tênis',
       slippers: 'Chinelos',
       tshirts: 'Camisetas',
-      sneakers: 'Sneakers',
-      boots: 'Boots'
     };
     headingEl.textContent = headings[category] || 'Produtos';
+  };
+
+  // Collapse all open submenus (for both desktop & mobile)
+  const collapseAllSubmenus = () => {
+    const submenuButtons = document.querySelectorAll('button.has-submenu');
+    submenuButtons.forEach(button => {
+      button.setAttribute('aria-expanded', 'false');
+      const submenu = button.nextElementSibling;
+      if (submenu && submenu.classList.contains('submenu')) {
+        submenu.style.display = 'none';
+      }
+    });
   };
 
   // ------------------------------
@@ -219,7 +229,7 @@
       categoryButtons.forEach(button => {
         button.addEventListener('click', async (event) => {
           event.stopPropagation();
-          // If the button has a submenu toggle, then do not render products.
+          // If the button has a submenu toggle, then just toggle the submenu.
           if (button.classList.contains('has-submenu')) {
             const expanded = button.getAttribute('aria-expanded') === 'true';
             button.setAttribute('aria-expanded', String(!expanded));
@@ -230,6 +240,7 @@
             }
           }
           const category = button.getAttribute('data-category');
+          console.log(`CATEGORY = ${category}`)
           await renderProducts(category);
           if (window.gtag) {
             gtag('event', 'select_category', {
@@ -238,6 +249,14 @@
               value: 1,
             });
           }
+          // Collapse mobile menu if open and also collapse any open submenus.
+          const nav = document.querySelector('nav');
+          const menuToggle = document.getElementById('menu-toggle');
+          if (nav.classList.contains('active')) {
+            nav.classList.remove('active');
+            menuToggle.setAttribute('aria-expanded', 'false');
+          }
+          collapseAllSubmenus();
         });
       });
     };
