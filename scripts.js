@@ -1,5 +1,3 @@
-//scripts.js
-
 (function() {
   if (window.__catalogInitialized && !window.__isTest) return;
   window.__catalogInitialized = true;
@@ -16,6 +14,8 @@
       shoes: 'Calçados',
       slippers: 'Chinelos',
       tshirts: 'Camisetas',
+      sneakers: 'Sneakers',
+      boots: 'Boots'
     };
     headingEl.textContent = headings[category] || 'Produtos';
   };
@@ -26,7 +26,6 @@
   const Modal = (() => {
     let modal, currentImages = [], currentIndex = 0, currentZoom = 1, currentProductName = '';
 
-    // Create and insert modal into DOM
     const init = () => {
       modal = document.createElement('div');
       modal.id = 'product-modal';
@@ -65,7 +64,6 @@
       modalImage.style.transform = `scale(${currentZoom})`;
     };
 
-    // Disable or enable navigation buttons based on image count.
     const updateNavButtons = () => {
       const prevBtn = document.getElementById('prev-image');
       const nextBtn = document.getElementById('next-image');
@@ -83,7 +81,6 @@
       updateNavButtons();
       modal.style.display = 'flex';
 
-      // GA event for modal open
       if (window.gtag) {
         gtag('event', 'open_modal', {
           event_category: 'Product',
@@ -150,11 +147,10 @@
   // Product Catalog Module
   // ------------------------------
   const Catalog = (() => {
+    // Select all menu buttons (including submenu buttons)
     const categoryButtons = document.querySelectorAll('nav button[data-category]');
     const productListContainer = document.getElementById('product-list');
     const categoryHeading = document.getElementById('category-heading');
-    const menuToggle = document.getElementById('menu-toggle');
-    const nav = document.querySelector('nav');
 
     const fetchCategoryData = async (category) => {
       try {
@@ -164,8 +160,8 @@
             categories.map(cat => fetch(`products/${cat}.json`))
           );
           const jsonData = await Promise.all(
-            responses.map(async (response) => {
-              if (!response.ok) throw new Error(`Failed to fetch data for category ${cat}`);
+            responses.map(async (response, index) => {
+              if (!response.ok) throw new Error(`Failed to fetch data for category ${categories[index]}`);
               return response.json();
             })
           );
@@ -194,7 +190,6 @@
              <span class="new-price">${formatCurrency(product.price)}</span>`
           : `<span class="price">${formatCurrency(product.price)}</span>`;
 
-        // If there is an array of images, use the first image; otherwise use product.image.
         const imgSrc = Array.isArray(product.images) ? product.images[0] : product.image;
 
         li.innerHTML = `
@@ -223,7 +218,18 @@
     const bindCategoryButtons = () => {
       categoryButtons.forEach(button => {
         button.addEventListener('click', async (event) => {
-          const category = event.currentTarget.getAttribute('data-category');
+          event.stopPropagation();
+          // If the button has a submenu toggle, then do not render products.
+          if (button.classList.contains('has-submenu')) {
+            const expanded = button.getAttribute('aria-expanded') === 'true';
+            button.setAttribute('aria-expanded', String(!expanded));
+            const submenu = button.nextElementSibling;
+            if (submenu && submenu.classList.contains('submenu')) {
+              submenu.style.display = expanded ? 'none' : 'block';
+              return;
+            }
+          }
+          const category = button.getAttribute('data-category');
           await renderProducts(category);
           if (window.gtag) {
             gtag('event', 'select_category', {
@@ -232,25 +238,12 @@
               value: 1,
             });
           }
-          if (nav.classList.contains('active')) {
-            nav.classList.remove('active');
-            menuToggle.setAttribute('aria-expanded', 'false');
-          }
         });
-      });
-    };
-
-    const bindMobileMenu = () => {
-      menuToggle.addEventListener('click', () => {
-        nav.classList.toggle('active');
-        const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
-        menuToggle.setAttribute('aria-expanded', String(!expanded));
       });
     };
 
     const init = async () => {
       bindCategoryButtons();
-      bindMobileMenu();
       const initialCategory = window.location.hash.slice(1) || 'all';
       await renderProducts(initialCategory);
     };
@@ -258,13 +251,21 @@
     return { init };
   })();
 
-  // ------------------------------
-  // Initialize Catalog on DOM Ready
-  // ------------------------------
   const setupCatalog = () => {
     Modal.init();
     Catalog.init();
   };
+
+  // Mobile menu toggle functionality
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.querySelector('nav');
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+      const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', String(!expanded));
+    });
+  });
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', setupCatalog);

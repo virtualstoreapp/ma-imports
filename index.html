@@ -9,7 +9,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FN65CC6C5R"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-FN65CC6C5R');
   </script>
@@ -21,13 +21,25 @@
     </div>
   </header>
 
+  <!-- Horizontal Navbar -->
   <nav aria-label="Main Navigation">
+    <!-- Mobile toggle button -->
     <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
     <ul id="nav-menu">
-      <li><button data-category="all">Início</button></li>
-      <li><button data-category="shoes">Calçados</button></li>
-      <li><button data-category="slippers">Chinelos</button></li>
-      <li><button data-category="tshirts">Camisetas</button></li>
+      <li>
+        <button data-category="all">Início</button>
+      </li>
+      <li>
+        <!-- Parent menu with nested submenu items -->
+        <button class="has-submenu" data-category="shoes" aria-expanded="false">Calçados</button>
+        <ul class="submenu">
+          <li><button data-category="shoes">Calçados</button></li>
+          <li><button data-category="slippers">Chinelos</button></li>
+        </ul>
+      </li>
+      <li>
+        <button data-category="tshirts">Camisetas</button>
+      </li>
     </ul>
   </nav>
 
@@ -36,10 +48,8 @@
     <ul id="product-list"></ul>
   </main>
 
-  <!-- Modal container will be injected by the script -->
-  
   <footer>
-    <p>Versão: 2.0.3 - 0.0.37</p>
+    <p>Versão: 2.0.2 - 0.0.37</p>
   </footer>
 
   <script src="scripts.js"></script>
