@@ -13,32 +13,26 @@ const {
 
 // Mock Google Analytics
 global.gtag = jest.fn();
-
-// Ensure that in tests our catalog always re-initializes.
+// Force reinitialization in tests
 window.__isTest = true;
 
 /**
- * Helper to assert that the category heading and products are rendered,
- * then match the current document snapshot.
- *
- * @param {string} expectedHeading - The expected text content for the category heading.
+ * Asserts that the category heading and products are rendered, then matches snapshot.
+ * @param {string} expectedHeading - Expected category heading.
  */
 const assertRenderedSnapshot = async (expectedHeading) => {
   await waitFor(() => {
     expect(document.getElementById('category-heading')).toHaveTextContent(expectedHeading);
   });
-
   await waitFor(() => {
     const productItems = document.querySelectorAll('#product-list .product-item');
     expect(productItems.length).toBeGreaterThan(0);
   });
-
   expect(document.body.innerHTML).toMatchSnapshot();
 };
 
 /**
- * Helper to click a category button by data-category attribute.
- *
+ * Helper to click a category button.
  * @param {string} category - The category identifier.
  */
 const clickCategoryButton = (category) => {
@@ -49,17 +43,14 @@ const clickCategoryButton = (category) => {
 
 describe('Catalog', () => {
   beforeEach(() => {
-    // Reset the DOM and flags
     document.body.innerHTML = '';
-    // Do NOT delete window.__catalogInitialized here, as __isTest flag is used to force reinitialization.
-    window.location.hash = ''; // Reset hash state
+    window.location.hash = '';
     setupGlobalFetchMock();
-    setupDOM(); // This sets up the necessary markup and initializes the catalog.
+    setupDOM();
   });
 
   describe('Desktop View', () => {
     it('Matches snapshot for "All Products"', async () => {
-      // "All Products" is rendered by default
       await assertRenderedSnapshot("Todos os Produtos");
     });
 
@@ -81,11 +72,10 @@ describe('Catalog', () => {
 
   describe('Mobile View', () => {
     beforeEach(async () => {
-      await setupMobile(); // Initialize mobile menu state
+      await setupMobile();
     });
 
     it('Matches snapshot for "All Products" on mobile', async () => {
-      // "All Products" is rendered by default
       await assertRenderedSnapshot("Todos os Produtos");
     });
 
@@ -102,6 +92,23 @@ describe('Catalog', () => {
     it('Matches snapshot for "Tshirts" on mobile', async () => {
       await selectMobileCategory("tshirts", "Camisetas");
       await assertRenderedSnapshot("Camisetas");
+    });
+
+    it('Displays mobile menu when toggle is clicked', async () => {
+      const menuToggle = document.getElementById('menu-toggle');
+      expect(menuToggle).toBeInTheDocument();
+      fireEvent.click(menuToggle);
+      await waitFor(() => {
+        expect(document.querySelector('nav')).toHaveClass('active');
+      });
+    });
+  });
+
+  describe('Footer', () => {
+    it('Should have centered text', () => {
+      const footer = document.querySelector('footer');
+      expect(footer).toBeInTheDocument();
+      expect(footer).toHaveStyle({ textAlign: 'center' });
     });
   });
 });

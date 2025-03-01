@@ -1,4 +1,3 @@
-// tests/catalogTestUtils.js
 const fs = require('fs');
 const path = require('path');
 const { waitFor, fireEvent } = require('@testing-library/dom');
@@ -6,10 +5,8 @@ require('@testing-library/jest-dom');
 
 /**
  * Reads and parses a JSON file from the products directory.
- *
- * @param {string} fileName - Name of the JSON file to read.
+ * @param {string} fileName - Name of the JSON file.
  * @returns {Object} Parsed JSON content.
- * @throws Will throw an error if the file cannot be read or parsed.
  */
 const readProductsJson = (fileName) => {
   try {
@@ -22,11 +19,10 @@ const readProductsJson = (fileName) => {
 };
 
 /**
- * Sets up a global fetch mock that intercepts requests for product JSON files.
+ * Sets up a global fetch mock for product JSON requests.
  */
 const setupGlobalFetchMock = () => {
   global.fetch = jest.fn((url) => {
-    // Extract category name from URL (e.g., "shoes" from "products/shoes.json")
     const category = url.match(/products\/(.*)\.json/)?.[1];
     if (category) {
       return Promise.resolve({
@@ -39,20 +35,17 @@ const setupGlobalFetchMock = () => {
 };
 
 /**
- * Loads the contents of index.html from disk.
- *
- * @returns {string} The HTML content of index.html.
+ * Loads index.html content from disk.
+ * @returns {string} The HTML content.
  */
 const loadHtml = () => {
   return fs.readFileSync(path.resolve(__dirname, '../index.html'), 'utf8');
 };
 
 /**
- * Initializes the DOM for testing by loading the HTML,
- * resetting modules, and dispatching the DOMContentLoaded event.
+ * Initializes the DOM for testing.
  */
 const setupDOM = () => {
-  // Remove any custom flags to ensure fresh initialization (except __isTest)
   delete window.__catalogInitialized;
   document.documentElement.innerHTML = loadHtml();
   jest.resetModules();
@@ -61,24 +54,17 @@ const setupDOM = () => {
 };
 
 /**
- * Simulates a click on a category button, then waits for the expected updates.
- *
- * @param {string} category - The data-category attribute value.
- * @param {string} expectedHeading - The expected heading text after selection.
- * @returns {Promise<void>}
+ * Simulates clicking a category button and waits for updates.
+ * @param {string} category - The data-category value.
+ * @param {string} expectedHeading - Expected heading after selection.
  */
 const selectCategory = async (category, expectedHeading) => {
   const button = document.querySelector(`nav button[data-category="${category}"]`);
   if (!button) throw new Error(`Button for category '${category}' not found`);
-
   fireEvent.click(button);
-
-  // Wait for the category heading to update
   await waitFor(() => {
     expect(document.getElementById('category-heading').textContent).toBe(expectedHeading);
   });
-
-  // Wait for products to be rendered correctly
   await waitFor(() => {
     const productList = document.getElementById('product-list');
     expect(productList.children.length).toBeGreaterThan(0);
@@ -86,30 +72,22 @@ const selectCategory = async (category, expectedHeading) => {
 };
 
 /**
- * Simulates a mobile menu interaction by resizing the window,
- * triggering the menu toggle, and waiting for the toggle to appear.
- *
- * @returns {Promise<void>}
+ * Sets up mobile view and triggers the menu toggle.
  */
 const setupMobile = async () => {
   window.innerWidth = 375;
   window.dispatchEvent(new Event('resize'));
-
-  // Wait for the mobile menu toggle button to be present
   await waitFor(() => {
     expect(document.getElementById('menu-toggle')).toBeInTheDocument();
   });
-
   const menuButton = document.getElementById('menu-toggle');
   fireEvent.click(menuButton);
 };
 
 /**
- * Combines mobile menu setup and category selection for mobile testing.
- *
- * @param {string} category - The data-category value to select.
- * @param {string} expectedHeading - The expected heading after selection.
- * @returns {Promise<void>}
+ * Combines mobile setup and category selection.
+ * @param {string} category - The data-category value.
+ * @param {string} expectedHeading - Expected heading.
  */
 const selectMobileCategory = async (category, expectedHeading) => {
   await setupMobile();
