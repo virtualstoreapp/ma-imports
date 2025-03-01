@@ -359,6 +359,14 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
             <span class="price">R$&nbsp;79,90</span>
           </div>
         </li><li class="product-item">
+          <img src="images/tshirts/emporio-armani/01030820-emporio-armani.jpeg" alt="[01030820] Emporio Armani">
+          <div class="product-details">
+            <h3>[01030820] Emporio Armani</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
           <img src="images/tshirts/burberry/27021016-burberry.jpeg" alt="[27021016] Burberry">
           <div class="product-details">
             <h3>[27021016] Burberry</h3>
@@ -398,13 +406,37 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;79,90</span>
           </div>
+        </li><li class="product-item">
+          <img src="images/tshirts/hugo-boss/01030810-hugo-boss.jpeg" alt="[01030810] Hugo Boss">
+          <div class="product-details">
+            <h3>[01030810] Hugo Boss</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/tshirts/hugo-boss/01030815-hugo-boss.jpeg" alt="[01030815] Hugo Boss">
+          <div class="product-details">
+            <h3>[01030815] Hugo Boss</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/tshirts/versace/01030813-versace.jpeg" alt="[01030813] Versace">
+          <div class="product-details">
+            <h3>[01030813] Versace</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
         </li></ul>
   </main>
 
   <!-- Modal container will be injected by the script -->
   
   <footer>
-    <p>Versão: 2.0.3 - 0.0.37</p>
+    <p>Versão: 2.0.3 - 0.0.41</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -694,7 +726,7 @@ exports[`Catalog Desktop View Matches snapshot for "Shoes" 1`] = `
   <!-- Modal container will be injected by the script -->
   
   <footer>
-    <p>Versão: 2.0.3 - 0.0.37</p>
+    <p>Versão: 2.0.3 - 0.0.41</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -806,7 +838,7 @@ exports[`Catalog Desktop View Matches snapshot for "Slippers" 1`] = `
   <!-- Modal container will be injected by the script -->
   
   <footer>
-    <p>Versão: 2.0.3 - 0.0.37</p>
+    <p>Versão: 2.0.3 - 0.0.41</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -881,6 +913,14 @@ exports[`Catalog Desktop View Matches snapshot for "Tshirts" 1`] = `
             <span class="price">R$&nbsp;79,90</span>
           </div>
         </li><li class="product-item">
+          <img src="images/tshirts/emporio-armani/01030820-emporio-armani.jpeg" alt="[01030820] Emporio Armani">
+          <div class="product-details">
+            <h3>[01030820] Emporio Armani</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
           <img src="images/tshirts/burberry/27021016-burberry.jpeg" alt="[27021016] Burberry">
           <div class="product-details">
             <h3>[27021016] Burberry</h3>
@@ -920,13 +960,37 @@ exports[`Catalog Desktop View Matches snapshot for "Tshirts" 1`] = `
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;79,90</span>
           </div>
+        </li><li class="product-item">
+          <img src="images/tshirts/hugo-boss/01030810-hugo-boss.jpeg" alt="[01030810] Hugo Boss">
+          <div class="product-details">
+            <h3>[01030810] Hugo Boss</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/tshirts/hugo-boss/01030815-hugo-boss.jpeg" alt="[01030815] Hugo Boss">
+          <div class="product-details">
+            <h3>[01030815] Hugo Boss</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/tshirts/versace/01030813-versace.jpeg" alt="[01030813] Versace">
+          <div class="product-details">
+            <h3>[01030813] Versace</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
         </li></ul>
   </main>
 
   <!-- Modal container will be injected by the script -->
   
   <footer>
-    <p>Versão: 2.0.3 - 0.0.37</p>
+    <p>Versão: 2.0.3 - 0.0.41</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1307,6 +1371,14 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
             <span class="price">R$&nbsp;79,90</span>
           </div>
         </li><li class="product-item">
+          <img src="images/tshirts/emporio-armani/01030820-emporio-armani.jpeg" alt="[01030820] Emporio Armani">
+          <div class="product-details">
+            <h3>[01030820] Emporio Armani</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
           <img src="images/tshirts/burberry/27021016-burberry.jpeg" alt="[27021016] Burberry">
           <div class="product-details">
             <h3>[27021016] Burberry</h3>
@@ -1346,13 +1418,37 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;79,90</span>
           </div>
+        </li><li class="product-item">
+          <img src="images/tshirts/hugo-boss/01030810-hugo-boss.jpeg" alt="[01030810] Hugo Boss">
+          <div class="product-details">
+            <h3>[01030810] Hugo Boss</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/tshirts/hugo-boss/01030815-hugo-boss.jpeg" alt="[01030815] Hugo Boss">
+          <div class="product-details">
+            <h3>[01030815] Hugo Boss</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/tshirts/versace/01030813-versace.jpeg" alt="[01030813] Versace">
+          <div class="product-details">
+            <h3>[01030813] Versace</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
         </li></ul>
   </main>
 
   <!-- Modal container will be injected by the script -->
   
   <footer>
-    <p>Versão: 2.0.3 - 0.0.37</p>
+    <p>Versão: 2.0.3 - 0.0.41</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1642,7 +1738,7 @@ exports[`Catalog Mobile View Matches snapshot for "Shoes" on mobile 1`] = `
   <!-- Modal container will be injected by the script -->
   
   <footer>
-    <p>Versão: 2.0.3 - 0.0.37</p>
+    <p>Versão: 2.0.3 - 0.0.41</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1754,7 +1850,7 @@ exports[`Catalog Mobile View Matches snapshot for "Slippers" on mobile 1`] = `
   <!-- Modal container will be injected by the script -->
   
   <footer>
-    <p>Versão: 2.0.3 - 0.0.37</p>
+    <p>Versão: 2.0.3 - 0.0.41</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1829,6 +1925,14 @@ exports[`Catalog Mobile View Matches snapshot for "Tshirts" on mobile 1`] = `
             <span class="price">R$&nbsp;79,90</span>
           </div>
         </li><li class="product-item">
+          <img src="images/tshirts/emporio-armani/01030820-emporio-armani.jpeg" alt="[01030820] Emporio Armani">
+          <div class="product-details">
+            <h3>[01030820] Emporio Armani</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
           <img src="images/tshirts/burberry/27021016-burberry.jpeg" alt="[27021016] Burberry">
           <div class="product-details">
             <h3>[27021016] Burberry</h3>
@@ -1868,13 +1972,37 @@ exports[`Catalog Mobile View Matches snapshot for "Tshirts" on mobile 1`] = `
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;79,90</span>
           </div>
+        </li><li class="product-item">
+          <img src="images/tshirts/hugo-boss/01030810-hugo-boss.jpeg" alt="[01030810] Hugo Boss">
+          <div class="product-details">
+            <h3>[01030810] Hugo Boss</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/tshirts/hugo-boss/01030815-hugo-boss.jpeg" alt="[01030815] Hugo Boss">
+          <div class="product-details">
+            <h3>[01030815] Hugo Boss</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/tshirts/versace/01030813-versace.jpeg" alt="[01030813] Versace">
+          <div class="product-details">
+            <h3>[01030813] Versace</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
         </li></ul>
   </main>
 
   <!-- Modal container will be injected by the script -->
   
   <footer>
-    <p>Versão: 2.0.3 - 0.0.37</p>
+    <p>Versão: 2.0.3 - 0.0.41</p>
   </footer>
 
   <script src="scripts.js"></script>
