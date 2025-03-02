@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
+exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
 "
   <header>
     <div class="header-logo">
@@ -8,13 +8,43 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
     </div>
   </header>
 
+  <!-- Navigation -->
   <nav aria-label="Main Navigation">
+    <!-- Mobile toggle button -->
     <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
     <ul id="nav-menu">
-      <li><button data-category="all">Início</button></li>
-      <li><button data-category="shoes">Calçados</button></li>
-      <li><button data-category="slippers">Chinelos</button></li>
-      <li><button data-category="tshirts">Camisetas</button></li>
+      <li class="menu-item">
+        <button data-category="all">Início</button>
+      </li>
+      <li class="menu-item has-submenu">
+        <button data-category="fashion-category" aria-expanded="false">Moda</button>
+        <ul class="submenu">
+          <li class="menu-item has-submenu">
+            <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
+            <ul class="submenu">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu">
+                  <li class="menu-item">
+                    <button data-category="tshirts-man">Camisetas</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu">
+                  <li class="menu-item">
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
     </ul>
   </nav>
 
@@ -27,7 +57,7 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
             
             <span class="size">Tamanho: 37</span>
             <span class="old-price">R$&nbsp;259,00</span>
-             <span class="new-price">R$&nbsp;249,00</span>
+               <span class="new-price">R$&nbsp;249,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12022216-nike-shox.jpeg" alt="[12022216] Nike Shox">
@@ -36,7 +66,7 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
             
             <span class="size">Tamanho: 37</span>
             <span class="old-price">R$&nbsp;259,00</span>
-             <span class="new-price">R$&nbsp;249,00</span>
+               <span class="new-price">R$&nbsp;249,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12021724-nike-shox.jpeg" alt="[12021724] Nike Shox">
@@ -45,7 +75,7 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
             
             <span class="size">Tamanho: 40</span>
             <span class="old-price">R$&nbsp;269,00</span>
-             <span class="new-price">R$&nbsp;259,00</span>
+               <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12022214-nike-shox.jpeg" alt="[12022214] Nike Shox">
@@ -54,7 +84,7 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
             
             <span class="size">Tamanho: 40</span>
             <span class="old-price">R$&nbsp;269,00</span>
-             <span class="new-price">R$&nbsp;259,00</span>
+               <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12021722-nike-shox-neymar.jpeg" alt="[12021722] Nike Shox Neymar">
@@ -63,7 +93,7 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
             
             <span class="size">Tamanho: 41</span>
             <span class="old-price">R$&nbsp;269,00</span>
-             <span class="new-price">R$&nbsp;259,00</span>
+               <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12021734-nike-shox-neymar.jpeg" alt="[12021734] Nike Shox Neymar">
@@ -72,7 +102,7 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
             
             <span class="size">Tamanho: 41</span>
             <span class="old-price">R$&nbsp;269,00</span>
-             <span class="new-price">R$&nbsp;259,00</span>
+               <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12021718-nike-r4.jpeg" alt="[12021718] Nike R4">
@@ -81,7 +111,7 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
             
             <span class="size">Tamanho: 34</span>
             <span class="old-price">R$&nbsp;229,00</span>
-             <span class="new-price">R$&nbsp;219,00</span>
+               <span class="new-price">R$&nbsp;219,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12021716-nike-r4.jpeg" alt="[12021716] Nike R4">
@@ -90,7 +120,7 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
             
             <span class="size">Tamanho: 35</span>
             <span class="old-price">R$&nbsp;229,00</span>
-             <span class="new-price">R$&nbsp;219,00</span>
+               <span class="new-price">R$&nbsp;219,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12021703-nike-air-force.jpeg" alt="[12021703] Nike Air Force">
@@ -99,7 +129,7 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
             
             <span class="size">Tamanho: 39</span>
             <span class="old-price">R$&nbsp;219,00</span>
-             <span class="new-price">R$&nbsp;209,00</span>
+               <span class="new-price">R$&nbsp;209,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12021710-nike-air-force.jpeg" alt="[12021710] Nike Air Force">
@@ -108,7 +138,7 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
             
             <span class="size">Tamanho: 42</span>
             <span class="old-price">R$&nbsp;269,00</span>
-             <span class="new-price">R$&nbsp;259,00</span>
+               <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12021739-nike-air-force.jpeg" alt="[12021739] Nike Air Force">
@@ -117,7 +147,7 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
             
             <span class="size">Tamanho: 42</span>
             <span class="old-price">R$&nbsp;219,00</span>
-             <span class="new-price">R$&nbsp;209,00</span>
+               <span class="new-price">R$&nbsp;209,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12021747-nike-air-force.jpeg" alt="[12021747] Nike Air Force">
@@ -126,7 +156,7 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
             
             <span class="size">Tamanho: 38, 41, 42</span>
             <span class="old-price">R$&nbsp;229,00</span>
-             <span class="new-price">R$&nbsp;219,00</span>
+               <span class="new-price">R$&nbsp;219,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12021737-nike-dunk-low-pro.jpeg" alt="[12021737] Nike Dunk Low Pro">
@@ -135,7 +165,7 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
             
             <span class="size">Tamanho: 35</span>
             <span class="old-price">R$&nbsp;159,00</span>
-             <span class="new-price">R$&nbsp;149,00</span>
+               <span class="new-price">R$&nbsp;149,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12021719-nike-dunk-low-pro.jpeg" alt="[12021719] Nike Dunk Low Pro">
@@ -144,7 +174,7 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
             
             <span class="size">Tamanho: 36</span>
             <span class="old-price">R$&nbsp;159,00</span>
-             <span class="new-price">R$&nbsp;149,00</span>
+               <span class="new-price">R$&nbsp;149,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12022152-nike-dunk-low-pro.jpeg" alt="[12022152] Nike Dunk Low Pro">
@@ -153,7 +183,7 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
             
             <span class="size">Tamanho: 39, 42</span>
             <span class="old-price">R$&nbsp;219,00</span>
-             <span class="new-price">R$&nbsp;209,00</span>
+               <span class="new-price">R$&nbsp;209,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12021733-nike-dunk-low-pro.jpeg" alt="[12021733] Nike Dunk Low Pro">
@@ -162,7 +192,7 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
             
             <span class="size">Tamanho: 42</span>
             <span class="old-price">R$&nbsp;219,00</span>
-             <span class="new-price">R$&nbsp;209,00</span>
+               <span class="new-price">R$&nbsp;209,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12021707-nike-jordan.jpeg" alt="[12021707] Nike Jordan">
@@ -171,7 +201,7 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
             
             <span class="size">Tamanho: 38</span>
             <span class="old-price">R$&nbsp;169,00</span>
-             <span class="new-price">R$&nbsp;159,00</span>
+               <span class="new-price">R$&nbsp;159,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12022200-nike-air-jordan.jpeg" alt="[12022200] Nike Air Jordan">
@@ -180,7 +210,7 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
             
             <span class="size">Tamanho: 41</span>
             <span class="old-price">R$&nbsp;229,00</span>
-             <span class="new-price">R$&nbsp;219,00</span>
+               <span class="new-price">R$&nbsp;219,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/adidas/12022201-adidas-campus.jpeg" alt="[12022201] Adidas Campus">
@@ -189,7 +219,7 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
             
             <span class="size">Tamanho: 35</span>
             <span class="old-price">R$&nbsp;159,00</span>
-             <span class="new-price">R$&nbsp;149,00</span>
+               <span class="new-price">R$&nbsp;149,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/adidas/12022202-adidas-campus.jpeg" alt="[12022202] Adidas Campus">
@@ -198,7 +228,7 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
             
             <span class="size">Tamanho: 35</span>
             <span class="old-price">R$&nbsp;259,00</span>
-             <span class="new-price">R$&nbsp;249,00</span>
+               <span class="new-price">R$&nbsp;249,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/adidas/12022208-adidas-campus.jpeg" alt="[12022208] Adidas Campus">
@@ -207,7 +237,7 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
             
             <span class="size">Tamanho: 36</span>
             <span class="old-price">R$&nbsp;159,00</span>
-             <span class="new-price">R$&nbsp;149,00</span>
+               <span class="new-price">R$&nbsp;149,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/adidas/12022211-adidas-campus.jpeg" alt="[12022211] Adidas Campus">
@@ -216,7 +246,7 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
             
             <span class="size">Tamanho: 39</span>
             <span class="old-price">R$&nbsp;159,00</span>
-             <span class="new-price">R$&nbsp;149,00</span>
+               <span class="new-price">R$&nbsp;149,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/adidas/12022155-adidas-campus.jpeg" alt="[12022155] Adidas Campus">
@@ -225,7 +255,7 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
             
             <span class="size">Tamanho: 41</span>
             <span class="old-price">R$&nbsp;159,00</span>
-             <span class="new-price">R$&nbsp;149,00</span>
+               <span class="new-price">R$&nbsp;149,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/adidas/12022210-adidas-campus.jpeg" alt="[12022210] Adidas Campus">
@@ -234,7 +264,7 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
             
             <span class="size">Tamanho: 42</span>
             <span class="old-price">R$&nbsp;159,00</span>
-             <span class="new-price">R$&nbsp;149,00</span>
+               <span class="new-price">R$&nbsp;149,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/vans/12021757-vans.jpeg" alt="[12021757] Vans">
@@ -243,7 +273,7 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
             
             <span class="size">Tamanho: 36</span>
             <span class="old-price">R$&nbsp;259,00</span>
-             <span class="new-price">R$&nbsp;249,00</span>
+               <span class="new-price">R$&nbsp;249,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/asics/12021714-asics.jpeg" alt="[12021714] Asics">
@@ -260,71 +290,7 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
             
             <span class="size">Tamanho: 41, 42</span>
             <span class="old-price">R$&nbsp;269,00</span>
-             <span class="new-price">R$&nbsp;259,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/slippers/tommy-hilfiger/17021140-tommy-hilfiger.jpeg" alt="[17021140] Tommy Hilfiger">
-          <div class="product-details">
-            <h3>[17021140] Tommy Hilfiger</h3>
-            
-            <span class="size">Tamanho: 37/38, 39/40</span>
-            <span class="price">R$&nbsp;29,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
-          <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
-          <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
-          <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
-          <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
-          <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
-          <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
-          <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
+               <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/tshirts/louis-vuitton/27020956-louis-vuitton.jpeg" alt="[27020956] Louis Vuitton">
@@ -430,345 +396,7 @@ exports[`Catalog Desktop View Matches snapshot for "All Products" 1`] = `
             <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;79,90</span>
           </div>
-        </li></ul>
-  </main>
-
-  <!-- Modal container will be injected by the script -->
-  
-  <footer>
-    <p>Versão: 2.0.3 - 0.0.41</p>
-  </footer>
-
-  <script src="scripts.js"></script>
-
-
-<div id="product-modal">
-        <div id="modal-content">
-          <button id="modal-close">X</button>
-          <div id="modal-image-container">
-            <img id="modal-image" src="" alt="">
-          </div>
-          <div id="modal-controls">
-            <button id="prev-image">&lt;</button>
-            <button id="zoom-out">-</button>
-            <button id="zoom-in">+</button>
-            <button id="next-image">&gt;</button>
-          </div>
-        </div>
-      </div>"
-`;
-
-exports[`Catalog Desktop View Matches snapshot for "Shoes" 1`] = `
-"
-  <header>
-    <div class="header-logo">
-      <img src="images/logo.jpeg" alt="M/A Imports Logo">
-    </div>
-  </header>
-
-  <nav aria-label="Main Navigation">
-    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
-    <ul id="nav-menu">
-      <li><button data-category="all">Início</button></li>
-      <li><button data-category="shoes">Calçados</button></li>
-      <li><button data-category="slippers">Chinelos</button></li>
-      <li><button data-category="tshirts">Camisetas</button></li>
-    </ul>
-  </nav>
-
-  <main>
-    <h2 id="category-heading">Calçados</h2>
-    <ul id="product-list"><li class="product-item">
-          <img src="images/shoes/nike/12021658-nike-shox.jpeg" alt="[12021658] Nike Shox">
-          <div class="product-details">
-            <h3>[12021658] Nike Shox</h3>
-            
-            <span class="size">Tamanho: 37</span>
-            <span class="old-price">R$&nbsp;259,00</span>
-             <span class="new-price">R$&nbsp;249,00</span>
-          </div>
         </li><li class="product-item">
-          <img src="images/shoes/nike/12022216-nike-shox.jpeg" alt="[12022216] Nike Shox">
-          <div class="product-details">
-            <h3>[12022216] Nike Shox</h3>
-            
-            <span class="size">Tamanho: 37</span>
-            <span class="old-price">R$&nbsp;259,00</span>
-             <span class="new-price">R$&nbsp;249,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/nike/12021724-nike-shox.jpeg" alt="[12021724] Nike Shox">
-          <div class="product-details">
-            <h3>[12021724] Nike Shox</h3>
-            
-            <span class="size">Tamanho: 40</span>
-            <span class="old-price">R$&nbsp;269,00</span>
-             <span class="new-price">R$&nbsp;259,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/nike/12022214-nike-shox.jpeg" alt="[12022214] Nike Shox">
-          <div class="product-details">
-            <h3>[12022214] Nike Shox</h3>
-            
-            <span class="size">Tamanho: 40</span>
-            <span class="old-price">R$&nbsp;269,00</span>
-             <span class="new-price">R$&nbsp;259,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/nike/12021722-nike-shox-neymar.jpeg" alt="[12021722] Nike Shox Neymar">
-          <div class="product-details">
-            <h3>[12021722] Nike Shox Neymar</h3>
-            
-            <span class="size">Tamanho: 41</span>
-            <span class="old-price">R$&nbsp;269,00</span>
-             <span class="new-price">R$&nbsp;259,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/nike/12021734-nike-shox-neymar.jpeg" alt="[12021734] Nike Shox Neymar">
-          <div class="product-details">
-            <h3>[12021734] Nike Shox Neymar</h3>
-            
-            <span class="size">Tamanho: 41</span>
-            <span class="old-price">R$&nbsp;269,00</span>
-             <span class="new-price">R$&nbsp;259,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/nike/12021718-nike-r4.jpeg" alt="[12021718] Nike R4">
-          <div class="product-details">
-            <h3>[12021718] Nike R4</h3>
-            
-            <span class="size">Tamanho: 34</span>
-            <span class="old-price">R$&nbsp;229,00</span>
-             <span class="new-price">R$&nbsp;219,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/nike/12021716-nike-r4.jpeg" alt="[12021716] Nike R4">
-          <div class="product-details">
-            <h3>[12021716] Nike R4</h3>
-            
-            <span class="size">Tamanho: 35</span>
-            <span class="old-price">R$&nbsp;229,00</span>
-             <span class="new-price">R$&nbsp;219,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/nike/12021703-nike-air-force.jpeg" alt="[12021703] Nike Air Force">
-          <div class="product-details">
-            <h3>[12021703] Nike Air Force</h3>
-            
-            <span class="size">Tamanho: 39</span>
-            <span class="old-price">R$&nbsp;219,00</span>
-             <span class="new-price">R$&nbsp;209,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/nike/12021710-nike-air-force.jpeg" alt="[12021710] Nike Air Force">
-          <div class="product-details">
-            <h3>[12021710] Nike Air Force</h3>
-            
-            <span class="size">Tamanho: 42</span>
-            <span class="old-price">R$&nbsp;269,00</span>
-             <span class="new-price">R$&nbsp;259,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/nike/12021739-nike-air-force.jpeg" alt="[12021739] Nike Air Force">
-          <div class="product-details">
-            <h3>[12021739] Nike Air Force</h3>
-            
-            <span class="size">Tamanho: 42</span>
-            <span class="old-price">R$&nbsp;219,00</span>
-             <span class="new-price">R$&nbsp;209,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/nike/12021747-nike-air-force.jpeg" alt="[12021747] Nike Air Force">
-          <div class="product-details">
-            <h3>[12021747] Nike Air Force</h3>
-            
-            <span class="size">Tamanho: 38, 41, 42</span>
-            <span class="old-price">R$&nbsp;229,00</span>
-             <span class="new-price">R$&nbsp;219,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/nike/12021737-nike-dunk-low-pro.jpeg" alt="[12021737] Nike Dunk Low Pro">
-          <div class="product-details">
-            <h3>[12021737] Nike Dunk Low Pro</h3>
-            
-            <span class="size">Tamanho: 35</span>
-            <span class="old-price">R$&nbsp;159,00</span>
-             <span class="new-price">R$&nbsp;149,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/nike/12021719-nike-dunk-low-pro.jpeg" alt="[12021719] Nike Dunk Low Pro">
-          <div class="product-details">
-            <h3>[12021719] Nike Dunk Low Pro</h3>
-            
-            <span class="size">Tamanho: 36</span>
-            <span class="old-price">R$&nbsp;159,00</span>
-             <span class="new-price">R$&nbsp;149,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/nike/12022152-nike-dunk-low-pro.jpeg" alt="[12022152] Nike Dunk Low Pro">
-          <div class="product-details">
-            <h3>[12022152] Nike Dunk Low Pro</h3>
-            
-            <span class="size">Tamanho: 39, 42</span>
-            <span class="old-price">R$&nbsp;219,00</span>
-             <span class="new-price">R$&nbsp;209,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/nike/12021733-nike-dunk-low-pro.jpeg" alt="[12021733] Nike Dunk Low Pro">
-          <div class="product-details">
-            <h3>[12021733] Nike Dunk Low Pro</h3>
-            
-            <span class="size">Tamanho: 42</span>
-            <span class="old-price">R$&nbsp;219,00</span>
-             <span class="new-price">R$&nbsp;209,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/nike/12021707-nike-jordan.jpeg" alt="[12021707] Nike Jordan">
-          <div class="product-details">
-            <h3>[12021707] Nike Jordan</h3>
-            
-            <span class="size">Tamanho: 38</span>
-            <span class="old-price">R$&nbsp;169,00</span>
-             <span class="new-price">R$&nbsp;159,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/nike/12022200-nike-air-jordan.jpeg" alt="[12022200] Nike Air Jordan">
-          <div class="product-details">
-            <h3>[12022200] Nike Air Jordan</h3>
-            
-            <span class="size">Tamanho: 41</span>
-            <span class="old-price">R$&nbsp;229,00</span>
-             <span class="new-price">R$&nbsp;219,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/adidas/12022201-adidas-campus.jpeg" alt="[12022201] Adidas Campus">
-          <div class="product-details">
-            <h3>[12022201] Adidas Campus</h3>
-            
-            <span class="size">Tamanho: 35</span>
-            <span class="old-price">R$&nbsp;159,00</span>
-             <span class="new-price">R$&nbsp;149,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/adidas/12022202-adidas-campus.jpeg" alt="[12022202] Adidas Campus">
-          <div class="product-details">
-            <h3>[12022202] Adidas Campus</h3>
-            
-            <span class="size">Tamanho: 35</span>
-            <span class="old-price">R$&nbsp;259,00</span>
-             <span class="new-price">R$&nbsp;249,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/adidas/12022208-adidas-campus.jpeg" alt="[12022208] Adidas Campus">
-          <div class="product-details">
-            <h3>[12022208] Adidas Campus</h3>
-            
-            <span class="size">Tamanho: 36</span>
-            <span class="old-price">R$&nbsp;159,00</span>
-             <span class="new-price">R$&nbsp;149,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/adidas/12022211-adidas-campus.jpeg" alt="[12022211] Adidas Campus">
-          <div class="product-details">
-            <h3>[12022211] Adidas Campus</h3>
-            
-            <span class="size">Tamanho: 39</span>
-            <span class="old-price">R$&nbsp;159,00</span>
-             <span class="new-price">R$&nbsp;149,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/adidas/12022155-adidas-campus.jpeg" alt="[12022155] Adidas Campus">
-          <div class="product-details">
-            <h3>[12022155] Adidas Campus</h3>
-            
-            <span class="size">Tamanho: 41</span>
-            <span class="old-price">R$&nbsp;159,00</span>
-             <span class="new-price">R$&nbsp;149,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/adidas/12022210-adidas-campus.jpeg" alt="[12022210] Adidas Campus">
-          <div class="product-details">
-            <h3>[12022210] Adidas Campus</h3>
-            
-            <span class="size">Tamanho: 42</span>
-            <span class="old-price">R$&nbsp;159,00</span>
-             <span class="new-price">R$&nbsp;149,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/vans/12021757-vans.jpeg" alt="[12021757] Vans">
-          <div class="product-details">
-            <h3>[12021757] Vans</h3>
-            
-            <span class="size">Tamanho: 36</span>
-            <span class="old-price">R$&nbsp;259,00</span>
-             <span class="new-price">R$&nbsp;249,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/asics/12021714-asics.jpeg" alt="[12021714] Asics">
-          <div class="product-details">
-            <h3>[12021714] Asics</h3>
-            
-            <span class="size">Tamanho: 38</span>
-            <span class="price">R$&nbsp;89,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/asics/12021736-asics.jpeg" alt="[12021736] Asics">
-          <div class="product-details">
-            <h3>[12021736] Asics</h3>
-            
-            <span class="size">Tamanho: 41, 42</span>
-            <span class="old-price">R$&nbsp;269,00</span>
-             <span class="new-price">R$&nbsp;259,00</span>
-          </div>
-        </li></ul>
-  </main>
-
-  <!-- Modal container will be injected by the script -->
-  
-  <footer>
-    <p>Versão: 2.0.3 - 0.0.41</p>
-  </footer>
-
-  <script src="scripts.js"></script>
-
-
-<div id="product-modal">
-        <div id="modal-content">
-          <button id="modal-close">X</button>
-          <div id="modal-image-container">
-            <img id="modal-image" src="" alt="">
-          </div>
-          <div id="modal-controls">
-            <button id="prev-image">&lt;</button>
-            <button id="zoom-out">-</button>
-            <button id="zoom-in">+</button>
-            <button id="next-image">&gt;</button>
-          </div>
-        </div>
-      </div>"
-`;
-
-exports[`Catalog Desktop View Matches snapshot for "Slippers" 1`] = `
-"
-  <header>
-    <div class="header-logo">
-      <img src="images/logo.jpeg" alt="M/A Imports Logo">
-    </div>
-  </header>
-
-  <nav aria-label="Main Navigation">
-    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
-    <ul id="nav-menu">
-      <li><button data-category="all">Início</button></li>
-      <li><button data-category="shoes">Calçados</button></li>
-      <li><button data-category="slippers">Chinelos</button></li>
-      <li><button data-category="tshirts">Camisetas</button></li>
-    </ul>
-  </nav>
-
-  <main>
-    <h2 id="category-heading">Chinelos</h2>
-    <ul id="product-list"><li class="product-item">
           <img src="images/slippers/tommy-hilfiger/17021140-tommy-hilfiger.jpeg" alt="[17021140] Tommy Hilfiger">
           <div class="product-details">
             <h3>[17021140] Tommy Hilfiger</h3>
@@ -835,10 +463,8 @@ exports[`Catalog Desktop View Matches snapshot for "Slippers" 1`] = `
         </li></ul>
   </main>
 
-  <!-- Modal container will be injected by the script -->
-  
   <footer>
-    <p>Versão: 2.0.3 - 0.0.41</p>
+    <p>Versão: 2.0.4 - 0.0.41</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -860,7 +486,7 @@ exports[`Catalog Desktop View Matches snapshot for "Slippers" 1`] = `
       </div>"
 `;
 
-exports[`Catalog Desktop View Matches snapshot for "Tshirts" 1`] = `
+exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
 "
   <header>
     <div class="header-logo">
@@ -868,165 +494,43 @@ exports[`Catalog Desktop View Matches snapshot for "Tshirts" 1`] = `
     </div>
   </header>
 
-  <nav aria-label="Main Navigation">
-    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
-    <ul id="nav-menu">
-      <li><button data-category="all">Início</button></li>
-      <li><button data-category="shoes">Calçados</button></li>
-      <li><button data-category="slippers">Chinelos</button></li>
-      <li><button data-category="tshirts">Camisetas</button></li>
-    </ul>
-  </nav>
-
-  <main>
-    <h2 id="category-heading">Camisetas</h2>
-    <ul id="product-list"><li class="product-item">
-          <img src="images/tshirts/louis-vuitton/27020956-louis-vuitton.jpeg" alt="[27020956] Louis Vuitton">
-          <div class="product-details">
-            <h3>[27020956] Louis Vuitton</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/tshirts/louis-vuitton/2802112-louis-vuitton.jpeg" alt="[2802112] Louis Vuitton">
-          <div class="product-details">
-            <h3>[2802112] Louis Vuitton</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: M</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/tshirts/dolce-gabbana/27020957-dolce-gabbana.jpeg" alt="[27020957] Dolce &amp; Gabbana">
-          <div class="product-details">
-            <h3>[27020957] Dolce &amp; Gabbana</h3>
-            <p class="description">Algodão Peruano</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;79,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/tshirts/emporio-armani/27021001-emporio-armani.jpeg" alt="[27021001] Emporio Armani">
-          <div class="product-details">
-            <h3>[27021001] Emporio Armani</h3>
-            <p class="description">Algodão Peruano</p>
-            <span class="size">Tamanho: M</span>
-            <span class="price">R$&nbsp;79,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/tshirts/emporio-armani/01030820-emporio-armani.jpeg" alt="[01030820] Emporio Armani">
-          <div class="product-details">
-            <h3>[01030820] Emporio Armani</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: M</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/tshirts/burberry/27021016-burberry.jpeg" alt="[27021016] Burberry">
-          <div class="product-details">
-            <h3>[27021016] Burberry</h3>
-            <p class="description">Algodão Peruano</p>
-            <span class="size">Tamanho: M</span>
-            <span class="price">R$&nbsp;79,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/tshirts/balmain/28021105-balmain.jpeg" alt="[28021105] Balmain">
-          <div class="product-details">
-            <h3>[28021105] Balmain</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/tshirts/tommy-hilfiger/28021109-tommy-hilfiger.jpeg" alt="[28021109] Tommy Hilfiger">
-          <div class="product-details">
-            <h3>[28021109] Tommy Hilfiger</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/tshirts/tommy-hilfiger/28021122-tommy-hilfiger.jpeg" alt="[28021122] Tommy Hilfiger">
-          <div class="product-details">
-            <h3>[28021122] Tommy Hilfiger</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/tshirts/nike/28021120-nike-front.jpeg" alt="[28021120] Nike">
-          <div class="product-details">
-            <h3>[28021120] Nike</h3>
-            <p class="description">Algodão Peruano</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;79,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/tshirts/hugo-boss/01030810-hugo-boss.jpeg" alt="[01030810] Hugo Boss">
-          <div class="product-details">
-            <h3>[01030810] Hugo Boss</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/tshirts/hugo-boss/01030815-hugo-boss.jpeg" alt="[01030815] Hugo Boss">
-          <div class="product-details">
-            <h3>[01030815] Hugo Boss</h3>
-            <p class="description">Algodão Peruano</p>
-            <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;79,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/tshirts/versace/01030813-versace.jpeg" alt="[01030813] Versace">
-          <div class="product-details">
-            <h3>[01030813] Versace</h3>
-            <p class="description">Algodão Peruano</p>
-            <span class="size">Tamanho: M</span>
-            <span class="price">R$&nbsp;79,90</span>
-          </div>
-        </li></ul>
-  </main>
-
-  <!-- Modal container will be injected by the script -->
-  
-  <footer>
-    <p>Versão: 2.0.3 - 0.0.41</p>
-  </footer>
-
-  <script src="scripts.js"></script>
-
-
-<div id="product-modal">
-        <div id="modal-content">
-          <button id="modal-close">X</button>
-          <div id="modal-image-container">
-            <img id="modal-image" src="" alt="">
-          </div>
-          <div id="modal-controls">
-            <button id="prev-image">&lt;</button>
-            <button id="zoom-out">-</button>
-            <button id="zoom-in">+</button>
-            <button id="next-image">&gt;</button>
-          </div>
-        </div>
-      </div>"
-`;
-
-exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] = `
-"
-  <header>
-    <div class="header-logo">
-      <img src="images/logo.jpeg" alt="M/A Imports Logo">
-    </div>
-  </header>
-
+  <!-- Navigation -->
   <nav aria-label="Main Navigation" class="active">
+    <!-- Mobile toggle button -->
     <button id="menu-toggle" aria-expanded="true" aria-controls="nav-menu">☰</button>
     <ul id="nav-menu">
-      <li><button data-category="all">Início</button></li>
-      <li><button data-category="shoes">Calçados</button></li>
-      <li><button data-category="slippers">Chinelos</button></li>
-      <li><button data-category="tshirts">Camisetas</button></li>
+      <li class="menu-item">
+        <button data-category="all">Início</button>
+      </li>
+      <li class="menu-item has-submenu">
+        <button data-category="fashion-category" aria-expanded="false">Moda</button>
+        <ul class="submenu">
+          <li class="menu-item has-submenu">
+            <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
+            <ul class="submenu">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu">
+                  <li class="menu-item">
+                    <button data-category="tshirts-man">Camisetas</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu">
+                  <li class="menu-item">
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
     </ul>
   </nav>
 
@@ -1039,7 +543,7 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
             
             <span class="size">Tamanho: 37</span>
             <span class="old-price">R$&nbsp;259,00</span>
-             <span class="new-price">R$&nbsp;249,00</span>
+               <span class="new-price">R$&nbsp;249,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12022216-nike-shox.jpeg" alt="[12022216] Nike Shox">
@@ -1048,7 +552,7 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
             
             <span class="size">Tamanho: 37</span>
             <span class="old-price">R$&nbsp;259,00</span>
-             <span class="new-price">R$&nbsp;249,00</span>
+               <span class="new-price">R$&nbsp;249,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12021724-nike-shox.jpeg" alt="[12021724] Nike Shox">
@@ -1057,7 +561,7 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
             
             <span class="size">Tamanho: 40</span>
             <span class="old-price">R$&nbsp;269,00</span>
-             <span class="new-price">R$&nbsp;259,00</span>
+               <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12022214-nike-shox.jpeg" alt="[12022214] Nike Shox">
@@ -1066,7 +570,7 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
             
             <span class="size">Tamanho: 40</span>
             <span class="old-price">R$&nbsp;269,00</span>
-             <span class="new-price">R$&nbsp;259,00</span>
+               <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12021722-nike-shox-neymar.jpeg" alt="[12021722] Nike Shox Neymar">
@@ -1075,7 +579,7 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
             
             <span class="size">Tamanho: 41</span>
             <span class="old-price">R$&nbsp;269,00</span>
-             <span class="new-price">R$&nbsp;259,00</span>
+               <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12021734-nike-shox-neymar.jpeg" alt="[12021734] Nike Shox Neymar">
@@ -1084,7 +588,7 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
             
             <span class="size">Tamanho: 41</span>
             <span class="old-price">R$&nbsp;269,00</span>
-             <span class="new-price">R$&nbsp;259,00</span>
+               <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12021718-nike-r4.jpeg" alt="[12021718] Nike R4">
@@ -1093,7 +597,7 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
             
             <span class="size">Tamanho: 34</span>
             <span class="old-price">R$&nbsp;229,00</span>
-             <span class="new-price">R$&nbsp;219,00</span>
+               <span class="new-price">R$&nbsp;219,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12021716-nike-r4.jpeg" alt="[12021716] Nike R4">
@@ -1102,7 +606,7 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
             
             <span class="size">Tamanho: 35</span>
             <span class="old-price">R$&nbsp;229,00</span>
-             <span class="new-price">R$&nbsp;219,00</span>
+               <span class="new-price">R$&nbsp;219,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12021703-nike-air-force.jpeg" alt="[12021703] Nike Air Force">
@@ -1111,7 +615,7 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
             
             <span class="size">Tamanho: 39</span>
             <span class="old-price">R$&nbsp;219,00</span>
-             <span class="new-price">R$&nbsp;209,00</span>
+               <span class="new-price">R$&nbsp;209,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12021710-nike-air-force.jpeg" alt="[12021710] Nike Air Force">
@@ -1120,7 +624,7 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
             
             <span class="size">Tamanho: 42</span>
             <span class="old-price">R$&nbsp;269,00</span>
-             <span class="new-price">R$&nbsp;259,00</span>
+               <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12021739-nike-air-force.jpeg" alt="[12021739] Nike Air Force">
@@ -1129,7 +633,7 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
             
             <span class="size">Tamanho: 42</span>
             <span class="old-price">R$&nbsp;219,00</span>
-             <span class="new-price">R$&nbsp;209,00</span>
+               <span class="new-price">R$&nbsp;209,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12021747-nike-air-force.jpeg" alt="[12021747] Nike Air Force">
@@ -1138,7 +642,7 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
             
             <span class="size">Tamanho: 38, 41, 42</span>
             <span class="old-price">R$&nbsp;229,00</span>
-             <span class="new-price">R$&nbsp;219,00</span>
+               <span class="new-price">R$&nbsp;219,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12021737-nike-dunk-low-pro.jpeg" alt="[12021737] Nike Dunk Low Pro">
@@ -1147,7 +651,7 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
             
             <span class="size">Tamanho: 35</span>
             <span class="old-price">R$&nbsp;159,00</span>
-             <span class="new-price">R$&nbsp;149,00</span>
+               <span class="new-price">R$&nbsp;149,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12021719-nike-dunk-low-pro.jpeg" alt="[12021719] Nike Dunk Low Pro">
@@ -1156,7 +660,7 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
             
             <span class="size">Tamanho: 36</span>
             <span class="old-price">R$&nbsp;159,00</span>
-             <span class="new-price">R$&nbsp;149,00</span>
+               <span class="new-price">R$&nbsp;149,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12022152-nike-dunk-low-pro.jpeg" alt="[12022152] Nike Dunk Low Pro">
@@ -1165,7 +669,7 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
             
             <span class="size">Tamanho: 39, 42</span>
             <span class="old-price">R$&nbsp;219,00</span>
-             <span class="new-price">R$&nbsp;209,00</span>
+               <span class="new-price">R$&nbsp;209,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12021733-nike-dunk-low-pro.jpeg" alt="[12021733] Nike Dunk Low Pro">
@@ -1174,7 +678,7 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
             
             <span class="size">Tamanho: 42</span>
             <span class="old-price">R$&nbsp;219,00</span>
-             <span class="new-price">R$&nbsp;209,00</span>
+               <span class="new-price">R$&nbsp;209,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12021707-nike-jordan.jpeg" alt="[12021707] Nike Jordan">
@@ -1183,7 +687,7 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
             
             <span class="size">Tamanho: 38</span>
             <span class="old-price">R$&nbsp;169,00</span>
-             <span class="new-price">R$&nbsp;159,00</span>
+               <span class="new-price">R$&nbsp;159,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/nike/12022200-nike-air-jordan.jpeg" alt="[12022200] Nike Air Jordan">
@@ -1192,7 +696,7 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
             
             <span class="size">Tamanho: 41</span>
             <span class="old-price">R$&nbsp;229,00</span>
-             <span class="new-price">R$&nbsp;219,00</span>
+               <span class="new-price">R$&nbsp;219,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/adidas/12022201-adidas-campus.jpeg" alt="[12022201] Adidas Campus">
@@ -1201,7 +705,7 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
             
             <span class="size">Tamanho: 35</span>
             <span class="old-price">R$&nbsp;159,00</span>
-             <span class="new-price">R$&nbsp;149,00</span>
+               <span class="new-price">R$&nbsp;149,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/adidas/12022202-adidas-campus.jpeg" alt="[12022202] Adidas Campus">
@@ -1210,7 +714,7 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
             
             <span class="size">Tamanho: 35</span>
             <span class="old-price">R$&nbsp;259,00</span>
-             <span class="new-price">R$&nbsp;249,00</span>
+               <span class="new-price">R$&nbsp;249,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/adidas/12022208-adidas-campus.jpeg" alt="[12022208] Adidas Campus">
@@ -1219,7 +723,7 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
             
             <span class="size">Tamanho: 36</span>
             <span class="old-price">R$&nbsp;159,00</span>
-             <span class="new-price">R$&nbsp;149,00</span>
+               <span class="new-price">R$&nbsp;149,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/adidas/12022211-adidas-campus.jpeg" alt="[12022211] Adidas Campus">
@@ -1228,7 +732,7 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
             
             <span class="size">Tamanho: 39</span>
             <span class="old-price">R$&nbsp;159,00</span>
-             <span class="new-price">R$&nbsp;149,00</span>
+               <span class="new-price">R$&nbsp;149,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/adidas/12022155-adidas-campus.jpeg" alt="[12022155] Adidas Campus">
@@ -1237,7 +741,7 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
             
             <span class="size">Tamanho: 41</span>
             <span class="old-price">R$&nbsp;159,00</span>
-             <span class="new-price">R$&nbsp;149,00</span>
+               <span class="new-price">R$&nbsp;149,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/adidas/12022210-adidas-campus.jpeg" alt="[12022210] Adidas Campus">
@@ -1246,7 +750,7 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
             
             <span class="size">Tamanho: 42</span>
             <span class="old-price">R$&nbsp;159,00</span>
-             <span class="new-price">R$&nbsp;149,00</span>
+               <span class="new-price">R$&nbsp;149,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/vans/12021757-vans.jpeg" alt="[12021757] Vans">
@@ -1255,7 +759,7 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
             
             <span class="size">Tamanho: 36</span>
             <span class="old-price">R$&nbsp;259,00</span>
-             <span class="new-price">R$&nbsp;249,00</span>
+               <span class="new-price">R$&nbsp;249,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/shoes/asics/12021714-asics.jpeg" alt="[12021714] Asics">
@@ -1272,71 +776,7 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
             
             <span class="size">Tamanho: 41, 42</span>
             <span class="old-price">R$&nbsp;269,00</span>
-             <span class="new-price">R$&nbsp;259,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/slippers/tommy-hilfiger/17021140-tommy-hilfiger.jpeg" alt="[17021140] Tommy Hilfiger">
-          <div class="product-details">
-            <h3>[17021140] Tommy Hilfiger</h3>
-            
-            <span class="size">Tamanho: 37/38, 39/40</span>
-            <span class="price">R$&nbsp;29,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
-          <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
-          <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
-          <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
-          <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
-          <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
-          <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
-          <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
+               <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item">
           <img src="images/tshirts/louis-vuitton/27020956-louis-vuitton.jpeg" alt="[27020956] Louis Vuitton">
@@ -1442,345 +882,7 @@ exports[`Catalog Mobile View Matches snapshot for "All Products" on mobile 1`] =
             <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;79,90</span>
           </div>
-        </li></ul>
-  </main>
-
-  <!-- Modal container will be injected by the script -->
-  
-  <footer>
-    <p>Versão: 2.0.3 - 0.0.41</p>
-  </footer>
-
-  <script src="scripts.js"></script>
-
-
-<div id="product-modal">
-        <div id="modal-content">
-          <button id="modal-close">X</button>
-          <div id="modal-image-container">
-            <img id="modal-image" src="" alt="">
-          </div>
-          <div id="modal-controls">
-            <button id="prev-image">&lt;</button>
-            <button id="zoom-out">-</button>
-            <button id="zoom-in">+</button>
-            <button id="next-image">&gt;</button>
-          </div>
-        </div>
-      </div>"
-`;
-
-exports[`Catalog Mobile View Matches snapshot for "Shoes" on mobile 1`] = `
-"
-  <header>
-    <div class="header-logo">
-      <img src="images/logo.jpeg" alt="M/A Imports Logo">
-    </div>
-  </header>
-
-  <nav aria-label="Main Navigation" class="">
-    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
-    <ul id="nav-menu">
-      <li><button data-category="all">Início</button></li>
-      <li><button data-category="shoes">Calçados</button></li>
-      <li><button data-category="slippers">Chinelos</button></li>
-      <li><button data-category="tshirts">Camisetas</button></li>
-    </ul>
-  </nav>
-
-  <main>
-    <h2 id="category-heading">Calçados</h2>
-    <ul id="product-list"><li class="product-item">
-          <img src="images/shoes/nike/12021658-nike-shox.jpeg" alt="[12021658] Nike Shox">
-          <div class="product-details">
-            <h3>[12021658] Nike Shox</h3>
-            
-            <span class="size">Tamanho: 37</span>
-            <span class="old-price">R$&nbsp;259,00</span>
-             <span class="new-price">R$&nbsp;249,00</span>
-          </div>
         </li><li class="product-item">
-          <img src="images/shoes/nike/12022216-nike-shox.jpeg" alt="[12022216] Nike Shox">
-          <div class="product-details">
-            <h3>[12022216] Nike Shox</h3>
-            
-            <span class="size">Tamanho: 37</span>
-            <span class="old-price">R$&nbsp;259,00</span>
-             <span class="new-price">R$&nbsp;249,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/nike/12021724-nike-shox.jpeg" alt="[12021724] Nike Shox">
-          <div class="product-details">
-            <h3>[12021724] Nike Shox</h3>
-            
-            <span class="size">Tamanho: 40</span>
-            <span class="old-price">R$&nbsp;269,00</span>
-             <span class="new-price">R$&nbsp;259,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/nike/12022214-nike-shox.jpeg" alt="[12022214] Nike Shox">
-          <div class="product-details">
-            <h3>[12022214] Nike Shox</h3>
-            
-            <span class="size">Tamanho: 40</span>
-            <span class="old-price">R$&nbsp;269,00</span>
-             <span class="new-price">R$&nbsp;259,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/nike/12021722-nike-shox-neymar.jpeg" alt="[12021722] Nike Shox Neymar">
-          <div class="product-details">
-            <h3>[12021722] Nike Shox Neymar</h3>
-            
-            <span class="size">Tamanho: 41</span>
-            <span class="old-price">R$&nbsp;269,00</span>
-             <span class="new-price">R$&nbsp;259,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/nike/12021734-nike-shox-neymar.jpeg" alt="[12021734] Nike Shox Neymar">
-          <div class="product-details">
-            <h3>[12021734] Nike Shox Neymar</h3>
-            
-            <span class="size">Tamanho: 41</span>
-            <span class="old-price">R$&nbsp;269,00</span>
-             <span class="new-price">R$&nbsp;259,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/nike/12021718-nike-r4.jpeg" alt="[12021718] Nike R4">
-          <div class="product-details">
-            <h3>[12021718] Nike R4</h3>
-            
-            <span class="size">Tamanho: 34</span>
-            <span class="old-price">R$&nbsp;229,00</span>
-             <span class="new-price">R$&nbsp;219,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/nike/12021716-nike-r4.jpeg" alt="[12021716] Nike R4">
-          <div class="product-details">
-            <h3>[12021716] Nike R4</h3>
-            
-            <span class="size">Tamanho: 35</span>
-            <span class="old-price">R$&nbsp;229,00</span>
-             <span class="new-price">R$&nbsp;219,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/nike/12021703-nike-air-force.jpeg" alt="[12021703] Nike Air Force">
-          <div class="product-details">
-            <h3>[12021703] Nike Air Force</h3>
-            
-            <span class="size">Tamanho: 39</span>
-            <span class="old-price">R$&nbsp;219,00</span>
-             <span class="new-price">R$&nbsp;209,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/nike/12021710-nike-air-force.jpeg" alt="[12021710] Nike Air Force">
-          <div class="product-details">
-            <h3>[12021710] Nike Air Force</h3>
-            
-            <span class="size">Tamanho: 42</span>
-            <span class="old-price">R$&nbsp;269,00</span>
-             <span class="new-price">R$&nbsp;259,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/nike/12021739-nike-air-force.jpeg" alt="[12021739] Nike Air Force">
-          <div class="product-details">
-            <h3>[12021739] Nike Air Force</h3>
-            
-            <span class="size">Tamanho: 42</span>
-            <span class="old-price">R$&nbsp;219,00</span>
-             <span class="new-price">R$&nbsp;209,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/nike/12021747-nike-air-force.jpeg" alt="[12021747] Nike Air Force">
-          <div class="product-details">
-            <h3>[12021747] Nike Air Force</h3>
-            
-            <span class="size">Tamanho: 38, 41, 42</span>
-            <span class="old-price">R$&nbsp;229,00</span>
-             <span class="new-price">R$&nbsp;219,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/nike/12021737-nike-dunk-low-pro.jpeg" alt="[12021737] Nike Dunk Low Pro">
-          <div class="product-details">
-            <h3>[12021737] Nike Dunk Low Pro</h3>
-            
-            <span class="size">Tamanho: 35</span>
-            <span class="old-price">R$&nbsp;159,00</span>
-             <span class="new-price">R$&nbsp;149,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/nike/12021719-nike-dunk-low-pro.jpeg" alt="[12021719] Nike Dunk Low Pro">
-          <div class="product-details">
-            <h3>[12021719] Nike Dunk Low Pro</h3>
-            
-            <span class="size">Tamanho: 36</span>
-            <span class="old-price">R$&nbsp;159,00</span>
-             <span class="new-price">R$&nbsp;149,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/nike/12022152-nike-dunk-low-pro.jpeg" alt="[12022152] Nike Dunk Low Pro">
-          <div class="product-details">
-            <h3>[12022152] Nike Dunk Low Pro</h3>
-            
-            <span class="size">Tamanho: 39, 42</span>
-            <span class="old-price">R$&nbsp;219,00</span>
-             <span class="new-price">R$&nbsp;209,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/nike/12021733-nike-dunk-low-pro.jpeg" alt="[12021733] Nike Dunk Low Pro">
-          <div class="product-details">
-            <h3>[12021733] Nike Dunk Low Pro</h3>
-            
-            <span class="size">Tamanho: 42</span>
-            <span class="old-price">R$&nbsp;219,00</span>
-             <span class="new-price">R$&nbsp;209,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/nike/12021707-nike-jordan.jpeg" alt="[12021707] Nike Jordan">
-          <div class="product-details">
-            <h3>[12021707] Nike Jordan</h3>
-            
-            <span class="size">Tamanho: 38</span>
-            <span class="old-price">R$&nbsp;169,00</span>
-             <span class="new-price">R$&nbsp;159,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/nike/12022200-nike-air-jordan.jpeg" alt="[12022200] Nike Air Jordan">
-          <div class="product-details">
-            <h3>[12022200] Nike Air Jordan</h3>
-            
-            <span class="size">Tamanho: 41</span>
-            <span class="old-price">R$&nbsp;229,00</span>
-             <span class="new-price">R$&nbsp;219,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/adidas/12022201-adidas-campus.jpeg" alt="[12022201] Adidas Campus">
-          <div class="product-details">
-            <h3>[12022201] Adidas Campus</h3>
-            
-            <span class="size">Tamanho: 35</span>
-            <span class="old-price">R$&nbsp;159,00</span>
-             <span class="new-price">R$&nbsp;149,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/adidas/12022202-adidas-campus.jpeg" alt="[12022202] Adidas Campus">
-          <div class="product-details">
-            <h3>[12022202] Adidas Campus</h3>
-            
-            <span class="size">Tamanho: 35</span>
-            <span class="old-price">R$&nbsp;259,00</span>
-             <span class="new-price">R$&nbsp;249,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/adidas/12022208-adidas-campus.jpeg" alt="[12022208] Adidas Campus">
-          <div class="product-details">
-            <h3>[12022208] Adidas Campus</h3>
-            
-            <span class="size">Tamanho: 36</span>
-            <span class="old-price">R$&nbsp;159,00</span>
-             <span class="new-price">R$&nbsp;149,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/adidas/12022211-adidas-campus.jpeg" alt="[12022211] Adidas Campus">
-          <div class="product-details">
-            <h3>[12022211] Adidas Campus</h3>
-            
-            <span class="size">Tamanho: 39</span>
-            <span class="old-price">R$&nbsp;159,00</span>
-             <span class="new-price">R$&nbsp;149,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/adidas/12022155-adidas-campus.jpeg" alt="[12022155] Adidas Campus">
-          <div class="product-details">
-            <h3>[12022155] Adidas Campus</h3>
-            
-            <span class="size">Tamanho: 41</span>
-            <span class="old-price">R$&nbsp;159,00</span>
-             <span class="new-price">R$&nbsp;149,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/adidas/12022210-adidas-campus.jpeg" alt="[12022210] Adidas Campus">
-          <div class="product-details">
-            <h3>[12022210] Adidas Campus</h3>
-            
-            <span class="size">Tamanho: 42</span>
-            <span class="old-price">R$&nbsp;159,00</span>
-             <span class="new-price">R$&nbsp;149,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/vans/12021757-vans.jpeg" alt="[12021757] Vans">
-          <div class="product-details">
-            <h3>[12021757] Vans</h3>
-            
-            <span class="size">Tamanho: 36</span>
-            <span class="old-price">R$&nbsp;259,00</span>
-             <span class="new-price">R$&nbsp;249,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/asics/12021714-asics.jpeg" alt="[12021714] Asics">
-          <div class="product-details">
-            <h3>[12021714] Asics</h3>
-            
-            <span class="size">Tamanho: 38</span>
-            <span class="price">R$&nbsp;89,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/shoes/asics/12021736-asics.jpeg" alt="[12021736] Asics">
-          <div class="product-details">
-            <h3>[12021736] Asics</h3>
-            
-            <span class="size">Tamanho: 41, 42</span>
-            <span class="old-price">R$&nbsp;269,00</span>
-             <span class="new-price">R$&nbsp;259,00</span>
-          </div>
-        </li></ul>
-  </main>
-
-  <!-- Modal container will be injected by the script -->
-  
-  <footer>
-    <p>Versão: 2.0.3 - 0.0.41</p>
-  </footer>
-
-  <script src="scripts.js"></script>
-
-
-<div id="product-modal">
-        <div id="modal-content">
-          <button id="modal-close">X</button>
-          <div id="modal-image-container">
-            <img id="modal-image" src="" alt="">
-          </div>
-          <div id="modal-controls">
-            <button id="prev-image">&lt;</button>
-            <button id="zoom-out">-</button>
-            <button id="zoom-in">+</button>
-            <button id="next-image">&gt;</button>
-          </div>
-        </div>
-      </div>"
-`;
-
-exports[`Catalog Mobile View Matches snapshot for "Slippers" on mobile 1`] = `
-"
-  <header>
-    <div class="header-logo">
-      <img src="images/logo.jpeg" alt="M/A Imports Logo">
-    </div>
-  </header>
-
-  <nav aria-label="Main Navigation" class="">
-    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
-    <ul id="nav-menu">
-      <li><button data-category="all">Início</button></li>
-      <li><button data-category="shoes">Calçados</button></li>
-      <li><button data-category="slippers">Chinelos</button></li>
-      <li><button data-category="tshirts">Camisetas</button></li>
-    </ul>
-  </nav>
-
-  <main>
-    <h2 id="category-heading">Chinelos</h2>
-    <ul id="product-list"><li class="product-item">
           <img src="images/slippers/tommy-hilfiger/17021140-tommy-hilfiger.jpeg" alt="[17021140] Tommy Hilfiger">
           <div class="product-details">
             <h3>[17021140] Tommy Hilfiger</h3>
@@ -1847,10 +949,8 @@ exports[`Catalog Mobile View Matches snapshot for "Slippers" on mobile 1`] = `
         </li></ul>
   </main>
 
-  <!-- Modal container will be injected by the script -->
-  
   <footer>
-    <p>Versão: 2.0.3 - 0.0.41</p>
+    <p>Versão: 2.0.4 - 0.0.41</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1872,7 +972,7 @@ exports[`Catalog Mobile View Matches snapshot for "Slippers" on mobile 1`] = `
       </div>"
 `;
 
-exports[`Catalog Mobile View Matches snapshot for "Tshirts" on mobile 1`] = `
+exports[`Catalog Mobile View renders final subcategory "Camisetas" correctly on mobile 1`] = `
 "
   <header>
     <div class="header-logo">
@@ -1880,13 +980,43 @@ exports[`Catalog Mobile View Matches snapshot for "Tshirts" on mobile 1`] = `
     </div>
   </header>
 
+  <!-- Navigation -->
   <nav aria-label="Main Navigation" class="">
+    <!-- Mobile toggle button -->
     <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
     <ul id="nav-menu">
-      <li><button data-category="all">Início</button></li>
-      <li><button data-category="shoes">Calçados</button></li>
-      <li><button data-category="slippers">Chinelos</button></li>
-      <li><button data-category="tshirts">Camisetas</button></li>
+      <li class="menu-item">
+        <button data-category="all">Início</button>
+      </li>
+      <li class="menu-item has-submenu">
+        <button data-category="fashion-category" aria-expanded="false">Moda</button>
+        <ul class="submenu">
+          <li class="menu-item has-submenu">
+            <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
+            <ul class="submenu">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu">
+                  <li class="menu-item">
+                    <button data-category="tshirts-man">Camisetas</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu">
+                  <li class="menu-item">
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
     </ul>
   </nav>
 
@@ -1999,10 +1129,466 @@ exports[`Catalog Mobile View Matches snapshot for "Tshirts" on mobile 1`] = `
         </li></ul>
   </main>
 
-  <!-- Modal container will be injected by the script -->
-  
   <footer>
-    <p>Versão: 2.0.3 - 0.0.41</p>
+    <p>Versão: 2.0.4 - 0.0.41</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+
+<div id="product-modal">
+        <div id="modal-content">
+          <button id="modal-close">X</button>
+          <div id="modal-image-container">
+            <img id="modal-image" src="" alt="">
+          </div>
+          <div id="modal-controls">
+            <button id="prev-image">&lt;</button>
+            <button id="zoom-out">-</button>
+            <button id="zoom-in">+</button>
+            <button id="next-image">&gt;</button>
+          </div>
+        </div>
+      </div>"
+`;
+
+exports[`Catalog Mobile View renders final subcategory "Chinelos" correctly on mobile 1`] = `
+"
+  <header>
+    <div class="header-logo">
+      <img src="images/logo.jpeg" alt="M/A Imports Logo">
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav aria-label="Main Navigation" class="">
+    <!-- Mobile toggle button -->
+    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+    <ul id="nav-menu">
+      <li class="menu-item">
+        <button data-category="all">Início</button>
+      </li>
+      <li class="menu-item has-submenu">
+        <button data-category="fashion-category" aria-expanded="false">Moda</button>
+        <ul class="submenu">
+          <li class="menu-item has-submenu">
+            <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
+            <ul class="submenu">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu">
+                  <li class="menu-item">
+                    <button data-category="tshirts-man">Camisetas</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu">
+                  <li class="menu-item">
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2 id="category-heading">Chinelos</h2>
+    <ul id="product-list"><li class="product-item">
+          <img src="images/slippers/tommy-hilfiger/17021140-tommy-hilfiger.jpeg" alt="[17021140] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[17021140] Tommy Hilfiger</h3>
+            
+            <span class="size">Tamanho: 37/38, 39/40</span>
+            <span class="price">R$&nbsp;29,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/comming-soon.jpg" alt="Em breve">
+          <div class="product-details">
+            <h3>Em breve</h3>
+            
+            
+            <span class="price">R$&nbsp;0,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/comming-soon.jpg" alt="Em breve">
+          <div class="product-details">
+            <h3>Em breve</h3>
+            
+            
+            <span class="price">R$&nbsp;0,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/comming-soon.jpg" alt="Em breve">
+          <div class="product-details">
+            <h3>Em breve</h3>
+            
+            
+            <span class="price">R$&nbsp;0,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/comming-soon.jpg" alt="Em breve">
+          <div class="product-details">
+            <h3>Em breve</h3>
+            
+            
+            <span class="price">R$&nbsp;0,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/comming-soon.jpg" alt="Em breve">
+          <div class="product-details">
+            <h3>Em breve</h3>
+            
+            
+            <span class="price">R$&nbsp;0,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/comming-soon.jpg" alt="Em breve">
+          <div class="product-details">
+            <h3>Em breve</h3>
+            
+            
+            <span class="price">R$&nbsp;0,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/comming-soon.jpg" alt="Em breve">
+          <div class="product-details">
+            <h3>Em breve</h3>
+            
+            
+            <span class="price">R$&nbsp;0,00</span>
+          </div>
+        </li></ul>
+  </main>
+
+  <footer>
+    <p>Versão: 2.0.4 - 0.0.41</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+
+<div id="product-modal">
+        <div id="modal-content">
+          <button id="modal-close">X</button>
+          <div id="modal-image-container">
+            <img id="modal-image" src="" alt="">
+          </div>
+          <div id="modal-controls">
+            <button id="prev-image">&lt;</button>
+            <button id="zoom-out">-</button>
+            <button id="zoom-in">+</button>
+            <button id="next-image">&gt;</button>
+          </div>
+        </div>
+      </div>"
+`;
+
+exports[`Catalog Mobile View renders final subcategory "Tênis" correctly on mobile 1`] = `
+"
+  <header>
+    <div class="header-logo">
+      <img src="images/logo.jpeg" alt="M/A Imports Logo">
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav aria-label="Main Navigation" class="">
+    <!-- Mobile toggle button -->
+    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+    <ul id="nav-menu">
+      <li class="menu-item">
+        <button data-category="all">Início</button>
+      </li>
+      <li class="menu-item has-submenu">
+        <button data-category="fashion-category" aria-expanded="false">Moda</button>
+        <ul class="submenu">
+          <li class="menu-item has-submenu">
+            <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
+            <ul class="submenu">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu">
+                  <li class="menu-item">
+                    <button data-category="tshirts-man">Camisetas</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu">
+                  <li class="menu-item">
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2 id="category-heading">Tênis</h2>
+    <ul id="product-list"><li class="product-item">
+          <img src="images/shoes/nike/12021658-nike-shox.jpeg" alt="[12021658] Nike Shox">
+          <div class="product-details">
+            <h3>[12021658] Nike Shox</h3>
+            
+            <span class="size">Tamanho: 37</span>
+            <span class="old-price">R$&nbsp;259,00</span>
+               <span class="new-price">R$&nbsp;249,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/shoes/nike/12022216-nike-shox.jpeg" alt="[12022216] Nike Shox">
+          <div class="product-details">
+            <h3>[12022216] Nike Shox</h3>
+            
+            <span class="size">Tamanho: 37</span>
+            <span class="old-price">R$&nbsp;259,00</span>
+               <span class="new-price">R$&nbsp;249,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/shoes/nike/12021724-nike-shox.jpeg" alt="[12021724] Nike Shox">
+          <div class="product-details">
+            <h3>[12021724] Nike Shox</h3>
+            
+            <span class="size">Tamanho: 40</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+               <span class="new-price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/shoes/nike/12022214-nike-shox.jpeg" alt="[12022214] Nike Shox">
+          <div class="product-details">
+            <h3>[12022214] Nike Shox</h3>
+            
+            <span class="size">Tamanho: 40</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+               <span class="new-price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/shoes/nike/12021722-nike-shox-neymar.jpeg" alt="[12021722] Nike Shox Neymar">
+          <div class="product-details">
+            <h3>[12021722] Nike Shox Neymar</h3>
+            
+            <span class="size">Tamanho: 41</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+               <span class="new-price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/shoes/nike/12021734-nike-shox-neymar.jpeg" alt="[12021734] Nike Shox Neymar">
+          <div class="product-details">
+            <h3>[12021734] Nike Shox Neymar</h3>
+            
+            <span class="size">Tamanho: 41</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+               <span class="new-price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/shoes/nike/12021718-nike-r4.jpeg" alt="[12021718] Nike R4">
+          <div class="product-details">
+            <h3>[12021718] Nike R4</h3>
+            
+            <span class="size">Tamanho: 34</span>
+            <span class="old-price">R$&nbsp;229,00</span>
+               <span class="new-price">R$&nbsp;219,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/shoes/nike/12021716-nike-r4.jpeg" alt="[12021716] Nike R4">
+          <div class="product-details">
+            <h3>[12021716] Nike R4</h3>
+            
+            <span class="size">Tamanho: 35</span>
+            <span class="old-price">R$&nbsp;229,00</span>
+               <span class="new-price">R$&nbsp;219,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/shoes/nike/12021703-nike-air-force.jpeg" alt="[12021703] Nike Air Force">
+          <div class="product-details">
+            <h3>[12021703] Nike Air Force</h3>
+            
+            <span class="size">Tamanho: 39</span>
+            <span class="old-price">R$&nbsp;219,00</span>
+               <span class="new-price">R$&nbsp;209,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/shoes/nike/12021710-nike-air-force.jpeg" alt="[12021710] Nike Air Force">
+          <div class="product-details">
+            <h3>[12021710] Nike Air Force</h3>
+            
+            <span class="size">Tamanho: 42</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+               <span class="new-price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/shoes/nike/12021739-nike-air-force.jpeg" alt="[12021739] Nike Air Force">
+          <div class="product-details">
+            <h3>[12021739] Nike Air Force</h3>
+            
+            <span class="size">Tamanho: 42</span>
+            <span class="old-price">R$&nbsp;219,00</span>
+               <span class="new-price">R$&nbsp;209,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/shoes/nike/12021747-nike-air-force.jpeg" alt="[12021747] Nike Air Force">
+          <div class="product-details">
+            <h3>[12021747] Nike Air Force</h3>
+            
+            <span class="size">Tamanho: 38, 41, 42</span>
+            <span class="old-price">R$&nbsp;229,00</span>
+               <span class="new-price">R$&nbsp;219,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/shoes/nike/12021737-nike-dunk-low-pro.jpeg" alt="[12021737] Nike Dunk Low Pro">
+          <div class="product-details">
+            <h3>[12021737] Nike Dunk Low Pro</h3>
+            
+            <span class="size">Tamanho: 35</span>
+            <span class="old-price">R$&nbsp;159,00</span>
+               <span class="new-price">R$&nbsp;149,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/shoes/nike/12021719-nike-dunk-low-pro.jpeg" alt="[12021719] Nike Dunk Low Pro">
+          <div class="product-details">
+            <h3>[12021719] Nike Dunk Low Pro</h3>
+            
+            <span class="size">Tamanho: 36</span>
+            <span class="old-price">R$&nbsp;159,00</span>
+               <span class="new-price">R$&nbsp;149,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/shoes/nike/12022152-nike-dunk-low-pro.jpeg" alt="[12022152] Nike Dunk Low Pro">
+          <div class="product-details">
+            <h3>[12022152] Nike Dunk Low Pro</h3>
+            
+            <span class="size">Tamanho: 39, 42</span>
+            <span class="old-price">R$&nbsp;219,00</span>
+               <span class="new-price">R$&nbsp;209,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/shoes/nike/12021733-nike-dunk-low-pro.jpeg" alt="[12021733] Nike Dunk Low Pro">
+          <div class="product-details">
+            <h3>[12021733] Nike Dunk Low Pro</h3>
+            
+            <span class="size">Tamanho: 42</span>
+            <span class="old-price">R$&nbsp;219,00</span>
+               <span class="new-price">R$&nbsp;209,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/shoes/nike/12021707-nike-jordan.jpeg" alt="[12021707] Nike Jordan">
+          <div class="product-details">
+            <h3>[12021707] Nike Jordan</h3>
+            
+            <span class="size">Tamanho: 38</span>
+            <span class="old-price">R$&nbsp;169,00</span>
+               <span class="new-price">R$&nbsp;159,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/shoes/nike/12022200-nike-air-jordan.jpeg" alt="[12022200] Nike Air Jordan">
+          <div class="product-details">
+            <h3>[12022200] Nike Air Jordan</h3>
+            
+            <span class="size">Tamanho: 41</span>
+            <span class="old-price">R$&nbsp;229,00</span>
+               <span class="new-price">R$&nbsp;219,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/shoes/adidas/12022201-adidas-campus.jpeg" alt="[12022201] Adidas Campus">
+          <div class="product-details">
+            <h3>[12022201] Adidas Campus</h3>
+            
+            <span class="size">Tamanho: 35</span>
+            <span class="old-price">R$&nbsp;159,00</span>
+               <span class="new-price">R$&nbsp;149,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/shoes/adidas/12022202-adidas-campus.jpeg" alt="[12022202] Adidas Campus">
+          <div class="product-details">
+            <h3>[12022202] Adidas Campus</h3>
+            
+            <span class="size">Tamanho: 35</span>
+            <span class="old-price">R$&nbsp;259,00</span>
+               <span class="new-price">R$&nbsp;249,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/shoes/adidas/12022208-adidas-campus.jpeg" alt="[12022208] Adidas Campus">
+          <div class="product-details">
+            <h3>[12022208] Adidas Campus</h3>
+            
+            <span class="size">Tamanho: 36</span>
+            <span class="old-price">R$&nbsp;159,00</span>
+               <span class="new-price">R$&nbsp;149,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/shoes/adidas/12022211-adidas-campus.jpeg" alt="[12022211] Adidas Campus">
+          <div class="product-details">
+            <h3>[12022211] Adidas Campus</h3>
+            
+            <span class="size">Tamanho: 39</span>
+            <span class="old-price">R$&nbsp;159,00</span>
+               <span class="new-price">R$&nbsp;149,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/shoes/adidas/12022155-adidas-campus.jpeg" alt="[12022155] Adidas Campus">
+          <div class="product-details">
+            <h3>[12022155] Adidas Campus</h3>
+            
+            <span class="size">Tamanho: 41</span>
+            <span class="old-price">R$&nbsp;159,00</span>
+               <span class="new-price">R$&nbsp;149,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/shoes/adidas/12022210-adidas-campus.jpeg" alt="[12022210] Adidas Campus">
+          <div class="product-details">
+            <h3>[12022210] Adidas Campus</h3>
+            
+            <span class="size">Tamanho: 42</span>
+            <span class="old-price">R$&nbsp;159,00</span>
+               <span class="new-price">R$&nbsp;149,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/shoes/vans/12021757-vans.jpeg" alt="[12021757] Vans">
+          <div class="product-details">
+            <h3>[12021757] Vans</h3>
+            
+            <span class="size">Tamanho: 36</span>
+            <span class="old-price">R$&nbsp;259,00</span>
+               <span class="new-price">R$&nbsp;249,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/shoes/asics/12021714-asics.jpeg" alt="[12021714] Asics">
+          <div class="product-details">
+            <h3>[12021714] Asics</h3>
+            
+            <span class="size">Tamanho: 38</span>
+            <span class="price">R$&nbsp;89,00</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/shoes/asics/12021736-asics.jpeg" alt="[12021736] Asics">
+          <div class="product-details">
+            <h3>[12021736] Asics</h3>
+            
+            <span class="size">Tamanho: 41, 42</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+               <span class="new-price">R$&nbsp;259,00</span>
+          </div>
+        </li></ul>
+  </main>
+
+  <footer>
+    <p>Versão: 2.0.4 - 0.0.41</p>
   </footer>
 
   <script src="scripts.js"></script>
