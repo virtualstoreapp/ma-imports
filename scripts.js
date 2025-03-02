@@ -1,32 +1,46 @@
-//scripts.js
-
 (function() {
+  // Prevent reinitialization (except in test mode)
   if (window.__catalogInitialized && !window.__isTest) return;
   window.__catalogInitialized = true;
 
-  // ------------------------------
-  // Helpers
-  // ------------------------------
-  const formatCurrency = value =>
+  /* -------------------------
+     Helpers
+  ------------------------- */
+  const formatCurrency = (value) =>
     new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(value);
 
   const updateCategoryHeading = (category, headingEl) => {
     const headings = {
       all: 'Todos os Produtos',
-      shoes: 'Calçados',
-      slippers: 'Chinelos',
-      tshirts: 'Camisetas',
+      'shoes-man': 'Tênis',
+      'slippers-man': 'Chinelos',
+      'tshirts-man': 'Camisetas',
+      'sneakers-man': 'Sneakers',
     };
     headingEl.textContent = headings[category] || 'Produtos';
   };
 
-  // ------------------------------
-  // Modal Module
-  // ------------------------------
+  const collapseAllSubmenus = () => {
+    const submenuButtons = document.querySelectorAll('nav button.has-submenu, nav li.has-submenu > button');
+    submenuButtons.forEach((button) => {
+      button.setAttribute('aria-expanded', 'false');
+      const submenu = button.nextElementSibling;
+      if (submenu && submenu.classList.contains('submenu')) {
+        if (window.innerWidth <= 768) {
+          submenu.classList.remove('open');
+        } else {
+          submenu.style.display = 'none';
+        }
+      }
+    });
+  };
+
+  /* -------------------------
+     Modal Module
+  ------------------------- */
   const Modal = (() => {
     let modal, currentImages = [], currentIndex = 0, currentZoom = 1, currentProductName = '';
 
-    // Create and insert modal into DOM
     const init = () => {
       modal = document.createElement('div');
       modal.id = 'product-modal';
@@ -65,7 +79,6 @@
       modalImage.style.transform = `scale(${currentZoom})`;
     };
 
-    // Disable or enable navigation buttons based on image count.
     const updateNavButtons = () => {
       const prevBtn = document.getElementById('prev-image');
       const nextBtn = document.getElementById('next-image');
@@ -82,8 +95,6 @@
       updateImage();
       updateNavButtons();
       modal.style.display = 'flex';
-
-      // GA event for modal open
       if (window.gtag) {
         gtag('event', 'open_modal', {
           event_category: 'Product',
@@ -139,40 +150,37 @@
       }
     };
 
-    return {
-      init,
-      open,
-      close,
-    };
+    return { init, open, close };
   })();
 
-  // ------------------------------
-  // Product Catalog Module
-  // ------------------------------
+  /* -------------------------
+     Catalog Module
+  ------------------------- */
   const Catalog = (() => {
+    // Select all menu buttons (including submenu buttons)
     const categoryButtons = document.querySelectorAll('nav button[data-category]');
     const productListContainer = document.getElementById('product-list');
     const categoryHeading = document.getElementById('category-heading');
-    const menuToggle = document.getElementById('menu-toggle');
-    const nav = document.querySelector('nav');
 
     const fetchCategoryData = async (category) => {
       try {
         if (category === 'all') {
-          const categories = ['shoes', 'slippers', 'tshirts'];
+          const categories = ['shoes-man', 'tshirts-man', 'slippers-man'];
           const responses = await Promise.all(
-            categories.map(cat => fetch(`products/${cat}.json`))
+            categories.map((cat) => fetch(`products/${cat}.json`))
           );
           const jsonData = await Promise.all(
-            responses.map(async (response) => {
-              if (!response.ok) throw new Error(`Failed to fetch data for category ${cat}`);
+            responses.map(async (response, idx) => {
+              if (!response.ok)
+                throw new Error(`Failed to fetch data for category ${categories[idx]}`);
               return response.json();
             })
           );
           return jsonData.flat();
         } else {
           const response = await fetch(`products/${category}.json`);
-          if (!response.ok) throw new Error(`Failed to fetch data for category ${category}`);
+          if (!response.ok)
+            throw new Error(`Failed to fetch data for category ${category}`);
           return response.json();
         }
       } catch (error) {
@@ -185,18 +193,15 @@
       productListContainer.innerHTML = '';
       updateCategoryHeading(category, categoryHeading);
       const products = await fetchCategoryData(category);
-      products.forEach(product => {
+      products.forEach((product) => {
         const li = document.createElement('li');
         li.classList.add('product-item');
-
-        const priceHTML = product.oldPrice && product.oldPrice > 0
-          ? `<span class="old-price">${formatCurrency(product.oldPrice)}</span>
-             <span class="new-price">${formatCurrency(product.price)}</span>`
-          : `<span class="price">${formatCurrency(product.price)}</span>`;
-
-        // If there is an array of images, use the first image; otherwise use product.image.
+        const priceHTML =
+          product.oldPrice && product.oldPrice > 0
+            ? `<span class="old-price">${formatCurrency(product.oldPrice)}</span>
+               <span class="new-price">${formatCurrency(product.price)}</span>`
+            : `<span class="price">${formatCurrency(product.price)}</span>`;
         const imgSrc = Array.isArray(product.images) ? product.images[0] : product.image;
-
         li.innerHTML = `
           <img src="${imgSrc}" alt="${product.name}">
           <div class="product-details">
@@ -221,9 +226,26 @@
     };
 
     const bindCategoryButtons = () => {
-      categoryButtons.forEach(button => {
+      categoryButtons.forEach((button) => {
         button.addEventListener('click', async (event) => {
-          const category = event.currentTarget.getAttribute('data-category');
+          event.stopPropagation();
+          const hasSubmenu =
+            button.classList.contains('has-submenu') ||
+            (button.parentElement && button.parentElement.classList.contains('has-submenu'));
+          const submenu = button.nextElementSibling;
+          if (hasSubmenu && submenu && submenu.classList.contains('submenu')) {
+            const expanded = button.getAttribute('aria-expanded') === 'true';
+            if (window.innerWidth <= 768) {
+              button.setAttribute('aria-expanded', String(!expanded));
+              submenu.classList.toggle('open', !expanded);
+            } else {
+              const newExpanded = !expanded;
+              button.setAttribute('aria-expanded', String(newExpanded));
+              submenu.style.display = expanded ? 'none' : 'block';
+            }
+            return;
+          }
+          const category = button.getAttribute('data-category');
           await renderProducts(category);
           if (window.gtag) {
             gtag('event', 'select_category', {
@@ -232,25 +254,19 @@
               value: 1,
             });
           }
+          const nav = document.querySelector('nav');
+          const menuToggle = document.getElementById('menu-toggle');
           if (nav.classList.contains('active')) {
             nav.classList.remove('active');
             menuToggle.setAttribute('aria-expanded', 'false');
           }
+          collapseAllSubmenus();
         });
-      });
-    };
-
-    const bindMobileMenu = () => {
-      menuToggle.addEventListener('click', () => {
-        nav.classList.toggle('active');
-        const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
-        menuToggle.setAttribute('aria-expanded', String(!expanded));
       });
     };
 
     const init = async () => {
       bindCategoryButtons();
-      bindMobileMenu();
       const initialCategory = window.location.hash.slice(1) || 'all';
       await renderProducts(initialCategory);
     };
@@ -258,13 +274,23 @@
     return { init };
   })();
 
-  // ------------------------------
-  // Initialize Catalog on DOM Ready
-  // ------------------------------
   const setupCatalog = () => {
     Modal.init();
     Catalog.init();
   };
+
+  /* -------------------------
+     Mobile Menu Toggle
+  ------------------------- */
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.querySelector('nav');
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+      const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', String(!expanded));
+    });
+  });
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', setupCatalog);

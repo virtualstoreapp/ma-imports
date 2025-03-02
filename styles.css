@@ -9,22 +9,22 @@
   
   :root {
     /* Colors */
-    --primary-color: #000000;
+    --primary-color: #000;
     --secondary-color: #e4c22b;
     --accent-color: #4caf50;
-    --light-bg: #ffffff;
+    --light-bg: #fff;
     --dark-bg: #f5f5f5;
     --text-color: #212121;
     --muted-text: #757575;
     --gray-text: #9e9e9e;
     /* Shadows */
-    --shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
-    --shadow-medium: 0 2px 2px rgba(0, 0, 0, 0.2);
-    --shadow-heavy: 0 4px 10px rgba(0, 0, 0, 0.2);
+    --shadow-light: 0 2px 4px rgba(0,0,0,0.1);
+    --shadow-medium: 0 2px 2px rgba(0,0,0,0.2);
+    --shadow-heavy: 0 4px 10px rgba(0,0,0,0.2);
   }
   
   /* ==========================================================================
-     Basic Styling & Layout
+     Global Layout
      ========================================================================== */
   body {
     font-family: 'Roboto', sans-serif;
@@ -33,14 +33,7 @@
     color: var(--text-color);
   }
   
-  header,
-  footer,
-  nav,
-  main {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
+  /* Header */
   header {
     text-align: center;
     margin-bottom: 20px;
@@ -59,22 +52,17 @@
     margin: 0 auto 10px;
   }
   
-  footer {
-    text-align: center;
-    color: var(--muted-text);
-    padding: 10px 0;
-    margin-top: 20px;
-  }
-  
   /* ==========================================================================
-     Navigation
+     Horizontal Navbar
      ========================================================================== */
   nav {
-    margin-bottom: 20px;
-    text-align: center;
     position: relative;
+    background-color: var(--primary-color);
+    box-shadow: var(--shadow-light);
+    margin-bottom: 20px;
   }
   
+  /* Menu Toggle (Mobile) */
   #menu-toggle {
     display: none;
     background-color: var(--primary-color);
@@ -82,20 +70,24 @@
     border: none;
     padding: 10px 15px;
     font-size: 20px;
-    border-radius: 5px;
     cursor: pointer;
-    box-shadow: var(--shadow-medium);
   }
   
+  /* Menu Items */
   #nav-menu {
     list-style: none;
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
     gap: 20px;
-    padding: 0;
-    margin: 0;
+    padding: 10px 0;
   }
   
-  #nav-menu li button {
+  #nav-menu li {
+    position: relative;
+  }
+  
+  /* Button Styles */
+  #nav-menu li > button {
     padding: 10px 15px;
     font-size: 16px;
     background-color: var(--primary-color);
@@ -107,29 +99,88 @@
     box-shadow: var(--shadow-medium);
   }
   
-  #nav-menu li button:hover {
-    background-color: #333333;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  #nav-menu li > button:hover {
+    background-color: #333;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.3);
   }
   
-  /* Mobile Navigation */
+  /* Submenu Styles */
+  .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    background-color: var(--primary-color);
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: var(--shadow-medium);
+    display: none;
+    z-index: 100;
+    min-width: 150px;
+  }
+  
+  /* Nested Submenu */
+  .submenu .submenu {
+    top: 0;
+    left: 100%;
+  }
+  
+  .submenu li button {
+    width: 100%;
+    text-align: left;
+    padding: 8px 15px;
+    font-size: 14px;
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submenu li button:hover {
+    background-color: #333;
+  }
+  
+  /* Mobile Adjustments */
   @media (max-width: 768px) {
     #menu-toggle {
       display: block;
     }
     #nav-menu {
-      display: none;
       flex-direction: column;
+      align-items: flex-start;
       gap: 10px;
+      display: none;
+      width: 100%;
     }
     nav.active #nav-menu {
       display: flex;
+    }
+    #nav-menu li {
+      width: 100%;
+      overflow: visible;
+    }
+    .submenu {
+      position: static !important;
+      display: none;
+      width: 100%;
+      box-shadow: none;
+      padding-left: 20px;
+      min-width: 0;
+    }
+    .submenu.open {
+      display: block !important;
     }
   }
   
   /* ==========================================================================
      Main Content & Product Grid
      ========================================================================== */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
   #category-heading {
     text-align: center;
     margin-bottom: 20px;
@@ -150,8 +201,8 @@
     overflow: hidden;
     text-align: center;
     padding: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
   }
   
   .product-item:hover {
@@ -198,7 +249,7 @@
     font-weight: bold;
   }
   
-  /* Responsive Grid */
+  /* Responsive Product Grid */
   @media (max-width: 1024px) {
     #product-list {
       grid-template-columns: repeat(3, 1fr);
@@ -226,7 +277,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0,0,0,0.8);
     display: none;
     align-items: center;
     justify-content: center;
@@ -242,7 +293,6 @@
     padding: 20px;
   }
   
-  /* Modal Close Button */
   #modal-close {
     position: absolute;
     top: -15px;
@@ -259,8 +309,6 @@
     box-shadow: var(--shadow-medium);
   }
   
-  /* Modal Image Container & Image */
-  /* Desktop Styles */
   @media (min-width: 769px) {
     #modal-image-container {
       overflow: hidden;
@@ -272,10 +320,7 @@
       justify-content: center;
       align-items: center;
     }
-    
     #modal-image {
-      display: block;
-      margin: auto;
       max-width: 100%;
       max-height: 100%;
       object-fit: scale-down;
@@ -283,7 +328,6 @@
     }
   }
   
-  /* Mobile Styles */
   @media (max-width: 768px) {
     #modal-image-container {
       overflow: hidden;
@@ -295,10 +339,7 @@
       justify-content: center;
       align-items: center;
     }
-    
     #modal-image {
-      display: block;
-      margin: auto;
       width: 100%;
       height: auto;
       object-fit: contain;
@@ -306,7 +347,6 @@
     }
   }
   
-  /* Modal Controls */
   #modal-controls {
     display: flex;
     justify-content: center;
@@ -327,12 +367,20 @@
   }
   
   #modal-controls button:hover:enabled {
-    background-color: #333333;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    background-color: #333;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.3);
   }
   
   #modal-controls button:disabled {
     background-color: #ccc;
     cursor: not-allowed;
+  }
+  
+  /* ==========================================================================
+     Footer Styling
+     ========================================================================== */
+  footer {
+    text-align: center;
+    padding: 20px 0;
   }
   

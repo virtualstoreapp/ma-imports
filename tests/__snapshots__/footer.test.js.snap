@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer CSS and Markup renders footer markup as expected 1`] = `
+"<footer>
+    <p>Versão: 2.0.4 - 0.0.41</p>
+  </footer>"
+`;
