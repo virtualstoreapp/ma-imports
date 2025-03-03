@@ -163,7 +163,6 @@ describe('Catalog', () => {
     });
   });
 
-
   describe('Modal Functionality', () => {
     beforeEach(async () => {
       // Use desktop final subcategory selection to load products.
@@ -196,6 +195,27 @@ describe('Catalog', () => {
       expect(global.gtag).toHaveBeenCalledWith('event', 'open_modal', expect.any(Object));
     });
 
+    it('redirects to WhatsApp with correct message when clicking "Comprar este produto"', async () => {
+      // Open modal by clicking on a product.
+      const product = document.querySelector('#product-list .product-item');
+      fireEvent.click(product);
+      await waitFor(() => {
+        expect(document.getElementById('product-modal')).toHaveStyle({ display: 'flex' });
+      });
+      // Spy on window.open.
+      const openSpy = jest.spyOn(window, 'open').mockImplementation(() => {});
+      // Click the buy button.
+      const buyButton = document.getElementById('buy-product');
+      expect(buyButton).toBeInTheDocument();
+      fireEvent.click(buyButton);
+      // Get expected values from the DOM.
+      const categoryText = document.getElementById('category-heading').textContent;
+      const productName = product.querySelector('h3').textContent;
+      const expectedMessage = `Olá, acabei de conferir seu catálogo online e na categoria ${categoryText}, me interessei pelo produto ${productName}. Poderia, por favor, me enviar mais informações e confirmar a disponibilidade? Obrigado!`;
+      const expectedUrl = `https://wa.me/5519999762594?text=${encodeURIComponent(expectedMessage)}`;
+      expect(openSpy).toHaveBeenCalledWith(expectedUrl, '_blank');
+      openSpy.mockRestore();
+    });
   });
 
   describe('Error Handling', () => {

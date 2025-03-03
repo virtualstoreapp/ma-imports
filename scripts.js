@@ -1,13 +1,17 @@
-(function() {
+(function () {
   // Prevent reinitialization (except in test mode)
   if (window.__catalogInitialized && !window.__isTest) return;
   window.__catalogInitialized = true;
 
-  /* -------------------------
-     Helpers
-  ------------------------- */
+  // --- Constants ---
+  const WHATSAPP_NUMBER = '5519999762594';
+
+  // --- Helpers ---
   const formatCurrency = (value) =>
-    new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(value);
+    new Intl.NumberFormat('pt-BR', {
+      style: 'currency',
+      currency: 'BRL'
+    }).format(value);
 
   const updateCategoryHeading = (category, headingEl) => {
     const headings = {
@@ -15,13 +19,15 @@
       'shoes-man': 'Tênis',
       'slippers-man': 'Chinelos',
       'tshirts-man': 'Camisetas',
-      'sneakers-man': 'Sneakers',
+      'sneakers-man': 'Sneakers'
     };
     headingEl.textContent = headings[category] || 'Produtos';
   };
 
   const collapseAllSubmenus = () => {
-    const submenuButtons = document.querySelectorAll('nav button.has-submenu, nav li.has-submenu > button');
+    const submenuButtons = document.querySelectorAll(
+      'nav button.has-submenu, nav li.has-submenu > button'
+    );
     submenuButtons.forEach((button) => {
       button.setAttribute('aria-expanded', 'false');
       const submenu = button.nextElementSibling;
@@ -35,11 +41,14 @@
     });
   };
 
-  /* -------------------------
-     Modal Module
-  ------------------------- */
+  // --- Modal Module ---
   const Modal = (() => {
-    let modal, currentImages = [], currentIndex = 0, currentZoom = 1, currentProductName = '';
+    let modal,
+      currentImages = [],
+      currentIndex = 0,
+      currentZoom = 1,
+      currentProductName = '',
+      currentCategory = '';
 
     const init = () => {
       modal = document.createElement('div');
@@ -55,6 +64,7 @@
             <button id="zoom-out">-</button>
             <button id="zoom-in">+</button>
             <button id="next-image">&gt;</button>
+            <button id="buy-product">Comprar este produto</button>
           </div>
         </div>
       `;
@@ -66,8 +76,28 @@
       document.getElementById('modal-close').addEventListener('click', close);
       document.getElementById('prev-image').addEventListener('click', showPrev);
       document.getElementById('next-image').addEventListener('click', showNext);
-      document.getElementById('zoom-in').addEventListener('click', () => adjustZoom(0.2));
-      document.getElementById('zoom-out').addEventListener('click', () => adjustZoom(-0.2));
+      document.getElementById('zoom-in').addEventListener('click', () =>
+        adjustZoom(0.2)
+      );
+      document.getElementById('zoom-out').addEventListener('click', () =>
+        adjustZoom(-0.2)
+      );
+      document.getElementById('buy-product').addEventListener('click', () => {
+        const message = `Olá, acabei de conferir seu catálogo online e na categoria ${currentCategory}, me interessei pelo produto ${currentProductName}. Poderia, por favor, me enviar mais informações e confirmar a disponibilidade? Obrigado!`;
+        const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+          message
+        )}`;
+
+        if (window.gtag) {
+          gtag('event', 'buy_product', {
+            event_category: 'Modal',
+            event_label: currentProductName,
+            product_category: currentCategory,
+          });
+        }
+        
+        window.open(url, '_blank');
+      });
       modal.addEventListener('click', (event) => {
         if (event.target === modal) close();
       });
@@ -87,18 +117,21 @@
       nextBtn.disabled = disableNav;
     };
 
-    const open = (product) => {
-      currentImages = Array.isArray(product.images) ? product.images : [product.image];
+    const open = (product, categoryText) => {
+      currentImages = Array.isArray(product.images)
+        ? product.images
+        : [product.image];
       currentIndex = 0;
       currentZoom = 1;
       currentProductName = product.name;
+      currentCategory = categoryText;
       updateImage();
       updateNavButtons();
       modal.style.display = 'flex';
       if (window.gtag) {
         gtag('event', 'open_modal', {
           event_category: 'Product',
-          event_label: currentProductName,
+          event_label: currentProductName
         });
       }
     };
@@ -116,7 +149,7 @@
           gtag('event', 'navigate_image', {
             event_category: 'Modal',
             event_label: 'prev',
-            product: currentProductName,
+            product: currentProductName
           });
         }
       }
@@ -131,7 +164,7 @@
           gtag('event', 'navigate_image', {
             event_category: 'Modal',
             event_label: 'next',
-            product: currentProductName,
+            product: currentProductName
           });
         }
       }
@@ -145,7 +178,7 @@
         gtag('event', action, {
           event_category: 'Modal',
           event_label: currentProductName,
-          zoom: currentZoom,
+          zoom: currentZoom
         });
       }
     };
@@ -153,11 +186,8 @@
     return { init, open, close };
   })();
 
-  /* -------------------------
-     Catalog Module
-  ------------------------- */
+  // --- Catalog Module ---
   const Catalog = (() => {
-    // Select all menu buttons (including submenu buttons)
     const categoryButtons = document.querySelectorAll('nav button[data-category]');
     const productListContainer = document.getElementById('product-list');
     const categoryHeading = document.getElementById('category-heading');
@@ -196,12 +226,15 @@
       products.forEach((product) => {
         const li = document.createElement('li');
         li.classList.add('product-item');
+
         const priceHTML =
           product.oldPrice && product.oldPrice > 0
             ? `<span class="old-price">${formatCurrency(product.oldPrice)}</span>
                <span class="new-price">${formatCurrency(product.price)}</span>`
             : `<span class="price">${formatCurrency(product.price)}</span>`;
+
         const imgSrc = Array.isArray(product.images) ? product.images[0] : product.image;
+
         li.innerHTML = `
           <img src="${imgSrc}" alt="${product.name}">
           <div class="product-details">
@@ -211,15 +244,18 @@
             ${priceHTML}
           </div>
         `;
+
         li.addEventListener('click', () => {
           if (window.gtag) {
             gtag('event', 'product_click', {
               event_category: 'Product',
-              event_label: product.name,
+              event_label: product.name
             });
           }
-          Modal.open(product);
+          const currentCategoryText = categoryHeading.textContent;
+          Modal.open(product, currentCategoryText);
         });
+
         productListContainer.appendChild(li);
       });
       window.location.hash = category;
@@ -229,10 +265,13 @@
       categoryButtons.forEach((button) => {
         button.addEventListener('click', async (event) => {
           event.stopPropagation();
+
           const hasSubmenu =
             button.classList.contains('has-submenu') ||
-            (button.parentElement && button.parentElement.classList.contains('has-submenu'));
+            (button.parentElement &&
+              button.parentElement.classList.contains('has-submenu'));
           const submenu = button.nextElementSibling;
+
           if (hasSubmenu && submenu && submenu.classList.contains('submenu')) {
             const expanded = button.getAttribute('aria-expanded') === 'true';
             if (window.innerWidth <= 768) {
@@ -245,15 +284,18 @@
             }
             return;
           }
+
           const category = button.getAttribute('data-category');
           await renderProducts(category);
+
           if (window.gtag) {
             gtag('event', 'select_category', {
               event_category: 'Navigation',
               event_label: category,
-              value: 1,
+              value: 1
             });
           }
+
           const nav = document.querySelector('nav');
           const menuToggle = document.getElementById('menu-toggle');
           if (nav.classList.contains('active')) {
@@ -274,14 +316,13 @@
     return { init };
   })();
 
+  // --- Setup ---
   const setupCatalog = () => {
     Modal.init();
     Catalog.init();
   };
 
-  /* -------------------------
-     Mobile Menu Toggle
-  ------------------------- */
+  // --- Mobile Menu Toggle ---
   document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.getElementById('menu-toggle');
     const nav = document.querySelector('nav');
