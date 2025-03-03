@@ -1,3 +1,5 @@
+"use strict";
+
 const fs = require('fs');
 const path = require('path');
 const { waitFor, fireEvent } = require('@testing-library/dom');
@@ -10,7 +12,7 @@ require('@testing-library/jest-dom');
  */
 const readProductsJson = (fileName) => {
   try {
-    const filePath = path.resolve(__dirname, '../products', fileName);
+    const filePath = path.join(__dirname, '../products', fileName);
     const fileContents = fs.readFileSync(filePath, 'utf8');
     return JSON.parse(fileContents);
   } catch (error) {
@@ -23,11 +25,12 @@ const readProductsJson = (fileName) => {
  */
 const setupGlobalFetchMock = () => {
   global.fetch = jest.fn((url) => {
-    const category = url.match(/products\/(.*)\.json/)?.[1];
+    const match = url.match(/products\/(.*)\.json/);
+    const category = match ? match[1] : null;
     if (category) {
       return Promise.resolve({
         ok: true,
-        json: () => Promise.resolve(readProductsJson(`${category}.json`)),
+        json: () => Promise.resolve(readProductsJson(`${category}.json`))
       });
     }
     return Promise.reject(new Error(`Unknown URL: ${url}`));
@@ -39,7 +42,7 @@ const setupGlobalFetchMock = () => {
  * @returns {string} The HTML content.
  */
 const loadHtml = () => {
-  return fs.readFileSync(path.resolve(__dirname, '../index.html'), 'utf8');
+  return fs.readFileSync(path.join(__dirname, '../index.html'), 'utf8');
 };
 
 /**
