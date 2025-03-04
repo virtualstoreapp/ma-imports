@@ -64,7 +64,7 @@
             <button id="zoom-out">-</button>
             <button id="zoom-in">+</button>
             <button id="next-image">&gt;</button>
-            <button id="buy-product">Comprar este produto</button>
+            <button id="buy-product">Comprar</button>
           </div>
         </div>
       `;
