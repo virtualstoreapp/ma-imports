@@ -481,7 +481,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <button id="zoom-out">-</button>
             <button id="zoom-in">+</button>
             <button id="next-image">&gt;</button>
-            <button id="buy-product">Comprar este produto</button>
+            <button id="buy-product">Comprar</button>
           </div>
         </div>
       </div>"
@@ -968,7 +968,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <button id="zoom-out">-</button>
             <button id="zoom-in">+</button>
             <button id="next-image">&gt;</button>
-            <button id="buy-product">Comprar este produto</button>
+            <button id="buy-product">Comprar</button>
           </div>
         </div>
       </div>"
@@ -1149,7 +1149,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas" correctly on 
             <button id="zoom-out">-</button>
             <button id="zoom-in">+</button>
             <button id="next-image">&gt;</button>
-            <button id="buy-product">Comprar este produto</button>
+            <button id="buy-product">Comprar</button>
           </div>
         </div>
       </div>"
@@ -1290,7 +1290,7 @@ exports[`Catalog Mobile View renders final subcategory "Chinelos" correctly on m
             <button id="zoom-out">-</button>
             <button id="zoom-in">+</button>
             <button id="next-image">&gt;</button>
-            <button id="buy-product">Comprar este produto</button>
+            <button id="buy-product">Comprar</button>
           </div>
         </div>
       </div>"
@@ -1609,7 +1609,7 @@ exports[`Catalog Mobile View renders final subcategory "Tênis" correctly on mob
             <button id="zoom-out">-</button>
             <button id="zoom-in">+</button>
             <button id="next-image">&gt;</button>
-            <button id="buy-product">Comprar este produto</button>
+            <button id="buy-product">Comprar</button>
           </div>
         </div>
       </div>"
