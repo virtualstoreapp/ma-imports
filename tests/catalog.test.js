@@ -38,9 +38,11 @@ describe('Catalog', () => {
     setupDOM();
   });
 
+  const quantityOfProducts = 52;
+
   describe('Desktop View', () => {
     it('renders "All Products" correctly', async () => {
-      await assertSnapshot("Todos os Produtos", 48);
+      await assertSnapshot("Todos os Produtos", quantityOfProducts);
     });
 
     it('renders final subcategory "Tênis" correctly on desktop', async () => {
@@ -95,8 +97,26 @@ describe('Catalog', () => {
           expect(document.getElementById('category-heading')).toHaveTextContent(expectedHeading);
         });
       };
-      // Parent for "Camisetas" is now "clothing-man-subcategory" and final is "tshirts-man"
+
       await selectFinalSubcategory("clothing-man-subcategory", "tshirts-man", "Camisetas");
+    });
+
+    it('renders final subcategory "Camisetas Fitness" correctly on desktop', async () => {
+      const selectFinalSubcategory = async (parentCat, finalCat, expectedHeading) => {
+        const parentButton = document.querySelector(`nav button[data-category="${parentCat}"]`);
+        expect(parentButton).toBeInTheDocument();
+        fireEvent.click(parentButton);
+        const submenu = parentButton.parentElement.querySelector('.submenu');
+        submenu.style.display = 'block';
+        const finalButton = submenu.querySelector(`button[data-category="${finalCat}"]`);
+        expect(finalButton).toBeInTheDocument();
+        fireEvent.click(finalButton);
+        await waitFor(() => {
+          expect(document.getElementById('category-heading')).toHaveTextContent(expectedHeading);
+        });
+      };
+
+      await selectFinalSubcategory("clothing-man-subcategory", "tshirts-fitness-man", "Camisetas Fitness");
     });
   });
 
@@ -109,7 +129,7 @@ describe('Catalog', () => {
     });
 
     it('renders "All Products" correctly on mobile', async () => {
-      await assertSnapshot("Todos os Produtos", 48);
+      await assertSnapshot("Todos os Produtos", quantityOfProducts);
     });
 
     it('renders final subcategory "Tênis" correctly on mobile', async () => {
@@ -160,6 +180,21 @@ describe('Catalog', () => {
         expect(document.getElementById('category-heading')).toHaveTextContent("Camisetas");
       });
       await assertSnapshot("Camisetas", 13);
+    });
+
+    it('renders final subcategory "Camisetas Fitness" correctly on mobile', async () => {
+      const menuToggle = document.getElementById('menu-toggle');
+      fireEvent.click(menuToggle);
+      const parentButton = document.querySelector('li.menu-item.has-submenu > button[data-category="clothing-man-subcategory"]');
+      expect(parentButton).toBeInTheDocument();
+      fireEvent.click(parentButton);
+      const finalButton = document.querySelector('li.menu-item.has-submenu > ul.submenu.open button[data-category="tshirts-fitness-man"]');
+      expect(finalButton).toBeInTheDocument();
+      fireEvent.click(finalButton);
+      await waitFor(() => {
+        expect(document.getElementById('category-heading')).toHaveTextContent("Camisetas Fitness");
+      });
+      await assertSnapshot("Camisetas Fitness", 4);
     });
   });
 

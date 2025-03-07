@@ -27,6 +27,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
                 <ul class="submenu">
                   <li class="menu-item">
                     <button data-category="tshirts-man">Camisetas</button>
+                    <button data-category="tshirts-fitness-man">Camisetas Fitness</button>
                   </li>
                 </ul>
               </li>
@@ -397,6 +398,38 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;79,90</span>
           </div>
         </li><li class="product-item">
+          <img src="images/male/tshirts/fitness/nike/07031709-nike.jpeg" alt="[07031709] Camiseta Nike">
+          <div class="product-details">
+            <h3>[07031709] Camiseta Nike</h3>
+            <p class="description">Dry-Fit, Cor: Preta</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/fitness/puma/07031712-puma.jpeg" alt="[07031712] Regata Puma">
+          <div class="product-details">
+            <h3>[07031712] Regata Puma</h3>
+            <p class="description">Dry-Fit, Cor: Azul Marinho</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/fitness/puma/07031715-puma.jpeg" alt="[07031715] Regata Puma">
+          <div class="product-details">
+            <h3>[07031715] Regata Puma</h3>
+            <p class="description">Dry-Fit, Cor: Cinza</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/fitness/puma/07031717-puma.jpeg" alt="[07031717] Regata Mizuno">
+          <div class="product-details">
+            <h3>[07031717] Regata Mizuno</h3>
+            <p class="description">Dry-Fit, Cor: Preta</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item">
           <img src="images/slippers/tommy-hilfiger/17021140-tommy-hilfiger.jpeg" alt="[17021140] Tommy Hilfiger">
           <div class="product-details">
             <h3>[17021140] Tommy Hilfiger</h3>
@@ -464,7 +497,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
   </main>
 
   <footer>
-    <p>Versão: 2.0.6 - 0.0.41</p>
+    <p>Versão: 2.0.6 - 0.0.45</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -496,9 +529,9 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
   </header>
 
   <!-- Navigation -->
-  <nav aria-label="Main Navigation" class="active">
+  <nav aria-label="Main Navigation" class="">
     <!-- Mobile toggle button -->
-    <button id="menu-toggle" aria-expanded="true" aria-controls="nav-menu">☰</button>
+    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
     <ul id="nav-menu">
       <li class="menu-item">
         <button data-category="all">Início</button>
@@ -514,6 +547,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
                 <ul class="submenu">
                   <li class="menu-item">
                     <button data-category="tshirts-man">Camisetas</button>
+                    <button data-category="tshirts-fitness-man">Camisetas Fitness</button>
                   </li>
                 </ul>
               </li>
@@ -884,6 +918,38 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="price">R$&nbsp;79,90</span>
           </div>
         </li><li class="product-item">
+          <img src="images/male/tshirts/fitness/nike/07031709-nike.jpeg" alt="[07031709] Camiseta Nike">
+          <div class="product-details">
+            <h3>[07031709] Camiseta Nike</h3>
+            <p class="description">Dry-Fit, Cor: Preta</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/fitness/puma/07031712-puma.jpeg" alt="[07031712] Regata Puma">
+          <div class="product-details">
+            <h3>[07031712] Regata Puma</h3>
+            <p class="description">Dry-Fit, Cor: Azul Marinho</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/fitness/puma/07031715-puma.jpeg" alt="[07031715] Regata Puma">
+          <div class="product-details">
+            <h3>[07031715] Regata Puma</h3>
+            <p class="description">Dry-Fit, Cor: Cinza</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/fitness/puma/07031717-puma.jpeg" alt="[07031717] Regata Mizuno">
+          <div class="product-details">
+            <h3>[07031717] Regata Mizuno</h3>
+            <p class="description">Dry-Fit, Cor: Preta</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item">
           <img src="images/slippers/tommy-hilfiger/17021140-tommy-hilfiger.jpeg" alt="[17021140] Tommy Hilfiger">
           <div class="product-details">
             <h3>[17021140] Tommy Hilfiger</h3>
@@ -951,7 +1017,117 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
   </main>
 
   <footer>
-    <p>Versão: 2.0.6 - 0.0.41</p>
+    <p>Versão: 2.0.6 - 0.0.45</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+
+<div id="product-modal">
+        <div id="modal-content">
+          <button id="modal-close">X</button>
+          <div id="modal-image-container">
+            <img id="modal-image" src="" alt="">
+          </div>
+          <div id="modal-controls">
+            <button id="prev-image">&lt;</button>
+            <button id="zoom-out">-</button>
+            <button id="zoom-in">+</button>
+            <button id="next-image">&gt;</button>
+            <button id="buy-product">Comprar</button>
+          </div>
+        </div>
+      </div>"
+`;
+
+exports[`Catalog Mobile View renders final subcategory "Camisetas Fitness" correctly on mobile 1`] = `
+"
+  <header>
+    <div class="header-logo">
+      <img src="images/logo.jpeg" alt="M/A Imports Logo">
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav aria-label="Main Navigation" class="">
+    <!-- Mobile toggle button -->
+    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+    <ul id="nav-menu">
+      <li class="menu-item">
+        <button data-category="all">Início</button>
+      </li>
+      <li class="menu-item has-submenu">
+        <button data-category="fashion-category" aria-expanded="false">Moda</button>
+        <ul class="submenu">
+          <li class="menu-item has-submenu">
+            <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
+            <ul class="submenu">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu">
+                  <li class="menu-item">
+                    <button data-category="tshirts-man">Camisetas</button>
+                    <button data-category="tshirts-fitness-man">Camisetas Fitness</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu">
+                  <li class="menu-item">
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2 id="category-heading">Camisetas Fitness</h2>
+    <ul id="product-list"><li class="product-item">
+          <img src="images/male/tshirts/fitness/nike/07031709-nike.jpeg" alt="[07031709] Camiseta Nike">
+          <div class="product-details">
+            <h3>[07031709] Camiseta Nike</h3>
+            <p class="description">Dry-Fit, Cor: Preta</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/fitness/puma/07031712-puma.jpeg" alt="[07031712] Regata Puma">
+          <div class="product-details">
+            <h3>[07031712] Regata Puma</h3>
+            <p class="description">Dry-Fit, Cor: Azul Marinho</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/fitness/puma/07031715-puma.jpeg" alt="[07031715] Regata Puma">
+          <div class="product-details">
+            <h3>[07031715] Regata Puma</h3>
+            <p class="description">Dry-Fit, Cor: Cinza</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/fitness/puma/07031717-puma.jpeg" alt="[07031717] Regata Mizuno">
+          <div class="product-details">
+            <h3>[07031717] Regata Mizuno</h3>
+            <p class="description">Dry-Fit, Cor: Preta</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li></ul>
+  </main>
+
+  <footer>
+    <p>Versão: 2.0.6 - 0.0.45</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1001,6 +1177,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas" correctly on 
                 <ul class="submenu">
                   <li class="menu-item">
                     <button data-category="tshirts-man">Camisetas</button>
+                    <button data-category="tshirts-fitness-man">Camisetas Fitness</button>
                   </li>
                 </ul>
               </li>
@@ -1132,7 +1309,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas" correctly on 
   </main>
 
   <footer>
-    <p>Versão: 2.0.6 - 0.0.41</p>
+    <p>Versão: 2.0.6 - 0.0.45</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1182,6 +1359,7 @@ exports[`Catalog Mobile View renders final subcategory "Chinelos" correctly on m
                 <ul class="submenu">
                   <li class="menu-item">
                     <button data-category="tshirts-man">Camisetas</button>
+                    <button data-category="tshirts-fitness-man">Camisetas Fitness</button>
                   </li>
                 </ul>
               </li>
@@ -1273,7 +1451,7 @@ exports[`Catalog Mobile View renders final subcategory "Chinelos" correctly on m
   </main>
 
   <footer>
-    <p>Versão: 2.0.6 - 0.0.41</p>
+    <p>Versão: 2.0.6 - 0.0.45</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1323,6 +1501,7 @@ exports[`Catalog Mobile View renders final subcategory "Tênis" correctly on mob
                 <ul class="submenu">
                   <li class="menu-item">
                     <button data-category="tshirts-man">Camisetas</button>
+                    <button data-category="tshirts-fitness-man">Camisetas Fitness</button>
                   </li>
                 </ul>
               </li>
@@ -1592,7 +1771,7 @@ exports[`Catalog Mobile View renders final subcategory "Tênis" correctly on mob
   </main>
 
   <footer>
-    <p>Versão: 2.0.6 - 0.0.41</p>
+    <p>Versão: 2.0.6 - 0.0.45</p>
   </footer>
 
   <script src="scripts.js"></script>

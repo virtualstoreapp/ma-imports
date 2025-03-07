@@ -19,7 +19,7 @@
       'shoes-man': 'Tênis',
       'slippers-man': 'Chinelos',
       'tshirts-man': 'Camisetas',
-      'sneakers-man': 'Sneakers'
+      'tshirts-fitness-man': 'Camisetas Fitness'
     };
     headingEl.textContent = headings[category] || 'Produtos';
   };
@@ -195,7 +195,7 @@
     const fetchCategoryData = async (category) => {
       try {
         if (category === 'all') {
-          const categories = ['shoes-man', 'tshirts-man', 'slippers-man'];
+          const categories = ['shoes-man', 'tshirts-man', 'tshirts-fitness-man', 'slippers-man'];
           const responses = await Promise.all(
             categories.map((cat) => fetch(`products/${cat}.json`))
           );
