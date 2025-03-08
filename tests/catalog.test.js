@@ -13,6 +13,10 @@ const {
 window.__isTest = true;
 global.gtag = jest.fn();
 
+const assertSnapshot = async () => {
+  expect(document.body.innerHTML).toMatchSnapshot();
+};
+
 const assertExpectedHeading = async (expectedHeading) => {
   await waitFor(() => {
     expect(document.getElementById('category-heading')).toHaveTextContent(expectedHeading);
@@ -25,32 +29,32 @@ const assertExpectedProductQuantity = async (expectedCount) => {
   });
 };
 
-const assertSnapshot = async () => {
-  expect(document.body.innerHTML).toMatchSnapshot();
-};
-
 const asserts = async (expectedHeading, expectedCount) => {
   await assertExpectedHeading(expectedHeading);
   await assertExpectedProductQuantity(expectedCount);
   await assertSnapshot();
 };
 
-// Updated assertAllProducts to include snapshot assertion by calling asserts()
 const assertAllProducts = async () => {
+  const expectedHeading = "Todos os Produtos";
   const expectedCount = 50;
-  await asserts("Todos os Produtos", expectedCount);
+  await asserts(expectedHeading, expectedCount);
 };
 
 const selectMenuOption = async (dataCategory) => {
-  let menuOption = document.querySelector(`button[data-category="${dataCategory}"]`);
-
+  const menuOption = document.querySelector(`button[data-category="${dataCategory}"]`);
   expect(menuOption).toBeInTheDocument();
   fireEvent.click(menuOption);
 };
 
+const clickMenuOptions = async (categories) => {
+  for (const category of categories) {
+    await selectMenuOption(category);
+  }
+};
+
 const selectManSubcategory = async () => {
-  await selectMenuOption('fashion-category');
-  await selectMenuOption('man-subcategory');
+  await clickMenuOptions(['fashion-category', 'man-subcategory']);
 };
 
 const selectClothingManSubcategory = async () => {
@@ -66,40 +70,32 @@ const selectShoesManSubcategory = async () => {
 const selectShoesMan = async () => {
   const expectedHeading = "Tênis";
   const expectedCount = 27;
-
   await selectShoesManSubcategory();
   await selectMenuOption('shoes-man');
-
   await asserts(expectedHeading, expectedCount);
 };
 
 const selectSlippersMan = async () => {
   const expectedHeading = "Chinelos";
   const expectedCount = 1;
-
   await selectShoesManSubcategory();
   await selectMenuOption('slippers-man');
-
   await asserts(expectedHeading, expectedCount);
 };
 
 const selectTshirtsCasualMan = async () => {
   const expectedHeading = "Camisetas Casuais Masculina";
   const expectedCount = 18;
-
   await selectClothingManSubcategory();
   await selectMenuOption('tshirts-casual-man');
-
   await asserts(expectedHeading, expectedCount);
 };
 
 const selectTshirtsFitnessMan = async () => {
   const expectedHeading = "Camisetas Fitness Masculina";
   const expectedCount = 4;
-
   await selectClothingManSubcategory();
   await selectMenuOption('tshirts-fitness-man');
-
   await asserts(expectedHeading, expectedCount);
 };
 
