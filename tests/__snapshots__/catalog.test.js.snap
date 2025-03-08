@@ -25,9 +25,14 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
               <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu">
-                  <li class="menu-item">
-                    <button data-category="tshirts-man">Camisetas</button>
-                    <button data-category="tshirts-fitness-man">Camisetas Fitness</button>
+                  <li class="menu-item has-submenu">
+                    <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="tshirts-casual-man">Casuais</button>
+                        <button data-category="tshirts-fitness-man">Fitness</button>
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </li>
@@ -294,7 +299,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
                <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item">
-          <img src="images/tshirts/louis-vuitton/27020956-louis-vuitton.jpeg" alt="[27020956] Louis Vuitton">
+          <img src="images/male/tshirts/casual/louis-vuitton/27020956-louis-vuitton.jpeg" alt="[27020956] Louis Vuitton">
           <div class="product-details">
             <h3>[27020956] Louis Vuitton</h3>
             <p class="description">Algodão Italiano Oversized</p>
@@ -302,7 +307,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/tshirts/louis-vuitton/2802112-louis-vuitton.jpeg" alt="[2802112] Louis Vuitton">
+          <img src="images/male/tshirts/casual/louis-vuitton/2802112-louis-vuitton.jpeg" alt="[2802112] Louis Vuitton">
           <div class="product-details">
             <h3>[2802112] Louis Vuitton</h3>
             <p class="description">Algodão Italiano Oversized</p>
@@ -310,7 +315,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/tshirts/dolce-gabbana/27020957-dolce-gabbana.jpeg" alt="[27020957] Dolce &amp; Gabbana">
+          <img src="images/male/tshirts/casual/dolce-gabbana/27020957-dolce-gabbana.jpeg" alt="[27020957] Dolce &amp; Gabbana">
           <div class="product-details">
             <h3>[27020957] Dolce &amp; Gabbana</h3>
             <p class="description">Algodão Peruano</p>
@@ -318,7 +323,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;79,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/tshirts/emporio-armani/27021001-emporio-armani.jpeg" alt="[27021001] Emporio Armani">
+          <img src="images/male/tshirts/casual/emporio-armani/27021001-emporio-armani.jpeg" alt="[27021001] Emporio Armani">
           <div class="product-details">
             <h3>[27021001] Emporio Armani</h3>
             <p class="description">Algodão Peruano</p>
@@ -326,7 +331,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;79,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/tshirts/emporio-armani/01030820-emporio-armani.jpeg" alt="[01030820] Emporio Armani">
+          <img src="images/male/tshirts/casual/emporio-armani/01030820-emporio-armani.jpeg" alt="[01030820] Emporio Armani">
           <div class="product-details">
             <h3>[01030820] Emporio Armani</h3>
             <p class="description">Algodão Italiano Oversized</p>
@@ -334,7 +339,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/tshirts/burberry/27021016-burberry.jpeg" alt="[27021016] Burberry">
+          <img src="images/male/tshirts/casual/burberry/27021016-burberry.jpeg" alt="[27021016] Burberry">
           <div class="product-details">
             <h3>[27021016] Burberry</h3>
             <p class="description">Algodão Peruano</p>
@@ -342,7 +347,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;79,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/tshirts/balmain/28021105-balmain.jpeg" alt="[28021105] Balmain">
+          <img src="images/male/tshirts/casual/balmain/28021105-balmain.jpeg" alt="[28021105] Balmain">
           <div class="product-details">
             <h3>[28021105] Balmain</h3>
             <p class="description">Algodão Italiano Oversized</p>
@@ -350,7 +355,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/tshirts/tommy-hilfiger/28021109-tommy-hilfiger.jpeg" alt="[28021109] Tommy Hilfiger">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/28021109-tommy-hilfiger.jpeg" alt="[28021109] Tommy Hilfiger">
           <div class="product-details">
             <h3>[28021109] Tommy Hilfiger</h3>
             <p class="description">Algodão Italiano Oversized</p>
@@ -358,7 +363,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/tshirts/tommy-hilfiger/28021122-tommy-hilfiger.jpeg" alt="[28021122] Tommy Hilfiger">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/28021122-tommy-hilfiger.jpeg" alt="[28021122] Tommy Hilfiger">
           <div class="product-details">
             <h3>[28021122] Tommy Hilfiger</h3>
             <p class="description">Algodão Italiano Oversized</p>
@@ -366,7 +371,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/tshirts/nike/28021120-nike-front.jpeg" alt="[28021120] Nike">
+          <img src="images/male/tshirts/casual/nike/28021120-nike-front.jpeg" alt="[28021120] Nike">
           <div class="product-details">
             <h3>[28021120] Nike</h3>
             <p class="description">Algodão Peruano</p>
@@ -374,7 +379,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;79,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/tshirts/hugo-boss/01030810-hugo-boss.jpeg" alt="[01030810] Hugo Boss">
+          <img src="images/male/tshirts/casual/hugo-boss/01030810-hugo-boss.jpeg" alt="[01030810] Hugo Boss">
           <div class="product-details">
             <h3>[01030810] Hugo Boss</h3>
             <p class="description">Algodão Italiano Oversized</p>
@@ -382,7 +387,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/tshirts/hugo-boss/01030815-hugo-boss.jpeg" alt="[01030815] Hugo Boss">
+          <img src="images/male/tshirts/casual/hugo-boss/01030815-hugo-boss.jpeg" alt="[01030815] Hugo Boss">
           <div class="product-details">
             <h3>[01030815] Hugo Boss</h3>
             <p class="description">Algodão Peruano</p>
@@ -390,7 +395,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;79,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/tshirts/versace/01030813-versace.jpeg" alt="[01030813] Versace">
+          <img src="images/male/tshirts/casual/versace/01030813-versace.jpeg" alt="[01030813] Versace">
           <div class="product-details">
             <h3>[01030813] Versace</h3>
             <p class="description">Algodão Peruano</p>
@@ -437,67 +442,313 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="size">Tamanho: 37/38, 39/40</span>
             <span class="price">R$&nbsp;29,90</span>
           </div>
-        </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
+        </li></ul>
+  </main>
+
+  <footer>
+    <p>Versão: 2.0.7 - 0.0.45</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+
+<div id="product-modal">
+        <div id="modal-content">
+          <button id="modal-close">X</button>
+          <div id="modal-image-container">
+            <img id="modal-image" src="" alt="">
+          </div>
+          <div id="modal-controls">
+            <button id="prev-image">&lt;</button>
+            <button id="zoom-out">-</button>
+            <button id="zoom-in">+</button>
+            <button id="next-image">&gt;</button>
+            <button id="buy-product">Comprar</button>
+          </div>
+        </div>
+      </div>"
+`;
+
+exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Masculina" correctly on desktop 1`] = `
+"
+  <header>
+    <div class="header-logo">
+      <img src="images/logo.jpeg" alt="M/A Imports Logo">
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav aria-label="Main Navigation">
+    <!-- Mobile toggle button -->
+    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+    <ul id="nav-menu">
+      <li class="menu-item">
+        <button data-category="all">Início</button>
+      </li>
+      <li class="menu-item has-submenu">
+        <button data-category="fashion-category" aria-expanded="false">Moda</button>
+        <ul class="submenu" style="display: none;">
+          <li class="menu-item has-submenu">
+            <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="tshirts-casual-man">Casuais</button>
+                        <button data-category="tshirts-fitness-man">Fitness</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2 id="category-heading">Camisetas Casuais Masculina</h2>
+    <ul id="product-list"><li class="product-item">
+          <img src="images/male/tshirts/casual/louis-vuitton/27020956-louis-vuitton.jpeg" alt="[27020956] Louis Vuitton">
           <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
+            <h3>[27020956] Louis Vuitton</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
+          <img src="images/male/tshirts/casual/louis-vuitton/2802112-louis-vuitton.jpeg" alt="[2802112] Louis Vuitton">
           <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
+            <h3>[2802112] Louis Vuitton</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
+          <img src="images/male/tshirts/casual/dolce-gabbana/27020957-dolce-gabbana.jpeg" alt="[27020957] Dolce &amp; Gabbana">
           <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
+            <h3>[27020957] Dolce &amp; Gabbana</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;79,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
+          <img src="images/male/tshirts/casual/emporio-armani/27021001-emporio-armani.jpeg" alt="[27021001] Emporio Armani">
           <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
+            <h3>[27021001] Emporio Armani</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;79,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
+          <img src="images/male/tshirts/casual/emporio-armani/01030820-emporio-armani.jpeg" alt="[01030820] Emporio Armani">
           <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
+            <h3>[01030820] Emporio Armani</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
+          <img src="images/male/tshirts/casual/burberry/27021016-burberry.jpeg" alt="[27021016] Burberry">
           <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
+            <h3>[27021016] Burberry</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;79,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
+          <img src="images/male/tshirts/casual/balmain/28021105-balmain.jpeg" alt="[28021105] Balmain">
           <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
+            <h3>[28021105] Balmain</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/28021109-tommy-hilfiger.jpeg" alt="[28021109] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[28021109] Tommy Hilfiger</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/28021122-tommy-hilfiger.jpeg" alt="[28021122] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[28021122] Tommy Hilfiger</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/nike/28021120-nike-front.jpeg" alt="[28021120] Nike">
+          <div class="product-details">
+            <h3>[28021120] Nike</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/hugo-boss/01030810-hugo-boss.jpeg" alt="[01030810] Hugo Boss">
+          <div class="product-details">
+            <h3>[01030810] Hugo Boss</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/hugo-boss/01030815-hugo-boss.jpeg" alt="[01030815] Hugo Boss">
+          <div class="product-details">
+            <h3>[01030815] Hugo Boss</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/versace/01030813-versace.jpeg" alt="[01030813] Versace">
+          <div class="product-details">
+            <h3>[01030813] Versace</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;79,90</span>
           </div>
         </li></ul>
   </main>
 
   <footer>
-    <p>Versão: 2.0.6 - 0.0.45</p>
+    <p>Versão: 2.0.7 - 0.0.45</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+
+<div id="product-modal">
+        <div id="modal-content">
+          <button id="modal-close">X</button>
+          <div id="modal-image-container">
+            <img id="modal-image" src="" alt="">
+          </div>
+          <div id="modal-controls">
+            <button id="prev-image">&lt;</button>
+            <button id="zoom-out">-</button>
+            <button id="zoom-in">+</button>
+            <button id="next-image">&gt;</button>
+            <button id="buy-product">Comprar</button>
+          </div>
+        </div>
+      </div>"
+`;
+
+exports[`Catalog Desktop View renders final subcategory "Camisetas Fitness Masculina" correctly on desktop 1`] = `
+"
+  <header>
+    <div class="header-logo">
+      <img src="images/logo.jpeg" alt="M/A Imports Logo">
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav aria-label="Main Navigation">
+    <!-- Mobile toggle button -->
+    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+    <ul id="nav-menu">
+      <li class="menu-item">
+        <button data-category="all">Início</button>
+      </li>
+      <li class="menu-item has-submenu">
+        <button data-category="fashion-category" aria-expanded="false">Moda</button>
+        <ul class="submenu" style="display: none;">
+          <li class="menu-item has-submenu">
+            <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="tshirts-casual-man">Casuais</button>
+                        <button data-category="tshirts-fitness-man">Fitness</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2 id="category-heading">Camisetas Fitness Masculina</h2>
+    <ul id="product-list"><li class="product-item">
+          <img src="images/male/tshirts/fitness/nike/07031709-nike.jpeg" alt="[07031709] Camiseta Nike">
+          <div class="product-details">
+            <h3>[07031709] Camiseta Nike</h3>
+            <p class="description">Dry-Fit, Cor: Preta</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/fitness/puma/07031712-puma.jpeg" alt="[07031712] Regata Puma">
+          <div class="product-details">
+            <h3>[07031712] Regata Puma</h3>
+            <p class="description">Dry-Fit, Cor: Azul Marinho</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/fitness/puma/07031715-puma.jpeg" alt="[07031715] Regata Puma">
+          <div class="product-details">
+            <h3>[07031715] Regata Puma</h3>
+            <p class="description">Dry-Fit, Cor: Cinza</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/fitness/puma/07031717-puma.jpeg" alt="[07031717] Regata Mizuno">
+          <div class="product-details">
+            <h3>[07031717] Regata Mizuno</h3>
+            <p class="description">Dry-Fit, Cor: Preta</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li></ul>
+  </main>
+
+  <footer>
+    <p>Versão: 2.0.7 - 0.0.45</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -545,9 +796,14 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
               <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu">
-                  <li class="menu-item">
-                    <button data-category="tshirts-man">Camisetas</button>
-                    <button data-category="tshirts-fitness-man">Camisetas Fitness</button>
+                  <li class="menu-item has-submenu">
+                    <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="tshirts-casual-man">Casuais</button>
+                        <button data-category="tshirts-fitness-man">Fitness</button>
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </li>
@@ -814,7 +1070,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
                <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item">
-          <img src="images/tshirts/louis-vuitton/27020956-louis-vuitton.jpeg" alt="[27020956] Louis Vuitton">
+          <img src="images/male/tshirts/casual/louis-vuitton/27020956-louis-vuitton.jpeg" alt="[27020956] Louis Vuitton">
           <div class="product-details">
             <h3>[27020956] Louis Vuitton</h3>
             <p class="description">Algodão Italiano Oversized</p>
@@ -822,7 +1078,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/tshirts/louis-vuitton/2802112-louis-vuitton.jpeg" alt="[2802112] Louis Vuitton">
+          <img src="images/male/tshirts/casual/louis-vuitton/2802112-louis-vuitton.jpeg" alt="[2802112] Louis Vuitton">
           <div class="product-details">
             <h3>[2802112] Louis Vuitton</h3>
             <p class="description">Algodão Italiano Oversized</p>
@@ -830,7 +1086,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/tshirts/dolce-gabbana/27020957-dolce-gabbana.jpeg" alt="[27020957] Dolce &amp; Gabbana">
+          <img src="images/male/tshirts/casual/dolce-gabbana/27020957-dolce-gabbana.jpeg" alt="[27020957] Dolce &amp; Gabbana">
           <div class="product-details">
             <h3>[27020957] Dolce &amp; Gabbana</h3>
             <p class="description">Algodão Peruano</p>
@@ -838,7 +1094,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="price">R$&nbsp;79,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/tshirts/emporio-armani/27021001-emporio-armani.jpeg" alt="[27021001] Emporio Armani">
+          <img src="images/male/tshirts/casual/emporio-armani/27021001-emporio-armani.jpeg" alt="[27021001] Emporio Armani">
           <div class="product-details">
             <h3>[27021001] Emporio Armani</h3>
             <p class="description">Algodão Peruano</p>
@@ -846,7 +1102,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="price">R$&nbsp;79,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/tshirts/emporio-armani/01030820-emporio-armani.jpeg" alt="[01030820] Emporio Armani">
+          <img src="images/male/tshirts/casual/emporio-armani/01030820-emporio-armani.jpeg" alt="[01030820] Emporio Armani">
           <div class="product-details">
             <h3>[01030820] Emporio Armani</h3>
             <p class="description">Algodão Italiano Oversized</p>
@@ -854,7 +1110,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/tshirts/burberry/27021016-burberry.jpeg" alt="[27021016] Burberry">
+          <img src="images/male/tshirts/casual/burberry/27021016-burberry.jpeg" alt="[27021016] Burberry">
           <div class="product-details">
             <h3>[27021016] Burberry</h3>
             <p class="description">Algodão Peruano</p>
@@ -862,7 +1118,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="price">R$&nbsp;79,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/tshirts/balmain/28021105-balmain.jpeg" alt="[28021105] Balmain">
+          <img src="images/male/tshirts/casual/balmain/28021105-balmain.jpeg" alt="[28021105] Balmain">
           <div class="product-details">
             <h3>[28021105] Balmain</h3>
             <p class="description">Algodão Italiano Oversized</p>
@@ -870,7 +1126,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/tshirts/tommy-hilfiger/28021109-tommy-hilfiger.jpeg" alt="[28021109] Tommy Hilfiger">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/28021109-tommy-hilfiger.jpeg" alt="[28021109] Tommy Hilfiger">
           <div class="product-details">
             <h3>[28021109] Tommy Hilfiger</h3>
             <p class="description">Algodão Italiano Oversized</p>
@@ -878,7 +1134,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/tshirts/tommy-hilfiger/28021122-tommy-hilfiger.jpeg" alt="[28021122] Tommy Hilfiger">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/28021122-tommy-hilfiger.jpeg" alt="[28021122] Tommy Hilfiger">
           <div class="product-details">
             <h3>[28021122] Tommy Hilfiger</h3>
             <p class="description">Algodão Italiano Oversized</p>
@@ -886,7 +1142,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/tshirts/nike/28021120-nike-front.jpeg" alt="[28021120] Nike">
+          <img src="images/male/tshirts/casual/nike/28021120-nike-front.jpeg" alt="[28021120] Nike">
           <div class="product-details">
             <h3>[28021120] Nike</h3>
             <p class="description">Algodão Peruano</p>
@@ -894,7 +1150,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="price">R$&nbsp;79,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/tshirts/hugo-boss/01030810-hugo-boss.jpeg" alt="[01030810] Hugo Boss">
+          <img src="images/male/tshirts/casual/hugo-boss/01030810-hugo-boss.jpeg" alt="[01030810] Hugo Boss">
           <div class="product-details">
             <h3>[01030810] Hugo Boss</h3>
             <p class="description">Algodão Italiano Oversized</p>
@@ -902,7 +1158,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/tshirts/hugo-boss/01030815-hugo-boss.jpeg" alt="[01030815] Hugo Boss">
+          <img src="images/male/tshirts/casual/hugo-boss/01030815-hugo-boss.jpeg" alt="[01030815] Hugo Boss">
           <div class="product-details">
             <h3>[01030815] Hugo Boss</h3>
             <p class="description">Algodão Peruano</p>
@@ -910,7 +1166,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="price">R$&nbsp;79,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/tshirts/versace/01030813-versace.jpeg" alt="[01030813] Versace">
+          <img src="images/male/tshirts/casual/versace/01030813-versace.jpeg" alt="[01030813] Versace">
           <div class="product-details">
             <h3>[01030813] Versace</h3>
             <p class="description">Algodão Peruano</p>
@@ -957,67 +1213,11 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="size">Tamanho: 37/38, 39/40</span>
             <span class="price">R$&nbsp;29,90</span>
           </div>
-        </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
-          <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
-          <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
-          <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
-          <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
-          <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
-          <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
-          <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
-          </div>
         </li></ul>
   </main>
 
   <footer>
-    <p>Versão: 2.0.6 - 0.0.45</p>
+    <p>Versão: 2.0.7 - 0.0.45</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1040,7 +1240,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
       </div>"
 `;
 
-exports[`Catalog Mobile View renders final subcategory "Camisetas Fitness" correctly on mobile 1`] = `
+exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Masculina" correctly on mobile 1`] = `
 "
   <header>
     <div class="header-logo">
@@ -1065,9 +1265,14 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Fitness" corre
               <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu">
-                  <li class="menu-item">
-                    <button data-category="tshirts-man">Camisetas</button>
-                    <button data-category="tshirts-fitness-man">Camisetas Fitness</button>
+                  <li class="menu-item has-submenu">
+                    <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="tshirts-casual-man">Casuais</button>
+                        <button data-category="tshirts-fitness-man">Fitness</button>
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </li>
@@ -1090,7 +1295,194 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Fitness" corre
   </nav>
 
   <main>
-    <h2 id="category-heading">Camisetas Fitness</h2>
+    <h2 id="category-heading">Camisetas Casuais Masculina</h2>
+    <ul id="product-list"><li class="product-item">
+          <img src="images/male/tshirts/casual/louis-vuitton/27020956-louis-vuitton.jpeg" alt="[27020956] Louis Vuitton">
+          <div class="product-details">
+            <h3>[27020956] Louis Vuitton</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/louis-vuitton/2802112-louis-vuitton.jpeg" alt="[2802112] Louis Vuitton">
+          <div class="product-details">
+            <h3>[2802112] Louis Vuitton</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/dolce-gabbana/27020957-dolce-gabbana.jpeg" alt="[27020957] Dolce &amp; Gabbana">
+          <div class="product-details">
+            <h3>[27020957] Dolce &amp; Gabbana</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/emporio-armani/27021001-emporio-armani.jpeg" alt="[27021001] Emporio Armani">
+          <div class="product-details">
+            <h3>[27021001] Emporio Armani</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/emporio-armani/01030820-emporio-armani.jpeg" alt="[01030820] Emporio Armani">
+          <div class="product-details">
+            <h3>[01030820] Emporio Armani</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/burberry/27021016-burberry.jpeg" alt="[27021016] Burberry">
+          <div class="product-details">
+            <h3>[27021016] Burberry</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/balmain/28021105-balmain.jpeg" alt="[28021105] Balmain">
+          <div class="product-details">
+            <h3>[28021105] Balmain</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/28021109-tommy-hilfiger.jpeg" alt="[28021109] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[28021109] Tommy Hilfiger</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/28021122-tommy-hilfiger.jpeg" alt="[28021122] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[28021122] Tommy Hilfiger</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/nike/28021120-nike-front.jpeg" alt="[28021120] Nike">
+          <div class="product-details">
+            <h3>[28021120] Nike</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/hugo-boss/01030810-hugo-boss.jpeg" alt="[01030810] Hugo Boss">
+          <div class="product-details">
+            <h3>[01030810] Hugo Boss</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/hugo-boss/01030815-hugo-boss.jpeg" alt="[01030815] Hugo Boss">
+          <div class="product-details">
+            <h3>[01030815] Hugo Boss</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/versace/01030813-versace.jpeg" alt="[01030813] Versace">
+          <div class="product-details">
+            <h3>[01030813] Versace</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li></ul>
+  </main>
+
+  <footer>
+    <p>Versão: 2.0.7 - 0.0.45</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+
+<div id="product-modal">
+        <div id="modal-content">
+          <button id="modal-close">X</button>
+          <div id="modal-image-container">
+            <img id="modal-image" src="" alt="">
+          </div>
+          <div id="modal-controls">
+            <button id="prev-image">&lt;</button>
+            <button id="zoom-out">-</button>
+            <button id="zoom-in">+</button>
+            <button id="next-image">&gt;</button>
+            <button id="buy-product">Comprar</button>
+          </div>
+        </div>
+      </div>"
+`;
+
+exports[`Catalog Mobile View renders final subcategory "Camisetas Fitness Masculina" correctly on mobile 1`] = `
+"
+  <header>
+    <div class="header-logo">
+      <img src="images/logo.jpeg" alt="M/A Imports Logo">
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav aria-label="Main Navigation" class="">
+    <!-- Mobile toggle button -->
+    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+    <ul id="nav-menu">
+      <li class="menu-item">
+        <button data-category="all">Início</button>
+      </li>
+      <li class="menu-item has-submenu">
+        <button data-category="fashion-category" aria-expanded="false">Moda</button>
+        <ul class="submenu">
+          <li class="menu-item has-submenu">
+            <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
+            <ul class="submenu">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu">
+                  <li class="menu-item has-submenu">
+                    <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="tshirts-casual-man">Casuais</button>
+                        <button data-category="tshirts-fitness-man">Fitness</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu">
+                  <li class="menu-item">
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2 id="category-heading">Camisetas Fitness Masculina</h2>
     <ul id="product-list"><li class="product-item">
           <img src="images/male/tshirts/fitness/nike/07031709-nike.jpeg" alt="[07031709] Camiseta Nike">
           <div class="product-details">
@@ -1127,189 +1519,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Fitness" corre
   </main>
 
   <footer>
-    <p>Versão: 2.0.6 - 0.0.45</p>
-  </footer>
-
-  <script src="scripts.js"></script>
-
-
-<div id="product-modal">
-        <div id="modal-content">
-          <button id="modal-close">X</button>
-          <div id="modal-image-container">
-            <img id="modal-image" src="" alt="">
-          </div>
-          <div id="modal-controls">
-            <button id="prev-image">&lt;</button>
-            <button id="zoom-out">-</button>
-            <button id="zoom-in">+</button>
-            <button id="next-image">&gt;</button>
-            <button id="buy-product">Comprar</button>
-          </div>
-        </div>
-      </div>"
-`;
-
-exports[`Catalog Mobile View renders final subcategory "Camisetas" correctly on mobile 1`] = `
-"
-  <header>
-    <div class="header-logo">
-      <img src="images/logo.jpeg" alt="M/A Imports Logo">
-    </div>
-  </header>
-
-  <!-- Navigation -->
-  <nav aria-label="Main Navigation" class="">
-    <!-- Mobile toggle button -->
-    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
-    <ul id="nav-menu">
-      <li class="menu-item">
-        <button data-category="all">Início</button>
-      </li>
-      <li class="menu-item has-submenu">
-        <button data-category="fashion-category" aria-expanded="false">Moda</button>
-        <ul class="submenu">
-          <li class="menu-item has-submenu">
-            <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
-            <ul class="submenu">
-              <li class="menu-item has-submenu">
-                <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
-                <ul class="submenu">
-                  <li class="menu-item">
-                    <button data-category="tshirts-man">Camisetas</button>
-                    <button data-category="tshirts-fitness-man">Camisetas Fitness</button>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
-
-  <main>
-    <h2 id="category-heading">Camisetas</h2>
-    <ul id="product-list"><li class="product-item">
-          <img src="images/tshirts/louis-vuitton/27020956-louis-vuitton.jpeg" alt="[27020956] Louis Vuitton">
-          <div class="product-details">
-            <h3>[27020956] Louis Vuitton</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/tshirts/louis-vuitton/2802112-louis-vuitton.jpeg" alt="[2802112] Louis Vuitton">
-          <div class="product-details">
-            <h3>[2802112] Louis Vuitton</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: M</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/tshirts/dolce-gabbana/27020957-dolce-gabbana.jpeg" alt="[27020957] Dolce &amp; Gabbana">
-          <div class="product-details">
-            <h3>[27020957] Dolce &amp; Gabbana</h3>
-            <p class="description">Algodão Peruano</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;79,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/tshirts/emporio-armani/27021001-emporio-armani.jpeg" alt="[27021001] Emporio Armani">
-          <div class="product-details">
-            <h3>[27021001] Emporio Armani</h3>
-            <p class="description">Algodão Peruano</p>
-            <span class="size">Tamanho: M</span>
-            <span class="price">R$&nbsp;79,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/tshirts/emporio-armani/01030820-emporio-armani.jpeg" alt="[01030820] Emporio Armani">
-          <div class="product-details">
-            <h3>[01030820] Emporio Armani</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: M</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/tshirts/burberry/27021016-burberry.jpeg" alt="[27021016] Burberry">
-          <div class="product-details">
-            <h3>[27021016] Burberry</h3>
-            <p class="description">Algodão Peruano</p>
-            <span class="size">Tamanho: M</span>
-            <span class="price">R$&nbsp;79,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/tshirts/balmain/28021105-balmain.jpeg" alt="[28021105] Balmain">
-          <div class="product-details">
-            <h3>[28021105] Balmain</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/tshirts/tommy-hilfiger/28021109-tommy-hilfiger.jpeg" alt="[28021109] Tommy Hilfiger">
-          <div class="product-details">
-            <h3>[28021109] Tommy Hilfiger</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/tshirts/tommy-hilfiger/28021122-tommy-hilfiger.jpeg" alt="[28021122] Tommy Hilfiger">
-          <div class="product-details">
-            <h3>[28021122] Tommy Hilfiger</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/tshirts/nike/28021120-nike-front.jpeg" alt="[28021120] Nike">
-          <div class="product-details">
-            <h3>[28021120] Nike</h3>
-            <p class="description">Algodão Peruano</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;79,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/tshirts/hugo-boss/01030810-hugo-boss.jpeg" alt="[01030810] Hugo Boss">
-          <div class="product-details">
-            <h3>[01030810] Hugo Boss</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/tshirts/hugo-boss/01030815-hugo-boss.jpeg" alt="[01030815] Hugo Boss">
-          <div class="product-details">
-            <h3>[01030815] Hugo Boss</h3>
-            <p class="description">Algodão Peruano</p>
-            <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;79,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/tshirts/versace/01030813-versace.jpeg" alt="[01030813] Versace">
-          <div class="product-details">
-            <h3>[01030813] Versace</h3>
-            <p class="description">Algodão Peruano</p>
-            <span class="size">Tamanho: M</span>
-            <span class="price">R$&nbsp;79,90</span>
-          </div>
-        </li></ul>
-  </main>
-
-  <footer>
-    <p>Versão: 2.0.6 - 0.0.45</p>
+    <p>Versão: 2.0.7 - 0.0.45</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1357,9 +1567,14 @@ exports[`Catalog Mobile View renders final subcategory "Chinelos" correctly on m
               <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu">
-                  <li class="menu-item">
-                    <button data-category="tshirts-man">Camisetas</button>
-                    <button data-category="tshirts-fitness-man">Camisetas Fitness</button>
+                  <li class="menu-item has-submenu">
+                    <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="tshirts-casual-man">Casuais</button>
+                        <button data-category="tshirts-fitness-man">Fitness</button>
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </li>
@@ -1391,67 +1606,11 @@ exports[`Catalog Mobile View renders final subcategory "Chinelos" correctly on m
             <span class="size">Tamanho: 37/38, 39/40</span>
             <span class="price">R$&nbsp;29,90</span>
           </div>
-        </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
-          <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
-          <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
-          <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
-          <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
-          <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
-          <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/comming-soon.jpg" alt="Em breve">
-          <div class="product-details">
-            <h3>Em breve</h3>
-            
-            
-            <span class="price">R$&nbsp;0,00</span>
-          </div>
         </li></ul>
   </main>
 
   <footer>
-    <p>Versão: 2.0.6 - 0.0.45</p>
+    <p>Versão: 2.0.7 - 0.0.45</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1499,9 +1658,14 @@ exports[`Catalog Mobile View renders final subcategory "Tênis" correctly on mob
               <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu">
-                  <li class="menu-item">
-                    <button data-category="tshirts-man">Camisetas</button>
-                    <button data-category="tshirts-fitness-man">Camisetas Fitness</button>
+                  <li class="menu-item has-submenu">
+                    <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="tshirts-casual-man">Casuais</button>
+                        <button data-category="tshirts-fitness-man">Fitness</button>
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </li>
@@ -1771,7 +1935,7 @@ exports[`Catalog Mobile View renders final subcategory "Tênis" correctly on mob
   </main>
 
   <footer>
-    <p>Versão: 2.0.6 - 0.0.45</p>
+    <p>Versão: 2.0.7 - 0.0.45</p>
   </footer>
 
   <script src="scripts.js"></script>

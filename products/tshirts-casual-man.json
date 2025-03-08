@@ -5,7 +5,7 @@
         "oldPrice": 0.0,
         "price": 89.90,
         "images": [
-            "images/tshirts/louis-vuitton/27020956-louis-vuitton.jpeg"
+            "images/male/tshirts/casual/louis-vuitton/27020956-louis-vuitton.jpeg"
         ],
         "size": "GG"
     },
@@ -15,7 +15,7 @@
         "oldPrice": 0.0,
         "price": 89.90,
         "images": [
-            "images/tshirts/louis-vuitton/2802112-louis-vuitton.jpeg"
+            "images/male/tshirts/casual/louis-vuitton/2802112-louis-vuitton.jpeg"
         ],
         "size": "M"
     },
@@ -25,7 +25,7 @@
         "oldPrice": 0.0,
         "price": 79.90,
         "images": [
-            "images/tshirts/dolce-gabbana/27020957-dolce-gabbana.jpeg"
+            "images/male/tshirts/casual/dolce-gabbana/27020957-dolce-gabbana.jpeg"
         ],
         "size": "GG"
     },
@@ -35,7 +35,7 @@
         "oldPrice": 0.0,
         "price": 79.90,
         "images": [
-            "images/tshirts/emporio-armani/27021001-emporio-armani.jpeg"
+            "images/male/tshirts/casual/emporio-armani/27021001-emporio-armani.jpeg"
         ],
         "size": "M"
     },
@@ -45,7 +45,7 @@
         "oldPrice": 0.0,
         "price": 89.90,
         "images": [
-            "images/tshirts/emporio-armani/01030820-emporio-armani.jpeg"
+            "images/male/tshirts/casual/emporio-armani/01030820-emporio-armani.jpeg"
         ],
         "size": "M"
     },
@@ -55,7 +55,7 @@
         "oldPrice": 0.0,
         "price": 79.90,
         "images": [
-            "images/tshirts/burberry/27021016-burberry.jpeg"
+            "images/male/tshirts/casual/burberry/27021016-burberry.jpeg"
         ],
         "size": "M"
     },
@@ -65,7 +65,7 @@
         "oldPrice": 0.0,
         "price": 89.90,
         "images": [
-            "images/tshirts/balmain/28021105-balmain.jpeg"
+            "images/male/tshirts/casual/balmain/28021105-balmain.jpeg"
         ],
         "size": "G"
     },
@@ -75,7 +75,7 @@
         "oldPrice": 0.0,
         "price": 89.90,
         "images": [
-            "images/tshirts/tommy-hilfiger/28021109-tommy-hilfiger.jpeg"
+            "images/male/tshirts/casual/tommy-hilfiger/28021109-tommy-hilfiger.jpeg"
         ],
         "size": "G"
     },
@@ -85,7 +85,7 @@
         "oldPrice": 0.0,
         "price": 89.90,
         "images": [
-            "images/tshirts/tommy-hilfiger/28021122-tommy-hilfiger.jpeg"
+            "images/male/tshirts/casual/tommy-hilfiger/28021122-tommy-hilfiger.jpeg"
         ],
         "size": "G"
     },
@@ -95,10 +95,20 @@
         "oldPrice": 0.0,
         "price": 79.90,
         "images": [
-            "images/tshirts/nike/28021120-nike-front.jpeg",
-            "images/tshirts/nike/28021120-nike-back.jpeg"
+            "images/male/tshirts/casual/nike/28021120-nike-front.jpeg",
+            "images/male/tshirts/casual/nike/28021120-nike-back.jpeg"
         ],
         "size": "G"
+    },
+    {
+        "name": "[08031049] Nike",
+        "description": "Algodão Penteado",
+        "oldPrice": 0.0,
+        "price": 79.90,
+        "images": [
+            "images/male/tshirts/casual/nike/08031049-nike.jpeg"
+        ],
+        "size": "P"
     },
     {
         "name": "[01030810] Hugo Boss",
@@ -106,7 +116,7 @@
         "oldPrice": 0.0,
         "price": 89.90,
         "images": [
-            "images/tshirts/hugo-boss/01030810-hugo-boss.jpeg"
+            "images/male/tshirts/casual/hugo-boss/01030810-hugo-boss.jpeg"
         ],
         "size": "GG"
     },
@@ -116,7 +126,7 @@
         "oldPrice": 0.0,
         "price": 79.90,
         "images": [
-            "images/tshirts/hugo-boss/01030815-hugo-boss.jpeg"
+            "images/male/tshirts/casual/hugo-boss/01030815-hugo-boss.jpeg"
         ],
         "size": "P"
     },
@@ -126,8 +136,38 @@
         "oldPrice": 0.0,
         "price": 79.90,
         "images": [
-            "images/tshirts/versace/01030813-versace.jpeg"
+            "images/male/tshirts/casual/versace/01030813-versace.jpeg"
         ],
         "size": "M"
+    },
+    {
+        "name": "[08031044] Hurley",
+        "description": "100% Algodão Penteado",
+        "oldPrice": 0.0,
+        "price": 79.90,
+        "images": [
+            "images/male/tshirts/casual/hurley/08031044-hurley.jpeg"
+        ],
+        "size": "GG"
+    },
+    {
+        "name": "[08031046] Hurley",
+        "description": "100% Algodão Penteado",
+        "oldPrice": 0.0,
+        "price": 79.90,
+        "images": [
+            "images/male/tshirts/casual/hurley/08031046-hurley.jpeg"
+        ],
+        "size": "GG"
+    },
+    {
+        "name": "[08031047] Vans",
+        "description": "100% Algodão Penteado",
+        "oldPrice": 0.0,
+        "price": 79.90,
+        "images": [
+            "images/male/tshirts/casual/vans/08031047-vans.jpeg"
+        ],
+        "size": "P"
     }
 ]

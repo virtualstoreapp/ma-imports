@@ -30,6 +30,8 @@ const clickCategory = (category) => {
   fireEvent.click(btn);
 };
 
+const quantityOfAllProducts = 45;
+
 describe('Catalog', () => {
   beforeEach(() => {
     document.body.innerHTML = '';
@@ -38,11 +40,9 @@ describe('Catalog', () => {
     setupDOM();
   });
 
-  const quantityOfProducts = 52;
-
   describe('Desktop View', () => {
     it('renders "All Products" correctly', async () => {
-      await assertSnapshot("Todos os Produtos", quantityOfProducts);
+      await assertSnapshot("Todos os Produtos", quantityOfAllProducts);
     });
 
     it('renders final subcategory "Tênis" correctly on desktop', async () => {
@@ -83,40 +83,67 @@ describe('Catalog', () => {
       await selectFinalSubcategory("shoes-man-subcategory", "slippers-man", "Chinelos");
     });
 
-    it('renders final subcategory "Camisetas" correctly on desktop', async () => {
-      const selectFinalSubcategory = async (parentCat, finalCat, expectedHeading) => {
-        const parentButton = document.querySelector(`nav button[data-category="${parentCat}"]`);
-        expect(parentButton).toBeInTheDocument();
-        fireEvent.click(parentButton);
-        const submenu = parentButton.parentElement.querySelector('.submenu');
-        submenu.style.display = 'block';
-        const finalButton = submenu.querySelector(`button[data-category="${finalCat}"]`);
-        expect(finalButton).toBeInTheDocument();
-        fireEvent.click(finalButton);
-        await waitFor(() => {
-          expect(document.getElementById('category-heading')).toHaveTextContent(expectedHeading);
-        });
-      };
+    it('renders final subcategory "Camisetas Casuais Masculina" correctly on desktop', async () => {
+      const categoryTitle = "Camisetas Casuais Masculina";
+      let quantityOfProducts = 13;
 
-      await selectFinalSubcategory("clothing-man-subcategory", "tshirts-man", "Camisetas");
+      const fashionMenu = document.querySelector('button[data-category="fashion-category"]');
+      const manSubcategoryMenu = document.querySelector('button[data-category="man-subcategory"]');
+      const manClothingSubcategoryMenu = document.querySelector('button[data-category="clothing-man-subcategory"]');
+      const manTshirtsSubcategoryMenu = document.querySelector('button[data-category="tshirts-man-subcategory"]');
+      const manCasualSubcategoryMenu = document.querySelector('button[data-category="tshirts-casual-man"');
+      
+      expect(fashionMenu).toBeInTheDocument();
+      fireEvent.click(fashionMenu);
+
+      expect(manSubcategoryMenu).toBeInTheDocument();
+      fireEvent.click(manSubcategoryMenu);
+
+      expect(manClothingSubcategoryMenu).toBeInTheDocument();
+      fireEvent.click(manClothingSubcategoryMenu);
+
+      expect(manTshirtsSubcategoryMenu).toBeInTheDocument();
+      fireEvent.click(manTshirtsSubcategoryMenu);
+
+      expect(manCasualSubcategoryMenu).toBeInTheDocument();
+      fireEvent.click(manCasualSubcategoryMenu);
+
+      await waitFor(() => {
+        expect(document.getElementById('category-heading')).toHaveTextContent(categoryTitle);
+      });
+      await assertSnapshot(categoryTitle, quantityOfProducts);
+
     });
 
-    it('renders final subcategory "Camisetas Fitness" correctly on desktop', async () => {
-      const selectFinalSubcategory = async (parentCat, finalCat, expectedHeading) => {
-        const parentButton = document.querySelector(`nav button[data-category="${parentCat}"]`);
-        expect(parentButton).toBeInTheDocument();
-        fireEvent.click(parentButton);
-        const submenu = parentButton.parentElement.querySelector('.submenu');
-        submenu.style.display = 'block';
-        const finalButton = submenu.querySelector(`button[data-category="${finalCat}"]`);
-        expect(finalButton).toBeInTheDocument();
-        fireEvent.click(finalButton);
-        await waitFor(() => {
-          expect(document.getElementById('category-heading')).toHaveTextContent(expectedHeading);
-        });
-      };
+    it('renders final subcategory "Camisetas Fitness Masculina" correctly on desktop', async () => {
+      const categoryTitle = "Camisetas Fitness Masculina";
+      let quantityOfProducts = 4;
 
-      await selectFinalSubcategory("clothing-man-subcategory", "tshirts-fitness-man", "Camisetas Fitness");
+      const fashionMenu = document.querySelector('button[data-category="fashion-category"]');
+      const manSubcategoryMenu = document.querySelector('button[data-category="man-subcategory"]');
+      const manClothingSubcategoryMenu = document.querySelector('button[data-category="clothing-man-subcategory"]');
+      const manTshirtsSubcategoryMenu = document.querySelector('button[data-category="tshirts-man-subcategory"]');
+      const manFitnessSubcategoryMenu = document.querySelector('button[data-category="tshirts-fitness-man"');
+      
+      expect(fashionMenu).toBeInTheDocument();
+      fireEvent.click(fashionMenu);
+
+      expect(manSubcategoryMenu).toBeInTheDocument();
+      fireEvent.click(manSubcategoryMenu);
+
+      expect(manClothingSubcategoryMenu).toBeInTheDocument();
+      fireEvent.click(manClothingSubcategoryMenu);
+
+      expect(manTshirtsSubcategoryMenu).toBeInTheDocument();
+      fireEvent.click(manTshirtsSubcategoryMenu);
+
+      expect(manFitnessSubcategoryMenu).toBeInTheDocument();
+      fireEvent.click(manFitnessSubcategoryMenu);
+
+      await waitFor(() => {
+        expect(document.getElementById('category-heading')).toHaveTextContent(categoryTitle);
+      });
+      await assertSnapshot(categoryTitle, quantityOfProducts);
     });
   });
 
@@ -129,7 +156,7 @@ describe('Catalog', () => {
     });
 
     it('renders "All Products" correctly on mobile', async () => {
-      await assertSnapshot("Todos os Produtos", quantityOfProducts);
+      await assertSnapshot("Todos os Produtos", quantityOfAllProducts);
     });
 
     it('renders final subcategory "Tênis" correctly on mobile', async () => {
@@ -164,37 +191,75 @@ describe('Catalog', () => {
       await waitFor(() => {
         expect(document.getElementById('category-heading')).toHaveTextContent("Chinelos");
       });
-      await assertSnapshot("Chinelos", 8);
+      await assertSnapshot("Chinelos", 1);
     });
 
-    it('renders final subcategory "Camisetas" correctly on mobile', async () => {
+    it('renders final subcategory "Camisetas Casuais Masculina" correctly on mobile', async () => {
+      const categoryTitle = "Camisetas Casuais Masculina";
+      let quantityOfProducts = 13;
+
       const menuToggle = document.getElementById('menu-toggle');
+      const fashionMenu = document.querySelector('button[data-category="fashion-category"]');
+      const manSubcategoryMenu = document.querySelector('button[data-category="man-subcategory"]');
+      const manClothingSubcategoryMenu = document.querySelector('button[data-category="clothing-man-subcategory"]');
+      const manTshirtsSubcategoryMenu = document.querySelector('button[data-category="tshirts-man-subcategory"]');
+      const manCasualSubcategoryMenu = document.querySelector('button[data-category="tshirts-casual-man"');
+      
       fireEvent.click(menuToggle);
-      const parentButton = document.querySelector('li.menu-item.has-submenu > button[data-category="clothing-man-subcategory"]');
-      expect(parentButton).toBeInTheDocument();
-      fireEvent.click(parentButton);
-      const finalButton = document.querySelector('li.menu-item.has-submenu > ul.submenu.open button[data-category="tshirts-man"]');
-      expect(finalButton).toBeInTheDocument();
-      fireEvent.click(finalButton);
+
+      expect(fashionMenu).toBeInTheDocument();
+      fireEvent.click(fashionMenu);
+
+      expect(manSubcategoryMenu).toBeInTheDocument();
+      fireEvent.click(manSubcategoryMenu);
+
+      expect(manClothingSubcategoryMenu).toBeInTheDocument();
+      fireEvent.click(manClothingSubcategoryMenu);
+
+      expect(manTshirtsSubcategoryMenu).toBeInTheDocument();
+      fireEvent.click(manTshirtsSubcategoryMenu);
+
+      expect(manCasualSubcategoryMenu).toBeInTheDocument();
+      fireEvent.click(manCasualSubcategoryMenu);
+
       await waitFor(() => {
-        expect(document.getElementById('category-heading')).toHaveTextContent("Camisetas");
+        expect(document.getElementById('category-heading')).toHaveTextContent(categoryTitle);
       });
-      await assertSnapshot("Camisetas", 13);
+      await assertSnapshot(categoryTitle, quantityOfProducts);
     });
 
-    it('renders final subcategory "Camisetas Fitness" correctly on mobile', async () => {
+    it('renders final subcategory "Camisetas Fitness Masculina" correctly on mobile', async () => {
+      const categoryTitle = "Camisetas Fitness Masculina";
+      let quantityOfProducts = 4;
+
       const menuToggle = document.getElementById('menu-toggle');
+      const fashionMenu = document.querySelector('button[data-category="fashion-category"]');
+      const manSubcategoryMenu = document.querySelector('button[data-category="man-subcategory"]');
+      const manClothingSubcategoryMenu = document.querySelector('button[data-category="clothing-man-subcategory"]');
+      const manTshirtsSubcategoryMenu = document.querySelector('button[data-category="tshirts-man-subcategory"]');
+      const manFitnessSubcategoryMenu = document.querySelector('button[data-category="tshirts-fitness-man"');
+      
       fireEvent.click(menuToggle);
-      const parentButton = document.querySelector('li.menu-item.has-submenu > button[data-category="clothing-man-subcategory"]');
-      expect(parentButton).toBeInTheDocument();
-      fireEvent.click(parentButton);
-      const finalButton = document.querySelector('li.menu-item.has-submenu > ul.submenu.open button[data-category="tshirts-fitness-man"]');
-      expect(finalButton).toBeInTheDocument();
-      fireEvent.click(finalButton);
+
+      expect(fashionMenu).toBeInTheDocument();
+      fireEvent.click(fashionMenu);
+
+      expect(manSubcategoryMenu).toBeInTheDocument();
+      fireEvent.click(manSubcategoryMenu);
+
+      expect(manClothingSubcategoryMenu).toBeInTheDocument();
+      fireEvent.click(manClothingSubcategoryMenu);
+
+      expect(manTshirtsSubcategoryMenu).toBeInTheDocument();
+      fireEvent.click(manTshirtsSubcategoryMenu);
+
+      expect(manFitnessSubcategoryMenu).toBeInTheDocument();
+      fireEvent.click(manFitnessSubcategoryMenu);
+
       await waitFor(() => {
-        expect(document.getElementById('category-heading')).toHaveTextContent("Camisetas Fitness");
+        expect(document.getElementById('category-heading')).toHaveTextContent(categoryTitle);
       });
-      await assertSnapshot("Camisetas Fitness", 4);
+      await assertSnapshot(categoryTitle, quantityOfProducts);
     });
   });
 
