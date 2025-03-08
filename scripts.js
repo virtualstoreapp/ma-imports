@@ -18,8 +18,8 @@
       all: 'Todos os Produtos',
       'shoes-man': 'Tênis',
       'slippers-man': 'Chinelos',
-      'tshirts-man': 'Camisetas',
-      'tshirts-fitness-man': 'Camisetas Fitness'
+      'tshirts-casual-man': 'Camisetas Casuais Masculina',
+      'tshirts-fitness-man': 'Camisetas Fitness Masculina'
     };
     headingEl.textContent = headings[category] || 'Produtos';
   };
@@ -195,7 +195,7 @@
     const fetchCategoryData = async (category) => {
       try {
         if (category === 'all') {
-          const categories = ['shoes-man', 'tshirts-man', 'tshirts-fitness-man', 'slippers-man'];
+          const categories = ['shoes-man', 'tshirts-casual-man', 'tshirts-fitness-man', 'slippers-man'];
           const responses = await Promise.all(
             categories.map((cat) => fetch(`products/${cat}.json`))
           );
