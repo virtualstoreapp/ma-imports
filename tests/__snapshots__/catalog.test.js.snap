@@ -382,7 +382,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
           <img src="images/male/tshirts/casual/nike/08031049-nike.jpeg" alt="[08031049] Nike">
           <div class="product-details">
             <h3>[08031049] Nike</h3>
-            <p class="description">Algodão Penteado</p>
+            <p class="description">100% Algodão Penteado</p>
             <span class="size">Tamanho: P</span>
             <span class="price">R$&nbsp;39,90</span>
           </div>
@@ -649,7 +649,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
           <img src="images/male/tshirts/casual/nike/08031049-nike.jpeg" alt="[08031049] Nike">
           <div class="product-details">
             <h3>[08031049] Nike</h3>
-            <p class="description">Algodão Penteado</p>
+            <p class="description">100% Algodão Penteado</p>
             <span class="size">Tamanho: P</span>
             <span class="price">R$&nbsp;39,90</span>
           </div>
@@ -1649,7 +1649,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
           <img src="images/male/tshirts/casual/nike/08031049-nike.jpeg" alt="[08031049] Nike">
           <div class="product-details">
             <h3>[08031049] Nike</h3>
-            <p class="description">Algodão Penteado</p>
+            <p class="description">100% Algodão Penteado</p>
             <span class="size">Tamanho: P</span>
             <span class="price">R$&nbsp;39,90</span>
           </div>
@@ -1916,7 +1916,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
           <img src="images/male/tshirts/casual/nike/08031049-nike.jpeg" alt="[08031049] Nike">
           <div class="product-details">
             <h3>[08031049] Nike</h3>
-            <p class="description">Algodão Penteado</p>
+            <p class="description">100% Algodão Penteado</p>
             <span class="size">Tamanho: P</span>
             <span class="price">R$&nbsp;39,90</span>
           </div>
