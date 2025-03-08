@@ -104,7 +104,7 @@
         "name": "[08031049] Nike",
         "description": "Algodão Penteado",
         "oldPrice": 0.0,
-        "price": 79.90,
+        "price": 39.90,
         "images": [
             "images/male/tshirts/casual/nike/08031049-nike.jpeg"
         ],
@@ -141,10 +141,20 @@
         "size": "M"
     },
     {
+        "name": "[08031811] Versace",
+        "description": "100% Algodão Penteado",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/male/tshirts/casual/versace/08031811-versace.jpeg"
+        ],
+        "size": "GG"
+    },
+    {
         "name": "[08031044] Hurley",
         "description": "100% Algodão Penteado",
         "oldPrice": 0.0,
-        "price": 79.90,
+        "price": 39.90,
         "images": [
             "images/male/tshirts/casual/hurley/08031044-hurley.jpeg"
         ],
@@ -154,7 +164,7 @@
         "name": "[08031046] Hurley",
         "description": "100% Algodão Penteado",
         "oldPrice": 0.0,
-        "price": 79.90,
+        "price": 39.90,
         "images": [
             "images/male/tshirts/casual/hurley/08031046-hurley.jpeg"
         ],
@@ -164,7 +174,7 @@
         "name": "[08031047] Vans",
         "description": "100% Algodão Penteado",
         "oldPrice": 0.0,
-        "price": 79.90,
+        "price": 39.90,
         "images": [
             "images/male/tshirts/casual/vans/08031047-vans.jpeg"
         ],
