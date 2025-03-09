@@ -355,6 +355,22 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/09031015-tommy-hilfiger.jpeg" alt="[09031015] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[09031015] Tommy Hilfiger</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/09031009-tommy-hilfiger.jpeg" alt="[09031009] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[09031009] Tommy Hilfiger</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
           <img src="images/male/tshirts/casual/tommy-hilfiger/28021109-tommy-hilfiger.jpeg" alt="[28021109] Tommy Hilfiger">
           <div class="product-details">
             <h3>[28021109] Tommy Hilfiger</h3>
@@ -382,6 +398,14 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
           <img src="images/male/tshirts/casual/nike/08031049-nike.jpeg" alt="[08031049] Nike">
           <div class="product-details">
             <h3>[08031049] Nike</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/hugo-boss/09031012-hugo-boss.jpeg" alt="[09031012] Hugo Boss">
+          <div class="product-details">
+            <h3>[09031012] Hugo Boss</h3>
             <p class="description">100% Algodão Penteado</p>
             <span class="size">Tamanho: P</span>
             <span class="price">R$&nbsp;39,90</span>
@@ -443,6 +467,14 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item">
+          <img src="images/male/tshirts/casual/vans/09031011-vans.jpeg" alt="[09031011] Vans">
+          <div class="product-details">
+            <h3>[09031011] Vans</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
           <img src="images/male/tshirts/fitness/nike/07031709-nike.jpeg" alt="[07031709] Camiseta Nike">
           <div class="product-details">
             <h3>[07031709] Camiseta Nike</h3>
@@ -486,7 +518,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
   </main>
 
   <footer>
-    <p>Versão: 2.0.7 - 0.0.50</p>
+    <p>Versão: 2.0.7 - 0.0.54</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -622,6 +654,22 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
             <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/09031015-tommy-hilfiger.jpeg" alt="[09031015] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[09031015] Tommy Hilfiger</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/09031009-tommy-hilfiger.jpeg" alt="[09031009] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[09031009] Tommy Hilfiger</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
           <img src="images/male/tshirts/casual/tommy-hilfiger/28021109-tommy-hilfiger.jpeg" alt="[28021109] Tommy Hilfiger">
           <div class="product-details">
             <h3>[28021109] Tommy Hilfiger</h3>
@@ -649,6 +697,14 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
           <img src="images/male/tshirts/casual/nike/08031049-nike.jpeg" alt="[08031049] Nike">
           <div class="product-details">
             <h3>[08031049] Nike</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/hugo-boss/09031012-hugo-boss.jpeg" alt="[09031012] Hugo Boss">
+          <div class="product-details">
+            <h3>[09031012] Hugo Boss</h3>
             <p class="description">100% Algodão Penteado</p>
             <span class="size">Tamanho: P</span>
             <span class="price">R$&nbsp;39,90</span>
@@ -709,11 +765,19 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
             <span class="size">Tamanho: P</span>
             <span class="price">R$&nbsp;39,90</span>
           </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/vans/09031011-vans.jpeg" alt="[09031011] Vans">
+          <div class="product-details">
+            <h3>[09031011] Vans</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
         </li></ul>
   </main>
 
   <footer>
-    <p>Versão: 2.0.7 - 0.0.50</p>
+    <p>Versão: 2.0.7 - 0.0.54</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -828,7 +892,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Fitness Mascu
   </main>
 
   <footer>
-    <p>Versão: 2.0.7 - 0.0.50</p>
+    <p>Versão: 2.0.7 - 0.0.54</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -919,7 +983,7 @@ exports[`Catalog Desktop View renders final subcategory "Chinelos" correctly on 
   </main>
 
   <footer>
-    <p>Versão: 2.0.7 - 0.0.50</p>
+    <p>Versão: 2.0.7 - 0.0.54</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1244,7 +1308,7 @@ exports[`Catalog Desktop View renders final subcategory "Tênis" correctly on de
   </main>
 
   <footer>
-    <p>Versão: 2.0.7 - 0.0.50</p>
+    <p>Versão: 2.0.7 - 0.0.54</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1622,6 +1686,22 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/09031015-tommy-hilfiger.jpeg" alt="[09031015] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[09031015] Tommy Hilfiger</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/09031009-tommy-hilfiger.jpeg" alt="[09031009] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[09031009] Tommy Hilfiger</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
           <img src="images/male/tshirts/casual/tommy-hilfiger/28021109-tommy-hilfiger.jpeg" alt="[28021109] Tommy Hilfiger">
           <div class="product-details">
             <h3>[28021109] Tommy Hilfiger</h3>
@@ -1649,6 +1729,14 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
           <img src="images/male/tshirts/casual/nike/08031049-nike.jpeg" alt="[08031049] Nike">
           <div class="product-details">
             <h3>[08031049] Nike</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/hugo-boss/09031012-hugo-boss.jpeg" alt="[09031012] Hugo Boss">
+          <div class="product-details">
+            <h3>[09031012] Hugo Boss</h3>
             <p class="description">100% Algodão Penteado</p>
             <span class="size">Tamanho: P</span>
             <span class="price">R$&nbsp;39,90</span>
@@ -1710,6 +1798,14 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item">
+          <img src="images/male/tshirts/casual/vans/09031011-vans.jpeg" alt="[09031011] Vans">
+          <div class="product-details">
+            <h3>[09031011] Vans</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
           <img src="images/male/tshirts/fitness/nike/07031709-nike.jpeg" alt="[07031709] Camiseta Nike">
           <div class="product-details">
             <h3>[07031709] Camiseta Nike</h3>
@@ -1753,7 +1849,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
   </main>
 
   <footer>
-    <p>Versão: 2.0.7 - 0.0.50</p>
+    <p>Versão: 2.0.7 - 0.0.54</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1889,6 +1985,22 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
             <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/09031015-tommy-hilfiger.jpeg" alt="[09031015] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[09031015] Tommy Hilfiger</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/09031009-tommy-hilfiger.jpeg" alt="[09031009] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[09031009] Tommy Hilfiger</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
           <img src="images/male/tshirts/casual/tommy-hilfiger/28021109-tommy-hilfiger.jpeg" alt="[28021109] Tommy Hilfiger">
           <div class="product-details">
             <h3>[28021109] Tommy Hilfiger</h3>
@@ -1916,6 +2028,14 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
           <img src="images/male/tshirts/casual/nike/08031049-nike.jpeg" alt="[08031049] Nike">
           <div class="product-details">
             <h3>[08031049] Nike</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/hugo-boss/09031012-hugo-boss.jpeg" alt="[09031012] Hugo Boss">
+          <div class="product-details">
+            <h3>[09031012] Hugo Boss</h3>
             <p class="description">100% Algodão Penteado</p>
             <span class="size">Tamanho: P</span>
             <span class="price">R$&nbsp;39,90</span>
@@ -1976,11 +2096,19 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
             <span class="size">Tamanho: P</span>
             <span class="price">R$&nbsp;39,90</span>
           </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/vans/09031011-vans.jpeg" alt="[09031011] Vans">
+          <div class="product-details">
+            <h3>[09031011] Vans</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
         </li></ul>
   </main>
 
   <footer>
-    <p>Versão: 2.0.7 - 0.0.50</p>
+    <p>Versão: 2.0.7 - 0.0.54</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2095,7 +2223,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Fitness Mascul
   </main>
 
   <footer>
-    <p>Versão: 2.0.7 - 0.0.50</p>
+    <p>Versão: 2.0.7 - 0.0.54</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2186,7 +2314,7 @@ exports[`Catalog Mobile View renders final subcategory "Chinelos" correctly on m
   </main>
 
   <footer>
-    <p>Versão: 2.0.7 - 0.0.50</p>
+    <p>Versão: 2.0.7 - 0.0.54</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2511,7 +2639,7 @@ exports[`Catalog Mobile View renders final subcategory "Tênis" correctly on mob
   </main>
 
   <footer>
-    <p>Versão: 2.0.7 - 0.0.50</p>
+    <p>Versão: 2.0.7 - 0.0.54</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2836,7 +2964,7 @@ exports[`Catalog Modal Functionality opens modal on product click and logs GA ev
   </main>
 
   <footer>
-    <p>Versão: 2.0.7 - 0.0.50</p>
+    <p>Versão: 2.0.7 - 0.0.54</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3161,7 +3289,7 @@ exports[`Catalog Modal Functionality redirects to WhatsApp with correct message 
   </main>
 
   <footer>
-    <p>Versão: 2.0.7 - 0.0.50</p>
+    <p>Versão: 2.0.7 - 0.0.54</p>
   </footer>
 
   <script src="scripts.js"></script>

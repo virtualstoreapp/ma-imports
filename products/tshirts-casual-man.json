@@ -70,6 +70,26 @@
         "size": "G"
     },
     {
+        "name": "[09031015] Tommy Hilfiger",
+        "description": "100% Algodão Penteado",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/male/tshirts/casual/tommy-hilfiger/09031015-tommy-hilfiger.jpeg"
+        ],
+        "size": "P"
+    },
+    {
+        "name": "[09031009] Tommy Hilfiger",
+        "description": "100% Algodão Penteado",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/male/tshirts/casual/tommy-hilfiger/09031009-tommy-hilfiger.jpeg"
+        ],
+        "size": "P"
+    },
+    {
         "name": "[28021109] Tommy Hilfiger",
         "description": "Algodão Italiano Oversized",
         "oldPrice": 0.0,
@@ -107,6 +127,16 @@
         "price": 39.90,
         "images": [
             "images/male/tshirts/casual/nike/08031049-nike.jpeg"
+        ],
+        "size": "P"
+    },
+    {
+        "name": "[09031012] Hugo Boss",
+        "description": "100% Algodão Penteado",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/male/tshirts/casual/hugo-boss/09031012-hugo-boss.jpeg"
         ],
         "size": "P"
     },
@@ -177,6 +207,16 @@
         "price": 39.90,
         "images": [
             "images/male/tshirts/casual/vans/08031047-vans.jpeg"
+        ],
+        "size": "P"
+    },
+    {
+        "name": "[09031011] Vans",
+        "description": "100% Algodão Penteado",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/male/tshirts/casual/vans/09031011-vans.jpeg"
         ],
         "size": "P"
     }
