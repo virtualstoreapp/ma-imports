@@ -37,7 +37,7 @@ const asserts = async (expectedHeading, expectedCount) => {
 
 const assertAllProducts = async () => {
   const expectedHeading = "Todos os Produtos";
-  const expectedCount = 50;
+  const expectedCount = 54;
   await asserts(expectedHeading, expectedCount);
 };
 
@@ -85,7 +85,7 @@ const selectSlippersMan = async () => {
 
 const selectTshirtsCasualMan = async () => {
   const expectedHeading = "Camisetas Casuais Masculina";
-  const expectedCount = 18;
+  const expectedCount = 22;
   await selectClothingManSubcategory();
   await selectMenuOption('tshirts-casual-man');
   await asserts(expectedHeading, expectedCount);
