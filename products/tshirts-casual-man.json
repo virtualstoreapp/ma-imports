@@ -141,16 +141,6 @@
         "size": "P"
     },
     {
-        "name": "[01030810] Hugo Boss",
-        "description": "Algodão Italiano Oversized",
-        "oldPrice": 0.0,
-        "price": 89.90,
-        "images": [
-            "images/male/tshirts/casual/hugo-boss/01030810-hugo-boss.jpeg"
-        ],
-        "size": "GG"
-    },
-    {
         "name": "[01030815] Hugo Boss",
         "description": "Algodão Peruano",
         "oldPrice": 0.0,
@@ -159,6 +149,16 @@
             "images/male/tshirts/casual/hugo-boss/01030815-hugo-boss.jpeg"
         ],
         "size": "P"
+    },
+    {
+        "name": "[01030810] Hugo Boss",
+        "description": "Algodão Italiano Oversized",
+        "oldPrice": 0.0,
+        "price": 89.90,
+        "images": [
+            "images/male/tshirts/casual/hugo-boss/01030810-hugo-boss.jpeg"
+        ],
+        "size": "GG"
     },
     {
         "name": "[01030813] Versace",

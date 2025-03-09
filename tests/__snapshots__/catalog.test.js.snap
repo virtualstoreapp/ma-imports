@@ -411,20 +411,20 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/casual/hugo-boss/01030810-hugo-boss.jpeg" alt="[01030810] Hugo Boss">
-          <div class="product-details">
-            <h3>[01030810] Hugo Boss</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
           <img src="images/male/tshirts/casual/hugo-boss/01030815-hugo-boss.jpeg" alt="[01030815] Hugo Boss">
           <div class="product-details">
             <h3>[01030815] Hugo Boss</h3>
             <p class="description">Algodão Peruano</p>
             <span class="size">Tamanho: P</span>
             <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/hugo-boss/01030810-hugo-boss.jpeg" alt="[01030810] Hugo Boss">
+          <div class="product-details">
+            <h3>[01030810] Hugo Boss</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
           <img src="images/male/tshirts/casual/versace/01030813-versace.jpeg" alt="[01030813] Versace">
@@ -710,20 +710,20 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/casual/hugo-boss/01030810-hugo-boss.jpeg" alt="[01030810] Hugo Boss">
-          <div class="product-details">
-            <h3>[01030810] Hugo Boss</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
           <img src="images/male/tshirts/casual/hugo-boss/01030815-hugo-boss.jpeg" alt="[01030815] Hugo Boss">
           <div class="product-details">
             <h3>[01030815] Hugo Boss</h3>
             <p class="description">Algodão Peruano</p>
             <span class="size">Tamanho: P</span>
             <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/hugo-boss/01030810-hugo-boss.jpeg" alt="[01030810] Hugo Boss">
+          <div class="product-details">
+            <h3>[01030810] Hugo Boss</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
           <img src="images/male/tshirts/casual/versace/01030813-versace.jpeg" alt="[01030813] Versace">
@@ -1742,20 +1742,20 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/casual/hugo-boss/01030810-hugo-boss.jpeg" alt="[01030810] Hugo Boss">
-          <div class="product-details">
-            <h3>[01030810] Hugo Boss</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
           <img src="images/male/tshirts/casual/hugo-boss/01030815-hugo-boss.jpeg" alt="[01030815] Hugo Boss">
           <div class="product-details">
             <h3>[01030815] Hugo Boss</h3>
             <p class="description">Algodão Peruano</p>
             <span class="size">Tamanho: P</span>
             <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/hugo-boss/01030810-hugo-boss.jpeg" alt="[01030810] Hugo Boss">
+          <div class="product-details">
+            <h3>[01030810] Hugo Boss</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
           <img src="images/male/tshirts/casual/versace/01030813-versace.jpeg" alt="[01030813] Versace">
@@ -2041,20 +2041,20 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/casual/hugo-boss/01030810-hugo-boss.jpeg" alt="[01030810] Hugo Boss">
-          <div class="product-details">
-            <h3>[01030810] Hugo Boss</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
           <img src="images/male/tshirts/casual/hugo-boss/01030815-hugo-boss.jpeg" alt="[01030815] Hugo Boss">
           <div class="product-details">
             <h3>[01030815] Hugo Boss</h3>
             <p class="description">Algodão Peruano</p>
             <span class="size">Tamanho: P</span>
             <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/hugo-boss/01030810-hugo-boss.jpeg" alt="[01030810] Hugo Boss">
+          <div class="product-details">
+            <h3>[01030810] Hugo Boss</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
           <img src="images/male/tshirts/casual/versace/01030813-versace.jpeg" alt="[01030813] Versace">
