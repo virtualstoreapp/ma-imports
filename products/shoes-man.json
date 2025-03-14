@@ -1,129 +1,17 @@
 [
     {
-        "name": "[12021658] Nike Shox",
-        "oldPrice": 259.0,
-        "price": 249.0,
-        "image": "images/shoes/nike/12021658-nike-shox.jpeg",
-        "size": "37"
-    },
-    {
-        "name": "[12022216] Nike Shox",
-        "oldPrice": 259.0,
-        "price": 249.0,
-        "image": "images/shoes/nike/12022216-nike-shox.jpeg",
-        "size": "37"
-    },
-    {
-        "name": "[12021724] Nike Shox",
-        "oldPrice": 269.0,
-        "price": 259.0,
-        "image": "images/shoes/nike/12021724-nike-shox.jpeg",
-        "size": "40"
-    },
-    {
-        "name": "[12022214] Nike Shox",
-        "oldPrice": 269.0,
-        "price": 259.0,
-        "image": "images/shoes/nike/12022214-nike-shox.jpeg",
-        "size": "40"
-    },
-    {
-        "name": "[12021722] Nike Shox Neymar",
-        "oldPrice": 269.0,
-        "price": 259.0,
-        "image": "images/shoes/nike/12021722-nike-shox-neymar.jpeg",
-        "size": "41"
-    },
-    {
-        "name": "[12021734] Nike Shox Neymar",
-        "oldPrice": 269.0,
-        "price": 259.0,
-        "image": "images/shoes/nike/12021734-nike-shox-neymar.jpeg",
-        "size": "41"
-    },
-    {
-        "name": "[12021718] Nike R4",
-        "oldPrice": 229.0,
-        "price": 219.0,
-        "image": "images/shoes/nike/12021718-nike-r4.jpeg",
-        "size": "34"
-    },
-    {
-        "name": "[12021716] Nike R4",
-        "oldPrice": 229.0,
-        "price": 219.0,
-        "image": "images/shoes/nike/12021716-nike-r4.jpeg",
-        "size": "35"
-    },
-    {
-        "name": "[12021703] Nike Air Force",
-        "oldPrice": 219.0,
-        "price": 209.0,
-        "image": "images/shoes/nike/12021703-nike-air-force.jpeg",
-        "size": "39"
-    },
-    {
-        "name": "[12021710] Nike Air Force",
-        "oldPrice": 269.0,
-        "price": 259.0,
-        "image": "images/shoes/nike/12021710-nike-air-force.jpeg",
-        "size": "42"
-    },
-    {
-        "name": "[12021739] Nike Air Force",
-        "oldPrice": 219.0,
-        "price": 209.0,
-        "image": "images/shoes/nike/12021739-nike-air-force.jpeg",
-        "size": "42"
-    },
-    {
-        "name": "[12021747] Nike Air Force",
-        "oldPrice": 229,
-        "price": 219,
-        "image": "images/shoes/nike/12021747-nike-air-force.jpeg",
-        "size": "38, 41, 42"
-    },
-    {
-        "name": "[12021737] Nike Dunk Low Pro",
-        "oldPrice": 159.0,
-        "price": 149.0,
-        "image": "images/shoes/nike/12021737-nike-dunk-low-pro.jpeg",
-        "size": "35"
-    },
-    {
-        "name": "[12021719] Nike Dunk Low Pro",
-        "oldPrice": 159.0,
-        "price": 149.0,
-        "image": "images/shoes/nike/12021719-nike-dunk-low-pro.jpeg",
-        "size": "36"
-    },
-    {
-        "name": "[12022152] Nike Dunk Low Pro",
-        "oldPrice": 219.0,
-        "price": 209.0,
-        "image": "images/shoes/nike/12022152-nike-dunk-low-pro.jpeg",
-        "size": "39, 42"
-    },
-    {
-        "name": "[12021733] Nike Dunk Low Pro",
-        "oldPrice": 219.0,
-        "price": 209.0,
-        "image": "images/shoes/nike/12021733-nike-dunk-low-pro.jpeg",
-        "size": "42"
-    },
-    {
-        "name": "[12021707] Nike Jordan",
-        "oldPrice": 169.0,
-        "price": 159.0,
-        "image": "images/shoes/nike/12021707-nike-jordan.jpeg",
+        "name": "[12021714] Asics",
+        "oldPrice": 0.0,
+        "price": 89.0,
+        "image": "images/shoes/asics/12021714-asics.jpeg",
         "size": "38"
     },
     {
-        "name": "[12022200] Nike Air Jordan",
-        "oldPrice": 229.0,
-        "price": 219.0,
-        "image": "images/shoes/nike/12022200-nike-air-jordan.jpeg",
-        "size": "41"
+        "name": "[12021736] Asics",
+        "oldPrice": 269.0,
+        "price": 259.0,
+        "image": "images/shoes/asics/12021736-asics.jpeg",
+        "size": "41, 42"
     },
     {
         "name": "[12022201] Adidas Campus",
@@ -168,24 +56,136 @@
         "size": "42"
     },
     {
+        "name": "[12021703] Nike Air Force",
+        "oldPrice": 219.0,
+        "price": 209.0,
+        "image": "images/shoes/nike/12021703-nike-air-force.jpeg",
+        "size": "39"
+    },
+    {
+        "name": "[12021710] Nike Air Force",
+        "oldPrice": 269.0,
+        "price": 259.0,
+        "image": "images/shoes/nike/12021710-nike-air-force.jpeg",
+        "size": "42"
+    },
+    {
+        "name": "[12021739] Nike Air Force",
+        "oldPrice": 219.0,
+        "price": 209.0,
+        "image": "images/shoes/nike/12021739-nike-air-force.jpeg",
+        "size": "42"
+    },
+    {
+        "name": "[12021747] Nike Air Force",
+        "oldPrice": 229,
+        "price": 219,
+        "image": "images/shoes/nike/12021747-nike-air-force.jpeg",
+        "size": "38, 41, 42"
+    },
+    {
+        "name": "[12022200] Nike Air Jordan",
+        "oldPrice": 229.0,
+        "price": 219.0,
+        "image": "images/shoes/nike/12022200-nike-air-jordan.jpeg",
+        "size": "41"
+    },
+    {
+        "name": "[12021737] Nike Dunk Low Pro",
+        "oldPrice": 159.0,
+        "price": 149.0,
+        "image": "images/shoes/nike/12021737-nike-dunk-low-pro.jpeg",
+        "size": "35"
+    },
+    {
+        "name": "[12021719] Nike Dunk Low Pro",
+        "oldPrice": 159.0,
+        "price": 149.0,
+        "image": "images/shoes/nike/12021719-nike-dunk-low-pro.jpeg",
+        "size": "36"
+    },
+    {
+        "name": "[12022152] Nike Dunk Low Pro",
+        "oldPrice": 219.0,
+        "price": 209.0,
+        "image": "images/shoes/nike/12022152-nike-dunk-low-pro.jpeg",
+        "size": "39, 42"
+    },
+    {
+        "name": "[12021733] Nike Dunk Low Pro",
+        "oldPrice": 219.0,
+        "price": 209.0,
+        "image": "images/shoes/nike/12021733-nike-dunk-low-pro.jpeg",
+        "size": "42"
+    },
+    {
+        "name": "[12021707] Nike Jordan",
+        "oldPrice": 169.0,
+        "price": 159.0,
+        "image": "images/shoes/nike/12021707-nike-jordan.jpeg",
+        "size": "38"
+    },
+    {
+        "name": "[12021718] Nike R4",
+        "oldPrice": 229.0,
+        "price": 219.0,
+        "image": "images/shoes/nike/12021718-nike-r4.jpeg",
+        "size": "34"
+    },
+    {
+        "name": "[12021716] Nike R4",
+        "oldPrice": 229.0,
+        "price": 219.0,
+        "image": "images/shoes/nike/12021716-nike-r4.jpeg",
+        "size": "35"
+    },
+    {
+        "name": "[12021658] Nike Shox",
+        "oldPrice": 259.0,
+        "price": 249.0,
+        "image": "images/shoes/nike/12021658-nike-shox.jpeg",
+        "size": "37"
+    },
+    {
+        "name": "[12022216] Nike Shox",
+        "oldPrice": 259.0,
+        "price": 249.0,
+        "image": "images/shoes/nike/12022216-nike-shox.jpeg",
+        "size": "37"
+    },
+    {
+        "name": "[12021724] Nike Shox",
+        "oldPrice": 269.0,
+        "price": 259.0,
+        "image": "images/shoes/nike/12021724-nike-shox.jpeg",
+        "size": "40"
+    },
+    {
+        "name": "[12022214] Nike Shox",
+        "oldPrice": 269.0,
+        "price": 259.0,
+        "image": "images/shoes/nike/12022214-nike-shox.jpeg",
+        "size": "40"
+    },
+    {
+        "name": "[12021722] Nike Shox Neymar",
+        "oldPrice": 269.0,
+        "price": 259.0,
+        "image": "images/shoes/nike/12021722-nike-shox-neymar.jpeg",
+        "size": "41"
+    },
+    {
+        "name": "[12021734] Nike Shox Neymar",
+        "oldPrice": 269.0,
+        "price": 259.0,
+        "image": "images/shoes/nike/12021734-nike-shox-neymar.jpeg",
+        "size": "41"
+    },
+    {
         "name": "[12021757] Vans",
         "oldPrice": 259.0,
         "price": 249.0,
         "image": "images/shoes/vans/12021757-vans.jpeg",
         "size": "36"
-    },
-    {
-        "name": "[12021714] Asics",
-        "oldPrice": 0.0,
-        "price": 89.0,
-        "image": "images/shoes/asics/12021714-asics.jpeg",
-        "size": "38"
-    },
-    {
-        "name": "[12021736] Asics",
-        "oldPrice": 269.0,
-        "price": 259.0,
-        "image": "images/shoes/asics/12021736-asics.jpeg",
-        "size": "41, 42"
     }
 ]

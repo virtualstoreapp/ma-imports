@@ -1,31 +1,21 @@
 [
     {
-        "name": "[1403251216] Gucci",
-        "description": "100% Algodão",
-        "oldPrice": 0.0,
-        "price": 39.90,
-        "images": [
-            "images/male/tshirts/casual/gucci/1403251216-gucci.jpeg"
-        ],
-        "size": "GG"
-    },
-    {
-        "name": "[27020956] Louis Vuitton",
+        "name": "[28021105] Balmain",
         "description": "Algodão Italiano Oversized",
         "oldPrice": 0.0,
         "price": 89.90,
         "images": [
-            "images/male/tshirts/casual/louis-vuitton/27020956-louis-vuitton.jpeg"
+            "images/male/tshirts/casual/balmain/28021105-balmain.jpeg"
         ],
-        "size": "GG"
+        "size": "G"
     },
     {
-        "name": "[2802112] Louis Vuitton",
-        "description": "Algodão Italiano Oversized",
+        "name": "[27021016] Burberry",
+        "description": "Algodão Peruano",
         "oldPrice": 0.0,
-        "price": 89.90,
+        "price": 79.90,
         "images": [
-            "images/male/tshirts/casual/louis-vuitton/2802112-louis-vuitton.jpeg"
+            "images/male/tshirts/casual/burberry/27021016-burberry.jpeg"
         ],
         "size": "M"
     },
@@ -70,24 +60,85 @@
         "size": "GG"
     },
     {
-        "name": "[27021016] Burberry",
+        "name": "[1403251216] Gucci",
+        "description": "100% Algodão",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/male/tshirts/casual/gucci/1403251216-gucci.jpeg"
+        ],
+        "size": "GG"
+    },
+    {
+        "name": "[09031012] Hugo Boss",
+        "description": "100% Algodão Penteado",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/male/tshirts/casual/hugo-boss/09031012-hugo-boss.jpeg"
+        ],
+        "size": "P"
+    },
+    {
+        "name": "[01030815] Hugo Boss",
         "description": "Algodão Peruano",
         "oldPrice": 0.0,
         "price": 79.90,
         "images": [
-            "images/male/tshirts/casual/burberry/27021016-burberry.jpeg"
+            "images/male/tshirts/casual/hugo-boss/01030815-hugo-boss.jpeg"
         ],
-        "size": "M"
+        "size": "P"
     },
     {
-        "name": "[28021105] Balmain",
+        "name": "[01030810] Hugo Boss",
         "description": "Algodão Italiano Oversized",
         "oldPrice": 0.0,
         "price": 89.90,
         "images": [
-            "images/male/tshirts/casual/balmain/28021105-balmain.jpeg"
+            "images/male/tshirts/casual/hugo-boss/01030810-hugo-boss.jpeg"
+        ],
+        "size": "GG"
+    },
+    {
+        "name": "[08031044] Hurley",
+        "description": "100% Algodão Penteado",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/male/tshirts/casual/hurley/08031044-hurley.jpeg"
+        ],
+        "size": "GG"
+    },
+    {
+        "name": "[08031046] Hurley",
+        "description": "100% Algodão Penteado",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/male/tshirts/casual/hurley/08031046-hurley.jpeg"
+        ],
+        "size": "GG"
+    },
+    {
+        "name": "[28021120] Nike",
+        "description": "Algodão Peruano",
+        "oldPrice": 0.0,
+        "price": 79.90,
+        "images": [
+            "images/male/tshirts/casual/nike/28021120-nike-front.jpeg",
+            "images/male/tshirts/casual/nike/28021120-nike-back.jpeg"
         ],
         "size": "G"
+    },
+    {
+        "name": "[08031049] Nike",
+        "description": "100% Algodão Penteado",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/male/tshirts/casual/nike/08031049-nike.jpeg"
+        ],
+        "size": "P"
     },
     {
         "name": "[09031015] Tommy Hilfiger",
@@ -140,57 +191,6 @@
         "size": "GG"
     },
     {
-        "name": "[28021120] Nike",
-        "description": "Algodão Peruano",
-        "oldPrice": 0.0,
-        "price": 79.90,
-        "images": [
-            "images/male/tshirts/casual/nike/28021120-nike-front.jpeg",
-            "images/male/tshirts/casual/nike/28021120-nike-back.jpeg"
-        ],
-        "size": "G"
-    },
-    {
-        "name": "[08031049] Nike",
-        "description": "100% Algodão Penteado",
-        "oldPrice": 0.0,
-        "price": 39.90,
-        "images": [
-            "images/male/tshirts/casual/nike/08031049-nike.jpeg"
-        ],
-        "size": "P"
-    },
-    {
-        "name": "[09031012] Hugo Boss",
-        "description": "100% Algodão Penteado",
-        "oldPrice": 0.0,
-        "price": 39.90,
-        "images": [
-            "images/male/tshirts/casual/hugo-boss/09031012-hugo-boss.jpeg"
-        ],
-        "size": "P"
-    },
-    {
-        "name": "[01030815] Hugo Boss",
-        "description": "Algodão Peruano",
-        "oldPrice": 0.0,
-        "price": 79.90,
-        "images": [
-            "images/male/tshirts/casual/hugo-boss/01030815-hugo-boss.jpeg"
-        ],
-        "size": "P"
-    },
-    {
-        "name": "[01030810] Hugo Boss",
-        "description": "Algodão Italiano Oversized",
-        "oldPrice": 0.0,
-        "price": 89.90,
-        "images": [
-            "images/male/tshirts/casual/hugo-boss/01030810-hugo-boss.jpeg"
-        ],
-        "size": "GG"
-    },
-    {
         "name": "[01030813] Versace",
         "description": "Algodão Peruano",
         "oldPrice": 0.0,
@@ -207,26 +207,6 @@
         "price": 39.90,
         "images": [
             "images/male/tshirts/casual/versace/08031811-versace.jpeg"
-        ],
-        "size": "GG"
-    },
-    {
-        "name": "[08031044] Hurley",
-        "description": "100% Algodão Penteado",
-        "oldPrice": 0.0,
-        "price": 39.90,
-        "images": [
-            "images/male/tshirts/casual/hurley/08031044-hurley.jpeg"
-        ],
-        "size": "GG"
-    },
-    {
-        "name": "[08031046] Hurley",
-        "description": "100% Algodão Penteado",
-        "oldPrice": 0.0,
-        "price": 39.90,
-        "images": [
-            "images/male/tshirts/casual/hurley/08031046-hurley.jpeg"
         ],
         "size": "GG"
     },
@@ -259,6 +239,26 @@
             "images/male/tshirts/casual/lacoste/1403251109-lacoste.jpeg"
         ],
         "size": "GG"
+    },
+    {
+        "name": "[27020956] Louis Vuitton",
+        "description": "Algodão Italiano Oversized",
+        "oldPrice": 0.0,
+        "price": 89.90,
+        "images": [
+            "images/male/tshirts/casual/louis-vuitton/27020956-louis-vuitton.jpeg"
+        ],
+        "size": "GG"
+    },
+    {
+        "name": "[2802112] Louis Vuitton",
+        "description": "Algodão Italiano Oversized",
+        "oldPrice": 0.0,
+        "price": 89.90,
+        "images": [
+            "images/male/tshirts/casual/louis-vuitton/2802112-louis-vuitton.jpeg"
+        ],
+        "size": "M"
     },
     {
         "name": "[08031047] Vans",
