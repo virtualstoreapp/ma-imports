@@ -57,6 +57,262 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
   <main>
     <h2 id="category-heading">Todos os Produtos</h2>
     <ul id="product-list"><li class="product-item">
+          <img src="images/male/tshirts/casual/gucci/1403251216-gucci.jpeg" alt="[1403251216] Gucci">
+          <div class="product-details">
+            <h3>[1403251216] Gucci</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/emporio-armani/1403251214-emporio-armani.jpeg" alt="[1403251214] Emporio Armani">
+          <div class="product-details">
+            <h3>[1403251214] Emporio Armani</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/lacoste/1403251212-lacoste.jpeg" alt="[1403251212] Lacoste">
+          <div class="product-details">
+            <h3>[1403251212] Lacoste</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/lacoste/1403251211-lacoste.jpeg" alt="[1403251211] Lacoste">
+          <div class="product-details">
+            <h3>[1403251211] Lacoste</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/1403251118-tommy-hilfiger.jpeg" alt="[1403251118] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[1403251118] Tommy Hilfiger</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/lacoste/1403251109-lacoste.jpeg" alt="[1403251109] Lacoste">
+          <div class="product-details">
+            <h3>[1403251109] Lacoste</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/0903251015-tommy-hilfiger.jpeg" alt="[0903251015] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[0903251015] Tommy Hilfiger</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/hugo-boss/0903251012-hugo-boss.jpeg" alt="[0903251012] Hugo Boss">
+          <div class="product-details">
+            <h3>[0903251012] Hugo Boss</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/vans/0903251011-vans.jpeg" alt="[0903251011] Vans">
+          <div class="product-details">
+            <h3>[0903251011] Vans</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/0903251009-tommy-hilfiger.jpeg" alt="[0903251009] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[0903251009] Tommy Hilfiger</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/versace/0803251811-versace.jpeg" alt="[0803251811] Versace">
+          <div class="product-details">
+            <h3>[0803251811] Versace</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/nike/0803251049-nike.jpeg" alt="[0803251049] Nike">
+          <div class="product-details">
+            <h3>[0803251049] Nike</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/vans/0803251047-vans.jpeg" alt="[0803251047] Vans">
+          <div class="product-details">
+            <h3>[0803251047] Vans</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/hurley/0803251046-hurley.jpeg" alt="[0803251046] Hurley">
+          <div class="product-details">
+            <h3>[0803251046] Hurley</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/hurley/0803251044-hurley.jpeg" alt="[0803251044] Hurley">
+          <div class="product-details">
+            <h3>[0803251044] Hurley</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/fitness/puma/0703251717-puma.jpeg" alt="[0703251717] Regata Mizuno">
+          <div class="product-details">
+            <h3>[0703251717] Regata Mizuno</h3>
+            <p class="description">Dry-Fit, Cor: Preta</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/fitness/puma/0703251715-puma.jpeg" alt="[0703251715] Regata Puma">
+          <div class="product-details">
+            <h3>[0703251715] Regata Puma</h3>
+            <p class="description">Dry-Fit, Cor: Cinza</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/fitness/puma/0703251712-puma.jpeg" alt="[0703251712] Regata Puma">
+          <div class="product-details">
+            <h3>[0703251712] Regata Puma</h3>
+            <p class="description">Dry-Fit, Cor: Azul Marinho</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/fitness/nike/0703251709-nike.jpeg" alt="[0703251709] Camiseta Nike">
+          <div class="product-details">
+            <h3>[0703251709] Camiseta Nike</h3>
+            <p class="description">Dry-Fit, Cor: Preta</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/emporio-armani/0103250820-emporio-armani.jpeg" alt="[0103250820] Emporio Armani">
+          <div class="product-details">
+            <h3>[0103250820] Emporio Armani</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/hugo-boss/0103250815-hugo-boss.jpeg" alt="[0103250815] Hugo Boss">
+          <div class="product-details">
+            <h3>[0103250815] Hugo Boss</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/versace/0103250813-versace.jpeg" alt="[0103250813] Versace">
+          <div class="product-details">
+            <h3>[0103250813] Versace</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/hugo-boss/0103250810-hugo-boss.jpeg" alt="[0103250810] Hugo Boss">
+          <div class="product-details">
+            <h3>[0103250810] Hugo Boss</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/louis-vuitton/2802251130-louis-vuitton.jpeg" alt="[2802251130] Louis Vuitton">
+          <div class="product-details">
+            <h3>[2802251130] Louis Vuitton</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/2802251122-tommy-hilfiger.jpeg" alt="[2802251122] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[2802251122] Tommy Hilfiger</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/nike/2802251120-nike-front.jpeg" alt="[2802251120] Nike">
+          <div class="product-details">
+            <h3>[2802251120] Nike</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/2802251109-tommy-hilfiger.jpeg" alt="[2802251109] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[2802251109] Tommy Hilfiger</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/balmain/2802251105-balmain.jpeg" alt="[2802251105] Balmain">
+          <div class="product-details">
+            <h3>[2802251105] Balmain</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/burberry/2702251016-burberry.jpeg" alt="[2702251016] Burberry">
+          <div class="product-details">
+            <h3>[2702251016] Burberry</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/emporio-armani/2702251001-emporio-armani.jpeg" alt="[2702251001] Emporio Armani">
+          <div class="product-details">
+            <h3>[2702251001] Emporio Armani</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/dolce-gabbana/2702250957-dolce-gabbana.jpeg" alt="[2702250957] Dolce &amp; Gabbana">
+          <div class="product-details">
+            <h3>[2702250957] Dolce &amp; Gabbana</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/louis-vuitton/2702250956-louis-vuitton.jpeg" alt="[2702250956] Louis Vuitton">
+          <div class="product-details">
+            <h3>[2702250956] Louis Vuitton</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
           <img src="images/shoes/asics/12021714-asics.jpeg" alt="[12021714] Asics">
           <div class="product-details">
             <h3>[12021714] Asics</h3>
@@ -299,262 +555,6 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
                <span class="new-price">R$&nbsp;249,00</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/casual/balmain/28021105-balmain.jpeg" alt="[28021105] Balmain">
-          <div class="product-details">
-            <h3>[28021105] Balmain</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/burberry/27021016-burberry.jpeg" alt="[27021016] Burberry">
-          <div class="product-details">
-            <h3>[27021016] Burberry</h3>
-            <p class="description">Algodão Peruano</p>
-            <span class="size">Tamanho: M</span>
-            <span class="price">R$&nbsp;79,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/dolce-gabbana/27020957-dolce-gabbana.jpeg" alt="[27020957] Dolce &amp; Gabbana">
-          <div class="product-details">
-            <h3>[27020957] Dolce &amp; Gabbana</h3>
-            <p class="description">Algodão Peruano</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;79,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/emporio-armani/27021001-emporio-armani.jpeg" alt="[27021001] Emporio Armani">
-          <div class="product-details">
-            <h3>[27021001] Emporio Armani</h3>
-            <p class="description">Algodão Peruano</p>
-            <span class="size">Tamanho: M</span>
-            <span class="price">R$&nbsp;79,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/emporio-armani/01030820-emporio-armani.jpeg" alt="[01030820] Emporio Armani">
-          <div class="product-details">
-            <h3>[01030820] Emporio Armani</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: M</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/emporio-armani/1403251214-emporio-armani.jpeg" alt="[1403251214] Emporio Armani">
-          <div class="product-details">
-            <h3>[1403251214] Emporio Armani</h3>
-            <p class="description">100% Algodão</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/gucci/1403251216-gucci.jpeg" alt="[1403251216] Gucci">
-          <div class="product-details">
-            <h3>[1403251216] Gucci</h3>
-            <p class="description">100% Algodão</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/hugo-boss/09031012-hugo-boss.jpeg" alt="[09031012] Hugo Boss">
-          <div class="product-details">
-            <h3>[09031012] Hugo Boss</h3>
-            <p class="description">100% Algodão Penteado</p>
-            <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/hugo-boss/01030815-hugo-boss.jpeg" alt="[01030815] Hugo Boss">
-          <div class="product-details">
-            <h3>[01030815] Hugo Boss</h3>
-            <p class="description">Algodão Peruano</p>
-            <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;79,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/hugo-boss/01030810-hugo-boss.jpeg" alt="[01030810] Hugo Boss">
-          <div class="product-details">
-            <h3>[01030810] Hugo Boss</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/hurley/08031044-hurley.jpeg" alt="[08031044] Hurley">
-          <div class="product-details">
-            <h3>[08031044] Hurley</h3>
-            <p class="description">100% Algodão Penteado</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/hurley/08031046-hurley.jpeg" alt="[08031046] Hurley">
-          <div class="product-details">
-            <h3>[08031046] Hurley</h3>
-            <p class="description">100% Algodão Penteado</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/nike/28021120-nike-front.jpeg" alt="[28021120] Nike">
-          <div class="product-details">
-            <h3>[28021120] Nike</h3>
-            <p class="description">Algodão Peruano</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;79,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/nike/08031049-nike.jpeg" alt="[08031049] Nike">
-          <div class="product-details">
-            <h3>[08031049] Nike</h3>
-            <p class="description">100% Algodão Penteado</p>
-            <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/tommy-hilfiger/09031015-tommy-hilfiger.jpeg" alt="[09031015] Tommy Hilfiger">
-          <div class="product-details">
-            <h3>[09031015] Tommy Hilfiger</h3>
-            <p class="description">100% Algodão Penteado</p>
-            <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/tommy-hilfiger/09031009-tommy-hilfiger.jpeg" alt="[09031009] Tommy Hilfiger">
-          <div class="product-details">
-            <h3>[09031009] Tommy Hilfiger</h3>
-            <p class="description">100% Algodão Penteado</p>
-            <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/tommy-hilfiger/28021109-tommy-hilfiger.jpeg" alt="[28021109] Tommy Hilfiger">
-          <div class="product-details">
-            <h3>[28021109] Tommy Hilfiger</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/tommy-hilfiger/28021122-tommy-hilfiger.jpeg" alt="[28021122] Tommy Hilfiger">
-          <div class="product-details">
-            <h3>[28021122] Tommy Hilfiger</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/tommy-hilfiger/1403251118-tommy-hilfiger.jpeg" alt="[1403251118] Tommy Hilfiger">
-          <div class="product-details">
-            <h3>[1403251118] Tommy Hilfiger</h3>
-            <p class="description">100% Algodão</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/versace/01030813-versace.jpeg" alt="[01030813] Versace">
-          <div class="product-details">
-            <h3>[01030813] Versace</h3>
-            <p class="description">Algodão Peruano</p>
-            <span class="size">Tamanho: M</span>
-            <span class="price">R$&nbsp;79,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/versace/08031811-versace.jpeg" alt="[08031811] Versace">
-          <div class="product-details">
-            <h3>[08031811] Versace</h3>
-            <p class="description">100% Algodão Penteado</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/lacoste/1403251212-lacoste.jpeg" alt="[1403251212] Lacoste">
-          <div class="product-details">
-            <h3>[1403251212] Lacoste</h3>
-            <p class="description">100% Algodão</p>
-            <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/lacoste/1403251211-lacoste.jpeg" alt="[1403251211] Lacoste">
-          <div class="product-details">
-            <h3>[1403251211] Lacoste</h3>
-            <p class="description">100% Algodão</p>
-            <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/lacoste/1403251109-lacoste.jpeg" alt="[1403251109] Lacoste">
-          <div class="product-details">
-            <h3>[1403251109] Lacoste</h3>
-            <p class="description">100% Algodão</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/louis-vuitton/27020956-louis-vuitton.jpeg" alt="[27020956] Louis Vuitton">
-          <div class="product-details">
-            <h3>[27020956] Louis Vuitton</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/louis-vuitton/2802112-louis-vuitton.jpeg" alt="[2802112] Louis Vuitton">
-          <div class="product-details">
-            <h3>[2802112] Louis Vuitton</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: M</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/vans/08031047-vans.jpeg" alt="[08031047] Vans">
-          <div class="product-details">
-            <h3>[08031047] Vans</h3>
-            <p class="description">100% Algodão Penteado</p>
-            <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/vans/09031011-vans.jpeg" alt="[09031011] Vans">
-          <div class="product-details">
-            <h3>[09031011] Vans</h3>
-            <p class="description">100% Algodão Penteado</p>
-            <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/fitness/nike/07031709-nike.jpeg" alt="[07031709] Camiseta Nike">
-          <div class="product-details">
-            <h3>[07031709] Camiseta Nike</h3>
-            <p class="description">Dry-Fit, Cor: Preta</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;59,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/fitness/puma/07031712-puma.jpeg" alt="[07031712] Regata Puma">
-          <div class="product-details">
-            <h3>[07031712] Regata Puma</h3>
-            <p class="description">Dry-Fit, Cor: Azul Marinho</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;59,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/fitness/puma/07031715-puma.jpeg" alt="[07031715] Regata Puma">
-          <div class="product-details">
-            <h3>[07031715] Regata Puma</h3>
-            <p class="description">Dry-Fit, Cor: Cinza</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;59,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/fitness/puma/07031717-puma.jpeg" alt="[07031717] Regata Mizuno">
-          <div class="product-details">
-            <h3>[07031717] Regata Mizuno</h3>
-            <p class="description">Dry-Fit, Cor: Preta</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;59,90</span>
-          </div>
-        </li><li class="product-item">
           <img src="images/slippers/tommy-hilfiger/17021140-tommy-hilfiger.jpeg" alt="[17021140] Tommy Hilfiger">
           <div class="product-details">
             <h3>[17021140] Tommy Hilfiger</h3>
@@ -573,20 +573,20 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
 
 
 <div id="product-modal">
-        <div id="modal-content">
-          <button id="modal-close">X</button>
-          <div id="modal-image-container">
-            <img id="modal-image" src="" alt="">
-          </div>
-          <div id="modal-controls">
-            <button id="prev-image">&lt;</button>
-            <button id="zoom-out">-</button>
-            <button id="zoom-in">+</button>
-            <button id="next-image">&gt;</button>
-            <button id="buy-product">Comprar</button>
-          </div>
+      <div id="modal-content">
+        <button id="modal-close">X</button>
+        <div id="modal-image-container">
+          <img id="modal-image" src="" alt="">
         </div>
-      </div>"
+        <div id="modal-controls">
+          <button id="prev-image">&lt;</button>
+          <button id="zoom-out">-</button>
+          <button id="zoom-in">+</button>
+          <button id="next-image">&gt;</button>
+          <button id="buy-product">Comprar</button>
+        </div>
+      </div>
+    </div>"
 `;
 
 exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Masculina" correctly on desktop 1`] = `
@@ -646,41 +646,41 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
   <main>
     <h2 id="category-heading">Camisetas Casuais Masculina</h2>
     <ul id="product-list"><li class="product-item">
-          <img src="images/male/tshirts/casual/balmain/28021105-balmain.jpeg" alt="[28021105] Balmain">
+          <img src="images/male/tshirts/casual/balmain/2802251105-balmain.jpeg" alt="[2802251105] Balmain">
           <div class="product-details">
-            <h3>[28021105] Balmain</h3>
+            <h3>[2802251105] Balmain</h3>
             <p class="description">Algodão Italiano Oversized</p>
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/casual/burberry/27021016-burberry.jpeg" alt="[27021016] Burberry">
+          <img src="images/male/tshirts/casual/burberry/2702251016-burberry.jpeg" alt="[2702251016] Burberry">
           <div class="product-details">
-            <h3>[27021016] Burberry</h3>
+            <h3>[2702251016] Burberry</h3>
             <p class="description">Algodão Peruano</p>
             <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;79,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/casual/dolce-gabbana/27020957-dolce-gabbana.jpeg" alt="[27020957] Dolce &amp; Gabbana">
+          <img src="images/male/tshirts/casual/dolce-gabbana/2702250957-dolce-gabbana.jpeg" alt="[2702250957] Dolce &amp; Gabbana">
           <div class="product-details">
-            <h3>[27020957] Dolce &amp; Gabbana</h3>
+            <h3>[2702250957] Dolce &amp; Gabbana</h3>
             <p class="description">Algodão Peruano</p>
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;79,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/casual/emporio-armani/27021001-emporio-armani.jpeg" alt="[27021001] Emporio Armani">
+          <img src="images/male/tshirts/casual/emporio-armani/2702251001-emporio-armani.jpeg" alt="[2702251001] Emporio Armani">
           <div class="product-details">
-            <h3>[27021001] Emporio Armani</h3>
+            <h3>[2702251001] Emporio Armani</h3>
             <p class="description">Algodão Peruano</p>
             <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;79,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/casual/emporio-armani/01030820-emporio-armani.jpeg" alt="[01030820] Emporio Armani">
+          <img src="images/male/tshirts/casual/emporio-armani/0103250820-emporio-armani.jpeg" alt="[0103250820] Emporio Armani">
           <div class="product-details">
-            <h3>[01030820] Emporio Armani</h3>
+            <h3>[0103250820] Emporio Armani</h3>
             <p class="description">Algodão Italiano Oversized</p>
             <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;89,90</span>
@@ -702,113 +702,41 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/casual/hugo-boss/09031012-hugo-boss.jpeg" alt="[09031012] Hugo Boss">
+          <img src="images/male/tshirts/casual/hugo-boss/0903251012-hugo-boss.jpeg" alt="[0903251012] Hugo Boss">
           <div class="product-details">
-            <h3>[09031012] Hugo Boss</h3>
+            <h3>[0903251012] Hugo Boss</h3>
             <p class="description">100% Algodão Penteado</p>
             <span class="size">Tamanho: P</span>
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/casual/hugo-boss/01030815-hugo-boss.jpeg" alt="[01030815] Hugo Boss">
+          <img src="images/male/tshirts/casual/hugo-boss/0103250815-hugo-boss.jpeg" alt="[0103250815] Hugo Boss">
           <div class="product-details">
-            <h3>[01030815] Hugo Boss</h3>
+            <h3>[0103250815] Hugo Boss</h3>
             <p class="description">Algodão Peruano</p>
             <span class="size">Tamanho: P</span>
             <span class="price">R$&nbsp;79,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/casual/hugo-boss/01030810-hugo-boss.jpeg" alt="[01030810] Hugo Boss">
+          <img src="images/male/tshirts/casual/hugo-boss/0103250810-hugo-boss.jpeg" alt="[0103250810] Hugo Boss">
           <div class="product-details">
-            <h3>[01030810] Hugo Boss</h3>
+            <h3>[0103250810] Hugo Boss</h3>
             <p class="description">Algodão Italiano Oversized</p>
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/casual/hurley/08031044-hurley.jpeg" alt="[08031044] Hurley">
+          <img src="images/male/tshirts/casual/hurley/0803251044-hurley.jpeg" alt="[0803251044] Hurley">
           <div class="product-details">
-            <h3>[08031044] Hurley</h3>
+            <h3>[0803251044] Hurley</h3>
             <p class="description">100% Algodão Penteado</p>
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/casual/hurley/08031046-hurley.jpeg" alt="[08031046] Hurley">
+          <img src="images/male/tshirts/casual/hurley/0803251046-hurley.jpeg" alt="[0803251046] Hurley">
           <div class="product-details">
-            <h3>[08031046] Hurley</h3>
-            <p class="description">100% Algodão Penteado</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/nike/28021120-nike-front.jpeg" alt="[28021120] Nike">
-          <div class="product-details">
-            <h3>[28021120] Nike</h3>
-            <p class="description">Algodão Peruano</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;79,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/nike/08031049-nike.jpeg" alt="[08031049] Nike">
-          <div class="product-details">
-            <h3>[08031049] Nike</h3>
-            <p class="description">100% Algodão Penteado</p>
-            <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/tommy-hilfiger/09031015-tommy-hilfiger.jpeg" alt="[09031015] Tommy Hilfiger">
-          <div class="product-details">
-            <h3>[09031015] Tommy Hilfiger</h3>
-            <p class="description">100% Algodão Penteado</p>
-            <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/tommy-hilfiger/09031009-tommy-hilfiger.jpeg" alt="[09031009] Tommy Hilfiger">
-          <div class="product-details">
-            <h3>[09031009] Tommy Hilfiger</h3>
-            <p class="description">100% Algodão Penteado</p>
-            <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/tommy-hilfiger/28021109-tommy-hilfiger.jpeg" alt="[28021109] Tommy Hilfiger">
-          <div class="product-details">
-            <h3>[28021109] Tommy Hilfiger</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/tommy-hilfiger/28021122-tommy-hilfiger.jpeg" alt="[28021122] Tommy Hilfiger">
-          <div class="product-details">
-            <h3>[28021122] Tommy Hilfiger</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/tommy-hilfiger/1403251118-tommy-hilfiger.jpeg" alt="[1403251118] Tommy Hilfiger">
-          <div class="product-details">
-            <h3>[1403251118] Tommy Hilfiger</h3>
-            <p class="description">100% Algodão</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/versace/01030813-versace.jpeg" alt="[01030813] Versace">
-          <div class="product-details">
-            <h3>[01030813] Versace</h3>
-            <p class="description">Algodão Peruano</p>
-            <span class="size">Tamanho: M</span>
-            <span class="price">R$&nbsp;79,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/versace/08031811-versace.jpeg" alt="[08031811] Versace">
-          <div class="product-details">
-            <h3>[08031811] Versace</h3>
+            <h3>[0803251046] Hurley</h3>
             <p class="description">100% Algodão Penteado</p>
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;39,90</span>
@@ -838,35 +766,107 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/casual/louis-vuitton/27020956-louis-vuitton.jpeg" alt="[27020956] Louis Vuitton">
+          <img src="images/male/tshirts/casual/louis-vuitton/2802251130-louis-vuitton.jpeg" alt="[2802251130] Louis Vuitton">
           <div class="product-details">
-            <h3>[27020956] Louis Vuitton</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/louis-vuitton/2802112-louis-vuitton.jpeg" alt="[2802112] Louis Vuitton">
-          <div class="product-details">
-            <h3>[2802112] Louis Vuitton</h3>
+            <h3>[2802251130] Louis Vuitton</h3>
             <p class="description">Algodão Italiano Oversized</p>
             <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/casual/vans/08031047-vans.jpeg" alt="[08031047] Vans">
+          <img src="images/male/tshirts/casual/louis-vuitton/2702250956-louis-vuitton.jpeg" alt="[2702250956] Louis Vuitton">
           <div class="product-details">
-            <h3>[08031047] Vans</h3>
+            <h3>[2702250956] Louis Vuitton</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/nike/0803251049-nike.jpeg" alt="[0803251049] Nike">
+          <div class="product-details">
+            <h3>[0803251049] Nike</h3>
             <p class="description">100% Algodão Penteado</p>
             <span class="size">Tamanho: P</span>
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/casual/vans/09031011-vans.jpeg" alt="[09031011] Vans">
+          <img src="images/male/tshirts/casual/nike/2802251120-nike-front.jpeg" alt="[2802251120] Nike">
           <div class="product-details">
-            <h3>[09031011] Vans</h3>
+            <h3>[2802251120] Nike</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/0903251015-tommy-hilfiger.jpeg" alt="[0903251015] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[0903251015] Tommy Hilfiger</h3>
             <p class="description">100% Algodão Penteado</p>
             <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/0903251009-tommy-hilfiger.jpeg" alt="[0903251009] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[0903251009] Tommy Hilfiger</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/2802251109-tommy-hilfiger.jpeg" alt="[2802251109] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[2802251109] Tommy Hilfiger</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/2802251122-tommy-hilfiger.jpeg" alt="[2802251122] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[2802251122] Tommy Hilfiger</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/1403251118-tommy-hilfiger.jpeg" alt="[1403251118] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[1403251118] Tommy Hilfiger</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/vans/0803251047-vans.jpeg" alt="[0803251047] Vans">
+          <div class="product-details">
+            <h3>[0803251047] Vans</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/vans/0903251011-vans.jpeg" alt="[0903251011] Vans">
+          <div class="product-details">
+            <h3>[0903251011] Vans</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/versace/0103250813-versace.jpeg" alt="[0103250813] Versace">
+          <div class="product-details">
+            <h3>[0103250813] Versace</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/versace/0803251811-versace.jpeg" alt="[0803251811] Versace">
+          <div class="product-details">
+            <h3>[0803251811] Versace</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li></ul>
@@ -880,20 +880,20 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
 
 
 <div id="product-modal">
-        <div id="modal-content">
-          <button id="modal-close">X</button>
-          <div id="modal-image-container">
-            <img id="modal-image" src="" alt="">
-          </div>
-          <div id="modal-controls">
-            <button id="prev-image">&lt;</button>
-            <button id="zoom-out">-</button>
-            <button id="zoom-in">+</button>
-            <button id="next-image">&gt;</button>
-            <button id="buy-product">Comprar</button>
-          </div>
+      <div id="modal-content">
+        <button id="modal-close">X</button>
+        <div id="modal-image-container">
+          <img id="modal-image" src="" alt="">
         </div>
-      </div>"
+        <div id="modal-controls">
+          <button id="prev-image">&lt;</button>
+          <button id="zoom-out">-</button>
+          <button id="zoom-in">+</button>
+          <button id="next-image">&gt;</button>
+          <button id="buy-product">Comprar</button>
+        </div>
+      </div>
+    </div>"
 `;
 
 exports[`Catalog Desktop View renders final subcategory "Camisetas Fitness Masculina" correctly on desktop 1`] = `
@@ -953,33 +953,33 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Fitness Mascu
   <main>
     <h2 id="category-heading">Camisetas Fitness Masculina</h2>
     <ul id="product-list"><li class="product-item">
-          <img src="images/male/tshirts/fitness/nike/07031709-nike.jpeg" alt="[07031709] Camiseta Nike">
+          <img src="images/male/tshirts/fitness/nike/0703251709-nike.jpeg" alt="[0703251709] Camiseta Nike">
           <div class="product-details">
-            <h3>[07031709] Camiseta Nike</h3>
+            <h3>[0703251709] Camiseta Nike</h3>
             <p class="description">Dry-Fit, Cor: Preta</p>
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/fitness/puma/07031712-puma.jpeg" alt="[07031712] Regata Puma">
+          <img src="images/male/tshirts/fitness/puma/0703251712-puma.jpeg" alt="[0703251712] Regata Puma">
           <div class="product-details">
-            <h3>[07031712] Regata Puma</h3>
+            <h3>[0703251712] Regata Puma</h3>
             <p class="description">Dry-Fit, Cor: Azul Marinho</p>
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/fitness/puma/07031715-puma.jpeg" alt="[07031715] Regata Puma">
+          <img src="images/male/tshirts/fitness/puma/0703251715-puma.jpeg" alt="[0703251715] Regata Puma">
           <div class="product-details">
-            <h3>[07031715] Regata Puma</h3>
+            <h3>[0703251715] Regata Puma</h3>
             <p class="description">Dry-Fit, Cor: Cinza</p>
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/fitness/puma/07031717-puma.jpeg" alt="[07031717] Regata Mizuno">
+          <img src="images/male/tshirts/fitness/puma/0703251717-puma.jpeg" alt="[0703251717] Regata Mizuno">
           <div class="product-details">
-            <h3>[07031717] Regata Mizuno</h3>
+            <h3>[0703251717] Regata Mizuno</h3>
             <p class="description">Dry-Fit, Cor: Preta</p>
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;59,90</span>
@@ -995,20 +995,20 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Fitness Mascu
 
 
 <div id="product-modal">
-        <div id="modal-content">
-          <button id="modal-close">X</button>
-          <div id="modal-image-container">
-            <img id="modal-image" src="" alt="">
-          </div>
-          <div id="modal-controls">
-            <button id="prev-image">&lt;</button>
-            <button id="zoom-out">-</button>
-            <button id="zoom-in">+</button>
-            <button id="next-image">&gt;</button>
-            <button id="buy-product">Comprar</button>
-          </div>
+      <div id="modal-content">
+        <button id="modal-close">X</button>
+        <div id="modal-image-container">
+          <img id="modal-image" src="" alt="">
         </div>
-      </div>"
+        <div id="modal-controls">
+          <button id="prev-image">&lt;</button>
+          <button id="zoom-out">-</button>
+          <button id="zoom-in">+</button>
+          <button id="next-image">&gt;</button>
+          <button id="buy-product">Comprar</button>
+        </div>
+      </div>
+    </div>"
 `;
 
 exports[`Catalog Desktop View renders final subcategory "Chinelos" correctly on desktop 1`] = `
@@ -1086,20 +1086,20 @@ exports[`Catalog Desktop View renders final subcategory "Chinelos" correctly on 
 
 
 <div id="product-modal">
-        <div id="modal-content">
-          <button id="modal-close">X</button>
-          <div id="modal-image-container">
-            <img id="modal-image" src="" alt="">
-          </div>
-          <div id="modal-controls">
-            <button id="prev-image">&lt;</button>
-            <button id="zoom-out">-</button>
-            <button id="zoom-in">+</button>
-            <button id="next-image">&gt;</button>
-            <button id="buy-product">Comprar</button>
-          </div>
+      <div id="modal-content">
+        <button id="modal-close">X</button>
+        <div id="modal-image-container">
+          <img id="modal-image" src="" alt="">
         </div>
-      </div>"
+        <div id="modal-controls">
+          <button id="prev-image">&lt;</button>
+          <button id="zoom-out">-</button>
+          <button id="zoom-in">+</button>
+          <button id="next-image">&gt;</button>
+          <button id="buy-product">Comprar</button>
+        </div>
+      </div>
+    </div>"
 `;
 
 exports[`Catalog Desktop View renders final subcategory "Tênis" correctly on desktop 1`] = `
@@ -1411,20 +1411,20 @@ exports[`Catalog Desktop View renders final subcategory "Tênis" correctly on de
 
 
 <div id="product-modal">
-        <div id="modal-content">
-          <button id="modal-close">X</button>
-          <div id="modal-image-container">
-            <img id="modal-image" src="" alt="">
-          </div>
-          <div id="modal-controls">
-            <button id="prev-image">&lt;</button>
-            <button id="zoom-out">-</button>
-            <button id="zoom-in">+</button>
-            <button id="next-image">&gt;</button>
-            <button id="buy-product">Comprar</button>
-          </div>
+      <div id="modal-content">
+        <button id="modal-close">X</button>
+        <div id="modal-image-container">
+          <img id="modal-image" src="" alt="">
         </div>
-      </div>"
+        <div id="modal-controls">
+          <button id="prev-image">&lt;</button>
+          <button id="zoom-out">-</button>
+          <button id="zoom-in">+</button>
+          <button id="next-image">&gt;</button>
+          <button id="buy-product">Comprar</button>
+        </div>
+      </div>
+    </div>"
 `;
 
 exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
@@ -1484,6 +1484,262 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
   <main>
     <h2 id="category-heading">Todos os Produtos</h2>
     <ul id="product-list"><li class="product-item">
+          <img src="images/male/tshirts/casual/gucci/1403251216-gucci.jpeg" alt="[1403251216] Gucci">
+          <div class="product-details">
+            <h3>[1403251216] Gucci</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/emporio-armani/1403251214-emporio-armani.jpeg" alt="[1403251214] Emporio Armani">
+          <div class="product-details">
+            <h3>[1403251214] Emporio Armani</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/lacoste/1403251212-lacoste.jpeg" alt="[1403251212] Lacoste">
+          <div class="product-details">
+            <h3>[1403251212] Lacoste</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/lacoste/1403251211-lacoste.jpeg" alt="[1403251211] Lacoste">
+          <div class="product-details">
+            <h3>[1403251211] Lacoste</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/1403251118-tommy-hilfiger.jpeg" alt="[1403251118] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[1403251118] Tommy Hilfiger</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/lacoste/1403251109-lacoste.jpeg" alt="[1403251109] Lacoste">
+          <div class="product-details">
+            <h3>[1403251109] Lacoste</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/0903251015-tommy-hilfiger.jpeg" alt="[0903251015] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[0903251015] Tommy Hilfiger</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/hugo-boss/0903251012-hugo-boss.jpeg" alt="[0903251012] Hugo Boss">
+          <div class="product-details">
+            <h3>[0903251012] Hugo Boss</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/vans/0903251011-vans.jpeg" alt="[0903251011] Vans">
+          <div class="product-details">
+            <h3>[0903251011] Vans</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/0903251009-tommy-hilfiger.jpeg" alt="[0903251009] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[0903251009] Tommy Hilfiger</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/versace/0803251811-versace.jpeg" alt="[0803251811] Versace">
+          <div class="product-details">
+            <h3>[0803251811] Versace</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/nike/0803251049-nike.jpeg" alt="[0803251049] Nike">
+          <div class="product-details">
+            <h3>[0803251049] Nike</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/vans/0803251047-vans.jpeg" alt="[0803251047] Vans">
+          <div class="product-details">
+            <h3>[0803251047] Vans</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/hurley/0803251046-hurley.jpeg" alt="[0803251046] Hurley">
+          <div class="product-details">
+            <h3>[0803251046] Hurley</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/hurley/0803251044-hurley.jpeg" alt="[0803251044] Hurley">
+          <div class="product-details">
+            <h3>[0803251044] Hurley</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/fitness/puma/0703251717-puma.jpeg" alt="[0703251717] Regata Mizuno">
+          <div class="product-details">
+            <h3>[0703251717] Regata Mizuno</h3>
+            <p class="description">Dry-Fit, Cor: Preta</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/fitness/puma/0703251715-puma.jpeg" alt="[0703251715] Regata Puma">
+          <div class="product-details">
+            <h3>[0703251715] Regata Puma</h3>
+            <p class="description">Dry-Fit, Cor: Cinza</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/fitness/puma/0703251712-puma.jpeg" alt="[0703251712] Regata Puma">
+          <div class="product-details">
+            <h3>[0703251712] Regata Puma</h3>
+            <p class="description">Dry-Fit, Cor: Azul Marinho</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/fitness/nike/0703251709-nike.jpeg" alt="[0703251709] Camiseta Nike">
+          <div class="product-details">
+            <h3>[0703251709] Camiseta Nike</h3>
+            <p class="description">Dry-Fit, Cor: Preta</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/emporio-armani/0103250820-emporio-armani.jpeg" alt="[0103250820] Emporio Armani">
+          <div class="product-details">
+            <h3>[0103250820] Emporio Armani</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/hugo-boss/0103250815-hugo-boss.jpeg" alt="[0103250815] Hugo Boss">
+          <div class="product-details">
+            <h3>[0103250815] Hugo Boss</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/versace/0103250813-versace.jpeg" alt="[0103250813] Versace">
+          <div class="product-details">
+            <h3>[0103250813] Versace</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/hugo-boss/0103250810-hugo-boss.jpeg" alt="[0103250810] Hugo Boss">
+          <div class="product-details">
+            <h3>[0103250810] Hugo Boss</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/louis-vuitton/2802251130-louis-vuitton.jpeg" alt="[2802251130] Louis Vuitton">
+          <div class="product-details">
+            <h3>[2802251130] Louis Vuitton</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/2802251122-tommy-hilfiger.jpeg" alt="[2802251122] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[2802251122] Tommy Hilfiger</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/nike/2802251120-nike-front.jpeg" alt="[2802251120] Nike">
+          <div class="product-details">
+            <h3>[2802251120] Nike</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/2802251109-tommy-hilfiger.jpeg" alt="[2802251109] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[2802251109] Tommy Hilfiger</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/balmain/2802251105-balmain.jpeg" alt="[2802251105] Balmain">
+          <div class="product-details">
+            <h3>[2802251105] Balmain</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/burberry/2702251016-burberry.jpeg" alt="[2702251016] Burberry">
+          <div class="product-details">
+            <h3>[2702251016] Burberry</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/emporio-armani/2702251001-emporio-armani.jpeg" alt="[2702251001] Emporio Armani">
+          <div class="product-details">
+            <h3>[2702251001] Emporio Armani</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/dolce-gabbana/2702250957-dolce-gabbana.jpeg" alt="[2702250957] Dolce &amp; Gabbana">
+          <div class="product-details">
+            <h3>[2702250957] Dolce &amp; Gabbana</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/louis-vuitton/2702250956-louis-vuitton.jpeg" alt="[2702250956] Louis Vuitton">
+          <div class="product-details">
+            <h3>[2702250956] Louis Vuitton</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
           <img src="images/shoes/asics/12021714-asics.jpeg" alt="[12021714] Asics">
           <div class="product-details">
             <h3>[12021714] Asics</h3>
@@ -1726,262 +1982,6 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
                <span class="new-price">R$&nbsp;249,00</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/casual/balmain/28021105-balmain.jpeg" alt="[28021105] Balmain">
-          <div class="product-details">
-            <h3>[28021105] Balmain</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/burberry/27021016-burberry.jpeg" alt="[27021016] Burberry">
-          <div class="product-details">
-            <h3>[27021016] Burberry</h3>
-            <p class="description">Algodão Peruano</p>
-            <span class="size">Tamanho: M</span>
-            <span class="price">R$&nbsp;79,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/dolce-gabbana/27020957-dolce-gabbana.jpeg" alt="[27020957] Dolce &amp; Gabbana">
-          <div class="product-details">
-            <h3>[27020957] Dolce &amp; Gabbana</h3>
-            <p class="description">Algodão Peruano</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;79,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/emporio-armani/27021001-emporio-armani.jpeg" alt="[27021001] Emporio Armani">
-          <div class="product-details">
-            <h3>[27021001] Emporio Armani</h3>
-            <p class="description">Algodão Peruano</p>
-            <span class="size">Tamanho: M</span>
-            <span class="price">R$&nbsp;79,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/emporio-armani/01030820-emporio-armani.jpeg" alt="[01030820] Emporio Armani">
-          <div class="product-details">
-            <h3>[01030820] Emporio Armani</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: M</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/emporio-armani/1403251214-emporio-armani.jpeg" alt="[1403251214] Emporio Armani">
-          <div class="product-details">
-            <h3>[1403251214] Emporio Armani</h3>
-            <p class="description">100% Algodão</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/gucci/1403251216-gucci.jpeg" alt="[1403251216] Gucci">
-          <div class="product-details">
-            <h3>[1403251216] Gucci</h3>
-            <p class="description">100% Algodão</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/hugo-boss/09031012-hugo-boss.jpeg" alt="[09031012] Hugo Boss">
-          <div class="product-details">
-            <h3>[09031012] Hugo Boss</h3>
-            <p class="description">100% Algodão Penteado</p>
-            <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/hugo-boss/01030815-hugo-boss.jpeg" alt="[01030815] Hugo Boss">
-          <div class="product-details">
-            <h3>[01030815] Hugo Boss</h3>
-            <p class="description">Algodão Peruano</p>
-            <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;79,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/hugo-boss/01030810-hugo-boss.jpeg" alt="[01030810] Hugo Boss">
-          <div class="product-details">
-            <h3>[01030810] Hugo Boss</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/hurley/08031044-hurley.jpeg" alt="[08031044] Hurley">
-          <div class="product-details">
-            <h3>[08031044] Hurley</h3>
-            <p class="description">100% Algodão Penteado</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/hurley/08031046-hurley.jpeg" alt="[08031046] Hurley">
-          <div class="product-details">
-            <h3>[08031046] Hurley</h3>
-            <p class="description">100% Algodão Penteado</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/nike/28021120-nike-front.jpeg" alt="[28021120] Nike">
-          <div class="product-details">
-            <h3>[28021120] Nike</h3>
-            <p class="description">Algodão Peruano</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;79,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/nike/08031049-nike.jpeg" alt="[08031049] Nike">
-          <div class="product-details">
-            <h3>[08031049] Nike</h3>
-            <p class="description">100% Algodão Penteado</p>
-            <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/tommy-hilfiger/09031015-tommy-hilfiger.jpeg" alt="[09031015] Tommy Hilfiger">
-          <div class="product-details">
-            <h3>[09031015] Tommy Hilfiger</h3>
-            <p class="description">100% Algodão Penteado</p>
-            <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/tommy-hilfiger/09031009-tommy-hilfiger.jpeg" alt="[09031009] Tommy Hilfiger">
-          <div class="product-details">
-            <h3>[09031009] Tommy Hilfiger</h3>
-            <p class="description">100% Algodão Penteado</p>
-            <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/tommy-hilfiger/28021109-tommy-hilfiger.jpeg" alt="[28021109] Tommy Hilfiger">
-          <div class="product-details">
-            <h3>[28021109] Tommy Hilfiger</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/tommy-hilfiger/28021122-tommy-hilfiger.jpeg" alt="[28021122] Tommy Hilfiger">
-          <div class="product-details">
-            <h3>[28021122] Tommy Hilfiger</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/tommy-hilfiger/1403251118-tommy-hilfiger.jpeg" alt="[1403251118] Tommy Hilfiger">
-          <div class="product-details">
-            <h3>[1403251118] Tommy Hilfiger</h3>
-            <p class="description">100% Algodão</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/versace/01030813-versace.jpeg" alt="[01030813] Versace">
-          <div class="product-details">
-            <h3>[01030813] Versace</h3>
-            <p class="description">Algodão Peruano</p>
-            <span class="size">Tamanho: M</span>
-            <span class="price">R$&nbsp;79,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/versace/08031811-versace.jpeg" alt="[08031811] Versace">
-          <div class="product-details">
-            <h3>[08031811] Versace</h3>
-            <p class="description">100% Algodão Penteado</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/lacoste/1403251212-lacoste.jpeg" alt="[1403251212] Lacoste">
-          <div class="product-details">
-            <h3>[1403251212] Lacoste</h3>
-            <p class="description">100% Algodão</p>
-            <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/lacoste/1403251211-lacoste.jpeg" alt="[1403251211] Lacoste">
-          <div class="product-details">
-            <h3>[1403251211] Lacoste</h3>
-            <p class="description">100% Algodão</p>
-            <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/lacoste/1403251109-lacoste.jpeg" alt="[1403251109] Lacoste">
-          <div class="product-details">
-            <h3>[1403251109] Lacoste</h3>
-            <p class="description">100% Algodão</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/louis-vuitton/27020956-louis-vuitton.jpeg" alt="[27020956] Louis Vuitton">
-          <div class="product-details">
-            <h3>[27020956] Louis Vuitton</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/louis-vuitton/2802112-louis-vuitton.jpeg" alt="[2802112] Louis Vuitton">
-          <div class="product-details">
-            <h3>[2802112] Louis Vuitton</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: M</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/vans/08031047-vans.jpeg" alt="[08031047] Vans">
-          <div class="product-details">
-            <h3>[08031047] Vans</h3>
-            <p class="description">100% Algodão Penteado</p>
-            <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/vans/09031011-vans.jpeg" alt="[09031011] Vans">
-          <div class="product-details">
-            <h3>[09031011] Vans</h3>
-            <p class="description">100% Algodão Penteado</p>
-            <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/fitness/nike/07031709-nike.jpeg" alt="[07031709] Camiseta Nike">
-          <div class="product-details">
-            <h3>[07031709] Camiseta Nike</h3>
-            <p class="description">Dry-Fit, Cor: Preta</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;59,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/fitness/puma/07031712-puma.jpeg" alt="[07031712] Regata Puma">
-          <div class="product-details">
-            <h3>[07031712] Regata Puma</h3>
-            <p class="description">Dry-Fit, Cor: Azul Marinho</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;59,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/fitness/puma/07031715-puma.jpeg" alt="[07031715] Regata Puma">
-          <div class="product-details">
-            <h3>[07031715] Regata Puma</h3>
-            <p class="description">Dry-Fit, Cor: Cinza</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;59,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/fitness/puma/07031717-puma.jpeg" alt="[07031717] Regata Mizuno">
-          <div class="product-details">
-            <h3>[07031717] Regata Mizuno</h3>
-            <p class="description">Dry-Fit, Cor: Preta</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;59,90</span>
-          </div>
-        </li><li class="product-item">
           <img src="images/slippers/tommy-hilfiger/17021140-tommy-hilfiger.jpeg" alt="[17021140] Tommy Hilfiger">
           <div class="product-details">
             <h3>[17021140] Tommy Hilfiger</h3>
@@ -2000,20 +2000,20 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
 
 
 <div id="product-modal">
-        <div id="modal-content">
-          <button id="modal-close">X</button>
-          <div id="modal-image-container">
-            <img id="modal-image" src="" alt="">
-          </div>
-          <div id="modal-controls">
-            <button id="prev-image">&lt;</button>
-            <button id="zoom-out">-</button>
-            <button id="zoom-in">+</button>
-            <button id="next-image">&gt;</button>
-            <button id="buy-product">Comprar</button>
-          </div>
+      <div id="modal-content">
+        <button id="modal-close">X</button>
+        <div id="modal-image-container">
+          <img id="modal-image" src="" alt="">
         </div>
-      </div>"
+        <div id="modal-controls">
+          <button id="prev-image">&lt;</button>
+          <button id="zoom-out">-</button>
+          <button id="zoom-in">+</button>
+          <button id="next-image">&gt;</button>
+          <button id="buy-product">Comprar</button>
+        </div>
+      </div>
+    </div>"
 `;
 
 exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Masculina" correctly on mobile 1`] = `
@@ -2073,41 +2073,41 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
   <main>
     <h2 id="category-heading">Camisetas Casuais Masculina</h2>
     <ul id="product-list"><li class="product-item">
-          <img src="images/male/tshirts/casual/balmain/28021105-balmain.jpeg" alt="[28021105] Balmain">
+          <img src="images/male/tshirts/casual/balmain/2802251105-balmain.jpeg" alt="[2802251105] Balmain">
           <div class="product-details">
-            <h3>[28021105] Balmain</h3>
+            <h3>[2802251105] Balmain</h3>
             <p class="description">Algodão Italiano Oversized</p>
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/casual/burberry/27021016-burberry.jpeg" alt="[27021016] Burberry">
+          <img src="images/male/tshirts/casual/burberry/2702251016-burberry.jpeg" alt="[2702251016] Burberry">
           <div class="product-details">
-            <h3>[27021016] Burberry</h3>
+            <h3>[2702251016] Burberry</h3>
             <p class="description">Algodão Peruano</p>
             <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;79,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/casual/dolce-gabbana/27020957-dolce-gabbana.jpeg" alt="[27020957] Dolce &amp; Gabbana">
+          <img src="images/male/tshirts/casual/dolce-gabbana/2702250957-dolce-gabbana.jpeg" alt="[2702250957] Dolce &amp; Gabbana">
           <div class="product-details">
-            <h3>[27020957] Dolce &amp; Gabbana</h3>
+            <h3>[2702250957] Dolce &amp; Gabbana</h3>
             <p class="description">Algodão Peruano</p>
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;79,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/casual/emporio-armani/27021001-emporio-armani.jpeg" alt="[27021001] Emporio Armani">
+          <img src="images/male/tshirts/casual/emporio-armani/2702251001-emporio-armani.jpeg" alt="[2702251001] Emporio Armani">
           <div class="product-details">
-            <h3>[27021001] Emporio Armani</h3>
+            <h3>[2702251001] Emporio Armani</h3>
             <p class="description">Algodão Peruano</p>
             <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;79,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/casual/emporio-armani/01030820-emporio-armani.jpeg" alt="[01030820] Emporio Armani">
+          <img src="images/male/tshirts/casual/emporio-armani/0103250820-emporio-armani.jpeg" alt="[0103250820] Emporio Armani">
           <div class="product-details">
-            <h3>[01030820] Emporio Armani</h3>
+            <h3>[0103250820] Emporio Armani</h3>
             <p class="description">Algodão Italiano Oversized</p>
             <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;89,90</span>
@@ -2129,113 +2129,41 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/casual/hugo-boss/09031012-hugo-boss.jpeg" alt="[09031012] Hugo Boss">
+          <img src="images/male/tshirts/casual/hugo-boss/0903251012-hugo-boss.jpeg" alt="[0903251012] Hugo Boss">
           <div class="product-details">
-            <h3>[09031012] Hugo Boss</h3>
+            <h3>[0903251012] Hugo Boss</h3>
             <p class="description">100% Algodão Penteado</p>
             <span class="size">Tamanho: P</span>
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/casual/hugo-boss/01030815-hugo-boss.jpeg" alt="[01030815] Hugo Boss">
+          <img src="images/male/tshirts/casual/hugo-boss/0103250815-hugo-boss.jpeg" alt="[0103250815] Hugo Boss">
           <div class="product-details">
-            <h3>[01030815] Hugo Boss</h3>
+            <h3>[0103250815] Hugo Boss</h3>
             <p class="description">Algodão Peruano</p>
             <span class="size">Tamanho: P</span>
             <span class="price">R$&nbsp;79,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/casual/hugo-boss/01030810-hugo-boss.jpeg" alt="[01030810] Hugo Boss">
+          <img src="images/male/tshirts/casual/hugo-boss/0103250810-hugo-boss.jpeg" alt="[0103250810] Hugo Boss">
           <div class="product-details">
-            <h3>[01030810] Hugo Boss</h3>
+            <h3>[0103250810] Hugo Boss</h3>
             <p class="description">Algodão Italiano Oversized</p>
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/casual/hurley/08031044-hurley.jpeg" alt="[08031044] Hurley">
+          <img src="images/male/tshirts/casual/hurley/0803251044-hurley.jpeg" alt="[0803251044] Hurley">
           <div class="product-details">
-            <h3>[08031044] Hurley</h3>
+            <h3>[0803251044] Hurley</h3>
             <p class="description">100% Algodão Penteado</p>
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/casual/hurley/08031046-hurley.jpeg" alt="[08031046] Hurley">
+          <img src="images/male/tshirts/casual/hurley/0803251046-hurley.jpeg" alt="[0803251046] Hurley">
           <div class="product-details">
-            <h3>[08031046] Hurley</h3>
-            <p class="description">100% Algodão Penteado</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/nike/28021120-nike-front.jpeg" alt="[28021120] Nike">
-          <div class="product-details">
-            <h3>[28021120] Nike</h3>
-            <p class="description">Algodão Peruano</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;79,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/nike/08031049-nike.jpeg" alt="[08031049] Nike">
-          <div class="product-details">
-            <h3>[08031049] Nike</h3>
-            <p class="description">100% Algodão Penteado</p>
-            <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/tommy-hilfiger/09031015-tommy-hilfiger.jpeg" alt="[09031015] Tommy Hilfiger">
-          <div class="product-details">
-            <h3>[09031015] Tommy Hilfiger</h3>
-            <p class="description">100% Algodão Penteado</p>
-            <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/tommy-hilfiger/09031009-tommy-hilfiger.jpeg" alt="[09031009] Tommy Hilfiger">
-          <div class="product-details">
-            <h3>[09031009] Tommy Hilfiger</h3>
-            <p class="description">100% Algodão Penteado</p>
-            <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/tommy-hilfiger/28021109-tommy-hilfiger.jpeg" alt="[28021109] Tommy Hilfiger">
-          <div class="product-details">
-            <h3>[28021109] Tommy Hilfiger</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/tommy-hilfiger/28021122-tommy-hilfiger.jpeg" alt="[28021122] Tommy Hilfiger">
-          <div class="product-details">
-            <h3>[28021122] Tommy Hilfiger</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/tommy-hilfiger/1403251118-tommy-hilfiger.jpeg" alt="[1403251118] Tommy Hilfiger">
-          <div class="product-details">
-            <h3>[1403251118] Tommy Hilfiger</h3>
-            <p class="description">100% Algodão</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/versace/01030813-versace.jpeg" alt="[01030813] Versace">
-          <div class="product-details">
-            <h3>[01030813] Versace</h3>
-            <p class="description">Algodão Peruano</p>
-            <span class="size">Tamanho: M</span>
-            <span class="price">R$&nbsp;79,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/versace/08031811-versace.jpeg" alt="[08031811] Versace">
-          <div class="product-details">
-            <h3>[08031811] Versace</h3>
+            <h3>[0803251046] Hurley</h3>
             <p class="description">100% Algodão Penteado</p>
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;39,90</span>
@@ -2265,35 +2193,107 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/casual/louis-vuitton/27020956-louis-vuitton.jpeg" alt="[27020956] Louis Vuitton">
+          <img src="images/male/tshirts/casual/louis-vuitton/2802251130-louis-vuitton.jpeg" alt="[2802251130] Louis Vuitton">
           <div class="product-details">
-            <h3>[27020956] Louis Vuitton</h3>
-            <p class="description">Algodão Italiano Oversized</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;89,90</span>
-          </div>
-        </li><li class="product-item">
-          <img src="images/male/tshirts/casual/louis-vuitton/2802112-louis-vuitton.jpeg" alt="[2802112] Louis Vuitton">
-          <div class="product-details">
-            <h3>[2802112] Louis Vuitton</h3>
+            <h3>[2802251130] Louis Vuitton</h3>
             <p class="description">Algodão Italiano Oversized</p>
             <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/casual/vans/08031047-vans.jpeg" alt="[08031047] Vans">
+          <img src="images/male/tshirts/casual/louis-vuitton/2702250956-louis-vuitton.jpeg" alt="[2702250956] Louis Vuitton">
           <div class="product-details">
-            <h3>[08031047] Vans</h3>
+            <h3>[2702250956] Louis Vuitton</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/nike/0803251049-nike.jpeg" alt="[0803251049] Nike">
+          <div class="product-details">
+            <h3>[0803251049] Nike</h3>
             <p class="description">100% Algodão Penteado</p>
             <span class="size">Tamanho: P</span>
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/casual/vans/09031011-vans.jpeg" alt="[09031011] Vans">
+          <img src="images/male/tshirts/casual/nike/2802251120-nike-front.jpeg" alt="[2802251120] Nike">
           <div class="product-details">
-            <h3>[09031011] Vans</h3>
+            <h3>[2802251120] Nike</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/0903251015-tommy-hilfiger.jpeg" alt="[0903251015] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[0903251015] Tommy Hilfiger</h3>
             <p class="description">100% Algodão Penteado</p>
             <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/0903251009-tommy-hilfiger.jpeg" alt="[0903251009] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[0903251009] Tommy Hilfiger</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/2802251109-tommy-hilfiger.jpeg" alt="[2802251109] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[2802251109] Tommy Hilfiger</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/2802251122-tommy-hilfiger.jpeg" alt="[2802251122] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[2802251122] Tommy Hilfiger</h3>
+            <p class="description">Algodão Italiano Oversized</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;89,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/tommy-hilfiger/1403251118-tommy-hilfiger.jpeg" alt="[1403251118] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[1403251118] Tommy Hilfiger</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/vans/0803251047-vans.jpeg" alt="[0803251047] Vans">
+          <div class="product-details">
+            <h3>[0803251047] Vans</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/vans/0903251011-vans.jpeg" alt="[0903251011] Vans">
+          <div class="product-details">
+            <h3>[0903251011] Vans</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/versace/0103250813-versace.jpeg" alt="[0103250813] Versace">
+          <div class="product-details">
+            <h3>[0103250813] Versace</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/male/tshirts/casual/versace/0803251811-versace.jpeg" alt="[0803251811] Versace">
+          <div class="product-details">
+            <h3>[0803251811] Versace</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li></ul>
@@ -2307,20 +2307,20 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
 
 
 <div id="product-modal">
-        <div id="modal-content">
-          <button id="modal-close">X</button>
-          <div id="modal-image-container">
-            <img id="modal-image" src="" alt="">
-          </div>
-          <div id="modal-controls">
-            <button id="prev-image">&lt;</button>
-            <button id="zoom-out">-</button>
-            <button id="zoom-in">+</button>
-            <button id="next-image">&gt;</button>
-            <button id="buy-product">Comprar</button>
-          </div>
+      <div id="modal-content">
+        <button id="modal-close">X</button>
+        <div id="modal-image-container">
+          <img id="modal-image" src="" alt="">
         </div>
-      </div>"
+        <div id="modal-controls">
+          <button id="prev-image">&lt;</button>
+          <button id="zoom-out">-</button>
+          <button id="zoom-in">+</button>
+          <button id="next-image">&gt;</button>
+          <button id="buy-product">Comprar</button>
+        </div>
+      </div>
+    </div>"
 `;
 
 exports[`Catalog Mobile View renders final subcategory "Camisetas Fitness Masculina" correctly on mobile 1`] = `
@@ -2380,33 +2380,33 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Fitness Mascul
   <main>
     <h2 id="category-heading">Camisetas Fitness Masculina</h2>
     <ul id="product-list"><li class="product-item">
-          <img src="images/male/tshirts/fitness/nike/07031709-nike.jpeg" alt="[07031709] Camiseta Nike">
+          <img src="images/male/tshirts/fitness/nike/0703251709-nike.jpeg" alt="[0703251709] Camiseta Nike">
           <div class="product-details">
-            <h3>[07031709] Camiseta Nike</h3>
+            <h3>[0703251709] Camiseta Nike</h3>
             <p class="description">Dry-Fit, Cor: Preta</p>
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/fitness/puma/07031712-puma.jpeg" alt="[07031712] Regata Puma">
+          <img src="images/male/tshirts/fitness/puma/0703251712-puma.jpeg" alt="[0703251712] Regata Puma">
           <div class="product-details">
-            <h3>[07031712] Regata Puma</h3>
+            <h3>[0703251712] Regata Puma</h3>
             <p class="description">Dry-Fit, Cor: Azul Marinho</p>
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/fitness/puma/07031715-puma.jpeg" alt="[07031715] Regata Puma">
+          <img src="images/male/tshirts/fitness/puma/0703251715-puma.jpeg" alt="[0703251715] Regata Puma">
           <div class="product-details">
-            <h3>[07031715] Regata Puma</h3>
+            <h3>[0703251715] Regata Puma</h3>
             <p class="description">Dry-Fit, Cor: Cinza</p>
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item">
-          <img src="images/male/tshirts/fitness/puma/07031717-puma.jpeg" alt="[07031717] Regata Mizuno">
+          <img src="images/male/tshirts/fitness/puma/0703251717-puma.jpeg" alt="[0703251717] Regata Mizuno">
           <div class="product-details">
-            <h3>[07031717] Regata Mizuno</h3>
+            <h3>[0703251717] Regata Mizuno</h3>
             <p class="description">Dry-Fit, Cor: Preta</p>
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;59,90</span>
@@ -2422,20 +2422,20 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Fitness Mascul
 
 
 <div id="product-modal">
-        <div id="modal-content">
-          <button id="modal-close">X</button>
-          <div id="modal-image-container">
-            <img id="modal-image" src="" alt="">
-          </div>
-          <div id="modal-controls">
-            <button id="prev-image">&lt;</button>
-            <button id="zoom-out">-</button>
-            <button id="zoom-in">+</button>
-            <button id="next-image">&gt;</button>
-            <button id="buy-product">Comprar</button>
-          </div>
+      <div id="modal-content">
+        <button id="modal-close">X</button>
+        <div id="modal-image-container">
+          <img id="modal-image" src="" alt="">
         </div>
-      </div>"
+        <div id="modal-controls">
+          <button id="prev-image">&lt;</button>
+          <button id="zoom-out">-</button>
+          <button id="zoom-in">+</button>
+          <button id="next-image">&gt;</button>
+          <button id="buy-product">Comprar</button>
+        </div>
+      </div>
+    </div>"
 `;
 
 exports[`Catalog Mobile View renders final subcategory "Chinelos" correctly on mobile 1`] = `
@@ -2513,20 +2513,20 @@ exports[`Catalog Mobile View renders final subcategory "Chinelos" correctly on m
 
 
 <div id="product-modal">
-        <div id="modal-content">
-          <button id="modal-close">X</button>
-          <div id="modal-image-container">
-            <img id="modal-image" src="" alt="">
-          </div>
-          <div id="modal-controls">
-            <button id="prev-image">&lt;</button>
-            <button id="zoom-out">-</button>
-            <button id="zoom-in">+</button>
-            <button id="next-image">&gt;</button>
-            <button id="buy-product">Comprar</button>
-          </div>
+      <div id="modal-content">
+        <button id="modal-close">X</button>
+        <div id="modal-image-container">
+          <img id="modal-image" src="" alt="">
         </div>
-      </div>"
+        <div id="modal-controls">
+          <button id="prev-image">&lt;</button>
+          <button id="zoom-out">-</button>
+          <button id="zoom-in">+</button>
+          <button id="next-image">&gt;</button>
+          <button id="buy-product">Comprar</button>
+        </div>
+      </div>
+    </div>"
 `;
 
 exports[`Catalog Mobile View renders final subcategory "Tênis" correctly on mobile 1`] = `
@@ -2838,20 +2838,20 @@ exports[`Catalog Mobile View renders final subcategory "Tênis" correctly on mob
 
 
 <div id="product-modal">
-        <div id="modal-content">
-          <button id="modal-close">X</button>
-          <div id="modal-image-container">
-            <img id="modal-image" src="" alt="">
-          </div>
-          <div id="modal-controls">
-            <button id="prev-image">&lt;</button>
-            <button id="zoom-out">-</button>
-            <button id="zoom-in">+</button>
-            <button id="next-image">&gt;</button>
-            <button id="buy-product">Comprar</button>
-          </div>
+      <div id="modal-content">
+        <button id="modal-close">X</button>
+        <div id="modal-image-container">
+          <img id="modal-image" src="" alt="">
         </div>
-      </div>"
+        <div id="modal-controls">
+          <button id="prev-image">&lt;</button>
+          <button id="zoom-out">-</button>
+          <button id="zoom-in">+</button>
+          <button id="next-image">&gt;</button>
+          <button id="buy-product">Comprar</button>
+        </div>
+      </div>
+    </div>"
 `;
 
 exports[`Catalog Modal Functionality opens modal on product click and logs GA event 1`] = `
@@ -3163,23 +3163,23 @@ exports[`Catalog Modal Functionality opens modal on product click and logs GA ev
 
 
 <div id="product-modal">
-        <div id="modal-content">
-          <button id="modal-close">X</button>
-          <div id="modal-image-container">
-            <img id="modal-image" src="" alt="">
-          </div>
-          <div id="modal-controls">
-            <button id="prev-image">&lt;</button>
-            <button id="zoom-out">-</button>
-            <button id="zoom-in">+</button>
-            <button id="next-image">&gt;</button>
-            <button id="buy-product">Comprar</button>
-          </div>
+      <div id="modal-content">
+        <button id="modal-close">X</button>
+        <div id="modal-image-container">
+          <img id="modal-image" src="" alt="">
         </div>
-      </div>"
+        <div id="modal-controls">
+          <button id="prev-image">&lt;</button>
+          <button id="zoom-out">-</button>
+          <button id="zoom-in">+</button>
+          <button id="next-image">&gt;</button>
+          <button id="buy-product">Comprar</button>
+        </div>
+      </div>
+    </div>"
 `;
 
-exports[`Catalog Modal Functionality redirects to WhatsApp with correct message when clicking "Comprar este produto" 1`] = `
+exports[`Catalog Modal Functionality redirects to WhatsApp with correct message when clicking "Comprar" button 1`] = `
 "
   <header>
     <div class="header-logo">
@@ -3488,18 +3488,18 @@ exports[`Catalog Modal Functionality redirects to WhatsApp with correct message 
 
 
 <div id="product-modal">
-        <div id="modal-content">
-          <button id="modal-close">X</button>
-          <div id="modal-image-container">
-            <img id="modal-image" src="" alt="">
-          </div>
-          <div id="modal-controls">
-            <button id="prev-image">&lt;</button>
-            <button id="zoom-out">-</button>
-            <button id="zoom-in">+</button>
-            <button id="next-image">&gt;</button>
-            <button id="buy-product">Comprar</button>
-          </div>
+      <div id="modal-content">
+        <button id="modal-close">X</button>
+        <div id="modal-image-container">
+          <img id="modal-image" src="" alt="">
         </div>
-      </div>"
+        <div id="modal-controls">
+          <button id="prev-image">&lt;</button>
+          <button id="zoom-out">-</button>
+          <button id="zoom-in">+</button>
+          <button id="next-image">&gt;</button>
+          <button id="buy-product">Comprar</button>
+        </div>
+      </div>
+    </div>"
 `;

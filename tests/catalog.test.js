@@ -158,6 +158,55 @@ describe('Catalog', () => {
     });
   });
 
+  describe('Sorting Order', () => {
+    // For these tests, we want to override the fetch mock with controlled test data.
+    const customData = {
+      "shoes-man": [{ name: "[0103250820] Emporio Armani", price: 100 }],
+      "tshirts-casual-man": [{ name: "[0803251811] Versace", price: 200 }],
+      "tshirts-fitness-man": [{ name: "[2802251122] Tommy Hilfiger", price: 300 }],
+      "slippers-man": []
+    };
+
+    beforeEach(() => {
+      // Reset modules and override fetch BEFORE initializing the catalog.
+      jest.resetModules();
+      global.fetch.mockImplementation((url) => {
+        const match = url.match(/products\/(.*)\.json/);
+        const category = match ? match[1] : null;
+        if (category && customData.hasOwnProperty(category)) {
+          return Promise.resolve({
+            ok: true,
+            json: () => Promise.resolve(customData[category])
+          });
+        }
+        return Promise.reject(new Error(`Unknown URL: ${url}`));
+      });
+      setupDOM();
+    });
+
+    it('sorts products in descending order based on date parsed from product names', async () => {
+      await waitFor(() => {
+        expect(document.getElementById('category-heading')).toHaveTextContent("Todos os Produtos");
+      });
+      // Wait for product items to be rendered.
+      await waitFor(() => {
+        expect(document.querySelectorAll('#product-list .product-item').length).toBeGreaterThan(0);
+      });
+      // Collect product names.
+      const productItems = Array.from(document.querySelectorAll('#product-list .product-item'));
+      const productNames = productItems.map(item => item.querySelector('h3').textContent);
+      // Expected descending order:
+      // "[0803251811] Versace" (Mar 8, 2025 18:11)
+      // "[0103250820] Emporio Armani" (Mar 1, 2025 08:20)
+      // "[2802251122] Tommy Hilfiger" (Feb 28, 2025 11:22)
+      expect(productNames).toEqual([
+        "[0803251811] Versace",
+        "[0103250820] Emporio Armani",
+        "[2802251122] Tommy Hilfiger"
+      ]);
+    });
+  });
+
   describe('Modal Functionality', () => {
     beforeEach(async () => {
       await selectShoesMan();
@@ -175,7 +224,7 @@ describe('Catalog', () => {
       expect(global.gtag).toHaveBeenCalledWith('event', 'open_modal', expect.any(Object));
     });
 
-    it('redirects to WhatsApp with correct message when clicking "Comprar este produto"', async () => {
+    it('redirects to WhatsApp with correct message when clicking "Comprar" button', async () => {
       const product = document.querySelector('#product-list .product-item');
       fireEvent.click(product);
 
@@ -184,7 +233,6 @@ describe('Catalog', () => {
       });
 
       const openSpy = jest.spyOn(window, 'open').mockImplementation(() => {});
-
       const buyButton = document.getElementById('buy-product');
       expect(buyButton).toBeInTheDocument();
       fireEvent.click(buyButton);

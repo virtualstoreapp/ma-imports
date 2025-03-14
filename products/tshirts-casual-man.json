@@ -1,51 +1,51 @@
 [
     {
-        "name": "[28021105] Balmain",
+        "name": "[2802251105] Balmain",
         "description": "Algodão Italiano Oversized",
         "oldPrice": 0.0,
         "price": 89.90,
         "images": [
-            "images/male/tshirts/casual/balmain/28021105-balmain.jpeg"
+            "images/male/tshirts/casual/balmain/2802251105-balmain.jpeg"
         ],
         "size": "G"
     },
     {
-        "name": "[27021016] Burberry",
+        "name": "[2702251016] Burberry",
         "description": "Algodão Peruano",
         "oldPrice": 0.0,
         "price": 79.90,
         "images": [
-            "images/male/tshirts/casual/burberry/27021016-burberry.jpeg"
+            "images/male/tshirts/casual/burberry/2702251016-burberry.jpeg"
         ],
         "size": "M"
     },
     {
-        "name": "[27020957] Dolce & Gabbana",
+        "name": "[2702250957] Dolce & Gabbana",
         "description": "Algodão Peruano",
         "oldPrice": 0.0,
         "price": 79.90,
         "images": [
-            "images/male/tshirts/casual/dolce-gabbana/27020957-dolce-gabbana.jpeg"
+            "images/male/tshirts/casual/dolce-gabbana/2702250957-dolce-gabbana.jpeg"
         ],
         "size": "GG"
     },
     {
-        "name": "[27021001] Emporio Armani",
+        "name": "[2702251001] Emporio Armani",
         "description": "Algodão Peruano",
         "oldPrice": 0.0,
         "price": 79.90,
         "images": [
-            "images/male/tshirts/casual/emporio-armani/27021001-emporio-armani.jpeg"
+            "images/male/tshirts/casual/emporio-armani/2702251001-emporio-armani.jpeg"
         ],
         "size": "M"
     },
     {
-        "name": "[01030820] Emporio Armani",
+        "name": "[0103250820] Emporio Armani",
         "description": "Algodão Italiano Oversized",
         "oldPrice": 0.0,
         "price": 89.90,
         "images": [
-            "images/male/tshirts/casual/emporio-armani/01030820-emporio-armani.jpeg"
+            "images/male/tshirts/casual/emporio-armani/0103250820-emporio-armani.jpeg"
         ],
         "size": "M"
     },
@@ -70,143 +70,52 @@
         "size": "GG"
     },
     {
-        "name": "[09031012] Hugo Boss",
+        "name": "[0903251012] Hugo Boss",
         "description": "100% Algodão Penteado",
         "oldPrice": 0.0,
         "price": 39.90,
         "images": [
-            "images/male/tshirts/casual/hugo-boss/09031012-hugo-boss.jpeg"
+            "images/male/tshirts/casual/hugo-boss/0903251012-hugo-boss.jpeg"
         ],
         "size": "P"
     },
     {
-        "name": "[01030815] Hugo Boss",
+        "name": "[0103250815] Hugo Boss",
         "description": "Algodão Peruano",
         "oldPrice": 0.0,
         "price": 79.90,
         "images": [
-            "images/male/tshirts/casual/hugo-boss/01030815-hugo-boss.jpeg"
+            "images/male/tshirts/casual/hugo-boss/0103250815-hugo-boss.jpeg"
         ],
         "size": "P"
     },
     {
-        "name": "[01030810] Hugo Boss",
+        "name": "[0103250810] Hugo Boss",
         "description": "Algodão Italiano Oversized",
         "oldPrice": 0.0,
         "price": 89.90,
         "images": [
-            "images/male/tshirts/casual/hugo-boss/01030810-hugo-boss.jpeg"
+            "images/male/tshirts/casual/hugo-boss/0103250810-hugo-boss.jpeg"
         ],
         "size": "GG"
     },
     {
-        "name": "[08031044] Hurley",
+        "name": "[0803251044] Hurley",
         "description": "100% Algodão Penteado",
         "oldPrice": 0.0,
         "price": 39.90,
         "images": [
-            "images/male/tshirts/casual/hurley/08031044-hurley.jpeg"
+            "images/male/tshirts/casual/hurley/0803251044-hurley.jpeg"
         ],
         "size": "GG"
     },
     {
-        "name": "[08031046] Hurley",
+        "name": "[0803251046] Hurley",
         "description": "100% Algodão Penteado",
         "oldPrice": 0.0,
         "price": 39.90,
         "images": [
-            "images/male/tshirts/casual/hurley/08031046-hurley.jpeg"
-        ],
-        "size": "GG"
-    },
-    {
-        "name": "[28021120] Nike",
-        "description": "Algodão Peruano",
-        "oldPrice": 0.0,
-        "price": 79.90,
-        "images": [
-            "images/male/tshirts/casual/nike/28021120-nike-front.jpeg",
-            "images/male/tshirts/casual/nike/28021120-nike-back.jpeg"
-        ],
-        "size": "G"
-    },
-    {
-        "name": "[08031049] Nike",
-        "description": "100% Algodão Penteado",
-        "oldPrice": 0.0,
-        "price": 39.90,
-        "images": [
-            "images/male/tshirts/casual/nike/08031049-nike.jpeg"
-        ],
-        "size": "P"
-    },
-    {
-        "name": "[09031015] Tommy Hilfiger",
-        "description": "100% Algodão Penteado",
-        "oldPrice": 0.0,
-        "price": 39.90,
-        "images": [
-            "images/male/tshirts/casual/tommy-hilfiger/09031015-tommy-hilfiger.jpeg"
-        ],
-        "size": "P"
-    },
-    {
-        "name": "[09031009] Tommy Hilfiger",
-        "description": "100% Algodão Penteado",
-        "oldPrice": 0.0,
-        "price": 39.90,
-        "images": [
-            "images/male/tshirts/casual/tommy-hilfiger/09031009-tommy-hilfiger.jpeg"
-        ],
-        "size": "P"
-    },
-    {
-        "name": "[28021109] Tommy Hilfiger",
-        "description": "Algodão Italiano Oversized",
-        "oldPrice": 0.0,
-        "price": 89.90,
-        "images": [
-            "images/male/tshirts/casual/tommy-hilfiger/28021109-tommy-hilfiger.jpeg"
-        ],
-        "size": "G"
-    },
-    {
-        "name": "[28021122] Tommy Hilfiger",
-        "description": "Algodão Italiano Oversized",
-        "oldPrice": 0.0,
-        "price": 89.90,
-        "images": [
-            "images/male/tshirts/casual/tommy-hilfiger/28021122-tommy-hilfiger.jpeg"
-        ],
-        "size": "G"
-    },
-    {
-        "name": "[1403251118] Tommy Hilfiger",
-        "description": "100% Algodão",
-        "oldPrice": 0.0,
-        "price": 39.90,
-        "images": [
-            "images/male/tshirts/casual/tommy-hilfiger/1403251118-tommy-hilfiger.jpeg"
-        ],
-        "size": "GG"
-    },
-    {
-        "name": "[01030813] Versace",
-        "description": "Algodão Peruano",
-        "oldPrice": 0.0,
-        "price": 79.90,
-        "images": [
-            "images/male/tshirts/casual/versace/01030813-versace.jpeg"
-        ],
-        "size": "M"
-    },
-    {
-        "name": "[08031811] Versace",
-        "description": "100% Algodão Penteado",
-        "oldPrice": 0.0,
-        "price": 39.90,
-        "images": [
-            "images/male/tshirts/casual/versace/08031811-versace.jpeg"
+            "images/male/tshirts/casual/hurley/0803251046-hurley.jpeg"
         ],
         "size": "GG"
     },
@@ -241,43 +150,134 @@
         "size": "GG"
     },
     {
-        "name": "[27020956] Louis Vuitton",
+        "name": "[2802251130] Louis Vuitton",
         "description": "Algodão Italiano Oversized",
         "oldPrice": 0.0,
         "price": 89.90,
         "images": [
-            "images/male/tshirts/casual/louis-vuitton/27020956-louis-vuitton.jpeg"
-        ],
-        "size": "GG"
-    },
-    {
-        "name": "[2802112] Louis Vuitton",
-        "description": "Algodão Italiano Oversized",
-        "oldPrice": 0.0,
-        "price": 89.90,
-        "images": [
-            "images/male/tshirts/casual/louis-vuitton/2802112-louis-vuitton.jpeg"
+            "images/male/tshirts/casual/louis-vuitton/2802251130-louis-vuitton.jpeg"
         ],
         "size": "M"
     },
     {
-        "name": "[08031047] Vans",
+        "name": "[2702250956] Louis Vuitton",
+        "description": "Algodão Italiano Oversized",
+        "oldPrice": 0.0,
+        "price": 89.90,
+        "images": [
+            "images/male/tshirts/casual/louis-vuitton/2702250956-louis-vuitton.jpeg"
+        ],
+        "size": "GG"
+    },
+    {
+        "name": "[0803251049] Nike",
         "description": "100% Algodão Penteado",
         "oldPrice": 0.0,
         "price": 39.90,
         "images": [
-            "images/male/tshirts/casual/vans/08031047-vans.jpeg"
+            "images/male/tshirts/casual/nike/0803251049-nike.jpeg"
         ],
         "size": "P"
     },
     {
-        "name": "[09031011] Vans",
+        "name": "[2802251120] Nike",
+        "description": "Algodão Peruano",
+        "oldPrice": 0.0,
+        "price": 79.90,
+        "images": [
+            "images/male/tshirts/casual/nike/2802251120-nike-front.jpeg",
+            "images/male/tshirts/casual/nike/2802251120-nike-back.jpeg"
+        ],
+        "size": "G"
+    },
+    {
+        "name": "[0903251015] Tommy Hilfiger",
         "description": "100% Algodão Penteado",
         "oldPrice": 0.0,
         "price": 39.90,
         "images": [
-            "images/male/tshirts/casual/vans/09031011-vans.jpeg"
+            "images/male/tshirts/casual/tommy-hilfiger/0903251015-tommy-hilfiger.jpeg"
         ],
         "size": "P"
+    },
+    {
+        "name": "[0903251009] Tommy Hilfiger",
+        "description": "100% Algodão Penteado",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/male/tshirts/casual/tommy-hilfiger/0903251009-tommy-hilfiger.jpeg"
+        ],
+        "size": "P"
+    },
+    {
+        "name": "[2802251109] Tommy Hilfiger",
+        "description": "Algodão Italiano Oversized",
+        "oldPrice": 0.0,
+        "price": 89.90,
+        "images": [
+            "images/male/tshirts/casual/tommy-hilfiger/2802251109-tommy-hilfiger.jpeg"
+        ],
+        "size": "G"
+    },
+    {
+        "name": "[2802251122] Tommy Hilfiger",
+        "description": "Algodão Italiano Oversized",
+        "oldPrice": 0.0,
+        "price": 89.90,
+        "images": [
+            "images/male/tshirts/casual/tommy-hilfiger/2802251122-tommy-hilfiger.jpeg"
+        ],
+        "size": "G"
+    },
+    {
+        "name": "[1403251118] Tommy Hilfiger",
+        "description": "100% Algodão",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/male/tshirts/casual/tommy-hilfiger/1403251118-tommy-hilfiger.jpeg"
+        ],
+        "size": "GG"
+    },
+    {
+        "name": "[0803251047] Vans",
+        "description": "100% Algodão Penteado",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/male/tshirts/casual/vans/0803251047-vans.jpeg"
+        ],
+        "size": "P"
+    },
+    {
+        "name": "[0903251011] Vans",
+        "description": "100% Algodão Penteado",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/male/tshirts/casual/vans/0903251011-vans.jpeg"
+        ],
+        "size": "P"
+    },
+    {
+        "name": "[0103250813] Versace",
+        "description": "Algodão Peruano",
+        "oldPrice": 0.0,
+        "price": 79.90,
+        "images": [
+            "images/male/tshirts/casual/versace/0103250813-versace.jpeg"
+        ],
+        "size": "M"
+    },
+    {
+        "name": "[0803251811] Versace",
+        "description": "100% Algodão Penteado",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/male/tshirts/casual/versace/0803251811-versace.jpeg"
+        ],
+        "size": "GG"
     }
 ]
