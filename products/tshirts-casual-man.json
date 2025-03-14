@@ -1,5 +1,15 @@
 [
     {
+        "name": "[1403251216] Gucci",
+        "description": "100% Algodão",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/male/tshirts/casual/gucci/1403251216-gucci.jpeg"
+        ],
+        "size": "GG"
+    },
+    {
         "name": "[27020956] Louis Vuitton",
         "description": "Algodão Italiano Oversized",
         "oldPrice": 0.0,
@@ -48,6 +58,16 @@
             "images/male/tshirts/casual/emporio-armani/01030820-emporio-armani.jpeg"
         ],
         "size": "M"
+    },
+    {
+        "name": "[1403251214] Emporio Armani",
+        "description": "100% Algodão",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/male/tshirts/casual/emporio-armani/1403251214-emporio-armani.jpeg"
+        ],
+        "size": "GG"
     },
     {
         "name": "[27021016] Burberry",
@@ -108,6 +128,16 @@
             "images/male/tshirts/casual/tommy-hilfiger/28021122-tommy-hilfiger.jpeg"
         ],
         "size": "G"
+    },
+    {
+        "name": "[1403251118] Tommy Hilfiger",
+        "description": "100% Algodão",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/male/tshirts/casual/tommy-hilfiger/1403251118-tommy-hilfiger.jpeg"
+        ],
+        "size": "GG"
     },
     {
         "name": "[28021120] Nike",
@@ -197,6 +227,36 @@
         "price": 39.90,
         "images": [
             "images/male/tshirts/casual/hurley/08031046-hurley.jpeg"
+        ],
+        "size": "GG"
+    },
+    {
+        "name": "[1403251212] Lacoste",
+        "description": "100% Algodão",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/male/tshirts/casual/lacoste/1403251212-lacoste.jpeg"
+        ],
+        "size": "P"
+    },
+    {
+        "name": "[1403251211] Lacoste",
+        "description": "100% Algodão",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/male/tshirts/casual/lacoste/1403251211-lacoste.jpeg"
+        ],
+        "size": "P"
+    },
+    {
+        "name": "[1403251109] Lacoste",
+        "description": "100% Algodão",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/male/tshirts/casual/lacoste/1403251109-lacoste.jpeg"
         ],
         "size": "GG"
     },
