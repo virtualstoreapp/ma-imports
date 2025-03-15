@@ -566,7 +566,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
   </main>
 
   <footer>
-    <p>Versão: 2.0.7 - 0.0.60</p>
+    <p>Versão: 2.1.0 - 0.0.60</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -873,7 +873,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
   </main>
 
   <footer>
-    <p>Versão: 2.0.7 - 0.0.60</p>
+    <p>Versão: 2.1.0 - 0.0.60</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -988,7 +988,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Fitness Mascu
   </main>
 
   <footer>
-    <p>Versão: 2.0.7 - 0.0.60</p>
+    <p>Versão: 2.1.0 - 0.0.60</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1079,7 +1079,7 @@ exports[`Catalog Desktop View renders final subcategory "Chinelos" correctly on 
   </main>
 
   <footer>
-    <p>Versão: 2.0.7 - 0.0.60</p>
+    <p>Versão: 2.1.0 - 0.0.60</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1404,7 +1404,7 @@ exports[`Catalog Desktop View renders final subcategory "Tênis" correctly on de
   </main>
 
   <footer>
-    <p>Versão: 2.0.7 - 0.0.60</p>
+    <p>Versão: 2.1.0 - 0.0.60</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1993,7 +1993,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
   </main>
 
   <footer>
-    <p>Versão: 2.0.7 - 0.0.60</p>
+    <p>Versão: 2.1.0 - 0.0.60</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2300,7 +2300,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
   </main>
 
   <footer>
-    <p>Versão: 2.0.7 - 0.0.60</p>
+    <p>Versão: 2.1.0 - 0.0.60</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2415,7 +2415,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Fitness Mascul
   </main>
 
   <footer>
-    <p>Versão: 2.0.7 - 0.0.60</p>
+    <p>Versão: 2.1.0 - 0.0.60</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2506,7 +2506,7 @@ exports[`Catalog Mobile View renders final subcategory "Chinelos" correctly on m
   </main>
 
   <footer>
-    <p>Versão: 2.0.7 - 0.0.60</p>
+    <p>Versão: 2.1.0 - 0.0.60</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2831,7 +2831,7 @@ exports[`Catalog Mobile View renders final subcategory "Tênis" correctly on mob
   </main>
 
   <footer>
-    <p>Versão: 2.0.7 - 0.0.60</p>
+    <p>Versão: 2.1.0 - 0.0.60</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3156,7 +3156,7 @@ exports[`Catalog Modal Functionality opens modal on product click and logs GA ev
   </main>
 
   <footer>
-    <p>Versão: 2.0.7 - 0.0.60</p>
+    <p>Versão: 2.1.0 - 0.0.60</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3481,7 +3481,7 @@ exports[`Catalog Modal Functionality redirects to WhatsApp with correct message 
   </main>
 
   <footer>
-    <p>Versão: 2.0.7 - 0.0.60</p>
+    <p>Versão: 2.1.0 - 0.0.60</p>
   </footer>
 
   <script src="scripts.js"></script>
