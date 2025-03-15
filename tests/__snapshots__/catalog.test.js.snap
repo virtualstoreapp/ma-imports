@@ -57,6 +57,46 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
   <main>
     <h2 id="category-heading">Todos os Produtos</h2>
     <ul id="product-list"><li class="product-item">
+          <img src="images/man/tshirts/casual/hugo-boss/1503250633-hugo-boss.jpeg" alt="[1503250633] Hugo Boss">
+          <div class="product-details">
+            <h3>[1503250633] Hugo Boss</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/man/tshirts/casual/gucci/1503250631-gucci.jpeg" alt="[1503250631] Gucci">
+          <div class="product-details">
+            <h3>[1503250631] Gucci</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/man/tshirts/casual/lacoste/1503250630-lacoste.jpeg" alt="[1503250630] Lacoste">
+          <div class="product-details">
+            <h3>[1503250630] Lacoste</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/man/tshirts/casual/nike/1503250629-nike.jpeg" alt="[1503250629] Nike">
+          <div class="product-details">
+            <h3>[1503250629] Nike</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/man/tshirts/casual/tommy-hilfiger/1503250626-tommy-hilfiger.jpeg" alt="[1503250626] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[1503250626] Tommy Hilfiger</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
           <img src="images/man/tshirts/casual/gucci/1403251216-gucci.jpeg" alt="[1403251216] Gucci">
           <div class="product-details">
             <h3>[1403251216] Gucci</h3>
@@ -566,7 +606,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
   </main>
 
   <footer>
-    <p>Versão: 2.1.0 - 0.0.60</p>
+    <p>Versão: 2.1.0 - 0.0.65</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -694,6 +734,14 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item">
+          <img src="images/man/tshirts/casual/gucci/1503250631-gucci.jpeg" alt="[1503250631] Gucci">
+          <div class="product-details">
+            <h3>[1503250631] Gucci</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
           <img src="images/man/tshirts/casual/gucci/1403251216-gucci.jpeg" alt="[1403251216] Gucci">
           <div class="product-details">
             <h3>[1403251216] Gucci</h3>
@@ -706,6 +754,14 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
           <div class="product-details">
             <h3>[0903251012] Hugo Boss</h3>
             <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/man/tshirts/casual/hugo-boss/1503250633-hugo-boss.jpeg" alt="[1503250633] Hugo Boss">
+          <div class="product-details">
+            <h3>[1503250633] Hugo Boss</h3>
+            <p class="description">100% Algodão</p>
             <span class="size">Tamanho: P</span>
             <span class="price">R$&nbsp;39,90</span>
           </div>
@@ -758,6 +814,14 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item">
+          <img src="images/man/tshirts/casual/lacoste/1503250630-lacoste.jpeg" alt="[1503250630] Lacoste">
+          <div class="product-details">
+            <h3>[1503250630] Lacoste</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
           <img src="images/man/tshirts/casual/lacoste/1403251109-lacoste.jpeg" alt="[1403251109] Lacoste">
           <div class="product-details">
             <h3>[1403251109] Lacoste</h3>
@@ -796,6 +860,14 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
             <p class="description">Algodão Peruano</p>
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/man/tshirts/casual/nike/1503250629-nike.jpeg" alt="[1503250629] Nike">
+          <div class="product-details">
+            <h3>[1503250629] Nike</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item">
           <img src="images/man/tshirts/casual/tommy-hilfiger/0903251015-tommy-hilfiger.jpeg" alt="[0903251015] Tommy Hilfiger">
@@ -838,6 +910,14 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item">
+          <img src="images/man/tshirts/casual/tommy-hilfiger/1503250626-tommy-hilfiger.jpeg" alt="[1503250626] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[1503250626] Tommy Hilfiger</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
           <img src="images/man/tshirts/casual/vans/0803251047-vans.jpeg" alt="[0803251047] Vans">
           <div class="product-details">
             <h3>[0803251047] Vans</h3>
@@ -873,7 +953,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
   </main>
 
   <footer>
-    <p>Versão: 2.1.0 - 0.0.60</p>
+    <p>Versão: 2.1.0 - 0.0.65</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -988,7 +1068,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Fitness Mascu
   </main>
 
   <footer>
-    <p>Versão: 2.1.0 - 0.0.60</p>
+    <p>Versão: 2.1.0 - 0.0.65</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1079,7 +1159,7 @@ exports[`Catalog Desktop View renders final subcategory "Chinelos" correctly on 
   </main>
 
   <footer>
-    <p>Versão: 2.1.0 - 0.0.60</p>
+    <p>Versão: 2.1.0 - 0.0.65</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1404,7 +1484,7 @@ exports[`Catalog Desktop View renders final subcategory "Tênis" correctly on de
   </main>
 
   <footer>
-    <p>Versão: 2.1.0 - 0.0.60</p>
+    <p>Versão: 2.1.0 - 0.0.65</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1484,6 +1564,46 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
   <main>
     <h2 id="category-heading">Todos os Produtos</h2>
     <ul id="product-list"><li class="product-item">
+          <img src="images/man/tshirts/casual/hugo-boss/1503250633-hugo-boss.jpeg" alt="[1503250633] Hugo Boss">
+          <div class="product-details">
+            <h3>[1503250633] Hugo Boss</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/man/tshirts/casual/gucci/1503250631-gucci.jpeg" alt="[1503250631] Gucci">
+          <div class="product-details">
+            <h3>[1503250631] Gucci</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/man/tshirts/casual/lacoste/1503250630-lacoste.jpeg" alt="[1503250630] Lacoste">
+          <div class="product-details">
+            <h3>[1503250630] Lacoste</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/man/tshirts/casual/nike/1503250629-nike.jpeg" alt="[1503250629] Nike">
+          <div class="product-details">
+            <h3>[1503250629] Nike</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/man/tshirts/casual/tommy-hilfiger/1503250626-tommy-hilfiger.jpeg" alt="[1503250626] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[1503250626] Tommy Hilfiger</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
           <img src="images/man/tshirts/casual/gucci/1403251216-gucci.jpeg" alt="[1403251216] Gucci">
           <div class="product-details">
             <h3>[1403251216] Gucci</h3>
@@ -1993,7 +2113,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
   </main>
 
   <footer>
-    <p>Versão: 2.1.0 - 0.0.60</p>
+    <p>Versão: 2.1.0 - 0.0.65</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2121,6 +2241,14 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item">
+          <img src="images/man/tshirts/casual/gucci/1503250631-gucci.jpeg" alt="[1503250631] Gucci">
+          <div class="product-details">
+            <h3>[1503250631] Gucci</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
           <img src="images/man/tshirts/casual/gucci/1403251216-gucci.jpeg" alt="[1403251216] Gucci">
           <div class="product-details">
             <h3>[1403251216] Gucci</h3>
@@ -2133,6 +2261,14 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
           <div class="product-details">
             <h3>[0903251012] Hugo Boss</h3>
             <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/man/tshirts/casual/hugo-boss/1503250633-hugo-boss.jpeg" alt="[1503250633] Hugo Boss">
+          <div class="product-details">
+            <h3>[1503250633] Hugo Boss</h3>
+            <p class="description">100% Algodão</p>
             <span class="size">Tamanho: P</span>
             <span class="price">R$&nbsp;39,90</span>
           </div>
@@ -2185,6 +2321,14 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item">
+          <img src="images/man/tshirts/casual/lacoste/1503250630-lacoste.jpeg" alt="[1503250630] Lacoste">
+          <div class="product-details">
+            <h3>[1503250630] Lacoste</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
           <img src="images/man/tshirts/casual/lacoste/1403251109-lacoste.jpeg" alt="[1403251109] Lacoste">
           <div class="product-details">
             <h3>[1403251109] Lacoste</h3>
@@ -2223,6 +2367,14 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
             <p class="description">Algodão Peruano</p>
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/man/tshirts/casual/nike/1503250629-nike.jpeg" alt="[1503250629] Nike">
+          <div class="product-details">
+            <h3>[1503250629] Nike</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item">
           <img src="images/man/tshirts/casual/tommy-hilfiger/0903251015-tommy-hilfiger.jpeg" alt="[0903251015] Tommy Hilfiger">
@@ -2265,6 +2417,14 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item">
+          <img src="images/man/tshirts/casual/tommy-hilfiger/1503250626-tommy-hilfiger.jpeg" alt="[1503250626] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[1503250626] Tommy Hilfiger</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
           <img src="images/man/tshirts/casual/vans/0803251047-vans.jpeg" alt="[0803251047] Vans">
           <div class="product-details">
             <h3>[0803251047] Vans</h3>
@@ -2300,7 +2460,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
   </main>
 
   <footer>
-    <p>Versão: 2.1.0 - 0.0.60</p>
+    <p>Versão: 2.1.0 - 0.0.65</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2415,7 +2575,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Fitness Mascul
   </main>
 
   <footer>
-    <p>Versão: 2.1.0 - 0.0.60</p>
+    <p>Versão: 2.1.0 - 0.0.65</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2506,7 +2666,7 @@ exports[`Catalog Mobile View renders final subcategory "Chinelos" correctly on m
   </main>
 
   <footer>
-    <p>Versão: 2.1.0 - 0.0.60</p>
+    <p>Versão: 2.1.0 - 0.0.65</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2831,7 +2991,7 @@ exports[`Catalog Mobile View renders final subcategory "Tênis" correctly on mob
   </main>
 
   <footer>
-    <p>Versão: 2.1.0 - 0.0.60</p>
+    <p>Versão: 2.1.0 - 0.0.65</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3156,7 +3316,7 @@ exports[`Catalog Modal Functionality opens modal on product click and logs GA ev
   </main>
 
   <footer>
-    <p>Versão: 2.1.0 - 0.0.60</p>
+    <p>Versão: 2.1.0 - 0.0.65</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3481,7 +3641,7 @@ exports[`Catalog Modal Functionality redirects to WhatsApp with correct message 
   </main>
 
   <footer>
-    <p>Versão: 2.1.0 - 0.0.60</p>
+    <p>Versão: 2.1.0 - 0.0.65</p>
   </footer>
 
   <script src="scripts.js"></script>
