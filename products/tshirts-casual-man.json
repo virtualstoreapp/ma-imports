@@ -60,6 +60,16 @@
         "size": "GG"
     },
     {
+        "name": "[1503250631] Gucci",
+        "description": "100% Algodão",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/man/tshirts/casual/gucci/1503250631-gucci.jpeg"
+        ],
+        "size": "P"
+    },
+    {
         "name": "[1403251216] Gucci",
         "description": "100% Algodão",
         "oldPrice": 0.0,
@@ -76,6 +86,16 @@
         "price": 39.90,
         "images": [
             "images/man/tshirts/casual/hugo-boss/0903251012-hugo-boss.jpeg"
+        ],
+        "size": "P"
+    },
+    {
+        "name": "[1503250633] Hugo Boss",
+        "description": "100% Algodão",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/man/tshirts/casual/hugo-boss/1503250633-hugo-boss.jpeg"
         ],
         "size": "P"
     },
@@ -140,6 +160,16 @@
         "size": "P"
     },
     {
+        "name": "[1503250630] Lacoste",
+        "description": "100% Algodão",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/man/tshirts/casual/lacoste/1503250630-lacoste.jpeg"
+        ],
+        "size": "P"
+    },
+    {
         "name": "[1403251109] Lacoste",
         "description": "100% Algodão",
         "oldPrice": 0.0,
@@ -191,6 +221,16 @@
         "size": "G"
     },
     {
+        "name": "[1503250629] Nike",
+        "description": "100% Algodão",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/man/tshirts/casual/nike/1503250629-nike.jpeg"
+        ],
+        "size": "G"
+    },
+    {
         "name": "[0903251015] Tommy Hilfiger",
         "description": "100% Algodão Penteado",
         "oldPrice": 0.0,
@@ -237,6 +277,16 @@
         "price": 39.90,
         "images": [
             "images/man/tshirts/casual/tommy-hilfiger/1403251118-tommy-hilfiger.jpeg"
+        ],
+        "size": "GG"
+    },
+    {
+        "name": "[1503250626] Tommy Hilfiger",
+        "description": "100% Algodão",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/man/tshirts/casual/tommy-hilfiger/1503250626-tommy-hilfiger.jpeg"
         ],
         "size": "GG"
     },
