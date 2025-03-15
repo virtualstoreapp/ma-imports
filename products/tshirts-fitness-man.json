@@ -1,41 +1,41 @@
 [
     {
-        "name": "[07031709] Camiseta Nike",
+        "name": "[0703251709] Camiseta Nike",
         "description": "Dry-Fit, Cor: Preta",
         "oldPrice": 0.0,
         "price": 59.90,
         "images": [
-            "images/male/tshirts/fitness/nike/07031709-nike.jpeg"
+            "images/man/tshirts/fitness/nike/0703251709-nike.jpeg"
         ],
         "size": "G"
     },
     {
-        "name": "[07031712] Regata Puma",
+        "name": "[0703251712] Regata Puma",
         "description": "Dry-Fit, Cor: Azul Marinho",
         "oldPrice": 0.0,
         "price": 59.90,
         "images": [
-            "images/male/tshirts/fitness/puma/07031712-puma.jpeg"
+            "images/man/tshirts/fitness/puma/0703251712-puma.jpeg"
         ],
         "size": "G"
     },
     {
-        "name": "[07031715] Regata Puma",
+        "name": "[0703251715] Regata Puma",
         "description": "Dry-Fit, Cor: Cinza",
         "oldPrice": 0.0,
         "price": 59.90,
         "images": [
-            "images/male/tshirts/fitness/puma/07031715-puma.jpeg"
+            "images/man/tshirts/fitness/puma/0703251715-puma.jpeg"
         ],
         "size": "GG"
     },
     {
-        "name": "[07031717] Regata Mizuno",
+        "name": "[0703251717] Regata Mizuno",
         "description": "Dry-Fit, Cor: Preta",
         "oldPrice": 0.0,
         "price": 59.90,
         "images": [
-            "images/male/tshirts/fitness/puma/07031717-puma.jpeg"
+            "images/man/tshirts/fitness/puma/0703251717-puma.jpeg"
         ],
         "size": "G"
     }

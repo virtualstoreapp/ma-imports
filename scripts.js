@@ -10,7 +10,7 @@
   const formatCurrency = (value) =>
     new Intl.NumberFormat('pt-BR', {
       style: 'currency',
-      currency: 'BRL'
+      currency: 'BRL',
     }).format(value);
 
   const updateCategoryHeading = (category, headingEl) => {
@@ -19,75 +19,57 @@
       'shoes-man': 'Tênis',
       'slippers-man': 'Chinelos',
       'tshirts-casual-man': 'Camisetas Casuais Masculina',
-      'tshirts-fitness-man': 'Camisetas Fitness Masculina'
+      'tshirts-fitness-man': 'Camisetas Fitness Masculina',
     };
     headingEl.textContent = headings[category] || 'Produtos';
   };
 
   const collapseAllSubmenus = () => {
-    const submenuButtons = document.querySelectorAll(
-      'nav button.has-submenu, nav li.has-submenu > button'
-    );
-    submenuButtons.forEach((button) => {
-      button.setAttribute('aria-expanded', 'false');
-      const submenu = button.nextElementSibling;
-      if (submenu && submenu.classList.contains('submenu')) {
-        if (window.innerWidth <= 768) {
-          submenu.classList.remove('open');
-        } else {
-          submenu.style.display = 'none';
+    document
+      .querySelectorAll('nav button.has-submenu, nav li.has-submenu > button')
+      .forEach((button) => {
+        button.setAttribute('aria-expanded', 'false');
+        const submenu = button.nextElementSibling;
+        if (submenu && submenu.classList.contains('submenu')) {
+          if (window.innerWidth <= 768) {
+            submenu.classList.remove('open');
+          } else {
+            submenu.style.display = 'none';
+          }
         }
-      }
-    });
+      });
   };
 
   // --- Modal Module ---
   const Modal = (() => {
-    let modal,
-      currentImages = [],
-      currentIndex = 0,
-      currentZoom = 1,
-      currentProductName = '',
-      currentCategory = '';
+    let modal, currentImages = [], currentIndex = 0, currentZoom = 1;
+    let currentProductName = '', currentCategory = '';
 
-    const init = () => {
-      modal = document.createElement('div');
-      modal.id = 'product-modal';
-      modal.innerHTML = `
-        <div id="modal-content">
-          <button id="modal-close">X</button>
-          <div id="modal-image-container">
-            <img id="modal-image" src="" alt="">
-          </div>
-          <div id="modal-controls">
-            <button id="prev-image">&lt;</button>
-            <button id="zoom-out">-</button>
-            <button id="zoom-in">+</button>
-            <button id="next-image">&gt;</button>
-            <button id="buy-product">Comprar</button>
-          </div>
+    const createModalMarkup = () => `
+      <div id="modal-content">
+        <button id="modal-close">X</button>
+        <div id="modal-image-container">
+          <img id="modal-image" src="" alt="">
         </div>
-      `;
-      document.body.appendChild(modal);
-      bindEvents();
-    };
+        <div id="modal-controls">
+          <button id="prev-image">&lt;</button>
+          <button id="zoom-out">-</button>
+          <button id="zoom-in">+</button>
+          <button id="next-image">&gt;</button>
+          <button id="buy-product">Comprar</button>
+        </div>
+      </div>
+    `;
 
-    const bindEvents = () => {
+    const bindModalEvents = () => {
       document.getElementById('modal-close').addEventListener('click', close);
       document.getElementById('prev-image').addEventListener('click', showPrev);
       document.getElementById('next-image').addEventListener('click', showNext);
-      document.getElementById('zoom-in').addEventListener('click', () =>
-        adjustZoom(0.2)
-      );
-      document.getElementById('zoom-out').addEventListener('click', () =>
-        adjustZoom(-0.2)
-      );
+      document.getElementById('zoom-in').addEventListener('click', () => adjustZoom(0.2));
+      document.getElementById('zoom-out').addEventListener('click', () => adjustZoom(-0.2));
       document.getElementById('buy-product').addEventListener('click', () => {
         const message = `Olá, acabei de conferir seu catálogo online e na categoria ${currentCategory}, me interessei pelo produto ${currentProductName}. Poderia, por favor, me enviar mais informações e confirmar a disponibilidade? Obrigado!`;
-        const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-          message
-        )}`;
-
+        const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
         if (window.gtag) {
           gtag('event', 'buy_product', {
             event_category: 'Modal',
@@ -95,7 +77,6 @@
             product_category: currentCategory,
           });
         }
-        
         window.open(url, '_blank');
       });
       modal.addEventListener('click', (event) => {
@@ -118,9 +99,7 @@
     };
 
     const open = (product, categoryText) => {
-      currentImages = Array.isArray(product.images)
-        ? product.images
-        : [product.image];
+      currentImages = Array.isArray(product.images) ? product.images : [product.image];
       currentIndex = 0;
       currentZoom = 1;
       currentProductName = product.name;
@@ -131,7 +110,7 @@
       if (window.gtag) {
         gtag('event', 'open_modal', {
           event_category: 'Product',
-          event_label: currentProductName
+          event_label: currentProductName,
         });
       }
     };
@@ -149,7 +128,7 @@
           gtag('event', 'navigate_image', {
             event_category: 'Modal',
             event_label: 'prev',
-            product: currentProductName
+            product: currentProductName,
           });
         }
       }
@@ -164,7 +143,7 @@
           gtag('event', 'navigate_image', {
             event_category: 'Modal',
             event_label: 'next',
-            product: currentProductName
+            product: currentProductName,
           });
         }
       }
@@ -178,9 +157,17 @@
         gtag('event', action, {
           event_category: 'Modal',
           event_label: currentProductName,
-          zoom: currentZoom
+          zoom: currentZoom,
         });
       }
+    };
+
+    const init = () => {
+      modal = document.createElement('div');
+      modal.id = 'product-modal';
+      modal.innerHTML = createModalMarkup();
+      document.body.appendChild(modal);
+      bindModalEvents();
     };
 
     return { init, open, close };
@@ -191,6 +178,22 @@
     const categoryButtons = document.querySelectorAll('nav button[data-category]');
     const productListContainer = document.getElementById('product-list');
     const categoryHeading = document.getElementById('category-heading');
+
+    // Extract the 10-digit code (format DDMMYYhhmm) from the product name and parse it as a Date.
+    const parseProductDate = (name) => {
+      const regex = /\[(\d{10})\]/;
+      const match = name ? name.match(regex) : null;
+      if (match) {
+        const code = match[1];
+        const day = parseInt(code.substring(0, 2), 10);
+        const month = parseInt(code.substring(2, 4), 10) - 1;
+        const year = parseInt(code.substring(4, 6), 10) + 2000;
+        const hour = parseInt(code.substring(6, 8), 10);
+        const minute = parseInt(code.substring(8, 10), 10);
+        return new Date(year, month, day, hour, minute);
+      }
+      return new Date(0);
+    };
 
     const fetchCategoryData = async (category) => {
       try {
@@ -206,7 +209,8 @@
               return response.json();
             })
           );
-          return jsonData.flat();
+          const products = jsonData.flat();
+          return products.sort((a, b) => parseProductDate(b.name) - parseProductDate(a.name));
         } else {
           const response = await fetch(`products/${category}.json`);
           if (!response.ok)
@@ -249,11 +253,10 @@
           if (window.gtag) {
             gtag('event', 'product_click', {
               event_category: 'Product',
-              event_label: product.name
+              event_label: product.name,
             });
           }
-          const currentCategoryText = categoryHeading.textContent;
-          Modal.open(product, currentCategoryText);
+          Modal.open(product, categoryHeading.textContent);
         });
 
         productListContainer.appendChild(li);
@@ -265,12 +268,10 @@
       categoryButtons.forEach((button) => {
         button.addEventListener('click', async (event) => {
           event.stopPropagation();
-
+          const submenu = button.nextElementSibling;
           const hasSubmenu =
             button.classList.contains('has-submenu') ||
-            (button.parentElement &&
-              button.parentElement.classList.contains('has-submenu'));
-          const submenu = button.nextElementSibling;
+            (button.parentElement && button.parentElement.classList.contains('has-submenu'));
 
           if (hasSubmenu && submenu && submenu.classList.contains('submenu')) {
             const expanded = button.getAttribute('aria-expanded') === 'true';
@@ -278,8 +279,7 @@
               button.setAttribute('aria-expanded', String(!expanded));
               submenu.classList.toggle('open', !expanded);
             } else {
-              const newExpanded = !expanded;
-              button.setAttribute('aria-expanded', String(newExpanded));
+              button.setAttribute('aria-expanded', String(!expanded));
               submenu.style.display = expanded ? 'none' : 'block';
             }
             return;
@@ -287,15 +287,13 @@
 
           const category = button.getAttribute('data-category');
           await renderProducts(category);
-
           if (window.gtag) {
             gtag('event', 'select_category', {
               event_category: 'Navigation',
               event_label: category,
-              value: 1
+              value: 1,
             });
           }
-
           const nav = document.querySelector('nav');
           const menuToggle = document.getElementById('menu-toggle');
           if (nav.classList.contains('active')) {
