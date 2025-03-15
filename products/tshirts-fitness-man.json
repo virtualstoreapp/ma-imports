@@ -5,7 +5,7 @@
         "oldPrice": 0.0,
         "price": 59.90,
         "images": [
-            "images/male/tshirts/fitness/nike/0703251709-nike.jpeg"
+            "images/man/tshirts/fitness/nike/0703251709-nike.jpeg"
         ],
         "size": "G"
     },
@@ -15,7 +15,7 @@
         "oldPrice": 0.0,
         "price": 59.90,
         "images": [
-            "images/male/tshirts/fitness/puma/0703251712-puma.jpeg"
+            "images/man/tshirts/fitness/puma/0703251712-puma.jpeg"
         ],
         "size": "G"
     },
@@ -25,7 +25,7 @@
         "oldPrice": 0.0,
         "price": 59.90,
         "images": [
-            "images/male/tshirts/fitness/puma/0703251715-puma.jpeg"
+            "images/man/tshirts/fitness/puma/0703251715-puma.jpeg"
         ],
         "size": "GG"
     },
@@ -35,7 +35,7 @@
         "oldPrice": 0.0,
         "price": 59.90,
         "images": [
-            "images/male/tshirts/fitness/puma/0703251717-puma.jpeg"
+            "images/man/tshirts/fitness/puma/0703251717-puma.jpeg"
         ],
         "size": "G"
     }
