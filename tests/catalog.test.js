@@ -37,7 +37,7 @@ const asserts = async (expectedHeading, expectedCount) => {
 
 const assertAllProducts = async () => {
   const expectedHeading = "Todos os Produtos";
-  const expectedCount = 65;
+  const expectedCount = 69;
   await asserts(expectedHeading, expectedCount);
 };
 
@@ -91,6 +91,14 @@ const selectTshirtsCasualMan = async () => {
   await asserts(expectedHeading, expectedCount);
 };
 
+const selectTshirtsPoloMan = async () => {
+  const expectedHeading = "Camisetas Polo Masculina";
+  const expectedCount = 4;
+  await selectClothingManSubcategory();
+  await selectMenuOption('tshirts-polo-man');
+  await asserts(expectedHeading, expectedCount);
+};
+
 const selectTshirtsFitnessMan = async () => {
   const expectedHeading = "Camisetas Fitness Masculina";
   const expectedCount = 4;
@@ -124,6 +132,10 @@ describe('Catalog', () => {
       await selectTshirtsCasualMan();
     });
 
+    it('renders final subcategory "Camisetas Polo Masculina" correctly on desktop', async () => {
+      await selectTshirtsPoloMan();
+    });
+
     it('renders final subcategory "Camisetas Fitness Masculina" correctly on desktop', async () => {
       await selectTshirtsFitnessMan();
     });
@@ -151,6 +163,10 @@ describe('Catalog', () => {
 
     it('renders final subcategory "Camisetas Casuais Masculina" correctly on mobile', async () => {
       await selectTshirtsCasualMan();
+    });
+
+    it('renders final subcategory "Camisetas Polo Masculina" correctly on mobile', async () => {
+      await selectTshirtsPoloMan();
     });
 
     it('renders final subcategory "Camisetas Fitness Masculina" correctly on mobile', async () => {
