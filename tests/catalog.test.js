@@ -37,7 +37,7 @@ const asserts = async (expectedHeading, expectedCount) => {
 
 const assertAllProducts = async () => {
   const expectedHeading = "Todos os Produtos";
-  const expectedCount = 65;
+  const expectedCount = 69;
   await asserts(expectedHeading, expectedCount);
 };
 
@@ -91,6 +91,14 @@ const selectTshirtsCasualMan = async () => {
   await asserts(expectedHeading, expectedCount);
 };
 
+const selectTshirtsPoloMan = async () => {
+  const expectedHeading = "Camisetas Polo Masculina";
+  const expectedCount = 4;
+  await selectClothingManSubcategory();
+  await selectMenuOption('tshirts-polo-man');
+  await asserts(expectedHeading, expectedCount);
+};
+
 const selectTshirtsFitnessMan = async () => {
   const expectedHeading = "Camisetas Fitness Masculina";
   const expectedCount = 4;
@@ -124,6 +132,10 @@ describe('Catalog', () => {
       await selectTshirtsCasualMan();
     });
 
+    it('renders final subcategory "Camisetas Polo Masculina" correctly on desktop', async () => {
+      await selectTshirtsPoloMan();
+    });
+
     it('renders final subcategory "Camisetas Fitness Masculina" correctly on desktop', async () => {
       await selectTshirtsFitnessMan();
     });
@@ -153,6 +165,10 @@ describe('Catalog', () => {
       await selectTshirtsCasualMan();
     });
 
+    it('renders final subcategory "Camisetas Polo Masculina" correctly on mobile', async () => {
+      await selectTshirtsPoloMan();
+    });
+
     it('renders final subcategory "Camisetas Fitness Masculina" correctly on mobile', async () => {
       await selectTshirtsFitnessMan();
     });
@@ -161,10 +177,11 @@ describe('Catalog', () => {
   describe('Sorting Order', () => {
     // For these tests, we want to override the fetch mock with controlled test data.
     const customData = {
-      "shoes-man": [{ name: "[0103250820] Emporio Armani", price: 100 }],
-      "tshirts-casual-man": [{ name: "[0803251811] Versace", price: 200 }],
-      "tshirts-fitness-man": [{ name: "[2802251122] Tommy Hilfiger", price: 300 }],
-      "slippers-man": []
+      "shoes-man": [{ name: "[1202252201] Adidas Campus", price: 149 }],
+      "slippers-man": [{ name: "[1702251140] Tommy Hilfiger", price: 29.90 }],
+      "tshirts-casual-man": [{ name: "[0103250820] Emporio Armani", price: 89.90 }],
+      "tshirts-fitness-man": [{ name: "[0703251712] Regata Puma", price: 59.90 }],
+      "tshirts-polo-man": [{ name: "[1603250851] Calvin Klein", price: 59.90 }]
     };
 
     beforeEach(() => {
@@ -195,14 +212,14 @@ describe('Catalog', () => {
       // Collect product names.
       const productItems = Array.from(document.querySelectorAll('#product-list .product-item'));
       const productNames = productItems.map(item => item.querySelector('h3').textContent);
+      
       // Expected descending order:
-      // "[0803251811] Versace" (Mar 8, 2025 18:11)
-      // "[0103250820] Emporio Armani" (Mar 1, 2025 08:20)
-      // "[2802251122] Tommy Hilfiger" (Feb 28, 2025 11:22)
       expect(productNames).toEqual([
-        "[0803251811] Versace",
+        "[1603250851] Calvin Klein",
+        "[0703251712] Regata Puma",
         "[0103250820] Emporio Armani",
-        "[2802251122] Tommy Hilfiger"
+        "[1702251140] Tommy Hilfiger",
+        "[1202252201] Adidas Campus"
       ]);
     });
   });

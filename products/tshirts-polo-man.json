@@ -1,0 +1,42 @@
+[
+    {
+        "name": "[1603250851] Calvin Klein",
+        "description": "Camiseta Polo",
+        "oldPrice": 0.0,
+        "price": 59.90,
+        "images": [
+            "images/man/tshirts/polo/calvin-klein/1603250851-calvin-klein.jpeg"
+        ],
+        "size": "M"
+    },
+    {
+        "name": "[1603250848] Calvin Klein",
+        "description": "Camiseta Polo",
+        "oldPrice": 0.0,
+        "price": 59.90,
+        "images": [
+            "images/man/tshirts/polo/calvin-klein/1603250848-calvin-klein.jpeg"
+        ],
+        "size": "GG"
+    },
+    {
+        "name": "[1603250846] Lacoste",
+        "description": "Camiseta Polo",
+        "oldPrice": 0.0,
+        "price": 59.90,
+        "images": [
+            "images/man/tshirts/polo/lacoste/1603250846-lacoste.jpeg"
+        ],
+        "size": "G1"
+    },
+    {
+        "name": "[1603250850] Nike",
+        "description": "Camiseta Polo",
+        "oldPrice": 0.0,
+        "price": 59.90,
+        "images": [
+            "images/man/tshirts/polo/nike/1603250850-nike.jpeg"
+        ],
+        "size": "G"
+    }
+]
