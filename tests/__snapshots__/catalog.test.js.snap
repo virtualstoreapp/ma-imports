@@ -63,7 +63,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <h3>[1603250851] Calvin Klein</h3>
             <p class="description">Camiseta Polo</p>
             <span class="size">Tamanho: M</span>
-            <span class="price">R$&nbsp;89,90</span>
+            <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item">
           <img src="images/man/tshirts/polo/nike/1603250850-nike.jpeg" alt="[1603250850] Nike">
@@ -71,7 +71,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <h3>[1603250850] Nike</h3>
             <p class="description">Camiseta Polo</p>
             <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;89,90</span>
+            <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item">
           <img src="images/man/tshirts/polo/calvin-klein/1603250848-calvin-klein.jpeg" alt="[1603250848] Calvin Klein">
@@ -79,7 +79,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <h3>[1603250848] Calvin Klein</h3>
             <p class="description">Camiseta Polo</p>
             <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;89,90</span>
+            <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item">
           <img src="images/man/tshirts/polo/lacoste/1603250846-lacoste.jpeg" alt="[1603250846] Lacoste">
@@ -87,7 +87,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <h3>[1603250846] Lacoste</h3>
             <p class="description">Camiseta Polo</p>
             <span class="size">Tamanho: G1</span>
-            <span class="price">R$&nbsp;89,90</span>
+            <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item">
           <img src="images/man/tshirts/casual/hugo-boss/1503250633-hugo-boss.jpeg" alt="[1503250633] Hugo Boss">
@@ -1189,7 +1189,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Polo Masculin
             <h3>[1603250851] Calvin Klein</h3>
             <p class="description">Camiseta Polo</p>
             <span class="size">Tamanho: M</span>
-            <span class="price">R$&nbsp;89,90</span>
+            <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item">
           <img src="images/man/tshirts/polo/calvin-klein/1603250848-calvin-klein.jpeg" alt="[1603250848] Calvin Klein">
@@ -1197,7 +1197,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Polo Masculin
             <h3>[1603250848] Calvin Klein</h3>
             <p class="description">Camiseta Polo</p>
             <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;89,90</span>
+            <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item">
           <img src="images/man/tshirts/polo/lacoste/1603250846-lacoste.jpeg" alt="[1603250846] Lacoste">
@@ -1205,7 +1205,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Polo Masculin
             <h3>[1603250846] Lacoste</h3>
             <p class="description">Camiseta Polo</p>
             <span class="size">Tamanho: G1</span>
-            <span class="price">R$&nbsp;89,90</span>
+            <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item">
           <img src="images/man/tshirts/polo/nike/1603250850-nike.jpeg" alt="[1603250850] Nike">
@@ -1213,7 +1213,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Polo Masculin
             <h3>[1603250850] Nike</h3>
             <p class="description">Camiseta Polo</p>
             <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;89,90</span>
+            <span class="price">R$&nbsp;59,90</span>
           </div>
         </li></ul>
   </main>
@@ -1723,7 +1723,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <h3>[1603250851] Calvin Klein</h3>
             <p class="description">Camiseta Polo</p>
             <span class="size">Tamanho: M</span>
-            <span class="price">R$&nbsp;89,90</span>
+            <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item">
           <img src="images/man/tshirts/polo/nike/1603250850-nike.jpeg" alt="[1603250850] Nike">
@@ -1731,7 +1731,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <h3>[1603250850] Nike</h3>
             <p class="description">Camiseta Polo</p>
             <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;89,90</span>
+            <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item">
           <img src="images/man/tshirts/polo/calvin-klein/1603250848-calvin-klein.jpeg" alt="[1603250848] Calvin Klein">
@@ -1739,7 +1739,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <h3>[1603250848] Calvin Klein</h3>
             <p class="description">Camiseta Polo</p>
             <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;89,90</span>
+            <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item">
           <img src="images/man/tshirts/polo/lacoste/1603250846-lacoste.jpeg" alt="[1603250846] Lacoste">
@@ -1747,7 +1747,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <h3>[1603250846] Lacoste</h3>
             <p class="description">Camiseta Polo</p>
             <span class="size">Tamanho: G1</span>
-            <span class="price">R$&nbsp;89,90</span>
+            <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item">
           <img src="images/man/tshirts/casual/hugo-boss/1503250633-hugo-boss.jpeg" alt="[1503250633] Hugo Boss">
@@ -2849,7 +2849,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Polo Masculina
             <h3>[1603250851] Calvin Klein</h3>
             <p class="description">Camiseta Polo</p>
             <span class="size">Tamanho: M</span>
-            <span class="price">R$&nbsp;89,90</span>
+            <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item">
           <img src="images/man/tshirts/polo/calvin-klein/1603250848-calvin-klein.jpeg" alt="[1603250848] Calvin Klein">
@@ -2857,7 +2857,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Polo Masculina
             <h3>[1603250848] Calvin Klein</h3>
             <p class="description">Camiseta Polo</p>
             <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;89,90</span>
+            <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item">
           <img src="images/man/tshirts/polo/lacoste/1603250846-lacoste.jpeg" alt="[1603250846] Lacoste">
@@ -2865,7 +2865,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Polo Masculina
             <h3>[1603250846] Lacoste</h3>
             <p class="description">Camiseta Polo</p>
             <span class="size">Tamanho: G1</span>
-            <span class="price">R$&nbsp;89,90</span>
+            <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item">
           <img src="images/man/tshirts/polo/nike/1603250850-nike.jpeg" alt="[1603250850] Nike">
@@ -2873,7 +2873,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Polo Masculina
             <h3>[1603250850] Nike</h3>
             <p class="description">Camiseta Polo</p>
             <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;89,90</span>
+            <span class="price">R$&nbsp;59,90</span>
           </div>
         </li></ul>
   </main>

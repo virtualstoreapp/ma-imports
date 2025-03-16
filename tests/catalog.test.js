@@ -181,7 +181,7 @@ describe('Catalog', () => {
       "slippers-man": [{ name: "[1702251140] Tommy Hilfiger", price: 29.90 }],
       "tshirts-casual-man": [{ name: "[0103250820] Emporio Armani", price: 89.90 }],
       "tshirts-fitness-man": [{ name: "[0703251712] Regata Puma", price: 59.90 }],
-      "tshirts-polo-man": [{ name: "[1603250851] Calvin Klein", price: 89.90 }]
+      "tshirts-polo-man": [{ name: "[1603250851] Calvin Klein", price: 59.90 }]
     };
 
     beforeEach(() => {
