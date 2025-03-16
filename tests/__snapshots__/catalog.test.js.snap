@@ -30,8 +30,8 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
                     <ul class="submenu">
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
-                        <button data-category="tshirts-polo-man">Polo</button>
                         <button data-category="tshirts-fitness-man">Fitness</button>
+                        <button data-category="tshirts-polo-man">Polo</button>
                       </li>
                     </ul>
                   </li>
@@ -692,8 +692,8 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
-                        <button data-category="tshirts-polo-man">Polo</button>
                         <button data-category="tshirts-fitness-man">Fitness</button>
+                        <button data-category="tshirts-polo-man">Polo</button>
                       </li>
                     </ul>
                   </li>
@@ -1040,8 +1040,8 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Fitness Mascu
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
-                        <button data-category="tshirts-polo-man">Polo</button>
                         <button data-category="tshirts-fitness-man">Fitness</button>
+                        <button data-category="tshirts-polo-man">Polo</button>
                       </li>
                     </ul>
                   </li>
@@ -1156,8 +1156,8 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Polo Masculin
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
-                        <button data-category="tshirts-polo-man">Polo</button>
                         <button data-category="tshirts-fitness-man">Fitness</button>
+                        <button data-category="tshirts-polo-man">Polo</button>
                       </li>
                     </ul>
                   </li>
@@ -1272,8 +1272,8 @@ exports[`Catalog Desktop View renders final subcategory "Chinelos" correctly on 
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
-                        <button data-category="tshirts-polo-man">Polo</button>
                         <button data-category="tshirts-fitness-man">Fitness</button>
+                        <button data-category="tshirts-polo-man">Polo</button>
                       </li>
                     </ul>
                   </li>
@@ -1364,8 +1364,8 @@ exports[`Catalog Desktop View renders final subcategory "Tênis" correctly on de
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
-                        <button data-category="tshirts-polo-man">Polo</button>
                         <button data-category="tshirts-fitness-man">Fitness</button>
+                        <button data-category="tshirts-polo-man">Polo</button>
                       </li>
                     </ul>
                   </li>
@@ -1690,8 +1690,8 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
                     <ul class="submenu">
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
-                        <button data-category="tshirts-polo-man">Polo</button>
                         <button data-category="tshirts-fitness-man">Fitness</button>
+                        <button data-category="tshirts-polo-man">Polo</button>
                       </li>
                     </ul>
                   </li>
@@ -2352,8 +2352,8 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
                     <ul class="submenu">
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
-                        <button data-category="tshirts-polo-man">Polo</button>
                         <button data-category="tshirts-fitness-man">Fitness</button>
+                        <button data-category="tshirts-polo-man">Polo</button>
                       </li>
                     </ul>
                   </li>
@@ -2700,8 +2700,8 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Fitness Mascul
                     <ul class="submenu">
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
-                        <button data-category="tshirts-polo-man">Polo</button>
                         <button data-category="tshirts-fitness-man">Fitness</button>
+                        <button data-category="tshirts-polo-man">Polo</button>
                       </li>
                     </ul>
                   </li>
@@ -2816,8 +2816,8 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Polo Masculina
                     <ul class="submenu">
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
-                        <button data-category="tshirts-polo-man">Polo</button>
                         <button data-category="tshirts-fitness-man">Fitness</button>
+                        <button data-category="tshirts-polo-man">Polo</button>
                       </li>
                     </ul>
                   </li>
@@ -2932,8 +2932,8 @@ exports[`Catalog Mobile View renders final subcategory "Chinelos" correctly on m
                     <ul class="submenu">
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
-                        <button data-category="tshirts-polo-man">Polo</button>
                         <button data-category="tshirts-fitness-man">Fitness</button>
+                        <button data-category="tshirts-polo-man">Polo</button>
                       </li>
                     </ul>
                   </li>
@@ -3024,8 +3024,8 @@ exports[`Catalog Mobile View renders final subcategory "Tênis" correctly on mob
                     <ul class="submenu">
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
-                        <button data-category="tshirts-polo-man">Polo</button>
                         <button data-category="tshirts-fitness-man">Fitness</button>
+                        <button data-category="tshirts-polo-man">Polo</button>
                       </li>
                     </ul>
                   </li>
@@ -3350,8 +3350,8 @@ exports[`Catalog Modal Functionality opens modal on product click and logs GA ev
                     <ul class="submenu">
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
-                        <button data-category="tshirts-polo-man">Polo</button>
                         <button data-category="tshirts-fitness-man">Fitness</button>
+                        <button data-category="tshirts-polo-man">Polo</button>
                       </li>
                     </ul>
                   </li>
@@ -3676,8 +3676,8 @@ exports[`Catalog Modal Functionality redirects to WhatsApp with correct message 
                     <ul class="submenu">
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
-                        <button data-category="tshirts-polo-man">Polo</button>
                         <button data-category="tshirts-fitness-man">Fitness</button>
+                        <button data-category="tshirts-polo-man">Polo</button>
                       </li>
                     </ul>
                   </li>
