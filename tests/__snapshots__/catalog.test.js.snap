@@ -32,6 +32,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
+                        <button data-category="tshirts-tank-top-man">Regata</button>
                       </li>
                     </ul>
                   </li>
@@ -58,6 +59,46 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
   <main>
     <h2 id="category-heading">Todos os Produtos</h2>
     <ul id="product-list"><li class="product-item">
+          <img src="images/man/tshirts/casual/xtc/1903251811-xtc.jpeg" alt="[1903251811] XTC">
+          <div class="product-details">
+            <h3>[1903251811] XTC</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/man/tshirts/casual/quiksilver/1903251723-quiksilver.jpeg" alt="[1903251723] Quiksilver">
+          <div class="product-details">
+            <h3>[1903251723] Quiksilver</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/man/tshirts/tank-top/calvin-klein/1903251708-calvin-klein.jpeg" alt="[1903251708] Calvin Klein">
+          <div class="product-details">
+            <h3>[1903251708] Calvin Klein</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/man/tshirts/tank-top/calvin-klein/1903251706-calvin-klein.jpeg" alt="[1903251706] Calvin Klein">
+          <div class="product-details">
+            <h3>[1903251706] Calvin Klein</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/man/tshirts/tank-top/hugo-boss/1903251705-hugo-boss.jpeg" alt="[1903251705] Hugo Boss">
+          <div class="product-details">
+            <h3>[1903251705] Hugo Boss</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
           <img src="images/man/tshirts/polo/calvin-klein/1603250851-calvin-klein.jpeg" alt="[1603250851] Calvin Klein">
           <div class="product-details">
             <h3>[1603250851] Calvin Klein</h3>
@@ -639,7 +680,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
   </main>
 
   <footer>
-    <p>Versão: 2.1.1 - 0.0.69</p>
+    <p>Versão: 2.1.1 - 0.0.74</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -694,6 +735,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
+                        <button data-category="tshirts-tank-top-man">Regata</button>
                       </li>
                     </ul>
                   </li>
@@ -904,6 +946,14 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item">
+          <img src="images/man/tshirts/casual/quiksilver/1903251723-quiksilver.jpeg" alt="[1903251723] Quiksilver">
+          <div class="product-details">
+            <h3>[1903251723] Quiksilver</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
           <img src="images/man/tshirts/casual/tommy-hilfiger/0903251015-tommy-hilfiger.jpeg" alt="[0903251015] Tommy Hilfiger">
           <div class="product-details">
             <h3>[0903251015] Tommy Hilfiger</h3>
@@ -983,11 +1033,19 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;39,90</span>
           </div>
+        </li><li class="product-item">
+          <img src="images/man/tshirts/casual/xtc/1903251811-xtc.jpeg" alt="[1903251811] XTC">
+          <div class="product-details">
+            <h3>[1903251811] XTC</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
         </li></ul>
   </main>
 
   <footer>
-    <p>Versão: 2.1.1 - 0.0.69</p>
+    <p>Versão: 2.1.1 - 0.0.74</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1042,6 +1100,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Fitness Mascu
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
+                        <button data-category="tshirts-tank-top-man">Regata</button>
                       </li>
                     </ul>
                   </li>
@@ -1103,7 +1162,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Fitness Mascu
   </main>
 
   <footer>
-    <p>Versão: 2.1.1 - 0.0.69</p>
+    <p>Versão: 2.1.1 - 0.0.74</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1158,6 +1217,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Polo Masculin
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
+                        <button data-category="tshirts-tank-top-man">Regata</button>
                       </li>
                     </ul>
                   </li>
@@ -1219,7 +1279,116 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Polo Masculin
   </main>
 
   <footer>
-    <p>Versão: 2.1.1 - 0.0.69</p>
+    <p>Versão: 2.1.1 - 0.0.74</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+
+<div id="product-modal">
+      <div id="modal-content">
+        <button id="modal-close">X</button>
+        <div id="modal-image-container">
+          <img id="modal-image" src="" alt="">
+        </div>
+        <div id="modal-controls">
+          <button id="prev-image">&lt;</button>
+          <button id="zoom-out">-</button>
+          <button id="zoom-in">+</button>
+          <button id="next-image">&gt;</button>
+          <button id="buy-product">Comprar</button>
+        </div>
+      </div>
+    </div>"
+`;
+
+exports[`Catalog Desktop View renders final subcategory "Camisetas Regata Masculina" correctly on desktop 1`] = `
+"
+  <header>
+    <div class="header-logo">
+      <img src="images/logo.jpeg" alt="M/A Imports Logo">
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav aria-label="Main Navigation">
+    <!-- Mobile toggle button -->
+    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+    <ul id="nav-menu">
+      <li class="menu-item">
+        <button data-category="all">Início</button>
+      </li>
+      <li class="menu-item has-submenu">
+        <button data-category="fashion-category" aria-expanded="false">Moda</button>
+        <ul class="submenu" style="display: none;">
+          <li class="menu-item has-submenu">
+            <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="tshirts-casual-man">Casuais</button>
+                        <button data-category="tshirts-fitness-man">Fitness</button>
+                        <button data-category="tshirts-polo-man">Polo</button>
+                        <button data-category="tshirts-tank-top-man">Regata</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2 id="category-heading">Camisetas Regata Masculina</h2>
+    <ul id="product-list"><li class="product-item">
+          <img src="images/man/tshirts/tank-top/calvin-klein/1903251706-calvin-klein.jpeg" alt="[1903251706] Calvin Klein">
+          <div class="product-details">
+            <h3>[1903251706] Calvin Klein</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/man/tshirts/tank-top/calvin-klein/1903251708-calvin-klein.jpeg" alt="[1903251708] Calvin Klein">
+          <div class="product-details">
+            <h3>[1903251708] Calvin Klein</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/man/tshirts/tank-top/hugo-boss/1903251705-hugo-boss.jpeg" alt="[1903251705] Hugo Boss">
+          <div class="product-details">
+            <h3>[1903251705] Hugo Boss</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li></ul>
+  </main>
+
+  <footer>
+    <p>Versão: 2.1.1 - 0.0.74</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1274,6 +1443,7 @@ exports[`Catalog Desktop View renders final subcategory "Chinelos" correctly on 
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
+                        <button data-category="tshirts-tank-top-man">Regata</button>
                       </li>
                     </ul>
                   </li>
@@ -1311,7 +1481,7 @@ exports[`Catalog Desktop View renders final subcategory "Chinelos" correctly on 
   </main>
 
   <footer>
-    <p>Versão: 2.1.1 - 0.0.69</p>
+    <p>Versão: 2.1.1 - 0.0.74</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1366,6 +1536,7 @@ exports[`Catalog Desktop View renders final subcategory "Tênis" correctly on de
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
+                        <button data-category="tshirts-tank-top-man">Regata</button>
                       </li>
                     </ul>
                   </li>
@@ -1637,7 +1808,7 @@ exports[`Catalog Desktop View renders final subcategory "Tênis" correctly on de
   </main>
 
   <footer>
-    <p>Versão: 2.1.1 - 0.0.69</p>
+    <p>Versão: 2.1.1 - 0.0.74</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1669,9 +1840,9 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
   </header>
 
   <!-- Navigation -->
-  <nav aria-label="Main Navigation" class="active">
+  <nav aria-label="Main Navigation" class="">
     <!-- Mobile toggle button -->
-    <button id="menu-toggle" aria-expanded="true" aria-controls="nav-menu">☰</button>
+    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
     <ul id="nav-menu">
       <li class="menu-item">
         <button data-category="all">Início</button>
@@ -1692,6 +1863,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
+                        <button data-category="tshirts-tank-top-man">Regata</button>
                       </li>
                     </ul>
                   </li>
@@ -1718,6 +1890,46 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
   <main>
     <h2 id="category-heading">Todos os Produtos</h2>
     <ul id="product-list"><li class="product-item">
+          <img src="images/man/tshirts/casual/xtc/1903251811-xtc.jpeg" alt="[1903251811] XTC">
+          <div class="product-details">
+            <h3>[1903251811] XTC</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/man/tshirts/casual/quiksilver/1903251723-quiksilver.jpeg" alt="[1903251723] Quiksilver">
+          <div class="product-details">
+            <h3>[1903251723] Quiksilver</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/man/tshirts/tank-top/calvin-klein/1903251708-calvin-klein.jpeg" alt="[1903251708] Calvin Klein">
+          <div class="product-details">
+            <h3>[1903251708] Calvin Klein</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/man/tshirts/tank-top/calvin-klein/1903251706-calvin-klein.jpeg" alt="[1903251706] Calvin Klein">
+          <div class="product-details">
+            <h3>[1903251706] Calvin Klein</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/man/tshirts/tank-top/hugo-boss/1903251705-hugo-boss.jpeg" alt="[1903251705] Hugo Boss">
+          <div class="product-details">
+            <h3>[1903251705] Hugo Boss</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
           <img src="images/man/tshirts/polo/calvin-klein/1603250851-calvin-klein.jpeg" alt="[1603250851] Calvin Klein">
           <div class="product-details">
             <h3>[1603250851] Calvin Klein</h3>
@@ -2299,7 +2511,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
   </main>
 
   <footer>
-    <p>Versão: 2.1.1 - 0.0.69</p>
+    <p>Versão: 2.1.1 - 0.0.74</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2354,6 +2566,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
+                        <button data-category="tshirts-tank-top-man">Regata</button>
                       </li>
                     </ul>
                   </li>
@@ -2564,6 +2777,14 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item">
+          <img src="images/man/tshirts/casual/quiksilver/1903251723-quiksilver.jpeg" alt="[1903251723] Quiksilver">
+          <div class="product-details">
+            <h3>[1903251723] Quiksilver</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
           <img src="images/man/tshirts/casual/tommy-hilfiger/0903251015-tommy-hilfiger.jpeg" alt="[0903251015] Tommy Hilfiger">
           <div class="product-details">
             <h3>[0903251015] Tommy Hilfiger</h3>
@@ -2643,11 +2864,19 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;39,90</span>
           </div>
+        </li><li class="product-item">
+          <img src="images/man/tshirts/casual/xtc/1903251811-xtc.jpeg" alt="[1903251811] XTC">
+          <div class="product-details">
+            <h3>[1903251811] XTC</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
         </li></ul>
   </main>
 
   <footer>
-    <p>Versão: 2.1.1 - 0.0.69</p>
+    <p>Versão: 2.1.1 - 0.0.74</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2702,6 +2931,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Fitness Mascul
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
+                        <button data-category="tshirts-tank-top-man">Regata</button>
                       </li>
                     </ul>
                   </li>
@@ -2763,7 +2993,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Fitness Mascul
   </main>
 
   <footer>
-    <p>Versão: 2.1.1 - 0.0.69</p>
+    <p>Versão: 2.1.1 - 0.0.74</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2818,6 +3048,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Polo Masculina
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
+                        <button data-category="tshirts-tank-top-man">Regata</button>
                       </li>
                     </ul>
                   </li>
@@ -2879,7 +3110,116 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Polo Masculina
   </main>
 
   <footer>
-    <p>Versão: 2.1.1 - 0.0.69</p>
+    <p>Versão: 2.1.1 - 0.0.74</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+
+<div id="product-modal">
+      <div id="modal-content">
+        <button id="modal-close">X</button>
+        <div id="modal-image-container">
+          <img id="modal-image" src="" alt="">
+        </div>
+        <div id="modal-controls">
+          <button id="prev-image">&lt;</button>
+          <button id="zoom-out">-</button>
+          <button id="zoom-in">+</button>
+          <button id="next-image">&gt;</button>
+          <button id="buy-product">Comprar</button>
+        </div>
+      </div>
+    </div>"
+`;
+
+exports[`Catalog Mobile View renders final subcategory "Camisetas Regata Masculina" correctly on desktop 1`] = `
+"
+  <header>
+    <div class="header-logo">
+      <img src="images/logo.jpeg" alt="M/A Imports Logo">
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav aria-label="Main Navigation" class="">
+    <!-- Mobile toggle button -->
+    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+    <ul id="nav-menu">
+      <li class="menu-item">
+        <button data-category="all">Início</button>
+      </li>
+      <li class="menu-item has-submenu">
+        <button data-category="fashion-category" aria-expanded="false">Moda</button>
+        <ul class="submenu">
+          <li class="menu-item has-submenu">
+            <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
+            <ul class="submenu">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu">
+                  <li class="menu-item has-submenu">
+                    <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="tshirts-casual-man">Casuais</button>
+                        <button data-category="tshirts-fitness-man">Fitness</button>
+                        <button data-category="tshirts-polo-man">Polo</button>
+                        <button data-category="tshirts-tank-top-man">Regata</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu">
+                  <li class="menu-item">
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2 id="category-heading">Camisetas Regata Masculina</h2>
+    <ul id="product-list"><li class="product-item">
+          <img src="images/man/tshirts/tank-top/calvin-klein/1903251706-calvin-klein.jpeg" alt="[1903251706] Calvin Klein">
+          <div class="product-details">
+            <h3>[1903251706] Calvin Klein</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/man/tshirts/tank-top/calvin-klein/1903251708-calvin-klein.jpeg" alt="[1903251708] Calvin Klein">
+          <div class="product-details">
+            <h3>[1903251708] Calvin Klein</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item">
+          <img src="images/man/tshirts/tank-top/hugo-boss/1903251705-hugo-boss.jpeg" alt="[1903251705] Hugo Boss">
+          <div class="product-details">
+            <h3>[1903251705] Hugo Boss</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li></ul>
+  </main>
+
+  <footer>
+    <p>Versão: 2.1.1 - 0.0.74</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2934,6 +3274,7 @@ exports[`Catalog Mobile View renders final subcategory "Chinelos" correctly on m
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
+                        <button data-category="tshirts-tank-top-man">Regata</button>
                       </li>
                     </ul>
                   </li>
@@ -2971,7 +3312,7 @@ exports[`Catalog Mobile View renders final subcategory "Chinelos" correctly on m
   </main>
 
   <footer>
-    <p>Versão: 2.1.1 - 0.0.69</p>
+    <p>Versão: 2.1.1 - 0.0.74</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3026,6 +3367,7 @@ exports[`Catalog Mobile View renders final subcategory "Tênis" correctly on mob
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
+                        <button data-category="tshirts-tank-top-man">Regata</button>
                       </li>
                     </ul>
                   </li>
@@ -3297,7 +3639,7 @@ exports[`Catalog Mobile View renders final subcategory "Tênis" correctly on mob
   </main>
 
   <footer>
-    <p>Versão: 2.1.1 - 0.0.69</p>
+    <p>Versão: 2.1.1 - 0.0.74</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3352,6 +3694,7 @@ exports[`Catalog Modal Functionality opens modal on product click and logs GA ev
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
+                        <button data-category="tshirts-tank-top-man">Regata</button>
                       </li>
                     </ul>
                   </li>
@@ -3623,7 +3966,7 @@ exports[`Catalog Modal Functionality opens modal on product click and logs GA ev
   </main>
 
   <footer>
-    <p>Versão: 2.1.1 - 0.0.69</p>
+    <p>Versão: 2.1.1 - 0.0.74</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3678,6 +4021,7 @@ exports[`Catalog Modal Functionality redirects to WhatsApp with correct message 
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
+                        <button data-category="tshirts-tank-top-man">Regata</button>
                       </li>
                     </ul>
                   </li>
@@ -3949,7 +4293,7 @@ exports[`Catalog Modal Functionality redirects to WhatsApp with correct message 
   </main>
 
   <footer>
-    <p>Versão: 2.1.1 - 0.0.69</p>
+    <p>Versão: 2.1.1 - 0.0.74</p>
   </footer>
 
   <script src="scripts.js"></script>

@@ -37,7 +37,7 @@ const asserts = async (expectedHeading, expectedCount) => {
 
 const assertAllProducts = async () => {
   const expectedHeading = "Todos os Produtos";
-  const expectedCount = 69;
+  const expectedCount = 74;
   await asserts(expectedHeading, expectedCount);
 };
 
@@ -85,7 +85,7 @@ const selectSlippersMan = async () => {
 
 const selectTshirtsCasualMan = async () => {
   const expectedHeading = "Camisetas Casuais Masculina";
-  const expectedCount = 33;
+  const expectedCount = 35;
   await selectClothingManSubcategory();
   await selectMenuOption('tshirts-casual-man');
   await asserts(expectedHeading, expectedCount);
@@ -104,6 +104,14 @@ const selectTshirtsFitnessMan = async () => {
   const expectedCount = 4;
   await selectClothingManSubcategory();
   await selectMenuOption('tshirts-fitness-man');
+  await asserts(expectedHeading, expectedCount);
+};
+
+const selectTshirtsTankTopMan = async () => {
+  const expectedHeading = "Camisetas Regata Masculina";
+  const expectedCount = 3;
+  await selectClothingManSubcategory();
+  await selectMenuOption('tshirts-tank-top-man');
   await asserts(expectedHeading, expectedCount);
 };
 
@@ -139,6 +147,10 @@ describe('Catalog', () => {
     it('renders final subcategory "Camisetas Fitness Masculina" correctly on desktop', async () => {
       await selectTshirtsFitnessMan();
     });
+
+    it('renders final subcategory "Camisetas Regata Masculina" correctly on desktop', async () => {
+      await selectTshirtsTankTopMan();
+    });
   });
 
   describe('Mobile View', () => {
@@ -172,6 +184,10 @@ describe('Catalog', () => {
     it('renders final subcategory "Camisetas Fitness Masculina" correctly on mobile', async () => {
       await selectTshirtsFitnessMan();
     });
+
+    it('renders final subcategory "Camisetas Regata Masculina" correctly on desktop', async () => {
+      await selectTshirtsTankTopMan();
+    });
   });
 
   describe('Sorting Order', () => {
@@ -181,7 +197,8 @@ describe('Catalog', () => {
       "slippers-man": [{ name: "[1702251140] Tommy Hilfiger", price: 29.90 }],
       "tshirts-casual-man": [{ name: "[0103250820] Emporio Armani", price: 89.90 }],
       "tshirts-fitness-man": [{ name: "[0703251712] Regata Puma", price: 59.90 }],
-      "tshirts-polo-man": [{ name: "[1603250851] Calvin Klein", price: 59.90 }]
+      "tshirts-polo-man": [{ name: "[1603250851] Calvin Klein", price: 59.90 }],
+      "tshirts-tank-top-man": [{ name: "[1903251705] Hugo Boss", price: 39.90 }],
     };
 
     beforeEach(() => {
@@ -215,6 +232,7 @@ describe('Catalog', () => {
       
       // Expected descending order:
       expect(productNames).toEqual([
+        "[1903251705] Hugo Boss",
         "[1603250851] Calvin Klein",
         "[0703251712] Regata Puma",
         "[0103250820] Emporio Armani",

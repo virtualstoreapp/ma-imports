@@ -231,6 +231,16 @@
         "size": "G"
     },
     {
+        "name": "[1903251723] Quiksilver",
+        "description": "100% Algodão",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/man/tshirts/casual/quiksilver/1903251723-quiksilver.jpeg"
+        ],
+        "size": "G"
+    },
+    {
         "name": "[0903251015] Tommy Hilfiger",
         "description": "100% Algodão Penteado",
         "oldPrice": 0.0,
@@ -329,5 +339,15 @@
             "images/man/tshirts/casual/versace/0803251811-versace.jpeg"
         ],
         "size": "GG"
+    },
+    {
+        "name": "[1903251811] XTC",
+        "description": "100% Algodão",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/man/tshirts/casual/xtc/1903251811-xtc.jpeg"
+        ],
+        "size": "G"
     }
 ]
