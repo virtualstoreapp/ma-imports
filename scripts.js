@@ -21,6 +21,7 @@
       'tshirts-casual-man': 'Camisetas Casuais Masculina',
       'tshirts-polo-man': 'Camisetas Polo Masculina',
       'tshirts-fitness-man': 'Camisetas Fitness Masculina',
+      'tshirts-tank-top-man': 'Camisetas Regata Masculina',
     };
     headingEl.textContent = headings[category] || 'Produtos';
   };
@@ -199,7 +200,7 @@
     const fetchCategoryData = async (category) => {
       try {
         if (category === 'all') {
-          const categories = ['shoes-man', 'slippers-man', 'tshirts-casual-man', 'tshirts-fitness-man', 'tshirts-polo-man'];
+          const categories = ['shoes-man', 'slippers-man', 'tshirts-casual-man', 'tshirts-fitness-man', 'tshirts-polo-man', 'tshirts-tank-top-man'];
           const responses = await Promise.all(
             categories.map((cat) => fetch(`products/${cat}.json`))
           );

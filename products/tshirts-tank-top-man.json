@@ -1,0 +1,32 @@
+[
+    {
+        "name": "[1903251706] Calvin Klein",
+        "description": "100% Algodão",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/man/tshirts/tank-top/calvin-klein/1903251706-calvin-klein.jpeg"
+        ],
+        "size": "G"
+    },
+    {
+        "name": "[1903251708] Calvin Klein",
+        "description": "100% Algodão",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/man/tshirts/tank-top/calvin-klein/1903251708-calvin-klein.jpeg"
+        ],
+        "size": "GG"
+    },
+    {
+        "name": "[1903251705] Hugo Boss",
+        "description": "100% Algodão",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/man/tshirts/tank-top/hugo-boss/1903251705-hugo-boss.jpeg"
+        ],
+        "size": "P"
+    }
+]
