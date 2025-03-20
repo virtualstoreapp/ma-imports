@@ -37,7 +37,7 @@ const asserts = async (expectedHeading, expectedCount) => {
 
 const assertAllProducts = async () => {
   const expectedHeading = "Todos os Produtos";
-  const expectedCount = 74;
+  const expectedCount = 78;
   await asserts(expectedHeading, expectedCount);
 };
 
@@ -115,6 +115,14 @@ const selectTshirtsTankTopMan = async () => {
   await asserts(expectedHeading, expectedCount);
 };
 
+const selectShortsSweatshortsMan = async () => {
+  const expectedHeading = "Bermudas Moletom Masculina";
+  const expectedCount = 4;
+  await selectClothingManSubcategory();
+  await selectMenuOption('shorts-sweatshorts-man');
+  await asserts(expectedHeading, expectedCount);
+};
+
 describe('Catalog', () => {
   beforeEach(() => {
     document.body.innerHTML = '';
@@ -150,6 +158,10 @@ describe('Catalog', () => {
 
     it('renders final subcategory "Camisetas Regata Masculina" correctly on desktop', async () => {
       await selectTshirtsTankTopMan();
+    });
+
+    it('renders final subcategory "Bermudas Moletom Masculina" correctly on desktop', async () => {
+      await selectShortsSweatshortsMan();
     });
   });
 
@@ -188,6 +200,10 @@ describe('Catalog', () => {
     it('renders final subcategory "Camisetas Regata Masculina" correctly on desktop', async () => {
       await selectTshirtsTankTopMan();
     });
+
+    it('renders final subcategory "Bermudas Moletom Masculina" correctly on desktop', async () => {
+      await selectShortsSweatshortsMan();
+    });
   });
 
   describe('Sorting Order', () => {
@@ -199,6 +215,7 @@ describe('Catalog', () => {
       "tshirts-fitness-man": [{ name: "[0703251712] Regata Puma", price: 59.90 }],
       "tshirts-polo-man": [{ name: "[1603250851] Calvin Klein", price: 59.90 }],
       "tshirts-tank-top-man": [{ name: "[1903251705] Hugo Boss", price: 39.90 }],
+      "shorts-sweatshorts-man": [{ name: "[2003250848] Oakley", price: 69.90 }],
     };
 
     beforeEach(() => {
@@ -232,6 +249,7 @@ describe('Catalog', () => {
       
       // Expected descending order:
       expect(productNames).toEqual([
+        "[2003250848] Oakley",
         "[1903251705] Hugo Boss",
         "[1603250851] Calvin Klein",
         "[0703251712] Regata Puma",
