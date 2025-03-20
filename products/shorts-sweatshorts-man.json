@@ -1,0 +1,42 @@
+[
+    {
+        "name": "[2003250857] Hugo Boss",
+        "description": "",
+        "oldPrice": 0.0,
+        "price": 69.90,
+        "images": [
+            "images/man/shorts/sweatshorts/hugo-boss/2003250857-hugo-boss.jpeg"
+        ],
+        "size": "M"
+    },
+    {
+        "name": "[2003250856] Nike",
+        "description": "",
+        "oldPrice": 0.0,
+        "price": 69.90,
+        "images": [
+            "images/man/shorts/sweatshorts/nike/2003250856-nike.jpeg"
+        ],
+        "size": "M"
+    },
+    {
+        "name": "[2003250848] Oakley",
+        "description": "",
+        "oldPrice": 0.0,
+        "price": 69.90,
+        "images": [
+            "images/man/shorts/sweatshorts/oakley/2003250848-oakley.jpeg"
+        ],
+        "size": "G1"
+    },
+    {
+        "name": "[2003250854] Tommy Hilfiger",
+        "description": "",
+        "oldPrice": 0.0,
+        "price": 69.90,
+        "images": [
+            "images/man/shorts/sweatshorts/tommy-hilfiger/2003250854-tommy-hilfiger.jpeg"
+        ],
+        "size": "P"
+    }
+]
