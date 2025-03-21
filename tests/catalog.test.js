@@ -37,7 +37,7 @@ const asserts = async (expectedHeading, expectedCount) => {
 
 const assertAllProducts = async () => {
   const expectedHeading = "Todos os Produtos";
-  const expectedCount = 78;
+  const expectedCount = 83;
   await asserts(expectedHeading, expectedCount);
 };
 
@@ -117,9 +117,17 @@ const selectTshirtsTankTopMan = async () => {
 
 const selectShortsSweatshortsMan = async () => {
   const expectedHeading = "Bermudas Moletom Masculina";
-  const expectedCount = 4;
+  const expectedCount = 8;
   await selectClothingManSubcategory();
   await selectMenuOption('shorts-sweatshorts-man');
+  await asserts(expectedHeading, expectedCount);
+};
+
+const selectShortsBasicMan = async () => {
+  const expectedHeading = "Bermudas Básica Masculina";
+  const expectedCount = 1;
+  await selectClothingManSubcategory();
+  await selectMenuOption('shorts-basic-man');
   await asserts(expectedHeading, expectedCount);
 };
 
@@ -163,6 +171,10 @@ describe('Catalog', () => {
     it('renders final subcategory "Bermudas Moletom Masculina" correctly on desktop', async () => {
       await selectShortsSweatshortsMan();
     });
+
+    it('renders final subcategory "Bermudas Básica Masculina" correctly on desktop', async () => {
+      await selectShortsBasicMan();
+    });
   });
 
   describe('Mobile View', () => {
@@ -204,6 +216,10 @@ describe('Catalog', () => {
     it('renders final subcategory "Bermudas Moletom Masculina" correctly on desktop', async () => {
       await selectShortsSweatshortsMan();
     });
+
+    it('renders final subcategory "Bermudas Básica Masculina" correctly on desktop', async () => {
+      await selectShortsBasicMan();
+    });
   });
 
   describe('Sorting Order', () => {
@@ -216,6 +232,7 @@ describe('Catalog', () => {
       "tshirts-polo-man": [{ name: "[1603250851] Calvin Klein", price: 59.90 }],
       "tshirts-tank-top-man": [{ name: "[1903251705] Hugo Boss", price: 39.90 }],
       "shorts-sweatshorts-man": [{ name: "[2003250848] Oakley", price: 69.90 }],
+      "shorts-basic-man": [{ name: "[2103251150] Nike", price: 28.00 }],
     };
 
     beforeEach(() => {
@@ -249,6 +266,7 @@ describe('Catalog', () => {
       
       // Expected descending order:
       expect(productNames).toEqual([
+        "[2103251150] Nike",
         "[2003250848] Oakley",
         "[1903251705] Hugo Boss",
         "[1603250851] Calvin Klein",
