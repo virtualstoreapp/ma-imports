@@ -1,5 +1,25 @@
 [
     {
+        "name": "[2103251201] Adidas",
+        "description": "",
+        "oldPrice": 0.0,
+        "price": 69.90,
+        "images": [
+            "images/man/shorts/sweatshorts/adidas/2103251201-adidas.jpeg"
+        ],
+        "size": "G2"
+    },
+    {
+        "name": "[2103251159] Brooksfield",
+        "description": "Cor: Preta",
+        "oldPrice": 0.0,
+        "price": 69.90,
+        "images": [
+            "images/man/shorts/sweatshorts/brooksfield/2103251159-brooksfield.jpeg"
+        ],
+        "size": "G3"
+    },
+    {
         "name": "[2003250857] Hugo Boss",
         "description": "",
         "oldPrice": 0.0,
@@ -8,6 +28,16 @@
             "images/man/shorts/sweatshorts/hugo-boss/2003250857-hugo-boss.jpeg"
         ],
         "size": "M"
+    },
+    {
+        "name": "[2103251154] Hugo Boss",
+        "description": "",
+        "oldPrice": 0.0,
+        "price": 69.90,
+        "images": [
+            "images/man/shorts/sweatshorts/hugo-boss/2103521154-hugo-boss.jpeg"
+        ],
+        "size": "G3"
     },
     {
         "name": "[2003250856] Nike",
@@ -38,5 +68,15 @@
             "images/man/shorts/sweatshorts/tommy-hilfiger/2003250854-tommy-hilfiger.jpeg"
         ],
         "size": "P"
+    },
+    {
+        "name": "[2103251210] Tommy Hilfiger",
+        "description": "Cor: Azul Marinho",
+        "oldPrice": 0.0,
+        "price": 69.90,
+        "images": [
+            "images/man/shorts/sweatshorts/tommy-hilfiger/2103251210-tommy-hilfiger.jpeg"
+        ],
+        "size": "G3"
     }
 ]
