@@ -37,7 +37,7 @@ const asserts = async (expectedHeading, expectedCount) => {
 
 const assertAllProducts = async () => {
   const expectedHeading = "Todos os Produtos";
-  const expectedCount = 83;
+  const expectedCount = 91;
   await asserts(expectedHeading, expectedCount);
 };
 
@@ -131,6 +131,14 @@ const selectShortsBasicMan = async () => {
   await asserts(expectedHeading, expectedCount);
 };
 
+const selectShortsJeansMan = async () => {
+  const expectedHeading = "Bermudas Jeans Masculina";
+  const expectedCount = 8;
+  await selectClothingManSubcategory();
+  await selectMenuOption('shorts-jeans-man');
+  await asserts(expectedHeading, expectedCount);
+};
+
 describe('Catalog', () => {
   beforeEach(() => {
     document.body.innerHTML = '';
@@ -174,6 +182,10 @@ describe('Catalog', () => {
 
     it('renders final subcategory "Bermudas Básica Masculina" correctly on desktop', async () => {
       await selectShortsBasicMan();
+    });
+
+    it('renders final subcategory "Bermudas Jeans Masculina" correctly on desktop', async () => {
+      await selectShortsJeansMan();
     });
   });
 
@@ -220,6 +232,10 @@ describe('Catalog', () => {
     it('renders final subcategory "Bermudas Básica Masculina" correctly on desktop', async () => {
       await selectShortsBasicMan();
     });
+
+    it('renders final subcategory "Bermudas Jeans Masculina" correctly on desktop', async () => {
+      await selectShortsJeansMan();
+    });
   });
 
   describe('Sorting Order', () => {
@@ -233,6 +249,7 @@ describe('Catalog', () => {
       "tshirts-tank-top-man": [{ name: "[1903251705] Hugo Boss", price: 39.90 }],
       "shorts-sweatshorts-man": [{ name: "[2003250848] Oakley", price: 69.90 }],
       "shorts-basic-man": [{ name: "[2103251150] Nike", price: 28.00 }],
+      "shorts-jeans-man": [{ name: "[2603251652] Lacoste", price: 79.90 }],
     };
 
     beforeEach(() => {
@@ -266,6 +283,7 @@ describe('Catalog', () => {
       
       // Expected descending order:
       expect(productNames).toEqual([
+        "[2603251652] Lacoste",
         "[2103251150] Nike",
         "[2003250848] Oakley",
         "[1903251705] Hugo Boss",

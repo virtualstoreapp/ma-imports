@@ -24,6 +24,7 @@
       'tshirts-tank-top-man': 'Camisetas Regata Masculina',
       'shorts-sweatshorts-man': 'Bermudas Moletom Masculina',
       'shorts-basic-man': 'Bermudas Básica Masculina',
+      'shorts-jeans-man': 'Bermudas Jeans Masculina'
     };
     headingEl.textContent = headings[category] || 'Produtos';
   };
@@ -206,7 +207,7 @@
             'shoes-man', 
             'slippers-man', 
             'tshirts-casual-man', 'tshirts-fitness-man', 'tshirts-polo-man', 'tshirts-tank-top-man', 
-            'shorts-sweatshorts-man', 'shorts-basic-man'
+            'shorts-sweatshorts-man', 'shorts-basic-man', 'shorts-jeans-man'
           ];
           const responses = await Promise.all(
             categories.map((cat) => fetch(`products/${cat}.json`))
