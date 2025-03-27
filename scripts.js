@@ -19,6 +19,7 @@
       'shoes-man': 'Tênis',
       'slippers-man': 'Chinelos',
       'tshirts-casual-man': 'Camisetas Casuais Masculina',
+      'tshirts-dryfit-man': 'Camisetas Dry Fit Masculina',
       'tshirts-polo-man': 'Camisetas Polo Masculina',
       'tshirts-fitness-man': 'Camisetas Fitness Masculina',
       'tshirts-tank-top-man': 'Camisetas Regata Masculina',
@@ -206,7 +207,7 @@
           const categories = [
             'shoes-man', 
             'slippers-man', 
-            'tshirts-casual-man', 'tshirts-fitness-man', 'tshirts-polo-man', 'tshirts-tank-top-man', 
+            'tshirts-casual-man', 'tshirts-dryfit-man', 'tshirts-fitness-man', 'tshirts-polo-man', 'tshirts-tank-top-man', 
             'shorts-sweatshorts-man', 'shorts-basic-man', 'shorts-jeans-man'
           ];
           const responses = await Promise.all(

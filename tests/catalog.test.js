@@ -37,7 +37,7 @@ const asserts = async (expectedHeading, expectedCount) => {
 
 const assertAllProducts = async () => {
   const expectedHeading = "Todos os Produtos";
-  const expectedCount = 91;
+  const expectedCount = 97;
   await asserts(expectedHeading, expectedCount);
 };
 
@@ -88,6 +88,14 @@ const selectTshirtsCasualMan = async () => {
   const expectedCount = 35;
   await selectClothingManSubcategory();
   await selectMenuOption('tshirts-casual-man');
+  await asserts(expectedHeading, expectedCount);
+};
+
+const selectTshirtsDryFitMan = async () => {
+  const expectedHeading = "Camisetas Dry Fit Masculina";
+  const expectedCount = 6;
+  await selectClothingManSubcategory();
+  await selectMenuOption('tshirts-dryfit-man');
   await asserts(expectedHeading, expectedCount);
 };
 
@@ -164,6 +172,10 @@ describe('Catalog', () => {
       await selectTshirtsCasualMan();
     });
 
+    it('renders final subcategory "Camisetas Dry Fit Masculina" correctly on desktop', async () => {
+      await selectTshirtsDryFitMan();
+    });
+
     it('renders final subcategory "Camisetas Polo Masculina" correctly on desktop', async () => {
       await selectTshirtsPoloMan();
     });
@@ -213,6 +225,10 @@ describe('Catalog', () => {
       await selectTshirtsCasualMan();
     });
 
+    it('renders final subcategory "Camisetas Dry Fit Masculina" correctly on desktop', async () => {
+      await selectTshirtsDryFitMan();
+    });
+
     it('renders final subcategory "Camisetas Polo Masculina" correctly on mobile', async () => {
       await selectTshirtsPoloMan();
     });
@@ -244,6 +260,7 @@ describe('Catalog', () => {
       "shoes-man": [{ name: "[1202252201] Adidas Campus", price: 149 }],
       "slippers-man": [{ name: "[1702251140] Tommy Hilfiger", price: 29.90 }],
       "tshirts-casual-man": [{ name: "[0103250820] Emporio Armani", price: 89.90 }],
+      "tshirts-dryfit-man": [{ name: "[2703251659] Mizuno", price: 59.90 }],
       "tshirts-fitness-man": [{ name: "[0703251712] Regata Puma", price: 59.90 }],
       "tshirts-polo-man": [{ name: "[1603250851] Calvin Klein", price: 59.90 }],
       "tshirts-tank-top-man": [{ name: "[1903251705] Hugo Boss", price: 39.90 }],
@@ -283,6 +300,7 @@ describe('Catalog', () => {
       
       // Expected descending order:
       expect(productNames).toEqual([
+        "[2703251659] Mizuno",
         "[2603251652] Lacoste",
         "[2103251150] Nike",
         "[2003250848] Oakley",

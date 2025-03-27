@@ -1,0 +1,62 @@
+[
+    {
+        "name": "[2703251658] Adidas",
+        "description": "Dry Fit, Cor: Azul Marinho",
+        "oldPrice": 0.0,
+        "price": 59.90,
+        "images": [
+            "images/man/tshirts/dryfit/adidas/2703251658-adidas.jpeg"
+        ],
+        "size": "M"
+    },
+    {
+        "name": "[2703251659] Mizuno",
+        "description": "Dry Fit",
+        "oldPrice": 0.0,
+        "price": 59.90,
+        "images": [
+            "images/man/tshirts/dryfit/mizuno/2703251659-mizuno.jpeg"
+        ],
+        "size": "G"
+    },
+    {
+        "name": "[2703251702] Nike",
+        "description": "Dry Fit - Manga longa",
+        "oldPrice": 0.0,
+        "price": 69.90,
+        "images": [
+            "images/man/tshirts/dryfit/nike/2703251702-nike.jpeg"
+        ],
+        "size": "G"
+    },
+    {
+        "name": "[2703251703] Nike",
+        "description": "Dry Fit - Manga longa",
+        "oldPrice": 0.0,
+        "price": 69.90,
+        "images": [
+            "images/man/tshirts/dryfit/nike/2703251703-nike.jpeg"
+        ],
+        "size": "G"
+    },
+    {
+        "name": "[2703251656] Nike",
+        "description": "Dry Fit",
+        "oldPrice": 0.0,
+        "price": 59.90,
+        "images": [
+            "images/man/tshirts/dryfit/nike/2703251656-nike.jpeg"
+        ],
+        "size": "GG"
+    },
+    {
+        "name": "[2703251701] Oakley",
+        "description": "Dry Fit",
+        "oldPrice": 0.0,
+        "price": 59.90,
+        "images": [
+            "images/man/tshirts/dryfit/oakley/2703251701-oakley.jpeg"
+        ],
+        "size": "P"
+    }
+]
