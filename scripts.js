@@ -6,7 +6,7 @@
   // --- Constants ---
   const WHATSAPP_NUMBER = '5519999762594';
 
-  // --- Helpers ---
+  // --- Helper Functions ---
   const formatCurrency = (value) =>
     new Intl.NumberFormat('pt-BR', {
       style: 'currency',
@@ -31,8 +31,7 @@
   };
 
   const collapseAllSubmenus = () => {
-    document
-      .querySelectorAll('nav button.has-submenu, nav li.has-submenu > button')
+    document.querySelectorAll('nav button.has-submenu, nav li.has-submenu > button')
       .forEach((button) => {
         button.setAttribute('aria-expanded', 'false');
         const submenu = button.nextElementSibling;
@@ -51,10 +50,11 @@
     let modal, currentImages = [], currentIndex = 0, currentZoom = 1;
     let currentProductName = '', currentCategory = '';
 
+    // Build modal HTML markup.
     const createModalMarkup = () => `
       <div id="modal-content">
         <button id="modal-close">X</button>
-        <div id="modal-image-container" style="position: relative;">
+        <div id="modal-image-container" class="modal-image-container">
           <img id="modal-image" src="" alt="">
         </div>
         <div id="modal-controls">
@@ -67,6 +67,7 @@
       </div>
     `;
 
+    // Bind modal event handlers.
     const bindModalEvents = () => {
       document.getElementById('modal-close').addEventListener('click', close);
       document.getElementById('prev-image').addEventListener('click', showPrev);
@@ -104,6 +105,7 @@
       nextBtn.disabled = disableNav;
     };
 
+    // Open modal with product data. Applies soldOut logic.
     const open = (product, categoryText) => {
       currentImages = Array.isArray(product.images) ? product.images : [product.image];
       currentIndex = 0;
@@ -113,23 +115,21 @@
       updateImage();
       updateNavButtons();
 
-      // Default soldOut to false if not provided
+      // Default soldOut to false if not provided.
       const isSoldOut = product.hasOwnProperty('soldOut') ? product.soldOut : false;
       const buyButton = document.getElementById('buy-product');
       const modalImageContainer = document.getElementById('modal-image-container');
 
-      // Remove any existing sold-out label if present
-      let soldOutLabel = document.getElementById('sold-out-label');
-      if (soldOutLabel) {
-        soldOutLabel.remove();
-      }
+      // Remove previous sold-out label if it exists.
+      const existingLabel = modalImageContainer.querySelector('.sold-out-label');
+      if (existingLabel) existingLabel.remove();
 
       if (isSoldOut) {
-        soldOutLabel = document.createElement('div');
-        soldOutLabel.id = 'sold-out-label';
-        soldOutLabel.textContent = 'Esgotado';
-        soldOutLabel.classList.add('sold-out-label');
-        modalImageContainer.appendChild(soldOutLabel);
+        const label = document.createElement('div');
+        label.id = 'sold-out-label';
+        label.className = 'sold-out-label';
+        label.textContent = 'Esgotado';
+        modalImageContainer.appendChild(label);
         buyButton.disabled = true;
       } else {
         buyButton.disabled = false;
@@ -208,7 +208,7 @@
     const productListContainer = document.getElementById('product-list');
     const categoryHeading = document.getElementById('category-heading');
 
-    // Extract the 10-digit code (format DDMMYYhhmm) from the product name and parse it as a Date.
+    // Parse date from product name using a 10-digit code.
     const parseProductDate = (name) => {
       const regex = /\[(\d{10})\]/;
       const match = name ? name.match(regex) : null;
@@ -224,22 +224,21 @@
       return new Date(0);
     };
 
+    // Fetch product data for a given category.
     const fetchCategoryData = async (category) => {
       try {
         if (category === 'all') {
           const categories = [
-            'shoes-man', 
-            'slippers-man', 
-            'tshirts-casual-man', 'tshirts-dryfit-man', 'tshirts-fitness-man', 'tshirts-polo-man', 'tshirts-tank-top-man', 
+            'shoes-man', 'slippers-man', 
+            'tshirts-casual-man', 'tshirts-dryfit-man', 'tshirts-fitness-man', 'tshirts-polo-man', 'tshirts-tank-top-man',
             'shorts-sweatshorts-man', 'shorts-basic-man', 'shorts-jeans-man'
           ];
           const responses = await Promise.all(
-            categories.map((cat) => fetch(`products/${cat}.json`))
+            categories.map(cat => fetch(`products/${cat}.json`))
           );
           const jsonData = await Promise.all(
             responses.map(async (response, idx) => {
-              if (!response.ok)
-                throw new Error(`Failed to fetch data for category ${categories[idx]}`);
+              if (!response.ok) throw new Error(`Failed to fetch data for ${categories[idx]}`);
               return response.json();
             })
           );
@@ -247,16 +246,16 @@
           return products.sort((a, b) => parseProductDate(b.name) - parseProductDate(a.name));
         } else {
           const response = await fetch(`products/${category}.json`);
-          if (!response.ok)
-            throw new Error(`Failed to fetch data for category ${category}`);
+          if (!response.ok) throw new Error(`Failed to fetch data for ${category}`);
           return response.json();
         }
       } catch (error) {
-        console.error(`Error fetching data for category ${category}:`, error);
+        console.error(`Error fetching data for ${category}:`, error);
         return [];
       }
     };
 
+    // Render product items based on selected category.
     const renderProducts = async (category) => {
       productListContainer.innerHTML = '';
       updateCategoryHeading(category, categoryHeading);
@@ -264,14 +263,12 @@
       products.forEach((product) => {
         const li = document.createElement('li');
         li.classList.add('product-item');
-        // Ensure product items have a relative positioning for the sold-out label
-        li.style.position = 'relative';
+        li.style.position = 'relative'; // For sold-out label positioning
 
-        const priceHTML =
-          product.oldPrice && product.oldPrice > 0
-            ? `<span class="old-price">${formatCurrency(product.oldPrice)}</span>
-               <span class="new-price">${formatCurrency(product.price)}</span>`
-            : `<span class="price">${formatCurrency(product.price)}</span>`;
+        const priceHTML = product.oldPrice && product.oldPrice > 0
+          ? `<span class="old-price">${formatCurrency(product.oldPrice)}</span>
+             <span class="new-price">${formatCurrency(product.price)}</span>`
+          : `<span class="price">${formatCurrency(product.price)}</span>`;
 
         const imgSrc = Array.isArray(product.images) ? product.images[0] : product.image;
 
@@ -285,14 +282,13 @@
           </div>
         `;
 
-        // Default soldOut to false if not provided and add a label if sold out.
+        // Add sold-out label if the product is sold out (default false).
         const isSoldOut = product.hasOwnProperty('soldOut') ? product.soldOut : false;
         if (isSoldOut) {
-          const soldOutLabel = document.createElement('div');
-          soldOutLabel.classList.add('sold-out-label');
-          soldOutLabel.textContent = 'Esgotado';
-          // Append the sold-out label to the product list item
-          li.appendChild(soldOutLabel);
+          const label = document.createElement('div');
+          label.className = 'sold-out-label';
+          label.textContent = 'Esgotado';
+          li.appendChild(label);
         }
 
         li.addEventListener('click', () => {
@@ -310,15 +306,14 @@
       window.location.hash = category;
     };
 
+    // Bind click events for category buttons.
     const bindCategoryButtons = () => {
       categoryButtons.forEach((button) => {
         button.addEventListener('click', async (event) => {
           event.stopPropagation();
           const submenu = button.nextElementSibling;
-          const hasSubmenu =
-            button.classList.contains('has-submenu') ||
-            (button.parentElement && button.parentElement.classList.contains('has-submenu'));
-
+          const hasSubmenu = button.classList.contains('has-submenu') ||
+                              (button.parentElement && button.parentElement.classList.contains('has-submenu'));
           if (hasSubmenu && submenu && submenu.classList.contains('submenu')) {
             const expanded = button.getAttribute('aria-expanded') === 'true';
             if (window.innerWidth <= 768) {
@@ -330,7 +325,6 @@
             }
             return;
           }
-
           const category = button.getAttribute('data-category');
           await renderProducts(category);
           if (window.gtag) {

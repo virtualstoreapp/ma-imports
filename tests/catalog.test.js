@@ -13,6 +13,9 @@ const {
 window.__isTest = true;
 global.gtag = jest.fn();
 
+//
+// Snapshot and heading assertions
+//
 const assertSnapshot = async () => {
   expect(document.body.innerHTML).toMatchSnapshot();
 };
@@ -41,6 +44,9 @@ const assertAllProducts = async () => {
   await asserts(expectedHeading, expectedCount);
 };
 
+//
+// Menu and category selection helpers
+//
 const selectMenuOption = async (dataCategory) => {
   const menuOption = document.querySelector(`button[data-category="${dataCategory}"]`);
   expect(menuOption).toBeInTheDocument();
@@ -67,6 +73,9 @@ const selectShoesManSubcategory = async () => {
   await selectMenuOption('shoes-man-subcategory');
 };
 
+//
+// Category selection functions with expected results
+//
 const selectShoesMan = async () => {
   const expectedHeading = "Tênis";
   const expectedCount = 27;
@@ -147,6 +156,9 @@ const selectShortsJeansMan = async () => {
   await asserts(expectedHeading, expectedCount);
 };
 
+//
+// Test suites
+//
 describe('Catalog', () => {
   beforeEach(() => {
     document.body.innerHTML = '';
@@ -203,7 +215,7 @@ describe('Catalog', () => {
 
   describe('Mobile View', () => {
     beforeEach(async () => {
-      // Simulate a mobile viewport.
+      // Simulate mobile viewport.
       window.innerWidth = 375;
       window.dispatchEvent(new Event('resize'));
       await setupMobile();
@@ -225,7 +237,7 @@ describe('Catalog', () => {
       await selectTshirtsCasualMan();
     });
 
-    it('renders final subcategory "Camisetas Dry Fit Masculina" correctly on desktop', async () => {
+    it('renders final subcategory "Camisetas Dry Fit Masculina" correctly on mobile', async () => {
       await selectTshirtsDryFitMan();
     });
 
@@ -237,25 +249,25 @@ describe('Catalog', () => {
       await selectTshirtsFitnessMan();
     });
 
-    it('renders final subcategory "Camisetas Regata Masculina" correctly on desktop', async () => {
+    it('renders final subcategory "Camisetas Regata Masculina" correctly on mobile', async () => {
       await selectTshirtsTankTopMan();
     });
 
-    it('renders final subcategory "Bermudas Moletom Masculina" correctly on desktop', async () => {
+    it('renders final subcategory "Bermudas Moletom Masculina" correctly on mobile', async () => {
       await selectShortsSweatshortsMan();
     });
 
-    it('renders final subcategory "Bermudas Básica Masculina" correctly on desktop', async () => {
+    it('renders final subcategory "Bermudas Básica Masculina" correctly on mobile', async () => {
       await selectShortsBasicMan();
     });
 
-    it('renders final subcategory "Bermudas Jeans Masculina" correctly on desktop', async () => {
+    it('renders final subcategory "Bermudas Jeans Masculina" correctly on mobile', async () => {
       await selectShortsJeansMan();
     });
   });
 
   describe('Sorting Order', () => {
-    // For these tests, we want to override the fetch mock with controlled test data.
+    // Override fetch mock with controlled test data.
     const customData = {
       "shoes-man": [{ name: "[1202252201] Adidas Campus", price: 149 }],
       "slippers-man": [{ name: "[1702251140] Tommy Hilfiger", price: 29.90 }],
@@ -290,15 +302,11 @@ describe('Catalog', () => {
       await waitFor(() => {
         expect(document.getElementById('category-heading')).toHaveTextContent("Todos os Produtos");
       });
-      // Wait for product items to be rendered.
       await waitFor(() => {
         expect(document.querySelectorAll('#product-list .product-item').length).toBeGreaterThan(0);
       });
-      // Collect product names.
       const productItems = Array.from(document.querySelectorAll('#product-list .product-item'));
       const productNames = productItems.map(item => item.querySelector('h3').textContent);
-      
-      // Expected descending order:
       expect(productNames).toEqual([
         "[2703251659] Mizuno",
         "[2603251652] Lacoste",
@@ -322,28 +330,23 @@ describe('Catalog', () => {
     it('opens modal on product click and logs GA event', async () => {
       const product = document.querySelector('#product-list .product-item');
       fireEvent.click(product);
-
       await waitFor(() => {
         const modal = document.getElementById('product-modal');
         expect(modal).toHaveStyle({ display: 'flex' });
       });
-
       expect(global.gtag).toHaveBeenCalledWith('event', 'open_modal', expect.any(Object));
     });
 
     it('redirects to WhatsApp with correct message when clicking "Comprar" button', async () => {
       const product = document.querySelector('#product-list .product-item');
       fireEvent.click(product);
-
       await waitFor(() => {
         expect(document.getElementById('product-modal')).toHaveStyle({ display: 'flex' });
       });
-
       const openSpy = jest.spyOn(window, 'open').mockImplementation(() => {});
       const buyButton = document.getElementById('buy-product');
       expect(buyButton).toBeInTheDocument();
       fireEvent.click(buyButton);
-
       const categoryText = document.getElementById('category-heading').textContent;
       const productName = product.querySelector('h3').textContent;
       const expectedMessage = `Olá, acabei de conferir seu catálogo online e na categoria ${categoryText}, me interessei pelo produto ${productName}. Poderia, por favor, me enviar mais informações e confirmar a disponibilidade? Obrigado!`;
@@ -355,7 +358,7 @@ describe('Catalog', () => {
 
   describe('Sold Out Label', () => {
     beforeEach(() => {
-      // Override fetch with custom data that marks a product as sold out.
+      // Override fetch with custom data for sold-out product.
       const customSoldOutData = {
         "slippers-man": [
           { name: "[1702251140] Tommy Hilfiger", price: 29.90, soldOut: true }
