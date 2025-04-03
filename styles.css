@@ -387,16 +387,16 @@
   /* ==========================================================================
      Sold Out Label
      ========================================================================== */
-     .sold-out-label {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      background-color: yellow;
-      color: red;
-      padding: 8px 12px;
-      font-weight: bold;
-      border-radius: 3px;
-      font-size: 1.2rem;
-    }
+  .sold-out-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: yellow;
+    color: red;
+    padding: 8px 12px;
+    font-weight: bold;
+    border-radius: 3px;
+    font-size: 1.2rem;
+  }
     
   

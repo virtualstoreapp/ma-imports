@@ -353,6 +353,62 @@ describe('Catalog', () => {
     });
   });
 
+  describe('Sold Out Label', () => {
+    beforeEach(() => {
+      // Override fetch with custom data that marks a product as sold out.
+      const customSoldOutData = {
+        "slippers-man": [
+          { name: "[1702251140] Tommy Hilfiger", price: 29.90, soldOut: true }
+        ]
+      };
+      global.fetch.mockImplementation((url) => {
+        const match = url.match(/products\/(.*)\.json/);
+        const category = match ? match[1] : null;
+        if (category && customSoldOutData.hasOwnProperty(category)) {
+          return Promise.resolve({
+            ok: true,
+            json: () => Promise.resolve(customSoldOutData[category])
+          });
+        }
+        return Promise.reject(new Error(`Unknown URL: ${url}`));
+      });
+      setupDOM();
+    });
+
+    it('displays sold out label in product list item', async () => {
+      const button = document.querySelector('nav button[data-category="slippers-man"]');
+      fireEvent.click(button);
+      await waitFor(() => {
+        const productList = document.getElementById('product-list');
+        expect(productList.children.length).toBeGreaterThan(0);
+      });
+      const productItem = document.querySelector('#product-list .product-item');
+      const soldOutLabel = productItem.querySelector('.sold-out-label');
+      expect(soldOutLabel).toBeInTheDocument();
+      expect(soldOutLabel).toHaveTextContent("Esgotado");
+    });
+
+    it('displays sold out label in modal and disables "Comprar" button for sold out product', async () => {
+      const button = document.querySelector('nav button[data-category="slippers-man"]');
+      fireEvent.click(button);
+      await waitFor(() => {
+        const productList = document.getElementById('product-list');
+        expect(productList.children.length).toBeGreaterThan(0);
+      });
+      const productItem = document.querySelector('#product-list .product-item');
+      fireEvent.click(productItem);
+      await waitFor(() => {
+        const modal = document.getElementById('product-modal');
+        expect(modal).toHaveStyle({ display: 'flex' });
+      });
+      const modalSoldOutLabel = document.querySelector('#modal-image-container .sold-out-label');
+      expect(modalSoldOutLabel).toBeInTheDocument();
+      expect(modalSoldOutLabel).toHaveTextContent("Esgotado");
+      const buyButton = document.getElementById('buy-product');
+      expect(buyButton).toBeDisabled();
+    });
+  });
+
   describe('Error Handling', () => {
     it('handles fetch errors gracefully', async () => {
       const btn = document.querySelector('nav button[data-category="all"]');
