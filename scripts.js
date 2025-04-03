@@ -54,7 +54,7 @@
     const createModalMarkup = () => `
       <div id="modal-content">
         <button id="modal-close">X</button>
-        <div id="modal-image-container">
+        <div id="modal-image-container" style="position: relative;">
           <img id="modal-image" src="" alt="">
         </div>
         <div id="modal-controls">
@@ -112,6 +112,29 @@
       currentCategory = categoryText;
       updateImage();
       updateNavButtons();
+
+      // Default soldOut to false if not provided
+      const isSoldOut = product.hasOwnProperty('soldOut') ? product.soldOut : false;
+      const buyButton = document.getElementById('buy-product');
+      const modalImageContainer = document.getElementById('modal-image-container');
+
+      // Remove any existing sold-out label if present
+      let soldOutLabel = document.getElementById('sold-out-label');
+      if (soldOutLabel) {
+        soldOutLabel.remove();
+      }
+
+      if (isSoldOut) {
+        soldOutLabel = document.createElement('div');
+        soldOutLabel.id = 'sold-out-label';
+        soldOutLabel.textContent = 'Esgotado';
+        soldOutLabel.classList.add('sold-out-label');
+        modalImageContainer.appendChild(soldOutLabel);
+        buyButton.disabled = true;
+      } else {
+        buyButton.disabled = false;
+      }
+
       modal.style.display = 'flex';
       if (window.gtag) {
         gtag('event', 'open_modal', {
@@ -241,6 +264,8 @@
       products.forEach((product) => {
         const li = document.createElement('li');
         li.classList.add('product-item');
+        // Ensure product items have a relative positioning for the sold-out label
+        li.style.position = 'relative';
 
         const priceHTML =
           product.oldPrice && product.oldPrice > 0
@@ -259,6 +284,16 @@
             ${priceHTML}
           </div>
         `;
+
+        // Default soldOut to false if not provided and add a label if sold out.
+        const isSoldOut = product.hasOwnProperty('soldOut') ? product.soldOut : false;
+        if (isSoldOut) {
+          const soldOutLabel = document.createElement('div');
+          soldOutLabel.classList.add('sold-out-label');
+          soldOutLabel.textContent = 'Esgotado';
+          // Append the sold-out label to the product list item
+          li.appendChild(soldOutLabel);
+        }
 
         li.addEventListener('click', () => {
           if (window.gtag) {

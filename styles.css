@@ -18,9 +18,9 @@
     --muted-text: #757575;
     --gray-text: #9e9e9e;
     /* Shadows */
-    --shadow-light: 0 2px 4px rgba(0,0,0,0.1);
-    --shadow-medium: 0 2px 2px rgba(0,0,0,0.2);
-    --shadow-heavy: 0 4px 10px rgba(0,0,0,0.2);
+    --shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-medium: 0 2px 2px rgba(0, 0, 0, 0.2);
+    --shadow-heavy: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
   
   /* ==========================================================================
@@ -101,7 +101,7 @@
   
   #nav-menu li > button:hover {
     background-color: #333;
-    box-shadow: 0 4px 4px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
   }
   
   /* Submenu Styles */
@@ -277,7 +277,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
     display: none;
     align-items: center;
     justify-content: center;
@@ -368,7 +368,7 @@
   
   #modal-controls button:hover:enabled {
     background-color: #333;
-    box-shadow: 0 4px 4px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
   }
   
   #modal-controls button:disabled {
@@ -383,4 +383,20 @@
     text-align: center;
     padding: 20px 0;
   }
+  
+  /* ==========================================================================
+     Sold Out Label
+     ========================================================================== */
+     .sold-out-label {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: yellow;
+      color: red;
+      padding: 8px 12px;
+      font-weight: bold;
+      border-radius: 3px;
+      font-size: 1.2rem;
+    }
+    
   
