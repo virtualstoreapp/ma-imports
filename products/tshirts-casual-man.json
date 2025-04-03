@@ -1,5 +1,15 @@
 [
     {
+        "name": "[0304251751] Aramis",
+        "description": "Algodão Peruano",
+        "oldPrice": 0.0,
+        "price": 79.90,
+        "images": [
+            "images/man/tshirts/casual/aramis/0304251751-aramis.jpeg"
+        ],
+        "size": "GG"
+    },
+    {
         "name": "[2802251105] Balmain",
         "description": "Algodão Italiano Oversized",
         "oldPrice": 0.0,

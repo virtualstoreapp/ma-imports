@@ -48,6 +48,9 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
                       <li class="menu-item">
                         <button data-category="shorts-sweatshorts-man">Moletom</button>
                       </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -74,6 +77,126 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
   <main>
     <h2 id="category-heading">Todos os Produtos</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251810-nike.jpeg" alt="[0304251810] Nike">
+          <div class="product-details">
+            <h3>[0304251810] Nike</h3>
+            <p class="description">Tactel - Preta</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251809-nike.jpeg" alt="[0304251809] Nike">
+          <div class="product-details">
+            <h3>[0304251809] Nike</h3>
+            <p class="description">Tactel - Preta</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251808-nike.jpeg" alt="[0304251808] Nike">
+          <div class="product-details">
+            <h3>[0304251808] Nike</h3>
+            <p class="description">Tactel - Azul Marinho</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251807-nike.jpeg" alt="[0304251807] Nike">
+          <div class="product-details">
+            <h3>[0304251807] Nike</h3>
+            <p class="description">Tactel - Vermelha</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251806-nike-air.jpeg" alt="[0304251806] Nike Air">
+          <div class="product-details">
+            <h3>[0304251806] Nike Air</h3>
+            <p class="description">Tactel - Azul Marinho</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251805-nike-air.jpeg" alt="[0304251805] Nike Air">
+          <div class="product-details">
+            <h3>[0304251805] Nike Air</h3>
+            <p class="description">Tactel - Preta</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251804-nike.jpeg" alt="[0304251804] Nike">
+          <div class="product-details">
+            <h3>[0304251804] Nike</h3>
+            <p class="description">Tactel - Vermelha</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251803-nike.jpeg" alt="[0304251803] Nike">
+          <div class="product-details">
+            <h3>[0304251803] Nike</h3>
+            <p class="description">Tactel - Preta</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251802-nike.jpeg" alt="[0304251802] Nike">
+          <div class="product-details">
+            <h3>[0304251802] Nike</h3>
+            <p class="description">Tactel</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251801-nike.jpeg" alt="[0304251801] Nike">
+          <div class="product-details">
+            <h3>[0304251801] Nike</h3>
+            <p class="description">Tactel - Preta</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251800-nike.jpeg" alt="[0304251800] Nike">
+          <div class="product-details">
+            <h3>[0304251800] Nike</h3>
+            <p class="description">Tactel - Azul Marinho</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251759-nike.jpeg" alt="[0304251759] Nike">
+          <div class="product-details">
+            <h3>[0304251759] Nike</h3>
+            <p class="description">Tactel - Preta</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251758-nike.jpeg" alt="[0304251758] Nike">
+          <div class="product-details">
+            <h3>[0304251758] Nike</h3>
+            <p class="description">Tactel - Preta</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251757-nike.jpeg" alt="[0304251757] Nike">
+          <div class="product-details">
+            <h3>[0304251757] Nike</h3>
+            <p class="description">Tactel - Azul Marinho</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/casual/aramis/0304251751-aramis.jpeg" alt="[0304251751] Aramis">
+          <div class="product-details">
+            <h3>[0304251751] Aramis</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/dryfit/nike/2703251703-nike.jpeg" alt="[2703251703] Nike">
           <div class="product-details">
             <h3>[2703251703] Nike</h3>
@@ -879,7 +1002,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
   </main>
 
   <footer>
-    <p>Versão: 2.4.0 - 0.0.97</p>
+    <p>Versão: 3.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -950,6 +1073,9 @@ exports[`Catalog Desktop View renders final subcategory "Bermudas Básica Mascul
                       <li class="menu-item">
                         <button data-category="shorts-sweatshorts-man">Moletom</button>
                       </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -987,7 +1113,7 @@ exports[`Catalog Desktop View renders final subcategory "Bermudas Básica Mascul
   </main>
 
   <footer>
-    <p>Versão: 2.4.0 - 0.0.97</p>
+    <p>Versão: 3.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1058,6 +1184,9 @@ exports[`Catalog Desktop View renders final subcategory "Bermudas Jeans Masculin
                       <li class="menu-item">
                         <button data-category="shorts-sweatshorts-man">Moletom</button>
                       </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -1151,7 +1280,7 @@ exports[`Catalog Desktop View renders final subcategory "Bermudas Jeans Masculin
   </main>
 
   <footer>
-    <p>Versão: 2.4.0 - 0.0.97</p>
+    <p>Versão: 3.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1222,6 +1351,9 @@ exports[`Catalog Desktop View renders final subcategory "Bermudas Moletom Mascul
                       <li class="menu-item">
                         <button data-category="shorts-sweatshorts-man">Moletom</button>
                       </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -1315,7 +1447,222 @@ exports[`Catalog Desktop View renders final subcategory "Bermudas Moletom Mascul
   </main>
 
   <footer>
-    <p>Versão: 2.4.0 - 0.0.97</p>
+    <p>Versão: 3.0.0 - 0.1.112</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+
+<div id="product-modal">
+      <div id="modal-content">
+        <button id="modal-close">X</button>
+        <div id="modal-image-container" class="modal-image-container">
+          <img id="modal-image" src="" alt="">
+        </div>
+        <div id="modal-controls">
+          <button id="prev-image">&lt;</button>
+          <button id="zoom-out">-</button>
+          <button id="zoom-in">+</button>
+          <button id="next-image">&gt;</button>
+          <button id="buy-product">Comprar</button>
+        </div>
+      </div>
+    </div>"
+`;
+
+exports[`Catalog Desktop View renders final subcategory "Bermudas Tactel Masculina" correctly on desktop 1`] = `
+"
+  <header>
+    <div class="header-logo">
+      <img src="images/logo.jpeg" alt="M/A Imports Logo">
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav aria-label="Main Navigation">
+    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+    <ul id="nav-menu">
+      <li class="menu-item">
+        <button data-category="all">Início</button>
+      </li>
+      <li class="menu-item has-submenu">
+        <button data-category="fashion-category" aria-expanded="false">Moda</button>
+        <ul class="submenu" style="display: none;">
+          <li class="menu-item has-submenu">
+            <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="tshirts-casual-man">Casuais</button>
+                        <button data-category="tshirts-dryfit-man">Dry Fit</button>
+                        <button data-category="tshirts-fitness-man">Fitness</button>
+                        <button data-category="tshirts-polo-man">Polo</button>
+                        <button data-category="tshirts-tank-top-man">Regata</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h2 id="category-heading">Bermudas Tactel Masculina</h2>
+    <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251758-nike.jpeg" alt="[0304251758] Nike">
+          <div class="product-details">
+            <h3>[0304251758] Nike</h3>
+            <p class="description">Tactel - Preta</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251759-nike.jpeg" alt="[0304251759] Nike">
+          <div class="product-details">
+            <h3>[0304251759] Nike</h3>
+            <p class="description">Tactel - Preta</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251800-nike.jpeg" alt="[0304251800] Nike">
+          <div class="product-details">
+            <h3>[0304251800] Nike</h3>
+            <p class="description">Tactel - Azul Marinho</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251802-nike.jpeg" alt="[0304251802] Nike">
+          <div class="product-details">
+            <h3>[0304251802] Nike</h3>
+            <p class="description">Tactel</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251801-nike.jpeg" alt="[0304251801] Nike">
+          <div class="product-details">
+            <h3>[0304251801] Nike</h3>
+            <p class="description">Tactel - Preta</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251807-nike.jpeg" alt="[0304251807] Nike">
+          <div class="product-details">
+            <h3>[0304251807] Nike</h3>
+            <p class="description">Tactel - Vermelha</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251808-nike.jpeg" alt="[0304251808] Nike">
+          <div class="product-details">
+            <h3>[0304251808] Nike</h3>
+            <p class="description">Tactel - Azul Marinho</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251803-nike.jpeg" alt="[0304251803] Nike">
+          <div class="product-details">
+            <h3>[0304251803] Nike</h3>
+            <p class="description">Tactel - Preta</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251810-nike.jpeg" alt="[0304251810] Nike">
+          <div class="product-details">
+            <h3>[0304251810] Nike</h3>
+            <p class="description">Tactel - Preta</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251804-nike.jpeg" alt="[0304251804] Nike">
+          <div class="product-details">
+            <h3>[0304251804] Nike</h3>
+            <p class="description">Tactel - Vermelha</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251805-nike-air.jpeg" alt="[0304251805] Nike Air">
+          <div class="product-details">
+            <h3>[0304251805] Nike Air</h3>
+            <p class="description">Tactel - Preta</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251806-nike-air.jpeg" alt="[0304251806] Nike Air">
+          <div class="product-details">
+            <h3>[0304251806] Nike Air</h3>
+            <p class="description">Tactel - Azul Marinho</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251809-nike.jpeg" alt="[0304251809] Nike">
+          <div class="product-details">
+            <h3>[0304251809] Nike</h3>
+            <p class="description">Tactel - Preta</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251757-nike.jpeg" alt="[0304251757] Nike">
+          <div class="product-details">
+            <h3>[0304251757] Nike</h3>
+            <p class="description">Tactel - Azul Marinho</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li></ul>
+  </main>
+
+  <footer>
+    <p>Versão: 3.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1386,6 +1733,9 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
                       <li class="menu-item">
                         <button data-category="shorts-sweatshorts-man">Moletom</button>
                       </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -1412,6 +1762,14 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
   <main>
     <h2 id="category-heading">Camisetas Casuais Masculina</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/casual/aramis/0304251751-aramis.jpeg" alt="[0304251751] Aramis">
+          <div class="product-details">
+            <h3>[0304251751] Aramis</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/balmain/2802251105-balmain.jpeg" alt="[2802251105] Balmain">
           <div class="product-details">
             <h3>[2802251105] Balmain</h3>
@@ -1695,7 +2053,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
   </main>
 
   <footer>
-    <p>Versão: 2.4.0 - 0.0.97</p>
+    <p>Versão: 3.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1765,6 +2123,9 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Dry Fit Mascu
                       </li>
                       <li class="menu-item">
                         <button data-category="shorts-sweatshorts-man">Moletom</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
                       </li>
                     </ul>
                   </li>
@@ -1843,7 +2204,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Dry Fit Mascu
   </main>
 
   <footer>
-    <p>Versão: 2.4.0 - 0.0.97</p>
+    <p>Versão: 3.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1914,6 +2275,9 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Fitness Mascu
                       <li class="menu-item">
                         <button data-category="shorts-sweatshorts-man">Moletom</button>
                       </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -1975,7 +2339,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Fitness Mascu
   </main>
 
   <footer>
-    <p>Versão: 2.4.0 - 0.0.97</p>
+    <p>Versão: 3.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2046,6 +2410,9 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Polo Masculin
                       <li class="menu-item">
                         <button data-category="shorts-sweatshorts-man">Moletom</button>
                       </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -2107,7 +2474,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Polo Masculin
   </main>
 
   <footer>
-    <p>Versão: 2.4.0 - 0.0.97</p>
+    <p>Versão: 3.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2178,6 +2545,9 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Regata Mascul
                       <li class="menu-item">
                         <button data-category="shorts-sweatshorts-man">Moletom</button>
                       </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -2231,7 +2601,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Regata Mascul
   </main>
 
   <footer>
-    <p>Versão: 2.4.0 - 0.0.97</p>
+    <p>Versão: 3.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2302,6 +2672,9 @@ exports[`Catalog Desktop View renders final subcategory "Chinelos" correctly on 
                       <li class="menu-item">
                         <button data-category="shorts-sweatshorts-man">Moletom</button>
                       </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -2339,7 +2712,7 @@ exports[`Catalog Desktop View renders final subcategory "Chinelos" correctly on 
   </main>
 
   <footer>
-    <p>Versão: 2.4.0 - 0.0.97</p>
+    <p>Versão: 3.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2409,6 +2782,9 @@ exports[`Catalog Desktop View renders final subcategory "Tênis" correctly on de
                       </li>
                       <li class="menu-item">
                         <button data-category="shorts-sweatshorts-man">Moletom</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
                       </li>
                     </ul>
                   </li>
@@ -2681,7 +3057,7 @@ exports[`Catalog Desktop View renders final subcategory "Tênis" correctly on de
   </main>
 
   <footer>
-    <p>Versão: 2.4.0 - 0.0.97</p>
+    <p>Versão: 3.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2713,8 +3089,8 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
   </header>
 
   <!-- Navigation -->
-  <nav aria-label="Main Navigation" class="">
-    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+  <nav aria-label="Main Navigation" class="active">
+    <button id="menu-toggle" aria-expanded="true" aria-controls="nav-menu">☰</button>
     <ul id="nav-menu">
       <li class="menu-item">
         <button data-category="all">Início</button>
@@ -2752,6 +3128,9 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
                       <li class="menu-item">
                         <button data-category="shorts-sweatshorts-man">Moletom</button>
                       </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -2778,6 +3157,126 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
   <main>
     <h2 id="category-heading">Todos os Produtos</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251810-nike.jpeg" alt="[0304251810] Nike">
+          <div class="product-details">
+            <h3>[0304251810] Nike</h3>
+            <p class="description">Tactel - Preta</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251809-nike.jpeg" alt="[0304251809] Nike">
+          <div class="product-details">
+            <h3>[0304251809] Nike</h3>
+            <p class="description">Tactel - Preta</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251808-nike.jpeg" alt="[0304251808] Nike">
+          <div class="product-details">
+            <h3>[0304251808] Nike</h3>
+            <p class="description">Tactel - Azul Marinho</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251807-nike.jpeg" alt="[0304251807] Nike">
+          <div class="product-details">
+            <h3>[0304251807] Nike</h3>
+            <p class="description">Tactel - Vermelha</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251806-nike-air.jpeg" alt="[0304251806] Nike Air">
+          <div class="product-details">
+            <h3>[0304251806] Nike Air</h3>
+            <p class="description">Tactel - Azul Marinho</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251805-nike-air.jpeg" alt="[0304251805] Nike Air">
+          <div class="product-details">
+            <h3>[0304251805] Nike Air</h3>
+            <p class="description">Tactel - Preta</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251804-nike.jpeg" alt="[0304251804] Nike">
+          <div class="product-details">
+            <h3>[0304251804] Nike</h3>
+            <p class="description">Tactel - Vermelha</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251803-nike.jpeg" alt="[0304251803] Nike">
+          <div class="product-details">
+            <h3>[0304251803] Nike</h3>
+            <p class="description">Tactel - Preta</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251802-nike.jpeg" alt="[0304251802] Nike">
+          <div class="product-details">
+            <h3>[0304251802] Nike</h3>
+            <p class="description">Tactel</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251801-nike.jpeg" alt="[0304251801] Nike">
+          <div class="product-details">
+            <h3>[0304251801] Nike</h3>
+            <p class="description">Tactel - Preta</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251800-nike.jpeg" alt="[0304251800] Nike">
+          <div class="product-details">
+            <h3>[0304251800] Nike</h3>
+            <p class="description">Tactel - Azul Marinho</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251759-nike.jpeg" alt="[0304251759] Nike">
+          <div class="product-details">
+            <h3>[0304251759] Nike</h3>
+            <p class="description">Tactel - Preta</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251758-nike.jpeg" alt="[0304251758] Nike">
+          <div class="product-details">
+            <h3>[0304251758] Nike</h3>
+            <p class="description">Tactel - Preta</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251757-nike.jpeg" alt="[0304251757] Nike">
+          <div class="product-details">
+            <h3>[0304251757] Nike</h3>
+            <p class="description">Tactel - Azul Marinho</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/casual/aramis/0304251751-aramis.jpeg" alt="[0304251751] Aramis">
+          <div class="product-details">
+            <h3>[0304251751] Aramis</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/dryfit/nike/2703251703-nike.jpeg" alt="[2703251703] Nike">
           <div class="product-details">
             <h3>[2703251703] Nike</h3>
@@ -3583,7 +4082,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
   </main>
 
   <footer>
-    <p>Versão: 2.4.0 - 0.0.97</p>
+    <p>Versão: 3.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3654,6 +4153,9 @@ exports[`Catalog Mobile View renders final subcategory "Bermudas Básica Masculi
                       <li class="menu-item">
                         <button data-category="shorts-sweatshorts-man">Moletom</button>
                       </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -3691,7 +4193,7 @@ exports[`Catalog Mobile View renders final subcategory "Bermudas Básica Masculi
   </main>
 
   <footer>
-    <p>Versão: 2.4.0 - 0.0.97</p>
+    <p>Versão: 3.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3761,6 +4263,9 @@ exports[`Catalog Mobile View renders final subcategory "Bermudas Jeans Masculina
                       </li>
                       <li class="menu-item">
                         <button data-category="shorts-sweatshorts-man">Moletom</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
                       </li>
                     </ul>
                   </li>
@@ -3855,7 +4360,7 @@ exports[`Catalog Mobile View renders final subcategory "Bermudas Jeans Masculina
   </main>
 
   <footer>
-    <p>Versão: 2.4.0 - 0.0.97</p>
+    <p>Versão: 3.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3925,6 +4430,9 @@ exports[`Catalog Mobile View renders final subcategory "Bermudas Moletom Masculi
                       </li>
                       <li class="menu-item">
                         <button data-category="shorts-sweatshorts-man">Moletom</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
                       </li>
                     </ul>
                   </li>
@@ -4019,7 +4527,222 @@ exports[`Catalog Mobile View renders final subcategory "Bermudas Moletom Masculi
   </main>
 
   <footer>
-    <p>Versão: 2.4.0 - 0.0.97</p>
+    <p>Versão: 3.0.0 - 0.1.112</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+
+<div id="product-modal">
+      <div id="modal-content">
+        <button id="modal-close">X</button>
+        <div id="modal-image-container" class="modal-image-container">
+          <img id="modal-image" src="" alt="">
+        </div>
+        <div id="modal-controls">
+          <button id="prev-image">&lt;</button>
+          <button id="zoom-out">-</button>
+          <button id="zoom-in">+</button>
+          <button id="next-image">&gt;</button>
+          <button id="buy-product">Comprar</button>
+        </div>
+      </div>
+    </div>"
+`;
+
+exports[`Catalog Mobile View renders final subcategory "Bermudas Tactel Masculina" correctly on desktop 1`] = `
+"
+  <header>
+    <div class="header-logo">
+      <img src="images/logo.jpeg" alt="M/A Imports Logo">
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav aria-label="Main Navigation" class="">
+    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+    <ul id="nav-menu">
+      <li class="menu-item">
+        <button data-category="all">Início</button>
+      </li>
+      <li class="menu-item has-submenu">
+        <button data-category="fashion-category" aria-expanded="false">Moda</button>
+        <ul class="submenu">
+          <li class="menu-item has-submenu">
+            <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
+            <ul class="submenu">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu">
+                  <li class="menu-item has-submenu">
+                    <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="tshirts-casual-man">Casuais</button>
+                        <button data-category="tshirts-dryfit-man">Dry Fit</button>
+                        <button data-category="tshirts-fitness-man">Fitness</button>
+                        <button data-category="tshirts-polo-man">Polo</button>
+                        <button data-category="tshirts-tank-top-man">Regata</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu">
+                  <li class="menu-item">
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h2 id="category-heading">Bermudas Tactel Masculina</h2>
+    <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251758-nike.jpeg" alt="[0304251758] Nike">
+          <div class="product-details">
+            <h3>[0304251758] Nike</h3>
+            <p class="description">Tactel - Preta</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251759-nike.jpeg" alt="[0304251759] Nike">
+          <div class="product-details">
+            <h3>[0304251759] Nike</h3>
+            <p class="description">Tactel - Preta</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251800-nike.jpeg" alt="[0304251800] Nike">
+          <div class="product-details">
+            <h3>[0304251800] Nike</h3>
+            <p class="description">Tactel - Azul Marinho</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251802-nike.jpeg" alt="[0304251802] Nike">
+          <div class="product-details">
+            <h3>[0304251802] Nike</h3>
+            <p class="description">Tactel</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251801-nike.jpeg" alt="[0304251801] Nike">
+          <div class="product-details">
+            <h3>[0304251801] Nike</h3>
+            <p class="description">Tactel - Preta</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251807-nike.jpeg" alt="[0304251807] Nike">
+          <div class="product-details">
+            <h3>[0304251807] Nike</h3>
+            <p class="description">Tactel - Vermelha</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251808-nike.jpeg" alt="[0304251808] Nike">
+          <div class="product-details">
+            <h3>[0304251808] Nike</h3>
+            <p class="description">Tactel - Azul Marinho</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251803-nike.jpeg" alt="[0304251803] Nike">
+          <div class="product-details">
+            <h3>[0304251803] Nike</h3>
+            <p class="description">Tactel - Preta</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251810-nike.jpeg" alt="[0304251810] Nike">
+          <div class="product-details">
+            <h3>[0304251810] Nike</h3>
+            <p class="description">Tactel - Preta</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251804-nike.jpeg" alt="[0304251804] Nike">
+          <div class="product-details">
+            <h3>[0304251804] Nike</h3>
+            <p class="description">Tactel - Vermelha</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251805-nike-air.jpeg" alt="[0304251805] Nike Air">
+          <div class="product-details">
+            <h3>[0304251805] Nike Air</h3>
+            <p class="description">Tactel - Preta</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251806-nike-air.jpeg" alt="[0304251806] Nike Air">
+          <div class="product-details">
+            <h3>[0304251806] Nike Air</h3>
+            <p class="description">Tactel - Azul Marinho</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251809-nike.jpeg" alt="[0304251809] Nike">
+          <div class="product-details">
+            <h3>[0304251809] Nike</h3>
+            <p class="description">Tactel - Preta</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/tactel/nike/0304251757-nike.jpeg" alt="[0304251757] Nike">
+          <div class="product-details">
+            <h3>[0304251757] Nike</h3>
+            <p class="description">Tactel - Azul Marinho</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li></ul>
+  </main>
+
+  <footer>
+    <p>Versão: 3.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4090,6 +4813,9 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
                       <li class="menu-item">
                         <button data-category="shorts-sweatshorts-man">Moletom</button>
                       </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -4116,6 +4842,14 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
   <main>
     <h2 id="category-heading">Camisetas Casuais Masculina</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/casual/aramis/0304251751-aramis.jpeg" alt="[0304251751] Aramis">
+          <div class="product-details">
+            <h3>[0304251751] Aramis</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/balmain/2802251105-balmain.jpeg" alt="[2802251105] Balmain">
           <div class="product-details">
             <h3>[2802251105] Balmain</h3>
@@ -4399,7 +5133,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
   </main>
 
   <footer>
-    <p>Versão: 2.4.0 - 0.0.97</p>
+    <p>Versão: 3.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4469,6 +5203,9 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Dry Fit Mascul
                       </li>
                       <li class="menu-item">
                         <button data-category="shorts-sweatshorts-man">Moletom</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
                       </li>
                     </ul>
                   </li>
@@ -4547,7 +5284,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Dry Fit Mascul
   </main>
 
   <footer>
-    <p>Versão: 2.4.0 - 0.0.97</p>
+    <p>Versão: 3.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4618,6 +5355,9 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Fitness Mascul
                       <li class="menu-item">
                         <button data-category="shorts-sweatshorts-man">Moletom</button>
                       </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -4679,7 +5419,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Fitness Mascul
   </main>
 
   <footer>
-    <p>Versão: 2.4.0 - 0.0.97</p>
+    <p>Versão: 3.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4750,6 +5490,9 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Polo Masculina
                       <li class="menu-item">
                         <button data-category="shorts-sweatshorts-man">Moletom</button>
                       </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -4811,7 +5554,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Polo Masculina
   </main>
 
   <footer>
-    <p>Versão: 2.4.0 - 0.0.97</p>
+    <p>Versão: 3.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4882,6 +5625,9 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Regata Masculi
                       <li class="menu-item">
                         <button data-category="shorts-sweatshorts-man">Moletom</button>
                       </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -4935,7 +5681,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Regata Masculi
   </main>
 
   <footer>
-    <p>Versão: 2.4.0 - 0.0.97</p>
+    <p>Versão: 3.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5006,6 +5752,9 @@ exports[`Catalog Mobile View renders final subcategory "Chinelos" correctly on m
                       <li class="menu-item">
                         <button data-category="shorts-sweatshorts-man">Moletom</button>
                       </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -5043,7 +5792,7 @@ exports[`Catalog Mobile View renders final subcategory "Chinelos" correctly on m
   </main>
 
   <footer>
-    <p>Versão: 2.4.0 - 0.0.97</p>
+    <p>Versão: 3.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5114,6 +5863,9 @@ exports[`Catalog Mobile View renders final subcategory "Tênis" correctly on mob
                       <li class="menu-item">
                         <button data-category="shorts-sweatshorts-man">Moletom</button>
                       </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -5385,7 +6137,7 @@ exports[`Catalog Mobile View renders final subcategory "Tênis" correctly on mob
   </main>
 
   <footer>
-    <p>Versão: 2.4.0 - 0.0.97</p>
+    <p>Versão: 3.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5456,6 +6208,9 @@ exports[`Catalog Modal Functionality opens modal on product click and logs GA ev
                       <li class="menu-item">
                         <button data-category="shorts-sweatshorts-man">Moletom</button>
                       </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -5727,7 +6482,7 @@ exports[`Catalog Modal Functionality opens modal on product click and logs GA ev
   </main>
 
   <footer>
-    <p>Versão: 2.4.0 - 0.0.97</p>
+    <p>Versão: 3.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5798,6 +6553,9 @@ exports[`Catalog Modal Functionality redirects to WhatsApp with correct message 
                       <li class="menu-item">
                         <button data-category="shorts-sweatshorts-man">Moletom</button>
                       </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -6069,7 +6827,7 @@ exports[`Catalog Modal Functionality redirects to WhatsApp with correct message 
   </main>
 
   <footer>
-    <p>Versão: 2.4.0 - 0.0.97</p>
+    <p>Versão: 3.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
