@@ -123,7 +123,8 @@
         "oldPrice": 169.0,
         "price": 159.0,
         "image": "images/man/shoes/nike/1202251707-nike-jordan.jpeg",
-        "size": "38"
+        "size": "38",
+        "soldOut": true
     },
     {
         "name": "[1202251718] Nike R4",

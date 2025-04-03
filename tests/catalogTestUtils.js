@@ -75,7 +75,7 @@ const selectCategory = async (category, expectedHeading) => {
 };
 
 /**
- * Sets up mobile view and triggers the menu toggle.
+ * Sets up a mobile view and triggers the menu toggle.
  */
 const setupMobile = async () => {
   window.innerWidth = 375;
