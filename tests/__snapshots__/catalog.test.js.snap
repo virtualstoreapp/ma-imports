@@ -30,9 +30,14 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-dryfit-man">Dry Fit</button>
-                        <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
-                        <button data-category="tshirts-tank-top-man">Regata</button>
+                      </li>
+                    </ul>
+                    <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="tank-top-casual-man">Casuais</button>
+                        <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
                   </li>
@@ -397,7 +402,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/tank-top/calvin-klein/1903251708-calvin-klein.jpeg" alt="[1903251708] Calvin Klein">
+          <img src="images/man/tank-top/casual/calvin-klein/1903251708-calvin-klein.jpeg" alt="[1903251708] Calvin Klein">
           <div class="product-details">
             <h3>[1903251708] Calvin Klein</h3>
             <p class="description">100% Algodão</p>
@@ -405,7 +410,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/tank-top/calvin-klein/1903251706-calvin-klein.jpeg" alt="[1903251706] Calvin Klein">
+          <img src="images/man/tank-top/casual/calvin-klein/1903251706-calvin-klein.jpeg" alt="[1903251706] Calvin Klein">
           <div class="product-details">
             <h3>[1903251706] Calvin Klein</h3>
             <p class="description">100% Algodão</p>
@@ -413,7 +418,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/tank-top/hugo-boss/1903251705-hugo-boss.jpeg" alt="[1903251705] Hugo Boss">
+          <img src="images/man/tank-top/casual/hugo-boss/1903251705-hugo-boss.jpeg" alt="[1903251705] Hugo Boss">
           <div class="product-details">
             <h3>[1903251705] Hugo Boss</h3>
             <p class="description">100% Algodão</p>
@@ -613,31 +618,31 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/fitness/puma/0703251717-puma.jpeg" alt="[0703251717] Regata Mizuno">
+          <img src="images/man/tank-top/dryfit/mizuno/0703251717-mizuno.jpeg" alt="[0703251717] Mizuno">
           <div class="product-details">
-            <h3>[0703251717] Regata Mizuno</h3>
+            <h3>[0703251717] Mizuno</h3>
             <p class="description">Dry-Fit, Cor: Preta</p>
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/fitness/puma/0703251715-puma.jpeg" alt="[0703251715] Regata Puma">
+          <img src="images/man/tank-top/dryfit/puma/0703251715-puma.jpeg" alt="[0703251715] Puma">
           <div class="product-details">
-            <h3>[0703251715] Regata Puma</h3>
+            <h3>[0703251715] Puma</h3>
             <p class="description">Dry-Fit, Cor: Cinza</p>
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/fitness/puma/0703251712-puma.jpeg" alt="[0703251712] Regata Puma">
+          <img src="images/man/tank-top/dryfit/puma/0703251712-puma.jpeg" alt="[0703251712] Puma">
           <div class="product-details">
-            <h3>[0703251712] Regata Puma</h3>
+            <h3>[0703251712] Puma</h3>
             <p class="description">Dry-Fit, Cor: Azul Marinho</p>
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/fitness/nike/0703251709-nike.jpeg" alt="[0703251709] Camiseta Nike">
+          <img src="images/man/tshirts/dryfit/nike/0703251709-nike.jpeg" alt="[0703251709] Camiseta Nike">
           <div class="product-details">
             <h3>[0703251709] Camiseta Nike</h3>
             <p class="description">Dry-Fit, Cor: Preta</p>
@@ -1002,7 +1007,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
   </main>
 
   <footer>
-    <p>Versão: 3.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1055,9 +1060,14 @@ exports[`Catalog Desktop View renders final subcategory "Bermudas Básica Mascul
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-dryfit-man">Dry Fit</button>
-                        <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
-                        <button data-category="tshirts-tank-top-man">Regata</button>
+                      </li>
+                    </ul>
+                    <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="tank-top-casual-man">Casuais</button>
+                        <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
                   </li>
@@ -1113,7 +1123,7 @@ exports[`Catalog Desktop View renders final subcategory "Bermudas Básica Mascul
   </main>
 
   <footer>
-    <p>Versão: 3.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1166,9 +1176,14 @@ exports[`Catalog Desktop View renders final subcategory "Bermudas Jeans Masculin
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-dryfit-man">Dry Fit</button>
-                        <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
-                        <button data-category="tshirts-tank-top-man">Regata</button>
+                      </li>
+                    </ul>
+                    <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="tank-top-casual-man">Casuais</button>
+                        <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
                   </li>
@@ -1280,7 +1295,7 @@ exports[`Catalog Desktop View renders final subcategory "Bermudas Jeans Masculin
   </main>
 
   <footer>
-    <p>Versão: 3.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1333,9 +1348,14 @@ exports[`Catalog Desktop View renders final subcategory "Bermudas Moletom Mascul
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-dryfit-man">Dry Fit</button>
-                        <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
-                        <button data-category="tshirts-tank-top-man">Regata</button>
+                      </li>
+                    </ul>
+                    <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="tank-top-casual-man">Casuais</button>
+                        <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
                   </li>
@@ -1447,7 +1467,7 @@ exports[`Catalog Desktop View renders final subcategory "Bermudas Moletom Mascul
   </main>
 
   <footer>
-    <p>Versão: 3.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1500,9 +1520,14 @@ exports[`Catalog Desktop View renders final subcategory "Bermudas Tactel Masculi
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-dryfit-man">Dry Fit</button>
-                        <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
-                        <button data-category="tshirts-tank-top-man">Regata</button>
+                      </li>
+                    </ul>
+                    <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="tank-top-casual-man">Casuais</button>
+                        <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
                   </li>
@@ -1662,7 +1687,7 @@ exports[`Catalog Desktop View renders final subcategory "Bermudas Tactel Masculi
   </main>
 
   <footer>
-    <p>Versão: 3.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1715,9 +1740,14 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-dryfit-man">Dry Fit</button>
-                        <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
-                        <button data-category="tshirts-tank-top-man">Regata</button>
+                      </li>
+                    </ul>
+                    <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="tank-top-casual-man">Casuais</button>
+                        <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
                   </li>
@@ -2053,7 +2083,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
   </main>
 
   <footer>
-    <p>Versão: 3.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2106,9 +2136,14 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Dry Fit Mascu
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-dryfit-man">Dry Fit</button>
-                        <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
-                        <button data-category="tshirts-tank-top-man">Regata</button>
+                      </li>
+                    </ul>
+                    <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="tank-top-casual-man">Casuais</button>
+                        <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
                   </li>
@@ -2169,6 +2204,14 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Dry Fit Mascu
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/nike/0703251709-nike.jpeg" alt="[0703251709] Camiseta Nike">
+          <div class="product-details">
+            <h3>[0703251709] Camiseta Nike</h3>
+            <p class="description">Dry-Fit, Cor: Preta</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/dryfit/nike/2703251702-nike.jpeg" alt="[2703251702] Nike">
           <div class="product-details">
             <h3>[2703251702] Nike</h3>
@@ -2204,142 +2247,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Dry Fit Mascu
   </main>
 
   <footer>
-    <p>Versão: 3.0.0 - 0.1.112</p>
-  </footer>
-
-  <script src="scripts.js"></script>
-
-
-<div id="product-modal">
-      <div id="modal-content">
-        <button id="modal-close">X</button>
-        <div id="modal-image-container" class="modal-image-container">
-          <img id="modal-image" src="" alt="">
-        </div>
-        <div id="modal-controls">
-          <button id="prev-image">&lt;</button>
-          <button id="zoom-out">-</button>
-          <button id="zoom-in">+</button>
-          <button id="next-image">&gt;</button>
-          <button id="buy-product">Comprar</button>
-        </div>
-      </div>
-    </div>"
-`;
-
-exports[`Catalog Desktop View renders final subcategory "Camisetas Fitness Masculina" correctly on desktop 1`] = `
-"
-  <header>
-    <div class="header-logo">
-      <img src="images/logo.jpeg" alt="M/A Imports Logo">
-    </div>
-  </header>
-
-  <!-- Navigation -->
-  <nav aria-label="Main Navigation">
-    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
-    <ul id="nav-menu">
-      <li class="menu-item">
-        <button data-category="all">Início</button>
-      </li>
-      <li class="menu-item has-submenu">
-        <button data-category="fashion-category" aria-expanded="false">Moda</button>
-        <ul class="submenu" style="display: none;">
-          <li class="menu-item has-submenu">
-            <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
-            <ul class="submenu" style="display: none;">
-              <li class="menu-item has-submenu">
-                <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item has-submenu">
-                    <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="tshirts-casual-man">Casuais</button>
-                        <button data-category="tshirts-dryfit-man">Dry Fit</button>
-                        <button data-category="tshirts-fitness-man">Fitness</button>
-                        <button data-category="tshirts-polo-man">Polo</button>
-                        <button data-category="tshirts-tank-top-man">Regata</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Main Content -->
-  <main>
-    <h2 id="category-heading">Camisetas Fitness Masculina</h2>
-    <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/fitness/nike/0703251709-nike.jpeg" alt="[0703251709] Camiseta Nike">
-          <div class="product-details">
-            <h3>[0703251709] Camiseta Nike</h3>
-            <p class="description">Dry-Fit, Cor: Preta</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;59,90</span>
-          </div>
-        </li><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/fitness/puma/0703251712-puma.jpeg" alt="[0703251712] Regata Puma">
-          <div class="product-details">
-            <h3>[0703251712] Regata Puma</h3>
-            <p class="description">Dry-Fit, Cor: Azul Marinho</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;59,90</span>
-          </div>
-        </li><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/fitness/puma/0703251715-puma.jpeg" alt="[0703251715] Regata Puma">
-          <div class="product-details">
-            <h3>[0703251715] Regata Puma</h3>
-            <p class="description">Dry-Fit, Cor: Cinza</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;59,90</span>
-          </div>
-        </li><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/fitness/puma/0703251717-puma.jpeg" alt="[0703251717] Regata Mizuno">
-          <div class="product-details">
-            <h3>[0703251717] Regata Mizuno</h3>
-            <p class="description">Dry-Fit, Cor: Preta</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;59,90</span>
-          </div>
-        </li></ul>
-  </main>
-
-  <footer>
-    <p>Versão: 3.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2392,9 +2300,14 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Polo Masculin
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-dryfit-man">Dry Fit</button>
-                        <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
-                        <button data-category="tshirts-tank-top-man">Regata</button>
+                      </li>
+                    </ul>
+                    <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="tank-top-casual-man">Casuais</button>
+                        <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
                   </li>
@@ -2474,134 +2387,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Polo Masculin
   </main>
 
   <footer>
-    <p>Versão: 3.0.0 - 0.1.112</p>
-  </footer>
-
-  <script src="scripts.js"></script>
-
-
-<div id="product-modal">
-      <div id="modal-content">
-        <button id="modal-close">X</button>
-        <div id="modal-image-container" class="modal-image-container">
-          <img id="modal-image" src="" alt="">
-        </div>
-        <div id="modal-controls">
-          <button id="prev-image">&lt;</button>
-          <button id="zoom-out">-</button>
-          <button id="zoom-in">+</button>
-          <button id="next-image">&gt;</button>
-          <button id="buy-product">Comprar</button>
-        </div>
-      </div>
-    </div>"
-`;
-
-exports[`Catalog Desktop View renders final subcategory "Camisetas Regata Masculina" correctly on desktop 1`] = `
-"
-  <header>
-    <div class="header-logo">
-      <img src="images/logo.jpeg" alt="M/A Imports Logo">
-    </div>
-  </header>
-
-  <!-- Navigation -->
-  <nav aria-label="Main Navigation">
-    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
-    <ul id="nav-menu">
-      <li class="menu-item">
-        <button data-category="all">Início</button>
-      </li>
-      <li class="menu-item has-submenu">
-        <button data-category="fashion-category" aria-expanded="false">Moda</button>
-        <ul class="submenu" style="display: none;">
-          <li class="menu-item has-submenu">
-            <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
-            <ul class="submenu" style="display: none;">
-              <li class="menu-item has-submenu">
-                <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item has-submenu">
-                    <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="tshirts-casual-man">Casuais</button>
-                        <button data-category="tshirts-dryfit-man">Dry Fit</button>
-                        <button data-category="tshirts-fitness-man">Fitness</button>
-                        <button data-category="tshirts-polo-man">Polo</button>
-                        <button data-category="tshirts-tank-top-man">Regata</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Main Content -->
-  <main>
-    <h2 id="category-heading">Camisetas Regata Masculina</h2>
-    <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/tank-top/calvin-klein/1903251706-calvin-klein.jpeg" alt="[1903251706] Calvin Klein">
-          <div class="product-details">
-            <h3>[1903251706] Calvin Klein</h3>
-            <p class="description">100% Algodão</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/tank-top/calvin-klein/1903251708-calvin-klein.jpeg" alt="[1903251708] Calvin Klein">
-          <div class="product-details">
-            <h3>[1903251708] Calvin Klein</h3>
-            <p class="description">100% Algodão</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/tank-top/hugo-boss/1903251705-hugo-boss.jpeg" alt="[1903251705] Hugo Boss">
-          <div class="product-details">
-            <h3>[1903251705] Hugo Boss</h3>
-            <p class="description">100% Algodão</p>
-            <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li></ul>
-  </main>
-
-  <footer>
-    <p>Versão: 3.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2654,9 +2440,14 @@ exports[`Catalog Desktop View renders final subcategory "Chinelos" correctly on 
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-dryfit-man">Dry Fit</button>
-                        <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
-                        <button data-category="tshirts-tank-top-man">Regata</button>
+                      </li>
+                    </ul>
+                    <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="tank-top-casual-man">Casuais</button>
+                        <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
                   </li>
@@ -2712,7 +2503,271 @@ exports[`Catalog Desktop View renders final subcategory "Chinelos" correctly on 
   </main>
 
   <footer>
-    <p>Versão: 3.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.1.112</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+
+<div id="product-modal">
+      <div id="modal-content">
+        <button id="modal-close">X</button>
+        <div id="modal-image-container" class="modal-image-container">
+          <img id="modal-image" src="" alt="">
+        </div>
+        <div id="modal-controls">
+          <button id="prev-image">&lt;</button>
+          <button id="zoom-out">-</button>
+          <button id="zoom-in">+</button>
+          <button id="next-image">&gt;</button>
+          <button id="buy-product">Comprar</button>
+        </div>
+      </div>
+    </div>"
+`;
+
+exports[`Catalog Desktop View renders final subcategory "Regatas Casuais Masculina" correctly on desktop 1`] = `
+"
+  <header>
+    <div class="header-logo">
+      <img src="images/logo.jpeg" alt="M/A Imports Logo">
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav aria-label="Main Navigation">
+    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+    <ul id="nav-menu">
+      <li class="menu-item">
+        <button data-category="all">Início</button>
+      </li>
+      <li class="menu-item has-submenu">
+        <button data-category="fashion-category" aria-expanded="false">Moda</button>
+        <ul class="submenu" style="display: none;">
+          <li class="menu-item has-submenu">
+            <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="tshirts-casual-man">Casuais</button>
+                        <button data-category="tshirts-dryfit-man">Dry Fit</button>
+                        <button data-category="tshirts-polo-man">Polo</button>
+                      </li>
+                    </ul>
+                    <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="tank-top-casual-man">Casuais</button>
+                        <button data-category="tank-top-dryfit-man">Dry Fit</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h2 id="category-heading">Regatas Casuais Masculina</h2>
+    <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/casual/calvin-klein/1903251706-calvin-klein.jpeg" alt="[1903251706] Calvin Klein">
+          <div class="product-details">
+            <h3>[1903251706] Calvin Klein</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/casual/calvin-klein/1903251708-calvin-klein.jpeg" alt="[1903251708] Calvin Klein">
+          <div class="product-details">
+            <h3>[1903251708] Calvin Klein</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/casual/hugo-boss/1903251705-hugo-boss.jpeg" alt="[1903251705] Hugo Boss">
+          <div class="product-details">
+            <h3>[1903251705] Hugo Boss</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li></ul>
+  </main>
+
+  <footer>
+    <p>Versão: 4.0.0 - 0.1.112</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+
+<div id="product-modal">
+      <div id="modal-content">
+        <button id="modal-close">X</button>
+        <div id="modal-image-container" class="modal-image-container">
+          <img id="modal-image" src="" alt="">
+        </div>
+        <div id="modal-controls">
+          <button id="prev-image">&lt;</button>
+          <button id="zoom-out">-</button>
+          <button id="zoom-in">+</button>
+          <button id="next-image">&gt;</button>
+          <button id="buy-product">Comprar</button>
+        </div>
+      </div>
+    </div>"
+`;
+
+exports[`Catalog Desktop View renders final subcategory "Regatas Dry Fit Masculina" correctly on desktop 1`] = `
+"
+  <header>
+    <div class="header-logo">
+      <img src="images/logo.jpeg" alt="M/A Imports Logo">
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav aria-label="Main Navigation">
+    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+    <ul id="nav-menu">
+      <li class="menu-item">
+        <button data-category="all">Início</button>
+      </li>
+      <li class="menu-item has-submenu">
+        <button data-category="fashion-category" aria-expanded="false">Moda</button>
+        <ul class="submenu" style="display: none;">
+          <li class="menu-item has-submenu">
+            <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="tshirts-casual-man">Casuais</button>
+                        <button data-category="tshirts-dryfit-man">Dry Fit</button>
+                        <button data-category="tshirts-polo-man">Polo</button>
+                      </li>
+                    </ul>
+                    <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="tank-top-casual-man">Casuais</button>
+                        <button data-category="tank-top-dryfit-man">Dry Fit</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h2 id="category-heading">Regatas Dry Fit Masculina</h2>
+    <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/dryfit/mizuno/0703251717-mizuno.jpeg" alt="[0703251717] Mizuno">
+          <div class="product-details">
+            <h3>[0703251717] Mizuno</h3>
+            <p class="description">Dry-Fit, Cor: Preta</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/dryfit/puma/0703251712-puma.jpeg" alt="[0703251712] Puma">
+          <div class="product-details">
+            <h3>[0703251712] Puma</h3>
+            <p class="description">Dry-Fit, Cor: Azul Marinho</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/dryfit/puma/0703251715-puma.jpeg" alt="[0703251715] Puma">
+          <div class="product-details">
+            <h3>[0703251715] Puma</h3>
+            <p class="description">Dry-Fit, Cor: Cinza</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li></ul>
+  </main>
+
+  <footer>
+    <p>Versão: 4.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2765,9 +2820,14 @@ exports[`Catalog Desktop View renders final subcategory "Tênis" correctly on de
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-dryfit-man">Dry Fit</button>
-                        <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
-                        <button data-category="tshirts-tank-top-man">Regata</button>
+                      </li>
+                    </ul>
+                    <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="tank-top-casual-man">Casuais</button>
+                        <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
                   </li>
@@ -3057,7 +3117,7 @@ exports[`Catalog Desktop View renders final subcategory "Tênis" correctly on de
   </main>
 
   <footer>
-    <p>Versão: 3.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3110,9 +3170,14 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-dryfit-man">Dry Fit</button>
-                        <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
-                        <button data-category="tshirts-tank-top-man">Regata</button>
+                      </li>
+                    </ul>
+                    <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="tank-top-casual-man">Casuais</button>
+                        <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
                   </li>
@@ -3477,7 +3542,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/tank-top/calvin-klein/1903251708-calvin-klein.jpeg" alt="[1903251708] Calvin Klein">
+          <img src="images/man/tank-top/casual/calvin-klein/1903251708-calvin-klein.jpeg" alt="[1903251708] Calvin Klein">
           <div class="product-details">
             <h3>[1903251708] Calvin Klein</h3>
             <p class="description">100% Algodão</p>
@@ -3485,7 +3550,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/tank-top/calvin-klein/1903251706-calvin-klein.jpeg" alt="[1903251706] Calvin Klein">
+          <img src="images/man/tank-top/casual/calvin-klein/1903251706-calvin-klein.jpeg" alt="[1903251706] Calvin Klein">
           <div class="product-details">
             <h3>[1903251706] Calvin Klein</h3>
             <p class="description">100% Algodão</p>
@@ -3493,7 +3558,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/tank-top/hugo-boss/1903251705-hugo-boss.jpeg" alt="[1903251705] Hugo Boss">
+          <img src="images/man/tank-top/casual/hugo-boss/1903251705-hugo-boss.jpeg" alt="[1903251705] Hugo Boss">
           <div class="product-details">
             <h3>[1903251705] Hugo Boss</h3>
             <p class="description">100% Algodão</p>
@@ -3693,31 +3758,31 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/fitness/puma/0703251717-puma.jpeg" alt="[0703251717] Regata Mizuno">
+          <img src="images/man/tank-top/dryfit/mizuno/0703251717-mizuno.jpeg" alt="[0703251717] Mizuno">
           <div class="product-details">
-            <h3>[0703251717] Regata Mizuno</h3>
+            <h3>[0703251717] Mizuno</h3>
             <p class="description">Dry-Fit, Cor: Preta</p>
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/fitness/puma/0703251715-puma.jpeg" alt="[0703251715] Regata Puma">
+          <img src="images/man/tank-top/dryfit/puma/0703251715-puma.jpeg" alt="[0703251715] Puma">
           <div class="product-details">
-            <h3>[0703251715] Regata Puma</h3>
+            <h3>[0703251715] Puma</h3>
             <p class="description">Dry-Fit, Cor: Cinza</p>
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/fitness/puma/0703251712-puma.jpeg" alt="[0703251712] Regata Puma">
+          <img src="images/man/tank-top/dryfit/puma/0703251712-puma.jpeg" alt="[0703251712] Puma">
           <div class="product-details">
-            <h3>[0703251712] Regata Puma</h3>
+            <h3>[0703251712] Puma</h3>
             <p class="description">Dry-Fit, Cor: Azul Marinho</p>
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/fitness/nike/0703251709-nike.jpeg" alt="[0703251709] Camiseta Nike">
+          <img src="images/man/tshirts/dryfit/nike/0703251709-nike.jpeg" alt="[0703251709] Camiseta Nike">
           <div class="product-details">
             <h3>[0703251709] Camiseta Nike</h3>
             <p class="description">Dry-Fit, Cor: Preta</p>
@@ -4082,7 +4147,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
   </main>
 
   <footer>
-    <p>Versão: 3.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4135,9 +4200,14 @@ exports[`Catalog Mobile View renders final subcategory "Bermudas Básica Masculi
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-dryfit-man">Dry Fit</button>
-                        <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
-                        <button data-category="tshirts-tank-top-man">Regata</button>
+                      </li>
+                    </ul>
+                    <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="tank-top-casual-man">Casuais</button>
+                        <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
                   </li>
@@ -4193,7 +4263,7 @@ exports[`Catalog Mobile View renders final subcategory "Bermudas Básica Masculi
   </main>
 
   <footer>
-    <p>Versão: 3.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4246,9 +4316,14 @@ exports[`Catalog Mobile View renders final subcategory "Bermudas Jeans Masculina
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-dryfit-man">Dry Fit</button>
-                        <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
-                        <button data-category="tshirts-tank-top-man">Regata</button>
+                      </li>
+                    </ul>
+                    <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="tank-top-casual-man">Casuais</button>
+                        <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
                   </li>
@@ -4360,7 +4435,7 @@ exports[`Catalog Mobile View renders final subcategory "Bermudas Jeans Masculina
   </main>
 
   <footer>
-    <p>Versão: 3.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4413,9 +4488,14 @@ exports[`Catalog Mobile View renders final subcategory "Bermudas Moletom Masculi
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-dryfit-man">Dry Fit</button>
-                        <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
-                        <button data-category="tshirts-tank-top-man">Regata</button>
+                      </li>
+                    </ul>
+                    <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="tank-top-casual-man">Casuais</button>
+                        <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
                   </li>
@@ -4527,7 +4607,7 @@ exports[`Catalog Mobile View renders final subcategory "Bermudas Moletom Masculi
   </main>
 
   <footer>
-    <p>Versão: 3.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4580,9 +4660,14 @@ exports[`Catalog Mobile View renders final subcategory "Bermudas Tactel Masculin
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-dryfit-man">Dry Fit</button>
-                        <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
-                        <button data-category="tshirts-tank-top-man">Regata</button>
+                      </li>
+                    </ul>
+                    <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="tank-top-casual-man">Casuais</button>
+                        <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
                   </li>
@@ -4742,7 +4827,7 @@ exports[`Catalog Mobile View renders final subcategory "Bermudas Tactel Masculin
   </main>
 
   <footer>
-    <p>Versão: 3.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4795,9 +4880,14 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-dryfit-man">Dry Fit</button>
-                        <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
-                        <button data-category="tshirts-tank-top-man">Regata</button>
+                      </li>
+                    </ul>
+                    <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="tank-top-casual-man">Casuais</button>
+                        <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
                   </li>
@@ -5133,7 +5223,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
   </main>
 
   <footer>
-    <p>Versão: 3.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5186,9 +5276,14 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Dry Fit Mascul
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-dryfit-man">Dry Fit</button>
-                        <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
-                        <button data-category="tshirts-tank-top-man">Regata</button>
+                      </li>
+                    </ul>
+                    <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="tank-top-casual-man">Casuais</button>
+                        <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
                   </li>
@@ -5249,6 +5344,14 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Dry Fit Mascul
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/nike/0703251709-nike.jpeg" alt="[0703251709] Camiseta Nike">
+          <div class="product-details">
+            <h3>[0703251709] Camiseta Nike</h3>
+            <p class="description">Dry-Fit, Cor: Preta</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/dryfit/nike/2703251702-nike.jpeg" alt="[2703251702] Nike">
           <div class="product-details">
             <h3>[2703251702] Nike</h3>
@@ -5284,142 +5387,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Dry Fit Mascul
   </main>
 
   <footer>
-    <p>Versão: 3.0.0 - 0.1.112</p>
-  </footer>
-
-  <script src="scripts.js"></script>
-
-
-<div id="product-modal">
-      <div id="modal-content">
-        <button id="modal-close">X</button>
-        <div id="modal-image-container" class="modal-image-container">
-          <img id="modal-image" src="" alt="">
-        </div>
-        <div id="modal-controls">
-          <button id="prev-image">&lt;</button>
-          <button id="zoom-out">-</button>
-          <button id="zoom-in">+</button>
-          <button id="next-image">&gt;</button>
-          <button id="buy-product">Comprar</button>
-        </div>
-      </div>
-    </div>"
-`;
-
-exports[`Catalog Mobile View renders final subcategory "Camisetas Fitness Masculina" correctly on mobile 1`] = `
-"
-  <header>
-    <div class="header-logo">
-      <img src="images/logo.jpeg" alt="M/A Imports Logo">
-    </div>
-  </header>
-
-  <!-- Navigation -->
-  <nav aria-label="Main Navigation" class="">
-    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
-    <ul id="nav-menu">
-      <li class="menu-item">
-        <button data-category="all">Início</button>
-      </li>
-      <li class="menu-item has-submenu">
-        <button data-category="fashion-category" aria-expanded="false">Moda</button>
-        <ul class="submenu">
-          <li class="menu-item has-submenu">
-            <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
-            <ul class="submenu">
-              <li class="menu-item has-submenu">
-                <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
-                <ul class="submenu">
-                  <li class="menu-item has-submenu">
-                    <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
-                    <ul class="submenu">
-                      <li class="menu-item">
-                        <button data-category="tshirts-casual-man">Casuais</button>
-                        <button data-category="tshirts-dryfit-man">Dry Fit</button>
-                        <button data-category="tshirts-fitness-man">Fitness</button>
-                        <button data-category="tshirts-polo-man">Polo</button>
-                        <button data-category="tshirts-tank-top-man">Regata</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Main Content -->
-  <main>
-    <h2 id="category-heading">Camisetas Fitness Masculina</h2>
-    <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/fitness/nike/0703251709-nike.jpeg" alt="[0703251709] Camiseta Nike">
-          <div class="product-details">
-            <h3>[0703251709] Camiseta Nike</h3>
-            <p class="description">Dry-Fit, Cor: Preta</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;59,90</span>
-          </div>
-        </li><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/fitness/puma/0703251712-puma.jpeg" alt="[0703251712] Regata Puma">
-          <div class="product-details">
-            <h3>[0703251712] Regata Puma</h3>
-            <p class="description">Dry-Fit, Cor: Azul Marinho</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;59,90</span>
-          </div>
-        </li><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/fitness/puma/0703251715-puma.jpeg" alt="[0703251715] Regata Puma">
-          <div class="product-details">
-            <h3>[0703251715] Regata Puma</h3>
-            <p class="description">Dry-Fit, Cor: Cinza</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;59,90</span>
-          </div>
-        </li><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/fitness/puma/0703251717-puma.jpeg" alt="[0703251717] Regata Mizuno">
-          <div class="product-details">
-            <h3>[0703251717] Regata Mizuno</h3>
-            <p class="description">Dry-Fit, Cor: Preta</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;59,90</span>
-          </div>
-        </li></ul>
-  </main>
-
-  <footer>
-    <p>Versão: 3.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5472,9 +5440,14 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Polo Masculina
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-dryfit-man">Dry Fit</button>
-                        <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
-                        <button data-category="tshirts-tank-top-man">Regata</button>
+                      </li>
+                    </ul>
+                    <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="tank-top-casual-man">Casuais</button>
+                        <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
                   </li>
@@ -5554,134 +5527,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Polo Masculina
   </main>
 
   <footer>
-    <p>Versão: 3.0.0 - 0.1.112</p>
-  </footer>
-
-  <script src="scripts.js"></script>
-
-
-<div id="product-modal">
-      <div id="modal-content">
-        <button id="modal-close">X</button>
-        <div id="modal-image-container" class="modal-image-container">
-          <img id="modal-image" src="" alt="">
-        </div>
-        <div id="modal-controls">
-          <button id="prev-image">&lt;</button>
-          <button id="zoom-out">-</button>
-          <button id="zoom-in">+</button>
-          <button id="next-image">&gt;</button>
-          <button id="buy-product">Comprar</button>
-        </div>
-      </div>
-    </div>"
-`;
-
-exports[`Catalog Mobile View renders final subcategory "Camisetas Regata Masculina" correctly on mobile 1`] = `
-"
-  <header>
-    <div class="header-logo">
-      <img src="images/logo.jpeg" alt="M/A Imports Logo">
-    </div>
-  </header>
-
-  <!-- Navigation -->
-  <nav aria-label="Main Navigation" class="">
-    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
-    <ul id="nav-menu">
-      <li class="menu-item">
-        <button data-category="all">Início</button>
-      </li>
-      <li class="menu-item has-submenu">
-        <button data-category="fashion-category" aria-expanded="false">Moda</button>
-        <ul class="submenu">
-          <li class="menu-item has-submenu">
-            <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
-            <ul class="submenu">
-              <li class="menu-item has-submenu">
-                <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
-                <ul class="submenu">
-                  <li class="menu-item has-submenu">
-                    <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
-                    <ul class="submenu">
-                      <li class="menu-item">
-                        <button data-category="tshirts-casual-man">Casuais</button>
-                        <button data-category="tshirts-dryfit-man">Dry Fit</button>
-                        <button data-category="tshirts-fitness-man">Fitness</button>
-                        <button data-category="tshirts-polo-man">Polo</button>
-                        <button data-category="tshirts-tank-top-man">Regata</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Main Content -->
-  <main>
-    <h2 id="category-heading">Camisetas Regata Masculina</h2>
-    <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/tank-top/calvin-klein/1903251706-calvin-klein.jpeg" alt="[1903251706] Calvin Klein">
-          <div class="product-details">
-            <h3>[1903251706] Calvin Klein</h3>
-            <p class="description">100% Algodão</p>
-            <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/tank-top/calvin-klein/1903251708-calvin-klein.jpeg" alt="[1903251708] Calvin Klein">
-          <div class="product-details">
-            <h3>[1903251708] Calvin Klein</h3>
-            <p class="description">100% Algodão</p>
-            <span class="size">Tamanho: GG</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/tank-top/hugo-boss/1903251705-hugo-boss.jpeg" alt="[1903251705] Hugo Boss">
-          <div class="product-details">
-            <h3>[1903251705] Hugo Boss</h3>
-            <p class="description">100% Algodão</p>
-            <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;39,90</span>
-          </div>
-        </li></ul>
-  </main>
-
-  <footer>
-    <p>Versão: 3.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5734,9 +5580,14 @@ exports[`Catalog Mobile View renders final subcategory "Chinelos" correctly on m
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-dryfit-man">Dry Fit</button>
-                        <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
-                        <button data-category="tshirts-tank-top-man">Regata</button>
+                      </li>
+                    </ul>
+                    <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="tank-top-casual-man">Casuais</button>
+                        <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
                   </li>
@@ -5792,7 +5643,271 @@ exports[`Catalog Mobile View renders final subcategory "Chinelos" correctly on m
   </main>
 
   <footer>
-    <p>Versão: 3.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.1.112</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+
+<div id="product-modal">
+      <div id="modal-content">
+        <button id="modal-close">X</button>
+        <div id="modal-image-container" class="modal-image-container">
+          <img id="modal-image" src="" alt="">
+        </div>
+        <div id="modal-controls">
+          <button id="prev-image">&lt;</button>
+          <button id="zoom-out">-</button>
+          <button id="zoom-in">+</button>
+          <button id="next-image">&gt;</button>
+          <button id="buy-product">Comprar</button>
+        </div>
+      </div>
+    </div>"
+`;
+
+exports[`Catalog Mobile View renders final subcategory "Regatas Casuais Masculina" correctly on desktop 1`] = `
+"
+  <header>
+    <div class="header-logo">
+      <img src="images/logo.jpeg" alt="M/A Imports Logo">
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav aria-label="Main Navigation" class="">
+    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+    <ul id="nav-menu">
+      <li class="menu-item">
+        <button data-category="all">Início</button>
+      </li>
+      <li class="menu-item has-submenu">
+        <button data-category="fashion-category" aria-expanded="false">Moda</button>
+        <ul class="submenu">
+          <li class="menu-item has-submenu">
+            <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
+            <ul class="submenu">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu">
+                  <li class="menu-item has-submenu">
+                    <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="tshirts-casual-man">Casuais</button>
+                        <button data-category="tshirts-dryfit-man">Dry Fit</button>
+                        <button data-category="tshirts-polo-man">Polo</button>
+                      </li>
+                    </ul>
+                    <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="tank-top-casual-man">Casuais</button>
+                        <button data-category="tank-top-dryfit-man">Dry Fit</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu">
+                  <li class="menu-item">
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h2 id="category-heading">Regatas Casuais Masculina</h2>
+    <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/casual/calvin-klein/1903251706-calvin-klein.jpeg" alt="[1903251706] Calvin Klein">
+          <div class="product-details">
+            <h3>[1903251706] Calvin Klein</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/casual/calvin-klein/1903251708-calvin-klein.jpeg" alt="[1903251708] Calvin Klein">
+          <div class="product-details">
+            <h3>[1903251708] Calvin Klein</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/casual/hugo-boss/1903251705-hugo-boss.jpeg" alt="[1903251705] Hugo Boss">
+          <div class="product-details">
+            <h3>[1903251705] Hugo Boss</h3>
+            <p class="description">100% Algodão</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li></ul>
+  </main>
+
+  <footer>
+    <p>Versão: 4.0.0 - 0.1.112</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+
+<div id="product-modal">
+      <div id="modal-content">
+        <button id="modal-close">X</button>
+        <div id="modal-image-container" class="modal-image-container">
+          <img id="modal-image" src="" alt="">
+        </div>
+        <div id="modal-controls">
+          <button id="prev-image">&lt;</button>
+          <button id="zoom-out">-</button>
+          <button id="zoom-in">+</button>
+          <button id="next-image">&gt;</button>
+          <button id="buy-product">Comprar</button>
+        </div>
+      </div>
+    </div>"
+`;
+
+exports[`Catalog Mobile View renders final subcategory "Regatas Dry Fit Masculina" correctly on desktop 1`] = `
+"
+  <header>
+    <div class="header-logo">
+      <img src="images/logo.jpeg" alt="M/A Imports Logo">
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav aria-label="Main Navigation" class="">
+    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+    <ul id="nav-menu">
+      <li class="menu-item">
+        <button data-category="all">Início</button>
+      </li>
+      <li class="menu-item has-submenu">
+        <button data-category="fashion-category" aria-expanded="false">Moda</button>
+        <ul class="submenu">
+          <li class="menu-item has-submenu">
+            <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
+            <ul class="submenu">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu">
+                  <li class="menu-item has-submenu">
+                    <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="tshirts-casual-man">Casuais</button>
+                        <button data-category="tshirts-dryfit-man">Dry Fit</button>
+                        <button data-category="tshirts-polo-man">Polo</button>
+                      </li>
+                    </ul>
+                    <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="tank-top-casual-man">Casuais</button>
+                        <button data-category="tank-top-dryfit-man">Dry Fit</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu">
+                  <li class="menu-item">
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h2 id="category-heading">Regatas Dry Fit Masculina</h2>
+    <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/dryfit/mizuno/0703251717-mizuno.jpeg" alt="[0703251717] Mizuno">
+          <div class="product-details">
+            <h3>[0703251717] Mizuno</h3>
+            <p class="description">Dry-Fit, Cor: Preta</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/dryfit/puma/0703251712-puma.jpeg" alt="[0703251712] Puma">
+          <div class="product-details">
+            <h3>[0703251712] Puma</h3>
+            <p class="description">Dry-Fit, Cor: Azul Marinho</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/dryfit/puma/0703251715-puma.jpeg" alt="[0703251715] Puma">
+          <div class="product-details">
+            <h3>[0703251715] Puma</h3>
+            <p class="description">Dry-Fit, Cor: Cinza</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li></ul>
+  </main>
+
+  <footer>
+    <p>Versão: 4.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5845,9 +5960,14 @@ exports[`Catalog Mobile View renders final subcategory "Tênis" correctly on mob
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-dryfit-man">Dry Fit</button>
-                        <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
-                        <button data-category="tshirts-tank-top-man">Regata</button>
+                      </li>
+                    </ul>
+                    <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="tank-top-casual-man">Casuais</button>
+                        <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
                   </li>
@@ -6137,7 +6257,7 @@ exports[`Catalog Mobile View renders final subcategory "Tênis" correctly on mob
   </main>
 
   <footer>
-    <p>Versão: 3.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -6190,9 +6310,14 @@ exports[`Catalog Modal Functionality opens modal on product click and logs GA ev
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-dryfit-man">Dry Fit</button>
-                        <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
-                        <button data-category="tshirts-tank-top-man">Regata</button>
+                      </li>
+                    </ul>
+                    <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="tank-top-casual-man">Casuais</button>
+                        <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
                   </li>
@@ -6482,7 +6607,7 @@ exports[`Catalog Modal Functionality opens modal on product click and logs GA ev
   </main>
 
   <footer>
-    <p>Versão: 3.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -6535,9 +6660,14 @@ exports[`Catalog Modal Functionality redirects to WhatsApp with correct message 
                       <li class="menu-item">
                         <button data-category="tshirts-casual-man">Casuais</button>
                         <button data-category="tshirts-dryfit-man">Dry Fit</button>
-                        <button data-category="tshirts-fitness-man">Fitness</button>
                         <button data-category="tshirts-polo-man">Polo</button>
-                        <button data-category="tshirts-tank-top-man">Regata</button>
+                      </li>
+                    </ul>
+                    <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="tank-top-casual-man">Casuais</button>
+                        <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
                   </li>
@@ -6827,7 +6957,7 @@ exports[`Catalog Modal Functionality redirects to WhatsApp with correct message 
   </main>
 
   <footer>
-    <p>Versão: 3.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.1.112</p>
   </footer>
 
   <script src="scripts.js"></script>

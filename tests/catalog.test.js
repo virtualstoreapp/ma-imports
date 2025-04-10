@@ -102,7 +102,7 @@ const selectTshirtsCasualMan = async () => {
 
 const selectTshirtsDryFitMan = async () => {
   const expectedHeading = "Camisetas Dry Fit Masculina";
-  const expectedCount = 6;
+  const expectedCount = 7;
   await selectClothingManSubcategory();
   await selectMenuOption('tshirts-dryfit-man');
   await asserts(expectedHeading, expectedCount);
@@ -116,19 +116,19 @@ const selectTshirtsPoloMan = async () => {
   await asserts(expectedHeading, expectedCount);
 };
 
-const selectTshirtsFitnessMan = async () => {
-  const expectedHeading = "Camisetas Fitness Masculina";
-  const expectedCount = 4;
+const selectTankTopCasualMan = async () => {
+  const expectedHeading = "Regatas Casuais Masculina";
+  const expectedCount = 3;
   await selectClothingManSubcategory();
-  await selectMenuOption('tshirts-fitness-man');
+  await selectMenuOption('tank-top-casual-man');
   await asserts(expectedHeading, expectedCount);
 };
 
-const selectTshirtsTankTopMan = async () => {
-  const expectedHeading = "Camisetas Regata Masculina";
+const selectTankTopDryFitCasualMan = async () => {
+  const expectedHeading = "Regatas Dry Fit Masculina";
   const expectedCount = 3;
   await selectClothingManSubcategory();
-  await selectMenuOption('tshirts-tank-top-man');
+  await selectMenuOption('tank-top-dryfit-man');
   await asserts(expectedHeading, expectedCount);
 };
 
@@ -200,12 +200,12 @@ describe('Catalog', () => {
       await selectTshirtsPoloMan();
     });
 
-    it('renders final subcategory "Camisetas Fitness Masculina" correctly on desktop', async () => {
-      await selectTshirtsFitnessMan();
+    it('renders final subcategory "Regatas Casuais Masculina" correctly on desktop', async () => {
+      await selectTankTopCasualMan();
     });
 
-    it('renders final subcategory "Camisetas Regata Masculina" correctly on desktop', async () => {
-      await selectTshirtsTankTopMan();
+    it('renders final subcategory "Regatas Dry Fit Masculina" correctly on desktop', async () => {
+      await selectTankTopDryFitCasualMan();
     });
 
     it('renders final subcategory "Bermudas Moletom Masculina" correctly on desktop', async () => {
@@ -257,12 +257,12 @@ describe('Catalog', () => {
       await selectTshirtsPoloMan();
     });
 
-    it('renders final subcategory "Camisetas Fitness Masculina" correctly on mobile', async () => {
-      await selectTshirtsFitnessMan();
+    it('renders final subcategory "Regatas Casuais Masculina" correctly on desktop', async () => {
+      await selectTankTopCasualMan();
     });
 
-    it('renders final subcategory "Camisetas Regata Masculina" correctly on mobile', async () => {
-      await selectTshirtsTankTopMan();
+    it('renders final subcategory "Regatas Dry Fit Masculina" correctly on desktop', async () => {
+      await selectTankTopDryFitCasualMan();
     });
 
     it('renders final subcategory "Bermudas Moletom Masculina" correctly on mobile', async () => {
@@ -289,9 +289,9 @@ describe('Catalog', () => {
       "slippers-man": [{ name: "[1702251140] Tommy Hilfiger", price: 29.90 }],
       "tshirts-casual-man": [{ name: "[0103250820] Emporio Armani", price: 89.90 }],
       "tshirts-dryfit-man": [{ name: "[2703251659] Mizuno", price: 59.90 }],
-      "tshirts-fitness-man": [{ name: "[0703251712] Regata Puma", price: 59.90 }],
       "tshirts-polo-man": [{ name: "[1603250851] Calvin Klein", price: 59.90 }],
-      "tshirts-tank-top-man": [{ name: "[1903251705] Hugo Boss", price: 39.90 }],
+      "tank-top-casual-man": [{ name: "[1903251705] Hugo Boss", price: 39.90 }],
+      "tank-top-dryfit-man": [{ name: "[0703251715] Puma", price: 59.90 }],
       "shorts-sweatshorts-man": [{ name: "[2003250848] Oakley", price: 69.90 }],
       "shorts-basic-man": [{ name: "[2103251150] Nike", price: 28.00 }],
       "shorts-jeans-man": [{ name: "[2603251652] Lacoste", price: 79.90 }],
@@ -332,7 +332,7 @@ describe('Catalog', () => {
         "[2003250848] Oakley",
         "[1903251705] Hugo Boss",
         "[1603250851] Calvin Klein",
-        "[0703251712] Regata Puma",
+        "[0703251715] Puma",
         "[0103250820] Emporio Armani",
         "[1702251140] Tommy Hilfiger",
         "[1202252201] Adidas Campus"

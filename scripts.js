@@ -21,8 +21,8 @@
       'tshirts-casual-man': 'Camisetas Casuais Masculina',
       'tshirts-dryfit-man': 'Camisetas Dry Fit Masculina',
       'tshirts-polo-man': 'Camisetas Polo Masculina',
-      'tshirts-fitness-man': 'Camisetas Fitness Masculina',
-      'tshirts-tank-top-man': 'Camisetas Regata Masculina',
+      'tank-top-casual-man': 'Regatas Casuais Masculina',
+      'tank-top-dryfit-man': 'Regatas Dry Fit Masculina',
       'shorts-sweatshorts-man': 'Bermudas Moletom Masculina',
       'shorts-basic-man': 'Bermudas Básica Masculina',
       'shorts-jeans-man': 'Bermudas Jeans Masculina',
@@ -231,7 +231,8 @@
         if (category === 'all') {
           const categories = [
             'shoes-man', 'slippers-man', 
-            'tshirts-casual-man', 'tshirts-dryfit-man', 'tshirts-fitness-man', 'tshirts-polo-man', 'tshirts-tank-top-man',
+            'tshirts-casual-man', 'tshirts-dryfit-man', 'tshirts-polo-man', 
+            'tank-top-casual-man', 'tank-top-dryfit-man',
             'shorts-sweatshorts-man', 'shorts-basic-man', 'shorts-jeans-man', 'shorts-tactel-man'
           ];
           const responses = await Promise.all(
