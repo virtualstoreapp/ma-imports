@@ -1,0 +1,32 @@
+[
+    {
+        "name": "[0703251717] Mizuno",
+        "description": "Dry-Fit, Cor: Preta",
+        "oldPrice": 0.0,
+        "price": 59.90,
+        "images": [
+            "images/man/tank-top/dryfit/mizuno/0703251717-mizuno.jpeg"
+        ],
+        "size": "G"
+    },
+    {
+        "name": "[0703251712] Puma",
+        "description": "Dry-Fit, Cor: Azul Marinho",
+        "oldPrice": 0.0,
+        "price": 59.90,
+        "images": [
+            "images/man/tank-top/dryfit/puma/0703251712-puma.jpeg"
+        ],
+        "size": "G"
+    },
+    {
+        "name": "[0703251715] Puma",
+        "description": "Dry-Fit, Cor: Cinza",
+        "oldPrice": 0.0,
+        "price": 59.90,
+        "images": [
+            "images/man/tank-top/dryfit/puma/0703251715-puma.jpeg"
+        ],
+        "size": "GG"
+    }
+]
