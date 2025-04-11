@@ -39,8 +39,8 @@ const asserts = async (expectedHeading, expectedCount) => {
 };
 
 const assertAllProducts = async () => {
-  const expectedHeading = "Todos os Produtos";
-  const expectedCount = 112;
+  const expectedHeading = "Novidades";
+  const expectedCount = 131;
   await asserts(expectedHeading, expectedCount);
 };
 
@@ -78,7 +78,7 @@ const selectShoesManSubcategory = async () => {
 //
 const selectShoesMan = async () => {
   const expectedHeading = "Tênis";
-  const expectedCount = 27;
+  const expectedCount = 28;
   await selectShoesManSubcategory();
   await selectMenuOption('shoes-man');
   await asserts(expectedHeading, expectedCount);
@@ -102,7 +102,7 @@ const selectTshirtsCasualMan = async () => {
 
 const selectTshirtsDryFitMan = async () => {
   const expectedHeading = "Camisetas Dry Fit Masculina";
-  const expectedCount = 7;
+  const expectedCount = 20;
   await selectClothingManSubcategory();
   await selectMenuOption('tshirts-dryfit-man');
   await asserts(expectedHeading, expectedCount);
@@ -126,7 +126,7 @@ const selectTankTopCasualMan = async () => {
 
 const selectTankTopDryFitCasualMan = async () => {
   const expectedHeading = "Regatas Dry Fit Masculina";
-  const expectedCount = 3;
+  const expectedCount = 8;
   await selectClothingManSubcategory();
   await selectMenuOption('tank-top-dryfit-man');
   await asserts(expectedHeading, expectedCount);
@@ -317,7 +317,7 @@ describe('Catalog', () => {
 
     it('sorts products in descending order based on date parsed from product names', async () => {
       await waitFor(() => {
-        expect(document.getElementById('category-heading')).toHaveTextContent("Todos os Produtos");
+        expect(document.getElementById('category-heading')).toHaveTextContent("Novidades");
       });
       await waitFor(() => {
         expect(document.querySelectorAll('#product-list .product-item').length).toBeGreaterThan(0);

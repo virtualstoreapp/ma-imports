@@ -80,8 +80,160 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
 
   <!-- Main Content -->
   <main>
-    <h2 id="category-heading">Todos os Produtos</h2>
+    <h2 id="category-heading">Novidades</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/mizuno/1104250040-mizuno.jpeg" alt="[1104250040] Mizuno">
+          <div class="product-details">
+            <h3>[1104250040] Mizuno</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/adidas/1104250039-adidas.jpeg" alt="[1104250039] Adidas">
+          <div class="product-details">
+            <h3>[1104250039] Adidas</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: G1</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/mizuno/1104250038-mizuno.jpeg" alt="[1104250038] Mizuno">
+          <div class="product-details">
+            <h3>[1104250038] Mizuno</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/diesel/1104250037-diesel.jpeg" alt="[1104250037] Diesel">
+          <div class="product-details">
+            <h3>[1104250037] Diesel</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/dryfit/new-balance/1104250036-new-balance.jpeg" alt="[1104250036] New Balance">
+          <div class="product-details">
+            <h3>[1104250036] New Balance</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/oakley/1104250035-oakley.jpeg" alt="[1104250035] Oakley">
+          <div class="product-details">
+            <h3>[1104250035] Oakley</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/dryfit/new-balance/1104250034-new-balance.jpeg" alt="[1104250034] New Balance">
+          <div class="product-details">
+            <h3>[1104250034] New Balance</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/mizuno/1104250033-mizuno.jpeg" alt="[1104250033] Mizuno">
+          <div class="product-details">
+            <h3>[1104250033] Mizuno</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: G2</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/austman/1104250032-austman.jpeg" alt="[1104250032] Austman">
+          <div class="product-details">
+            <h3>[1104250032] Austman</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/nike/1104250031-nike.jpeg" alt="[1104250031] Nike">
+          <div class="product-details">
+            <h3>[1104250031] Nike</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/dryfit/nike/1104250031-nike.jpeg" alt="[1104250031] Nike">
+          <div class="product-details">
+            <h3>[1104250031] Nike</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/dryfit/nike/1104250030-nike.jpeg" alt="[1104250030] Nike">
+          <div class="product-details">
+            <h3>[1104250030] Nike</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/dryfit/mizuno/1104250029-mizuno.jpeg" alt="[1104250029] Mizuno">
+          <div class="product-details">
+            <h3>[1104250029] Mizuno</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/mizuno/1104250028-mizuno.jpeg" alt="[1104250028] Mizuno">
+          <div class="product-details">
+            <h3>[1104250028] Mizuno</h3>
+            <p class="description">Dry Fit Manga longa, Proteção UV</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/mizuno/1104250027-mizuno.jpeg" alt="[1104250027] Mizuno">
+          <div class="product-details">
+            <h3>[1104250027] Mizuno</h3>
+            <p class="description">Dry Fit Manga longa, Proteção UV</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/under-armor/1104250026-under-armor.jpeg" alt="[1104250026] Under Armor">
+          <div class="product-details">
+            <h3>[1104250026] Under Armor</h3>
+            <p class="description">Dry Fit Manga longa, Proteção UV</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/nike/1104250024-nike.jpeg" alt="[1104250024] Nike">
+          <div class="product-details">
+            <h3>[1104250024] Nike</h3>
+            <p class="description">Dry Fit Manga longa, Proteção UV</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/puma/1104250022-puma.jpeg" alt="[1104250022] Puma">
+          <div class="product-details">
+            <h3>[1104250022] Puma</h3>
+            <p class="description">Dry Fit Manga longa, Proteção UV</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/mizuno/1104250021-mizuno.jpeg" alt="[1104250021] Mizuno 14">
+          <div class="product-details">
+            <h3>[1104250021] Mizuno 14</h3>
+            
+            <span class="size">Tamanho: 38</span>
+            <span class="price">R$&nbsp;479,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/shorts/tactel/nike/0304251810-nike.jpeg" alt="[0304251810] Nike">
           <div class="product-details">
             <h3>[0304251810] Nike</h3>
@@ -209,7 +361,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;69,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/dryfit/nike/2703251702-nike.jpeg" alt="[2703251702] Nike">
           <div class="product-details">
             <h3>[2703251702] Nike</h3>
@@ -642,9 +794,9 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/dryfit/nike/0703251709-nike.jpeg" alt="[0703251709] Camiseta Nike">
+          <img src="images/man/tshirts/dryfit/nike/0703251709-nike.jpeg" alt="[0703251709] Nike">
           <div class="product-details">
-            <h3>[0703251709] Camiseta Nike</h3>
+            <h3>[0703251709] Nike</h3>
             <p class="description">Dry-Fit, Cor: Preta</p>
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;59,90</span>
@@ -1007,7 +1159,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.2.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1123,7 +1275,7 @@ exports[`Catalog Desktop View renders final subcategory "Bermudas Básica Mascul
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.2.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1295,7 +1447,7 @@ exports[`Catalog Desktop View renders final subcategory "Bermudas Jeans Masculin
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.2.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1467,7 +1619,7 @@ exports[`Catalog Desktop View renders final subcategory "Bermudas Moletom Mascul
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.2.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1687,7 +1839,7 @@ exports[`Catalog Desktop View renders final subcategory "Bermudas Tactel Masculi
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.2.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2083,7 +2235,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.2.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2196,6 +2348,54 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Dry Fit Mascu
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/adidas/1104250039-adidas.jpeg" alt="[1104250039] Adidas">
+          <div class="product-details">
+            <h3>[1104250039] Adidas</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: G1</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/austman/1104250032-austman.jpeg" alt="[1104250032] Austman">
+          <div class="product-details">
+            <h3>[1104250032] Austman</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/diesel/1104250037-diesel.jpeg" alt="[1104250037] Diesel">
+          <div class="product-details">
+            <h3>[1104250037] Diesel</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/mizuno/1104250038-mizuno.jpeg" alt="[1104250038] Mizuno">
+          <div class="product-details">
+            <h3>[1104250038] Mizuno</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/mizuno/1104250027-mizuno.jpeg" alt="[1104250027] Mizuno">
+          <div class="product-details">
+            <h3>[1104250027] Mizuno</h3>
+            <p class="description">Dry Fit Manga longa, Proteção UV</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/mizuno/1104250040-mizuno.jpeg" alt="[1104250040] Mizuno">
+          <div class="product-details">
+            <h3>[1104250040] Mizuno</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/dryfit/mizuno/2703251659-mizuno.jpeg" alt="[2703251659] Mizuno">
           <div class="product-details">
             <h3>[2703251659] Mizuno</h3>
@@ -2204,9 +2404,33 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Dry Fit Mascu
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/dryfit/nike/0703251709-nike.jpeg" alt="[0703251709] Camiseta Nike">
+          <img src="images/man/tshirts/dryfit/mizuno/1104250033-mizuno.jpeg" alt="[1104250033] Mizuno">
           <div class="product-details">
-            <h3>[0703251709] Camiseta Nike</h3>
+            <h3>[1104250033] Mizuno</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: G2</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/mizuno/1104250028-mizuno.jpeg" alt="[1104250028] Mizuno">
+          <div class="product-details">
+            <h3>[1104250028] Mizuno</h3>
+            <p class="description">Dry Fit Manga longa, Proteção UV</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/nike/1104250031-nike.jpeg" alt="[1104250031] Nike">
+          <div class="product-details">
+            <h3>[1104250031] Nike</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/nike/0703251709-nike.jpeg" alt="[0703251709] Nike">
+          <div class="product-details">
+            <h3>[0703251709] Nike</h3>
             <p class="description">Dry-Fit, Cor: Preta</p>
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;59,90</span>
@@ -2227,6 +2451,14 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Dry Fit Mascu
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;69,90</span>
           </div>
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/nike/1104250024-nike.jpeg" alt="[1104250024] Nike">
+          <div class="product-details">
+            <h3>[1104250024] Nike</h3>
+            <p class="description">Dry Fit Manga longa, Proteção UV</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/dryfit/nike/2703251656-nike.jpeg" alt="[2703251656] Nike">
           <div class="product-details">
@@ -2243,11 +2475,35 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Dry Fit Mascu
             <span class="size">Tamanho: P</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/oakley/1104250035-oakley.jpeg" alt="[1104250035] Oakley">
+          <div class="product-details">
+            <h3>[1104250035] Oakley</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/puma/1104250022-puma.jpeg" alt="[1104250022] Puma">
+          <div class="product-details">
+            <h3>[1104250022] Puma</h3>
+            <p class="description">Dry Fit Manga longa, Proteção UV</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/under-armor/1104250026-under-armor.jpeg" alt="[1104250026] Under Armor">
+          <div class="product-details">
+            <h3>[1104250026] Under Armor</h3>
+            <p class="description">Dry Fit Manga longa, Proteção UV</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
         </li></ul>
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.2.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2387,7 +2643,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Polo Masculin
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.2.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2503,7 +2759,7 @@ exports[`Catalog Desktop View renders final subcategory "Chinelos" correctly on 
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.2.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2635,7 +2891,7 @@ exports[`Catalog Desktop View renders final subcategory "Regatas Casuais Masculi
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.2.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2740,11 +2996,51 @@ exports[`Catalog Desktop View renders final subcategory "Regatas Dry Fit Masculi
   <main>
     <h2 id="category-heading">Regatas Dry Fit Masculina</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/dryfit/mizuno/1104250029-mizuno.jpeg" alt="[1104250029] Mizuno">
+          <div class="product-details">
+            <h3>[1104250029] Mizuno</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/tank-top/dryfit/mizuno/0703251717-mizuno.jpeg" alt="[0703251717] Mizuno">
           <div class="product-details">
             <h3>[0703251717] Mizuno</h3>
             <p class="description">Dry-Fit, Cor: Preta</p>
             <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/dryfit/new-balance/1104250034-new-balance.jpeg" alt="[1104250034] New Balance">
+          <div class="product-details">
+            <h3>[1104250034] New Balance</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/dryfit/new-balance/1104250036-new-balance.jpeg" alt="[1104250036] New Balance">
+          <div class="product-details">
+            <h3>[1104250036] New Balance</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/dryfit/nike/1104250030-nike.jpeg" alt="[1104250030] Nike">
+          <div class="product-details">
+            <h3>[1104250030] Nike</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/dryfit/nike/1104250031-nike.jpeg" alt="[1104250031] Nike">
+          <div class="product-details">
+            <h3>[1104250031] Nike</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
@@ -2767,7 +3063,7 @@ exports[`Catalog Desktop View renders final subcategory "Regatas Dry Fit Masculi
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.2.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2941,6 +3237,14 @@ exports[`Catalog Desktop View renders final subcategory "Tênis" correctly on de
             <span class="size">Tamanho: 41, 42</span>
             <span class="old-price">R$&nbsp;269,00</span>
              <span class="new-price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/mizuno/1104250021-mizuno.jpeg" alt="[1104250021] Mizuno 14">
+          <div class="product-details">
+            <h3>[1104250021] Mizuno 14</h3>
+            
+            <span class="size">Tamanho: 38</span>
+            <span class="price">R$&nbsp;479,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251703-nike-air-force.jpeg" alt="[1202251703] Nike Air Force">
@@ -3117,7 +3421,7 @@ exports[`Catalog Desktop View renders final subcategory "Tênis" correctly on de
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.2.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3220,8 +3524,160 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
 
   <!-- Main Content -->
   <main>
-    <h2 id="category-heading">Todos os Produtos</h2>
+    <h2 id="category-heading">Novidades</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/mizuno/1104250040-mizuno.jpeg" alt="[1104250040] Mizuno">
+          <div class="product-details">
+            <h3>[1104250040] Mizuno</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/adidas/1104250039-adidas.jpeg" alt="[1104250039] Adidas">
+          <div class="product-details">
+            <h3>[1104250039] Adidas</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: G1</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/mizuno/1104250038-mizuno.jpeg" alt="[1104250038] Mizuno">
+          <div class="product-details">
+            <h3>[1104250038] Mizuno</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/diesel/1104250037-diesel.jpeg" alt="[1104250037] Diesel">
+          <div class="product-details">
+            <h3>[1104250037] Diesel</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/dryfit/new-balance/1104250036-new-balance.jpeg" alt="[1104250036] New Balance">
+          <div class="product-details">
+            <h3>[1104250036] New Balance</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/oakley/1104250035-oakley.jpeg" alt="[1104250035] Oakley">
+          <div class="product-details">
+            <h3>[1104250035] Oakley</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/dryfit/new-balance/1104250034-new-balance.jpeg" alt="[1104250034] New Balance">
+          <div class="product-details">
+            <h3>[1104250034] New Balance</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/mizuno/1104250033-mizuno.jpeg" alt="[1104250033] Mizuno">
+          <div class="product-details">
+            <h3>[1104250033] Mizuno</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: G2</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/austman/1104250032-austman.jpeg" alt="[1104250032] Austman">
+          <div class="product-details">
+            <h3>[1104250032] Austman</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/nike/1104250031-nike.jpeg" alt="[1104250031] Nike">
+          <div class="product-details">
+            <h3>[1104250031] Nike</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/dryfit/nike/1104250031-nike.jpeg" alt="[1104250031] Nike">
+          <div class="product-details">
+            <h3>[1104250031] Nike</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/dryfit/nike/1104250030-nike.jpeg" alt="[1104250030] Nike">
+          <div class="product-details">
+            <h3>[1104250030] Nike</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/dryfit/mizuno/1104250029-mizuno.jpeg" alt="[1104250029] Mizuno">
+          <div class="product-details">
+            <h3>[1104250029] Mizuno</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/mizuno/1104250028-mizuno.jpeg" alt="[1104250028] Mizuno">
+          <div class="product-details">
+            <h3>[1104250028] Mizuno</h3>
+            <p class="description">Dry Fit Manga longa, Proteção UV</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/mizuno/1104250027-mizuno.jpeg" alt="[1104250027] Mizuno">
+          <div class="product-details">
+            <h3>[1104250027] Mizuno</h3>
+            <p class="description">Dry Fit Manga longa, Proteção UV</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/under-armor/1104250026-under-armor.jpeg" alt="[1104250026] Under Armor">
+          <div class="product-details">
+            <h3>[1104250026] Under Armor</h3>
+            <p class="description">Dry Fit Manga longa, Proteção UV</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/nike/1104250024-nike.jpeg" alt="[1104250024] Nike">
+          <div class="product-details">
+            <h3>[1104250024] Nike</h3>
+            <p class="description">Dry Fit Manga longa, Proteção UV</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/puma/1104250022-puma.jpeg" alt="[1104250022] Puma">
+          <div class="product-details">
+            <h3>[1104250022] Puma</h3>
+            <p class="description">Dry Fit Manga longa, Proteção UV</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/mizuno/1104250021-mizuno.jpeg" alt="[1104250021] Mizuno 14">
+          <div class="product-details">
+            <h3>[1104250021] Mizuno 14</h3>
+            
+            <span class="size">Tamanho: 38</span>
+            <span class="price">R$&nbsp;479,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/shorts/tactel/nike/0304251810-nike.jpeg" alt="[0304251810] Nike">
           <div class="product-details">
             <h3>[0304251810] Nike</h3>
@@ -3349,7 +3805,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;69,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/dryfit/nike/2703251702-nike.jpeg" alt="[2703251702] Nike">
           <div class="product-details">
             <h3>[2703251702] Nike</h3>
@@ -3782,9 +4238,9 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/dryfit/nike/0703251709-nike.jpeg" alt="[0703251709] Camiseta Nike">
+          <img src="images/man/tshirts/dryfit/nike/0703251709-nike.jpeg" alt="[0703251709] Nike">
           <div class="product-details">
-            <h3>[0703251709] Camiseta Nike</h3>
+            <h3>[0703251709] Nike</h3>
             <p class="description">Dry-Fit, Cor: Preta</p>
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;59,90</span>
@@ -4147,7 +4603,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.2.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4263,7 +4719,7 @@ exports[`Catalog Mobile View renders final subcategory "Bermudas Básica Masculi
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.2.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4435,7 +4891,7 @@ exports[`Catalog Mobile View renders final subcategory "Bermudas Jeans Masculina
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.2.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4607,7 +5063,7 @@ exports[`Catalog Mobile View renders final subcategory "Bermudas Moletom Masculi
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.2.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4827,7 +5283,7 @@ exports[`Catalog Mobile View renders final subcategory "Bermudas Tactel Masculin
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.2.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5223,7 +5679,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.2.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5336,6 +5792,54 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Dry Fit Mascul
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/adidas/1104250039-adidas.jpeg" alt="[1104250039] Adidas">
+          <div class="product-details">
+            <h3>[1104250039] Adidas</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: G1</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/austman/1104250032-austman.jpeg" alt="[1104250032] Austman">
+          <div class="product-details">
+            <h3>[1104250032] Austman</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/diesel/1104250037-diesel.jpeg" alt="[1104250037] Diesel">
+          <div class="product-details">
+            <h3>[1104250037] Diesel</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/mizuno/1104250038-mizuno.jpeg" alt="[1104250038] Mizuno">
+          <div class="product-details">
+            <h3>[1104250038] Mizuno</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/mizuno/1104250027-mizuno.jpeg" alt="[1104250027] Mizuno">
+          <div class="product-details">
+            <h3>[1104250027] Mizuno</h3>
+            <p class="description">Dry Fit Manga longa, Proteção UV</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/mizuno/1104250040-mizuno.jpeg" alt="[1104250040] Mizuno">
+          <div class="product-details">
+            <h3>[1104250040] Mizuno</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/dryfit/mizuno/2703251659-mizuno.jpeg" alt="[2703251659] Mizuno">
           <div class="product-details">
             <h3>[2703251659] Mizuno</h3>
@@ -5344,9 +5848,33 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Dry Fit Mascul
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/dryfit/nike/0703251709-nike.jpeg" alt="[0703251709] Camiseta Nike">
+          <img src="images/man/tshirts/dryfit/mizuno/1104250033-mizuno.jpeg" alt="[1104250033] Mizuno">
           <div class="product-details">
-            <h3>[0703251709] Camiseta Nike</h3>
+            <h3>[1104250033] Mizuno</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: G2</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/mizuno/1104250028-mizuno.jpeg" alt="[1104250028] Mizuno">
+          <div class="product-details">
+            <h3>[1104250028] Mizuno</h3>
+            <p class="description">Dry Fit Manga longa, Proteção UV</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/nike/1104250031-nike.jpeg" alt="[1104250031] Nike">
+          <div class="product-details">
+            <h3>[1104250031] Nike</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/nike/0703251709-nike.jpeg" alt="[0703251709] Nike">
+          <div class="product-details">
+            <h3>[0703251709] Nike</h3>
             <p class="description">Dry-Fit, Cor: Preta</p>
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;59,90</span>
@@ -5367,6 +5895,14 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Dry Fit Mascul
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;69,90</span>
           </div>
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/nike/1104250024-nike.jpeg" alt="[1104250024] Nike">
+          <div class="product-details">
+            <h3>[1104250024] Nike</h3>
+            <p class="description">Dry Fit Manga longa, Proteção UV</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/dryfit/nike/2703251656-nike.jpeg" alt="[2703251656] Nike">
           <div class="product-details">
@@ -5383,11 +5919,35 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Dry Fit Mascul
             <span class="size">Tamanho: P</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/oakley/1104250035-oakley.jpeg" alt="[1104250035] Oakley">
+          <div class="product-details">
+            <h3>[1104250035] Oakley</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/puma/1104250022-puma.jpeg" alt="[1104250022] Puma">
+          <div class="product-details">
+            <h3>[1104250022] Puma</h3>
+            <p class="description">Dry Fit Manga longa, Proteção UV</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/under-armor/1104250026-under-armor.jpeg" alt="[1104250026] Under Armor">
+          <div class="product-details">
+            <h3>[1104250026] Under Armor</h3>
+            <p class="description">Dry Fit Manga longa, Proteção UV</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
         </li></ul>
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.2.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5527,7 +6087,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Polo Masculina
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.2.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5643,7 +6203,7 @@ exports[`Catalog Mobile View renders final subcategory "Chinelos" correctly on m
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.2.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5775,7 +6335,7 @@ exports[`Catalog Mobile View renders final subcategory "Regatas Casuais Masculin
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.2.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5880,11 +6440,51 @@ exports[`Catalog Mobile View renders final subcategory "Regatas Dry Fit Masculin
   <main>
     <h2 id="category-heading">Regatas Dry Fit Masculina</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/dryfit/mizuno/1104250029-mizuno.jpeg" alt="[1104250029] Mizuno">
+          <div class="product-details">
+            <h3>[1104250029] Mizuno</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/tank-top/dryfit/mizuno/0703251717-mizuno.jpeg" alt="[0703251717] Mizuno">
           <div class="product-details">
             <h3>[0703251717] Mizuno</h3>
             <p class="description">Dry-Fit, Cor: Preta</p>
             <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/dryfit/new-balance/1104250034-new-balance.jpeg" alt="[1104250034] New Balance">
+          <div class="product-details">
+            <h3>[1104250034] New Balance</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/dryfit/new-balance/1104250036-new-balance.jpeg" alt="[1104250036] New Balance">
+          <div class="product-details">
+            <h3>[1104250036] New Balance</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/dryfit/nike/1104250030-nike.jpeg" alt="[1104250030] Nike">
+          <div class="product-details">
+            <h3>[1104250030] Nike</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/dryfit/nike/1104250031-nike.jpeg" alt="[1104250031] Nike">
+          <div class="product-details">
+            <h3>[1104250031] Nike</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
@@ -5907,7 +6507,7 @@ exports[`Catalog Mobile View renders final subcategory "Regatas Dry Fit Masculin
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.2.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -6083,6 +6683,14 @@ exports[`Catalog Mobile View renders final subcategory "Tênis" correctly on mob
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/mizuno/1104250021-mizuno.jpeg" alt="[1104250021] Mizuno 14">
+          <div class="product-details">
+            <h3>[1104250021] Mizuno 14</h3>
+            
+            <span class="size">Tamanho: 38</span>
+            <span class="price">R$&nbsp;479,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251703-nike-air-force.jpeg" alt="[1202251703] Nike Air Force">
           <div class="product-details">
             <h3>[1202251703] Nike Air Force</h3>
@@ -6257,7 +6865,7 @@ exports[`Catalog Mobile View renders final subcategory "Tênis" correctly on mob
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.2.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -6433,6 +7041,14 @@ exports[`Catalog Modal Functionality opens modal on product click and logs GA ev
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/mizuno/1104250021-mizuno.jpeg" alt="[1104250021] Mizuno 14">
+          <div class="product-details">
+            <h3>[1104250021] Mizuno 14</h3>
+            
+            <span class="size">Tamanho: 38</span>
+            <span class="price">R$&nbsp;479,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251703-nike-air-force.jpeg" alt="[1202251703] Nike Air Force">
           <div class="product-details">
             <h3>[1202251703] Nike Air Force</h3>
@@ -6607,7 +7223,7 @@ exports[`Catalog Modal Functionality opens modal on product click and logs GA ev
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.2.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -6783,6 +7399,14 @@ exports[`Catalog Modal Functionality redirects to WhatsApp with correct message 
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/mizuno/1104250021-mizuno.jpeg" alt="[1104250021] Mizuno 14">
+          <div class="product-details">
+            <h3>[1104250021] Mizuno 14</h3>
+            
+            <span class="size">Tamanho: 38</span>
+            <span class="price">R$&nbsp;479,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251703-nike-air-force.jpeg" alt="[1202251703] Nike Air Force">
           <div class="product-details">
             <h3>[1202251703] Nike Air Force</h3>
@@ -6957,7 +7581,7 @@ exports[`Catalog Modal Functionality redirects to WhatsApp with correct message 
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.1.112</p>
+    <p>Versão: 4.0.0 - 0.2.131</p>
   </footer>
 
   <script src="scripts.js"></script>

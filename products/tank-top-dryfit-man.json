@@ -1,5 +1,15 @@
 [
     {
+        "name": "[1104250029] Mizuno",
+        "description": "Dry-Fit",
+        "oldPrice": 0.0,
+        "price": 59.90,
+        "images": [
+            "images/man/tank-top/dryfit/mizuno/1104250029-mizuno.jpeg"
+        ],
+        "size": "P"
+    },
+    {
         "name": "[0703251717] Mizuno",
         "description": "Dry-Fit, Cor: Preta",
         "oldPrice": 0.0,
@@ -8,6 +18,46 @@
             "images/man/tank-top/dryfit/mizuno/0703251717-mizuno.jpeg"
         ],
         "size": "G"
+    },
+    {
+        "name": "[1104250034] New Balance",
+        "description": "Dry-Fit",
+        "oldPrice": 0.0,
+        "price": 59.90,
+        "images": [
+            "images/man/tank-top/dryfit/new-balance/1104250034-new-balance.jpeg"
+        ],
+        "size": "P"
+    },
+    {
+        "name": "[1104250036] New Balance",
+        "description": "Dry-Fit",
+        "oldPrice": 0.0,
+        "price": 59.90,
+        "images": [
+            "images/man/tank-top/dryfit/new-balance/1104250036-new-balance.jpeg"
+        ],
+        "size": "GG"
+    },
+    {
+        "name": "[1104250030] Nike",
+        "description": "Dry-Fit",
+        "oldPrice": 0.0,
+        "price": 59.90,
+        "images": [
+            "images/man/tank-top/dryfit/nike/1104250030-nike.jpeg"
+        ],
+        "size": "M"
+    },
+    {
+        "name": "[1104250031] Nike",
+        "description": "Dry-Fit",
+        "oldPrice": 0.0,
+        "price": 59.90,
+        "images": [
+            "images/man/tank-top/dryfit/nike/1104250031-nike.jpeg"
+        ],
+        "size": "M"
     },
     {
         "name": "[0703251712] Puma",
