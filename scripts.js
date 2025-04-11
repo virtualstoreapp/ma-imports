@@ -15,7 +15,7 @@
 
   const updateCategoryHeading = (category, headingEl) => {
     const headings = {
-      all: 'Todos os Produtos',
+      all: 'Novidades',
       'shoes-man': 'Tênis',
       'slippers-man': 'Chinelos',
       'tshirts-casual-man': 'Camisetas Casuais Masculina',
