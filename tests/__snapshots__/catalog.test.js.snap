@@ -1044,7 +1044,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
           <div class="product-details">
             <h3>[1202251736] Asics</h3>
             
-            <span class="size">Tamanho: 41, 42</span>
+            <span class="size">Tamanho: 41</span>
             <span class="old-price">R$&nbsp;269,00</span>
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
@@ -3234,7 +3234,7 @@ exports[`Catalog Desktop View renders final subcategory "Tênis" correctly on de
           <div class="product-details">
             <h3>[1202251736] Asics</h3>
             
-            <span class="size">Tamanho: 41, 42</span>
+            <span class="size">Tamanho: 41</span>
             <span class="old-price">R$&nbsp;269,00</span>
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
@@ -4488,7 +4488,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
           <div class="product-details">
             <h3>[1202251736] Asics</h3>
             
-            <span class="size">Tamanho: 41, 42</span>
+            <span class="size">Tamanho: 41</span>
             <span class="old-price">R$&nbsp;269,00</span>
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
@@ -6678,7 +6678,7 @@ exports[`Catalog Mobile View renders final subcategory "Tênis" correctly on mob
           <div class="product-details">
             <h3>[1202251736] Asics</h3>
             
-            <span class="size">Tamanho: 41, 42</span>
+            <span class="size">Tamanho: 41</span>
             <span class="old-price">R$&nbsp;269,00</span>
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
@@ -7036,7 +7036,7 @@ exports[`Catalog Modal Functionality opens modal on product click and logs GA ev
           <div class="product-details">
             <h3>[1202251736] Asics</h3>
             
-            <span class="size">Tamanho: 41, 42</span>
+            <span class="size">Tamanho: 41</span>
             <span class="old-price">R$&nbsp;269,00</span>
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
@@ -7394,7 +7394,7 @@ exports[`Catalog Modal Functionality redirects to WhatsApp with correct message 
           <div class="product-details">
             <h3>[1202251736] Asics</h3>
             
-            <span class="size">Tamanho: 41, 42</span>
+            <span class="size">Tamanho: 41</span>
             <span class="old-price">R$&nbsp;269,00</span>
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
