@@ -217,7 +217,8 @@
         "images": [
             "images/man/tshirts/casual/nike/0803251049-nike.jpeg"
         ],
-        "size": "P"
+        "size": "P",
+        "soldOut": true
     },
     {
         "name": "[2802251120] Nike",
@@ -238,7 +239,8 @@
         "images": [
             "images/man/tshirts/casual/nike/1503250629-nike.jpeg"
         ],
-        "size": "G"
+        "size": "G",
+        "soldOut": true
     },
     {
         "name": "[1903251723] Quiksilver",
