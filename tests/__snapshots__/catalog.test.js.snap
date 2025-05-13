@@ -1030,7 +1030,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="old-price">R$&nbsp;219,00</span>
              <span class="new-price">R$&nbsp;209,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251737-nike-dunk-low-pro.jpeg" alt="[1202251737] Nike Dunk Low Pro">
           <div class="product-details">
             <h3>[1202251737] Nike Dunk Low Pro</h3>
@@ -1119,7 +1119,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="size">Tamanho: 38</span>
             <span class="price">R$&nbsp;89,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251710-nike-air-force.jpeg" alt="[1202251710] Nike Air Force">
           <div class="product-details">
             <h3>[1202251710] Nike Air Force</h3>
@@ -1159,7 +1159,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.4.131</p>
+    <p>Versão: 4.0.0 - 0.6.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1275,7 +1275,7 @@ exports[`Catalog Desktop View renders final subcategory "Bermudas Básica Mascul
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.4.131</p>
+    <p>Versão: 4.0.0 - 0.6.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1447,7 +1447,7 @@ exports[`Catalog Desktop View renders final subcategory "Bermudas Jeans Masculin
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.4.131</p>
+    <p>Versão: 4.0.0 - 0.6.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1619,7 +1619,7 @@ exports[`Catalog Desktop View renders final subcategory "Bermudas Moletom Mascul
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.4.131</p>
+    <p>Versão: 4.0.0 - 0.6.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1839,7 +1839,7 @@ exports[`Catalog Desktop View renders final subcategory "Bermudas Tactel Masculi
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.4.131</p>
+    <p>Versão: 4.0.0 - 0.6.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2235,7 +2235,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.4.131</p>
+    <p>Versão: 4.0.0 - 0.6.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2503,7 +2503,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Dry Fit Mascu
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.4.131</p>
+    <p>Versão: 4.0.0 - 0.6.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2643,7 +2643,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Polo Masculin
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.4.131</p>
+    <p>Versão: 4.0.0 - 0.6.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2759,7 +2759,7 @@ exports[`Catalog Desktop View renders final subcategory "Chinelos" correctly on 
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.4.131</p>
+    <p>Versão: 4.0.0 - 0.6.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2891,7 +2891,7 @@ exports[`Catalog Desktop View renders final subcategory "Regatas Casuais Masculi
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.4.131</p>
+    <p>Versão: 4.0.0 - 0.6.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3063,7 +3063,7 @@ exports[`Catalog Desktop View renders final subcategory "Regatas Dry Fit Masculi
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.4.131</p>
+    <p>Versão: 4.0.0 - 0.6.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3229,7 +3229,7 @@ exports[`Catalog Desktop View renders final subcategory "Tênis" correctly on de
             <span class="size">Tamanho: 38</span>
             <span class="price">R$&nbsp;89,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/asics/1202251736-asics.jpeg" alt="[1202251736] Asics">
           <div class="product-details">
             <h3>[1202251736] Asics</h3>
@@ -3273,7 +3273,7 @@ exports[`Catalog Desktop View renders final subcategory "Tênis" correctly on de
             <span class="old-price">R$&nbsp;219,00</span>
              <span class="new-price">R$&nbsp;209,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251747-nike-air-force.jpeg" alt="[1202251747] Nike Air Force">
           <div class="product-details">
             <h3>[1202251747] Nike Air Force</h3>
@@ -3421,7 +3421,7 @@ exports[`Catalog Desktop View renders final subcategory "Tênis" correctly on de
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.4.131</p>
+    <p>Versão: 4.0.0 - 0.6.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4474,7 +4474,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="old-price">R$&nbsp;219,00</span>
              <span class="new-price">R$&nbsp;209,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251737-nike-dunk-low-pro.jpeg" alt="[1202251737] Nike Dunk Low Pro">
           <div class="product-details">
             <h3>[1202251737] Nike Dunk Low Pro</h3>
@@ -4563,7 +4563,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="size">Tamanho: 38</span>
             <span class="price">R$&nbsp;89,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251710-nike-air-force.jpeg" alt="[1202251710] Nike Air Force">
           <div class="product-details">
             <h3>[1202251710] Nike Air Force</h3>
@@ -4603,7 +4603,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.4.131</p>
+    <p>Versão: 4.0.0 - 0.6.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4719,7 +4719,7 @@ exports[`Catalog Mobile View renders final subcategory "Bermudas Básica Masculi
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.4.131</p>
+    <p>Versão: 4.0.0 - 0.6.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4891,7 +4891,7 @@ exports[`Catalog Mobile View renders final subcategory "Bermudas Jeans Masculina
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.4.131</p>
+    <p>Versão: 4.0.0 - 0.6.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5063,7 +5063,7 @@ exports[`Catalog Mobile View renders final subcategory "Bermudas Moletom Masculi
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.4.131</p>
+    <p>Versão: 4.0.0 - 0.6.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5283,7 +5283,7 @@ exports[`Catalog Mobile View renders final subcategory "Bermudas Tactel Masculin
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.4.131</p>
+    <p>Versão: 4.0.0 - 0.6.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5679,7 +5679,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.4.131</p>
+    <p>Versão: 4.0.0 - 0.6.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5947,7 +5947,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Dry Fit Mascul
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.4.131</p>
+    <p>Versão: 4.0.0 - 0.6.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -6087,7 +6087,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Polo Masculina
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.4.131</p>
+    <p>Versão: 4.0.0 - 0.6.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -6203,7 +6203,7 @@ exports[`Catalog Mobile View renders final subcategory "Chinelos" correctly on m
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.4.131</p>
+    <p>Versão: 4.0.0 - 0.6.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -6335,7 +6335,7 @@ exports[`Catalog Mobile View renders final subcategory "Regatas Casuais Masculin
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.4.131</p>
+    <p>Versão: 4.0.0 - 0.6.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -6507,7 +6507,7 @@ exports[`Catalog Mobile View renders final subcategory "Regatas Dry Fit Masculin
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.4.131</p>
+    <p>Versão: 4.0.0 - 0.6.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -6673,7 +6673,7 @@ exports[`Catalog Mobile View renders final subcategory "Tênis" correctly on mob
             <span class="size">Tamanho: 38</span>
             <span class="price">R$&nbsp;89,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/asics/1202251736-asics.jpeg" alt="[1202251736] Asics">
           <div class="product-details">
             <h3>[1202251736] Asics</h3>
@@ -6717,7 +6717,7 @@ exports[`Catalog Mobile View renders final subcategory "Tênis" correctly on mob
             <span class="old-price">R$&nbsp;219,00</span>
              <span class="new-price">R$&nbsp;209,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251747-nike-air-force.jpeg" alt="[1202251747] Nike Air Force">
           <div class="product-details">
             <h3>[1202251747] Nike Air Force</h3>
@@ -6865,7 +6865,7 @@ exports[`Catalog Mobile View renders final subcategory "Tênis" correctly on mob
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.4.131</p>
+    <p>Versão: 4.0.0 - 0.6.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -7031,7 +7031,7 @@ exports[`Catalog Modal Functionality opens modal on product click and logs GA ev
             <span class="size">Tamanho: 38</span>
             <span class="price">R$&nbsp;89,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/asics/1202251736-asics.jpeg" alt="[1202251736] Asics">
           <div class="product-details">
             <h3>[1202251736] Asics</h3>
@@ -7075,7 +7075,7 @@ exports[`Catalog Modal Functionality opens modal on product click and logs GA ev
             <span class="old-price">R$&nbsp;219,00</span>
              <span class="new-price">R$&nbsp;209,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251747-nike-air-force.jpeg" alt="[1202251747] Nike Air Force">
           <div class="product-details">
             <h3>[1202251747] Nike Air Force</h3>
@@ -7223,7 +7223,7 @@ exports[`Catalog Modal Functionality opens modal on product click and logs GA ev
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.4.131</p>
+    <p>Versão: 4.0.0 - 0.6.131</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -7389,7 +7389,7 @@ exports[`Catalog Modal Functionality redirects to WhatsApp with correct message 
             <span class="size">Tamanho: 38</span>
             <span class="price">R$&nbsp;89,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/asics/1202251736-asics.jpeg" alt="[1202251736] Asics">
           <div class="product-details">
             <h3>[1202251736] Asics</h3>
@@ -7433,7 +7433,7 @@ exports[`Catalog Modal Functionality redirects to WhatsApp with correct message 
             <span class="old-price">R$&nbsp;219,00</span>
              <span class="new-price">R$&nbsp;209,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251747-nike-air-force.jpeg" alt="[1202251747] Nike Air Force">
           <div class="product-details">
             <h3>[1202251747] Nike Air Force</h3>
@@ -7581,7 +7581,7 @@ exports[`Catalog Modal Functionality redirects to WhatsApp with correct message 
   </main>
 
   <footer>
-    <p>Versão: 4.0.0 - 0.4.131</p>
+    <p>Versão: 4.0.0 - 0.6.131</p>
   </footer>
 
   <script src="scripts.js"></script>

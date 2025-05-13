@@ -2,6 +2,6 @@
 
 exports[`Footer CSS and Markup renders footer markup as expected 1`] = `
 "<footer>
-    <p>Versão: 4.0.0 - 0.4.131</p>
+    <p>Versão: 4.0.0 - 0.6.131</p>
   </footer>"
 `;

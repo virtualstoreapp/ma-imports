@@ -46,7 +46,8 @@
         "oldPrice": 0.0,
         "price": 89.0,
         "image": "images/man/shoes/asics/1202251714-asics.jpeg",
-        "size": "38"
+        "size": "38",
+        "soldOut": true
     },
     {
         "name": "[1202251736] Asics",
@@ -81,7 +82,8 @@
         "oldPrice": 219.0,
         "price": 209.0,
         "image": "images/man/shoes/nike/1202251739-nike-air-force.jpeg",
-        "size": "42"
+        "size": "42",
+        "soldOut": true
     },
     {
         "name": "[1202251747] Nike Air Force",
