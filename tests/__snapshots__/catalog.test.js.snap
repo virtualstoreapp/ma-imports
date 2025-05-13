@@ -1030,7 +1030,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="old-price">R$&nbsp;219,00</span>
              <span class="new-price">R$&nbsp;209,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251737-nike-dunk-low-pro.jpeg" alt="[1202251737] Nike Dunk Low Pro">
           <div class="product-details">
             <h3>[1202251737] Nike Dunk Low Pro</h3>
@@ -1119,7 +1119,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="size">Tamanho: 38</span>
             <span class="price">R$&nbsp;89,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251710-nike-air-force.jpeg" alt="[1202251710] Nike Air Force">
           <div class="product-details">
             <h3>[1202251710] Nike Air Force</h3>
@@ -3229,7 +3229,7 @@ exports[`Catalog Desktop View renders final subcategory "Tênis" correctly on de
             <span class="size">Tamanho: 38</span>
             <span class="price">R$&nbsp;89,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/asics/1202251736-asics.jpeg" alt="[1202251736] Asics">
           <div class="product-details">
             <h3>[1202251736] Asics</h3>
@@ -3273,7 +3273,7 @@ exports[`Catalog Desktop View renders final subcategory "Tênis" correctly on de
             <span class="old-price">R$&nbsp;219,00</span>
              <span class="new-price">R$&nbsp;209,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251747-nike-air-force.jpeg" alt="[1202251747] Nike Air Force">
           <div class="product-details">
             <h3>[1202251747] Nike Air Force</h3>
@@ -4474,7 +4474,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="old-price">R$&nbsp;219,00</span>
              <span class="new-price">R$&nbsp;209,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251737-nike-dunk-low-pro.jpeg" alt="[1202251737] Nike Dunk Low Pro">
           <div class="product-details">
             <h3>[1202251737] Nike Dunk Low Pro</h3>
@@ -4563,7 +4563,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="size">Tamanho: 38</span>
             <span class="price">R$&nbsp;89,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251710-nike-air-force.jpeg" alt="[1202251710] Nike Air Force">
           <div class="product-details">
             <h3>[1202251710] Nike Air Force</h3>
@@ -6673,7 +6673,7 @@ exports[`Catalog Mobile View renders final subcategory "Tênis" correctly on mob
             <span class="size">Tamanho: 38</span>
             <span class="price">R$&nbsp;89,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/asics/1202251736-asics.jpeg" alt="[1202251736] Asics">
           <div class="product-details">
             <h3>[1202251736] Asics</h3>
@@ -6717,7 +6717,7 @@ exports[`Catalog Mobile View renders final subcategory "Tênis" correctly on mob
             <span class="old-price">R$&nbsp;219,00</span>
              <span class="new-price">R$&nbsp;209,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251747-nike-air-force.jpeg" alt="[1202251747] Nike Air Force">
           <div class="product-details">
             <h3>[1202251747] Nike Air Force</h3>
@@ -7031,7 +7031,7 @@ exports[`Catalog Modal Functionality opens modal on product click and logs GA ev
             <span class="size">Tamanho: 38</span>
             <span class="price">R$&nbsp;89,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/asics/1202251736-asics.jpeg" alt="[1202251736] Asics">
           <div class="product-details">
             <h3>[1202251736] Asics</h3>
@@ -7075,7 +7075,7 @@ exports[`Catalog Modal Functionality opens modal on product click and logs GA ev
             <span class="old-price">R$&nbsp;219,00</span>
              <span class="new-price">R$&nbsp;209,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251747-nike-air-force.jpeg" alt="[1202251747] Nike Air Force">
           <div class="product-details">
             <h3>[1202251747] Nike Air Force</h3>
@@ -7389,7 +7389,7 @@ exports[`Catalog Modal Functionality redirects to WhatsApp with correct message 
             <span class="size">Tamanho: 38</span>
             <span class="price">R$&nbsp;89,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/asics/1202251736-asics.jpeg" alt="[1202251736] Asics">
           <div class="product-details">
             <h3>[1202251736] Asics</h3>
@@ -7433,7 +7433,7 @@ exports[`Catalog Modal Functionality redirects to WhatsApp with correct message 
             <span class="old-price">R$&nbsp;219,00</span>
              <span class="new-price">R$&nbsp;209,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251747-nike-air-force.jpeg" alt="[1202251747] Nike Air Force">
           <div class="product-details">
             <h3>[1202251747] Nike Air Force</h3>
