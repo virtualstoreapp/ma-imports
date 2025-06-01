@@ -40,7 +40,7 @@ const asserts = async (expectedHeading, expectedCount) => {
 
 const assertAllProducts = async () => {
   const expectedHeading = "Novidades";
-  const expectedCount = 131;
+  const expectedCount = 136;
   await asserts(expectedHeading, expectedCount);
 };
 
@@ -71,6 +71,11 @@ const selectClothingManSubcategory = async () => {
 const selectShoesManSubcategory = async () => {
   await selectManSubcategory();
   await selectMenuOption('shoes-man-subcategory');
+};
+
+const selectAccessoriesManSubcategory = async () => {
+  await selectManSubcategory();
+  await selectMenuOption('accessories-man-subcategory');
 };
 
 //
@@ -164,6 +169,14 @@ const selectShortsTactelMan = async () => {
   await asserts(expectedHeading, expectedCount);
 };
 
+const selectCapsMan = async () => {
+  const expectedHeading = "Bonés Masculinos";
+  const expectedCount = 5;
+  await selectAccessoriesManSubcategory();
+  await selectMenuOption('caps-man');
+  await asserts(expectedHeading, expectedCount);
+};
+
 //
 // Test suites
 //
@@ -223,6 +236,10 @@ describe('Catalog', () => {
     it('renders final subcategory "Bermudas Tactel Masculina" correctly on desktop', async () => {
       await selectShortsTactelMan();
     });
+
+    it('renders final subcategory "Bonés Masculinos" correctly on desktop', async () => {
+      await selectCapsMan();
+    });
   });
 
   describe('Mobile View', () => {
@@ -280,6 +297,10 @@ describe('Catalog', () => {
     it('renders final subcategory "Bermudas Tactel Masculina" correctly on desktop', async () => {
       await selectShortsTactelMan();
     });
+
+    it('renders final subcategory "Bonés Masculinos" correctly on desktop', async () => {
+      await selectCapsMan();
+    });
   });
 
   describe('Sorting Order', () => {
@@ -295,7 +316,8 @@ describe('Catalog', () => {
       "shorts-sweatshorts-man": [{ name: "[2003250848] Oakley", price: 69.90 }],
       "shorts-basic-man": [{ name: "[2103251150] Nike", price: 28.00 }],
       "shorts-jeans-man": [{ name: "[2603251652] Lacoste", price: 79.90 }],
-      "shorts-tactel-man": [{ name: "[0304251805] Nike Air", price: 59.90 }]
+      "shorts-tactel-man": [{ name: "[0304251805] Nike Air", price: 59.90 }],
+      "caps-man": [{ name: "[0106250956] Ralph Lauren", price: 59.90 }]
     };
 
     beforeEach(() => {
@@ -325,6 +347,7 @@ describe('Catalog', () => {
       const productItems = Array.from(document.querySelectorAll('#product-list .product-item'));
       const productNames = productItems.map(item => item.querySelector('h3').textContent);
       expect(productNames).toEqual([
+        "[0106250956] Ralph Lauren",
         "[0304251805] Nike Air",
         "[2703251659] Mizuno",
         "[2603251652] Lacoste",
