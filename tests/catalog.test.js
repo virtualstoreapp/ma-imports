@@ -40,7 +40,7 @@ const asserts = async (expectedHeading, expectedCount) => {
 
 const assertAllProducts = async () => {
   const expectedHeading = "Novidades";
-  const expectedCount = 136;
+  const expectedCount = 146;
   await asserts(expectedHeading, expectedCount);
 };
 
@@ -170,10 +170,26 @@ const selectShortsTactelMan = async () => {
 };
 
 const selectCapsMan = async () => {
-  const expectedHeading = "Bonés Masculinos";
+  const expectedHeading = "Bonés Masculino";
   const expectedCount = 5;
   await selectAccessoriesManSubcategory();
   await selectMenuOption('caps-man');
+  await asserts(expectedHeading, expectedCount);
+};
+
+const selectSweatshirtMan = async () => {
+  const expectedHeading = "Blusas Masculina";
+  const expectedCount = 3;
+  await selectClothingManSubcategory();
+  await selectMenuOption('sweatshirts-man');
+  await asserts(expectedHeading, expectedCount);
+};
+
+const selectSocksMan = async () => {
+  const expectedHeading = "Meias Masculina";
+  const expectedCount = 7;
+  await selectShoesManSubcategory();
+  await selectMenuOption('socks-man');
   await asserts(expectedHeading, expectedCount);
 };
 
@@ -237,8 +253,16 @@ describe('Catalog', () => {
       await selectShortsTactelMan();
     });
 
-    it('renders final subcategory "Bonés Masculinos" correctly on desktop', async () => {
+    it('renders final subcategory "Bonés Masculino" correctly on desktop', async () => {
       await selectCapsMan();
+    });
+
+    it('renders final subcategory "Blusas Masculina" correctly on desktop', async () => {
+      await selectSweatshirtMan();
+    });
+
+    it('renders final subcategory "Meias Masculina" correctly on desktop', async () => {
+      await selectSocksMan();
     });
   });
 
@@ -298,26 +322,36 @@ describe('Catalog', () => {
       await selectShortsTactelMan();
     });
 
-    it('renders final subcategory "Bonés Masculinos" correctly on desktop', async () => {
+    it('renders final subcategory "Bonés Masculino" correctly on desktop', async () => {
       await selectCapsMan();
+    });
+
+    it('renders final subcategory "Blusas Masculina" correctly on desktop', async () => {
+      await selectSweatshirtMan();
+    });
+
+    it('renders final subcategory "Meias Masculina" correctly on desktop', async () => {
+      await selectSocksMan();
     });
   });
 
   describe('Sorting Order', () => {
     // Override fetch mock with controlled test data.
     const customData = {
-      "shoes-man": [{ name: "[1202252201] Adidas Campus", price: 149 }],
-      "slippers-man": [{ name: "[1702251140] Tommy Hilfiger", price: 29.90 }],
-      "tshirts-casual-man": [{ name: "[0103250820] Emporio Armani", price: 89.90 }],
-      "tshirts-dryfit-man": [{ name: "[2703251659] Mizuno", price: 59.90 }],
-      "tshirts-polo-man": [{ name: "[1603250851] Calvin Klein", price: 59.90 }],
-      "tank-top-casual-man": [{ name: "[1903251705] Hugo Boss", price: 39.90 }],
-      "tank-top-dryfit-man": [{ name: "[0703251715] Puma", price: 59.90 }],
-      "shorts-sweatshorts-man": [{ name: "[2003250848] Oakley", price: 69.90 }],
-      "shorts-basic-man": [{ name: "[2103251150] Nike", price: 28.00 }],
-      "shorts-jeans-man": [{ name: "[2603251652] Lacoste", price: 79.90 }],
-      "shorts-tactel-man": [{ name: "[0304251805] Nike Air", price: 59.90 }],
-      "caps-man": [{ name: "[0106250956] Ralph Lauren", price: 59.90 }]
+      "shoes-man": [{ name: "[1202252201] Shoe Man", price: 149 }],
+      "slippers-man": [{ name: "[1702251140] Slipper Man", price: 29.90 }],
+      "tshirts-casual-man": [{ name: "[0103250820] Tshirt Casual Man", price: 89.90 }],
+      "tshirts-dryfit-man": [{ name: "[2703251659] Tshirt Dryfit Man", price: 59.90 }],
+      "tshirts-polo-man": [{ name: "[1603250851] Tshirt Polo Man", price: 59.90 }],
+      "tank-top-casual-man": [{ name: "[1903251705] Tank Top Casual Man", price: 39.90 }],
+      "tank-top-dryfit-man": [{ name: "[0703251715] Tank Top Dryfit Man", price: 59.90 }],
+      "shorts-sweatshorts-man": [{ name: "[2003250848] Short Basic Man", price: 69.90 }],
+      "shorts-basic-man": [{ name: "[2103251150] Short Basic Man", price: 28.00 }],
+      "shorts-jeans-man": [{ name: "[2603251652] Short Jeans Man", price: 79.90 }],
+      "shorts-tactel-man": [{ name: "[0304251805] Short Tactel Man", price: 59.90 }],
+      "caps-man": [{ name: "[0106250956] Cap Man", price: 59.90 }],
+      "socks-man": [{ name: "[0106250834] Socks Man", price: 21.90 }],
+      "sweatshirts-man": [{ name: "[0106250800] Sweatshirt Man", price: 299.00 }],
     };
 
     beforeEach(() => {
@@ -347,18 +381,20 @@ describe('Catalog', () => {
       const productItems = Array.from(document.querySelectorAll('#product-list .product-item'));
       const productNames = productItems.map(item => item.querySelector('h3').textContent);
       expect(productNames).toEqual([
-        "[0106250956] Ralph Lauren",
-        "[0304251805] Nike Air",
-        "[2703251659] Mizuno",
-        "[2603251652] Lacoste",
-        "[2103251150] Nike",
-        "[2003250848] Oakley",
-        "[1903251705] Hugo Boss",
-        "[1603250851] Calvin Klein",
-        "[0703251715] Puma",
-        "[0103250820] Emporio Armani",
-        "[1702251140] Tommy Hilfiger",
-        "[1202252201] Adidas Campus"
+        "[0106250956] Cap Man",
+        "[0106250834] Socks Man",
+        "[0106250800] Sweatshirt Man",
+        "[0304251805] Short Tactel Man",
+        "[2703251659] Tshirt Dryfit Man",
+        "[2603251652] Short Jeans Man",
+        "[2103251150] Short Basic Man",
+        "[2003250848] Short Basic Man",
+        "[1903251705] Tank Top Casual Man",
+        "[1603250851] Tshirt Polo Man",
+        "[0703251715] Tank Top Dryfit Man",
+        "[0103250820] Tshirt Casual Man",
+        "[1702251140] Slipper Man",
+        "[1202252201] Shoe Man"
       ]);
     });
   });

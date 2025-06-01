@@ -28,6 +28,8 @@
       'shorts-jeans-man': 'Bermudas Jeans Masculina',
       'shorts-tactel-man': 'Bermudas Tactel Masculina',
       'caps-man': 'Bonés Masculinos',
+      'sweatshirts-man': 'Blusas Masculina',
+      'socks-man': 'Meias Masculina',
     };
     headingEl.textContent = headings[category] || 'Produtos';
   };
@@ -231,11 +233,14 @@
       try {
         if (category === 'all') {
           const categories = [
-            'shoes-man', 'slippers-man', 
-            'tshirts-casual-man', 'tshirts-dryfit-man', 'tshirts-polo-man', 
-            'tank-top-casual-man', 'tank-top-dryfit-man',
-            'shorts-sweatshorts-man', 'shorts-basic-man', 'shorts-jeans-man', 'shorts-tactel-man',
-            'caps-man'
+            'caps-man', 
+            'shoes-man', 
+            'shorts-basic-man', 'shorts-jeans-man', 'shorts-sweatshorts-man', 'shorts-tactel-man', 
+            'slippers-man', 
+            'socks-man', 
+            'sweatshirts-man', 
+            'tank-top-casual-man', 'tank-top-dryfit-man', 
+            'tshirts-casual-man', 'tshirts-dryfit-man', 'tshirts-polo-man'
           ];
           const responses = await Promise.all(
             categories.map(cat => fetch(`products/${cat}.json`))
