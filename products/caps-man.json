@@ -1,0 +1,52 @@
+[
+    {
+        "name": "[0106250949] Polo",
+        "description": "Cor: Verde",
+        "oldPrice": 0.0,
+        "price": 59.90,
+        "images": [
+            "images/man/caps/polo/0106250949-polo.jpeg"
+        ],
+        "size": "N/A"
+    },
+    {
+        "name": "[0106250953] Polo",
+        "description": "Cor: Branca",
+        "oldPrice": 0.0,
+        "price": 59.90,
+        "images": [
+            "images/man/caps/polo/0106250953-polo.jpeg"
+        ],
+        "size": "N/A"
+    },
+    {
+        "name": "[0106250954] Polo",
+        "description": "Cor: Bege",
+        "oldPrice": 0.0,
+        "price": 59.90,
+        "images": [
+            "images/man/caps/polo/0106250954-polo.jpeg"
+        ],
+        "size": "N/A"
+    },
+    {
+        "name": "[0106250955] Polo",
+        "description": "Cor: Amarela",
+        "oldPrice": 0.0,
+        "price": 59.90,
+        "images": [
+            "images/man/caps/polo/0106250955-polo.jpeg"
+        ],
+        "size": "N/A"
+    },
+    {
+        "name": "[0106250956] Ralph Lauren",
+        "description": "Cor: Cinza Escuro",
+        "oldPrice": 0.0,
+        "price": 59.90,
+        "images": [
+            "images/man/caps/ralph-lauren/0106250956-ralph-lauren.jpeg"
+        ],
+        "size": "N/A"
+    }
+]

@@ -26,7 +26,8 @@
       'shorts-sweatshorts-man': 'Bermudas Moletom Masculina',
       'shorts-basic-man': 'Bermudas Básica Masculina',
       'shorts-jeans-man': 'Bermudas Jeans Masculina',
-      'shorts-tactel-man': 'Bermudas Tactel Masculina'
+      'shorts-tactel-man': 'Bermudas Tactel Masculina',
+      'caps-man': 'Bonés Masculinos',
     };
     headingEl.textContent = headings[category] || 'Produtos';
   };
@@ -233,7 +234,8 @@
             'shoes-man', 'slippers-man', 
             'tshirts-casual-man', 'tshirts-dryfit-man', 'tshirts-polo-man', 
             'tank-top-casual-man', 'tank-top-dryfit-man',
-            'shorts-sweatshorts-man', 'shorts-basic-man', 'shorts-jeans-man', 'shorts-tactel-man'
+            'shorts-sweatshorts-man', 'shorts-basic-man', 'shorts-jeans-man', 'shorts-tactel-man',
+            'caps-man'
           ];
           const responses = await Promise.all(
             categories.map(cat => fetch(`products/${cat}.json`))
