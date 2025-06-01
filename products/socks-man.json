@@ -1,0 +1,72 @@
+[
+    {
+        "name": "[0106250834] Adidas",
+        "description": "Meia de algodão cano alto",
+        "oldPrice": 0.0,
+        "price": 21.90,
+        "images": [
+            "images/man/socks/0106250834-adidas.jpeg"
+        ],
+        "size": "Consultar"
+    },
+    {
+        "name": "[0106250835] Adidas",
+        "description": "Meia de algodão cano baixo - soquete",
+        "oldPrice": 0.0,
+        "price": 12.00,
+        "images": [
+            "images/man/socks/0106250835-adidas.jpeg"
+        ],
+        "size": "Consultar"
+    },
+    {
+        "name": "[0106250836] Nike",
+        "description": "Meia de algodão cano baixo - soquete",
+        "oldPrice": 0.0,
+        "price": 12.00,
+        "images": [
+            "images/man/socks/0106250836-nike.jpeg"
+        ],
+        "size": "Consultar"
+    },
+    {
+        "name": "[0106250831] Tommy Hilfiger",
+        "description": "Meia de algodão cano alto",
+        "oldPrice": 0.0,
+        "price": 21.90,
+        "images": [
+            "images/man/socks/0106250831-tommy-hilfiger.jpeg"
+        ],
+        "size": "Consultar"
+    },
+    {
+        "name": "[0106250832] Tommy Hilfiger",
+        "description": "Meia de algodão cano alto",
+        "oldPrice": 0.0,
+        "price": 21.90,
+        "images": [
+            "images/man/socks/0106250832-tommy-hilfiger.jpeg"
+        ],
+        "size": "Consultar"
+    },
+    {
+        "name": "[0106250833] Oakley",
+        "description": "Meia de algodão cano alto",
+        "oldPrice": 0.0,
+        "price": 21.90,
+        "images": [
+            "images/man/socks/0106250833-oakley.jpeg"
+        ],
+        "size": "Consultar"
+    },
+    {
+        "name": "[0106250830] Quiksilver",
+        "description": "Meia de algodão cano alto",
+        "oldPrice": 0.0,
+        "price": 12.00,
+        "images": [
+            "images/man/socks/0106250830-quicksilver.jpeg"
+        ],
+        "size": "Consultar"
+    }
+]
