@@ -208,7 +208,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <h3>[0106250801] Nike</h3>
             <p class="description">Moleton, Cor: Marrom</p>
             <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;299,90</span>
+            <span class="price">R$&nbsp;119,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/sweatshirts/0106250800.jpeg" alt="[0106250800]">
@@ -2179,7 +2179,7 @@ exports[`Catalog Desktop View renders final subcategory "Blusas Masculina" corre
             <h3>[0106250801] Nike</h3>
             <p class="description">Moleton, Cor: Marrom</p>
             <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;299,90</span>
+            <span class="price">R$&nbsp;119,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/sweatshirts/0106250802-jhbao.jpeg" alt="[0106250802] J. H. Bao">
@@ -4471,7 +4471,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <h3>[0106250801] Nike</h3>
             <p class="description">Moleton, Cor: Marrom</p>
             <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;299,90</span>
+            <span class="price">R$&nbsp;119,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/sweatshirts/0106250800.jpeg" alt="[0106250800]">
@@ -6442,7 +6442,7 @@ exports[`Catalog Mobile View renders final subcategory "Blusas Masculina" correc
             <h3>[0106250801] Nike</h3>
             <p class="description">Moleton, Cor: Marrom</p>
             <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;299,90</span>
+            <span class="price">R$&nbsp;119,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/sweatshirts/0106250802-jhbao.jpeg" alt="[0106250802] J. H. Bao">
