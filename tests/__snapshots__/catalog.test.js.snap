@@ -200,7 +200,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <h3>[0106250802] J. H. Bao</h3>
             <p class="description">Couro Sintético, Cor: Marrom</p>
             <span class="size">Tamanho: G5</span>
-            <span class="price">R$&nbsp;299,90</span>
+            <span class="price">R$&nbsp;299,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/sweatshirts/0106250801-nike.jpeg" alt="[0106250801] Nike">
@@ -208,7 +208,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <h3>[0106250801] Nike</h3>
             <p class="description">Moleton, Cor: Marrom</p>
             <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;119,90</span>
+            <span class="price">R$&nbsp;119,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/sweatshirts/0106250800.jpeg" alt="[0106250800]">
@@ -216,7 +216,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <h3>[0106250800]</h3>
             <p class="description">Blusa com touca e zíper, Cor: Cinza Claro</p>
             <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;299,90</span>
+            <span class="price">R$&nbsp;299,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/dryfit/mizuno/1104250040-mizuno.jpeg" alt="[1104250040] Mizuno">
@@ -2171,7 +2171,7 @@ exports[`Catalog Desktop View renders final subcategory "Blusas Masculina" corre
             <h3>[0106250800]</h3>
             <p class="description">Blusa com touca e zíper, Cor: Cinza Claro</p>
             <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;299,90</span>
+            <span class="price">R$&nbsp;299,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/sweatshirts/0106250801-nike.jpeg" alt="[0106250801] Nike">
@@ -2179,7 +2179,7 @@ exports[`Catalog Desktop View renders final subcategory "Blusas Masculina" corre
             <h3>[0106250801] Nike</h3>
             <p class="description">Moleton, Cor: Marrom</p>
             <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;119,90</span>
+            <span class="price">R$&nbsp;119,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/sweatshirts/0106250802-jhbao.jpeg" alt="[0106250802] J. H. Bao">
@@ -2187,7 +2187,7 @@ exports[`Catalog Desktop View renders final subcategory "Blusas Masculina" corre
             <h3>[0106250802] J. H. Bao</h3>
             <p class="description">Couro Sintético, Cor: Marrom</p>
             <span class="size">Tamanho: G5</span>
-            <span class="price">R$&nbsp;299,90</span>
+            <span class="price">R$&nbsp;299,00</span>
           </div>
         </li></ul>
   </main>
@@ -4463,7 +4463,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <h3>[0106250802] J. H. Bao</h3>
             <p class="description">Couro Sintético, Cor: Marrom</p>
             <span class="size">Tamanho: G5</span>
-            <span class="price">R$&nbsp;299,90</span>
+            <span class="price">R$&nbsp;299,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/sweatshirts/0106250801-nike.jpeg" alt="[0106250801] Nike">
@@ -4471,7 +4471,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <h3>[0106250801] Nike</h3>
             <p class="description">Moleton, Cor: Marrom</p>
             <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;119,90</span>
+            <span class="price">R$&nbsp;119,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/sweatshirts/0106250800.jpeg" alt="[0106250800]">
@@ -4479,7 +4479,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <h3>[0106250800]</h3>
             <p class="description">Blusa com touca e zíper, Cor: Cinza Claro</p>
             <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;299,90</span>
+            <span class="price">R$&nbsp;299,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/dryfit/mizuno/1104250040-mizuno.jpeg" alt="[1104250040] Mizuno">
@@ -6434,7 +6434,7 @@ exports[`Catalog Mobile View renders final subcategory "Blusas Masculina" correc
             <h3>[0106250800]</h3>
             <p class="description">Blusa com touca e zíper, Cor: Cinza Claro</p>
             <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;299,90</span>
+            <span class="price">R$&nbsp;299,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/sweatshirts/0106250801-nike.jpeg" alt="[0106250801] Nike">
@@ -6442,7 +6442,7 @@ exports[`Catalog Mobile View renders final subcategory "Blusas Masculina" correc
             <h3>[0106250801] Nike</h3>
             <p class="description">Moleton, Cor: Marrom</p>
             <span class="size">Tamanho: G</span>
-            <span class="price">R$&nbsp;119,90</span>
+            <span class="price">R$&nbsp;119,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/sweatshirts/0106250802-jhbao.jpeg" alt="[0106250802] J. H. Bao">
@@ -6450,7 +6450,7 @@ exports[`Catalog Mobile View renders final subcategory "Blusas Masculina" correc
             <h3>[0106250802] J. H. Bao</h3>
             <p class="description">Couro Sintético, Cor: Marrom</p>
             <span class="size">Tamanho: G5</span>
-            <span class="price">R$&nbsp;299,90</span>
+            <span class="price">R$&nbsp;299,00</span>
           </div>
         </li></ul>
   </main>
