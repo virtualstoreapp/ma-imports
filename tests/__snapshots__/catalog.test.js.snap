@@ -99,6 +99,30 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
   <main>
     <h2 id="category-heading">Novidades</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/man/sweatshirts/0807251802-nike.jpeg" alt="[0807251802] Nike">
+          <div class="product-details">
+            <h3>[0807251802] Nike</h3>
+            <p class="description">Moleton, Cor: Cinza</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;139,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/sweatshirts/0807251801-nike.jpeg" alt="[0807251801] Nike">
+          <div class="product-details">
+            <h3>[0807251801] Nike</h3>
+            <p class="description">Moleton, Cor: Azul Marinho</p>
+            <span class="size">Tamanho: M, G, GG</span>
+            <span class="price">R$&nbsp;139,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/sweatshirts/0807251800-nike.jpeg" alt="[0807251800] Nike">
+          <div class="product-details">
+            <h3>[0807251800] Nike</h3>
+            <p class="description">Moleton, Cor: Preta</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;139,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/caps/ralph-lauren/0106250956-ralph-lauren.jpeg" alt="[0106250956] Ralph Lauren">
           <div class="product-details">
             <h3>[0106250956] Ralph Lauren</h3>
@@ -1296,7 +1320,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
   </main>
 
   <footer>
-    <p>Versão: 5.0.0 - 0.7.146</p>
+    <p>Versão: 5.0.0 - 0.7.149</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1429,7 +1453,7 @@ exports[`Catalog Desktop View renders final subcategory "Bermudas Básica Mascul
   </main>
 
   <footer>
-    <p>Versão: 5.0.0 - 0.7.146</p>
+    <p>Versão: 5.0.0 - 0.7.149</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1618,7 +1642,7 @@ exports[`Catalog Desktop View renders final subcategory "Bermudas Jeans Masculin
   </main>
 
   <footer>
-    <p>Versão: 5.0.0 - 0.7.146</p>
+    <p>Versão: 5.0.0 - 0.7.149</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1807,7 +1831,7 @@ exports[`Catalog Desktop View renders final subcategory "Bermudas Moletom Mascul
   </main>
 
   <footer>
-    <p>Versão: 5.0.0 - 0.7.146</p>
+    <p>Versão: 5.0.0 - 0.7.149</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2044,7 +2068,7 @@ exports[`Catalog Desktop View renders final subcategory "Bermudas Tactel Masculi
   </main>
 
   <footer>
-    <p>Versão: 5.0.0 - 0.7.146</p>
+    <p>Versão: 5.0.0 - 0.7.149</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2166,12 +2190,28 @@ exports[`Catalog Desktop View renders final subcategory "Blusas Masculina" corre
   <main>
     <h2 id="category-heading">Blusas Masculina</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/man/sweatshirts/0106250800.jpeg" alt="[0106250800]">
+          <img src="images/man/sweatshirts/0807251801-nike.jpeg" alt="[0807251801] Nike">
           <div class="product-details">
-            <h3>[0106250800]</h3>
-            <p class="description">Blusa com touca e zíper, Cor: Cinza Claro</p>
-            <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;299,00</span>
+            <h3>[0807251801] Nike</h3>
+            <p class="description">Moleton, Cor: Azul Marinho</p>
+            <span class="size">Tamanho: M, G, GG</span>
+            <span class="price">R$&nbsp;139,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/sweatshirts/0807251800-nike.jpeg" alt="[0807251800] Nike">
+          <div class="product-details">
+            <h3>[0807251800] Nike</h3>
+            <p class="description">Moleton, Cor: Preta</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;139,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/sweatshirts/0807251802-nike.jpeg" alt="[0807251802] Nike">
+          <div class="product-details">
+            <h3>[0807251802] Nike</h3>
+            <p class="description">Moleton, Cor: Cinza</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;139,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/sweatshirts/0106250801-nike.jpeg" alt="[0106250801] Nike">
@@ -2189,11 +2229,19 @@ exports[`Catalog Desktop View renders final subcategory "Blusas Masculina" corre
             <span class="size">Tamanho: G5</span>
             <span class="price">R$&nbsp;299,00</span>
           </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/sweatshirts/0106250800.jpeg" alt="[0106250800]">
+          <div class="product-details">
+            <h3>[0106250800]</h3>
+            <p class="description">Blusa com touca e zíper, Cor: Cinza Claro</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;299,00</span>
+          </div>
         </li></ul>
   </main>
 
   <footer>
-    <p>Versão: 5.0.0 - 0.7.146</p>
+    <p>Versão: 5.0.0 - 0.7.149</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2358,7 +2406,7 @@ exports[`Catalog Desktop View renders final subcategory "Bonés Masculino" corre
   </main>
 
   <footer>
-    <p>Versão: 5.0.0 - 0.7.146</p>
+    <p>Versão: 5.0.0 - 0.7.149</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2771,7 +2819,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
   </main>
 
   <footer>
-    <p>Versão: 5.0.0 - 0.7.146</p>
+    <p>Versão: 5.0.0 - 0.7.149</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3056,7 +3104,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Dry Fit Mascu
   </main>
 
   <footer>
-    <p>Versão: 5.0.0 - 0.7.146</p>
+    <p>Versão: 5.0.0 - 0.7.149</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3213,7 +3261,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Polo Masculin
   </main>
 
   <footer>
-    <p>Versão: 5.0.0 - 0.7.146</p>
+    <p>Versão: 5.0.0 - 0.7.149</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3346,7 +3394,7 @@ exports[`Catalog Desktop View renders final subcategory "Chinelos" correctly on 
   </main>
 
   <footer>
-    <p>Versão: 5.0.0 - 0.7.146</p>
+    <p>Versão: 5.0.0 - 0.7.149</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3527,7 +3575,7 @@ exports[`Catalog Desktop View renders final subcategory "Meias Masculina" correc
   </main>
 
   <footer>
-    <p>Versão: 5.0.0 - 0.7.146</p>
+    <p>Versão: 5.0.0 - 0.7.149</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3676,7 +3724,7 @@ exports[`Catalog Desktop View renders final subcategory "Regatas Casuais Masculi
   </main>
 
   <footer>
-    <p>Versão: 5.0.0 - 0.7.146</p>
+    <p>Versão: 5.0.0 - 0.7.149</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3865,7 +3913,7 @@ exports[`Catalog Desktop View renders final subcategory "Regatas Dry Fit Masculi
   </main>
 
   <footer>
-    <p>Versão: 5.0.0 - 0.7.146</p>
+    <p>Versão: 5.0.0 - 0.7.149</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4240,7 +4288,7 @@ exports[`Catalog Desktop View renders final subcategory "Tênis" correctly on de
   </main>
 
   <footer>
-    <p>Versão: 5.0.0 - 0.7.146</p>
+    <p>Versão: 5.0.0 - 0.7.149</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4362,6 +4410,30 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
   <main>
     <h2 id="category-heading">Novidades</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/man/sweatshirts/0807251802-nike.jpeg" alt="[0807251802] Nike">
+          <div class="product-details">
+            <h3>[0807251802] Nike</h3>
+            <p class="description">Moleton, Cor: Cinza</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;139,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/sweatshirts/0807251801-nike.jpeg" alt="[0807251801] Nike">
+          <div class="product-details">
+            <h3>[0807251801] Nike</h3>
+            <p class="description">Moleton, Cor: Azul Marinho</p>
+            <span class="size">Tamanho: M, G, GG</span>
+            <span class="price">R$&nbsp;139,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/sweatshirts/0807251800-nike.jpeg" alt="[0807251800] Nike">
+          <div class="product-details">
+            <h3>[0807251800] Nike</h3>
+            <p class="description">Moleton, Cor: Preta</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;139,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/caps/ralph-lauren/0106250956-ralph-lauren.jpeg" alt="[0106250956] Ralph Lauren">
           <div class="product-details">
             <h3>[0106250956] Ralph Lauren</h3>
@@ -5559,7 +5631,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
   </main>
 
   <footer>
-    <p>Versão: 5.0.0 - 0.7.146</p>
+    <p>Versão: 5.0.0 - 0.7.149</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5692,7 +5764,7 @@ exports[`Catalog Mobile View renders final subcategory "Bermudas Básica Masculi
   </main>
 
   <footer>
-    <p>Versão: 5.0.0 - 0.7.146</p>
+    <p>Versão: 5.0.0 - 0.7.149</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5881,7 +5953,7 @@ exports[`Catalog Mobile View renders final subcategory "Bermudas Jeans Masculina
   </main>
 
   <footer>
-    <p>Versão: 5.0.0 - 0.7.146</p>
+    <p>Versão: 5.0.0 - 0.7.149</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -6070,7 +6142,7 @@ exports[`Catalog Mobile View renders final subcategory "Bermudas Moletom Masculi
   </main>
 
   <footer>
-    <p>Versão: 5.0.0 - 0.7.146</p>
+    <p>Versão: 5.0.0 - 0.7.149</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -6307,7 +6379,7 @@ exports[`Catalog Mobile View renders final subcategory "Bermudas Tactel Masculin
   </main>
 
   <footer>
-    <p>Versão: 5.0.0 - 0.7.146</p>
+    <p>Versão: 5.0.0 - 0.7.149</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -6429,12 +6501,28 @@ exports[`Catalog Mobile View renders final subcategory "Blusas Masculina" correc
   <main>
     <h2 id="category-heading">Blusas Masculina</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/man/sweatshirts/0106250800.jpeg" alt="[0106250800]">
+          <img src="images/man/sweatshirts/0807251801-nike.jpeg" alt="[0807251801] Nike">
           <div class="product-details">
-            <h3>[0106250800]</h3>
-            <p class="description">Blusa com touca e zíper, Cor: Cinza Claro</p>
-            <span class="size">Tamanho: P</span>
-            <span class="price">R$&nbsp;299,00</span>
+            <h3>[0807251801] Nike</h3>
+            <p class="description">Moleton, Cor: Azul Marinho</p>
+            <span class="size">Tamanho: M, G, GG</span>
+            <span class="price">R$&nbsp;139,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/sweatshirts/0807251800-nike.jpeg" alt="[0807251800] Nike">
+          <div class="product-details">
+            <h3>[0807251800] Nike</h3>
+            <p class="description">Moleton, Cor: Preta</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;139,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/sweatshirts/0807251802-nike.jpeg" alt="[0807251802] Nike">
+          <div class="product-details">
+            <h3>[0807251802] Nike</h3>
+            <p class="description">Moleton, Cor: Cinza</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;139,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/sweatshirts/0106250801-nike.jpeg" alt="[0106250801] Nike">
@@ -6452,11 +6540,19 @@ exports[`Catalog Mobile View renders final subcategory "Blusas Masculina" correc
             <span class="size">Tamanho: G5</span>
             <span class="price">R$&nbsp;299,00</span>
           </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/sweatshirts/0106250800.jpeg" alt="[0106250800]">
+          <div class="product-details">
+            <h3>[0106250800]</h3>
+            <p class="description">Blusa com touca e zíper, Cor: Cinza Claro</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;299,00</span>
+          </div>
         </li></ul>
   </main>
 
   <footer>
-    <p>Versão: 5.0.0 - 0.7.146</p>
+    <p>Versão: 5.0.0 - 0.7.149</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -6621,7 +6717,7 @@ exports[`Catalog Mobile View renders final subcategory "Bonés Masculino" correc
   </main>
 
   <footer>
-    <p>Versão: 5.0.0 - 0.7.146</p>
+    <p>Versão: 5.0.0 - 0.7.149</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -7034,7 +7130,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
   </main>
 
   <footer>
-    <p>Versão: 5.0.0 - 0.7.146</p>
+    <p>Versão: 5.0.0 - 0.7.149</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -7319,7 +7415,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Dry Fit Mascul
   </main>
 
   <footer>
-    <p>Versão: 5.0.0 - 0.7.146</p>
+    <p>Versão: 5.0.0 - 0.7.149</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -7476,7 +7572,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Polo Masculina
   </main>
 
   <footer>
-    <p>Versão: 5.0.0 - 0.7.146</p>
+    <p>Versão: 5.0.0 - 0.7.149</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -7609,7 +7705,7 @@ exports[`Catalog Mobile View renders final subcategory "Chinelos" correctly on m
   </main>
 
   <footer>
-    <p>Versão: 5.0.0 - 0.7.146</p>
+    <p>Versão: 5.0.0 - 0.7.149</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -7790,7 +7886,7 @@ exports[`Catalog Mobile View renders final subcategory "Meias Masculina" correct
   </main>
 
   <footer>
-    <p>Versão: 5.0.0 - 0.7.146</p>
+    <p>Versão: 5.0.0 - 0.7.149</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -7939,7 +8035,7 @@ exports[`Catalog Mobile View renders final subcategory "Regatas Casuais Masculin
   </main>
 
   <footer>
-    <p>Versão: 5.0.0 - 0.7.146</p>
+    <p>Versão: 5.0.0 - 0.7.149</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -8128,7 +8224,7 @@ exports[`Catalog Mobile View renders final subcategory "Regatas Dry Fit Masculin
   </main>
 
   <footer>
-    <p>Versão: 5.0.0 - 0.7.146</p>
+    <p>Versão: 5.0.0 - 0.7.149</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -8503,7 +8599,7 @@ exports[`Catalog Mobile View renders final subcategory "Tênis" correctly on mob
   </main>
 
   <footer>
-    <p>Versão: 5.0.0 - 0.7.146</p>
+    <p>Versão: 5.0.0 - 0.7.149</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -8878,7 +8974,7 @@ exports[`Catalog Modal Functionality opens modal on product click and logs GA ev
   </main>
 
   <footer>
-    <p>Versão: 5.0.0 - 0.7.146</p>
+    <p>Versão: 5.0.0 - 0.7.149</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -9253,7 +9349,7 @@ exports[`Catalog Modal Functionality redirects to WhatsApp with correct message 
   </main>
 
   <footer>
-    <p>Versão: 5.0.0 - 0.7.146</p>
+    <p>Versão: 5.0.0 - 0.7.149</p>
   </footer>
 
   <script src="scripts.js"></script>
