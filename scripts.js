@@ -21,6 +21,7 @@
       'tshirts-casual-man': 'Camisetas Casuais Masculina',
       'tshirts-dryfit-man': 'Camisetas Dry Fit Masculina',
       'tshirts-polo-man': 'Camisetas Polo Masculina',
+      'dress-shirts-man': 'Camisetas Sociais Masculina',
       'tank-top-casual-man': 'Regatas Casuais Masculina',
       'tank-top-dryfit-man': 'Regatas Dry Fit Masculina',
       'shorts-sweatshorts-man': 'Bermudas Moletom Masculina',
@@ -234,6 +235,7 @@
         if (category === 'all') {
           const categories = [
             'caps-man', 
+            'dress-shirts-man',
             'shoes-man', 
             'shorts-basic-man', 'shorts-jeans-man', 'shorts-sweatshorts-man', 'shorts-tactel-man', 
             'slippers-man', 

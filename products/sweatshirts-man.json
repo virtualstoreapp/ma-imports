@@ -1,13 +1,33 @@
 [
     {
-        "name": "[0106250800]",
-        "description": "Blusa com touca e zíper, Cor: Cinza Claro",
+        "name": "[0807251801] Nike",
+        "description": "Moleton, Cor: Azul Marinho",
         "oldPrice": 0.0,
-        "price": 299.00,
+        "price": 139.00,
         "images": [
-            "images/man/sweatshirts/0106250800.jpeg"
+            "images/man/sweatshirts/0807251801-nike.jpeg"
         ],
-        "size": "P"
+        "size": "M, G, GG"
+    },
+    {
+        "name": "[0807251800] Nike",
+        "description": "Moleton, Cor: Preta",
+        "oldPrice": 0.0,
+        "price": 139.00,
+        "images": [
+            "images/man/sweatshirts/0807251800-nike.jpeg"
+        ],
+        "size": "G"
+    },
+    {
+        "name": "[0807251802] Nike",
+        "description": "Moleton, Cor: Cinza",
+        "oldPrice": 0.0,
+        "price": 139.00,
+        "images": [
+            "images/man/sweatshirts/0807251802-nike.jpeg"
+        ],
+        "size": "GG"
     },
     {
         "name": "[0106250801] Nike",
@@ -28,5 +48,15 @@
             "images/man/sweatshirts/0106250802-jhbao.jpeg"
         ],
         "size": "G5"
+    },
+    {
+        "name": "[0106250800]",
+        "description": "Blusa com touca e zíper, Cor: Cinza Claro",
+        "oldPrice": 0.0,
+        "price": 299.00,
+        "images": [
+            "images/man/sweatshirts/0106250800.jpeg"
+        ],
+        "size": "P"
     }
 ]
