@@ -1,0 +1,31 @@
+services:
+  app-server:
+    extends:
+      file: docker-compose.common.yaml
+      service: node-base
+    command: npm run dev
+    tty: true
+    stdin_open: true
+    ports:
+      - 8000:8000
+
+  test-app:
+    extends:
+      file: docker-compose.common.yaml
+      service: node-base
+    command: ["npm", "test"]
+    tty: true
+    stdin_open: true
+    depends_on:
+      app-server:
+        condition: service_started
+
+  update-tests-snapshots:
+    extends:
+      file: docker-compose.common.yaml
+      service: node-base
+    command: ["npm", "test", "--", "-u"]
+    depends_on:
+      app-server:
+        condition: service_started
+
