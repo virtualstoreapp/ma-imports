@@ -1,0 +1,52 @@
+[
+    {
+        "name": "[0807251831] Reserva",
+        "description": "Manga Longa",
+        "oldPrice": 0.0,
+        "price": 139.90,
+        "images": [
+            "images/man/dress-shirts/0807251831-reserva.jpeg"
+        ],
+        "size": "XXL"
+    },
+    {
+        "name": "[0807251832] Reserva",
+        "description": "Manga Longa",
+        "oldPrice": 0.0,
+        "price": 139.90,
+        "images": [
+            "images/man/dress-shirts/0807251832-reserva.jpeg"
+        ],
+        "size": "XXL"
+    },
+    {
+        "name": "[0807251833] Reserva",
+        "description": "Manga Longa",
+        "oldPrice": 0.0,
+        "price": 139.90,
+        "images": [
+            "images/man/dress-shirts/0807251833-reserva.jpeg"
+        ],
+        "size": "XXL"
+    },
+    {
+        "name": "[0807251830] Ricardo Almeida",
+        "description": "Manga Longa",
+        "oldPrice": 0.0,
+        "price": 139.90,
+        "images": [
+            "images/man/dress-shirts/0807251830-ricardo-almeida.jpeg"
+        ],
+        "size": "46"
+    },
+    {
+        "name": "[0807251834] Sergio K",
+        "description": "Manga Longa",
+        "oldPrice": 0.0,
+        "price": 139.90,
+        "images": [
+            "images/man/dress-shirts/0807251834-sergio-k.jpeg"
+        ],
+        "size": "XXXL"
+    }
+]
