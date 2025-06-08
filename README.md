@@ -2,8 +2,8 @@
 
 https://virtualstoreapp.github.io/ma-imports/
 
-python3 -m http.server 8080
-
-npm test -- -u
-npm test --updateSnapshot
-npm test
+docker compose down --remove-orphans
+docker compose build --no-cache
+docker compose run --rm app-server
+docker compose run --rm -it test-app
+docker compose run --rm -it update-tests-snapshots

@@ -1,0 +1,8 @@
+services:
+  node-base:
+    image: brunorodrigoss/ma-imports-node-24:alpine-dev
+    tty: true
+    stdin_open: true
+    volumes:
+      - .:/app
+      - /app/node_modules

@@ -1,0 +1,5 @@
+{
+  "watch": ["serve.js", "index.html", "scripts.js", "styles.css", "images", "products"],
+  "ext": "css,html,jpg,jpeg,js,json",
+  "exec": "node serve.js"
+}
