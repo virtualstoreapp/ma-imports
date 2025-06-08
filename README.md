@@ -3,7 +3,11 @@
 https://virtualstoreapp.github.io/ma-imports/
 
 docker compose down --remove-orphans
+
 docker compose build --no-cache
+
 docker compose run --rm app-server
+
 docker compose run --rm -it test-app
+
 docker compose run --rm -it update-tests-snapshots
