@@ -17,7 +17,8 @@
         "images": [
             "images/man/sweatshirts/0807251800-nike.jpeg"
         ],
-        "size": "G"
+        "size": "G",
+        "soldOut": true
     },
     {
         "name": "[0807251802] Nike",
