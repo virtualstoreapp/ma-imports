@@ -40,7 +40,7 @@ const asserts = async (expectedHeading, expectedCount) => {
 
 const assertAllProducts = async () => {
   const expectedHeading = "Novidades";
-  const expectedCount = 154;
+  const expectedCount = 163;
   await asserts(expectedHeading, expectedCount);
 };
 
@@ -187,9 +187,17 @@ const selectCapsMan = async () => {
 
 const selectSweatshirtMan = async () => {
   const expectedHeading = "Blusas Masculina";
-  const expectedCount = 6;
+  const expectedCount = 14;
   await selectClothingManSubcategory();
   await selectMenuOption('sweatshirts-man');
+  await asserts(expectedHeading, expectedCount);
+};
+
+const selectSweatshirtWoman = async () => {
+  const expectedHeading = "Blusas Feminina";
+  const expectedCount = 1;
+  await selectClothingManSubcategory();
+  await selectMenuOption('sweatshirts-woman');
   await asserts(expectedHeading, expectedCount);
 };
 
@@ -273,6 +281,10 @@ describe('Catalog', () => {
       await selectSweatshirtMan();
     });
 
+    it('renders final subcategory "Blusas Feminina" correctly on desktop', async () => {
+      await selectSweatshirtWoman();
+    });
+
     it('renders final subcategory "Meias Masculina" correctly on desktop', async () => {
       await selectSocksMan();
     });
@@ -346,6 +358,10 @@ describe('Catalog', () => {
       await selectSweatshirtMan();
     });
 
+    it('renders final subcategory "Blusas Feminina" correctly on desktop', async () => {
+      await selectSweatshirtWoman();
+    });
+
     it('renders final subcategory "Meias Masculina" correctly on desktop', async () => {
       await selectSocksMan();
     });
@@ -359,7 +375,7 @@ describe('Catalog', () => {
       "tshirts-casual-man": [{ name: "[0103250820] Tshirt Casual Man", price: 89.90 }],
       "tshirts-dryfit-man": [{ name: "[2703251659] Tshirt Dryfit Man", price: 59.90 }],
       "tshirts-polo-man": [{ name: "[1603250851] Tshirt Polo Man", price: 59.90 }],
-      "dress-shirts-man": [{ name: "[0807251831] Dress Shirt Man", price: 139.90 }],
+      "dress-shirts-man": [{ name: "[0806251831] Dress Shirt Man", price: 139.90 }],
       "tank-top-casual-man": [{ name: "[1903251705] Tank Top Casual Man", price: 39.90 }],
       "tank-top-dryfit-man": [{ name: "[0703251715] Tank Top Dryfit Man", price: 59.90 }],
       "shorts-sweatshorts-man": [{ name: "[2003250848] Short Basic Man", price: 69.90 }],
@@ -369,6 +385,7 @@ describe('Catalog', () => {
       "caps-man": [{ name: "[0106250956] Cap Man", price: 59.90 }],
       "socks-man": [{ name: "[0106250834] Socks Man", price: 21.90 }],
       "sweatshirts-man": [{ name: "[0106250800] Sweatshirt Man", price: 299.00 }],
+      "sweatshirts-woman": [{ name: "[0207251439] Sweatshirt Woman", price: 299.00 }],
     };
 
     beforeEach(() => {
@@ -398,7 +415,8 @@ describe('Catalog', () => {
       const productItems = Array.from(document.querySelectorAll('#product-list .product-item'));
       const productNames = productItems.map(item => item.querySelector('h3').textContent);
       expect(productNames).toEqual([
-        "[0807251831] Dress Shirt Man",
+        "[0207251439] Sweatshirt Woman",
+        "[0806251831] Dress Shirt Man",
         "[0106250956] Cap Man",
         "[0106250834] Socks Man",
         "[0106250800] Sweatshirt Man",

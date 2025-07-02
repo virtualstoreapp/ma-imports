@@ -30,6 +30,7 @@
       'shorts-tactel-man': 'Bermudas Tactel Masculina',
       'caps-man': 'Bonés Masculinos',
       'sweatshirts-man': 'Blusas Masculina',
+      'sweatshirts-woman': 'Blusas Feminina',
       'socks-man': 'Meias Masculina',
     };
     headingEl.textContent = headings[category] || 'Produtos';
@@ -240,9 +241,10 @@
             'shorts-basic-man', 'shorts-jeans-man', 'shorts-sweatshorts-man', 'shorts-tactel-man', 
             'slippers-man', 
             'socks-man', 
-            'sweatshirts-man', 
+            'sweatshirts-man', 'sweatshirts-woman',
             'tank-top-casual-man', 'tank-top-dryfit-man', 
-            'tshirts-casual-man', 'tshirts-dryfit-man', 'tshirts-polo-man'
+            'tshirts-casual-man', 'tshirts-dryfit-man', 'tshirts-polo-man',
+            
           ];
           const responses = await Promise.all(
             categories.map(cat => fetch(`products/${cat}.json`))
