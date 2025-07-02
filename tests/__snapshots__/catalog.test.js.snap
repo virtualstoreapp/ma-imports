@@ -100,65 +100,65 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
   <main>
     <h2 id="category-heading">Novidades</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/man/dress-shirts/0807251834-sergio-k.jpeg" alt="[0807251834] Sergio K">
+          <img src="images/man/dress-shirts/0806251834-sergio-k.jpeg" alt="[0806251834] Sergio K">
           <div class="product-details">
-            <h3>[0807251834] Sergio K</h3>
+            <h3>[0806251834] Sergio K</h3>
             <p class="description">Manga Longa</p>
             <span class="size">Tamanho: XXXL</span>
             <span class="price">R$&nbsp;139,90</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/dress-shirts/0807251833-reserva.jpeg" alt="[0807251833] Reserva">
+          <img src="images/man/dress-shirts/0806251833-reserva.jpeg" alt="[0806251833] Reserva">
           <div class="product-details">
-            <h3>[0807251833] Reserva</h3>
+            <h3>[0806251833] Reserva</h3>
             <p class="description">Manga Longa</p>
             <span class="size">Tamanho: XXL</span>
             <span class="price">R$&nbsp;139,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/dress-shirts/0807251832-reserva.jpeg" alt="[0807251832] Reserva">
+          <img src="images/man/dress-shirts/0806251832-reserva.jpeg" alt="[0806251832] Reserva">
           <div class="product-details">
-            <h3>[0807251832] Reserva</h3>
+            <h3>[0806251832] Reserva</h3>
             <p class="description">Manga Longa</p>
             <span class="size">Tamanho: XXL</span>
             <span class="price">R$&nbsp;139,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/dress-shirts/0807251831-reserva.jpeg" alt="[0807251831] Reserva">
+          <img src="images/man/dress-shirts/0806251831-reserva.jpeg" alt="[0806251831] Reserva">
           <div class="product-details">
-            <h3>[0807251831] Reserva</h3>
+            <h3>[0806251831] Reserva</h3>
             <p class="description">Manga Longa</p>
             <span class="size">Tamanho: XXL</span>
             <span class="price">R$&nbsp;139,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/dress-shirts/0807251830-ricardo-almeida.jpeg" alt="[0807251830] Ricardo Almeida">
+          <img src="images/man/dress-shirts/0806251830-ricardo-almeida.jpeg" alt="[0806251830] Ricardo Almeida">
           <div class="product-details">
-            <h3>[0807251830] Ricardo Almeida</h3>
+            <h3>[0806251830] Ricardo Almeida</h3>
             <p class="description">Manga Longa</p>
             <span class="size">Tamanho: 46</span>
             <span class="price">R$&nbsp;139,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/sweatshirts/0807251802-nike.jpeg" alt="[0807251802] Nike">
+          <img src="images/man/sweatshirts/0806251802-nike.jpeg" alt="[0806251802] Nike">
           <div class="product-details">
-            <h3>[0807251802] Nike</h3>
+            <h3>[0806251802] Nike</h3>
             <p class="description">Moleton, Cor: Cinza</p>
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;139,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/sweatshirts/0807251801-nike.jpeg" alt="[0807251801] Nike">
+          <img src="images/man/sweatshirts/0806251801-nike.jpeg" alt="[0806251801] Nike">
           <div class="product-details">
-            <h3>[0807251801] Nike</h3>
+            <h3>[0806251801] Nike</h3>
             <p class="description">Moleton, Cor: Azul Marinho</p>
             <span class="size">Tamanho: M, G, GG</span>
             <span class="price">R$&nbsp;139,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/sweatshirts/0807251800-nike.jpeg" alt="[0807251800] Nike">
+          <img src="images/man/sweatshirts/0806251800-nike.jpeg" alt="[0806251800] Nike">
           <div class="product-details">
-            <h3>[0807251800] Nike</h3>
+            <h3>[0806251800] Nike</h3>
             <p class="description">Moleton, Cor: Preta</p>
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;139,00</span>
@@ -2236,25 +2236,25 @@ exports[`Catalog Desktop View renders final subcategory "Blusas Masculina" corre
   <main>
     <h2 id="category-heading">Blusas Masculina</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/man/sweatshirts/0807251801-nike.jpeg" alt="[0807251801] Nike">
+          <img src="images/man/sweatshirts/0806251801-nike.jpeg" alt="[0806251801] Nike">
           <div class="product-details">
-            <h3>[0807251801] Nike</h3>
+            <h3>[0806251801] Nike</h3>
             <p class="description">Moleton, Cor: Azul Marinho</p>
             <span class="size">Tamanho: M, G, GG</span>
             <span class="price">R$&nbsp;139,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/sweatshirts/0807251800-nike.jpeg" alt="[0807251800] Nike">
+          <img src="images/man/sweatshirts/0806251800-nike.jpeg" alt="[0806251800] Nike">
           <div class="product-details">
-            <h3>[0807251800] Nike</h3>
+            <h3>[0806251800] Nike</h3>
             <p class="description">Moleton, Cor: Preta</p>
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;139,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/sweatshirts/0807251802-nike.jpeg" alt="[0807251802] Nike">
+          <img src="images/man/sweatshirts/0806251802-nike.jpeg" alt="[0806251802] Nike">
           <div class="product-details">
-            <h3>[0807251802] Nike</h3>
+            <h3>[0806251802] Nike</h3>
             <p class="description">Moleton, Cor: Cinza</p>
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;139,00</span>
@@ -3434,41 +3434,41 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Sociais Mascu
   <main>
     <h2 id="category-heading">Camisetas Sociais Masculina</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/man/dress-shirts/0807251831-reserva.jpeg" alt="[0807251831] Reserva">
+          <img src="images/man/dress-shirts/0806251831-reserva.jpeg" alt="[0806251831] Reserva">
           <div class="product-details">
-            <h3>[0807251831] Reserva</h3>
+            <h3>[0806251831] Reserva</h3>
             <p class="description">Manga Longa</p>
             <span class="size">Tamanho: XXL</span>
             <span class="price">R$&nbsp;139,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/dress-shirts/0807251832-reserva.jpeg" alt="[0807251832] Reserva">
+          <img src="images/man/dress-shirts/0806251832-reserva.jpeg" alt="[0806251832] Reserva">
           <div class="product-details">
-            <h3>[0807251832] Reserva</h3>
+            <h3>[0806251832] Reserva</h3>
             <p class="description">Manga Longa</p>
             <span class="size">Tamanho: XXL</span>
             <span class="price">R$&nbsp;139,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/dress-shirts/0807251833-reserva.jpeg" alt="[0807251833] Reserva">
+          <img src="images/man/dress-shirts/0806251833-reserva.jpeg" alt="[0806251833] Reserva">
           <div class="product-details">
-            <h3>[0807251833] Reserva</h3>
+            <h3>[0806251833] Reserva</h3>
             <p class="description">Manga Longa</p>
             <span class="size">Tamanho: XXL</span>
             <span class="price">R$&nbsp;139,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/dress-shirts/0807251830-ricardo-almeida.jpeg" alt="[0807251830] Ricardo Almeida">
+          <img src="images/man/dress-shirts/0806251830-ricardo-almeida.jpeg" alt="[0806251830] Ricardo Almeida">
           <div class="product-details">
-            <h3>[0807251830] Ricardo Almeida</h3>
+            <h3>[0806251830] Ricardo Almeida</h3>
             <p class="description">Manga Longa</p>
             <span class="size">Tamanho: 46</span>
             <span class="price">R$&nbsp;139,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/dress-shirts/0807251834-sergio-k.jpeg" alt="[0807251834] Sergio K">
+          <img src="images/man/dress-shirts/0806251834-sergio-k.jpeg" alt="[0806251834] Sergio K">
           <div class="product-details">
-            <h3>[0807251834] Sergio K</h3>
+            <h3>[0806251834] Sergio K</h3>
             <p class="description">Manga Longa</p>
             <span class="size">Tamanho: XXXL</span>
             <span class="price">R$&nbsp;139,90</span>
@@ -4632,65 +4632,65 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
   <main>
     <h2 id="category-heading">Novidades</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/man/dress-shirts/0807251834-sergio-k.jpeg" alt="[0807251834] Sergio K">
+          <img src="images/man/dress-shirts/0806251834-sergio-k.jpeg" alt="[0806251834] Sergio K">
           <div class="product-details">
-            <h3>[0807251834] Sergio K</h3>
+            <h3>[0806251834] Sergio K</h3>
             <p class="description">Manga Longa</p>
             <span class="size">Tamanho: XXXL</span>
             <span class="price">R$&nbsp;139,90</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/dress-shirts/0807251833-reserva.jpeg" alt="[0807251833] Reserva">
+          <img src="images/man/dress-shirts/0806251833-reserva.jpeg" alt="[0806251833] Reserva">
           <div class="product-details">
-            <h3>[0807251833] Reserva</h3>
+            <h3>[0806251833] Reserva</h3>
             <p class="description">Manga Longa</p>
             <span class="size">Tamanho: XXL</span>
             <span class="price">R$&nbsp;139,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/dress-shirts/0807251832-reserva.jpeg" alt="[0807251832] Reserva">
+          <img src="images/man/dress-shirts/0806251832-reserva.jpeg" alt="[0806251832] Reserva">
           <div class="product-details">
-            <h3>[0807251832] Reserva</h3>
+            <h3>[0806251832] Reserva</h3>
             <p class="description">Manga Longa</p>
             <span class="size">Tamanho: XXL</span>
             <span class="price">R$&nbsp;139,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/dress-shirts/0807251831-reserva.jpeg" alt="[0807251831] Reserva">
+          <img src="images/man/dress-shirts/0806251831-reserva.jpeg" alt="[0806251831] Reserva">
           <div class="product-details">
-            <h3>[0807251831] Reserva</h3>
+            <h3>[0806251831] Reserva</h3>
             <p class="description">Manga Longa</p>
             <span class="size">Tamanho: XXL</span>
             <span class="price">R$&nbsp;139,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/dress-shirts/0807251830-ricardo-almeida.jpeg" alt="[0807251830] Ricardo Almeida">
+          <img src="images/man/dress-shirts/0806251830-ricardo-almeida.jpeg" alt="[0806251830] Ricardo Almeida">
           <div class="product-details">
-            <h3>[0807251830] Ricardo Almeida</h3>
+            <h3>[0806251830] Ricardo Almeida</h3>
             <p class="description">Manga Longa</p>
             <span class="size">Tamanho: 46</span>
             <span class="price">R$&nbsp;139,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/sweatshirts/0807251802-nike.jpeg" alt="[0807251802] Nike">
+          <img src="images/man/sweatshirts/0806251802-nike.jpeg" alt="[0806251802] Nike">
           <div class="product-details">
-            <h3>[0807251802] Nike</h3>
+            <h3>[0806251802] Nike</h3>
             <p class="description">Moleton, Cor: Cinza</p>
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;139,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/sweatshirts/0807251801-nike.jpeg" alt="[0807251801] Nike">
+          <img src="images/man/sweatshirts/0806251801-nike.jpeg" alt="[0806251801] Nike">
           <div class="product-details">
-            <h3>[0807251801] Nike</h3>
+            <h3>[0806251801] Nike</h3>
             <p class="description">Moleton, Cor: Azul Marinho</p>
             <span class="size">Tamanho: M, G, GG</span>
             <span class="price">R$&nbsp;139,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/sweatshirts/0807251800-nike.jpeg" alt="[0807251800] Nike">
+          <img src="images/man/sweatshirts/0806251800-nike.jpeg" alt="[0806251800] Nike">
           <div class="product-details">
-            <h3>[0807251800] Nike</h3>
+            <h3>[0806251800] Nike</h3>
             <p class="description">Moleton, Cor: Preta</p>
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;139,00</span>
@@ -6768,25 +6768,25 @@ exports[`Catalog Mobile View renders final subcategory "Blusas Masculina" correc
   <main>
     <h2 id="category-heading">Blusas Masculina</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/man/sweatshirts/0807251801-nike.jpeg" alt="[0807251801] Nike">
+          <img src="images/man/sweatshirts/0806251801-nike.jpeg" alt="[0806251801] Nike">
           <div class="product-details">
-            <h3>[0807251801] Nike</h3>
+            <h3>[0806251801] Nike</h3>
             <p class="description">Moleton, Cor: Azul Marinho</p>
             <span class="size">Tamanho: M, G, GG</span>
             <span class="price">R$&nbsp;139,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/sweatshirts/0807251800-nike.jpeg" alt="[0807251800] Nike">
+          <img src="images/man/sweatshirts/0806251800-nike.jpeg" alt="[0806251800] Nike">
           <div class="product-details">
-            <h3>[0807251800] Nike</h3>
+            <h3>[0806251800] Nike</h3>
             <p class="description">Moleton, Cor: Preta</p>
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;139,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/sweatshirts/0807251802-nike.jpeg" alt="[0807251802] Nike">
+          <img src="images/man/sweatshirts/0806251802-nike.jpeg" alt="[0806251802] Nike">
           <div class="product-details">
-            <h3>[0807251802] Nike</h3>
+            <h3>[0806251802] Nike</h3>
             <p class="description">Moleton, Cor: Cinza</p>
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;139,00</span>
@@ -7966,41 +7966,41 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Sociais Mascul
   <main>
     <h2 id="category-heading">Camisetas Sociais Masculina</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/man/dress-shirts/0807251831-reserva.jpeg" alt="[0807251831] Reserva">
+          <img src="images/man/dress-shirts/0806251831-reserva.jpeg" alt="[0806251831] Reserva">
           <div class="product-details">
-            <h3>[0807251831] Reserva</h3>
+            <h3>[0806251831] Reserva</h3>
             <p class="description">Manga Longa</p>
             <span class="size">Tamanho: XXL</span>
             <span class="price">R$&nbsp;139,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/dress-shirts/0807251832-reserva.jpeg" alt="[0807251832] Reserva">
+          <img src="images/man/dress-shirts/0806251832-reserva.jpeg" alt="[0806251832] Reserva">
           <div class="product-details">
-            <h3>[0807251832] Reserva</h3>
+            <h3>[0806251832] Reserva</h3>
             <p class="description">Manga Longa</p>
             <span class="size">Tamanho: XXL</span>
             <span class="price">R$&nbsp;139,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/dress-shirts/0807251833-reserva.jpeg" alt="[0807251833] Reserva">
+          <img src="images/man/dress-shirts/0806251833-reserva.jpeg" alt="[0806251833] Reserva">
           <div class="product-details">
-            <h3>[0807251833] Reserva</h3>
+            <h3>[0806251833] Reserva</h3>
             <p class="description">Manga Longa</p>
             <span class="size">Tamanho: XXL</span>
             <span class="price">R$&nbsp;139,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/dress-shirts/0807251830-ricardo-almeida.jpeg" alt="[0807251830] Ricardo Almeida">
+          <img src="images/man/dress-shirts/0806251830-ricardo-almeida.jpeg" alt="[0806251830] Ricardo Almeida">
           <div class="product-details">
-            <h3>[0807251830] Ricardo Almeida</h3>
+            <h3>[0806251830] Ricardo Almeida</h3>
             <p class="description">Manga Longa</p>
             <span class="size">Tamanho: 46</span>
             <span class="price">R$&nbsp;139,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/dress-shirts/0807251834-sergio-k.jpeg" alt="[0807251834] Sergio K">
+          <img src="images/man/dress-shirts/0806251834-sergio-k.jpeg" alt="[0806251834] Sergio K">
           <div class="product-details">
-            <h3>[0807251834] Sergio K</h3>
+            <h3>[0806251834] Sergio K</h3>
             <p class="description">Manga Longa</p>
             <span class="size">Tamanho: XXXL</span>
             <span class="price">R$&nbsp;139,90</span>

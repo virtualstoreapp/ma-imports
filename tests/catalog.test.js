@@ -359,7 +359,7 @@ describe('Catalog', () => {
       "tshirts-casual-man": [{ name: "[0103250820] Tshirt Casual Man", price: 89.90 }],
       "tshirts-dryfit-man": [{ name: "[2703251659] Tshirt Dryfit Man", price: 59.90 }],
       "tshirts-polo-man": [{ name: "[1603250851] Tshirt Polo Man", price: 59.90 }],
-      "dress-shirts-man": [{ name: "[0807251831] Dress Shirt Man", price: 139.90 }],
+      "dress-shirts-man": [{ name: "[0806251831] Dress Shirt Man", price: 139.90 }],
       "tank-top-casual-man": [{ name: "[1903251705] Tank Top Casual Man", price: 39.90 }],
       "tank-top-dryfit-man": [{ name: "[0703251715] Tank Top Dryfit Man", price: 59.90 }],
       "shorts-sweatshorts-man": [{ name: "[2003250848] Short Basic Man", price: 69.90 }],
@@ -398,7 +398,7 @@ describe('Catalog', () => {
       const productItems = Array.from(document.querySelectorAll('#product-list .product-item'));
       const productNames = productItems.map(item => item.querySelector('h3').textContent);
       expect(productNames).toEqual([
-        "[0807251831] Dress Shirt Man",
+        "[0806251831] Dress Shirt Man",
         "[0106250956] Cap Man",
         "[0106250834] Socks Man",
         "[0106250800] Sweatshirt Man",

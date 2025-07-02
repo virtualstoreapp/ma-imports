@@ -70,33 +70,33 @@
         "size": "M"
     },
     {
-        "name": "[0807251801] Nike",
+        "name": "[0806251801] Nike",
         "description": "Moleton, Cor: Azul Marinho",
         "oldPrice": 0.0,
         "price": 139.00,
         "images": [
-            "images/man/sweatshirts/0807251801-nike.jpeg"
+            "images/man/sweatshirts/0806251801-nike.jpeg"
         ],
         "size": "M, G, GG"
     },
     {
-        "name": "[0807251800] Nike",
+        "name": "[0806251800] Nike",
         "description": "Moleton, Cor: Preta",
         "oldPrice": 0.0,
         "price": 139.00,
         "images": [
-            "images/man/sweatshirts/0807251800-nike.jpeg"
+            "images/man/sweatshirts/0806251800-nike.jpeg"
         ],
         "size": "G",
         "soldOut": true
     },
     {
-        "name": "[0807251802] Nike",
+        "name": "[0806251802] Nike",
         "description": "Moleton, Cor: Cinza",
         "oldPrice": 0.0,
         "price": 139.00,
         "images": [
-            "images/man/sweatshirts/0807251802-nike.jpeg"
+            "images/man/sweatshirts/0806251802-nike.jpeg"
         ],
         "size": "GG"
     },
