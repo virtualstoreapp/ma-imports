@@ -4,7 +4,8 @@
         "oldPrice": 159.0,
         "price": 149.0,
         "image": "images/man/shoes/adidas/1202252201-adidas-campus.jpeg",
-        "size": "35"
+        "size": "35",
+        "soldOut": true
     },
     {
         "name": "[1202252202] Adidas Campus",
@@ -104,14 +105,16 @@
         "oldPrice": 159.0,
         "price": 149.0,
         "image": "images/man/shoes/nike/1202251737-nike-dunk-low-pro.jpeg",
-        "size": "35"
+        "size": "35",
+        "soldOut": true
     },
     {
         "name": "[1202251719] Nike Dunk Low Pro",
         "oldPrice": 159.0,
         "price": 149.0,
         "image": "images/man/shoes/nike/1202251719-nike-dunk-low-pro.jpeg",
-        "size": "36"
+        "size": "36",
+        "soldOut": true
     },
     {
         "name": "[1202252152] Nike Dunk Low Pro",
@@ -168,7 +171,8 @@
         "oldPrice": 269.0,
         "price": 259.0,
         "image": "images/man/shoes/nike/1202251724-nike-shox.jpeg",
-        "size": "40"
+        "size": "40",
+        "soldOut": true
     },
     {
         "name": "[1202252214] Nike Shox",

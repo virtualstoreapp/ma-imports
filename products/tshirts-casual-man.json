@@ -27,7 +27,8 @@
         "images": [
             "images/man/tshirts/casual/burberry/2702251016-burberry.jpeg"
         ],
-        "size": "M"
+        "size": "M",
+        "soldOut": true
     },
     {
         "name": "[2702250957] Dolce & Gabbana",
@@ -97,7 +98,8 @@
         "images": [
             "images/man/tshirts/casual/hugo-boss/0903251012-hugo-boss.jpeg"
         ],
-        "size": "P"
+        "size": "P",
+        "soldOut": true
     },
     {
         "name": "[1503250633] Hugo Boss",
@@ -127,7 +129,8 @@
         "images": [
             "images/man/tshirts/casual/hugo-boss/0103250810-hugo-boss.jpeg"
         ],
-        "size": "GG"
+        "size": "GG",
+        "soldOut": true
     },
     {
         "name": "[0803251044] Hurley",
@@ -207,7 +210,8 @@
         "images": [
             "images/man/tshirts/casual/louis-vuitton/2702250956-louis-vuitton.jpeg"
         ],
-        "size": "GG"
+        "size": "GG",
+        "soldOut": true
     },
     {
         "name": "[0803251049] Nike",
@@ -250,7 +254,8 @@
         "images": [
             "images/man/tshirts/casual/quiksilver/1903251723-quiksilver.jpeg"
         ],
-        "size": "G"
+        "size": "G",
+        "soldOut": true
     },
     {
         "name": "[0903251015] Tommy Hilfiger",
@@ -290,7 +295,8 @@
         "images": [
             "images/man/tshirts/casual/tommy-hilfiger/2802251122-tommy-hilfiger.jpeg"
         ],
-        "size": "G"
+        "size": "G",
+        "soldOut": true
     },
     {
         "name": "[1403251118] Tommy Hilfiger",
@@ -340,7 +346,8 @@
         "images": [
             "images/man/tshirts/casual/versace/0103250813-versace.jpeg"
         ],
-        "size": "M"
+        "size": "M",
+        "soldOut": true
     },
     {
         "name": "[0803251811] Versace",

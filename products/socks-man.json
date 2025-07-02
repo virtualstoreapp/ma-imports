@@ -67,6 +67,7 @@
         "images": [
             "images/man/socks/0106250830-quicksilver.jpeg"
         ],
-        "size": "Consultar"
+        "size": "Consultar",
+        "soldOut": true
     }
 ]

@@ -107,7 +107,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="size">Tamanho: XXXL</span>
             <span class="price">R$&nbsp;139,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/dress-shirts/0807251833-reserva.jpeg" alt="[0807251833] Reserva">
           <div class="product-details">
             <h3>[0807251833] Reserva</h3>
@@ -259,7 +259,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="size">Tamanho: Consultar</span>
             <span class="price">R$&nbsp;12,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/sweatshirts/0106250802-jhbao.jpeg" alt="[0106250802] J. H. Bao">
           <div class="product-details">
             <h3>[0106250802] J. H. Bao</h3>
@@ -299,7 +299,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="size">Tamanho: G1</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/dryfit/mizuno/1104250038-mizuno.jpeg" alt="[1104250038] Mizuno">
           <div class="product-details">
             <h3>[1104250038] Mizuno</h3>
@@ -755,7 +755,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;39,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tank-top/casual/calvin-klein/1903251708-calvin-klein.jpeg" alt="[1903251708] Calvin Klein">
           <div class="product-details">
             <h3>[1903251708] Calvin Klein</h3>
@@ -811,7 +811,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="size">Tamanho: G1</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/hugo-boss/1503250633-hugo-boss.jpeg" alt="[1503250633] Hugo Boss">
           <div class="product-details">
             <h3>[1503250633] Hugo Boss</h3>
@@ -915,7 +915,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="size">Tamanho: P</span>
             <span class="price">R$&nbsp;39,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/vans/0903251011-vans.jpeg" alt="[0903251011] Vans">
           <div class="product-details">
             <h3>[0903251011] Vans</h3>
@@ -1027,7 +1027,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;79,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/hugo-boss/0103250810-hugo-boss.jpeg" alt="[0103250810] Hugo Boss">
           <div class="product-details">
             <h3>[0103250810] Hugo Boss</h3>
@@ -1035,7 +1035,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;89,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/louis-vuitton/2802251130-louis-vuitton.jpeg" alt="[2802251130] Louis Vuitton">
           <div class="product-details">
             <h3>[2802251130] Louis Vuitton</h3>
@@ -1051,7 +1051,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;89,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/nike/2802251120-nike-front.jpeg" alt="[2802251120] Nike">
           <div class="product-details">
             <h3>[2802251120] Nike</h3>
@@ -1083,7 +1083,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;79,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/emporio-armani/2702251001-emporio-armani.jpeg" alt="[2702251001] Emporio Armani">
           <div class="product-details">
             <h3>[2702251001] Emporio Armani</h3>
@@ -1107,7 +1107,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;89,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/slippers/tommy-hilfiger/1702251140-tommy-hilfiger.jpeg" alt="[1702251140] Tommy Hilfiger">
           <div class="product-details">
             <h3>[1702251140] Tommy Hilfiger</h3>
@@ -1178,7 +1178,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="old-price">R$&nbsp;159,00</span>
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202252200-nike-air-jordan.jpeg" alt="[1202252200] Nike Air Jordan">
           <div class="product-details">
             <h3>[1202252200] Nike Air Jordan</h3>
@@ -1241,7 +1241,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="old-price">R$&nbsp;159,00</span>
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/asics/1202251736-asics.jpeg" alt="[1202251736] Asics">
           <div class="product-details">
             <h3>[1202251736] Asics</h3>
@@ -1277,7 +1277,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="old-price">R$&nbsp;269,00</span>
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251722-nike-shox-neymar.jpeg" alt="[1202251722] Nike Shox Neymar">
           <div class="product-details">
             <h3>[1202251722] Nike Shox Neymar</h3>
@@ -1295,7 +1295,7 @@ exports[`Catalog Desktop View renders "All Products" correctly 1`] = `
             <span class="old-price">R$&nbsp;159,00</span>
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251718-nike-r4.jpeg" alt="[1202251718] Nike R4">
           <div class="product-details">
             <h3>[1202251718] Nike R4</h3>
@@ -2599,7 +2599,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
             <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;79,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/dolce-gabbana/2702250957-dolce-gabbana.jpeg" alt="[2702250957] Dolce &amp; Gabbana">
           <div class="product-details">
             <h3>[2702250957] Dolce &amp; Gabbana</h3>
@@ -2655,7 +2655,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
             <span class="size">Tamanho: P</span>
             <span class="price">R$&nbsp;39,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/hugo-boss/1503250633-hugo-boss.jpeg" alt="[1503250633] Hugo Boss">
           <div class="product-details">
             <h3>[1503250633] Hugo Boss</h3>
@@ -2679,7 +2679,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;89,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/hurley/0803251044-hurley.jpeg" alt="[0803251044] Hurley">
           <div class="product-details">
             <h3>[0803251044] Hurley</h3>
@@ -2743,7 +2743,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;89,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/nike/0803251049-nike.jpeg" alt="[0803251049] Nike">
           <div class="product-details">
             <h3>[0803251049] Nike</h3>
@@ -2775,7 +2775,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;39,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/tommy-hilfiger/0903251015-tommy-hilfiger.jpeg" alt="[0903251015] Tommy Hilfiger">
           <div class="product-details">
             <h3>[0903251015] Tommy Hilfiger</h3>
@@ -2807,7 +2807,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;89,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/tommy-hilfiger/1403251118-tommy-hilfiger.jpeg" alt="[1403251118] Tommy Hilfiger">
           <div class="product-details">
             <h3>[1403251118] Tommy Hilfiger</h3>
@@ -2847,7 +2847,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Casuais Mascu
             <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;79,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/versace/0803251811-versace.jpeg" alt="[0803251811] Versace">
           <div class="product-details">
             <h3>[0803251811] Versace</h3>
@@ -3005,7 +3005,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Dry Fit Mascu
             <span class="size">Tamanho: G1</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/dryfit/austman/1104250032-austman.jpeg" alt="[1104250032] Austman">
           <div class="product-details">
             <h3>[1104250032] Austman</h3>
@@ -3299,7 +3299,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Polo Masculin
             <span class="size">Tamanho: G1</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/polo/nike/1603250850-nike.jpeg" alt="[1603250850] Nike">
           <div class="product-details">
             <h3>[1603250850] Nike</h3>
@@ -3473,7 +3473,7 @@ exports[`Catalog Desktop View renders final subcategory "Camisetas Sociais Mascu
             <span class="size">Tamanho: XXXL</span>
             <span class="price">R$&nbsp;139,90</span>
           </div>
-        </li></ul>
+        <div class="sold-out-label">Esgotado</div></li></ul>
   </main>
 
   <footer>
@@ -3789,7 +3789,7 @@ exports[`Catalog Desktop View renders final subcategory "Meias Masculina" correc
             <span class="size">Tamanho: Consultar</span>
             <span class="price">R$&nbsp;12,00</span>
           </div>
-        </li></ul>
+        <div class="sold-out-label">Esgotado</div></li></ul>
   </main>
 
   <footer>
@@ -4264,7 +4264,7 @@ exports[`Catalog Desktop View renders final subcategory "Tênis" correctly on de
             <span class="old-price">R$&nbsp;159,00</span>
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/adidas/1202252202-adidas-campus.jpeg" alt="[1202252202] Adidas Campus">
           <div class="product-details">
             <h3>[1202252202] Adidas Campus</h3>
@@ -4388,7 +4388,7 @@ exports[`Catalog Desktop View renders final subcategory "Tênis" correctly on de
             <span class="old-price">R$&nbsp;159,00</span>
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251719-nike-dunk-low-pro.jpeg" alt="[1202251719] Nike Dunk Low Pro">
           <div class="product-details">
             <h3>[1202251719] Nike Dunk Low Pro</h3>
@@ -4397,7 +4397,7 @@ exports[`Catalog Desktop View renders final subcategory "Tênis" correctly on de
             <span class="old-price">R$&nbsp;159,00</span>
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202252152-nike-dunk-low-pro.jpeg" alt="[1202252152] Nike Dunk Low Pro">
           <div class="product-details">
             <h3>[1202252152] Nike Dunk Low Pro</h3>
@@ -4469,7 +4469,7 @@ exports[`Catalog Desktop View renders final subcategory "Tênis" correctly on de
             <span class="old-price">R$&nbsp;269,00</span>
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202252214-nike-shox.jpeg" alt="[1202252214] Nike Shox">
           <div class="product-details">
             <h3>[1202252214] Nike Shox</h3>
@@ -4639,7 +4639,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="size">Tamanho: XXXL</span>
             <span class="price">R$&nbsp;139,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/dress-shirts/0807251833-reserva.jpeg" alt="[0807251833] Reserva">
           <div class="product-details">
             <h3>[0807251833] Reserva</h3>
@@ -4791,7 +4791,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="size">Tamanho: Consultar</span>
             <span class="price">R$&nbsp;12,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/sweatshirts/0106250802-jhbao.jpeg" alt="[0106250802] J. H. Bao">
           <div class="product-details">
             <h3>[0106250802] J. H. Bao</h3>
@@ -4831,7 +4831,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="size">Tamanho: G1</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/dryfit/mizuno/1104250038-mizuno.jpeg" alt="[1104250038] Mizuno">
           <div class="product-details">
             <h3>[1104250038] Mizuno</h3>
@@ -5287,7 +5287,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;39,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tank-top/casual/calvin-klein/1903251708-calvin-klein.jpeg" alt="[1903251708] Calvin Klein">
           <div class="product-details">
             <h3>[1903251708] Calvin Klein</h3>
@@ -5343,7 +5343,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="size">Tamanho: G1</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/hugo-boss/1503250633-hugo-boss.jpeg" alt="[1503250633] Hugo Boss">
           <div class="product-details">
             <h3>[1503250633] Hugo Boss</h3>
@@ -5447,7 +5447,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="size">Tamanho: P</span>
             <span class="price">R$&nbsp;39,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/vans/0903251011-vans.jpeg" alt="[0903251011] Vans">
           <div class="product-details">
             <h3>[0903251011] Vans</h3>
@@ -5559,7 +5559,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;79,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/hugo-boss/0103250810-hugo-boss.jpeg" alt="[0103250810] Hugo Boss">
           <div class="product-details">
             <h3>[0103250810] Hugo Boss</h3>
@@ -5567,7 +5567,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;89,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/louis-vuitton/2802251130-louis-vuitton.jpeg" alt="[2802251130] Louis Vuitton">
           <div class="product-details">
             <h3>[2802251130] Louis Vuitton</h3>
@@ -5583,7 +5583,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;89,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/nike/2802251120-nike-front.jpeg" alt="[2802251120] Nike">
           <div class="product-details">
             <h3>[2802251120] Nike</h3>
@@ -5615,7 +5615,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;79,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/emporio-armani/2702251001-emporio-armani.jpeg" alt="[2702251001] Emporio Armani">
           <div class="product-details">
             <h3>[2702251001] Emporio Armani</h3>
@@ -5639,7 +5639,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;89,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/slippers/tommy-hilfiger/1702251140-tommy-hilfiger.jpeg" alt="[1702251140] Tommy Hilfiger">
           <div class="product-details">
             <h3>[1702251140] Tommy Hilfiger</h3>
@@ -5710,7 +5710,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="old-price">R$&nbsp;159,00</span>
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202252200-nike-air-jordan.jpeg" alt="[1202252200] Nike Air Jordan">
           <div class="product-details">
             <h3>[1202252200] Nike Air Jordan</h3>
@@ -5773,7 +5773,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="old-price">R$&nbsp;159,00</span>
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/asics/1202251736-asics.jpeg" alt="[1202251736] Asics">
           <div class="product-details">
             <h3>[1202251736] Asics</h3>
@@ -5809,7 +5809,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="old-price">R$&nbsp;269,00</span>
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251722-nike-shox-neymar.jpeg" alt="[1202251722] Nike Shox Neymar">
           <div class="product-details">
             <h3>[1202251722] Nike Shox Neymar</h3>
@@ -5827,7 +5827,7 @@ exports[`Catalog Mobile View renders "All Products" correctly on mobile 1`] = `
             <span class="old-price">R$&nbsp;159,00</span>
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251718-nike-r4.jpeg" alt="[1202251718] Nike R4">
           <div class="product-details">
             <h3>[1202251718] Nike R4</h3>
@@ -7131,7 +7131,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
             <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;79,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/dolce-gabbana/2702250957-dolce-gabbana.jpeg" alt="[2702250957] Dolce &amp; Gabbana">
           <div class="product-details">
             <h3>[2702250957] Dolce &amp; Gabbana</h3>
@@ -7187,7 +7187,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
             <span class="size">Tamanho: P</span>
             <span class="price">R$&nbsp;39,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/hugo-boss/1503250633-hugo-boss.jpeg" alt="[1503250633] Hugo Boss">
           <div class="product-details">
             <h3>[1503250633] Hugo Boss</h3>
@@ -7211,7 +7211,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;89,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/hurley/0803251044-hurley.jpeg" alt="[0803251044] Hurley">
           <div class="product-details">
             <h3>[0803251044] Hurley</h3>
@@ -7275,7 +7275,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;89,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/nike/0803251049-nike.jpeg" alt="[0803251049] Nike">
           <div class="product-details">
             <h3>[0803251049] Nike</h3>
@@ -7307,7 +7307,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;39,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/tommy-hilfiger/0903251015-tommy-hilfiger.jpeg" alt="[0903251015] Tommy Hilfiger">
           <div class="product-details">
             <h3>[0903251015] Tommy Hilfiger</h3>
@@ -7339,7 +7339,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;89,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/tommy-hilfiger/1403251118-tommy-hilfiger.jpeg" alt="[1403251118] Tommy Hilfiger">
           <div class="product-details">
             <h3>[1403251118] Tommy Hilfiger</h3>
@@ -7379,7 +7379,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Casuais Mascul
             <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;79,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/versace/0803251811-versace.jpeg" alt="[0803251811] Versace">
           <div class="product-details">
             <h3>[0803251811] Versace</h3>
@@ -7537,7 +7537,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Dry Fit Mascul
             <span class="size">Tamanho: G1</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/dryfit/austman/1104250032-austman.jpeg" alt="[1104250032] Austman">
           <div class="product-details">
             <h3>[1104250032] Austman</h3>
@@ -7831,7 +7831,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Polo Masculina
             <span class="size">Tamanho: G1</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/polo/nike/1603250850-nike.jpeg" alt="[1603250850] Nike">
           <div class="product-details">
             <h3>[1603250850] Nike</h3>
@@ -8005,7 +8005,7 @@ exports[`Catalog Mobile View renders final subcategory "Camisetas Sociais Mascul
             <span class="size">Tamanho: XXXL</span>
             <span class="price">R$&nbsp;139,90</span>
           </div>
-        </li></ul>
+        <div class="sold-out-label">Esgotado</div></li></ul>
   </main>
 
   <footer>
@@ -8321,7 +8321,7 @@ exports[`Catalog Mobile View renders final subcategory "Meias Masculina" correct
             <span class="size">Tamanho: Consultar</span>
             <span class="price">R$&nbsp;12,00</span>
           </div>
-        </li></ul>
+        <div class="sold-out-label">Esgotado</div></li></ul>
   </main>
 
   <footer>
@@ -8796,7 +8796,7 @@ exports[`Catalog Mobile View renders final subcategory "Tênis" correctly on mob
             <span class="old-price">R$&nbsp;159,00</span>
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/adidas/1202252202-adidas-campus.jpeg" alt="[1202252202] Adidas Campus">
           <div class="product-details">
             <h3>[1202252202] Adidas Campus</h3>
@@ -8920,7 +8920,7 @@ exports[`Catalog Mobile View renders final subcategory "Tênis" correctly on mob
             <span class="old-price">R$&nbsp;159,00</span>
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251719-nike-dunk-low-pro.jpeg" alt="[1202251719] Nike Dunk Low Pro">
           <div class="product-details">
             <h3>[1202251719] Nike Dunk Low Pro</h3>
@@ -8929,7 +8929,7 @@ exports[`Catalog Mobile View renders final subcategory "Tênis" correctly on mob
             <span class="old-price">R$&nbsp;159,00</span>
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202252152-nike-dunk-low-pro.jpeg" alt="[1202252152] Nike Dunk Low Pro">
           <div class="product-details">
             <h3>[1202252152] Nike Dunk Low Pro</h3>
@@ -9001,7 +9001,7 @@ exports[`Catalog Mobile View renders final subcategory "Tênis" correctly on mob
             <span class="old-price">R$&nbsp;269,00</span>
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202252214-nike-shox.jpeg" alt="[1202252214] Nike Shox">
           <div class="product-details">
             <h3>[1202252214] Nike Shox</h3>
@@ -9172,7 +9172,7 @@ exports[`Catalog Modal Functionality opens modal on product click and logs GA ev
             <span class="old-price">R$&nbsp;159,00</span>
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/adidas/1202252202-adidas-campus.jpeg" alt="[1202252202] Adidas Campus">
           <div class="product-details">
             <h3>[1202252202] Adidas Campus</h3>
@@ -9296,7 +9296,7 @@ exports[`Catalog Modal Functionality opens modal on product click and logs GA ev
             <span class="old-price">R$&nbsp;159,00</span>
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251719-nike-dunk-low-pro.jpeg" alt="[1202251719] Nike Dunk Low Pro">
           <div class="product-details">
             <h3>[1202251719] Nike Dunk Low Pro</h3>
@@ -9305,7 +9305,7 @@ exports[`Catalog Modal Functionality opens modal on product click and logs GA ev
             <span class="old-price">R$&nbsp;159,00</span>
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202252152-nike-dunk-low-pro.jpeg" alt="[1202252152] Nike Dunk Low Pro">
           <div class="product-details">
             <h3>[1202252152] Nike Dunk Low Pro</h3>
@@ -9377,7 +9377,7 @@ exports[`Catalog Modal Functionality opens modal on product click and logs GA ev
             <span class="old-price">R$&nbsp;269,00</span>
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202252214-nike-shox.jpeg" alt="[1202252214] Nike Shox">
           <div class="product-details">
             <h3>[1202252214] Nike Shox</h3>
@@ -9548,7 +9548,7 @@ exports[`Catalog Modal Functionality redirects to WhatsApp with correct message 
             <span class="old-price">R$&nbsp;159,00</span>
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/adidas/1202252202-adidas-campus.jpeg" alt="[1202252202] Adidas Campus">
           <div class="product-details">
             <h3>[1202252202] Adidas Campus</h3>
@@ -9672,7 +9672,7 @@ exports[`Catalog Modal Functionality redirects to WhatsApp with correct message 
             <span class="old-price">R$&nbsp;159,00</span>
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251719-nike-dunk-low-pro.jpeg" alt="[1202251719] Nike Dunk Low Pro">
           <div class="product-details">
             <h3>[1202251719] Nike Dunk Low Pro</h3>
@@ -9681,7 +9681,7 @@ exports[`Catalog Modal Functionality redirects to WhatsApp with correct message 
             <span class="old-price">R$&nbsp;159,00</span>
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202252152-nike-dunk-low-pro.jpeg" alt="[1202252152] Nike Dunk Low Pro">
           <div class="product-details">
             <h3>[1202252152] Nike Dunk Low Pro</h3>
@@ -9753,7 +9753,7 @@ exports[`Catalog Modal Functionality redirects to WhatsApp with correct message 
             <span class="old-price">R$&nbsp;269,00</span>
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202252214-nike-shox.jpeg" alt="[1202252214] Nike Shox">
           <div class="product-details">
             <h3>[1202252214] Nike Shox</h3>

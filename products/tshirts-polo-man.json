@@ -27,7 +27,8 @@
         "images": [
             "images/man/tshirts/polo/lacoste/1603250846-lacoste.jpeg"
         ],
-        "size": "G1"
+        "size": "G1",
+        "soldOut": true
     },
     {
         "name": "[1603250850] Nike",
