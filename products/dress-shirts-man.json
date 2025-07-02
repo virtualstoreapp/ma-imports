@@ -47,6 +47,7 @@
         "images": [
             "images/man/dress-shirts/0807251834-sergio-k.jpeg"
         ],
-        "size": "XXXL"
+        "size": "XXXL",
+        "soldOut": true
     }
 ]

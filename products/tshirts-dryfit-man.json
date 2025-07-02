@@ -17,7 +17,8 @@
         "images": [
             "images/man/tshirts/dryfit/adidas/1104250039-adidas.jpeg"
         ],
-        "size": "G1"
+        "size": "G1",
+        "soldOut": true
     },
     {
         "name": "[1104250032] Austman",
