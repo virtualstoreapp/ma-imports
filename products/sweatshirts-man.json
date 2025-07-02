@@ -1,5 +1,75 @@
 [
     {
+        "name": "[0207251340] Abercrombie",
+        "description": "Moleton",
+        "oldPrice": 0.0,
+        "price": 159.00,
+        "images": [
+            "images/man/sweatshirts/0207251340-abercrombie.jpeg"
+        ],
+        "size": "G"
+    },
+    {
+        "name": "[0207251345] Abercrombie",
+        "description": "Moleton",
+        "oldPrice": 0.0,
+        "price": 159.00,
+        "images": [
+            "images/man/sweatshirts/0207251345-abercrombie.jpeg"
+        ],
+        "size": "GG"
+    },
+    {
+        "name": "[0207251348] Adidas",
+        "description": "Moleton",
+        "oldPrice": 0.0,
+        "price": 129.00,
+        "images": [
+            "images/man/sweatshirts/0207251348-adidas.jpeg"
+        ],
+        "size": "M"
+    },
+    {
+        "name": "[0207251336] Hugo Boss",
+        "description": "Moleton, Cor: Cinza",
+        "oldPrice": 0.0,
+        "price": 159.00,
+        "images": [
+            "images/man/sweatshirts/0207251336-hugo-boss.jpeg"
+        ],
+        "size": "GG"
+    },
+    {
+        "name": "[0207251346] Lacoste",
+        "description": "Conjunto Moleton modelo infantil",
+        "oldPrice": 0.0,
+        "price": 179.00,
+        "images": [
+            "images/man/sweatshirts/0207251346-lacoste.jpeg"
+        ],
+        "size": "GG"
+    },
+    {
+        "name": "[0207251339] Louis Vuitton",
+        "description": "Moleton",
+        "oldPrice": 0.0,
+        "price": 159.00,
+        "images": [
+            "images/man/sweatshirts/0207251339-louis-vuitton.jpeg"
+        ],
+        "size": "G"
+    },
+    {
+        "name": "[0207251347] Nike",
+        "description": "Moleton",
+        "oldPrice": 0.0,
+        "price": 129.00,
+        "images": [
+            "images/man/sweatshirts/0207251347-nike.jpeg"
+        ],
+        "size": "M"
+    },
+    {
         "name": "[0807251801] Nike",
         "description": "Moleton, Cor: Azul Marinho",
         "oldPrice": 0.0,
@@ -59,5 +129,15 @@
             "images/man/sweatshirts/0106250800.jpeg"
         ],
         "size": "P"
+    },
+    {
+        "name": "[0207251338] Versace",
+        "description": "Moleton, Cor: Vermelha",
+        "oldPrice": 0.0,
+        "price": 159.00,
+        "images": [
+            "images/man/sweatshirts/0207251338-versace.jpeg"
+        ],
+        "size": "M"
     }
 ]
