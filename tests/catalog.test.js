@@ -40,7 +40,7 @@ const asserts = async (expectedHeading, expectedCount) => {
 
 const assertAllProducts = async () => {
   const expectedHeading = "Novidades";
-  const expectedCount = 162;
+  const expectedCount = 163;
   await asserts(expectedHeading, expectedCount);
 };
 
@@ -193,6 +193,14 @@ const selectSweatshirtMan = async () => {
   await asserts(expectedHeading, expectedCount);
 };
 
+const selectSweatshirtWoman = async () => {
+  const expectedHeading = "Blusas Feminina";
+  const expectedCount = 1;
+  await selectClothingManSubcategory();
+  await selectMenuOption('sweatshirts-woman');
+  await asserts(expectedHeading, expectedCount);
+};
+
 const selectSocksMan = async () => {
   const expectedHeading = "Meias Masculina";
   const expectedCount = 7;
@@ -273,6 +281,10 @@ describe('Catalog', () => {
       await selectSweatshirtMan();
     });
 
+    it('renders final subcategory "Blusas Feminina" correctly on desktop', async () => {
+      await selectSweatshirtWoman();
+    });
+
     it('renders final subcategory "Meias Masculina" correctly on desktop', async () => {
       await selectSocksMan();
     });
@@ -346,6 +358,10 @@ describe('Catalog', () => {
       await selectSweatshirtMan();
     });
 
+    it('renders final subcategory "Blusas Feminina" correctly on desktop', async () => {
+      await selectSweatshirtWoman();
+    });
+
     it('renders final subcategory "Meias Masculina" correctly on desktop', async () => {
       await selectSocksMan();
     });
@@ -369,6 +385,7 @@ describe('Catalog', () => {
       "caps-man": [{ name: "[0106250956] Cap Man", price: 59.90 }],
       "socks-man": [{ name: "[0106250834] Socks Man", price: 21.90 }],
       "sweatshirts-man": [{ name: "[0106250800] Sweatshirt Man", price: 299.00 }],
+      "sweatshirts-woman": [{ name: "[0207251439] Sweatshirt Woman", price: 299.00 }],
     };
 
     beforeEach(() => {
@@ -398,6 +415,7 @@ describe('Catalog', () => {
       const productItems = Array.from(document.querySelectorAll('#product-list .product-item'));
       const productNames = productItems.map(item => item.querySelector('h3').textContent);
       expect(productNames).toEqual([
+        "[0207251439] Sweatshirt Woman",
         "[0806251831] Dress Shirt Man",
         "[0106250956] Cap Man",
         "[0106250834] Socks Man",
