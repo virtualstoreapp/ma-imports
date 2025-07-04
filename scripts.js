@@ -33,8 +33,6 @@
       currency: 'BRL',
     }).format(value);
 
-  
-
   const updateCategoryHeading = (category, headingEl) => {
     headingEl.textContent = CATEGORIES_DICT[category] || 'Produtos';
   };
