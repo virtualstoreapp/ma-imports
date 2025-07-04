@@ -7,7 +7,8 @@
         "images": [
             "images/man/sweatshirts/0207251340-abercrombie.jpeg"
         ],
-        "size": "G"
+        "size": "G",
+        "soldOut": true
     },
     {
         "name": "[0207251345] Abercrombie",
@@ -37,7 +38,8 @@
         "images": [
             "images/man/sweatshirts/0207251336-hugo-boss.jpeg"
         ],
-        "size": "GG"
+        "size": "GG",
+        "soldOut": true
     },
     {
         "name": "[0207251346] Lacoste",
