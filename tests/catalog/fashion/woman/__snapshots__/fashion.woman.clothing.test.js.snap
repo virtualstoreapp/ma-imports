@@ -69,7 +69,10 @@ exports[`Fashion Woman Clothing Desktop View Sweatshirts renders final subcatego
                     <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
-                        <button data-category="sweatpants-man">Moletom</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
                       </li>
                     </ul>
                   </li>
@@ -230,7 +233,10 @@ exports[`Fashion Woman Clothing Mobile View Sweatshirts renders final subcategor
                     <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
-                        <button data-category="sweatpants-man">Moletom</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
                       </li>
                     </ul>
                   </li>

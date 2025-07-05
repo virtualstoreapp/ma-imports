@@ -15,7 +15,8 @@ const {
   selectShortsJeansMan,
   selectShortsSweatshortsMan,
   selectShortsTactelMan,
-  selectShortsSweatpantsMan,
+  selectPantsSweatpantsMan,
+  selectPantsJeansMan
 } = require('../../../utils/catalogActions');
 
 describe('Fashion', () => {
@@ -80,8 +81,12 @@ describe('Fashion', () => {
                 });
 
                 describe('Pants', () => {
-                    it('renders final subcategory "Calça Moletom Masculina" correctly on mobile', async () => {
-                        await selectShortsSweatpantsMan();
+                    it('renders final subcategory "Calça Moletom Masculina" correctly on desktop', async () => {
+                        await selectPantsSweatpantsMan();
+                    });
+
+                    it('renders final subcategory "Calça Jeans Masculina" correctly on desktop', async () => {
+                        await selectPantsJeansMan();
                     });
                 });
             });
@@ -145,7 +150,11 @@ describe('Fashion', () => {
 
                 describe('Pants', () => {
                     it('renders final subcategory "Calça Moletom Masculina" correctly on mobile', async () => {
-                        await selectShortsSweatpantsMan();
+                        await selectPantsSweatpantsMan();
+                    });
+
+                    it('renders final subcategory "Calça Jeans Masculina" correctly on mobile', async () => {
+                        await selectPantsJeansMan();
                     });
                 });
             });

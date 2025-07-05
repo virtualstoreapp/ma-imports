@@ -28,7 +28,8 @@ describe('Catalog Behaviour', () => {
         "socks-man": [{ name: "[0106250834] Socks Man", price: 21.90 }],
         "sweatshirts-man": [{ name: "[0106250800] Sweatshirt Man", price: 299.00 }],
         "sweatshirts-woman": [{ name: "[0207251439] Sweatshirt Woman", price: 299.00 }],
-        "sweatpants-man": [{ name: "[0407251439] Sweatspants Man", price: 99.00 }],
+        "pants-sweatpants-man": [{ name: "[0407251439] Sweatspants Man", price: 99.00 }],
+        "pants-jeans-man": [{ name: "[0507251439] Jeans Man", price: 179.00 }],
         };
 
         beforeEach(() => {
@@ -63,6 +64,7 @@ describe('Catalog Behaviour', () => {
             const productNames = productItems.map(item => item.querySelector('h3').textContent);
             
             expect(productNames).toEqual([
+                "[0507251439] Jeans Man",
                 "[0407251439] Sweatspants Man",
                 "[0207251439] Sweatshirt Woman",
                 "[0806251831] Dress Shirt Man",
