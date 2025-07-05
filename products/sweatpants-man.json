@@ -1,0 +1,35 @@
+[
+    {
+        "name": "[0407251231] Nike",
+        "description": "Calça Moletom",
+        "oldPrice": 0.0,
+        "price": 89.00,
+        "images": [
+            "images/man/pants/sweatpants/0407251231-nike-front.jpeg",
+            "images/man/pants/sweatpants/0407251231-nike-back.jpeg"
+        ],
+        "size": "GG"
+    },
+    {
+        "name": "[0407251232] Nike",
+        "description": "Calça Moletom",
+        "oldPrice": 0.0,
+        "price": 99.00,
+        "images": [
+            "images/man/pants/sweatpants/0407251232-nike-front.jpeg",
+            "images/man/pants/sweatpants/0407251232-nike-back.jpeg"
+        ],
+        "size": "GG"
+    },
+    {
+        "name": "[0407251233] Nike",
+        "description": "Calça Moletom",
+        "oldPrice": 0.0,
+        "price": 99.00,
+        "images": [
+            "images/man/pants/sweatpants/0407251233-nike-front.jpeg",
+            "images/man/pants/sweatpants/0407251233-nike-back.jpeg"
+        ],
+        "size": "GG"
+    }
+]

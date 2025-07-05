@@ -12,7 +12,7 @@ require('@testing-library/jest-dom');
  */
 const readProductsJson = (fileName) => {
   try {
-    const filePath = path.join(__dirname, '../products', fileName);
+    const filePath = path.join(__dirname, '../../products', fileName);
     const fileContents = fs.readFileSync(filePath, 'utf8');
     return JSON.parse(fileContents);
   } catch (error) {
@@ -42,7 +42,7 @@ const setupGlobalFetchMock = () => {
  * @returns {string} The HTML content.
  */
 const loadHtml = () => {
-  return fs.readFileSync(path.join(__dirname, '../index.html'), 'utf8');
+  return fs.readFileSync(path.join(__dirname, '../../index.html'), 'utf8');
 };
 
 /**
@@ -52,7 +52,7 @@ const setupDOM = () => {
   delete window.__catalogInitialized;
   document.documentElement.innerHTML = loadHtml();
   jest.resetModules();
-  require('../scripts.js');
+  require(path.join(__dirname, '../../scripts.js'));
   document.dispatchEvent(new Event('DOMContentLoaded'));
 };
 
@@ -74,10 +74,28 @@ const selectCategory = async (category, expectedHeading) => {
   });
 };
 
+const commonSetup = () => {
+  window.__isTest = true;
+  global.gtag = jest.fn();
+}
+
+/**
+ * Sets up a desktop view and triggers the menu toggle.
+ */
+const setupDesktop = async () => {
+  commonSetup();
+  document.body.innerHTML = '';
+  window.location.hash = '';
+  setupGlobalFetchMock();
+  setupDOM();
+};
+
 /**
  * Sets up a mobile view and triggers the menu toggle.
  */
 const setupMobile = async () => {
+  // Simulate mobile viewport.
+  commonSetup();
   window.innerWidth = 375;
   window.dispatchEvent(new Event('resize'));
   await waitFor(() => {
@@ -103,6 +121,7 @@ module.exports = {
   loadHtml,
   setupDOM,
   selectCategory,
+  setupDesktop,
   setupMobile,
   selectMobileCategory,
   waitFor,

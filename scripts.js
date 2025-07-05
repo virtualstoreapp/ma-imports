@@ -5,6 +5,26 @@
 
   // --- Constants ---
   const WHATSAPP_NUMBER = '5519999762594';
+  const CATEGORIES_DICT = {
+    all: 'Novidades',
+    'sweatshirts-woman': 'Blusas Feminina',
+    'sweatshirts-man': 'Blusas Masculina',
+    'shorts-basic-man': 'Bermudas Básica Masculina',
+    'shorts-jeans-man': 'Bermudas Jeans Masculina',
+    'shorts-sweatshorts-man': 'Bermudas Moletom Masculina',
+    'shorts-tactel-man': 'Bermudas Tactel Masculina',
+    'caps-man': 'Bonés Masculinos',
+    'tshirts-casual-man': 'Camisetas Casuais Masculina',
+    'tshirts-dryfit-man': 'Camisetas Dry Fit Masculina',
+    'tshirts-polo-man': 'Camisetas Polo Masculina',
+    'dress-shirts-man': 'Camisetas Sociais Masculina',
+    'sweatpants-man': 'Calças Moletom Masculina',
+    'slippers-man': 'Chinelos',
+    'socks-man': 'Meias Masculina',
+    'tank-top-casual-man': 'Regatas Casuais Masculina',
+    'tank-top-dryfit-man': 'Regatas Dry Fit Masculina',
+    'shoes-man': 'Tênis',
+  }
 
   // --- Helper Functions ---
   const formatCurrency = (value) =>
@@ -14,26 +34,7 @@
     }).format(value);
 
   const updateCategoryHeading = (category, headingEl) => {
-    const headings = {
-      all: 'Novidades',
-      'shoes-man': 'Tênis',
-      'slippers-man': 'Chinelos',
-      'tshirts-casual-man': 'Camisetas Casuais Masculina',
-      'tshirts-dryfit-man': 'Camisetas Dry Fit Masculina',
-      'tshirts-polo-man': 'Camisetas Polo Masculina',
-      'dress-shirts-man': 'Camisetas Sociais Masculina',
-      'tank-top-casual-man': 'Regatas Casuais Masculina',
-      'tank-top-dryfit-man': 'Regatas Dry Fit Masculina',
-      'shorts-sweatshorts-man': 'Bermudas Moletom Masculina',
-      'shorts-basic-man': 'Bermudas Básica Masculina',
-      'shorts-jeans-man': 'Bermudas Jeans Masculina',
-      'shorts-tactel-man': 'Bermudas Tactel Masculina',
-      'caps-man': 'Bonés Masculinos',
-      'sweatshirts-man': 'Blusas Masculina',
-      'sweatshirts-woman': 'Blusas Feminina',
-      'socks-man': 'Meias Masculina',
-    };
-    headingEl.textContent = headings[category] || 'Produtos';
+    headingEl.textContent = CATEGORIES_DICT[category] || 'Produtos';
   };
 
   const collapseAllSubmenus = () => {
@@ -66,6 +67,7 @@
         <div id="modal-controls">
           <button id="prev-image">&lt;</button>
           <button id="zoom-out">-</button>
+          <button id="copy-product-id">ID</button>
           <button id="zoom-in">+</button>
           <button id="next-image">&gt;</button>
           <button id="buy-product">Comprar</button>
@@ -80,6 +82,21 @@
       document.getElementById('next-image').addEventListener('click', showNext);
       document.getElementById('zoom-in').addEventListener('click', () => adjustZoom(0.2));
       document.getElementById('zoom-out').addEventListener('click', () => adjustZoom(-0.2));
+
+      document.getElementById('copy-product-id').addEventListener('click', () => {
+        if (currentProductName) {
+          const message = `Categoria: ${currentCategory}, ID do Produto: ${currentProductName}`
+          navigator.clipboard.writeText(message)
+            .then(() => {
+              alert('ID copiado!');
+            })
+            .catch(err => {
+              console.error('Falha ao copiar o ID:', err);
+              alert('Erro ao copiar. Tente novamente.');
+            });
+        }
+      });
+
       document.getElementById('buy-product').addEventListener('click', () => {
         const message = `Olá, acabei de conferir seu catálogo online e na categoria ${currentCategory}, me interessei pelo produto ${currentProductName}. Poderia, por favor, me enviar mais informações e confirmar a disponibilidade? Obrigado!`;
         const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
@@ -234,18 +251,7 @@
     const fetchCategoryData = async (category) => {
       try {
         if (category === 'all') {
-          const categories = [
-            'caps-man', 
-            'dress-shirts-man',
-            'shoes-man', 
-            'shorts-basic-man', 'shorts-jeans-man', 'shorts-sweatshorts-man', 'shorts-tactel-man', 
-            'slippers-man', 
-            'socks-man', 
-            'sweatshirts-man', 'sweatshirts-woman',
-            'tank-top-casual-man', 'tank-top-dryfit-man', 
-            'tshirts-casual-man', 'tshirts-dryfit-man', 'tshirts-polo-man',
-            
-          ];
+          const categories = Object.keys(CATEGORIES_DICT).filter(key => key !== 'all');
           const responses = await Promise.all(
             categories.map(cat => fetch(`products/${cat}.json`))
           );
@@ -256,7 +262,8 @@
             })
           );
           const products = jsonData.flat();
-          return products.sort((a, b) => parseProductDate(b.name) - parseProductDate(a.name));
+          const sortedProducts = products.sort((a, b) => parseProductDate(b.name) - parseProductDate(a.name));
+          return sortedProducts;
         } else {
           const response = await fetch(`products/${category}.json`);
           if (!response.ok) throw new Error(`Failed to fetch data for ${category}`);

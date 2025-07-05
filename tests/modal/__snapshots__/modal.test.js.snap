@@ -1,0 +1,807 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal Functionality opens modal on product click and logs GA event 1`] = `
+"
+  <header>
+    <div class="header-logo">
+      <img src="images/logo.jpeg" alt="M/A Imports Logo">
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav aria-label="Main Navigation">
+    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+    <ul id="nav-menu">
+      <li class="menu-item">
+        <button data-category="all">Início</button>
+      </li>
+      <li class="menu-item has-submenu">
+        <button data-category="fashion-category" aria-expanded="false">Moda</button>
+        <ul class="submenu" style="display: none;">
+          <li class="menu-item has-submenu">
+            <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="tshirts-casual-man">Casuais</button>
+                        <button data-category="tshirts-dryfit-man">Dry Fit</button>
+                        <button data-category="tshirts-polo-man">Polo</button>
+                        <button data-category="dress-shirts-man">Sociais</button>
+                      </li>
+                    </ul>
+                    <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="tank-top-casual-man">Casuais</button>
+                        <button data-category="tank-top-dryfit-man">Dry Fit</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatpants-man">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                  </li>
+                  <li class="menu-item">
+                    <button data-category="socks-man">Meias</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item has-submenu">
+            <button data-category="woman-subcategory" aria-expanded="false">Feminino</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-woman-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sweatshirts-woman-subcategory" aria-expanded="false">Blusas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-woman">Blusas</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h2 id="category-heading">Tênis</h2>
+    <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/adidas/1202252201-adidas-campus.jpeg" alt="[1202252201] Adidas Campus">
+          <div class="product-details">
+            <h3>[1202252201] Adidas Campus</h3>
+            
+            <span class="size">Tamanho: 35</span>
+            <span class="old-price">R$&nbsp;159,00</span>
+             <span class="new-price">R$&nbsp;149,00</span>
+          </div>
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/adidas/1202252202-adidas-campus.jpeg" alt="[1202252202] Adidas Campus">
+          <div class="product-details">
+            <h3>[1202252202] Adidas Campus</h3>
+            
+            <span class="size">Tamanho: 35</span>
+            <span class="old-price">R$&nbsp;259,00</span>
+             <span class="new-price">R$&nbsp;249,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/adidas/1202252208-adidas-campus.jpeg" alt="[1202252208] Adidas Campus">
+          <div class="product-details">
+            <h3>[1202252208] Adidas Campus</h3>
+            
+            <span class="size">Tamanho: 36</span>
+            <span class="old-price">R$&nbsp;159,00</span>
+             <span class="new-price">R$&nbsp;149,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/adidas/1202252211-adidas-campus.jpeg" alt="[1202252211] Adidas Campus">
+          <div class="product-details">
+            <h3>[1202252211] Adidas Campus</h3>
+            
+            <span class="size">Tamanho: 39</span>
+            <span class="old-price">R$&nbsp;159,00</span>
+             <span class="new-price">R$&nbsp;149,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/adidas/1202252155-adidas-campus.jpeg" alt="[1202252155] Adidas Campus">
+          <div class="product-details">
+            <h3>[1202252155] Adidas Campus</h3>
+            
+            <span class="size">Tamanho: 41</span>
+            <span class="old-price">R$&nbsp;159,00</span>
+             <span class="new-price">R$&nbsp;149,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/adidas/1202252210-adidas-campus.jpeg" alt="[1202252210] Adidas Campus">
+          <div class="product-details">
+            <h3>[1202252210] Adidas Campus</h3>
+            
+            <span class="size">Tamanho: 42</span>
+            <span class="old-price">R$&nbsp;159,00</span>
+             <span class="new-price">R$&nbsp;149,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/asics/1202251714-asics.jpeg" alt="[1202251714] Asics">
+          <div class="product-details">
+            <h3>[1202251714] Asics</h3>
+            
+            <span class="size">Tamanho: 38</span>
+            <span class="price">R$&nbsp;89,00</span>
+          </div>
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/asics/1202251736-asics.jpeg" alt="[1202251736] Asics">
+          <div class="product-details">
+            <h3>[1202251736] Asics</h3>
+            
+            <span class="size">Tamanho: 41</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/mizuno/1104250021-mizuno.jpeg" alt="[1104250021] Mizuno 14">
+          <div class="product-details">
+            <h3>[1104250021] Mizuno 14</h3>
+            
+            <span class="size">Tamanho: 38</span>
+            <span class="price">R$&nbsp;479,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202251703-nike-air-force.jpeg" alt="[1202251703] Nike Air Force">
+          <div class="product-details">
+            <h3>[1202251703] Nike Air Force</h3>
+            
+            <span class="size">Tamanho: 39</span>
+            <span class="old-price">R$&nbsp;219,00</span>
+             <span class="new-price">R$&nbsp;209,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202251710-nike-air-force.jpeg" alt="[1202251710] Nike Air Force">
+          <div class="product-details">
+            <h3>[1202251710] Nike Air Force</h3>
+            
+            <span class="size">Tamanho: 43</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202251739-nike-air-force.jpeg" alt="[1202251739] Nike Air Force">
+          <div class="product-details">
+            <h3>[1202251739] Nike Air Force</h3>
+            
+            <span class="size">Tamanho: 42</span>
+            <span class="old-price">R$&nbsp;219,00</span>
+             <span class="new-price">R$&nbsp;209,00</span>
+          </div>
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202251747-nike-air-force.jpeg" alt="[1202251747] Nike Air Force">
+          <div class="product-details">
+            <h3>[1202251747] Nike Air Force</h3>
+            
+            <span class="size">Tamanho: 38, 41, 42</span>
+            <span class="old-price">R$&nbsp;229,00</span>
+             <span class="new-price">R$&nbsp;219,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202252200-nike-air-jordan.jpeg" alt="[1202252200] Nike Air Jordan">
+          <div class="product-details">
+            <h3>[1202252200] Nike Air Jordan</h3>
+            
+            <span class="size">Tamanho: 41</span>
+            <span class="old-price">R$&nbsp;229,00</span>
+             <span class="new-price">R$&nbsp;219,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202251737-nike-dunk-low-pro.jpeg" alt="[1202251737] Nike Dunk Low Pro">
+          <div class="product-details">
+            <h3>[1202251737] Nike Dunk Low Pro</h3>
+            
+            <span class="size">Tamanho: 35</span>
+            <span class="old-price">R$&nbsp;159,00</span>
+             <span class="new-price">R$&nbsp;149,00</span>
+          </div>
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202251719-nike-dunk-low-pro.jpeg" alt="[1202251719] Nike Dunk Low Pro">
+          <div class="product-details">
+            <h3>[1202251719] Nike Dunk Low Pro</h3>
+            
+            <span class="size">Tamanho: 36</span>
+            <span class="old-price">R$&nbsp;159,00</span>
+             <span class="new-price">R$&nbsp;149,00</span>
+          </div>
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202252152-nike-dunk-low-pro.jpeg" alt="[1202252152] Nike Dunk Low Pro">
+          <div class="product-details">
+            <h3>[1202252152] Nike Dunk Low Pro</h3>
+            
+            <span class="size">Tamanho: 39, 42</span>
+            <span class="old-price">R$&nbsp;219,00</span>
+             <span class="new-price">R$&nbsp;209,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202251733-nike-dunk-low-pro.jpeg" alt="[1202251733] Nike Dunk Low Pro">
+          <div class="product-details">
+            <h3>[1202251733] Nike Dunk Low Pro</h3>
+            
+            <span class="size">Tamanho: 42</span>
+            <span class="old-price">R$&nbsp;219,00</span>
+             <span class="new-price">R$&nbsp;209,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202251707-nike-jordan.jpeg" alt="[1202251707] Nike Jordan">
+          <div class="product-details">
+            <h3>[1202251707] Nike Jordan</h3>
+            
+            <span class="size">Tamanho: 38</span>
+            <span class="old-price">R$&nbsp;169,00</span>
+             <span class="new-price">R$&nbsp;159,00</span>
+          </div>
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202251718-nike-r4.jpeg" alt="[1202251718] Nike R4">
+          <div class="product-details">
+            <h3>[1202251718] Nike R4</h3>
+            
+            <span class="size">Tamanho: 34</span>
+            <span class="old-price">R$&nbsp;229,00</span>
+             <span class="new-price">R$&nbsp;219,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202251716-nike-r4.jpeg" alt="[1202251716] Nike R4">
+          <div class="product-details">
+            <h3>[1202251716] Nike R4</h3>
+            
+            <span class="size">Tamanho: 35</span>
+            <span class="old-price">R$&nbsp;229,00</span>
+             <span class="new-price">R$&nbsp;219,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202251658-nike-shox.jpeg" alt="[1202251658] Nike Shox">
+          <div class="product-details">
+            <h3>[1202251658] Nike Shox</h3>
+            
+            <span class="size">Tamanho: 37</span>
+            <span class="old-price">R$&nbsp;259,00</span>
+             <span class="new-price">R$&nbsp;249,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202252216-nike-shox.jpeg" alt="[1202252216] Nike Shox">
+          <div class="product-details">
+            <h3>[1202252216] Nike Shox</h3>
+            
+            <span class="size">Tamanho: 37</span>
+            <span class="old-price">R$&nbsp;259,00</span>
+             <span class="new-price">R$&nbsp;249,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202251724-nike-shox.jpeg" alt="[1202251724] Nike Shox">
+          <div class="product-details">
+            <h3>[1202251724] Nike Shox</h3>
+            
+            <span class="size">Tamanho: 40</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
+          </div>
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202252214-nike-shox.jpeg" alt="[1202252214] Nike Shox">
+          <div class="product-details">
+            <h3>[1202252214] Nike Shox</h3>
+            
+            <span class="size">Tamanho: 40</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202251722-nike-shox-neymar.jpeg" alt="[1202251722] Nike Shox Neymar">
+          <div class="product-details">
+            <h3>[1202251722] Nike Shox Neymar</h3>
+            
+            <span class="size">Tamanho: 41</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202251734-nike-shox-neymar.jpeg" alt="[1202251734] Nike Shox Neymar">
+          <div class="product-details">
+            <h3>[1202251734] Nike Shox Neymar</h3>
+            
+            <span class="size">Tamanho: 41</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/vans/1202251757-vans.jpeg" alt="[1202251757] Vans">
+          <div class="product-details">
+            <h3>[1202251757] Vans</h3>
+            
+            <span class="size">Tamanho: 36</span>
+            <span class="old-price">R$&nbsp;259,00</span>
+             <span class="new-price">R$&nbsp;249,00</span>
+          </div>
+        </li></ul>
+  </main>
+
+  <footer>
+    <p>Versão: 5.2.0 - 0.26.165</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+
+<div id="product-modal">
+      <div id="modal-content">
+        <button id="modal-close">X</button>
+        <div id="modal-image-container" class="modal-image-container">
+          <img id="modal-image" src="" alt="">
+        </div>
+        <div id="modal-controls">
+          <button id="prev-image">&lt;</button>
+          <button id="zoom-out">-</button>
+          <button id="copy-product-id">ID</button>
+          <button id="zoom-in">+</button>
+          <button id="next-image">&gt;</button>
+          <button id="buy-product">Comprar</button>
+        </div>
+      </div>
+    </div>"
+`;
+
+exports[`Modal Functionality redirects to WhatsApp with correct message when clicking "Comprar" button 1`] = `
+"
+  <header>
+    <div class="header-logo">
+      <img src="images/logo.jpeg" alt="M/A Imports Logo">
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav aria-label="Main Navigation">
+    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+    <ul id="nav-menu">
+      <li class="menu-item">
+        <button data-category="all">Início</button>
+      </li>
+      <li class="menu-item has-submenu">
+        <button data-category="fashion-category" aria-expanded="false">Moda</button>
+        <ul class="submenu" style="display: none;">
+          <li class="menu-item has-submenu">
+            <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="tshirts-casual-man">Casuais</button>
+                        <button data-category="tshirts-dryfit-man">Dry Fit</button>
+                        <button data-category="tshirts-polo-man">Polo</button>
+                        <button data-category="dress-shirts-man">Sociais</button>
+                      </li>
+                    </ul>
+                    <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="tank-top-casual-man">Casuais</button>
+                        <button data-category="tank-top-dryfit-man">Dry Fit</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatpants-man">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                  </li>
+                  <li class="menu-item">
+                    <button data-category="socks-man">Meias</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item has-submenu">
+            <button data-category="woman-subcategory" aria-expanded="false">Feminino</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-woman-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sweatshirts-woman-subcategory" aria-expanded="false">Blusas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-woman">Blusas</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h2 id="category-heading">Tênis</h2>
+    <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/adidas/1202252201-adidas-campus.jpeg" alt="[1202252201] Adidas Campus">
+          <div class="product-details">
+            <h3>[1202252201] Adidas Campus</h3>
+            
+            <span class="size">Tamanho: 35</span>
+            <span class="old-price">R$&nbsp;159,00</span>
+             <span class="new-price">R$&nbsp;149,00</span>
+          </div>
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/adidas/1202252202-adidas-campus.jpeg" alt="[1202252202] Adidas Campus">
+          <div class="product-details">
+            <h3>[1202252202] Adidas Campus</h3>
+            
+            <span class="size">Tamanho: 35</span>
+            <span class="old-price">R$&nbsp;259,00</span>
+             <span class="new-price">R$&nbsp;249,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/adidas/1202252208-adidas-campus.jpeg" alt="[1202252208] Adidas Campus">
+          <div class="product-details">
+            <h3>[1202252208] Adidas Campus</h3>
+            
+            <span class="size">Tamanho: 36</span>
+            <span class="old-price">R$&nbsp;159,00</span>
+             <span class="new-price">R$&nbsp;149,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/adidas/1202252211-adidas-campus.jpeg" alt="[1202252211] Adidas Campus">
+          <div class="product-details">
+            <h3>[1202252211] Adidas Campus</h3>
+            
+            <span class="size">Tamanho: 39</span>
+            <span class="old-price">R$&nbsp;159,00</span>
+             <span class="new-price">R$&nbsp;149,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/adidas/1202252155-adidas-campus.jpeg" alt="[1202252155] Adidas Campus">
+          <div class="product-details">
+            <h3>[1202252155] Adidas Campus</h3>
+            
+            <span class="size">Tamanho: 41</span>
+            <span class="old-price">R$&nbsp;159,00</span>
+             <span class="new-price">R$&nbsp;149,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/adidas/1202252210-adidas-campus.jpeg" alt="[1202252210] Adidas Campus">
+          <div class="product-details">
+            <h3>[1202252210] Adidas Campus</h3>
+            
+            <span class="size">Tamanho: 42</span>
+            <span class="old-price">R$&nbsp;159,00</span>
+             <span class="new-price">R$&nbsp;149,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/asics/1202251714-asics.jpeg" alt="[1202251714] Asics">
+          <div class="product-details">
+            <h3>[1202251714] Asics</h3>
+            
+            <span class="size">Tamanho: 38</span>
+            <span class="price">R$&nbsp;89,00</span>
+          </div>
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/asics/1202251736-asics.jpeg" alt="[1202251736] Asics">
+          <div class="product-details">
+            <h3>[1202251736] Asics</h3>
+            
+            <span class="size">Tamanho: 41</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/mizuno/1104250021-mizuno.jpeg" alt="[1104250021] Mizuno 14">
+          <div class="product-details">
+            <h3>[1104250021] Mizuno 14</h3>
+            
+            <span class="size">Tamanho: 38</span>
+            <span class="price">R$&nbsp;479,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202251703-nike-air-force.jpeg" alt="[1202251703] Nike Air Force">
+          <div class="product-details">
+            <h3>[1202251703] Nike Air Force</h3>
+            
+            <span class="size">Tamanho: 39</span>
+            <span class="old-price">R$&nbsp;219,00</span>
+             <span class="new-price">R$&nbsp;209,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202251710-nike-air-force.jpeg" alt="[1202251710] Nike Air Force">
+          <div class="product-details">
+            <h3>[1202251710] Nike Air Force</h3>
+            
+            <span class="size">Tamanho: 43</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202251739-nike-air-force.jpeg" alt="[1202251739] Nike Air Force">
+          <div class="product-details">
+            <h3>[1202251739] Nike Air Force</h3>
+            
+            <span class="size">Tamanho: 42</span>
+            <span class="old-price">R$&nbsp;219,00</span>
+             <span class="new-price">R$&nbsp;209,00</span>
+          </div>
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202251747-nike-air-force.jpeg" alt="[1202251747] Nike Air Force">
+          <div class="product-details">
+            <h3>[1202251747] Nike Air Force</h3>
+            
+            <span class="size">Tamanho: 38, 41, 42</span>
+            <span class="old-price">R$&nbsp;229,00</span>
+             <span class="new-price">R$&nbsp;219,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202252200-nike-air-jordan.jpeg" alt="[1202252200] Nike Air Jordan">
+          <div class="product-details">
+            <h3>[1202252200] Nike Air Jordan</h3>
+            
+            <span class="size">Tamanho: 41</span>
+            <span class="old-price">R$&nbsp;229,00</span>
+             <span class="new-price">R$&nbsp;219,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202251737-nike-dunk-low-pro.jpeg" alt="[1202251737] Nike Dunk Low Pro">
+          <div class="product-details">
+            <h3>[1202251737] Nike Dunk Low Pro</h3>
+            
+            <span class="size">Tamanho: 35</span>
+            <span class="old-price">R$&nbsp;159,00</span>
+             <span class="new-price">R$&nbsp;149,00</span>
+          </div>
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202251719-nike-dunk-low-pro.jpeg" alt="[1202251719] Nike Dunk Low Pro">
+          <div class="product-details">
+            <h3>[1202251719] Nike Dunk Low Pro</h3>
+            
+            <span class="size">Tamanho: 36</span>
+            <span class="old-price">R$&nbsp;159,00</span>
+             <span class="new-price">R$&nbsp;149,00</span>
+          </div>
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202252152-nike-dunk-low-pro.jpeg" alt="[1202252152] Nike Dunk Low Pro">
+          <div class="product-details">
+            <h3>[1202252152] Nike Dunk Low Pro</h3>
+            
+            <span class="size">Tamanho: 39, 42</span>
+            <span class="old-price">R$&nbsp;219,00</span>
+             <span class="new-price">R$&nbsp;209,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202251733-nike-dunk-low-pro.jpeg" alt="[1202251733] Nike Dunk Low Pro">
+          <div class="product-details">
+            <h3>[1202251733] Nike Dunk Low Pro</h3>
+            
+            <span class="size">Tamanho: 42</span>
+            <span class="old-price">R$&nbsp;219,00</span>
+             <span class="new-price">R$&nbsp;209,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202251707-nike-jordan.jpeg" alt="[1202251707] Nike Jordan">
+          <div class="product-details">
+            <h3>[1202251707] Nike Jordan</h3>
+            
+            <span class="size">Tamanho: 38</span>
+            <span class="old-price">R$&nbsp;169,00</span>
+             <span class="new-price">R$&nbsp;159,00</span>
+          </div>
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202251718-nike-r4.jpeg" alt="[1202251718] Nike R4">
+          <div class="product-details">
+            <h3>[1202251718] Nike R4</h3>
+            
+            <span class="size">Tamanho: 34</span>
+            <span class="old-price">R$&nbsp;229,00</span>
+             <span class="new-price">R$&nbsp;219,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202251716-nike-r4.jpeg" alt="[1202251716] Nike R4">
+          <div class="product-details">
+            <h3>[1202251716] Nike R4</h3>
+            
+            <span class="size">Tamanho: 35</span>
+            <span class="old-price">R$&nbsp;229,00</span>
+             <span class="new-price">R$&nbsp;219,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202251658-nike-shox.jpeg" alt="[1202251658] Nike Shox">
+          <div class="product-details">
+            <h3>[1202251658] Nike Shox</h3>
+            
+            <span class="size">Tamanho: 37</span>
+            <span class="old-price">R$&nbsp;259,00</span>
+             <span class="new-price">R$&nbsp;249,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202252216-nike-shox.jpeg" alt="[1202252216] Nike Shox">
+          <div class="product-details">
+            <h3>[1202252216] Nike Shox</h3>
+            
+            <span class="size">Tamanho: 37</span>
+            <span class="old-price">R$&nbsp;259,00</span>
+             <span class="new-price">R$&nbsp;249,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202251724-nike-shox.jpeg" alt="[1202251724] Nike Shox">
+          <div class="product-details">
+            <h3>[1202251724] Nike Shox</h3>
+            
+            <span class="size">Tamanho: 40</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
+          </div>
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202252214-nike-shox.jpeg" alt="[1202252214] Nike Shox">
+          <div class="product-details">
+            <h3>[1202252214] Nike Shox</h3>
+            
+            <span class="size">Tamanho: 40</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202251722-nike-shox-neymar.jpeg" alt="[1202251722] Nike Shox Neymar">
+          <div class="product-details">
+            <h3>[1202251722] Nike Shox Neymar</h3>
+            
+            <span class="size">Tamanho: 41</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1202251734-nike-shox-neymar.jpeg" alt="[1202251734] Nike Shox Neymar">
+          <div class="product-details">
+            <h3>[1202251734] Nike Shox Neymar</h3>
+            
+            <span class="size">Tamanho: 41</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/vans/1202251757-vans.jpeg" alt="[1202251757] Vans">
+          <div class="product-details">
+            <h3>[1202251757] Vans</h3>
+            
+            <span class="size">Tamanho: 36</span>
+            <span class="old-price">R$&nbsp;259,00</span>
+             <span class="new-price">R$&nbsp;249,00</span>
+          </div>
+        </li></ul>
+  </main>
+
+  <footer>
+    <p>Versão: 5.2.0 - 0.26.165</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+
+<div id="product-modal">
+      <div id="modal-content">
+        <button id="modal-close">X</button>
+        <div id="modal-image-container" class="modal-image-container">
+          <img id="modal-image" src="" alt="">
+        </div>
+        <div id="modal-controls">
+          <button id="prev-image">&lt;</button>
+          <button id="zoom-out">-</button>
+          <button id="copy-product-id">ID</button>
+          <button id="zoom-in">+</button>
+          <button id="next-image">&gt;</button>
+          <button id="buy-product">Comprar</button>
+        </div>
+      </div>
+    </div>"
+`;
