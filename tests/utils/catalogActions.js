@@ -29,105 +29,72 @@ const selectClothingManSubcategory = async () => {
 };
 
 const selectClothingWomanSubcategory = async () => {
-  await selectManSubcategory();
+  await selectWomanSubcategory();
   await selectMenuOption('clothing-woman-subcategory');
 };
 
+const selectProduct = async (
+  heading, productCount, subcategoryFunction, dataCategory
+) => {
+  const expectedHeading = heading;
+  const expectedCount = productCount;
+
+  await subcategoryFunction();
+  await selectMenuOption(dataCategory);
+
+  await asserts(expectedHeading, expectedCount);
+};
 
 const selectSweatshirtMan = async () => {
-  const expectedHeading = "Blusas Masculina";
-  const expectedCount = 14;
-  await selectClothingManSubcategory();
-  await selectMenuOption('sweatshirts-man');
-  await asserts(expectedHeading, expectedCount);
+  await selectProduct("Blusas Masculina", 14, selectClothingManSubcategory, 'sweatshirts-man');
 };
 
 const selectTshirtsCasualMan = async () => {
-  const expectedHeading = "Camisetas Casuais Masculina";
-  const expectedCount = 36;
-  await selectClothingManSubcategory();
-  await selectMenuOption('tshirts-casual-man');
-  await asserts(expectedHeading, expectedCount);
+  await selectProduct("Camisetas Casuais Masculina", 36, selectClothingManSubcategory, 'tshirts-casual-man');
 };
 
 const selectTshirtsDryFitMan = async () => {
-  const expectedHeading = "Camisetas Dry Fit Masculina";
-  const expectedCount = 20;
-  await selectClothingManSubcategory();
-  await selectMenuOption('tshirts-dryfit-man');
-  await asserts(expectedHeading, expectedCount);
+  await selectProduct("Camisetas Dry Fit Masculina", 20, selectClothingManSubcategory, 'tshirts-dryfit-man');
 };
 
 const selectTshirtsPoloMan = async () => {
-  const expectedHeading = "Camisetas Polo Masculina";
-  const expectedCount = 4;
-  await selectClothingManSubcategory();
-  await selectMenuOption('tshirts-polo-man');
-  await asserts(expectedHeading, expectedCount);
+  await selectProduct("Camisetas Polo Masculina", 4, selectClothingManSubcategory, 'tshirts-polo-man');
 };
 
 const selectDressShirtsMan = async () => {
-  const expectedHeading = "Camisetas Sociais Masculina";
-  const expectedCount = 5;
-  await selectClothingManSubcategory();
-  await selectMenuOption('dress-shirts-man');
-  await asserts(expectedHeading, expectedCount);
+  await selectProduct("Camisetas Sociais Masculina", 5, selectClothingManSubcategory, 'dress-shirts-man');
 };
 
 const selectTankTopCasualMan = async () => {
-  const expectedHeading = "Regatas Casuais Masculina";
-  const expectedCount = 3;
-  await selectClothingManSubcategory();
-  await selectMenuOption('tank-top-casual-man');
-  await asserts(expectedHeading, expectedCount);
+  await selectProduct("Regatas Casuais Masculina", 3, selectClothingManSubcategory, 'tank-top-casual-man');
 };
 
 const selectTankTopDryFitCasualMan = async () => {
-  const expectedHeading = "Regatas Dry Fit Masculina";
-  const expectedCount = 8;
-  await selectClothingManSubcategory();
-  await selectMenuOption('tank-top-dryfit-man');
-  await asserts(expectedHeading, expectedCount);
+  await selectProduct("Regatas Dry Fit Masculina", 8, selectClothingManSubcategory, 'tank-top-dryfit-man');
 };
 
 const selectShortsBasicMan = async () => {
-  const expectedHeading = "Bermudas Básica Masculina";
-  const expectedCount = 1;
-  await selectClothingManSubcategory();
-  await selectMenuOption('shorts-basic-man');
-  await asserts(expectedHeading, expectedCount);
+  await selectProduct("Bermudas Básica Masculina", 1, selectClothingManSubcategory, 'shorts-basic-man');
 };
 
 const selectShortsJeansMan = async () => {
-  const expectedHeading = "Bermudas Jeans Masculina";
-  const expectedCount = 8;
-  await selectClothingManSubcategory();
-  await selectMenuOption('shorts-jeans-man');
-  await asserts(expectedHeading, expectedCount);
+  await selectProduct("Bermudas Jeans Masculina", 8, selectClothingManSubcategory, 'shorts-jeans-man');
 };
 
 const selectShortsSweatshortsMan = async () => {
-  const expectedHeading = "Bermudas Moletom Masculina";
-  const expectedCount = 8;
-  await selectClothingManSubcategory();
-  await selectMenuOption('shorts-sweatshorts-man');
-  await asserts(expectedHeading, expectedCount);
+  await selectProduct("Bermudas Moletom Masculina", 8, selectClothingManSubcategory, 'shorts-sweatshorts-man');
 };
 
 const selectShortsTactelMan = async () => {
-  const expectedHeading = "Bermudas Tactel Masculina";
-  const expectedCount = 14;
-  await selectClothingManSubcategory();
-  await selectMenuOption('shorts-tactel-man');
-  await asserts(expectedHeading, expectedCount);
+  await selectProduct("Bermudas Tactel Masculina", 14, selectClothingManSubcategory, 'shorts-tactel-man');
 };
 
-const selectShortsSweatpantsMan = async () => {
-    const expectedHeading = "Calças Moletom Masculina";
-    const expectedCount = 3;
-    await selectClothingManSubcategory();
-    await selectMenuOption('sweatpants-man');
-    await asserts(expectedHeading, expectedCount);
+const selectPantsSweatpantsMan = async () => {
+  await selectProduct("Calças Moletom Masculina", 3, selectClothingManSubcategory, 'pants-sweatpants-man');
+}
+
+const selectPantsJeansMan = async () => {
+    await selectProduct("Calças Jeans Masculina", 2, selectClothingManSubcategory, 'pants-jeans-man');
 }
 
 const selectShoesManSubcategory = async () => {
@@ -136,27 +103,15 @@ const selectShoesManSubcategory = async () => {
 };
 
 const selectShoesMan = async () => {
-  const expectedHeading = "Tênis";
-  const expectedCount = 28;
-  await selectShoesManSubcategory();
-  await selectMenuOption('shoes-man');
-  await asserts(expectedHeading, expectedCount);
+  await selectProduct("Tênis", 28, selectShoesManSubcategory, 'shoes-man');
 };
 
 const selectSlippersMan = async () => {
-  const expectedHeading = "Chinelos";
-  const expectedCount = 1;
-  await selectShoesManSubcategory();
-  await selectMenuOption('slippers-man');
-  await asserts(expectedHeading, expectedCount);
+  await selectProduct("Chinelos", 1, selectShoesManSubcategory, 'slippers-man');
 };
 
 const selectSocksMan = async () => {
-  const expectedHeading = "Meias Masculina";
-  const expectedCount = 7;
-  await selectShoesManSubcategory();
-  await selectMenuOption('socks-man');
-  await asserts(expectedHeading, expectedCount);
+  await selectProduct("Meias Masculina", 7, selectShoesManSubcategory, 'socks-man');
 };
 
 const selectAccessoriesManSubcategory = async () => {
@@ -165,19 +120,11 @@ const selectAccessoriesManSubcategory = async () => {
 };
 
 const selectCapsMan = async () => {
-  const expectedHeading = "Bonés Masculino";
-  const expectedCount = 5;
-  await selectAccessoriesManSubcategory();
-  await selectMenuOption('caps-man');
-  await asserts(expectedHeading, expectedCount);
+  await selectProduct("Bonés Masculino", 5, selectAccessoriesManSubcategory, 'caps-man');
 };
 
 const selectSweatshirtWoman = async () => {
-  const expectedHeading = "Blusas Feminina";
-  const expectedCount = 1;
-  await selectClothingWomanSubcategory();
-  await selectMenuOption('sweatshirts-woman');
-  await asserts(expectedHeading, expectedCount);
+  await selectProduct("Blusas Feminina", 1, selectClothingWomanSubcategory, 'sweatshirts-woman');
 };
 
 module.exports = {
@@ -192,7 +139,8 @@ module.exports = {
     selectShortsJeansMan,
     selectShortsSweatshortsMan,
     selectShortsTactelMan,
-    selectShortsSweatpantsMan,
+    selectPantsSweatpantsMan,
+    selectPantsJeansMan,
     selectShoesMan,
     selectSlippersMan,
     selectSocksMan,

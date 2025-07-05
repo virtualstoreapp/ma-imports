@@ -69,7 +69,10 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
                     <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
-                        <button data-category="sweatpants-man">Moletom</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
                       </li>
                     </ul>
                   </li>
@@ -379,7 +382,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
   </main>
 
   <footer>
-    <p>Versão: 5.2.0 - 0.26.165</p>
+    <p>Versão: 5.3.0 - 0.26.167</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -472,7 +475,10 @@ exports[`Fashion Man Shoes Desktop View Slipers renders final subcategory "Chine
                     <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
-                        <button data-category="sweatpants-man">Moletom</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
                       </li>
                     </ul>
                   </li>
@@ -540,7 +546,7 @@ exports[`Fashion Man Shoes Desktop View Slipers renders final subcategory "Chine
   </main>
 
   <footer>
-    <p>Versão: 5.2.0 - 0.26.165</p>
+    <p>Versão: 5.3.0 - 0.26.167</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -633,7 +639,10 @@ exports[`Fashion Man Shoes Desktop View Socks renders final subcategory "Meias M
                     <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
-                        <button data-category="sweatpants-man">Moletom</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
                       </li>
                     </ul>
                   </li>
@@ -749,7 +758,7 @@ exports[`Fashion Man Shoes Desktop View Socks renders final subcategory "Meias M
   </main>
 
   <footer>
-    <p>Versão: 5.2.0 - 0.26.165</p>
+    <p>Versão: 5.3.0 - 0.26.167</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -842,7 +851,10 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
                     <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
-                        <button data-category="sweatpants-man">Moletom</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
                       </li>
                     </ul>
                   </li>
@@ -1152,7 +1164,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
   </main>
 
   <footer>
-    <p>Versão: 5.2.0 - 0.26.165</p>
+    <p>Versão: 5.3.0 - 0.26.167</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1245,7 +1257,10 @@ exports[`Fashion Man Shoes Mobile View Slipers renders final subcategory "Chinel
                     <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
-                        <button data-category="sweatpants-man">Moletom</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
                       </li>
                     </ul>
                   </li>
@@ -1313,7 +1328,7 @@ exports[`Fashion Man Shoes Mobile View Slipers renders final subcategory "Chinel
   </main>
 
   <footer>
-    <p>Versão: 5.2.0 - 0.26.165</p>
+    <p>Versão: 5.3.0 - 0.26.167</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1406,7 +1421,10 @@ exports[`Fashion Man Shoes Mobile View Socks renders final subcategory "Meias Ma
                     <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
-                        <button data-category="sweatpants-man">Moletom</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
                       </li>
                     </ul>
                   </li>
@@ -1522,7 +1540,7 @@ exports[`Fashion Man Shoes Mobile View Socks renders final subcategory "Meias Ma
   </main>
 
   <footer>
-    <p>Versão: 5.2.0 - 0.26.165</p>
+    <p>Versão: 5.3.0 - 0.26.167</p>
   </footer>
 
   <script src="scripts.js"></script>

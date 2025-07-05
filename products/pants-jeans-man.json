@@ -1,0 +1,22 @@
+[
+    {
+        "name": "[0507251850] Star",
+        "description": "Jeans",
+        "oldPrice": 0.0,
+        "price": 79.90,
+        "images": [
+            "images/man/pants/jeans/04507251850-star.jpeg"
+        ],
+        "size": "42"
+    },
+    {
+        "name": "[0507251858] Diesel",
+        "description": "Jeans",
+        "oldPrice": 0.0,
+        "price": 179.00,
+        "images": [
+            "images/man/pants/jeans/04507251858-diesel.jpeg"
+        ],
+        "size": "48"
+    }
+]

@@ -6,7 +6,6 @@
   // --- Constants ---
   const WHATSAPP_NUMBER = '5519999762594';
   const CATEGORIES_DICT = {
-    all: 'Novidades',
     'sweatshirts-woman': 'Blusas Feminina',
     'sweatshirts-man': 'Blusas Masculina',
     'shorts-basic-man': 'Bermudas Básica Masculina',
@@ -18,9 +17,11 @@
     'tshirts-dryfit-man': 'Camisetas Dry Fit Masculina',
     'tshirts-polo-man': 'Camisetas Polo Masculina',
     'dress-shirts-man': 'Camisetas Sociais Masculina',
-    'sweatpants-man': 'Calças Moletom Masculina',
+    'pants-sweatpants-man': 'Calças Moletom Masculina',
+    'pants-jeans-man': 'Calças Jeans Masculina',
     'slippers-man': 'Chinelos',
     'socks-man': 'Meias Masculina',
+    all: 'Novidades',
     'tank-top-casual-man': 'Regatas Casuais Masculina',
     'tank-top-dryfit-man': 'Regatas Dry Fit Masculina',
     'shoes-man': 'Tênis',
@@ -85,7 +86,7 @@
 
       document.getElementById('copy-product-id').addEventListener('click', () => {
         if (currentProductName) {
-          const message = `Categoria: ${currentCategory}, ID do Produto: ${currentProductName}`
+          const message = `Categoria: ${currentCategory}, ID do Produto: ${currentProductName}`;
           navigator.clipboard.writeText(message)
             .then(() => {
               alert('ID copiado!');

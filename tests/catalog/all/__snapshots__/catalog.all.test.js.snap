@@ -69,7 +69,10 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
                     <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
                     <ul class="submenu">
                       <li class="menu-item">
-                        <button data-category="sweatpants-man">Moletom</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
                       </li>
                     </ul>
                   </li>
@@ -126,6 +129,22 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
   <main>
     <h2 id="category-heading">Novidades</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/man/pants/jeans/04507251858-diesel.jpeg" alt="[0507251858] Diesel">
+          <div class="product-details">
+            <h3>[0507251858] Diesel</h3>
+            <p class="description">Jeans</p>
+            <span class="size">Tamanho: 48</span>
+            <span class="price">R$&nbsp;179,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/pants/jeans/04507251850-star.jpeg" alt="[0507251850] Star">
+          <div class="product-details">
+            <h3>[0507251850] Star</h3>
+            <p class="description">Jeans</p>
+            <span class="size">Tamanho: 42</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/pants/sweatpants/0407251233-nike-front.jpeg" alt="[0407251233] Nike">
           <div class="product-details">
             <h3>[0407251233] Nike</h3>
@@ -1483,7 +1502,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
   </main>
 
   <footer>
-    <p>Versão: 5.2.0 - 0.26.165</p>
+    <p>Versão: 5.3.0 - 0.26.167</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1576,7 +1595,10 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
                     <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
                     <ul class="submenu">
                       <li class="menu-item">
-                        <button data-category="sweatpants-man">Moletom</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
                       </li>
                     </ul>
                   </li>
@@ -1633,6 +1655,22 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
   <main>
     <h2 id="category-heading">Novidades</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/man/pants/jeans/04507251858-diesel.jpeg" alt="[0507251858] Diesel">
+          <div class="product-details">
+            <h3>[0507251858] Diesel</h3>
+            <p class="description">Jeans</p>
+            <span class="size">Tamanho: 48</span>
+            <span class="price">R$&nbsp;179,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/pants/jeans/04507251850-star.jpeg" alt="[0507251850] Star">
+          <div class="product-details">
+            <h3>[0507251850] Star</h3>
+            <p class="description">Jeans</p>
+            <span class="size">Tamanho: 42</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/pants/sweatpants/0407251233-nike-front.jpeg" alt="[0407251233] Nike">
           <div class="product-details">
             <h3>[0407251233] Nike</h3>
@@ -2990,7 +3028,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
   </main>
 
   <footer>
-    <p>Versão: 5.2.0 - 0.26.165</p>
+    <p>Versão: 5.3.0 - 0.26.167</p>
   </footer>
 
   <script src="scripts.js"></script>
