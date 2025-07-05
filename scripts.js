@@ -6,6 +6,7 @@
   // --- Constants ---
   const WHATSAPP_NUMBER = '5519999762594';
   const CATEGORIES_DICT = {
+    all: 'Novidades',
     'sweatshirts-woman': 'Blusas Feminina',
     'sweatshirts-man': 'Blusas Masculina',
     'shorts-basic-man': 'Bermudas Básica Masculina',
@@ -20,7 +21,6 @@
     'sweatpants-man': 'Calças Moletom Masculina',
     'slippers-man': 'Chinelos',
     'socks-man': 'Meias Masculina',
-    all: 'Novidades',
     'tank-top-casual-man': 'Regatas Casuais Masculina',
     'tank-top-dryfit-man': 'Regatas Dry Fit Masculina',
     'shoes-man': 'Tênis',
@@ -262,7 +262,8 @@
             })
           );
           const products = jsonData.flat();
-          return products.sort((a, b) => parseProductDate(b.name) - parseProductDate(a.name));
+          const sortedProducts = products.sort((a, b) => parseProductDate(b.name) - parseProductDate(a.name));
+          return sortedProducts;
         } else {
           const response = await fetch(`products/${category}.json`);
           if (!response.ok) throw new Error(`Failed to fetch data for ${category}`);
