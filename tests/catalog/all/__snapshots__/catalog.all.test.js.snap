@@ -168,7 +168,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;89,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/sweatshirts/0207251348-adidas.jpeg" alt="[0207251348] Adidas">
           <div class="product-details">
             <h3>[0207251348] Adidas</h3>
@@ -856,7 +856,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
             <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;69,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shorts/sweatshorts/nike/2003250856-nike.jpeg" alt="[2003250856] Nike">
           <div class="product-details">
             <h3>[2003250856] Nike</h3>
@@ -936,7 +936,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/polo/calvin-klein/1603250848-calvin-klein.jpeg" alt="[1603250848] Calvin Klein">
           <div class="product-details">
             <h3>[1603250848] Calvin Klein</h3>
@@ -1232,7 +1232,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
             <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;79,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/dolce-gabbana/2702250957-dolce-gabbana.jpeg" alt="[2702250957] Dolce &amp; Gabbana">
           <div class="product-details">
             <h3>[2702250957] Dolce &amp; Gabbana</h3>
@@ -1265,7 +1265,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
             <span class="old-price">R$&nbsp;259,00</span>
              <span class="new-price">R$&nbsp;249,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202252214-nike-shox.jpeg" alt="[1202252214] Nike Shox">
           <div class="product-details">
             <h3>[1202252214] Nike Shox</h3>
@@ -1502,7 +1502,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.26.167</p>
+    <p>Versão: 5.3.0 - 0.31.167</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1694,7 +1694,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;89,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/sweatshirts/0207251348-adidas.jpeg" alt="[0207251348] Adidas">
           <div class="product-details">
             <h3>[0207251348] Adidas</h3>
@@ -2382,7 +2382,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
             <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;69,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shorts/sweatshorts/nike/2003250856-nike.jpeg" alt="[2003250856] Nike">
           <div class="product-details">
             <h3>[2003250856] Nike</h3>
@@ -2462,7 +2462,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/polo/calvin-klein/1603250848-calvin-klein.jpeg" alt="[1603250848] Calvin Klein">
           <div class="product-details">
             <h3>[1603250848] Calvin Klein</h3>
@@ -2758,7 +2758,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
             <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;79,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/dolce-gabbana/2702250957-dolce-gabbana.jpeg" alt="[2702250957] Dolce &amp; Gabbana">
           <div class="product-details">
             <h3>[2702250957] Dolce &amp; Gabbana</h3>
@@ -2791,7 +2791,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
             <span class="old-price">R$&nbsp;259,00</span>
              <span class="new-price">R$&nbsp;249,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202252214-nike-shox.jpeg" alt="[1202252214] Nike Shox">
           <div class="product-details">
             <h3>[1202252214] Nike Shox</h3>
@@ -3028,7 +3028,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.26.167</p>
+    <p>Versão: 5.3.0 - 0.31.167</p>
   </footer>
 
   <script src="scripts.js"></script>

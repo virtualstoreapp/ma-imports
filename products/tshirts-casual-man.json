@@ -48,7 +48,8 @@
         "images": [
             "images/man/tshirts/casual/emporio-armani/2702251001-emporio-armani.jpeg"
         ],
-        "size": "M"
+        "size": "M",
+        "soldOut": true
     },
     {
         "name": "[0103250820] Emporio Armani",

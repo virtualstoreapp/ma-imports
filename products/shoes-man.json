@@ -164,7 +164,8 @@
         "oldPrice": 259.0,
         "price": 249.0,
         "image": "images/man/shoes/nike/1202252216-nike-shox.jpeg",
-        "size": "37"
+        "size": "37",
+        "soldOut": true
     },
     {
         "name": "[1202251724] Nike Shox",

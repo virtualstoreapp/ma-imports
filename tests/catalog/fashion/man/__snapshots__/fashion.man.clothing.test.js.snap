@@ -148,7 +148,7 @@ exports[`Fashion Man Clothing Desktop View Pants renders final subcategory "Cal�
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.26.167</p>
+    <p>Versão: 5.3.0 - 0.31.167</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -308,7 +308,7 @@ exports[`Fashion Man Clothing Desktop View Pants renders final subcategory "Cal�
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;89,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/pants/sweatpants/0407251232-nike-front.jpeg" alt="[0407251232] Nike">
           <div class="product-details">
             <h3>[0407251232] Nike</h3>
@@ -328,7 +328,7 @@ exports[`Fashion Man Clothing Desktop View Pants renders final subcategory "Cal�
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.26.167</p>
+    <p>Versão: 5.3.0 - 0.31.167</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -492,7 +492,7 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.26.167</p>
+    <p>Versão: 5.3.0 - 0.31.167</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -712,7 +712,7 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.26.167</p>
+    <p>Versão: 5.3.0 - 0.31.167</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -888,7 +888,7 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
             <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;69,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shorts/sweatshorts/hugo-boss/2103521154-hugo-boss.jpeg" alt="[2103251154] Hugo Boss">
           <div class="product-details">
             <h3>[2103251154] Hugo Boss</h3>
@@ -932,7 +932,7 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.26.167</p>
+    <p>Versão: 5.3.0 - 0.31.167</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1200,7 +1200,7 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.26.167</p>
+    <p>Versão: 5.3.0 - 0.31.167</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1468,7 +1468,7 @@ exports[`Fashion Man Clothing Desktop View Sweatshirts renders final subcategory
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.26.167</p>
+    <p>Versão: 5.3.0 - 0.31.167</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1648,7 +1648,7 @@ exports[`Fashion Man Clothing Desktop View Tank Top renders final subcategory "R
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.26.167</p>
+    <p>Versão: 5.3.0 - 0.31.167</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1868,7 +1868,7 @@ exports[`Fashion Man Clothing Desktop View Tank Top renders final subcategory "R
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.26.167</p>
+    <p>Versão: 5.3.0 - 0.31.167</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2060,7 +2060,7 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
             <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;79,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/emporio-armani/0103250820-emporio-armani.jpeg" alt="[0103250820] Emporio Armani">
           <div class="product-details">
             <h3>[0103250820] Emporio Armani</h3>
@@ -2312,7 +2312,7 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.26.167</p>
+    <p>Versão: 5.3.0 - 0.31.167</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2628,7 +2628,7 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.26.167</p>
+    <p>Versão: 5.3.0 - 0.31.167</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2812,11 +2812,11 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
-        </li></ul>
+        <div class="sold-out-label">Esgotado</div></li></ul>
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.26.167</p>
+    <p>Versão: 5.3.0 - 0.31.167</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3012,7 +3012,7 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.26.167</p>
+    <p>Versão: 5.3.0 - 0.31.167</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3184,7 +3184,7 @@ exports[`Fashion Man Clothing Mobile View Pants renders final subcategory "Calç
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.26.167</p>
+    <p>Versão: 5.3.0 - 0.31.167</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3344,7 +3344,7 @@ exports[`Fashion Man Clothing Mobile View Pants renders final subcategory "Calç
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;89,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/pants/sweatpants/0407251232-nike-front.jpeg" alt="[0407251232] Nike">
           <div class="product-details">
             <h3>[0407251232] Nike</h3>
@@ -3364,7 +3364,7 @@ exports[`Fashion Man Clothing Mobile View Pants renders final subcategory "Calç
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.26.167</p>
+    <p>Versão: 5.3.0 - 0.31.167</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3528,7 +3528,7 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.26.167</p>
+    <p>Versão: 5.3.0 - 0.31.167</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3748,7 +3748,7 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.26.167</p>
+    <p>Versão: 5.3.0 - 0.31.167</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3924,7 +3924,7 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
             <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;69,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shorts/sweatshorts/hugo-boss/2103521154-hugo-boss.jpeg" alt="[2103251154] Hugo Boss">
           <div class="product-details">
             <h3>[2103251154] Hugo Boss</h3>
@@ -3968,7 +3968,7 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.26.167</p>
+    <p>Versão: 5.3.0 - 0.31.167</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4236,7 +4236,7 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.26.167</p>
+    <p>Versão: 5.3.0 - 0.31.167</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4504,7 +4504,7 @@ exports[`Fashion Man Clothing Mobile View Sweatshirts renders final subcategory 
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.26.167</p>
+    <p>Versão: 5.3.0 - 0.31.167</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4684,7 +4684,7 @@ exports[`Fashion Man Clothing Mobile View Tank Top renders final subcategory "Re
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.26.167</p>
+    <p>Versão: 5.3.0 - 0.31.167</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4904,7 +4904,7 @@ exports[`Fashion Man Clothing Mobile View Tank Top renders final subcategory "Re
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.26.167</p>
+    <p>Versão: 5.3.0 - 0.31.167</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5096,7 +5096,7 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
             <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;79,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/emporio-armani/0103250820-emporio-armani.jpeg" alt="[0103250820] Emporio Armani">
           <div class="product-details">
             <h3>[0103250820] Emporio Armani</h3>
@@ -5348,7 +5348,7 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.26.167</p>
+    <p>Versão: 5.3.0 - 0.31.167</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5664,7 +5664,7 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.26.167</p>
+    <p>Versão: 5.3.0 - 0.31.167</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5848,11 +5848,11 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
             <span class="size">Tamanho: G</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
-        </li></ul>
+        <div class="sold-out-label">Esgotado</div></li></ul>
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.26.167</p>
+    <p>Versão: 5.3.0 - 0.31.167</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -6048,7 +6048,7 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.26.167</p>
+    <p>Versão: 5.3.0 - 0.31.167</p>
   </footer>
 
   <script src="scripts.js"></script>

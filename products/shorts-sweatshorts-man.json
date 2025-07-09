@@ -27,7 +27,8 @@
         "images": [
             "images/man/shorts/sweatshorts/hugo-boss/2003250857-hugo-boss.jpeg"
         ],
-        "size": "M"
+        "size": "M",
+        "soldOut": true
     },
     {
         "name": "[2103251154] Hugo Boss",

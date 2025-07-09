@@ -38,6 +38,7 @@
         "images": [
             "images/man/tshirts/polo/nike/1603250850-nike.jpeg"
         ],
-        "size": "G"
+        "size": "G",
+        "soldOut": true
     }
 ]
