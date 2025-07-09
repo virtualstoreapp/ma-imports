@@ -8,7 +8,8 @@
             "images/man/pants/sweatpants/0407251231-nike-front.jpeg",
             "images/man/pants/sweatpants/0407251231-nike-back.jpeg"
         ],
-        "size": "GG"
+        "size": "GG",
+        "soldOut": true
     },
     {
         "name": "[0407251232] Nike",
