@@ -112,7 +112,7 @@ const selectShoesManSubcategory = async () => {
 };
 
 const selectShoesMan = async () => {
-  await selectProduct("Tênis", 28, selectShoesManSubcategory, 'shoes-man');
+  await selectProduct("Tênis", 33, selectShoesManSubcategory, 'shoes-man');
 };
 
 const selectSlippersMan = async () => {
