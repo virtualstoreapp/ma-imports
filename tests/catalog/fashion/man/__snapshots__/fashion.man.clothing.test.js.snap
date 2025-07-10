@@ -120,6 +120,24 @@ exports[`Fashion Man Clothing Desktop View Pants renders final subcategory "Cal�
               </li>
             </ul>
           </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -148,7 +166,7 @@ exports[`Fashion Man Clothing Desktop View Pants renders final subcategory "Cal�
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.31.167</p>
+    <p>Versão: 5.3.0 - 0.32.172</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -292,6 +310,24 @@ exports[`Fashion Man Clothing Desktop View Pants renders final subcategory "Cal�
               </li>
             </ul>
           </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -328,7 +364,7 @@ exports[`Fashion Man Clothing Desktop View Pants renders final subcategory "Cal�
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.31.167</p>
+    <p>Versão: 5.3.0 - 0.32.172</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -472,6 +508,24 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
               </li>
             </ul>
           </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -492,7 +546,7 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.31.167</p>
+    <p>Versão: 5.3.0 - 0.32.172</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -636,6 +690,24 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
               </li>
             </ul>
           </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -712,7 +784,7 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.31.167</p>
+    <p>Versão: 5.3.0 - 0.32.172</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -856,6 +928,24 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
               </li>
             </ul>
           </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -932,7 +1022,7 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.31.167</p>
+    <p>Versão: 5.3.0 - 0.32.172</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1076,6 +1166,24 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
               </li>
             </ul>
           </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -1200,7 +1308,7 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.31.167</p>
+    <p>Versão: 5.3.0 - 0.32.172</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1344,6 +1452,24 @@ exports[`Fashion Man Clothing Desktop View Sweatshirts renders final subcategory
               </li>
             </ul>
           </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -1385,14 +1511,6 @@ exports[`Fashion Man Clothing Desktop View Sweatshirts renders final subcategory
             <span class="price">R$&nbsp;159,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/sweatshirts/0207251346-lacoste.jpeg" alt="[0207251346] Lacoste">
-          <div class="product-details">
-            <h3>[0207251346] Lacoste</h3>
-            <p class="description">Conjunto Moleton modelo infantil</p>
-            <span class="size">Tamanho: 10</span>
-            <span class="price">R$&nbsp;179,00</span>
-          </div>
-        </li><li class="product-item" style="position: relative;">
           <img src="images/man/sweatshirts/0207251339-louis-vuitton.jpeg" alt="[0207251339] Louis Vuitton">
           <div class="product-details">
             <h3>[0207251339] Louis Vuitton</h3>
@@ -1468,7 +1586,7 @@ exports[`Fashion Man Clothing Desktop View Sweatshirts renders final subcategory
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.31.167</p>
+    <p>Versão: 5.3.0 - 0.32.172</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1612,6 +1730,24 @@ exports[`Fashion Man Clothing Desktop View Tank Top renders final subcategory "R
               </li>
             </ul>
           </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -1648,7 +1784,7 @@ exports[`Fashion Man Clothing Desktop View Tank Top renders final subcategory "R
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.31.167</p>
+    <p>Versão: 5.3.0 - 0.32.172</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1792,6 +1928,24 @@ exports[`Fashion Man Clothing Desktop View Tank Top renders final subcategory "R
               </li>
             </ul>
           </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -1868,7 +2022,7 @@ exports[`Fashion Man Clothing Desktop View Tank Top renders final subcategory "R
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.31.167</p>
+    <p>Versão: 5.3.0 - 0.32.172</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2012,6 +2166,24 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
               </li>
             </ul>
           </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -2312,7 +2484,7 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.31.167</p>
+    <p>Versão: 5.3.0 - 0.32.172</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2456,6 +2628,24 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
               </li>
             </ul>
           </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -2628,7 +2818,7 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.31.167</p>
+    <p>Versão: 5.3.0 - 0.32.172</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2772,6 +2962,24 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
               </li>
             </ul>
           </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -2816,7 +3024,7 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.31.167</p>
+    <p>Versão: 5.3.0 - 0.32.172</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2960,6 +3168,24 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
               </li>
             </ul>
           </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -3012,7 +3238,7 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.31.167</p>
+    <p>Versão: 5.3.0 - 0.32.172</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3156,6 +3382,24 @@ exports[`Fashion Man Clothing Mobile View Pants renders final subcategory "Calç
               </li>
             </ul>
           </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -3184,7 +3428,7 @@ exports[`Fashion Man Clothing Mobile View Pants renders final subcategory "Calç
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.31.167</p>
+    <p>Versão: 5.3.0 - 0.32.172</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3328,6 +3572,24 @@ exports[`Fashion Man Clothing Mobile View Pants renders final subcategory "Calç
               </li>
             </ul>
           </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -3364,7 +3626,7 @@ exports[`Fashion Man Clothing Mobile View Pants renders final subcategory "Calç
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.31.167</p>
+    <p>Versão: 5.3.0 - 0.32.172</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3508,6 +3770,24 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
               </li>
             </ul>
           </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -3528,7 +3808,7 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.31.167</p>
+    <p>Versão: 5.3.0 - 0.32.172</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3672,6 +3952,24 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
               </li>
             </ul>
           </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -3748,7 +4046,7 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.31.167</p>
+    <p>Versão: 5.3.0 - 0.32.172</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3892,6 +4190,24 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
               </li>
             </ul>
           </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -3968,7 +4284,7 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.31.167</p>
+    <p>Versão: 5.3.0 - 0.32.172</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4112,6 +4428,24 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
               </li>
             </ul>
           </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -4236,7 +4570,7 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.31.167</p>
+    <p>Versão: 5.3.0 - 0.32.172</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4380,6 +4714,24 @@ exports[`Fashion Man Clothing Mobile View Sweatshirts renders final subcategory 
               </li>
             </ul>
           </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -4421,14 +4773,6 @@ exports[`Fashion Man Clothing Mobile View Sweatshirts renders final subcategory 
             <span class="price">R$&nbsp;159,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/sweatshirts/0207251346-lacoste.jpeg" alt="[0207251346] Lacoste">
-          <div class="product-details">
-            <h3>[0207251346] Lacoste</h3>
-            <p class="description">Conjunto Moleton modelo infantil</p>
-            <span class="size">Tamanho: 10</span>
-            <span class="price">R$&nbsp;179,00</span>
-          </div>
-        </li><li class="product-item" style="position: relative;">
           <img src="images/man/sweatshirts/0207251339-louis-vuitton.jpeg" alt="[0207251339] Louis Vuitton">
           <div class="product-details">
             <h3>[0207251339] Louis Vuitton</h3>
@@ -4504,7 +4848,7 @@ exports[`Fashion Man Clothing Mobile View Sweatshirts renders final subcategory 
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.31.167</p>
+    <p>Versão: 5.3.0 - 0.32.172</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4648,6 +4992,24 @@ exports[`Fashion Man Clothing Mobile View Tank Top renders final subcategory "Re
               </li>
             </ul>
           </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -4684,7 +5046,7 @@ exports[`Fashion Man Clothing Mobile View Tank Top renders final subcategory "Re
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.31.167</p>
+    <p>Versão: 5.3.0 - 0.32.172</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4828,6 +5190,24 @@ exports[`Fashion Man Clothing Mobile View Tank Top renders final subcategory "Re
               </li>
             </ul>
           </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -4904,7 +5284,7 @@ exports[`Fashion Man Clothing Mobile View Tank Top renders final subcategory "Re
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.31.167</p>
+    <p>Versão: 5.3.0 - 0.32.172</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5041,6 +5421,24 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="sweatshirts-woman">Blusas</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
                       </li>
                     </ul>
                   </li>
@@ -5348,7 +5746,7 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.31.167</p>
+    <p>Versão: 5.3.0 - 0.32.172</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5485,6 +5883,24 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="sweatshirts-woman">Blusas</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
                       </li>
                     </ul>
                   </li>
@@ -5664,7 +6080,7 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.31.167</p>
+    <p>Versão: 5.3.0 - 0.32.172</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5808,6 +6224,24 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
               </li>
             </ul>
           </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -5852,7 +6286,7 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.31.167</p>
+    <p>Versão: 5.3.0 - 0.32.172</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5996,6 +6430,24 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
               </li>
             </ul>
           </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -6048,7 +6500,7 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.31.167</p>
+    <p>Versão: 5.3.0 - 0.32.172</p>
   </footer>
 
   <script src="scripts.js"></script>
