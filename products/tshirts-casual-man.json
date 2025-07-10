@@ -204,6 +204,16 @@
         "size": "M"
     },
     {
+        "name": "[1007252253] Louis Vuitton",
+        "description": "Algodão Peruano",
+        "oldPrice": 0.0,
+        "price": 79.90,
+        "images": [
+            "images/man/tshirts/casual/louis-vuitton/1007252253-louis-vuitton.jpeg"
+        ],
+        "size": "GG"
+    },
+    {
         "name": "[2702250956] Louis Vuitton",
         "description": "Algodão Italiano Oversized",
         "oldPrice": 0.0,
@@ -224,6 +234,26 @@
         ],
         "size": "P",
         "soldOut": true
+    },
+    {
+        "name": "[1007251715] Nike",
+        "description": "100% Algodão Penteado",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/man/tshirts/casual/nike/1007251715-nike.jpeg"
+        ],
+        "size": "M"
+    },
+    {
+        "name": "[1007251717] Nike",
+        "description": "100% Algodão Penteado",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/man/tshirts/casual/nike/1007251717-nike.jpeg"
+        ],
+        "size": "M"
     },
     {
         "name": "[2802251120] Nike",
