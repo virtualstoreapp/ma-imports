@@ -147,6 +147,38 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
   <main>
     <h2 id="category-heading">Novidades</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/casual/louis-vuitton/1007252253-louis-vuitton.jpeg" alt="[1007252253] Louis Vuitton">
+          <div class="product-details">
+            <h3>[1007252253] Louis Vuitton</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/casual/nike/1007251717-nike.jpeg" alt="[1007251717] Nike">
+          <div class="product-details">
+            <h3>[1007251717] Nike</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/casual/nike/1007251715-nike.jpeg" alt="[1007251715] Nike">
+          <div class="product-details">
+            <h3>[1007251715] Nike</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/nike/1007251626-nike.jpeg" alt="[1007251626] Nike">
+          <div class="product-details">
+            <h3>[1007251626] Nike</h3>
+            <p class="description">Dry Fit</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;69,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/children/sweatshirts/1007251304-jordan.jpeg" alt="[1007251304] Jordan">
           <div class="product-details">
             <h3>[1007251304] Jordan</h3>
@@ -1594,7 +1626,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.32.172</p>
+    <p>Versão: 5.3.0 - 0.32.181</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1765,6 +1797,38 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
   <main>
     <h2 id="category-heading">Novidades</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/casual/louis-vuitton/1007252253-louis-vuitton.jpeg" alt="[1007252253] Louis Vuitton">
+          <div class="product-details">
+            <h3>[1007252253] Louis Vuitton</h3>
+            <p class="description">Algodão Peruano</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/casual/nike/1007251717-nike.jpeg" alt="[1007251717] Nike">
+          <div class="product-details">
+            <h3>[1007251717] Nike</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/casual/nike/1007251715-nike.jpeg" alt="[1007251715] Nike">
+          <div class="product-details">
+            <h3>[1007251715] Nike</h3>
+            <p class="description">100% Algodão Penteado</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/nike/1007251626-nike.jpeg" alt="[1007251626] Nike">
+          <div class="product-details">
+            <h3>[1007251626] Nike</h3>
+            <p class="description">Dry Fit</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;69,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/children/sweatshirts/1007251304-jordan.jpeg" alt="[1007251304] Jordan">
           <div class="product-details">
             <h3>[1007251304] Jordan</h3>
@@ -3212,7 +3276,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.32.172</p>
+    <p>Versão: 5.3.0 - 0.32.181</p>
   </footer>
 
   <script src="scripts.js"></script>
