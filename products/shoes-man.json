@@ -43,6 +43,13 @@
         "size": "42"
     },
     {
+        "name": "[1007251156] Asics",
+        "oldPrice": 0.0,
+        "price": 259.0,
+        "image": "images/man/shoes/asics/1007251156-asics.jpeg",
+        "size": "41"
+    },
+    {
         "name": "[1202251714] Asics",
         "oldPrice": 0.0,
         "price": 89.0,
@@ -101,6 +108,12 @@
         "size": "41"
     },
     {
+        "name": "[1007251159] Nike Dunk Low Pro",
+        "price": 199.0,
+        "image": "images/man/shoes/nike/1007251159-nike-dunk-low-pro.jpeg",
+        "size": "34"
+    },
+    {
         "name": "[1202251737] Nike Dunk Low Pro",
         "oldPrice": 159.0,
         "price": 149.0,
@@ -154,18 +167,24 @@
     },
     {
         "name": "[1202251658] Nike Shox",
-        "oldPrice": 259.0,
-        "price": 249.0,
+        "oldPrice": 269.0,
+        "price": 259.0,
         "image": "images/man/shoes/nike/1202251658-nike-shox.jpeg",
         "size": "37"
     },
     {
         "name": "[1202252216] Nike Shox",
-        "oldPrice": 259.0,
-        "price": 249.0,
+        "oldPrice": 269.0,
+        "price": 259.0,
         "image": "images/man/shoes/nike/1202252216-nike-shox.jpeg",
         "size": "37",
         "soldOut": true
+    },
+    {
+        "name": "[1007251200] Nike Shox",
+        "price": 199.0,
+        "image": "images/man/shoes/nike/1007251200-nike-shox.jpeg",
+        "size": "38"
     },
     {
         "name": "[1202251724] Nike Shox",
@@ -183,11 +202,25 @@
         "size": "40"
     },
     {
+        "name": "[1007251157] Nike Shox",
+        "oldPrice": 269.0,
+        "price": 259.0,
+        "image": "images/man/shoes/nike/1007251157-nike.jpeg",
+        "size": "40"
+    },
+    {
+        "name": "[1007251158] Nike Shox",
+        "oldPrice": 269.0,
+        "price": 259.0,
+        "image": "images/man/shoes/nike/1007251158-nike.jpeg",
+        "size": "42"
+    },
+    {
         "name": "[1202251722] Nike Shox Neymar",
         "oldPrice": 269.0,
         "price": 259.0,
         "image": "images/man/shoes/nike/1202251722-nike-shox-neymar.jpeg",
-        "size": "41"
+        "size": "40,41"
     },
     {
         "name": "[1202251734] Nike Shox Neymar",
