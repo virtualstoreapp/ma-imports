@@ -20,6 +20,7 @@
     'pants-sweatpants-man': 'Calças Moletom Masculina',
     'pants-jeans-man': 'Calças Jeans Masculina',
     'slippers-man': 'Chinelos',
+    'sweatshirts-set-children': 'Conjuntos Moletom Infantil',
     'socks-man': 'Meias Masculina',
     all: 'Novidades',
     'tank-top-casual-man': 'Regatas Casuais Masculina',

@@ -42,16 +42,6 @@
         "soldOut": true
     },
     {
-        "name": "[0207251346] Lacoste",
-        "description": "Conjunto Moleton modelo infantil",
-        "oldPrice": 0.0,
-        "price": 179.00,
-        "images": [
-            "images/man/sweatshirts/0207251346-lacoste.jpeg"
-        ],
-        "size": "10"
-    },
-    {
         "name": "[0207251339] Louis Vuitton",
         "description": "Moleton",
         "oldPrice": 0.0,

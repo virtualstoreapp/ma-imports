@@ -1,0 +1,52 @@
+[
+    {
+        "name": "[1007251301] Nike",
+        "description": "Conjunto Moleton Infantil, Cor: Preta",
+        "oldPrice": 0.0,
+        "price": 199.00,
+        "images": [
+            "images/children/sweatshirts/1007251301-nike.jpeg"
+        ],
+        "size": "8"
+    },
+    {
+        "name": "[1007251302] Nike",
+        "description": "Conjunto Moleton Infantil, Cor: Preta",
+        "oldPrice": 0.0,
+        "price": 199.00,
+        "images": [
+            "images/children/sweatshirts/1007251302-nike.jpeg"
+        ],
+        "size": "12"
+    },
+    {
+        "name": "[1007251303] Nike",
+        "description": "Conjunto Moleton Infantil, Cor: Azul Marinho",
+        "oldPrice": 0.0,
+        "price": 199.00,
+        "images": [
+            "images/children/sweatshirts/1007251303-nike.jpeg"
+        ],
+        "size": "16"
+    },
+    {
+        "name": "[1007251304] Jordan",
+        "description": "Conjunto Moleton Infantil, Cor: Preta",
+        "oldPrice": 0.0,
+        "price": 199.00,
+        "images": [
+            "images/children/sweatshirts/1007251304-jordan.jpeg"
+        ],
+        "size": "14"
+    },
+    {
+        "name": "[0207251346] Lacoste",
+        "description": "Conjunto Moleton Infantil, Cor: Branca",
+        "oldPrice": 0.0,
+        "price": 179.00,
+        "images": [
+            "images/children/sweatshirts/0207251346-lacoste.jpeg"
+        ],
+        "size": "10"
+    }
+]

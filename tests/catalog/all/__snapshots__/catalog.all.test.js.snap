@@ -120,6 +120,24 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
               </li>
             </ul>
           </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -129,6 +147,38 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
   <main>
     <h2 id="category-heading">Novidades</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/children/sweatshirts/1007251304-jordan.jpeg" alt="[1007251304] Jordan">
+          <div class="product-details">
+            <h3>[1007251304] Jordan</h3>
+            <p class="description">Conjunto Moleton Infantil, Cor: Preta</p>
+            <span class="size">Tamanho: 14</span>
+            <span class="price">R$&nbsp;199,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/children/sweatshirts/1007251303-nike.jpeg" alt="[1007251303] Nike">
+          <div class="product-details">
+            <h3>[1007251303] Nike</h3>
+            <p class="description">Conjunto Moleton Infantil, Cor: Azul Marinho</p>
+            <span class="size">Tamanho: 16</span>
+            <span class="price">R$&nbsp;199,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/children/sweatshirts/1007251302-nike.jpeg" alt="[1007251302] Nike">
+          <div class="product-details">
+            <h3>[1007251302] Nike</h3>
+            <p class="description">Conjunto Moleton Infantil, Cor: Preta</p>
+            <span class="size">Tamanho: 12</span>
+            <span class="price">R$&nbsp;199,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/children/sweatshirts/1007251301-nike.jpeg" alt="[1007251301] Nike">
+          <div class="product-details">
+            <h3>[1007251301] Nike</h3>
+            <p class="description">Conjunto Moleton Infantil, Cor: Preta</p>
+            <span class="size">Tamanho: 8</span>
+            <span class="price">R$&nbsp;199,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/pants/jeans/04507251858-diesel.jpeg" alt="[0507251858] Diesel">
           <div class="product-details">
             <h3>[0507251858] Diesel</h3>
@@ -185,10 +235,10 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;129,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/sweatshirts/0207251346-lacoste.jpeg" alt="[0207251346] Lacoste">
+          <img src="images/children/sweatshirts/0207251346-lacoste.jpeg" alt="[0207251346] Lacoste">
           <div class="product-details">
             <h3>[0207251346] Lacoste</h3>
-            <p class="description">Conjunto Moleton modelo infantil</p>
+            <p class="description">Conjunto Moleton Infantil, Cor: Branca</p>
             <span class="size">Tamanho: 10</span>
             <span class="price">R$&nbsp;179,00</span>
           </div>
@@ -1360,7 +1410,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
           <div class="product-details">
             <h3>[1202251747] Nike Air Force</h3>
             
-            <span class="size">Tamanho: 38, 41, 42</span>
+            <span class="size">Tamanho: 38</span>
             <span class="old-price">R$&nbsp;229,00</span>
              <span class="new-price">R$&nbsp;219,00</span>
           </div>
@@ -1502,7 +1552,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.31.167</p>
+    <p>Versão: 5.3.0 - 0.32.172</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1646,6 +1696,24 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
               </li>
             </ul>
           </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -1655,6 +1723,38 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
   <main>
     <h2 id="category-heading">Novidades</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/children/sweatshirts/1007251304-jordan.jpeg" alt="[1007251304] Jordan">
+          <div class="product-details">
+            <h3>[1007251304] Jordan</h3>
+            <p class="description">Conjunto Moleton Infantil, Cor: Preta</p>
+            <span class="size">Tamanho: 14</span>
+            <span class="price">R$&nbsp;199,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/children/sweatshirts/1007251303-nike.jpeg" alt="[1007251303] Nike">
+          <div class="product-details">
+            <h3>[1007251303] Nike</h3>
+            <p class="description">Conjunto Moleton Infantil, Cor: Azul Marinho</p>
+            <span class="size">Tamanho: 16</span>
+            <span class="price">R$&nbsp;199,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/children/sweatshirts/1007251302-nike.jpeg" alt="[1007251302] Nike">
+          <div class="product-details">
+            <h3>[1007251302] Nike</h3>
+            <p class="description">Conjunto Moleton Infantil, Cor: Preta</p>
+            <span class="size">Tamanho: 12</span>
+            <span class="price">R$&nbsp;199,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/children/sweatshirts/1007251301-nike.jpeg" alt="[1007251301] Nike">
+          <div class="product-details">
+            <h3>[1007251301] Nike</h3>
+            <p class="description">Conjunto Moleton Infantil, Cor: Preta</p>
+            <span class="size">Tamanho: 8</span>
+            <span class="price">R$&nbsp;199,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/pants/jeans/04507251858-diesel.jpeg" alt="[0507251858] Diesel">
           <div class="product-details">
             <h3>[0507251858] Diesel</h3>
@@ -1711,10 +1811,10 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
             <span class="price">R$&nbsp;129,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/sweatshirts/0207251346-lacoste.jpeg" alt="[0207251346] Lacoste">
+          <img src="images/children/sweatshirts/0207251346-lacoste.jpeg" alt="[0207251346] Lacoste">
           <div class="product-details">
             <h3>[0207251346] Lacoste</h3>
-            <p class="description">Conjunto Moleton modelo infantil</p>
+            <p class="description">Conjunto Moleton Infantil, Cor: Branca</p>
             <span class="size">Tamanho: 10</span>
             <span class="price">R$&nbsp;179,00</span>
           </div>
@@ -2886,7 +2986,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
           <div class="product-details">
             <h3>[1202251747] Nike Air Force</h3>
             
-            <span class="size">Tamanho: 38, 41, 42</span>
+            <span class="size">Tamanho: 38</span>
             <span class="old-price">R$&nbsp;229,00</span>
              <span class="new-price">R$&nbsp;219,00</span>
           </div>
@@ -3028,7 +3128,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.31.167</p>
+    <p>Versão: 5.3.0 - 0.32.172</p>
   </footer>
 
   <script src="scripts.js"></script>

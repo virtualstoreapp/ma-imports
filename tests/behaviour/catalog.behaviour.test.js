@@ -30,6 +30,7 @@ describe('Catalog Behaviour', () => {
         "sweatshirts-woman": [{ name: "[0207251439] Sweatshirt Woman", price: 299.00 }],
         "pants-sweatpants-man": [{ name: "[0407251439] Sweatspants Man", price: 99.00 }],
         "pants-jeans-man": [{ name: "[0507251439] Jeans Man", price: 179.00 }],
+        "sweatshirts-set-children": [{ name: "[1007251313] Sweatshirt Set Children", price: 199.00 }],
         };
 
         beforeEach(() => {
@@ -64,6 +65,7 @@ describe('Catalog Behaviour', () => {
             const productNames = productItems.map(item => item.querySelector('h3').textContent);
             
             expect(productNames).toEqual([
+                "[1007251313] Sweatshirt Set Children",
                 "[0507251439] Jeans Man",
                 "[0407251439] Sweatspants Man",
                 "[0207251439] Sweatshirt Woman",

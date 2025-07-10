@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "Bonés Masculino" correctly on desktop 1`] = `
+exports[`Fashion Children Clothing Desktop View Sweatshirts Set renders final subcategory "Conjuntos Moletom Infantil" correctly on desktop 1`] = `
 "
   <header>
     <div class="header-logo">
@@ -145,46 +145,46 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "B
 
   <!-- Main Content -->
   <main>
-    <h2 id="category-heading">Bonés Masculinos</h2>
+    <h2 id="category-heading">Conjuntos Moletom Infantil</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/polo/0106250949-polo.jpeg" alt="[0106250949] Polo">
+          <img src="images/children/sweatshirts/1007251301-nike.jpeg" alt="[1007251301] Nike">
           <div class="product-details">
-            <h3>[0106250949] Polo</h3>
-            <p class="description">Cor: Verde</p>
-            
-            <span class="price">R$&nbsp;59,90</span>
+            <h3>[1007251301] Nike</h3>
+            <p class="description">Conjunto Moleton Infantil, Cor: Preta</p>
+            <span class="size">Tamanho: 8</span>
+            <span class="price">R$&nbsp;199,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/polo/0106250953-polo.jpeg" alt="[0106250953] Polo">
+          <img src="images/children/sweatshirts/1007251302-nike.jpeg" alt="[1007251302] Nike">
           <div class="product-details">
-            <h3>[0106250953] Polo</h3>
-            <p class="description">Cor: Branca</p>
-            
-            <span class="price">R$&nbsp;59,90</span>
+            <h3>[1007251302] Nike</h3>
+            <p class="description">Conjunto Moleton Infantil, Cor: Preta</p>
+            <span class="size">Tamanho: 12</span>
+            <span class="price">R$&nbsp;199,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/polo/0106250954-polo.jpeg" alt="[0106250954] Polo">
+          <img src="images/children/sweatshirts/1007251303-nike.jpeg" alt="[1007251303] Nike">
           <div class="product-details">
-            <h3>[0106250954] Polo</h3>
-            <p class="description">Cor: Bege</p>
-            
-            <span class="price">R$&nbsp;59,90</span>
+            <h3>[1007251303] Nike</h3>
+            <p class="description">Conjunto Moleton Infantil, Cor: Azul Marinho</p>
+            <span class="size">Tamanho: 16</span>
+            <span class="price">R$&nbsp;199,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/polo/0106250955-polo.jpeg" alt="[0106250955] Polo">
+          <img src="images/children/sweatshirts/1007251304-jordan.jpeg" alt="[1007251304] Jordan">
           <div class="product-details">
-            <h3>[0106250955] Polo</h3>
-            <p class="description">Cor: Amarela</p>
-            
-            <span class="price">R$&nbsp;59,90</span>
+            <h3>[1007251304] Jordan</h3>
+            <p class="description">Conjunto Moleton Infantil, Cor: Preta</p>
+            <span class="size">Tamanho: 14</span>
+            <span class="price">R$&nbsp;199,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/ralph-lauren/0106250956-ralph-lauren.jpeg" alt="[0106250956] Ralph Lauren">
+          <img src="images/children/sweatshirts/0207251346-lacoste.jpeg" alt="[0207251346] Lacoste">
           <div class="product-details">
-            <h3>[0106250956] Ralph Lauren</h3>
-            <p class="description">Cor: Cinza Escuro</p>
-            
-            <span class="price">R$&nbsp;59,90</span>
+            <h3>[0207251346] Lacoste</h3>
+            <p class="description">Conjunto Moleton Infantil, Cor: Branca</p>
+            <span class="size">Tamanho: 10</span>
+            <span class="price">R$&nbsp;179,00</span>
           </div>
         </li></ul>
   </main>
@@ -214,7 +214,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "B
     </div>"
 `;
 
-exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Bonés Masculino" correctly on mobile 1`] = `
+exports[`Fashion Children Clothing Mobile View Sweatshirts Set renders final subcategory "Conjuntos Moletom Infantil" correctly on mobile 1`] = `
 "
   <header>
     <div class="header-logo">
@@ -359,46 +359,46 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Bo
 
   <!-- Main Content -->
   <main>
-    <h2 id="category-heading">Bonés Masculinos</h2>
+    <h2 id="category-heading">Conjuntos Moletom Infantil</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/polo/0106250949-polo.jpeg" alt="[0106250949] Polo">
+          <img src="images/children/sweatshirts/1007251301-nike.jpeg" alt="[1007251301] Nike">
           <div class="product-details">
-            <h3>[0106250949] Polo</h3>
-            <p class="description">Cor: Verde</p>
-            
-            <span class="price">R$&nbsp;59,90</span>
+            <h3>[1007251301] Nike</h3>
+            <p class="description">Conjunto Moleton Infantil, Cor: Preta</p>
+            <span class="size">Tamanho: 8</span>
+            <span class="price">R$&nbsp;199,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/polo/0106250953-polo.jpeg" alt="[0106250953] Polo">
+          <img src="images/children/sweatshirts/1007251302-nike.jpeg" alt="[1007251302] Nike">
           <div class="product-details">
-            <h3>[0106250953] Polo</h3>
-            <p class="description">Cor: Branca</p>
-            
-            <span class="price">R$&nbsp;59,90</span>
+            <h3>[1007251302] Nike</h3>
+            <p class="description">Conjunto Moleton Infantil, Cor: Preta</p>
+            <span class="size">Tamanho: 12</span>
+            <span class="price">R$&nbsp;199,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/polo/0106250954-polo.jpeg" alt="[0106250954] Polo">
+          <img src="images/children/sweatshirts/1007251303-nike.jpeg" alt="[1007251303] Nike">
           <div class="product-details">
-            <h3>[0106250954] Polo</h3>
-            <p class="description">Cor: Bege</p>
-            
-            <span class="price">R$&nbsp;59,90</span>
+            <h3>[1007251303] Nike</h3>
+            <p class="description">Conjunto Moleton Infantil, Cor: Azul Marinho</p>
+            <span class="size">Tamanho: 16</span>
+            <span class="price">R$&nbsp;199,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/polo/0106250955-polo.jpeg" alt="[0106250955] Polo">
+          <img src="images/children/sweatshirts/1007251304-jordan.jpeg" alt="[1007251304] Jordan">
           <div class="product-details">
-            <h3>[0106250955] Polo</h3>
-            <p class="description">Cor: Amarela</p>
-            
-            <span class="price">R$&nbsp;59,90</span>
+            <h3>[1007251304] Jordan</h3>
+            <p class="description">Conjunto Moleton Infantil, Cor: Preta</p>
+            <span class="size">Tamanho: 14</span>
+            <span class="price">R$&nbsp;199,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/ralph-lauren/0106250956-ralph-lauren.jpeg" alt="[0106250956] Ralph Lauren">
+          <img src="images/children/sweatshirts/0207251346-lacoste.jpeg" alt="[0207251346] Lacoste">
           <div class="product-details">
-            <h3>[0106250956] Ralph Lauren</h3>
-            <p class="description">Cor: Cinza Escuro</p>
-            
-            <span class="price">R$&nbsp;59,90</span>
+            <h3>[0207251346] Lacoste</h3>
+            <p class="description">Conjunto Moleton Infantil, Cor: Branca</p>
+            <span class="size">Tamanho: 10</span>
+            <span class="price">R$&nbsp;179,00</span>
           </div>
         </li></ul>
   </main>

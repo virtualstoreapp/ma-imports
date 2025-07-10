@@ -23,6 +23,10 @@ const selectWomanSubcategory = async () => {
   await clickMenuOptions(['fashion-category', 'woman-subcategory']);
 };
 
+const selectChildrenSubcategory = async () => {
+  await clickMenuOptions(['fashion-category', 'children-subcategory']);
+}
+
 const selectClothingManSubcategory = async () => {
   await selectManSubcategory();
   await selectMenuOption('clothing-man-subcategory');
@@ -32,6 +36,11 @@ const selectClothingWomanSubcategory = async () => {
   await selectWomanSubcategory();
   await selectMenuOption('clothing-woman-subcategory');
 };
+
+const selectClothingChildrenSubcategory = async () => {
+  await selectChildrenSubcategory();
+  await selectMenuOption('sets-children-subcategory');
+}
 
 const selectProduct = async (
   heading, productCount, subcategoryFunction, dataCategory
@@ -45,8 +54,8 @@ const selectProduct = async (
   await asserts(expectedHeading, expectedCount);
 };
 
-const selectSweatshirtMan = async () => {
-  await selectProduct("Blusas Masculina", 14, selectClothingManSubcategory, 'sweatshirts-man');
+const selectSweatshirtsMan = async () => {
+  await selectProduct("Blusas Masculina", 13, selectClothingManSubcategory, 'sweatshirts-man');
 };
 
 const selectTshirtsCasualMan = async () => {
@@ -127,8 +136,12 @@ const selectSweatshirtWoman = async () => {
   await selectProduct("Blusas Feminina", 1, selectClothingWomanSubcategory, 'sweatshirts-woman');
 };
 
+const selectSweatshirtSetChildren = async () => {
+  await selectProduct("Conjuntos Moletom Infantil", 5, selectClothingChildrenSubcategory, 'sweatshirts-set-children')
+}
+
 module.exports = {
-    selectSweatshirtMan,
+    selectSweatshirtsMan,
     selectTshirtsCasualMan,
     selectTshirtsDryFitMan,
     selectTshirtsPoloMan,
@@ -145,5 +158,6 @@ module.exports = {
     selectSlippersMan,
     selectSocksMan,
     selectCapsMan,
-    selectSweatshirtWoman
+    selectSweatshirtWoman,
+    selectSweatshirtSetChildren
 };

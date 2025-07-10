@@ -4,7 +4,7 @@ const {
 } = require('../../../utils/catalogCommon');
 
 const {
-  selectSweatshirtMan,
+  selectSweatshirtsMan,
   selectTshirtsCasualMan,
   selectTshirtsDryFitMan,
   selectTshirtsPoloMan,
@@ -30,7 +30,7 @@ describe('Fashion', () => {
 
                 describe('Sweatshirts', () => {
                     it('renders final subcategory "Blusas Masculina" correctly on desktop', async () => {
-                        await selectSweatshirtMan();
+                        await selectSweatshirtsMan();
                     });
                 });
 
@@ -98,7 +98,7 @@ describe('Fashion', () => {
 
                 describe('Sweatshirts', () => {
                     it('renders final subcategory "Blusas Masculina" correctly on mobile', async () => {
-                        await selectSweatshirtMan();
+                        await selectSweatshirtsMan();
                     });
                 });
 

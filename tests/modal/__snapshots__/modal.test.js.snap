@@ -120,6 +120,24 @@ exports[`Modal Functionality copies the correct product ID and category to clipb
               </li>
             </ul>
           </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -239,7 +257,7 @@ exports[`Modal Functionality copies the correct product ID and category to clipb
           <div class="product-details">
             <h3>[1202251747] Nike Air Force</h3>
             
-            <span class="size">Tamanho: 38, 41, 42</span>
+            <span class="size">Tamanho: 38</span>
             <span class="old-price">R$&nbsp;229,00</span>
              <span class="new-price">R$&nbsp;219,00</span>
           </div>
@@ -382,7 +400,7 @@ exports[`Modal Functionality copies the correct product ID and category to clipb
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.31.167</p>
+    <p>Versão: 5.3.0 - 0.32.172</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -526,6 +544,24 @@ exports[`Modal Functionality opens modal on product click and logs GA event 1`] 
               </li>
             </ul>
           </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -645,7 +681,7 @@ exports[`Modal Functionality opens modal on product click and logs GA event 1`] 
           <div class="product-details">
             <h3>[1202251747] Nike Air Force</h3>
             
-            <span class="size">Tamanho: 38, 41, 42</span>
+            <span class="size">Tamanho: 38</span>
             <span class="old-price">R$&nbsp;229,00</span>
              <span class="new-price">R$&nbsp;219,00</span>
           </div>
@@ -788,7 +824,7 @@ exports[`Modal Functionality opens modal on product click and logs GA event 1`] 
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.31.167</p>
+    <p>Versão: 5.3.0 - 0.32.172</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -932,6 +968,24 @@ exports[`Modal Functionality redirects to WhatsApp with correct message when cli
               </li>
             </ul>
           </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -1051,7 +1105,7 @@ exports[`Modal Functionality redirects to WhatsApp with correct message when cli
           <div class="product-details">
             <h3>[1202251747] Nike Air Force</h3>
             
-            <span class="size">Tamanho: 38, 41, 42</span>
+            <span class="size">Tamanho: 38</span>
             <span class="old-price">R$&nbsp;229,00</span>
              <span class="new-price">R$&nbsp;219,00</span>
           </div>
@@ -1194,7 +1248,7 @@ exports[`Modal Functionality redirects to WhatsApp with correct message when cli
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.31.167</p>
+    <p>Versão: 5.3.0 - 0.32.172</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1338,6 +1392,24 @@ exports[`Modal Functionality shows error alert if clipboard copy fails 1`] = `
               </li>
             </ul>
           </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -1457,7 +1529,7 @@ exports[`Modal Functionality shows error alert if clipboard copy fails 1`] = `
           <div class="product-details">
             <h3>[1202251747] Nike Air Force</h3>
             
-            <span class="size">Tamanho: 38, 41, 42</span>
+            <span class="size">Tamanho: 38</span>
             <span class="old-price">R$&nbsp;229,00</span>
              <span class="new-price">R$&nbsp;219,00</span>
           </div>
@@ -1600,7 +1672,7 @@ exports[`Modal Functionality shows error alert if clipboard copy fails 1`] = `
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.31.167</p>
+    <p>Versão: 5.3.0 - 0.32.172</p>
   </footer>
 
   <script src="scripts.js"></script>
