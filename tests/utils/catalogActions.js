@@ -59,11 +59,11 @@ const selectSweatshirtsMan = async () => {
 };
 
 const selectTshirtsCasualMan = async () => {
-  await selectProduct("Camisetas Casuais Masculina", 36, selectClothingManSubcategory, 'tshirts-casual-man');
+  await selectProduct("Camisetas Casuais Masculina", 39, selectClothingManSubcategory, 'tshirts-casual-man');
 };
 
 const selectTshirtsDryFitMan = async () => {
-  await selectProduct("Camisetas Dry Fit Masculina", 20, selectClothingManSubcategory, 'tshirts-dryfit-man');
+  await selectProduct("Camisetas Dry Fit Masculina", 21, selectClothingManSubcategory, 'tshirts-dryfit-man');
 };
 
 const selectTshirtsPoloMan = async () => {
