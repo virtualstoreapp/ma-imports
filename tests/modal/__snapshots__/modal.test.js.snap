@@ -201,6 +201,14 @@ exports[`Modal Functionality copies the correct product ID and category to clipb
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/asics/1007251156-asics.jpeg" alt="[1007251156] Asics">
+          <div class="product-details">
+            <h3>[1007251156] Asics</h3>
+            
+            <span class="size">Tamanho: 41</span>
+            <span class="price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/asics/1202251714-asics.jpeg" alt="[1202251714] Asics">
           <div class="product-details">
             <h3>[1202251714] Asics</h3>
@@ -271,6 +279,14 @@ exports[`Modal Functionality copies the correct product ID and category to clipb
              <span class="new-price">R$&nbsp;219,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1007251159-nike-dunk-low-pro.jpeg" alt="[1007251159] Nike Dunk Low Pro">
+          <div class="product-details">
+            <h3>[1007251159] Nike Dunk Low Pro</h3>
+            
+            <span class="size">Tamanho: 34</span>
+            <span class="price">R$&nbsp;199,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251737-nike-dunk-low-pro.jpeg" alt="[1202251737] Nike Dunk Low Pro">
           <div class="product-details">
             <h3>[1202251737] Nike Dunk Low Pro</h3>
@@ -339,8 +355,8 @@ exports[`Modal Functionality copies the correct product ID and category to clipb
             <h3>[1202251658] Nike Shox</h3>
             
             <span class="size">Tamanho: 37</span>
-            <span class="old-price">R$&nbsp;259,00</span>
-             <span class="new-price">R$&nbsp;249,00</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202252216-nike-shox.jpeg" alt="[1202252216] Nike Shox">
@@ -348,10 +364,18 @@ exports[`Modal Functionality copies the correct product ID and category to clipb
             <h3>[1202252216] Nike Shox</h3>
             
             <span class="size">Tamanho: 37</span>
-            <span class="old-price">R$&nbsp;259,00</span>
-             <span class="new-price">R$&nbsp;249,00</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1007251200-nike-shox.jpeg" alt="[1007251200] Nike Shox">
+          <div class="product-details">
+            <h3>[1007251200] Nike Shox</h3>
+            
+            <span class="size">Tamanho: 38</span>
+            <span class="price">R$&nbsp;199,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251724-nike-shox.jpeg" alt="[1202251724] Nike Shox">
           <div class="product-details">
             <h3>[1202251724] Nike Shox</h3>
@@ -370,11 +394,29 @@ exports[`Modal Functionality copies the correct product ID and category to clipb
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1007251157-nike.jpeg" alt="[1007251157] Nike Shox">
+          <div class="product-details">
+            <h3>[1007251157] Nike Shox</h3>
+            
+            <span class="size">Tamanho: 40</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1007251158-nike.jpeg" alt="[1007251158] Nike Shox">
+          <div class="product-details">
+            <h3>[1007251158] Nike Shox</h3>
+            
+            <span class="size">Tamanho: 42</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251722-nike-shox-neymar.jpeg" alt="[1202251722] Nike Shox Neymar">
           <div class="product-details">
             <h3>[1202251722] Nike Shox Neymar</h3>
             
-            <span class="size">Tamanho: 41</span>
+            <span class="size">Tamanho: 40,41</span>
             <span class="old-price">R$&nbsp;269,00</span>
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
@@ -625,6 +667,14 @@ exports[`Modal Functionality opens modal on product click and logs GA event 1`] 
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/asics/1007251156-asics.jpeg" alt="[1007251156] Asics">
+          <div class="product-details">
+            <h3>[1007251156] Asics</h3>
+            
+            <span class="size">Tamanho: 41</span>
+            <span class="price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/asics/1202251714-asics.jpeg" alt="[1202251714] Asics">
           <div class="product-details">
             <h3>[1202251714] Asics</h3>
@@ -695,6 +745,14 @@ exports[`Modal Functionality opens modal on product click and logs GA event 1`] 
              <span class="new-price">R$&nbsp;219,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1007251159-nike-dunk-low-pro.jpeg" alt="[1007251159] Nike Dunk Low Pro">
+          <div class="product-details">
+            <h3>[1007251159] Nike Dunk Low Pro</h3>
+            
+            <span class="size">Tamanho: 34</span>
+            <span class="price">R$&nbsp;199,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251737-nike-dunk-low-pro.jpeg" alt="[1202251737] Nike Dunk Low Pro">
           <div class="product-details">
             <h3>[1202251737] Nike Dunk Low Pro</h3>
@@ -763,8 +821,8 @@ exports[`Modal Functionality opens modal on product click and logs GA event 1`] 
             <h3>[1202251658] Nike Shox</h3>
             
             <span class="size">Tamanho: 37</span>
-            <span class="old-price">R$&nbsp;259,00</span>
-             <span class="new-price">R$&nbsp;249,00</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202252216-nike-shox.jpeg" alt="[1202252216] Nike Shox">
@@ -772,10 +830,18 @@ exports[`Modal Functionality opens modal on product click and logs GA event 1`] 
             <h3>[1202252216] Nike Shox</h3>
             
             <span class="size">Tamanho: 37</span>
-            <span class="old-price">R$&nbsp;259,00</span>
-             <span class="new-price">R$&nbsp;249,00</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1007251200-nike-shox.jpeg" alt="[1007251200] Nike Shox">
+          <div class="product-details">
+            <h3>[1007251200] Nike Shox</h3>
+            
+            <span class="size">Tamanho: 38</span>
+            <span class="price">R$&nbsp;199,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251724-nike-shox.jpeg" alt="[1202251724] Nike Shox">
           <div class="product-details">
             <h3>[1202251724] Nike Shox</h3>
@@ -794,11 +860,29 @@ exports[`Modal Functionality opens modal on product click and logs GA event 1`] 
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1007251157-nike.jpeg" alt="[1007251157] Nike Shox">
+          <div class="product-details">
+            <h3>[1007251157] Nike Shox</h3>
+            
+            <span class="size">Tamanho: 40</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1007251158-nike.jpeg" alt="[1007251158] Nike Shox">
+          <div class="product-details">
+            <h3>[1007251158] Nike Shox</h3>
+            
+            <span class="size">Tamanho: 42</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251722-nike-shox-neymar.jpeg" alt="[1202251722] Nike Shox Neymar">
           <div class="product-details">
             <h3>[1202251722] Nike Shox Neymar</h3>
             
-            <span class="size">Tamanho: 41</span>
+            <span class="size">Tamanho: 40,41</span>
             <span class="old-price">R$&nbsp;269,00</span>
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
@@ -1049,6 +1133,14 @@ exports[`Modal Functionality redirects to WhatsApp with correct message when cli
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/asics/1007251156-asics.jpeg" alt="[1007251156] Asics">
+          <div class="product-details">
+            <h3>[1007251156] Asics</h3>
+            
+            <span class="size">Tamanho: 41</span>
+            <span class="price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/asics/1202251714-asics.jpeg" alt="[1202251714] Asics">
           <div class="product-details">
             <h3>[1202251714] Asics</h3>
@@ -1119,6 +1211,14 @@ exports[`Modal Functionality redirects to WhatsApp with correct message when cli
              <span class="new-price">R$&nbsp;219,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1007251159-nike-dunk-low-pro.jpeg" alt="[1007251159] Nike Dunk Low Pro">
+          <div class="product-details">
+            <h3>[1007251159] Nike Dunk Low Pro</h3>
+            
+            <span class="size">Tamanho: 34</span>
+            <span class="price">R$&nbsp;199,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251737-nike-dunk-low-pro.jpeg" alt="[1202251737] Nike Dunk Low Pro">
           <div class="product-details">
             <h3>[1202251737] Nike Dunk Low Pro</h3>
@@ -1187,8 +1287,8 @@ exports[`Modal Functionality redirects to WhatsApp with correct message when cli
             <h3>[1202251658] Nike Shox</h3>
             
             <span class="size">Tamanho: 37</span>
-            <span class="old-price">R$&nbsp;259,00</span>
-             <span class="new-price">R$&nbsp;249,00</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202252216-nike-shox.jpeg" alt="[1202252216] Nike Shox">
@@ -1196,10 +1296,18 @@ exports[`Modal Functionality redirects to WhatsApp with correct message when cli
             <h3>[1202252216] Nike Shox</h3>
             
             <span class="size">Tamanho: 37</span>
-            <span class="old-price">R$&nbsp;259,00</span>
-             <span class="new-price">R$&nbsp;249,00</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1007251200-nike-shox.jpeg" alt="[1007251200] Nike Shox">
+          <div class="product-details">
+            <h3>[1007251200] Nike Shox</h3>
+            
+            <span class="size">Tamanho: 38</span>
+            <span class="price">R$&nbsp;199,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251724-nike-shox.jpeg" alt="[1202251724] Nike Shox">
           <div class="product-details">
             <h3>[1202251724] Nike Shox</h3>
@@ -1218,11 +1326,29 @@ exports[`Modal Functionality redirects to WhatsApp with correct message when cli
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1007251157-nike.jpeg" alt="[1007251157] Nike Shox">
+          <div class="product-details">
+            <h3>[1007251157] Nike Shox</h3>
+            
+            <span class="size">Tamanho: 40</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1007251158-nike.jpeg" alt="[1007251158] Nike Shox">
+          <div class="product-details">
+            <h3>[1007251158] Nike Shox</h3>
+            
+            <span class="size">Tamanho: 42</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251722-nike-shox-neymar.jpeg" alt="[1202251722] Nike Shox Neymar">
           <div class="product-details">
             <h3>[1202251722] Nike Shox Neymar</h3>
             
-            <span class="size">Tamanho: 41</span>
+            <span class="size">Tamanho: 40,41</span>
             <span class="old-price">R$&nbsp;269,00</span>
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
@@ -1473,6 +1599,14 @@ exports[`Modal Functionality shows error alert if clipboard copy fails 1`] = `
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/asics/1007251156-asics.jpeg" alt="[1007251156] Asics">
+          <div class="product-details">
+            <h3>[1007251156] Asics</h3>
+            
+            <span class="size">Tamanho: 41</span>
+            <span class="price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/asics/1202251714-asics.jpeg" alt="[1202251714] Asics">
           <div class="product-details">
             <h3>[1202251714] Asics</h3>
@@ -1543,6 +1677,14 @@ exports[`Modal Functionality shows error alert if clipboard copy fails 1`] = `
              <span class="new-price">R$&nbsp;219,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1007251159-nike-dunk-low-pro.jpeg" alt="[1007251159] Nike Dunk Low Pro">
+          <div class="product-details">
+            <h3>[1007251159] Nike Dunk Low Pro</h3>
+            
+            <span class="size">Tamanho: 34</span>
+            <span class="price">R$&nbsp;199,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251737-nike-dunk-low-pro.jpeg" alt="[1202251737] Nike Dunk Low Pro">
           <div class="product-details">
             <h3>[1202251737] Nike Dunk Low Pro</h3>
@@ -1611,8 +1753,8 @@ exports[`Modal Functionality shows error alert if clipboard copy fails 1`] = `
             <h3>[1202251658] Nike Shox</h3>
             
             <span class="size">Tamanho: 37</span>
-            <span class="old-price">R$&nbsp;259,00</span>
-             <span class="new-price">R$&nbsp;249,00</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202252216-nike-shox.jpeg" alt="[1202252216] Nike Shox">
@@ -1620,10 +1762,18 @@ exports[`Modal Functionality shows error alert if clipboard copy fails 1`] = `
             <h3>[1202252216] Nike Shox</h3>
             
             <span class="size">Tamanho: 37</span>
-            <span class="old-price">R$&nbsp;259,00</span>
-             <span class="new-price">R$&nbsp;249,00</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1007251200-nike-shox.jpeg" alt="[1007251200] Nike Shox">
+          <div class="product-details">
+            <h3>[1007251200] Nike Shox</h3>
+            
+            <span class="size">Tamanho: 38</span>
+            <span class="price">R$&nbsp;199,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251724-nike-shox.jpeg" alt="[1202251724] Nike Shox">
           <div class="product-details">
             <h3>[1202251724] Nike Shox</h3>
@@ -1642,11 +1792,29 @@ exports[`Modal Functionality shows error alert if clipboard copy fails 1`] = `
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1007251157-nike.jpeg" alt="[1007251157] Nike Shox">
+          <div class="product-details">
+            <h3>[1007251157] Nike Shox</h3>
+            
+            <span class="size">Tamanho: 40</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1007251158-nike.jpeg" alt="[1007251158] Nike Shox">
+          <div class="product-details">
+            <h3>[1007251158] Nike Shox</h3>
+            
+            <span class="size">Tamanho: 42</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251722-nike-shox-neymar.jpeg" alt="[1202251722] Nike Shox Neymar">
           <div class="product-details">
             <h3>[1202251722] Nike Shox Neymar</h3>
             
-            <span class="size">Tamanho: 41</span>
+            <span class="size">Tamanho: 40,41</span>
             <span class="old-price">R$&nbsp;269,00</span>
              <span class="new-price">R$&nbsp;259,00</span>
           </div>

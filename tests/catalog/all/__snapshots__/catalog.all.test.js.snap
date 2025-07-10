@@ -179,6 +179,48 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;199,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1007251200-nike-shox.jpeg" alt="[1007251200] Nike Shox">
+          <div class="product-details">
+            <h3>[1007251200] Nike Shox</h3>
+            
+            <span class="size">Tamanho: 38</span>
+            <span class="price">R$&nbsp;199,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1007251159-nike-dunk-low-pro.jpeg" alt="[1007251159] Nike Dunk Low Pro">
+          <div class="product-details">
+            <h3>[1007251159] Nike Dunk Low Pro</h3>
+            
+            <span class="size">Tamanho: 34</span>
+            <span class="price">R$&nbsp;199,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1007251158-nike.jpeg" alt="[1007251158] Nike Shox">
+          <div class="product-details">
+            <h3>[1007251158] Nike Shox</h3>
+            
+            <span class="size">Tamanho: 42</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1007251157-nike.jpeg" alt="[1007251157] Nike Shox">
+          <div class="product-details">
+            <h3>[1007251157] Nike Shox</h3>
+            
+            <span class="size">Tamanho: 40</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/asics/1007251156-asics.jpeg" alt="[1007251156] Asics">
+          <div class="product-details">
+            <h3>[1007251156] Asics</h3>
+            
+            <span class="size">Tamanho: 41</span>
+            <span class="price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/pants/jeans/04507251858-diesel.jpeg" alt="[0507251858] Diesel">
           <div class="product-details">
             <h3>[0507251858] Diesel</h3>
@@ -1312,8 +1354,8 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
             <h3>[1202252216] Nike Shox</h3>
             
             <span class="size">Tamanho: 37</span>
-            <span class="old-price">R$&nbsp;259,00</span>
-             <span class="new-price">R$&nbsp;249,00</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202252214-nike-shox.jpeg" alt="[1202252214] Nike Shox">
@@ -1473,7 +1515,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
           <div class="product-details">
             <h3>[1202251722] Nike Shox Neymar</h3>
             
-            <span class="size">Tamanho: 41</span>
+            <span class="size">Tamanho: 40,41</span>
             <span class="old-price">R$&nbsp;269,00</span>
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
@@ -1545,8 +1587,8 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
             <h3>[1202251658] Nike Shox</h3>
             
             <span class="size">Tamanho: 37</span>
-            <span class="old-price">R$&nbsp;259,00</span>
-             <span class="new-price">R$&nbsp;249,00</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li></ul>
   </main>
@@ -1755,6 +1797,48 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
             <span class="price">R$&nbsp;199,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1007251200-nike-shox.jpeg" alt="[1007251200] Nike Shox">
+          <div class="product-details">
+            <h3>[1007251200] Nike Shox</h3>
+            
+            <span class="size">Tamanho: 38</span>
+            <span class="price">R$&nbsp;199,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1007251159-nike-dunk-low-pro.jpeg" alt="[1007251159] Nike Dunk Low Pro">
+          <div class="product-details">
+            <h3>[1007251159] Nike Dunk Low Pro</h3>
+            
+            <span class="size">Tamanho: 34</span>
+            <span class="price">R$&nbsp;199,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1007251158-nike.jpeg" alt="[1007251158] Nike Shox">
+          <div class="product-details">
+            <h3>[1007251158] Nike Shox</h3>
+            
+            <span class="size">Tamanho: 42</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/nike/1007251157-nike.jpeg" alt="[1007251157] Nike Shox">
+          <div class="product-details">
+            <h3>[1007251157] Nike Shox</h3>
+            
+            <span class="size">Tamanho: 40</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shoes/asics/1007251156-asics.jpeg" alt="[1007251156] Asics">
+          <div class="product-details">
+            <h3>[1007251156] Asics</h3>
+            
+            <span class="size">Tamanho: 41</span>
+            <span class="price">R$&nbsp;259,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/pants/jeans/04507251858-diesel.jpeg" alt="[0507251858] Diesel">
           <div class="product-details">
             <h3>[0507251858] Diesel</h3>
@@ -2888,8 +2972,8 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
             <h3>[1202252216] Nike Shox</h3>
             
             <span class="size">Tamanho: 37</span>
-            <span class="old-price">R$&nbsp;259,00</span>
-             <span class="new-price">R$&nbsp;249,00</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202252214-nike-shox.jpeg" alt="[1202252214] Nike Shox">
@@ -3049,7 +3133,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
           <div class="product-details">
             <h3>[1202251722] Nike Shox Neymar</h3>
             
-            <span class="size">Tamanho: 41</span>
+            <span class="size">Tamanho: 40,41</span>
             <span class="old-price">R$&nbsp;269,00</span>
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
@@ -3121,8 +3205,8 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
             <h3>[1202251658] Nike Shox</h3>
             
             <span class="size">Tamanho: 37</span>
-            <span class="old-price">R$&nbsp;259,00</span>
-             <span class="new-price">R$&nbsp;249,00</span>
+            <span class="old-price">R$&nbsp;269,00</span>
+             <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li></ul>
   </main>
