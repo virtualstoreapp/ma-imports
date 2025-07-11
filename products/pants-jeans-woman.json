@@ -1,0 +1,32 @@
+[
+    {
+        "name": "[1107251407] Jeans",
+        "description": "Calça Jeans Feminina",
+        "oldPrice": 0.0,
+        "price": 89.00,
+        "images": [
+            "images/woman/pants/jeans/1107251407.jpeg"
+        ],
+        "size": "28"
+    },
+    {
+        "name": "[1107251408] Up",
+        "description": "Calça Jeans Feminina",
+        "oldPrice": 0.0,
+        "price": 59.00,
+        "images": [
+            "images/woman/pants/jeans/1107251408-up.jpeg"
+        ],
+        "size": "38"
+    },
+    {
+        "name": "[1107251409] Kaiccies",
+        "description": "Calça Jeans Feminina",
+        "oldPrice": 0.0,
+        "price": 89.00,
+        "images": [
+            "images/woman/pants/jeans/1107251409-kaiccies.jpeg"
+        ],
+        "size": "44"
+    }
+]
