@@ -90,6 +90,10 @@ const selectShortsJeansMan = async () => {
   await selectProduct("Bermudas Jeans Masculina", 8, selectClothingManSubcategory, 'shorts-jeans-man');
 };
 
+const selectShortsJeansWoman = async () => {
+  await selectProduct("Bermudas Jeans Feminina", 1, selectClothingWomanSubcategory, 'shorts-jeans-woman');
+};
+
 const selectShortsSweatshortsMan = async () => {
   await selectProduct("Bermudas Moletom Masculina", 8, selectClothingManSubcategory, 'shorts-sweatshorts-man');
 };
@@ -104,6 +108,14 @@ const selectPantsSweatpantsMan = async () => {
 
 const selectPantsJeansMan = async () => {
     await selectProduct("Calças Jeans Masculina", 2, selectClothingManSubcategory, 'pants-jeans-man');
+}
+
+const selectPantsJeansWoman = async () => {
+    await selectProduct("Calças Jeans Feminina", 3, selectClothingWomanSubcategory, 'pants-jeans-woman');
+}
+
+const selectPantsLeggingWoman = async () => {
+    await selectProduct("Calças Legging Feminina", 1, selectClothingWomanSubcategory, 'pants-legging-woman');
 }
 
 const selectShoesManSubcategory = async () => {
@@ -159,5 +171,8 @@ module.exports = {
     selectSocksMan,
     selectCapsMan,
     selectSweatshirtWoman,
-    selectSweatshirtSetChildren
+    selectSweatshirtSetChildren,
+    selectShortsJeansWoman,
+    selectPantsJeansWoman,
+    selectPantsLeggingWoman,
 };

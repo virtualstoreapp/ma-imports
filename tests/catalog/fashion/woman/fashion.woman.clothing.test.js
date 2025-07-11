@@ -5,6 +5,9 @@ const {
 
 const {
   selectSweatshirtWoman,
+  selectShortsJeansWoman,
+  selectPantsJeansWoman,
+  selectPantsLeggingWoman,
 } = require('../../../utils/catalogActions');
 
 describe('Fashion', () => {
@@ -21,6 +24,22 @@ describe('Fashion', () => {
                         await selectSweatshirtWoman();
                     });
                 });
+
+                describe('Shorts', () => {
+                    it('renders final subcategory "Bermudas Jeans Feminina" correctly on desktop', async () => {
+                        await selectShortsJeansWoman();
+                    });
+                });
+
+                describe('Pants', () => {
+                    it('renders final subcategory "Calças Jeans Feminina" correctly on desktop', async () => {
+                        await selectPantsJeansWoman();
+                    });
+
+                    it('renders final subcategory "Calças Legging Feminina" correctly on desktop', async () => {
+                        await selectPantsLeggingWoman();
+                    });
+                });
             });
 
             describe('Mobile View', () => {
@@ -31,6 +50,22 @@ describe('Fashion', () => {
                 describe('Sweatshirts', () => {
                     it('renders final subcategory "Blusas Feminina" correctly on mobile', async () => {
                         await selectSweatshirtWoman();
+                    });
+                });
+
+                describe('Shorts', () => {
+                    it('renders final subcategory "Bermudas Jeans Feminina" correctly on mobile', async () => {
+                        await selectShortsJeansWoman();
+                    });
+                });
+
+                describe('Pants', () => {
+                    it('renders final subcategory "Calças Jeans Feminina" correctly on mobile', async () => {
+                        await selectPantsJeansWoman();
+                    });
+
+                    it('renders final subcategory "Calças Legging Feminina" correctly on mobile', async () => {
+                        await selectPantsLeggingWoman();
                     });
                 });
             });

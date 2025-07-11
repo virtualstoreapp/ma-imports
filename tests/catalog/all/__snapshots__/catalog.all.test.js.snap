@@ -116,6 +116,25 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
                       </li>
                     </ul>
                   </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="shorts-woman-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="shorts-jeans-woman">Jeans</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="pants-woman-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-woman">Jeans</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="pants-legging-woman">Legging</button>
+                      </li>
+                    </ul>
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -147,6 +166,46 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
   <main>
     <h2 id="category-heading">Novidades</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/woman/pants/jeans/1107251409-kaiccies.jpeg" alt="[1107251409] Kaiccies">
+          <div class="product-details">
+            <h3>[1107251409] Kaiccies</h3>
+            <p class="description">Calça Jeans Feminina</p>
+            <span class="size">Tamanho: 44</span>
+            <span class="price">R$&nbsp;89,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/woman/pants/jeans/1107251408-up.jpeg" alt="[1107251408] Up">
+          <div class="product-details">
+            <h3>[1107251408] Up</h3>
+            <p class="description">Calça Jeans Feminina</p>
+            <span class="size">Tamanho: 38</span>
+            <span class="price">R$&nbsp;59,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/woman/pants/jeans/1107251407.jpeg" alt="[1107251407] Jeans">
+          <div class="product-details">
+            <h3>[1107251407] Jeans</h3>
+            <p class="description">Calça Jeans Feminina</p>
+            <span class="size">Tamanho: 28</span>
+            <span class="price">R$&nbsp;89,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/woman/shorts/jeans/1107250718.jpeg" alt="[1107250718]">
+          <div class="product-details">
+            <h3>[1107250718]</h3>
+            <p class="description">Bermuda Jeans Feminina</p>
+            <span class="size">Tamanho: 42</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/woman/pants/legging/1107250717.jpeg" alt="[1107250717]">
+          <div class="product-details">
+            <h3>[1107250717]</h3>
+            <p class="description">Calça Legging Feminina</p>
+            <span class="size">Tamanho: G1</span>
+            <span class="price">R$&nbsp;89,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/louis-vuitton/1007252253-louis-vuitton.jpeg" alt="[1007252253] Louis Vuitton">
           <div class="product-details">
             <h3>[1007252253] Louis Vuitton</h3>
@@ -284,7 +343,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;99,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/pants/sweatpants/0407251231-nike-front.jpeg" alt="[0407251231] Nike">
           <div class="product-details">
             <h3>[0407251231] Nike</h3>
@@ -1626,7 +1685,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.32.181</p>
+    <p>Versão: 5.4.0 - 0.33.186</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1766,6 +1825,25 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
                       </li>
                     </ul>
                   </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="shorts-woman-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="shorts-jeans-woman">Jeans</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="pants-woman-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-woman">Jeans</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="pants-legging-woman">Legging</button>
+                      </li>
+                    </ul>
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -1797,6 +1875,46 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
   <main>
     <h2 id="category-heading">Novidades</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/woman/pants/jeans/1107251409-kaiccies.jpeg" alt="[1107251409] Kaiccies">
+          <div class="product-details">
+            <h3>[1107251409] Kaiccies</h3>
+            <p class="description">Calça Jeans Feminina</p>
+            <span class="size">Tamanho: 44</span>
+            <span class="price">R$&nbsp;89,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/woman/pants/jeans/1107251408-up.jpeg" alt="[1107251408] Up">
+          <div class="product-details">
+            <h3>[1107251408] Up</h3>
+            <p class="description">Calça Jeans Feminina</p>
+            <span class="size">Tamanho: 38</span>
+            <span class="price">R$&nbsp;59,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/woman/pants/jeans/1107251407.jpeg" alt="[1107251407] Jeans">
+          <div class="product-details">
+            <h3>[1107251407] Jeans</h3>
+            <p class="description">Calça Jeans Feminina</p>
+            <span class="size">Tamanho: 28</span>
+            <span class="price">R$&nbsp;89,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/woman/shorts/jeans/1107250718.jpeg" alt="[1107250718]">
+          <div class="product-details">
+            <h3>[1107250718]</h3>
+            <p class="description">Bermuda Jeans Feminina</p>
+            <span class="size">Tamanho: 42</span>
+            <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/woman/pants/legging/1107250717.jpeg" alt="[1107250717]">
+          <div class="product-details">
+            <h3>[1107250717]</h3>
+            <p class="description">Calça Legging Feminina</p>
+            <span class="size">Tamanho: G1</span>
+            <span class="price">R$&nbsp;89,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/louis-vuitton/1007252253-louis-vuitton.jpeg" alt="[1007252253] Louis Vuitton">
           <div class="product-details">
             <h3>[1007252253] Louis Vuitton</h3>
@@ -1934,7 +2052,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;99,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/pants/sweatpants/0407251231-nike-front.jpeg" alt="[0407251231] Nike">
           <div class="product-details">
             <h3>[0407251231] Nike</h3>
@@ -3276,7 +3394,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
   </main>
 
   <footer>
-    <p>Versão: 5.3.0 - 0.32.181</p>
+    <p>Versão: 5.4.0 - 0.33.186</p>
   </footer>
 
   <script src="scripts.js"></script>
