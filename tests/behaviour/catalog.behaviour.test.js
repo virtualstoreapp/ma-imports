@@ -12,25 +12,28 @@ describe('Catalog Behaviour', () => {
     
     describe('Sorting Order', () => {
         const customData = {
-        "shoes-man": [{ name: "[1202252201] Shoe Man", price: 149 }],
-        "slippers-man": [{ name: "[1702251140] Slipper Man", price: 29.90 }],
-        "tshirts-casual-man": [{ name: "[0103250820] Tshirt Casual Man", price: 89.90 }],
-        "tshirts-dryfit-man": [{ name: "[2703251659] Tshirt Dryfit Man", price: 59.90 }],
-        "tshirts-polo-man": [{ name: "[1603250851] Tshirt Polo Man", price: 59.90 }],
-        "dress-shirts-man": [{ name: "[0806251831] Dress Shirt Man", price: 139.90 }],
-        "tank-top-casual-man": [{ name: "[1903251705] Tank Top Casual Man", price: 39.90 }],
-        "tank-top-dryfit-man": [{ name: "[0703251715] Tank Top Dryfit Man", price: 59.90 }],
-        "shorts-sweatshorts-man": [{ name: "[2003250848] Short Basic Man", price: 69.90 }],
-        "shorts-basic-man": [{ name: "[2103251150] Short Basic Man", price: 28.00 }],
-        "shorts-jeans-man": [{ name: "[2603251652] Short Jeans Man", price: 79.90 }],
-        "shorts-tactel-man": [{ name: "[0304251805] Short Tactel Man", price: 59.90 }],
-        "caps-man": [{ name: "[0106250956] Cap Man", price: 59.90 }],
-        "socks-man": [{ name: "[0106250834] Socks Man", price: 21.90 }],
-        "sweatshirts-man": [{ name: "[0106250800] Sweatshirt Man", price: 299.00 }],
-        "sweatshirts-woman": [{ name: "[0207251439] Sweatshirt Woman", price: 299.00 }],
-        "pants-sweatpants-man": [{ name: "[0407251439] Sweatspants Man", price: 99.00 }],
-        "pants-jeans-man": [{ name: "[0507251439] Jeans Man", price: 179.00 }],
-        "sweatshirts-set-children": [{ name: "[1007251313] Sweatshirt Set Children", price: 199.00 }],
+            "shoes-man": [{ name: "[1202252201] Shoe Man", price: 149 }],
+            "slippers-man": [{ name: "[1702251140] Slipper Man", price: 29.90 }],
+            "tshirts-casual-man": [{ name: "[0103250820] Tshirt Casual Man", price: 89.90 }],
+            "tshirts-dryfit-man": [{ name: "[2703251659] Tshirt Dryfit Man", price: 59.90 }],
+            "tshirts-polo-man": [{ name: "[1603250851] Tshirt Polo Man", price: 59.90 }],
+            "dress-shirts-man": [{ name: "[0806251831] Dress Shirt Man", price: 139.90 }],
+            "tank-top-casual-man": [{ name: "[1903251705] Tank Top Casual Man", price: 39.90 }],
+            "tank-top-dryfit-man": [{ name: "[0703251715] Tank Top Dryfit Man", price: 59.90 }],
+            "shorts-sweatshorts-man": [{ name: "[2003250848] Short Basic Man", price: 69.90 }],
+            "shorts-basic-man": [{ name: "[2103251150] Short Basic Man", price: 28.00 }],
+            "shorts-jeans-man": [{ name: "[2603251652] Short Jeans Man", price: 79.90 }],
+            "shorts-tactel-man": [{ name: "[0304251805] Short Tactel Man", price: 59.90 }],
+            "caps-man": [{ name: "[0106250956] Cap Man", price: 59.90 }],
+            "socks-man": [{ name: "[0106250834] Socks Man", price: 21.90 }],
+            "sweatshirts-man": [{ name: "[0106250800] Sweatshirt Man", price: 299.00 }],
+            "sweatshirts-woman": [{ name: "[0207251439] Sweatshirt Woman", price: 299.00 }],
+            "pants-sweatpants-man": [{ name: "[0407251439] Sweatspants Man", price: 99.00 }],
+            "pants-jeans-man": [{ name: "[0507251439] Jeans Man", price: 179.00 }],
+            "sweatshirts-set-children": [{ name: "[1007251313] Sweatshirt Set Children", price: 199.00 }],
+            "pants-legging-woman": [{ name: "[1107250717] Legging Woman", price: 89.00 }],
+            "shorts-jeans-woman": [{ name: "[1107250718] Short Jeans Woman", price: 79.90 }],
+            "pants-jeans-woman": [{ name: "[1107251409] Pants Jeans Woman", price: 89.90 }],
         };
 
         beforeEach(() => {
@@ -65,6 +68,9 @@ describe('Catalog Behaviour', () => {
             const productNames = productItems.map(item => item.querySelector('h3').textContent);
             
             expect(productNames).toEqual([
+                "[1107251409] Pants Jeans Woman",
+                "[1107250718] Short Jeans Woman",
+                "[1107250717] Legging Woman",
                 "[1007251313] Sweatshirt Set Children",
                 "[0507251439] Jeans Man",
                 "[0407251439] Sweatspants Man",
