@@ -185,7 +185,7 @@ exports[`Fashion Man Clothing Desktop View Pants renders final subcategory "Cal�
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.186</p>
+    <p>Versão: 5.4.0 - 0.33.189</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -402,7 +402,7 @@ exports[`Fashion Man Clothing Desktop View Pants renders final subcategory "Cal�
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.186</p>
+    <p>Versão: 5.4.0 - 0.33.189</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -603,7 +603,7 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.186</p>
+    <p>Versão: 5.4.0 - 0.33.189</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -860,7 +860,7 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.186</p>
+    <p>Versão: 5.4.0 - 0.33.189</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1098,6 +1098,14 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
             <span class="price">R$&nbsp;69,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/sweatshorts/oakley/1507251442-oakley.jpeg" alt="[1507251442] Oakley">
+          <div class="product-details">
+            <h3>[1507251442] Oakley</h3>
+            <p class="description">Bermuda Moletom Masculina</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;69,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/shorts/sweatshorts/tommy-hilfiger/2003250854-tommy-hilfiger.jpeg" alt="[2003250854] Tommy Hilfiger">
           <div class="product-details">
             <h3>[2003250854] Tommy Hilfiger</h3>
@@ -1117,7 +1125,7 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.186</p>
+    <p>Versão: 5.4.0 - 0.33.189</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1422,7 +1430,7 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.186</p>
+    <p>Versão: 5.4.0 - 0.33.189</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1719,7 +1727,7 @@ exports[`Fashion Man Clothing Desktop View Sweatshirts renders final subcategory
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.186</p>
+    <p>Versão: 5.4.0 - 0.33.189</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1936,7 +1944,7 @@ exports[`Fashion Man Clothing Desktop View Tank Top renders final subcategory "R
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.186</p>
+    <p>Versão: 5.4.0 - 0.33.189</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2193,7 +2201,7 @@ exports[`Fashion Man Clothing Desktop View Tank Top renders final subcategory "R
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.186</p>
+    <p>Versão: 5.4.0 - 0.33.189</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2389,6 +2397,14 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
             <p class="description">Algodão Peruano</p>
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/casual/armani/1707251459-armani.jpeg" alt="[1707251459] Armani">
+          <div class="product-details">
+            <h3>[1707251459] Armani</h3>
+            <p class="description">Camiseta Casual Masculina, 100% Algodão</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/balmain/2802251105-balmain.jpeg" alt="[2802251105] Balmain">
@@ -2591,6 +2607,14 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
             <span class="price">R$&nbsp;79,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/casual/nike/1707251449-nike.jpeg" alt="[1707251449] Nike">
+          <div class="product-details">
+            <h3>[1707251449] Nike</h3>
+            <p class="description">Camiseta Casual Masculina, 100% Algodão</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/nike/1503250629-nike.jpeg" alt="[1503250629] Nike">
           <div class="product-details">
             <h3>[1503250629] Nike</h3>
@@ -2698,7 +2722,7 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.186</p>
+    <p>Versão: 5.4.0 - 0.33.189</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3059,7 +3083,7 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.186</p>
+    <p>Versão: 5.4.0 - 0.33.189</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3284,7 +3308,7 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.186</p>
+    <p>Versão: 5.4.0 - 0.33.189</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3517,7 +3541,7 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.186</p>
+    <p>Versão: 5.4.0 - 0.33.189</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3726,7 +3750,7 @@ exports[`Fashion Man Clothing Mobile View Pants renders final subcategory "Calç
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.186</p>
+    <p>Versão: 5.4.0 - 0.33.189</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3943,7 +3967,7 @@ exports[`Fashion Man Clothing Mobile View Pants renders final subcategory "Calç
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.186</p>
+    <p>Versão: 5.4.0 - 0.33.189</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4144,7 +4168,7 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.186</p>
+    <p>Versão: 5.4.0 - 0.33.189</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4401,7 +4425,7 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.186</p>
+    <p>Versão: 5.4.0 - 0.33.189</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4639,6 +4663,14 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
             <span class="price">R$&nbsp;69,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/sweatshorts/oakley/1507251442-oakley.jpeg" alt="[1507251442] Oakley">
+          <div class="product-details">
+            <h3>[1507251442] Oakley</h3>
+            <p class="description">Bermuda Moletom Masculina</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;69,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/shorts/sweatshorts/tommy-hilfiger/2003250854-tommy-hilfiger.jpeg" alt="[2003250854] Tommy Hilfiger">
           <div class="product-details">
             <h3>[2003250854] Tommy Hilfiger</h3>
@@ -4658,7 +4690,7 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.186</p>
+    <p>Versão: 5.4.0 - 0.33.189</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4963,7 +4995,7 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.186</p>
+    <p>Versão: 5.4.0 - 0.33.189</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5260,7 +5292,7 @@ exports[`Fashion Man Clothing Mobile View Sweatshirts renders final subcategory 
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.186</p>
+    <p>Versão: 5.4.0 - 0.33.189</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5477,7 +5509,7 @@ exports[`Fashion Man Clothing Mobile View Tank Top renders final subcategory "Re
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.186</p>
+    <p>Versão: 5.4.0 - 0.33.189</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5734,7 +5766,7 @@ exports[`Fashion Man Clothing Mobile View Tank Top renders final subcategory "Re
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.186</p>
+    <p>Versão: 5.4.0 - 0.33.189</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5930,6 +5962,14 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
             <p class="description">Algodão Peruano</p>
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;79,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/casual/armani/1707251459-armani.jpeg" alt="[1707251459] Armani">
+          <div class="product-details">
+            <h3>[1707251459] Armani</h3>
+            <p class="description">Camiseta Casual Masculina, 100% Algodão</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;39,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/balmain/2802251105-balmain.jpeg" alt="[2802251105] Balmain">
@@ -6132,6 +6172,14 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
             <span class="price">R$&nbsp;79,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/casual/nike/1707251449-nike.jpeg" alt="[1707251449] Nike">
+          <div class="product-details">
+            <h3>[1707251449] Nike</h3>
+            <p class="description">Camiseta Casual Masculina, 100% Algodão</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/nike/1503250629-nike.jpeg" alt="[1503250629] Nike">
           <div class="product-details">
             <h3>[1503250629] Nike</h3>
@@ -6239,7 +6287,7 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.186</p>
+    <p>Versão: 5.4.0 - 0.33.189</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -6600,7 +6648,7 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.186</p>
+    <p>Versão: 5.4.0 - 0.33.189</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -6825,7 +6873,7 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.186</p>
+    <p>Versão: 5.4.0 - 0.33.189</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -7058,7 +7106,7 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.186</p>
+    <p>Versão: 5.4.0 - 0.33.189</p>
   </footer>
 
   <script src="scripts.js"></script>

@@ -59,7 +59,7 @@ const selectSweatshirtsMan = async () => {
 };
 
 const selectTshirtsCasualMan = async () => {
-  await selectProduct("Camisetas Casuais Masculina", 39, selectClothingManSubcategory, 'tshirts-casual-man');
+  await selectProduct("Camisetas Casuais Masculina", 41, selectClothingManSubcategory, 'tshirts-casual-man');
 };
 
 const selectTshirtsDryFitMan = async () => {
@@ -95,7 +95,7 @@ const selectShortsJeansWoman = async () => {
 };
 
 const selectShortsSweatshortsMan = async () => {
-  await selectProduct("Bermudas Moletom Masculina", 8, selectClothingManSubcategory, 'shorts-sweatshorts-man');
+  await selectProduct("Bermudas Moletom Masculina", 9, selectClothingManSubcategory, 'shorts-sweatshorts-man');
 };
 
 const selectShortsTactelMan = async () => {
