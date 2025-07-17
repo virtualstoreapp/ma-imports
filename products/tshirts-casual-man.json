@@ -1,7 +1,7 @@
 [
     {
         "name": "[0304251751] Aramis",
-        "description": "Algodão Peruano",
+        "description": "Camiseta Casual Masculina, Algodão Peruano",
         "oldPrice": 0.0,
         "price": 79.90,
         "images": [
@@ -10,8 +10,18 @@
         "size": "GG"
     },
     {
+        "name": "[1707251459] Armani",
+        "description": "Camiseta Casual Masculina, 100% Algodão",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/man/tshirts/casual/armani/1707251459-armani.jpeg"
+        ],
+        "size": "M"
+    },
+    {
         "name": "[2802251105] Balmain",
-        "description": "Algodão Italiano Oversized",
+        "description": "Camiseta Casual Masculina, Algodão Italiano Oversized",
         "oldPrice": 0.0,
         "price": 89.90,
         "images": [
@@ -21,7 +31,7 @@
     },
     {
         "name": "[2702251016] Burberry",
-        "description": "Algodão Peruano",
+        "description": "Camiseta Casual Masculina, Algodão Peruano",
         "oldPrice": 0.0,
         "price": 79.90,
         "images": [
@@ -32,7 +42,7 @@
     },
     {
         "name": "[2702250957] Dolce & Gabbana",
-        "description": "Algodão Peruano",
+        "description": "Camiseta Casual Masculina, Algodão Peruano",
         "oldPrice": 0.0,
         "price": 79.90,
         "images": [
@@ -42,7 +52,7 @@
     },
     {
         "name": "[2702251001] Emporio Armani",
-        "description": "Algodão Peruano",
+        "description": "Camiseta Casual Masculina, Algodão Peruano",
         "oldPrice": 0.0,
         "price": 79.90,
         "images": [
@@ -53,7 +63,7 @@
     },
     {
         "name": "[0103250820] Emporio Armani",
-        "description": "Algodão Italiano Oversized",
+        "description": "Camiseta Casual Masculina, Algodão Italiano Oversized",
         "oldPrice": 0.0,
         "price": 89.90,
         "images": [
@@ -63,7 +73,7 @@
     },
     {
         "name": "[1403251214] Emporio Armani",
-        "description": "100% Algodão",
+        "description": "Camiseta Casual Masculina, 100% Algodão",
         "oldPrice": 0.0,
         "price": 39.90,
         "images": [
@@ -73,7 +83,7 @@
     },
     {
         "name": "[1503250631] Gucci",
-        "description": "100% Algodão",
+        "description": "Camiseta Casual Masculina, 100% Algodão",
         "oldPrice": 0.0,
         "price": 39.90,
         "images": [
@@ -83,7 +93,7 @@
     },
     {
         "name": "[1403251216] Gucci",
-        "description": "100% Algodão",
+        "description": "Camiseta Casual Masculina, 100% Algodão",
         "oldPrice": 0.0,
         "price": 39.90,
         "images": [
@@ -93,7 +103,7 @@
     },
     {
         "name": "[0903251012] Hugo Boss",
-        "description": "100% Algodão Penteado",
+        "description": "Camiseta Casual Masculina, 100% Algodão Penteado",
         "oldPrice": 0.0,
         "price": 39.90,
         "images": [
@@ -104,7 +114,7 @@
     },
     {
         "name": "[1503250633] Hugo Boss",
-        "description": "100% Algodão",
+        "description": "Camiseta Casual Masculina, 100% Algodão",
         "oldPrice": 0.0,
         "price": 39.90,
         "images": [
@@ -114,7 +124,7 @@
     },
     {
         "name": "[0103250815] Hugo Boss",
-        "description": "Algodão Peruano",
+        "description": "Camiseta Casual Masculina, Algodão Peruano",
         "oldPrice": 0.0,
         "price": 79.90,
         "images": [
@@ -124,7 +134,7 @@
     },
     {
         "name": "[0103250810] Hugo Boss",
-        "description": "Algodão Italiano Oversized",
+        "description": "Camiseta Casual Masculina, Algodão Italiano Oversized",
         "oldPrice": 0.0,
         "price": 89.90,
         "images": [
@@ -135,7 +145,7 @@
     },
     {
         "name": "[0803251044] Hurley",
-        "description": "100% Algodão Penteado",
+        "description": "Camiseta Casual Masculina, 100% Algodão Penteado",
         "oldPrice": 0.0,
         "price": 39.90,
         "images": [
@@ -145,7 +155,7 @@
     },
     {
         "name": "[0803251046] Hurley",
-        "description": "100% Algodão Penteado",
+        "description": "Camiseta Casual Masculina, 100% Algodão Penteado",
         "oldPrice": 0.0,
         "price": 39.90,
         "images": [
@@ -155,7 +165,7 @@
     },
     {
         "name": "[1403251212] Lacoste",
-        "description": "100% Algodão",
+        "description": "Camiseta Casual Masculina, 100% Algodão",
         "oldPrice": 0.0,
         "price": 39.90,
         "images": [
@@ -165,7 +175,7 @@
     },
     {
         "name": "[1403251211] Lacoste",
-        "description": "100% Algodão",
+        "description": "Camiseta Casual Masculina, 100% Algodão",
         "oldPrice": 0.0,
         "price": 39.90,
         "images": [
@@ -175,7 +185,7 @@
     },
     {
         "name": "[1503250630] Lacoste",
-        "description": "100% Algodão",
+        "description": "Camiseta Casual Masculina, 100% Algodão",
         "oldPrice": 0.0,
         "price": 39.90,
         "images": [
@@ -185,7 +195,7 @@
     },
     {
         "name": "[1403251109] Lacoste",
-        "description": "100% Algodão",
+        "description": "Camiseta Casual Masculina, 100% Algodão",
         "oldPrice": 0.0,
         "price": 39.90,
         "images": [
@@ -195,7 +205,7 @@
     },
     {
         "name": "[2802251130] Louis Vuitton",
-        "description": "Algodão Italiano Oversized",
+        "description": "Camiseta Casual Masculina, Algodão Italiano Oversized",
         "oldPrice": 0.0,
         "price": 89.90,
         "images": [
@@ -205,7 +215,7 @@
     },
     {
         "name": "[1007252253] Louis Vuitton",
-        "description": "Algodão Peruano",
+        "description": "Camiseta Casual Masculina, Algodão Peruano",
         "oldPrice": 0.0,
         "price": 79.90,
         "images": [
@@ -215,7 +225,7 @@
     },
     {
         "name": "[2702250956] Louis Vuitton",
-        "description": "Algodão Italiano Oversized",
+        "description": "Camiseta Casual Masculina, Algodão Italiano Oversized",
         "oldPrice": 0.0,
         "price": 89.90,
         "images": [
@@ -226,7 +236,7 @@
     },
     {
         "name": "[0803251049] Nike",
-        "description": "100% Algodão Penteado",
+        "description": "Camiseta Casual Masculina, 100% Algodão Penteado",
         "oldPrice": 0.0,
         "price": 39.90,
         "images": [
@@ -237,7 +247,7 @@
     },
     {
         "name": "[1007251715] Nike",
-        "description": "100% Algodão Penteado",
+        "description": "Camiseta Casual Masculina, 100% Algodão Penteado",
         "oldPrice": 0.0,
         "price": 39.90,
         "images": [
@@ -247,7 +257,7 @@
     },
     {
         "name": "[1007251717] Nike",
-        "description": "100% Algodão Penteado",
+        "description": "Camiseta Casual Masculina, 100% Algodão Penteado",
         "oldPrice": 0.0,
         "price": 39.90,
         "images": [
@@ -257,7 +267,7 @@
     },
     {
         "name": "[2802251120] Nike",
-        "description": "Algodão Peruano",
+        "description": "Camiseta Casual Masculina, Algodão Peruano",
         "oldPrice": 0.0,
         "price": 79.90,
         "images": [
@@ -267,8 +277,18 @@
         "size": "G"
     },
     {
+        "name": "[1707251449] Nike",
+        "description": "Camiseta Casual Masculina, 100% Algodão",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/man/tshirts/casual/nike/1707251449-nike.jpeg"
+        ],
+        "size": "M"
+    },
+    {
         "name": "[1503250629] Nike",
-        "description": "100% Algodão",
+        "description": "Camiseta Casual Masculina, 100% Algodão",
         "oldPrice": 0.0,
         "price": 39.90,
         "images": [
@@ -279,7 +299,7 @@
     },
     {
         "name": "[1903251723] Quiksilver",
-        "description": "100% Algodão",
+        "description": "Camiseta Casual Masculina, 100% Algodão",
         "oldPrice": 0.0,
         "price": 39.90,
         "images": [
@@ -290,7 +310,7 @@
     },
     {
         "name": "[0903251015] Tommy Hilfiger",
-        "description": "100% Algodão Penteado",
+        "description": "Camiseta Casual Masculina, 100% Algodão Penteado",
         "oldPrice": 0.0,
         "price": 39.90,
         "images": [
@@ -300,7 +320,7 @@
     },
     {
         "name": "[0903251009] Tommy Hilfiger",
-        "description": "100% Algodão Penteado",
+        "description": "Camiseta Casual Masculina, 100% Algodão Penteado",
         "oldPrice": 0.0,
         "price": 39.90,
         "images": [
@@ -310,7 +330,7 @@
     },
     {
         "name": "[2802251109] Tommy Hilfiger",
-        "description": "Algodão Italiano Oversized",
+        "description": "Camiseta Casual Masculina, Algodão Italiano Oversized",
         "oldPrice": 0.0,
         "price": 89.90,
         "images": [
@@ -320,7 +340,7 @@
     },
     {
         "name": "[2802251122] Tommy Hilfiger",
-        "description": "Algodão Italiano Oversized",
+        "description": "Camiseta Casual Masculina, Algodão Italiano Oversized",
         "oldPrice": 0.0,
         "price": 89.90,
         "images": [
@@ -331,7 +351,7 @@
     },
     {
         "name": "[1403251118] Tommy Hilfiger",
-        "description": "100% Algodão",
+        "description": "Camiseta Casual Masculina, 100% Algodão",
         "oldPrice": 0.0,
         "price": 39.90,
         "images": [
@@ -341,7 +361,7 @@
     },
     {
         "name": "[1503250626] Tommy Hilfiger",
-        "description": "100% Algodão",
+        "description": "Camiseta Casual Masculina, 100% Algodão",
         "oldPrice": 0.0,
         "price": 39.90,
         "images": [
@@ -351,7 +371,7 @@
     },
     {
         "name": "[0803251047] Vans",
-        "description": "100% Algodão Penteado",
+        "description": "Camiseta Casual Masculina, 100% Algodão Penteado",
         "oldPrice": 0.0,
         "price": 39.90,
         "images": [
@@ -361,7 +381,7 @@
     },
     {
         "name": "[0903251011] Vans",
-        "description": "100% Algodão Penteado",
+        "description": "Camiseta Casual Masculina, 100% Algodão Penteado",
         "oldPrice": 0.0,
         "price": 39.90,
         "images": [
@@ -371,7 +391,7 @@
     },
     {
         "name": "[0103250813] Versace",
-        "description": "Algodão Peruano",
+        "description": "Camiseta Casual Masculina, Algodão Peruano",
         "oldPrice": 0.0,
         "price": 79.90,
         "images": [
@@ -382,7 +402,7 @@
     },
     {
         "name": "[0803251811] Versace",
-        "description": "100% Algodão Penteado",
+        "description": "Camiseta Casual Masculina, 100% Algodão Penteado",
         "oldPrice": 0.0,
         "price": 39.90,
         "images": [
@@ -392,7 +412,7 @@
     },
     {
         "name": "[1903251811] XTC",
-        "description": "100% Algodão",
+        "description": "Camiseta Casual Masculina, 100% Algodão",
         "oldPrice": 0.0,
         "price": 39.90,
         "images": [
