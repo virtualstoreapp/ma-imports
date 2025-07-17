@@ -166,6 +166,30 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
   <main>
     <h2 id="category-heading">Novidades</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/casual/armani/1707251459-armani.jpeg" alt="[1707251459] Armani">
+          <div class="product-details">
+            <h3>[1707251459] Armani</h3>
+            <p class="description">Camiseta Casual Masculina, 100% Algodão</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/casual/nike/1707251449-nike.jpeg" alt="[1707251449] Nike">
+          <div class="product-details">
+            <h3>[1707251449] Nike</h3>
+            <p class="description">Camiseta Casual Masculina, 100% Algodão</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/sweatshorts/oakley/1507251442-oakley.jpeg" alt="[1507251442] Oakley">
+          <div class="product-details">
+            <h3>[1507251442] Oakley</h3>
+            <p class="description">Bermuda Moletom Masculina</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;69,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/woman/pants/jeans/1107251409-kaiccies.jpeg" alt="[1107251409] Kaiccies">
           <div class="product-details">
             <h3>[1107251409] Kaiccies</h3>
@@ -1685,7 +1709,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.186</p>
+    <p>Versão: 5.4.0 - 0.33.189</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1875,6 +1899,30 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
   <main>
     <h2 id="category-heading">Novidades</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/casual/armani/1707251459-armani.jpeg" alt="[1707251459] Armani">
+          <div class="product-details">
+            <h3>[1707251459] Armani</h3>
+            <p class="description">Camiseta Casual Masculina, 100% Algodão</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/casual/nike/1707251449-nike.jpeg" alt="[1707251449] Nike">
+          <div class="product-details">
+            <h3>[1707251449] Nike</h3>
+            <p class="description">Camiseta Casual Masculina, 100% Algodão</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/shorts/sweatshorts/oakley/1507251442-oakley.jpeg" alt="[1507251442] Oakley">
+          <div class="product-details">
+            <h3>[1507251442] Oakley</h3>
+            <p class="description">Bermuda Moletom Masculina</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;69,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/woman/pants/jeans/1107251409-kaiccies.jpeg" alt="[1107251409] Kaiccies">
           <div class="product-details">
             <h3>[1107251409] Kaiccies</h3>
@@ -3394,7 +3442,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.186</p>
+    <p>Versão: 5.4.0 - 0.33.189</p>
   </footer>
 
   <script src="scripts.js"></script>

@@ -10,6 +10,16 @@
         "size": "GG"
     },
     {
+        "name": "[1707251459] Armani",
+        "description": "Camiseta Casual Masculina, 100% Algodão",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/man/tshirts/casual/armani/1707251459-armani.jpeg"
+        ],
+        "size": "M"
+    },
+    {
         "name": "[2802251105] Balmain",
         "description": "Algodão Italiano Oversized",
         "oldPrice": 0.0,
@@ -265,6 +275,16 @@
             "images/man/tshirts/casual/nike/2802251120-nike-back.jpeg"
         ],
         "size": "G"
+    },
+    {
+        "name": "[1707251449] Nike",
+        "description": "Camiseta Casual Masculina, 100% Algodão",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/man/tshirts/casual/nike/1707251449-nike.jpeg"
+        ],
+        "size": "M"
     },
     {
         "name": "[1503250629] Nike",

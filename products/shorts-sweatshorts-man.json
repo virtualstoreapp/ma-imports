@@ -61,6 +61,16 @@
         "size": "G1"
     },
     {
+        "name": "[1507251442] Oakley",
+        "description": "Bermuda Moletom Masculina",
+        "oldPrice": 0.0,
+        "price": 69.90,
+        "images": [
+            "images/man/shorts/sweatshorts/oakley/1507251442-oakley.jpeg"
+        ],
+        "size": "GG"
+    },
+    {
         "name": "[2003250854] Tommy Hilfiger",
         "description": "",
         "oldPrice": 0.0,
