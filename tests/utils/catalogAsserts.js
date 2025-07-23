@@ -24,7 +24,7 @@ const asserts = async (expectedHeading, expectedCount) => {
 
 const assertAllProducts = async () => {
   const expectedHeading = "Novidades";
-  const expectedCount = 198;
+  const expectedCount = 205;
   await asserts(expectedHeading, expectedCount);
 };
 
