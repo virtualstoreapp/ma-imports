@@ -1,25 +1,5 @@
 [
     {
-        "name": "[2307251254] Quicksilver ",
-        "description": "Carteira Masculina, Material: Couro legítimo",
-        "oldPrice": 0.0,
-        "price": 24.99,
-        "images": [
-            "images/man/wallets/2307251254-quicksilver.jpeg"
-        ],
-        "size": "Pequena"
-    },
-    {
-        "name": "[2307251255] Quicksilver ",
-        "description": "Carteira Masculina, Material: Couro legítimo",
-        "oldPrice": 0.0,
-        "price": 24.99,
-        "images": [
-            "images/man/wallets/2307251255-quicksilver.jpeg"
-        ],
-        "size": "Pequena"
-    },
-    {
         "name": "[2307251256] Armani Exchange",
         "description": "Carteira Masculina, Material: Couro legítimo",
         "oldPrice": 0.0,
@@ -47,6 +27,26 @@
         "price": 24.99,
         "images": [
             "images/man/wallets/2307251258-oakley.jpeg"
+        ],
+        "size": "Pequena"
+    },
+    {
+        "name": "[2307251254] Quicksilver ",
+        "description": "Carteira Masculina, Material: Couro legítimo",
+        "oldPrice": 0.0,
+        "price": 24.99,
+        "images": [
+            "images/man/wallets/2307251254-quicksilver.jpeg"
+        ],
+        "size": "Pequena"
+    },
+    {
+        "name": "[2307251255] Quicksilver ",
+        "description": "Carteira Masculina, Material: Couro legítimo",
+        "oldPrice": 0.0,
+        "price": 24.99,
+        "images": [
+            "images/man/wallets/2307251255-quicksilver.jpeg"
         ],
         "size": "Pequena"
     },

@@ -403,22 +403,6 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "C
   <main>
     <h2 id="category-heading">Carteiras Masculina</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/man/wallets/2307251254-quicksilver.jpeg" alt="[2307251254] Quicksilver ">
-          <div class="product-details">
-            <h3>[2307251254] Quicksilver </h3>
-            <p class="description">Carteira Masculina, Material: Couro legítimo</p>
-            <span class="size">Tamanho: Pequena</span>
-            <span class="price">R$&nbsp;24,99</span>
-          </div>
-        </li><li class="product-item" style="position: relative;">
-          <img src="images/man/wallets/2307251255-quicksilver.jpeg" alt="[2307251255] Quicksilver ">
-          <div class="product-details">
-            <h3>[2307251255] Quicksilver </h3>
-            <p class="description">Carteira Masculina, Material: Couro legítimo</p>
-            <span class="size">Tamanho: Pequena</span>
-            <span class="price">R$&nbsp;24,99</span>
-          </div>
-        </li><li class="product-item" style="position: relative;">
           <img src="images/man/wallets/2307251256-armani-exchange.jpeg" alt="[2307251256] Armani Exchange">
           <div class="product-details">
             <h3>[2307251256] Armani Exchange</h3>
@@ -438,6 +422,22 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "C
           <img src="images/man/wallets/2307251258-oakley.jpeg" alt="[2307251258] Oakley">
           <div class="product-details">
             <h3>[2307251258] Oakley</h3>
+            <p class="description">Carteira Masculina, Material: Couro legítimo</p>
+            <span class="size">Tamanho: Pequena</span>
+            <span class="price">R$&nbsp;24,99</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/wallets/2307251254-quicksilver.jpeg" alt="[2307251254] Quicksilver ">
+          <div class="product-details">
+            <h3>[2307251254] Quicksilver </h3>
+            <p class="description">Carteira Masculina, Material: Couro legítimo</p>
+            <span class="size">Tamanho: Pequena</span>
+            <span class="price">R$&nbsp;24,99</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/wallets/2307251255-quicksilver.jpeg" alt="[2307251255] Quicksilver ">
+          <div class="product-details">
+            <h3>[2307251255] Quicksilver </h3>
             <p class="description">Carteira Masculina, Material: Couro legítimo</p>
             <span class="size">Tamanho: Pequena</span>
             <span class="price">R$&nbsp;24,99</span>
@@ -1156,22 +1156,6 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Ca
   <main>
     <h2 id="category-heading">Carteiras Masculina</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/man/wallets/2307251254-quicksilver.jpeg" alt="[2307251254] Quicksilver ">
-          <div class="product-details">
-            <h3>[2307251254] Quicksilver </h3>
-            <p class="description">Carteira Masculina, Material: Couro legítimo</p>
-            <span class="size">Tamanho: Pequena</span>
-            <span class="price">R$&nbsp;24,99</span>
-          </div>
-        </li><li class="product-item" style="position: relative;">
-          <img src="images/man/wallets/2307251255-quicksilver.jpeg" alt="[2307251255] Quicksilver ">
-          <div class="product-details">
-            <h3>[2307251255] Quicksilver </h3>
-            <p class="description">Carteira Masculina, Material: Couro legítimo</p>
-            <span class="size">Tamanho: Pequena</span>
-            <span class="price">R$&nbsp;24,99</span>
-          </div>
-        </li><li class="product-item" style="position: relative;">
           <img src="images/man/wallets/2307251256-armani-exchange.jpeg" alt="[2307251256] Armani Exchange">
           <div class="product-details">
             <h3>[2307251256] Armani Exchange</h3>
@@ -1191,6 +1175,22 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Ca
           <img src="images/man/wallets/2307251258-oakley.jpeg" alt="[2307251258] Oakley">
           <div class="product-details">
             <h3>[2307251258] Oakley</h3>
+            <p class="description">Carteira Masculina, Material: Couro legítimo</p>
+            <span class="size">Tamanho: Pequena</span>
+            <span class="price">R$&nbsp;24,99</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/wallets/2307251254-quicksilver.jpeg" alt="[2307251254] Quicksilver ">
+          <div class="product-details">
+            <h3>[2307251254] Quicksilver </h3>
+            <p class="description">Carteira Masculina, Material: Couro legítimo</p>
+            <span class="size">Tamanho: Pequena</span>
+            <span class="price">R$&nbsp;24,99</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/wallets/2307251255-quicksilver.jpeg" alt="[2307251255] Quicksilver ">
+          <div class="product-details">
+            <h3>[2307251255] Quicksilver </h3>
             <p class="description">Carteira Masculina, Material: Couro legítimo</p>
             <span class="size">Tamanho: Pequena</span>
             <span class="price">R$&nbsp;24,99</span>
