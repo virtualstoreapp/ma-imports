@@ -97,6 +97,8 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
                 <ul class="submenu">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
+                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -166,6 +168,78 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
   <main>
     <h2 id="category-heading">Novidades</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/man/belts/2307251158-louis-vuitton-front.jpeg" alt="[2307251158] Louis Vuitton">
+          <div class="product-details">
+            <h3>[2307251158] Louis Vuitton</h3>
+            <p class="description">Cinto Social Masculino, Material: Couro</p>
+            <span class="size">Tamanho: Tamanho único</span>
+            <span class="price">R$&nbsp;34,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/belts/2307251157-gucci-front.jpeg" alt="[2307251157] Gucci">
+          <div class="product-details">
+            <h3>[2307251157] Gucci</h3>
+            <p class="description">Cinto Social Masculino, Material: Couro</p>
+            <span class="size">Tamanho: Tamanho único</span>
+            <span class="price">R$&nbsp;34,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/belts/2307251156-adidas-back.jpeg" alt="[2307251156] Adidas">
+          <div class="product-details">
+            <h3>[2307251156] Adidas</h3>
+            <p class="description">Cinto Elástico Masculino, Cor: Marrom</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;34,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/belts/2307251155-quicksilver-back.jpeg" alt="[2307251155] Quicksilver">
+          <div class="product-details">
+            <h3>[2307251155] Quicksilver</h3>
+            <p class="description">Cinto Elástico Masculino, Cor: Azul Marinho</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;34,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/belts/2307251154-nike-back.jpeg" alt="[2307251154] Nike">
+          <div class="product-details">
+            <h3>[2307251154] Nike</h3>
+            <p class="description">Cinto Elástico Masculino, Cor: Azul Marinho com Listras</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;34,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/belts/2307251153-nike-back.jpeg" alt="[2307251153] Nike">
+          <div class="product-details">
+            <h3>[2307251153] Nike</h3>
+            <p class="description">Cinto Elástico Masculino, Cor: Preto</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;34,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/belts/2307251152-nike-back.jpeg" alt="[2307251152] Nike">
+          <div class="product-details">
+            <h3>[2307251152] Nike</h3>
+            <p class="description">Cinto Elástico Masculino, Cor: Azul Marinho e Bege</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;34,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/belts/2307251151-nike-back.jpeg" alt="[2307251151] Nike">
+          <div class="product-details">
+            <h3>[2307251151] Nike</h3>
+            <p class="description">Cinto Elástico Masculino, Cor: Verde Militar</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;34,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/belts/2307251150-lacoste-back.jpeg" alt="[2307251150] Lacoste">
+          <div class="product-details">
+            <h3>[2307251150] Lacoste</h3>
+            <p class="description">Cinto Elástico Masculino, Cor: Azul Marinho e Bege</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;34,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/armani/1707251459-armani.jpeg" alt="[1707251459] Armani">
           <div class="product-details">
             <h3>[1707251459] Armani</h3>
@@ -1709,7 +1783,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.189</p>
+    <p>Versão: 5.5.0 - 0.33.198</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1830,6 +1904,8 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
                 <ul class="submenu">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
+                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -1899,6 +1975,78 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
   <main>
     <h2 id="category-heading">Novidades</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/man/belts/2307251158-louis-vuitton-front.jpeg" alt="[2307251158] Louis Vuitton">
+          <div class="product-details">
+            <h3>[2307251158] Louis Vuitton</h3>
+            <p class="description">Cinto Social Masculino, Material: Couro</p>
+            <span class="size">Tamanho: Tamanho único</span>
+            <span class="price">R$&nbsp;34,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/belts/2307251157-gucci-front.jpeg" alt="[2307251157] Gucci">
+          <div class="product-details">
+            <h3>[2307251157] Gucci</h3>
+            <p class="description">Cinto Social Masculino, Material: Couro</p>
+            <span class="size">Tamanho: Tamanho único</span>
+            <span class="price">R$&nbsp;34,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/belts/2307251156-adidas-back.jpeg" alt="[2307251156] Adidas">
+          <div class="product-details">
+            <h3>[2307251156] Adidas</h3>
+            <p class="description">Cinto Elástico Masculino, Cor: Marrom</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;34,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/belts/2307251155-quicksilver-back.jpeg" alt="[2307251155] Quicksilver">
+          <div class="product-details">
+            <h3>[2307251155] Quicksilver</h3>
+            <p class="description">Cinto Elástico Masculino, Cor: Azul Marinho</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;34,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/belts/2307251154-nike-back.jpeg" alt="[2307251154] Nike">
+          <div class="product-details">
+            <h3>[2307251154] Nike</h3>
+            <p class="description">Cinto Elástico Masculino, Cor: Azul Marinho com Listras</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;34,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/belts/2307251153-nike-back.jpeg" alt="[2307251153] Nike">
+          <div class="product-details">
+            <h3>[2307251153] Nike</h3>
+            <p class="description">Cinto Elástico Masculino, Cor: Preto</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;34,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/belts/2307251152-nike-back.jpeg" alt="[2307251152] Nike">
+          <div class="product-details">
+            <h3>[2307251152] Nike</h3>
+            <p class="description">Cinto Elástico Masculino, Cor: Azul Marinho e Bege</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;34,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/belts/2307251151-nike-back.jpeg" alt="[2307251151] Nike">
+          <div class="product-details">
+            <h3>[2307251151] Nike</h3>
+            <p class="description">Cinto Elástico Masculino, Cor: Verde Militar</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;34,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/belts/2307251150-lacoste-back.jpeg" alt="[2307251150] Lacoste">
+          <div class="product-details">
+            <h3>[2307251150] Lacoste</h3>
+            <p class="description">Cinto Elástico Masculino, Cor: Azul Marinho e Bege</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;34,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/tshirts/casual/armani/1707251459-armani.jpeg" alt="[1707251459] Armani">
           <div class="product-details">
             <h3>[1707251459] Armani</h3>
@@ -3442,7 +3590,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.189</p>
+    <p>Versão: 5.5.0 - 0.33.198</p>
   </footer>
 
   <script src="scripts.js"></script>

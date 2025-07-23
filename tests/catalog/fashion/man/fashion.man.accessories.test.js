@@ -5,6 +5,7 @@ const {
 
 const {
   selectCapsMan,
+  selectBeltsMan,
 } = require('../../../utils/catalogActions');
 
 describe('Fashion', () => {
@@ -20,6 +21,10 @@ describe('Fashion', () => {
                     it('renders final subcategory "Bonés Masculino" correctly on desktop', async () => {
                         await selectCapsMan();
                     });
+
+                    it('renders final subcategory "Cintos Masculino" correctly on desktop', async () => {
+                        await selectBeltsMan();
+                    });
                 });
             });
 
@@ -31,6 +36,10 @@ describe('Fashion', () => {
                 describe('Accessories', () => {
                     it('renders final subcategory "Bonés Masculino" correctly on mobile', async () => {
                         await selectCapsMan();
+                    });
+
+                    it('renders final subcategory "Cintos Masculino" correctly on mobile', async () => {
+                        await selectBeltsMan();
                     });
                 });
             });
