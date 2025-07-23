@@ -97,6 +97,8 @@ exports[`Fashion Woman Clothing Desktop View Pants renders final subcategory "Ca
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
+                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -193,7 +195,7 @@ exports[`Fashion Woman Clothing Desktop View Pants renders final subcategory "Ca
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.189</p>
+    <p>Versão: 5.5.0 - 0.33.198</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -314,6 +316,8 @@ exports[`Fashion Woman Clothing Desktop View Pants renders final subcategory "Ca
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
+                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -394,7 +398,7 @@ exports[`Fashion Woman Clothing Desktop View Pants renders final subcategory "Ca
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.189</p>
+    <p>Versão: 5.5.0 - 0.33.198</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -515,6 +519,8 @@ exports[`Fashion Woman Clothing Desktop View Shorts renders final subcategory "B
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
+                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -595,7 +601,7 @@ exports[`Fashion Woman Clothing Desktop View Shorts renders final subcategory "B
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.189</p>
+    <p>Versão: 5.5.0 - 0.33.198</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -716,6 +722,8 @@ exports[`Fashion Woman Clothing Desktop View Sweatshirts renders final subcatego
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
+                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -796,7 +804,7 @@ exports[`Fashion Woman Clothing Desktop View Sweatshirts renders final subcatego
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.189</p>
+    <p>Versão: 5.5.0 - 0.33.198</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -917,6 +925,8 @@ exports[`Fashion Woman Clothing Mobile View Pants renders final subcategory "Cal
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
+                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -1013,7 +1023,7 @@ exports[`Fashion Woman Clothing Mobile View Pants renders final subcategory "Cal
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.189</p>
+    <p>Versão: 5.5.0 - 0.33.198</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1134,6 +1144,8 @@ exports[`Fashion Woman Clothing Mobile View Pants renders final subcategory "Cal
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
+                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -1214,7 +1226,7 @@ exports[`Fashion Woman Clothing Mobile View Pants renders final subcategory "Cal
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.189</p>
+    <p>Versão: 5.5.0 - 0.33.198</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1335,6 +1347,8 @@ exports[`Fashion Woman Clothing Mobile View Shorts renders final subcategory "Be
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
+                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -1415,7 +1429,7 @@ exports[`Fashion Woman Clothing Mobile View Shorts renders final subcategory "Be
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.189</p>
+    <p>Versão: 5.5.0 - 0.33.198</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1536,6 +1550,8 @@ exports[`Fashion Woman Clothing Mobile View Sweatshirts renders final subcategor
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
+                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -1616,7 +1632,7 @@ exports[`Fashion Woman Clothing Mobile View Sweatshirts renders final subcategor
   </main>
 
   <footer>
-    <p>Versão: 5.4.0 - 0.33.189</p>
+    <p>Versão: 5.5.0 - 0.33.198</p>
   </footer>
 
   <script src="scripts.js"></script>
