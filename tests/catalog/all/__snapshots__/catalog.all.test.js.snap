@@ -229,7 +229,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
             <h3>[2307251158] Louis Vuitton</h3>
             <p class="description">Cinto Social Masculino, Material: Couro</p>
             <span class="size">Tamanho: Tamanho único</span>
-            <span class="price">R$&nbsp;34,90</span>
+            <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/belts/2307251157-gucci-front.jpeg" alt="[2307251157] Gucci">
@@ -237,10 +237,10 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
             <h3>[2307251157] Gucci</h3>
             <p class="description">Cinto Social Masculino, Material: Couro</p>
             <span class="size">Tamanho: Tamanho único</span>
-            <span class="price">R$&nbsp;34,90</span>
+            <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/belts/2307251156-adidas-back.jpeg" alt="[2307251156] Adidas">
+          <img src="images/man/belts/2307251156-adidas-front.jpeg" alt="[2307251156] Adidas">
           <div class="product-details">
             <h3>[2307251156] Adidas</h3>
             <p class="description">Cinto Elástico Masculino, Cor: Marrom</p>
@@ -248,7 +248,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;34,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/belts/2307251155-quicksilver-back.jpeg" alt="[2307251155] Quicksilver">
+          <img src="images/man/belts/2307251155-quicksilver-front.jpeg" alt="[2307251155] Quicksilver">
           <div class="product-details">
             <h3>[2307251155] Quicksilver</h3>
             <p class="description">Cinto Elástico Masculino, Cor: Azul Marinho</p>
@@ -256,7 +256,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;34,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/belts/2307251154-nike-back.jpeg" alt="[2307251154] Nike">
+          <img src="images/man/belts/2307251154-nike-front.jpeg" alt="[2307251154] Nike">
           <div class="product-details">
             <h3>[2307251154] Nike</h3>
             <p class="description">Cinto Elástico Masculino, Cor: Azul Marinho com Listras</p>
@@ -264,7 +264,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;34,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/belts/2307251153-nike-back.jpeg" alt="[2307251153] Nike">
+          <img src="images/man/belts/2307251153-nike-front.jpeg" alt="[2307251153] Nike">
           <div class="product-details">
             <h3>[2307251153] Nike</h3>
             <p class="description">Cinto Elástico Masculino, Cor: Preto</p>
@@ -272,7 +272,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;34,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/belts/2307251152-nike-back.jpeg" alt="[2307251152] Nike">
+          <img src="images/man/belts/2307251152-nike-front.jpeg" alt="[2307251152] Nike">
           <div class="product-details">
             <h3>[2307251152] Nike</h3>
             <p class="description">Cinto Elástico Masculino, Cor: Azul Marinho e Bege</p>
@@ -280,7 +280,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;34,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/belts/2307251151-nike-back.jpeg" alt="[2307251151] Nike">
+          <img src="images/man/belts/2307251151-nike-front.jpeg" alt="[2307251151] Nike">
           <div class="product-details">
             <h3>[2307251151] Nike</h3>
             <p class="description">Cinto Elástico Masculino, Cor: Verde Militar</p>
@@ -288,7 +288,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;34,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/belts/2307251150-lacoste-back.jpeg" alt="[2307251150] Lacoste">
+          <img src="images/man/belts/2307251150-lacoste-front.jpeg" alt="[2307251150] Lacoste">
           <div class="product-details">
             <h3>[2307251150] Lacoste</h3>
             <p class="description">Cinto Elástico Masculino, Cor: Azul Marinho e Bege</p>
@@ -2092,7 +2092,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
             <h3>[2307251158] Louis Vuitton</h3>
             <p class="description">Cinto Social Masculino, Material: Couro</p>
             <span class="size">Tamanho: Tamanho único</span>
-            <span class="price">R$&nbsp;34,90</span>
+            <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/belts/2307251157-gucci-front.jpeg" alt="[2307251157] Gucci">
@@ -2100,10 +2100,10 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
             <h3>[2307251157] Gucci</h3>
             <p class="description">Cinto Social Masculino, Material: Couro</p>
             <span class="size">Tamanho: Tamanho único</span>
-            <span class="price">R$&nbsp;34,90</span>
+            <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/belts/2307251156-adidas-back.jpeg" alt="[2307251156] Adidas">
+          <img src="images/man/belts/2307251156-adidas-front.jpeg" alt="[2307251156] Adidas">
           <div class="product-details">
             <h3>[2307251156] Adidas</h3>
             <p class="description">Cinto Elástico Masculino, Cor: Marrom</p>
@@ -2111,7 +2111,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
             <span class="price">R$&nbsp;34,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/belts/2307251155-quicksilver-back.jpeg" alt="[2307251155] Quicksilver">
+          <img src="images/man/belts/2307251155-quicksilver-front.jpeg" alt="[2307251155] Quicksilver">
           <div class="product-details">
             <h3>[2307251155] Quicksilver</h3>
             <p class="description">Cinto Elástico Masculino, Cor: Azul Marinho</p>
@@ -2119,7 +2119,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
             <span class="price">R$&nbsp;34,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/belts/2307251154-nike-back.jpeg" alt="[2307251154] Nike">
+          <img src="images/man/belts/2307251154-nike-front.jpeg" alt="[2307251154] Nike">
           <div class="product-details">
             <h3>[2307251154] Nike</h3>
             <p class="description">Cinto Elástico Masculino, Cor: Azul Marinho com Listras</p>
@@ -2127,7 +2127,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
             <span class="price">R$&nbsp;34,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/belts/2307251153-nike-back.jpeg" alt="[2307251153] Nike">
+          <img src="images/man/belts/2307251153-nike-front.jpeg" alt="[2307251153] Nike">
           <div class="product-details">
             <h3>[2307251153] Nike</h3>
             <p class="description">Cinto Elástico Masculino, Cor: Preto</p>
@@ -2135,7 +2135,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
             <span class="price">R$&nbsp;34,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/belts/2307251152-nike-back.jpeg" alt="[2307251152] Nike">
+          <img src="images/man/belts/2307251152-nike-front.jpeg" alt="[2307251152] Nike">
           <div class="product-details">
             <h3>[2307251152] Nike</h3>
             <p class="description">Cinto Elástico Masculino, Cor: Azul Marinho e Bege</p>
@@ -2143,7 +2143,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
             <span class="price">R$&nbsp;34,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/belts/2307251151-nike-back.jpeg" alt="[2307251151] Nike">
+          <img src="images/man/belts/2307251151-nike-front.jpeg" alt="[2307251151] Nike">
           <div class="product-details">
             <h3>[2307251151] Nike</h3>
             <p class="description">Cinto Elástico Masculino, Cor: Verde Militar</p>
@@ -2151,7 +2151,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
             <span class="price">R$&nbsp;34,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/belts/2307251150-lacoste-back.jpeg" alt="[2307251150] Lacoste">
+          <img src="images/man/belts/2307251150-lacoste-front.jpeg" alt="[2307251150] Lacoste">
           <div class="product-details">
             <h3>[2307251150] Lacoste</h3>
             <p class="description">Cinto Elástico Masculino, Cor: Azul Marinho e Bege</p>

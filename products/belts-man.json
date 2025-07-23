@@ -3,7 +3,7 @@
         "name": "[2307251157] Gucci",
         "description": "Cinto Social Masculino, Material: Couro",
         "oldPrice": 0.0,
-        "price": 34.90,
+        "price": 89.90,
         "images": [
             "images/man/belts/2307251157-gucci-front.jpeg",
             "images/man/belts/2307251157-gucci-back.jpeg"
@@ -14,7 +14,7 @@
         "name": "[2307251158] Louis Vuitton",
         "description": "Cinto Social Masculino, Material: Couro",
         "oldPrice": 0.0,
-        "price": 34.90,
+        "price": 89.90,
         "images": [
             "images/man/belts/2307251158-louis-vuitton-front.jpeg",
             "images/man/belts/2307251158-louis-vuitton-back.jpeg"
@@ -27,8 +27,8 @@
         "oldPrice": 0.0,
         "price": 34.90,
         "images": [
-            "images/man/belts/2307251156-adidas-back.jpeg",
-            "images/man/belts/2307251156-adidas-front.jpeg"
+            "images/man/belts/2307251156-adidas-front.jpeg",
+            "images/man/belts/2307251156-adidas-back.jpeg"
         ],
         "size": "GG"
     },
@@ -38,8 +38,8 @@
         "oldPrice": 0.0,
         "price": 34.90,
         "images": [
-            "images/man/belts/2307251150-lacoste-back.jpeg",
-            "images/man/belts/2307251150-lacoste-front.jpeg"
+            "images/man/belts/2307251150-lacoste-front.jpeg",
+            "images/man/belts/2307251150-lacoste-back.jpeg"
         ],
         "size": "M"
     },
@@ -49,8 +49,8 @@
         "oldPrice": 0.0,
         "price": 34.90,
         "images": [
-            "images/man/belts/2307251152-nike-back.jpeg",
-            "images/man/belts/2307251152-nike-front.jpeg"
+            "images/man/belts/2307251152-nike-front.jpeg",
+            "images/man/belts/2307251152-nike-back.jpeg"
         ],
         "size": "M"
     },
@@ -60,8 +60,8 @@
         "oldPrice": 0.0,
         "price": 34.90,
         "images": [
-            "images/man/belts/2307251154-nike-back.jpeg",
-            "images/man/belts/2307251154-nike-front.jpeg"
+            "images/man/belts/2307251154-nike-front.jpeg",
+            "images/man/belts/2307251154-nike-back.jpeg"
         ],
         "size": "M"
     },
@@ -71,8 +71,8 @@
         "oldPrice": 0.0,
         "price": 34.90,
         "images": [
-            "images/man/belts/2307251151-nike-back.jpeg",
-            "images/man/belts/2307251151-nike-front.jpeg"
+            "images/man/belts/2307251151-nike-front.jpeg",
+            "images/man/belts/2307251151-nike-back.jpeg"
         ],
         "size": "G"
     },
@@ -82,8 +82,8 @@
         "oldPrice": 0.0,
         "price": 34.90,
         "images": [
-            "images/man/belts/2307251153-nike-back.jpeg",
-            "images/man/belts/2307251153-nike-front.jpeg"
+            "images/man/belts/2307251153-nike-front.jpeg",
+            "images/man/belts/2307251153-nike-back.jpeg"
         ],
         "size": "GG"
     },
@@ -93,8 +93,8 @@
         "oldPrice": 0.0,
         "price": 34.90,
         "images": [
-            "images/man/belts/2307251155-quicksilver-back.jpeg",
-            "images/man/belts/2307251155-quicksilver-front.jpeg"
+            "images/man/belts/2307251155-quicksilver-front.jpeg",
+            "images/man/belts/2307251155-quicksilver-back.jpeg"
         ],
         "size": "M"
     }
