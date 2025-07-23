@@ -97,7 +97,7 @@ exports[`Fashion Man Clothing Desktop View Pants renders final subcategory "Cal�
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
-                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="wallets-man">Carteiras</button>
                     <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
@@ -187,7 +187,7 @@ exports[`Fashion Man Clothing Desktop View Pants renders final subcategory "Cal�
   </main>
 
   <footer>
-    <p>Versão: 5.5.0 - 0.33.198</p>
+    <p>Versão: 5.6.0 - 0.33.205</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -308,7 +308,7 @@ exports[`Fashion Man Clothing Desktop View Pants renders final subcategory "Cal�
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
-                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="wallets-man">Carteiras</button>
                     <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
@@ -406,7 +406,7 @@ exports[`Fashion Man Clothing Desktop View Pants renders final subcategory "Cal�
   </main>
 
   <footer>
-    <p>Versão: 5.5.0 - 0.33.198</p>
+    <p>Versão: 5.6.0 - 0.33.205</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -527,7 +527,7 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
-                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="wallets-man">Carteiras</button>
                     <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
@@ -609,7 +609,7 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
   </main>
 
   <footer>
-    <p>Versão: 5.5.0 - 0.33.198</p>
+    <p>Versão: 5.6.0 - 0.33.205</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -730,7 +730,7 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
-                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="wallets-man">Carteiras</button>
                     <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
@@ -868,7 +868,7 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
   </main>
 
   <footer>
-    <p>Versão: 5.5.0 - 0.33.198</p>
+    <p>Versão: 5.6.0 - 0.33.205</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -989,7 +989,7 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
-                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="wallets-man">Carteiras</button>
                     <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
@@ -1135,7 +1135,7 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
   </main>
 
   <footer>
-    <p>Versão: 5.5.0 - 0.33.198</p>
+    <p>Versão: 5.6.0 - 0.33.205</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1256,7 +1256,7 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
-                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="wallets-man">Carteiras</button>
                     <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
@@ -1442,7 +1442,7 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
   </main>
 
   <footer>
-    <p>Versão: 5.5.0 - 0.33.198</p>
+    <p>Versão: 5.6.0 - 0.33.205</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1563,7 +1563,7 @@ exports[`Fashion Man Clothing Desktop View Sweatshirts renders final subcategory
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
-                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="wallets-man">Carteiras</button>
                     <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
@@ -1741,7 +1741,7 @@ exports[`Fashion Man Clothing Desktop View Sweatshirts renders final subcategory
   </main>
 
   <footer>
-    <p>Versão: 5.5.0 - 0.33.198</p>
+    <p>Versão: 5.6.0 - 0.33.205</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1862,7 +1862,7 @@ exports[`Fashion Man Clothing Desktop View Tank Top renders final subcategory "R
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
-                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="wallets-man">Carteiras</button>
                     <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
@@ -1960,7 +1960,7 @@ exports[`Fashion Man Clothing Desktop View Tank Top renders final subcategory "R
   </main>
 
   <footer>
-    <p>Versão: 5.5.0 - 0.33.198</p>
+    <p>Versão: 5.6.0 - 0.33.205</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2081,7 +2081,7 @@ exports[`Fashion Man Clothing Desktop View Tank Top renders final subcategory "R
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
-                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="wallets-man">Carteiras</button>
                     <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
@@ -2219,7 +2219,7 @@ exports[`Fashion Man Clothing Desktop View Tank Top renders final subcategory "R
   </main>
 
   <footer>
-    <p>Versão: 5.5.0 - 0.33.198</p>
+    <p>Versão: 5.6.0 - 0.33.205</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2340,7 +2340,7 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
-                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="wallets-man">Carteiras</button>
                     <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
@@ -2742,7 +2742,7 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
   </main>
 
   <footer>
-    <p>Versão: 5.5.0 - 0.33.198</p>
+    <p>Versão: 5.6.0 - 0.33.205</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2863,7 +2863,7 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
-                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="wallets-man">Carteiras</button>
                     <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
@@ -3105,7 +3105,7 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
   </main>
 
   <footer>
-    <p>Versão: 5.5.0 - 0.33.198</p>
+    <p>Versão: 5.6.0 - 0.33.205</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3226,7 +3226,7 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
-                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="wallets-man">Carteiras</button>
                     <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
@@ -3332,7 +3332,7 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
   </main>
 
   <footer>
-    <p>Versão: 5.5.0 - 0.33.198</p>
+    <p>Versão: 5.6.0 - 0.33.205</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3453,7 +3453,7 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
-                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="wallets-man">Carteiras</button>
                     <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
@@ -3567,7 +3567,7 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
   </main>
 
   <footer>
-    <p>Versão: 5.5.0 - 0.33.198</p>
+    <p>Versão: 5.6.0 - 0.33.205</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3688,7 +3688,7 @@ exports[`Fashion Man Clothing Mobile View Pants renders final subcategory "Calç
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
-                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="wallets-man">Carteiras</button>
                     <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
@@ -3778,7 +3778,7 @@ exports[`Fashion Man Clothing Mobile View Pants renders final subcategory "Calç
   </main>
 
   <footer>
-    <p>Versão: 5.5.0 - 0.33.198</p>
+    <p>Versão: 5.6.0 - 0.33.205</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -3899,7 +3899,7 @@ exports[`Fashion Man Clothing Mobile View Pants renders final subcategory "Calç
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
-                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="wallets-man">Carteiras</button>
                     <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
@@ -3997,7 +3997,7 @@ exports[`Fashion Man Clothing Mobile View Pants renders final subcategory "Calç
   </main>
 
   <footer>
-    <p>Versão: 5.5.0 - 0.33.198</p>
+    <p>Versão: 5.6.0 - 0.33.205</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4118,7 +4118,7 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
-                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="wallets-man">Carteiras</button>
                     <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
@@ -4200,7 +4200,7 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
   </main>
 
   <footer>
-    <p>Versão: 5.5.0 - 0.33.198</p>
+    <p>Versão: 5.6.0 - 0.33.205</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4321,7 +4321,7 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
-                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="wallets-man">Carteiras</button>
                     <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
@@ -4459,7 +4459,7 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
   </main>
 
   <footer>
-    <p>Versão: 5.5.0 - 0.33.198</p>
+    <p>Versão: 5.6.0 - 0.33.205</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4580,7 +4580,7 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
-                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="wallets-man">Carteiras</button>
                     <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
@@ -4726,7 +4726,7 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
   </main>
 
   <footer>
-    <p>Versão: 5.5.0 - 0.33.198</p>
+    <p>Versão: 5.6.0 - 0.33.205</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -4847,7 +4847,7 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
-                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="wallets-man">Carteiras</button>
                     <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
@@ -5033,7 +5033,7 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
   </main>
 
   <footer>
-    <p>Versão: 5.5.0 - 0.33.198</p>
+    <p>Versão: 5.6.0 - 0.33.205</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5154,7 +5154,7 @@ exports[`Fashion Man Clothing Mobile View Sweatshirts renders final subcategory 
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
-                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="wallets-man">Carteiras</button>
                     <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
@@ -5332,7 +5332,7 @@ exports[`Fashion Man Clothing Mobile View Sweatshirts renders final subcategory 
   </main>
 
   <footer>
-    <p>Versão: 5.5.0 - 0.33.198</p>
+    <p>Versão: 5.6.0 - 0.33.205</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5453,7 +5453,7 @@ exports[`Fashion Man Clothing Mobile View Tank Top renders final subcategory "Re
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
-                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="wallets-man">Carteiras</button>
                     <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
@@ -5551,7 +5551,7 @@ exports[`Fashion Man Clothing Mobile View Tank Top renders final subcategory "Re
   </main>
 
   <footer>
-    <p>Versão: 5.5.0 - 0.33.198</p>
+    <p>Versão: 5.6.0 - 0.33.205</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5672,7 +5672,7 @@ exports[`Fashion Man Clothing Mobile View Tank Top renders final subcategory "Re
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
-                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="wallets-man">Carteiras</button>
                     <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
@@ -5810,7 +5810,7 @@ exports[`Fashion Man Clothing Mobile View Tank Top renders final subcategory "Re
   </main>
 
   <footer>
-    <p>Versão: 5.5.0 - 0.33.198</p>
+    <p>Versão: 5.6.0 - 0.33.205</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -5931,7 +5931,7 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
-                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="wallets-man">Carteiras</button>
                     <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
@@ -6333,7 +6333,7 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
   </main>
 
   <footer>
-    <p>Versão: 5.5.0 - 0.33.198</p>
+    <p>Versão: 5.6.0 - 0.33.205</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -6454,7 +6454,7 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
-                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="wallets-man">Carteiras</button>
                     <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
@@ -6696,7 +6696,7 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
   </main>
 
   <footer>
-    <p>Versão: 5.5.0 - 0.33.198</p>
+    <p>Versão: 5.6.0 - 0.33.205</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -6817,7 +6817,7 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
-                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="wallets-man">Carteiras</button>
                     <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
@@ -6923,7 +6923,7 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
   </main>
 
   <footer>
-    <p>Versão: 5.5.0 - 0.33.198</p>
+    <p>Versão: 5.6.0 - 0.33.205</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -7044,7 +7044,7 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
-                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="wallets-man">Carteiras</button>
                     <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
@@ -7158,7 +7158,7 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
   </main>
 
   <footer>
-    <p>Versão: 5.5.0 - 0.33.198</p>
+    <p>Versão: 5.6.0 - 0.33.205</p>
   </footer>
 
   <script src="scripts.js"></script>
