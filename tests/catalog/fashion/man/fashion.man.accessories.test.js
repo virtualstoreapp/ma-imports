@@ -6,6 +6,7 @@ const {
 const {
   selectCapsMan,
   selectBeltsMan,
+  selectWalletsMan,
 } = require('../../../utils/catalogActions');
 
 describe('Fashion', () => {
@@ -22,6 +23,10 @@ describe('Fashion', () => {
                         await selectCapsMan();
                     });
 
+                    it('renders final subcategory "Carteiras Masculina" correctly on desktop', async () => {
+                        await selectWalletsMan();
+                    });
+
                     it('renders final subcategory "Cintos Masculino" correctly on desktop', async () => {
                         await selectBeltsMan();
                     });
@@ -36,6 +41,10 @@ describe('Fashion', () => {
                 describe('Accessories', () => {
                     it('renders final subcategory "Bonés Masculino" correctly on mobile', async () => {
                         await selectCapsMan();
+                    });
+
+                    it('renders final subcategory "Carteiras Masculina" correctly on mobile', async () => {
+                        await selectWalletsMan();
                     });
 
                     it('renders final subcategory "Cintos Masculino" correctly on mobile', async () => {

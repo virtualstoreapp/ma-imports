@@ -1,12 +1,73 @@
 [
     {
-        "name": "[] ",
-        "description": "",
+        "name": "[2307251256] Armani Exchange",
+        "description": "Carteira Masculina, Material: Couro legítimo",
         "oldPrice": 0.0,
-        "price": 59.90,
+        "price": 24.99,
         "images": [
-            "images/man/wallets/.jpeg"
+            "images/man/wallets/2307251256-armani-exchange.jpeg"
         ],
-        "size": "N/A"
+        "size": "Pequena"
+    },
+    {
+        "name": "[2307251257] Armani Exchange",
+        "description": "Carteira Masculina, Material: Couro legítimo",
+        "oldPrice": 0.0,
+        "price": 24.99,
+        "images": [
+            "images/man/wallets/2307251257-armani-exchange-front.jpeg",
+            "images/man/wallets/2307251257-armani-exchange-back.jpeg"
+        ],
+        "size": "Pequena"
+    },
+    {
+        "name": "[2307251258] Oakley",
+        "description": "Carteira Masculina, Material: Couro legítimo",
+        "oldPrice": 0.0,
+        "price": 24.99,
+        "images": [
+            "images/man/wallets/2307251258-oakley.jpeg"
+        ],
+        "size": "Pequena"
+    },
+    {
+        "name": "[2307251254] Quicksilver ",
+        "description": "Carteira Masculina, Material: Couro legítimo",
+        "oldPrice": 0.0,
+        "price": 24.99,
+        "images": [
+            "images/man/wallets/2307251254-quicksilver.jpeg"
+        ],
+        "size": "Pequena"
+    },
+    {
+        "name": "[2307251255] Quicksilver ",
+        "description": "Carteira Masculina, Material: Couro legítimo",
+        "oldPrice": 0.0,
+        "price": 24.99,
+        "images": [
+            "images/man/wallets/2307251255-quicksilver.jpeg"
+        ],
+        "size": "Pequena"
+    },
+    {
+        "name": "[2307251259] Reserva",
+        "description": "Carteira Masculina, Material: Couro legítimo",
+        "oldPrice": 0.0,
+        "price": 24.99,
+        "images": [
+            "images/man/wallets/2307251259-reserva.jpeg"
+        ],
+        "size": "Pequena"
+    },
+    {
+        "name": "[2307251250] Tommy Hilfiger ",
+        "description": "Carteira Masculina",
+        "oldPrice": 0.0,
+        "price": 24.99,
+        "images": [
+            "images/man/wallets/2307251250-tommy-hilfiger.jpeg"
+        ],
+        "size": "Pequena"
     }
 ]

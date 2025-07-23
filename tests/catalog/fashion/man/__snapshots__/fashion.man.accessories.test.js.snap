@@ -97,7 +97,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "B
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
-                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="wallets-man">Carteiras</button>
                     <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
@@ -166,7 +166,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "B
 
   <!-- Main Content -->
   <main>
-    <h2 id="category-heading">Bonés Masculinos</h2>
+    <h2 id="category-heading">Bonés Masculino</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
           <img src="images/man/caps/polo/0106250949-polo.jpeg" alt="[0106250949] Polo">
           <div class="product-details">
@@ -211,7 +211,258 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "B
   </main>
 
   <footer>
-    <p>Versão: 5.5.0 - 0.33.198</p>
+    <p>Versão: 5.6.0 - 0.33.205</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+
+<div id="product-modal">
+      <div id="modal-content">
+        <button id="modal-close">X</button>
+        <div id="modal-image-container" class="modal-image-container">
+          <img id="modal-image" src="" alt="">
+        </div>
+        <div id="modal-controls">
+          <button id="prev-image">&lt;</button>
+          <button id="zoom-out">-</button>
+          <button id="copy-product-id">ID</button>
+          <button id="zoom-in">+</button>
+          <button id="next-image">&gt;</button>
+          <button id="buy-product">Comprar</button>
+        </div>
+      </div>
+    </div>"
+`;
+
+exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "Carteiras Masculina" correctly on desktop 1`] = `
+"
+  <header>
+    <div class="header-logo">
+      <img src="images/logo.jpeg" alt="M/A Imports Logo">
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav aria-label="Main Navigation">
+    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+    <ul id="nav-menu">
+      <li class="menu-item">
+        <button data-category="all">Início</button>
+      </li>
+      <li class="menu-item has-submenu">
+        <button data-category="fashion-category" aria-expanded="false">Moda</button>
+        <ul class="submenu" style="display: none;">
+          <li class="menu-item has-submenu">
+            <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="tshirts-casual-man">Casuais</button>
+                        <button data-category="tshirts-dryfit-man">Dry Fit</button>
+                        <button data-category="tshirts-polo-man">Polo</button>
+                        <button data-category="dress-shirts-man">Sociais</button>
+                      </li>
+                    </ul>
+                    <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="tank-top-casual-man">Casuais</button>
+                        <button data-category="tank-top-dryfit-man">Dry Fit</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="pants-sweatpants-man">Moletom</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                  </li>
+                  <li class="menu-item">
+                    <button data-category="socks-man">Meias</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                    <button data-category="wallets-man">Carteiras</button>
+                    <button data-category="belts-man">Cintos</button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item has-submenu">
+            <button data-category="woman-subcategory" aria-expanded="false">Feminino</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-woman-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sweatshirts-woman-subcategory" aria-expanded="false">Blusas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-woman">Blusas</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="shorts-woman-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-jeans-woman">Jeans</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="pants-woman-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-woman">Jeans</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="pants-legging-woman">Legging</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h2 id="category-heading">Carteiras Masculina</h2>
+    <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/man/wallets/2307251256-armani-exchange.jpeg" alt="[2307251256] Armani Exchange">
+          <div class="product-details">
+            <h3>[2307251256] Armani Exchange</h3>
+            <p class="description">Carteira Masculina, Material: Couro legítimo</p>
+            <span class="size">Tamanho: Pequena</span>
+            <span class="price">R$&nbsp;24,99</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/wallets/2307251257-armani-exchange-front.jpeg" alt="[2307251257] Armani Exchange">
+          <div class="product-details">
+            <h3>[2307251257] Armani Exchange</h3>
+            <p class="description">Carteira Masculina, Material: Couro legítimo</p>
+            <span class="size">Tamanho: Pequena</span>
+            <span class="price">R$&nbsp;24,99</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/wallets/2307251258-oakley.jpeg" alt="[2307251258] Oakley">
+          <div class="product-details">
+            <h3>[2307251258] Oakley</h3>
+            <p class="description">Carteira Masculina, Material: Couro legítimo</p>
+            <span class="size">Tamanho: Pequena</span>
+            <span class="price">R$&nbsp;24,99</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/wallets/2307251254-quicksilver.jpeg" alt="[2307251254] Quicksilver ">
+          <div class="product-details">
+            <h3>[2307251254] Quicksilver </h3>
+            <p class="description">Carteira Masculina, Material: Couro legítimo</p>
+            <span class="size">Tamanho: Pequena</span>
+            <span class="price">R$&nbsp;24,99</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/wallets/2307251255-quicksilver.jpeg" alt="[2307251255] Quicksilver ">
+          <div class="product-details">
+            <h3>[2307251255] Quicksilver </h3>
+            <p class="description">Carteira Masculina, Material: Couro legítimo</p>
+            <span class="size">Tamanho: Pequena</span>
+            <span class="price">R$&nbsp;24,99</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/wallets/2307251259-reserva.jpeg" alt="[2307251259] Reserva">
+          <div class="product-details">
+            <h3>[2307251259] Reserva</h3>
+            <p class="description">Carteira Masculina, Material: Couro legítimo</p>
+            <span class="size">Tamanho: Pequena</span>
+            <span class="price">R$&nbsp;24,99</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/wallets/2307251250-tommy-hilfiger.jpeg" alt="[2307251250] Tommy Hilfiger ">
+          <div class="product-details">
+            <h3>[2307251250] Tommy Hilfiger </h3>
+            <p class="description">Carteira Masculina</p>
+            <span class="size">Tamanho: Pequena</span>
+            <span class="price">R$&nbsp;24,99</span>
+          </div>
+        </li></ul>
+  </main>
+
+  <footer>
+    <p>Versão: 5.6.0 - 0.33.205</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -332,7 +583,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "C
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
-                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="wallets-man">Carteiras</button>
                     <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
@@ -478,7 +729,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "C
   </main>
 
   <footer>
-    <p>Versão: 5.5.0 - 0.33.198</p>
+    <p>Versão: 5.6.0 - 0.33.205</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -599,7 +850,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Bo
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
-                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="wallets-man">Carteiras</button>
                     <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
@@ -668,7 +919,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Bo
 
   <!-- Main Content -->
   <main>
-    <h2 id="category-heading">Bonés Masculinos</h2>
+    <h2 id="category-heading">Bonés Masculino</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
           <img src="images/man/caps/polo/0106250949-polo.jpeg" alt="[0106250949] Polo">
           <div class="product-details">
@@ -713,7 +964,258 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Bo
   </main>
 
   <footer>
-    <p>Versão: 5.5.0 - 0.33.198</p>
+    <p>Versão: 5.6.0 - 0.33.205</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+
+<div id="product-modal">
+      <div id="modal-content">
+        <button id="modal-close">X</button>
+        <div id="modal-image-container" class="modal-image-container">
+          <img id="modal-image" src="" alt="">
+        </div>
+        <div id="modal-controls">
+          <button id="prev-image">&lt;</button>
+          <button id="zoom-out">-</button>
+          <button id="copy-product-id">ID</button>
+          <button id="zoom-in">+</button>
+          <button id="next-image">&gt;</button>
+          <button id="buy-product">Comprar</button>
+        </div>
+      </div>
+    </div>"
+`;
+
+exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Carteiras Masculina" correctly on mobile 1`] = `
+"
+  <header>
+    <div class="header-logo">
+      <img src="images/logo.jpeg" alt="M/A Imports Logo">
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav aria-label="Main Navigation" class="">
+    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+    <ul id="nav-menu">
+      <li class="menu-item">
+        <button data-category="all">Início</button>
+      </li>
+      <li class="menu-item has-submenu">
+        <button data-category="fashion-category" aria-expanded="false">Moda</button>
+        <ul class="submenu" style="display: none;">
+          <li class="menu-item has-submenu">
+            <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="tshirts-casual-man">Casuais</button>
+                        <button data-category="tshirts-dryfit-man">Dry Fit</button>
+                        <button data-category="tshirts-polo-man">Polo</button>
+                        <button data-category="dress-shirts-man">Sociais</button>
+                      </li>
+                    </ul>
+                    <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="tank-top-casual-man">Casuais</button>
+                        <button data-category="tank-top-dryfit-man">Dry Fit</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="pants-sweatpants-man">Moletom</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                  </li>
+                  <li class="menu-item">
+                    <button data-category="socks-man">Meias</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                    <button data-category="wallets-man">Carteiras</button>
+                    <button data-category="belts-man">Cintos</button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item has-submenu">
+            <button data-category="woman-subcategory" aria-expanded="false">Feminino</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-woman-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sweatshirts-woman-subcategory" aria-expanded="false">Blusas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-woman">Blusas</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="shorts-woman-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-jeans-woman">Jeans</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="pants-woman-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-woman">Jeans</button>
+                      </li>
+                      <li class="menu-item">
+                        <button data-category="pants-legging-woman">Legging</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu" style="display: none;">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h2 id="category-heading">Carteiras Masculina</h2>
+    <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/man/wallets/2307251256-armani-exchange.jpeg" alt="[2307251256] Armani Exchange">
+          <div class="product-details">
+            <h3>[2307251256] Armani Exchange</h3>
+            <p class="description">Carteira Masculina, Material: Couro legítimo</p>
+            <span class="size">Tamanho: Pequena</span>
+            <span class="price">R$&nbsp;24,99</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/wallets/2307251257-armani-exchange-front.jpeg" alt="[2307251257] Armani Exchange">
+          <div class="product-details">
+            <h3>[2307251257] Armani Exchange</h3>
+            <p class="description">Carteira Masculina, Material: Couro legítimo</p>
+            <span class="size">Tamanho: Pequena</span>
+            <span class="price">R$&nbsp;24,99</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/wallets/2307251258-oakley.jpeg" alt="[2307251258] Oakley">
+          <div class="product-details">
+            <h3>[2307251258] Oakley</h3>
+            <p class="description">Carteira Masculina, Material: Couro legítimo</p>
+            <span class="size">Tamanho: Pequena</span>
+            <span class="price">R$&nbsp;24,99</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/wallets/2307251254-quicksilver.jpeg" alt="[2307251254] Quicksilver ">
+          <div class="product-details">
+            <h3>[2307251254] Quicksilver </h3>
+            <p class="description">Carteira Masculina, Material: Couro legítimo</p>
+            <span class="size">Tamanho: Pequena</span>
+            <span class="price">R$&nbsp;24,99</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/wallets/2307251255-quicksilver.jpeg" alt="[2307251255] Quicksilver ">
+          <div class="product-details">
+            <h3>[2307251255] Quicksilver </h3>
+            <p class="description">Carteira Masculina, Material: Couro legítimo</p>
+            <span class="size">Tamanho: Pequena</span>
+            <span class="price">R$&nbsp;24,99</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/wallets/2307251259-reserva.jpeg" alt="[2307251259] Reserva">
+          <div class="product-details">
+            <h3>[2307251259] Reserva</h3>
+            <p class="description">Carteira Masculina, Material: Couro legítimo</p>
+            <span class="size">Tamanho: Pequena</span>
+            <span class="price">R$&nbsp;24,99</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/wallets/2307251250-tommy-hilfiger.jpeg" alt="[2307251250] Tommy Hilfiger ">
+          <div class="product-details">
+            <h3>[2307251250] Tommy Hilfiger </h3>
+            <p class="description">Carteira Masculina</p>
+            <span class="size">Tamanho: Pequena</span>
+            <span class="price">R$&nbsp;24,99</span>
+          </div>
+        </li></ul>
+  </main>
+
+  <footer>
+    <p>Versão: 5.6.0 - 0.33.205</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -834,7 +1336,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Ci
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item">
                     <button data-category="caps-man">Bonés</button>
-                    <!-- <button data-category="wallets-man">Carteiras</button> -->
+                    <button data-category="wallets-man">Carteiras</button>
                     <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
@@ -980,7 +1482,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Ci
   </main>
 
   <footer>
-    <p>Versão: 5.5.0 - 0.33.198</p>
+    <p>Versão: 5.6.0 - 0.33.205</p>
   </footer>
 
   <script src="scripts.js"></script>

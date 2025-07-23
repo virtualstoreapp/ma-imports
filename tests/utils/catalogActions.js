@@ -144,6 +144,10 @@ const selectCapsMan = async () => {
   await selectProduct("Bonés Masculino", 5, selectAccessoriesManSubcategory, 'caps-man');
 };
 
+const selectWalletsMan = async () => {
+  await selectProduct("Carteiras Masculina", 7, selectAccessoriesManSubcategory, 'wallets-man');
+}
+
 const selectBeltsMan = async () => {
   await selectProduct("Cintos Masculino", 9, selectAccessoriesManSubcategory, 'belts-man');
 }
@@ -174,6 +178,7 @@ module.exports = {
     selectSlippersMan,
     selectSocksMan,
     selectCapsMan,
+    selectWalletsMan,
     selectBeltsMan,
     selectSweatshirtWoman,
     selectSweatshirtSetChildren,
