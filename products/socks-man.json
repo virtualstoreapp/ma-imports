@@ -17,7 +17,8 @@
         "images": [
             "images/man/socks/0106250835-adidas.jpeg"
         ],
-        "size": "Consultar"
+        "size": "Consultar",
+        "soldOut": true
     },
     {
         "name": "[0106250836] Nike",

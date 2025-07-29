@@ -873,7 +873,7 @@ exports[`Fashion Man Shoes Desktop View Socks renders final subcategory "Meias M
             <span class="size">Tamanho: Consultar</span>
             <span class="price">R$&nbsp;12,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/socks/0106250836-nike.jpeg" alt="[0106250836] Nike">
           <div class="product-details">
             <h3>[0106250836] Nike</h3>
@@ -1814,7 +1814,7 @@ exports[`Fashion Man Shoes Mobile View Socks renders final subcategory "Meias Ma
             <span class="size">Tamanho: Consultar</span>
             <span class="price">R$&nbsp;12,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/socks/0106250836-nike.jpeg" alt="[0106250836] Nike">
           <div class="product-details">
             <h3>[0106250836] Nike</h3>
