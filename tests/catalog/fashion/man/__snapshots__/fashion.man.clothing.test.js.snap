@@ -22,13 +22,49 @@ exports[`Fashion Man Clothing Desktop View Pants renders final subcategory "Cal�
             <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
             <ul class="submenu" style="display: none;">
               <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                    <button data-category="wallets-man">Carteiras</button>
+                    <button data-category="belts-man">Cintos</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                    <button data-category="socks-man">Meias</button>
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
                     <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
                       </li>
                     </ul>
                     <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
@@ -47,58 +83,6 @@ exports[`Fashion Man Clothing Desktop View Pants renders final subcategory "Cal�
                         <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="pants-sweatpants-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="pants-jeans-man">Jeans</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="socks-man">Meias</button>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="caps-man">Bonés</button>
-                    <button data-category="wallets-man">Carteiras</button>
-                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -131,8 +115,6 @@ exports[`Fashion Man Clothing Desktop View Pants renders final subcategory "Cal�
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                      </li>
-                      <li class="menu-item">
                         <button data-category="pants-legging-woman">Legging</button>
                       </li>
                     </ul>
@@ -233,13 +215,49 @@ exports[`Fashion Man Clothing Desktop View Pants renders final subcategory "Cal�
             <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
             <ul class="submenu" style="display: none;">
               <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                    <button data-category="wallets-man">Carteiras</button>
+                    <button data-category="belts-man">Cintos</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                    <button data-category="socks-man">Meias</button>
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
                     <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
                       </li>
                     </ul>
                     <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
@@ -258,58 +276,6 @@ exports[`Fashion Man Clothing Desktop View Pants renders final subcategory "Cal�
                         <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="pants-sweatpants-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="pants-jeans-man">Jeans</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="socks-man">Meias</button>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="caps-man">Bonés</button>
-                    <button data-category="wallets-man">Carteiras</button>
-                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -342,8 +308,6 @@ exports[`Fashion Man Clothing Desktop View Pants renders final subcategory "Cal�
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                      </li>
-                      <li class="menu-item">
                         <button data-category="pants-legging-woman">Legging</button>
                       </li>
                     </ul>
@@ -452,13 +416,49 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
             <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
             <ul class="submenu" style="display: none;">
               <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                    <button data-category="wallets-man">Carteiras</button>
+                    <button data-category="belts-man">Cintos</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                    <button data-category="socks-man">Meias</button>
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
                     <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
                       </li>
                     </ul>
                     <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
@@ -477,58 +477,6 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
                         <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="pants-sweatpants-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="pants-jeans-man">Jeans</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="socks-man">Meias</button>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="caps-man">Bonés</button>
-                    <button data-category="wallets-man">Carteiras</button>
-                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -561,8 +509,6 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                      </li>
-                      <li class="menu-item">
                         <button data-category="pants-legging-woman">Legging</button>
                       </li>
                     </ul>
@@ -655,13 +601,49 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
             <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
             <ul class="submenu" style="display: none;">
               <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                    <button data-category="wallets-man">Carteiras</button>
+                    <button data-category="belts-man">Cintos</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                    <button data-category="socks-man">Meias</button>
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
                     <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
                       </li>
                     </ul>
                     <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
@@ -680,58 +662,6 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
                         <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="pants-sweatpants-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="pants-jeans-man">Jeans</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="socks-man">Meias</button>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="caps-man">Bonés</button>
-                    <button data-category="wallets-man">Carteiras</button>
-                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -764,8 +694,6 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                      </li>
-                      <li class="menu-item">
                         <button data-category="pants-legging-woman">Legging</button>
                       </li>
                     </ul>
@@ -914,13 +842,49 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
             <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
             <ul class="submenu" style="display: none;">
               <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                    <button data-category="wallets-man">Carteiras</button>
+                    <button data-category="belts-man">Cintos</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                    <button data-category="socks-man">Meias</button>
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
                     <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
                       </li>
                     </ul>
                     <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
@@ -939,58 +903,6 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
                         <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="pants-sweatpants-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="pants-jeans-man">Jeans</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="socks-man">Meias</button>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="caps-man">Bonés</button>
-                    <button data-category="wallets-man">Carteiras</button>
-                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -1023,8 +935,6 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                      </li>
-                      <li class="menu-item">
                         <button data-category="pants-legging-woman">Legging</button>
                       </li>
                     </ul>
@@ -1181,13 +1091,49 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
             <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
             <ul class="submenu" style="display: none;">
               <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                    <button data-category="wallets-man">Carteiras</button>
+                    <button data-category="belts-man">Cintos</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                    <button data-category="socks-man">Meias</button>
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
                     <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
                       </li>
                     </ul>
                     <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
@@ -1206,58 +1152,6 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
                         <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="pants-sweatpants-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="pants-jeans-man">Jeans</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="socks-man">Meias</button>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="caps-man">Bonés</button>
-                    <button data-category="wallets-man">Carteiras</button>
-                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -1290,8 +1184,6 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                      </li>
-                      <li class="menu-item">
                         <button data-category="pants-legging-woman">Legging</button>
                       </li>
                     </ul>
@@ -1488,13 +1380,49 @@ exports[`Fashion Man Clothing Desktop View Sweatshirts renders final subcategory
             <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
             <ul class="submenu" style="display: none;">
               <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                    <button data-category="wallets-man">Carteiras</button>
+                    <button data-category="belts-man">Cintos</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                    <button data-category="socks-man">Meias</button>
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
                     <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
                       </li>
                     </ul>
                     <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
@@ -1513,58 +1441,6 @@ exports[`Fashion Man Clothing Desktop View Sweatshirts renders final subcategory
                         <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="pants-sweatpants-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="pants-jeans-man">Jeans</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="socks-man">Meias</button>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="caps-man">Bonés</button>
-                    <button data-category="wallets-man">Carteiras</button>
-                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -1597,8 +1473,6 @@ exports[`Fashion Man Clothing Desktop View Sweatshirts renders final subcategory
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                      </li>
-                      <li class="menu-item">
                         <button data-category="pants-legging-woman">Legging</button>
                       </li>
                     </ul>
@@ -1787,13 +1661,49 @@ exports[`Fashion Man Clothing Desktop View Tank Top renders final subcategory "R
             <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
             <ul class="submenu" style="display: none;">
               <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                    <button data-category="wallets-man">Carteiras</button>
+                    <button data-category="belts-man">Cintos</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                    <button data-category="socks-man">Meias</button>
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
                     <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
                       </li>
                     </ul>
                     <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
@@ -1812,58 +1722,6 @@ exports[`Fashion Man Clothing Desktop View Tank Top renders final subcategory "R
                         <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="pants-sweatpants-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="pants-jeans-man">Jeans</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="socks-man">Meias</button>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="caps-man">Bonés</button>
-                    <button data-category="wallets-man">Carteiras</button>
-                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -1896,8 +1754,6 @@ exports[`Fashion Man Clothing Desktop View Tank Top renders final subcategory "R
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                      </li>
-                      <li class="menu-item">
                         <button data-category="pants-legging-woman">Legging</button>
                       </li>
                     </ul>
@@ -2006,13 +1862,49 @@ exports[`Fashion Man Clothing Desktop View Tank Top renders final subcategory "R
             <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
             <ul class="submenu" style="display: none;">
               <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                    <button data-category="wallets-man">Carteiras</button>
+                    <button data-category="belts-man">Cintos</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                    <button data-category="socks-man">Meias</button>
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
                     <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
                       </li>
                     </ul>
                     <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
@@ -2031,58 +1923,6 @@ exports[`Fashion Man Clothing Desktop View Tank Top renders final subcategory "R
                         <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="pants-sweatpants-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="pants-jeans-man">Jeans</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="socks-man">Meias</button>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="caps-man">Bonés</button>
-                    <button data-category="wallets-man">Carteiras</button>
-                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -2115,8 +1955,6 @@ exports[`Fashion Man Clothing Desktop View Tank Top renders final subcategory "R
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                      </li>
-                      <li class="menu-item">
                         <button data-category="pants-legging-woman">Legging</button>
                       </li>
                     </ul>
@@ -2265,13 +2103,49 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
             <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
             <ul class="submenu" style="display: none;">
               <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                    <button data-category="wallets-man">Carteiras</button>
+                    <button data-category="belts-man">Cintos</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                    <button data-category="socks-man">Meias</button>
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
                     <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
                       </li>
                     </ul>
                     <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
@@ -2290,58 +2164,6 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
                         <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="pants-sweatpants-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="pants-jeans-man">Jeans</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="socks-man">Meias</button>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="caps-man">Bonés</button>
-                    <button data-category="wallets-man">Carteiras</button>
-                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -2374,8 +2196,6 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                      </li>
-                      <li class="menu-item">
                         <button data-category="pants-legging-woman">Legging</button>
                       </li>
                     </ul>
@@ -2788,13 +2608,49 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
             <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
             <ul class="submenu" style="display: none;">
               <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                    <button data-category="wallets-man">Carteiras</button>
+                    <button data-category="belts-man">Cintos</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                    <button data-category="socks-man">Meias</button>
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
                     <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
                       </li>
                     </ul>
                     <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
@@ -2813,58 +2669,6 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
                         <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="pants-sweatpants-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="pants-jeans-man">Jeans</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="socks-man">Meias</button>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="caps-man">Bonés</button>
-                    <button data-category="wallets-man">Carteiras</button>
-                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -2897,8 +2701,6 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                      </li>
-                      <li class="menu-item">
                         <button data-category="pants-legging-woman">Legging</button>
                       </li>
                     </ul>
@@ -3151,13 +2953,49 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
             <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
             <ul class="submenu" style="display: none;">
               <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                    <button data-category="wallets-man">Carteiras</button>
+                    <button data-category="belts-man">Cintos</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                    <button data-category="socks-man">Meias</button>
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
                     <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
                       </li>
                     </ul>
                     <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
@@ -3176,58 +3014,6 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
                         <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="pants-sweatpants-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="pants-jeans-man">Jeans</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="socks-man">Meias</button>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="caps-man">Bonés</button>
-                    <button data-category="wallets-man">Carteiras</button>
-                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -3260,8 +3046,6 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                      </li>
-                      <li class="menu-item">
                         <button data-category="pants-legging-woman">Legging</button>
                       </li>
                     </ul>
@@ -3378,13 +3162,49 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
             <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
             <ul class="submenu" style="display: none;">
               <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                    <button data-category="wallets-man">Carteiras</button>
+                    <button data-category="belts-man">Cintos</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                    <button data-category="socks-man">Meias</button>
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
                     <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
                       </li>
                     </ul>
                     <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
@@ -3403,58 +3223,6 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
                         <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="pants-sweatpants-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="pants-jeans-man">Jeans</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="socks-man">Meias</button>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="caps-man">Bonés</button>
-                    <button data-category="wallets-man">Carteiras</button>
-                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -3487,8 +3255,6 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                      </li>
-                      <li class="menu-item">
                         <button data-category="pants-legging-woman">Legging</button>
                       </li>
                     </ul>
@@ -3613,13 +3379,49 @@ exports[`Fashion Man Clothing Mobile View Pants renders final subcategory "Calç
             <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
             <ul class="submenu" style="display: none;">
               <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                    <button data-category="wallets-man">Carteiras</button>
+                    <button data-category="belts-man">Cintos</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                    <button data-category="socks-man">Meias</button>
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
                     <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
                       </li>
                     </ul>
                     <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
@@ -3638,58 +3440,6 @@ exports[`Fashion Man Clothing Mobile View Pants renders final subcategory "Calç
                         <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="pants-sweatpants-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="pants-jeans-man">Jeans</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="socks-man">Meias</button>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="caps-man">Bonés</button>
-                    <button data-category="wallets-man">Carteiras</button>
-                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -3722,8 +3472,6 @@ exports[`Fashion Man Clothing Mobile View Pants renders final subcategory "Calç
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                      </li>
-                      <li class="menu-item">
                         <button data-category="pants-legging-woman">Legging</button>
                       </li>
                     </ul>
@@ -3824,13 +3572,49 @@ exports[`Fashion Man Clothing Mobile View Pants renders final subcategory "Calç
             <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
             <ul class="submenu" style="display: none;">
               <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                    <button data-category="wallets-man">Carteiras</button>
+                    <button data-category="belts-man">Cintos</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                    <button data-category="socks-man">Meias</button>
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
                     <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
                       </li>
                     </ul>
                     <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
@@ -3849,58 +3633,6 @@ exports[`Fashion Man Clothing Mobile View Pants renders final subcategory "Calç
                         <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="pants-sweatpants-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="pants-jeans-man">Jeans</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="socks-man">Meias</button>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="caps-man">Bonés</button>
-                    <button data-category="wallets-man">Carteiras</button>
-                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -3933,8 +3665,6 @@ exports[`Fashion Man Clothing Mobile View Pants renders final subcategory "Calç
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                      </li>
-                      <li class="menu-item">
                         <button data-category="pants-legging-woman">Legging</button>
                       </li>
                     </ul>
@@ -4043,13 +3773,49 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
             <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
             <ul class="submenu" style="display: none;">
               <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                    <button data-category="wallets-man">Carteiras</button>
+                    <button data-category="belts-man">Cintos</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                    <button data-category="socks-man">Meias</button>
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
                     <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
                       </li>
                     </ul>
                     <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
@@ -4068,58 +3834,6 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
                         <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="pants-sweatpants-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="pants-jeans-man">Jeans</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="socks-man">Meias</button>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="caps-man">Bonés</button>
-                    <button data-category="wallets-man">Carteiras</button>
-                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -4152,8 +3866,6 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                      </li>
-                      <li class="menu-item">
                         <button data-category="pants-legging-woman">Legging</button>
                       </li>
                     </ul>
@@ -4246,13 +3958,49 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
             <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
             <ul class="submenu" style="display: none;">
               <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                    <button data-category="wallets-man">Carteiras</button>
+                    <button data-category="belts-man">Cintos</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                    <button data-category="socks-man">Meias</button>
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
                     <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
                       </li>
                     </ul>
                     <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
@@ -4271,58 +4019,6 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
                         <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="pants-sweatpants-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="pants-jeans-man">Jeans</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="socks-man">Meias</button>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="caps-man">Bonés</button>
-                    <button data-category="wallets-man">Carteiras</button>
-                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -4355,8 +4051,6 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                      </li>
-                      <li class="menu-item">
                         <button data-category="pants-legging-woman">Legging</button>
                       </li>
                     </ul>
@@ -4505,13 +4199,49 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
             <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
             <ul class="submenu" style="display: none;">
               <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                    <button data-category="wallets-man">Carteiras</button>
+                    <button data-category="belts-man">Cintos</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                    <button data-category="socks-man">Meias</button>
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
                     <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
                       </li>
                     </ul>
                     <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
@@ -4530,58 +4260,6 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
                         <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="pants-sweatpants-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="pants-jeans-man">Jeans</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="socks-man">Meias</button>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="caps-man">Bonés</button>
-                    <button data-category="wallets-man">Carteiras</button>
-                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -4614,8 +4292,6 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                      </li>
-                      <li class="menu-item">
                         <button data-category="pants-legging-woman">Legging</button>
                       </li>
                     </ul>
@@ -4772,13 +4448,49 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
             <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
             <ul class="submenu" style="display: none;">
               <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                    <button data-category="wallets-man">Carteiras</button>
+                    <button data-category="belts-man">Cintos</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                    <button data-category="socks-man">Meias</button>
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
                     <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
                       </li>
                     </ul>
                     <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
@@ -4797,58 +4509,6 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
                         <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="pants-sweatpants-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="pants-jeans-man">Jeans</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="socks-man">Meias</button>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="caps-man">Bonés</button>
-                    <button data-category="wallets-man">Carteiras</button>
-                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -4881,8 +4541,6 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                      </li>
-                      <li class="menu-item">
                         <button data-category="pants-legging-woman">Legging</button>
                       </li>
                     </ul>
@@ -5079,13 +4737,49 @@ exports[`Fashion Man Clothing Mobile View Sweatshirts renders final subcategory 
             <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
             <ul class="submenu" style="display: none;">
               <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                    <button data-category="wallets-man">Carteiras</button>
+                    <button data-category="belts-man">Cintos</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                    <button data-category="socks-man">Meias</button>
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
                     <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
                       </li>
                     </ul>
                     <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
@@ -5104,58 +4798,6 @@ exports[`Fashion Man Clothing Mobile View Sweatshirts renders final subcategory 
                         <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="pants-sweatpants-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="pants-jeans-man">Jeans</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="socks-man">Meias</button>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="caps-man">Bonés</button>
-                    <button data-category="wallets-man">Carteiras</button>
-                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -5188,8 +4830,6 @@ exports[`Fashion Man Clothing Mobile View Sweatshirts renders final subcategory 
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                      </li>
-                      <li class="menu-item">
                         <button data-category="pants-legging-woman">Legging</button>
                       </li>
                     </ul>
@@ -5378,13 +5018,49 @@ exports[`Fashion Man Clothing Mobile View Tank Top renders final subcategory "Re
             <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
             <ul class="submenu" style="display: none;">
               <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                    <button data-category="wallets-man">Carteiras</button>
+                    <button data-category="belts-man">Cintos</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                    <button data-category="socks-man">Meias</button>
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
                     <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
                       </li>
                     </ul>
                     <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
@@ -5403,58 +5079,6 @@ exports[`Fashion Man Clothing Mobile View Tank Top renders final subcategory "Re
                         <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="pants-sweatpants-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="pants-jeans-man">Jeans</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="socks-man">Meias</button>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="caps-man">Bonés</button>
-                    <button data-category="wallets-man">Carteiras</button>
-                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -5487,8 +5111,6 @@ exports[`Fashion Man Clothing Mobile View Tank Top renders final subcategory "Re
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                      </li>
-                      <li class="menu-item">
                         <button data-category="pants-legging-woman">Legging</button>
                       </li>
                     </ul>
@@ -5597,13 +5219,49 @@ exports[`Fashion Man Clothing Mobile View Tank Top renders final subcategory "Re
             <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
             <ul class="submenu" style="display: none;">
               <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                    <button data-category="wallets-man">Carteiras</button>
+                    <button data-category="belts-man">Cintos</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                    <button data-category="socks-man">Meias</button>
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
                     <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
                       </li>
                     </ul>
                     <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
@@ -5622,58 +5280,6 @@ exports[`Fashion Man Clothing Mobile View Tank Top renders final subcategory "Re
                         <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="pants-sweatpants-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="pants-jeans-man">Jeans</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="socks-man">Meias</button>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="caps-man">Bonés</button>
-                    <button data-category="wallets-man">Carteiras</button>
-                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -5706,8 +5312,6 @@ exports[`Fashion Man Clothing Mobile View Tank Top renders final subcategory "Re
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                      </li>
-                      <li class="menu-item">
                         <button data-category="pants-legging-woman">Legging</button>
                       </li>
                     </ul>
@@ -5856,13 +5460,49 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
             <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
             <ul class="submenu" style="display: none;">
               <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                    <button data-category="wallets-man">Carteiras</button>
+                    <button data-category="belts-man">Cintos</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                    <button data-category="socks-man">Meias</button>
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
                     <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
                       </li>
                     </ul>
                     <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
@@ -5881,58 +5521,6 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
                         <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="pants-sweatpants-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="pants-jeans-man">Jeans</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="socks-man">Meias</button>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="caps-man">Bonés</button>
-                    <button data-category="wallets-man">Carteiras</button>
-                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -5965,8 +5553,6 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                      </li>
-                      <li class="menu-item">
                         <button data-category="pants-legging-woman">Legging</button>
                       </li>
                     </ul>
@@ -6379,13 +5965,49 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
             <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
             <ul class="submenu" style="display: none;">
               <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                    <button data-category="wallets-man">Carteiras</button>
+                    <button data-category="belts-man">Cintos</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                    <button data-category="socks-man">Meias</button>
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
                     <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
                       </li>
                     </ul>
                     <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
@@ -6404,58 +6026,6 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
                         <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="pants-sweatpants-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="pants-jeans-man">Jeans</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="socks-man">Meias</button>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="caps-man">Bonés</button>
-                    <button data-category="wallets-man">Carteiras</button>
-                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -6488,8 +6058,6 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                      </li>
-                      <li class="menu-item">
                         <button data-category="pants-legging-woman">Legging</button>
                       </li>
                     </ul>
@@ -6742,13 +6310,49 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
             <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
             <ul class="submenu" style="display: none;">
               <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                    <button data-category="wallets-man">Carteiras</button>
+                    <button data-category="belts-man">Cintos</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                    <button data-category="socks-man">Meias</button>
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
                     <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
                       </li>
                     </ul>
                     <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
@@ -6767,58 +6371,6 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
                         <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="pants-sweatpants-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="pants-jeans-man">Jeans</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="socks-man">Meias</button>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="caps-man">Bonés</button>
-                    <button data-category="wallets-man">Carteiras</button>
-                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -6851,8 +6403,6 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                      </li>
-                      <li class="menu-item">
                         <button data-category="pants-legging-woman">Legging</button>
                       </li>
                     </ul>
@@ -6969,13 +6519,49 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
             <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
             <ul class="submenu" style="display: none;">
               <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                    <button data-category="wallets-man">Carteiras</button>
+                    <button data-category="belts-man">Cintos</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu" style="display: none;">
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                    <button data-category="socks-man">Meias</button>
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu" style="display: none;">
                   <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
                     <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
                       </li>
                     </ul>
                     <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
@@ -6994,58 +6580,6 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
                         <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
-                    <ul class="submenu" style="display: none;">
-                      <li class="menu-item">
-                        <button data-category="pants-sweatpants-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="pants-jeans-man">Jeans</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="socks-man">Meias</button>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
-                <ul class="submenu" style="display: none;">
-                  <li class="menu-item">
-                    <button data-category="caps-man">Bonés</button>
-                    <button data-category="wallets-man">Carteiras</button>
-                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -7078,8 +6612,6 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                      </li>
-                      <li class="menu-item">
                         <button data-category="pants-legging-woman">Legging</button>
                       </li>
                     </ul>

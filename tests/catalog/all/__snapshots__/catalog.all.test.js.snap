@@ -22,13 +22,49 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
             <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
             <ul class="submenu">
               <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                    <button data-category="wallets-man">Carteiras</button>
+                    <button data-category="belts-man">Cintos</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu">
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                    <button data-category="socks-man">Meias</button>
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu">
                   <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
                     <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
                     <ul class="submenu">
                       <li class="menu-item">
                         <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
                       </li>
                     </ul>
                     <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
@@ -47,58 +83,6 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
                         <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
-                    <ul class="submenu">
-                      <li class="menu-item">
-                        <button data-category="pants-sweatpants-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="pants-jeans-man">Jeans</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="socks-man">Meias</button>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
-                <ul class="submenu">
-                  <li class="menu-item">
-                    <button data-category="caps-man">Bonés</button>
-                    <button data-category="wallets-man">Carteiras</button>
-                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -131,8 +115,6 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
                     <ul class="submenu">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                      </li>
-                      <li class="menu-item">
                         <button data-category="pants-legging-woman">Legging</button>
                       </li>
                     </ul>
@@ -1885,13 +1867,49 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
             <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
             <ul class="submenu">
               <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                    <button data-category="wallets-man">Carteiras</button>
+                    <button data-category="belts-man">Cintos</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu">
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                    <button data-category="socks-man">Meias</button>
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu">
                   <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
                     <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
                     <ul class="submenu">
                       <li class="menu-item">
                         <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
                       </li>
                     </ul>
                     <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
@@ -1910,58 +1928,6 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
                         <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
-                    <ul class="submenu">
-                      <li class="menu-item">
-                        <button data-category="pants-sweatpants-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="pants-jeans-man">Jeans</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="socks-man">Meias</button>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
-                <ul class="submenu">
-                  <li class="menu-item">
-                    <button data-category="caps-man">Bonés</button>
-                    <button data-category="wallets-man">Carteiras</button>
-                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -1994,8 +1960,6 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
                     <ul class="submenu">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                      </li>
-                      <li class="menu-item">
                         <button data-category="pants-legging-woman">Legging</button>
                       </li>
                     </ul>
