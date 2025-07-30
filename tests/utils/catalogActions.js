@@ -74,6 +74,10 @@ const selectDressShirtsMan = async () => {
   await selectProduct("Camisetas Sociais Masculina", 5, selectClothingManSubcategory, 'dress-shirts-man');
 };
 
+const selectUnderwearMan = async () => {
+  await selectProduct("Cuecas Masculina", 15, selectClothingManSubcategory, 'underwear-man-subcategory')
+}
+
 const selectTankTopCasualMan = async () => {
   await selectProduct("Regatas Casuais Masculina", 3, selectClothingManSubcategory, 'tank-top-casual-man');
 };
@@ -132,7 +136,7 @@ const selectSlippersMan = async () => {
 };
 
 const selectSocksMan = async () => {
-  await selectProduct("Meias Masculina", 7, selectShoesManSubcategory, 'socks-man');
+  await selectProduct("Meias Masculina", 9, selectShoesManSubcategory, 'socks-man');
 };
 
 const selectAccessoriesManSubcategory = async () => {
@@ -141,7 +145,7 @@ const selectAccessoriesManSubcategory = async () => {
 };
 
 const selectCapsMan = async () => {
-  await selectProduct("Bonés Masculino", 5, selectAccessoriesManSubcategory, 'caps-man');
+  await selectProduct("Bonés Masculino", 11, selectAccessoriesManSubcategory, 'caps-man');
 };
 
 const selectWalletsMan = async () => {
@@ -185,4 +189,5 @@ module.exports = {
     selectShortsJeansWoman,
     selectPantsJeansWoman,
     selectPantsLeggingWoman,
+    selectUnderwearMan,
 };

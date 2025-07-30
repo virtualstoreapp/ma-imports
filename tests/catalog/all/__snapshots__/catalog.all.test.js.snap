@@ -22,13 +22,49 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
             <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
             <ul class="submenu">
               <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                    <button data-category="wallets-man">Carteiras</button>
+                    <button data-category="belts-man">Cintos</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu">
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                    <button data-category="socks-man">Meias</button>
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu">
                   <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
                     <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
                     <ul class="submenu">
                       <li class="menu-item">
                         <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
                       </li>
                     </ul>
                     <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
@@ -40,6 +76,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
                         <button data-category="dress-shirts-man">Sociais</button>
                       </li>
                     </ul>
+                    <button data-category="underwear-man-subcategory" aria-expanded="false">Cuecas</button>
                     <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
                     <ul class="submenu">
                       <li class="menu-item">
@@ -47,58 +84,6 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
                         <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
-                    <ul class="submenu">
-                      <li class="menu-item">
-                        <button data-category="pants-sweatpants-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="pants-jeans-man">Jeans</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="socks-man">Meias</button>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
-                <ul class="submenu">
-                  <li class="menu-item">
-                    <button data-category="caps-man">Bonés</button>
-                    <button data-category="wallets-man">Carteiras</button>
-                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -131,8 +116,6 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
                     <ul class="submenu">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                      </li>
-                      <li class="menu-item">
                         <button data-category="pants-legging-woman">Legging</button>
                       </li>
                     </ul>
@@ -168,6 +151,190 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
   <main>
     <h2 id="category-heading">Novidades</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/man/caps/2907251536-los-angeles.jpeg" alt="[2907251536] Los Angeles">
+          <div class="product-details">
+            <h3>[2907251536] Los Angeles</h3>
+            
+            
+            <span class="price">R$&nbsp;39,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/caps/2907251535-nike.jpeg" alt="[2907251535] Nike">
+          <div class="product-details">
+            <h3>[2907251535] Nike</h3>
+            
+            
+            <span class="price">R$&nbsp;39,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/caps/2907251534-lacoste.jpeg" alt="[2907251534] Lacoste">
+          <div class="product-details">
+            <h3>[2907251534] Lacoste</h3>
+            
+            
+            <span class="price">R$&nbsp;39,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/caps/2907251533-adidas.jpeg" alt="[2907251533] Adidas">
+          <div class="product-details">
+            <h3>[2907251533] Adidas</h3>
+            
+            
+            <span class="price">R$&nbsp;39,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/caps/2907251533-nike.jpeg" alt="[2907251533] Nike">
+          <div class="product-details">
+            <h3>[2907251533] Nike</h3>
+            
+            
+            <span class="price">R$&nbsp;39,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/caps/2907251532-nike.jpeg" alt="[2907251532] Nike">
+          <div class="product-details">
+            <h3>[2907251532] Nike</h3>
+            
+            
+            <span class="price">R$&nbsp;39,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/socks/2907251531-nike.jpeg" alt="[2907251531] Nike">
+          <div class="product-details">
+            <h3>[2907251531] Nike</h3>
+            <p class="description">Meia de algodão cano baixo - soquete</p>
+            <span class="size">Tamanho: 37 ao 44</span>
+            <span class="price">R$&nbsp;24,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/socks/2907251530-nike.jpeg" alt="[2907251530] Nike">
+          <div class="product-details">
+            <h3>[2907251530] Nike</h3>
+            <p class="description">Meia de algodão cano baixo - soquete</p>
+            <span class="size">Tamanho: 37 ao 44</span>
+            <span class="price">R$&nbsp;24,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/underwear/2907251514-calvin-klein.jpeg" alt="[2907251514] Calvin Klein">
+          <div class="product-details">
+            <h3>[2907251514] Calvin Klein</h3>
+            <p class="description">Cueca Masculina</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;23,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/underwear/2907251513-gucci.jpeg" alt="[2907251513] Gucci">
+          <div class="product-details">
+            <h3>[2907251513] Gucci</h3>
+            <p class="description">Cueca Masculina</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;23,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/underwear/2907251512-gucci.jpeg" alt="[2907251512] Gucci">
+          <div class="product-details">
+            <h3>[2907251512] Gucci</h3>
+            <p class="description">Cueca Masculina</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;23,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/underwear/2907251511-hugo-boss.jpeg" alt="[2907251511] Hugo Boss">
+          <div class="product-details">
+            <h3>[2907251511] Hugo Boss</h3>
+            <p class="description">Cueca Masculina</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;23,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/underwear/2907251510-tommy-hilfiger.jpeg" alt="[2907251510] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[2907251510] Tommy Hilfiger</h3>
+            <p class="description">Cueca Masculina</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;23,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/underwear/2907251509-nike-pro.jpeg" alt="[2907251509] Nike Pro">
+          <div class="product-details">
+            <h3>[2907251509] Nike Pro</h3>
+            <p class="description">Cueca Masculina</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;23,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/underwear/2907251508-armani.jpeg" alt="[2907251508] Armani">
+          <div class="product-details">
+            <h3>[2907251508] Armani</h3>
+            <p class="description">Cueca Masculina</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;23,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/underwear/2907251507-tommy-hilfiger.jpeg" alt="[2907251507] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[2907251507] Tommy Hilfiger</h3>
+            <p class="description">Cueca Masculina</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;23,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/underwear/2907251506-armani.jpeg" alt="[2907251506] Armani">
+          <div class="product-details">
+            <h3>[2907251506] Armani</h3>
+            <p class="description">Cueca Masculina</p>
+            <span class="size">Tamanho: G1</span>
+            <span class="price">R$&nbsp;23,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/underwear/2907251505-tommy-hilfiger.jpeg" alt="[2907251505] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[2907251505] Tommy Hilfiger</h3>
+            <p class="description">Cueca Masculina</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;23,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/underwear/2907251504-gucci.jpeg" alt="[2907251504] Gucci">
+          <div class="product-details">
+            <h3>[2907251504] Gucci</h3>
+            <p class="description">Cueca Masculina</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;23,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/underwear/2907251503-nike-pro.jpeg" alt="[2907251503] Nike Pro">
+          <div class="product-details">
+            <h3>[2907251503] Nike Pro</h3>
+            <p class="description">Cueca Masculina</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;23,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/underwear/2907251502-armani.jpeg" alt="[2907251502] Armani">
+          <div class="product-details">
+            <h3>[2907251502] Armani</h3>
+            <p class="description">Cueca Masculina</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;23,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/underwear/2907251501-gucci.jpeg" alt="[2907251501] Gucci">
+          <div class="product-details">
+            <h3>[2907251501] Gucci</h3>
+            <p class="description">Cueca Masculina</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;23,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/underwear/2907251500-gucci.jpeg" alt="[2907251500] Gucci">
+          <div class="product-details">
+            <h3>[2907251500] Gucci</h3>
+            <p class="description">Cueca Masculina</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;23,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/wallets/2307251259-reserva.jpeg" alt="[2307251259] Reserva">
           <div class="product-details">
             <h3>[2307251259] Reserva</h3>
@@ -642,7 +809,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;139,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/ralph-lauren/0106250956-ralph-lauren.jpeg" alt="[0106250956] Ralph Lauren">
+          <img src="images/man/caps/0106250956-ralph-lauren.jpeg" alt="[0106250956] Ralph Lauren">
           <div class="product-details">
             <h3>[0106250956] Ralph Lauren</h3>
             <p class="description">Cor: Cinza Escuro</p>
@@ -650,7 +817,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/polo/0106250955-polo.jpeg" alt="[0106250955] Polo">
+          <img src="images/man/caps/0106250955-polo.jpeg" alt="[0106250955] Polo">
           <div class="product-details">
             <h3>[0106250955] Polo</h3>
             <p class="description">Cor: Amarela</p>
@@ -658,7 +825,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/polo/0106250954-polo.jpeg" alt="[0106250954] Polo">
+          <img src="images/man/caps/0106250954-polo.jpeg" alt="[0106250954] Polo">
           <div class="product-details">
             <h3>[0106250954] Polo</h3>
             <p class="description">Cor: Bege</p>
@@ -666,7 +833,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/polo/0106250953-polo.jpeg" alt="[0106250953] Polo">
+          <img src="images/man/caps/0106250953-polo.jpeg" alt="[0106250953] Polo">
           <div class="product-details">
             <h3>[0106250953] Polo</h3>
             <p class="description">Cor: Branca</p>
@@ -674,7 +841,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/polo/0106250949-polo.jpeg" alt="[0106250949] Polo">
+          <img src="images/man/caps/0106250949-polo.jpeg" alt="[0106250949] Polo">
           <div class="product-details">
             <h3>[0106250949] Polo</h3>
             <p class="description">Cor: Verde</p>
@@ -703,7 +870,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
             <h3>[0106250834] Adidas</h3>
             <p class="description">Meia de algodão cano alto</p>
             <span class="size">Tamanho: Consultar</span>
-            <span class="price">R$&nbsp;21,90</span>
+            <span class="price">R$&nbsp;24,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/socks/0106250833-oakley.jpeg" alt="[0106250833] Oakley">
@@ -711,7 +878,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
             <h3>[0106250833] Oakley</h3>
             <p class="description">Meia de algodão cano alto</p>
             <span class="size">Tamanho: Consultar</span>
-            <span class="price">R$&nbsp;21,90</span>
+            <span class="price">R$&nbsp;24,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/socks/0106250832-tommy-hilfiger.jpeg" alt="[0106250832] Tommy Hilfiger">
@@ -719,7 +886,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
             <h3>[0106250832] Tommy Hilfiger</h3>
             <p class="description">Meia de algodão cano alto</p>
             <span class="size">Tamanho: Consultar</span>
-            <span class="price">R$&nbsp;21,90</span>
+            <span class="price">R$&nbsp;24,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/socks/0106250831-tommy-hilfiger.jpeg" alt="[0106250831] Tommy Hilfiger">
@@ -727,7 +894,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
             <h3>[0106250831] Tommy Hilfiger</h3>
             <p class="description">Meia de algodão cano alto</p>
             <span class="size">Tamanho: Consultar</span>
-            <span class="price">R$&nbsp;21,90</span>
+            <span class="price">R$&nbsp;24,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/socks/0106250830-quicksilver.jpeg" alt="[0106250830] Quiksilver">
@@ -1839,7 +2006,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.33.205</p>
+    <p>Versão: 5.6.0 - 0.33.228</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1885,13 +2052,49 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
             <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
             <ul class="submenu">
               <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                    <button data-category="wallets-man">Carteiras</button>
+                    <button data-category="belts-man">Cintos</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu">
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                    <button data-category="socks-man">Meias</button>
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
                 <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
                 <ul class="submenu">
                   <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
                     <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
                     <ul class="submenu">
                       <li class="menu-item">
                         <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
                       </li>
                     </ul>
                     <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
@@ -1903,6 +2106,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
                         <button data-category="dress-shirts-man">Sociais</button>
                       </li>
                     </ul>
+                    <button data-category="underwear-man-subcategory" aria-expanded="false">Cuecas</button>
                     <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
                     <ul class="submenu">
                       <li class="menu-item">
@@ -1910,58 +2114,6 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
                         <button data-category="tank-top-dryfit-man">Dry Fit</button>
                       </li>
                     </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
-                    <ul class="submenu">
-                      <li class="menu-item">
-                        <button data-category="shorts-basic-man">Básica</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-jeans-man">Jeans</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-sweatshorts-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="shorts-tactel-man">Tactel</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item has-submenu">
-                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
-                    <ul class="submenu">
-                      <li class="menu-item">
-                        <button data-category="pants-sweatpants-man">Moletom</button>
-                      </li>
-                      <li class="menu-item">
-                        <button data-category="pants-jeans-man">Jeans</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
-                <ul class="submenu">
-                  <li class="menu-item">
-                    <button data-category="shoes-man">Tênis</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="slippers-man">Chinelos</button>
-                  </li>
-                  <li class="menu-item">
-                    <button data-category="socks-man">Meias</button>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item has-submenu">
-                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
-                <ul class="submenu">
-                  <li class="menu-item">
-                    <button data-category="caps-man">Bonés</button>
-                    <button data-category="wallets-man">Carteiras</button>
-                    <button data-category="belts-man">Cintos</button>
                   </li>
                 </ul>
               </li>
@@ -1994,8 +2146,6 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
                     <ul class="submenu">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                      </li>
-                      <li class="menu-item">
                         <button data-category="pants-legging-woman">Legging</button>
                       </li>
                     </ul>
@@ -2031,6 +2181,190 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
   <main>
     <h2 id="category-heading">Novidades</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/man/caps/2907251536-los-angeles.jpeg" alt="[2907251536] Los Angeles">
+          <div class="product-details">
+            <h3>[2907251536] Los Angeles</h3>
+            
+            
+            <span class="price">R$&nbsp;39,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/caps/2907251535-nike.jpeg" alt="[2907251535] Nike">
+          <div class="product-details">
+            <h3>[2907251535] Nike</h3>
+            
+            
+            <span class="price">R$&nbsp;39,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/caps/2907251534-lacoste.jpeg" alt="[2907251534] Lacoste">
+          <div class="product-details">
+            <h3>[2907251534] Lacoste</h3>
+            
+            
+            <span class="price">R$&nbsp;39,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/caps/2907251533-adidas.jpeg" alt="[2907251533] Adidas">
+          <div class="product-details">
+            <h3>[2907251533] Adidas</h3>
+            
+            
+            <span class="price">R$&nbsp;39,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/caps/2907251533-nike.jpeg" alt="[2907251533] Nike">
+          <div class="product-details">
+            <h3>[2907251533] Nike</h3>
+            
+            
+            <span class="price">R$&nbsp;39,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/caps/2907251532-nike.jpeg" alt="[2907251532] Nike">
+          <div class="product-details">
+            <h3>[2907251532] Nike</h3>
+            
+            
+            <span class="price">R$&nbsp;39,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/socks/2907251531-nike.jpeg" alt="[2907251531] Nike">
+          <div class="product-details">
+            <h3>[2907251531] Nike</h3>
+            <p class="description">Meia de algodão cano baixo - soquete</p>
+            <span class="size">Tamanho: 37 ao 44</span>
+            <span class="price">R$&nbsp;24,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/socks/2907251530-nike.jpeg" alt="[2907251530] Nike">
+          <div class="product-details">
+            <h3>[2907251530] Nike</h3>
+            <p class="description">Meia de algodão cano baixo - soquete</p>
+            <span class="size">Tamanho: 37 ao 44</span>
+            <span class="price">R$&nbsp;24,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/underwear/2907251514-calvin-klein.jpeg" alt="[2907251514] Calvin Klein">
+          <div class="product-details">
+            <h3>[2907251514] Calvin Klein</h3>
+            <p class="description">Cueca Masculina</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;23,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/underwear/2907251513-gucci.jpeg" alt="[2907251513] Gucci">
+          <div class="product-details">
+            <h3>[2907251513] Gucci</h3>
+            <p class="description">Cueca Masculina</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;23,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/underwear/2907251512-gucci.jpeg" alt="[2907251512] Gucci">
+          <div class="product-details">
+            <h3>[2907251512] Gucci</h3>
+            <p class="description">Cueca Masculina</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;23,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/underwear/2907251511-hugo-boss.jpeg" alt="[2907251511] Hugo Boss">
+          <div class="product-details">
+            <h3>[2907251511] Hugo Boss</h3>
+            <p class="description">Cueca Masculina</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;23,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/underwear/2907251510-tommy-hilfiger.jpeg" alt="[2907251510] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[2907251510] Tommy Hilfiger</h3>
+            <p class="description">Cueca Masculina</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;23,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/underwear/2907251509-nike-pro.jpeg" alt="[2907251509] Nike Pro">
+          <div class="product-details">
+            <h3>[2907251509] Nike Pro</h3>
+            <p class="description">Cueca Masculina</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;23,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/underwear/2907251508-armani.jpeg" alt="[2907251508] Armani">
+          <div class="product-details">
+            <h3>[2907251508] Armani</h3>
+            <p class="description">Cueca Masculina</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;23,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/underwear/2907251507-tommy-hilfiger.jpeg" alt="[2907251507] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[2907251507] Tommy Hilfiger</h3>
+            <p class="description">Cueca Masculina</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;23,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/underwear/2907251506-armani.jpeg" alt="[2907251506] Armani">
+          <div class="product-details">
+            <h3>[2907251506] Armani</h3>
+            <p class="description">Cueca Masculina</p>
+            <span class="size">Tamanho: G1</span>
+            <span class="price">R$&nbsp;23,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/underwear/2907251505-tommy-hilfiger.jpeg" alt="[2907251505] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[2907251505] Tommy Hilfiger</h3>
+            <p class="description">Cueca Masculina</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;23,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/underwear/2907251504-gucci.jpeg" alt="[2907251504] Gucci">
+          <div class="product-details">
+            <h3>[2907251504] Gucci</h3>
+            <p class="description">Cueca Masculina</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;23,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/underwear/2907251503-nike-pro.jpeg" alt="[2907251503] Nike Pro">
+          <div class="product-details">
+            <h3>[2907251503] Nike Pro</h3>
+            <p class="description">Cueca Masculina</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;23,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/underwear/2907251502-armani.jpeg" alt="[2907251502] Armani">
+          <div class="product-details">
+            <h3>[2907251502] Armani</h3>
+            <p class="description">Cueca Masculina</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;23,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/underwear/2907251501-gucci.jpeg" alt="[2907251501] Gucci">
+          <div class="product-details">
+            <h3>[2907251501] Gucci</h3>
+            <p class="description">Cueca Masculina</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;23,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/underwear/2907251500-gucci.jpeg" alt="[2907251500] Gucci">
+          <div class="product-details">
+            <h3>[2907251500] Gucci</h3>
+            <p class="description">Cueca Masculina</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;23,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/wallets/2307251259-reserva.jpeg" alt="[2307251259] Reserva">
           <div class="product-details">
             <h3>[2307251259] Reserva</h3>
@@ -2505,7 +2839,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
             <span class="price">R$&nbsp;139,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/ralph-lauren/0106250956-ralph-lauren.jpeg" alt="[0106250956] Ralph Lauren">
+          <img src="images/man/caps/0106250956-ralph-lauren.jpeg" alt="[0106250956] Ralph Lauren">
           <div class="product-details">
             <h3>[0106250956] Ralph Lauren</h3>
             <p class="description">Cor: Cinza Escuro</p>
@@ -2513,7 +2847,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/polo/0106250955-polo.jpeg" alt="[0106250955] Polo">
+          <img src="images/man/caps/0106250955-polo.jpeg" alt="[0106250955] Polo">
           <div class="product-details">
             <h3>[0106250955] Polo</h3>
             <p class="description">Cor: Amarela</p>
@@ -2521,7 +2855,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/polo/0106250954-polo.jpeg" alt="[0106250954] Polo">
+          <img src="images/man/caps/0106250954-polo.jpeg" alt="[0106250954] Polo">
           <div class="product-details">
             <h3>[0106250954] Polo</h3>
             <p class="description">Cor: Bege</p>
@@ -2529,7 +2863,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/polo/0106250953-polo.jpeg" alt="[0106250953] Polo">
+          <img src="images/man/caps/0106250953-polo.jpeg" alt="[0106250953] Polo">
           <div class="product-details">
             <h3>[0106250953] Polo</h3>
             <p class="description">Cor: Branca</p>
@@ -2537,7 +2871,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/polo/0106250949-polo.jpeg" alt="[0106250949] Polo">
+          <img src="images/man/caps/0106250949-polo.jpeg" alt="[0106250949] Polo">
           <div class="product-details">
             <h3>[0106250949] Polo</h3>
             <p class="description">Cor: Verde</p>
@@ -2566,7 +2900,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
             <h3>[0106250834] Adidas</h3>
             <p class="description">Meia de algodão cano alto</p>
             <span class="size">Tamanho: Consultar</span>
-            <span class="price">R$&nbsp;21,90</span>
+            <span class="price">R$&nbsp;24,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/socks/0106250833-oakley.jpeg" alt="[0106250833] Oakley">
@@ -2574,7 +2908,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
             <h3>[0106250833] Oakley</h3>
             <p class="description">Meia de algodão cano alto</p>
             <span class="size">Tamanho: Consultar</span>
-            <span class="price">R$&nbsp;21,90</span>
+            <span class="price">R$&nbsp;24,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/socks/0106250832-tommy-hilfiger.jpeg" alt="[0106250832] Tommy Hilfiger">
@@ -2582,7 +2916,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
             <h3>[0106250832] Tommy Hilfiger</h3>
             <p class="description">Meia de algodão cano alto</p>
             <span class="size">Tamanho: Consultar</span>
-            <span class="price">R$&nbsp;21,90</span>
+            <span class="price">R$&nbsp;24,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/socks/0106250831-tommy-hilfiger.jpeg" alt="[0106250831] Tommy Hilfiger">
@@ -2590,7 +2924,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
             <h3>[0106250831] Tommy Hilfiger</h3>
             <p class="description">Meia de algodão cano alto</p>
             <span class="size">Tamanho: Consultar</span>
-            <span class="price">R$&nbsp;21,90</span>
+            <span class="price">R$&nbsp;24,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/socks/0106250830-quicksilver.jpeg" alt="[0106250830] Quiksilver">
@@ -3702,7 +4036,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.33.205</p>
+    <p>Versão: 5.6.0 - 0.33.228</p>
   </footer>
 
   <script src="scripts.js"></script>
