@@ -31,6 +31,36 @@
         "size": "Consultar"
     },
     {
+        "name": "[2907251530] Nike",
+        "description": "Meia de algodão cano baixo - soquete",
+        "oldPrice": 0.0,
+        "price": 24.90,
+        "images": [
+            "images/man/socks/2907251530-nike.jpeg"
+        ],
+        "size": "37 ao 44"
+    },
+    {
+        "name": "[2907251531] Nike",
+        "description": "Meia de algodão cano baixo - soquete",
+        "oldPrice": 0.0,
+        "price": 24.90,
+        "images": [
+            "images/man/socks/2907251531-nike.jpeg"
+        ],
+        "size": "37 ao 44"
+    },
+    {
+        "name": "[0106250833] Oakley",
+        "description": "Meia de algodão cano alto",
+        "oldPrice": 0.0,
+        "price": 24.90,
+        "images": [
+            "images/man/socks/0106250833-oakley.jpeg"
+        ],
+        "size": "Consultar"
+    },
+    {
         "name": "[0106250831] Tommy Hilfiger",
         "description": "Meia de algodão cano alto",
         "oldPrice": 0.0,
@@ -47,16 +77,6 @@
         "price": 24.90,
         "images": [
             "images/man/socks/0106250832-tommy-hilfiger.jpeg"
-        ],
-        "size": "Consultar"
-    },
-    {
-        "name": "[0106250833] Oakley",
-        "description": "Meia de algodão cano alto",
-        "oldPrice": 0.0,
-        "price": 24.90,
-        "images": [
-            "images/man/socks/0106250833-oakley.jpeg"
         ],
         "size": "Consultar"
     },
