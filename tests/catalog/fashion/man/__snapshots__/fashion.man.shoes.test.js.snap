@@ -76,6 +76,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
                         <button data-category="dress-shirts-man">Sociais</button>
                       </li>
                     </ul>
+                    <button data-category="underwear-man-subcategory" aria-expanded="false">Cuecas</button>
                     <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
@@ -445,7 +446,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.33.205</p>
+    <p>Versão: 5.6.0 - 0.33.228</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -545,6 +546,7 @@ exports[`Fashion Man Shoes Desktop View Slipers renders final subcategory "Chine
                         <button data-category="dress-shirts-man">Sociais</button>
                       </li>
                     </ul>
+                    <button data-category="underwear-man-subcategory" aria-expanded="false">Cuecas</button>
                     <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
@@ -630,7 +632,7 @@ exports[`Fashion Man Shoes Desktop View Slipers renders final subcategory "Chine
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.33.205</p>
+    <p>Versão: 5.6.0 - 0.33.228</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -730,6 +732,7 @@ exports[`Fashion Man Shoes Desktop View Socks renders final subcategory "Meias M
                         <button data-category="dress-shirts-man">Sociais</button>
                       </li>
                     </ul>
+                    <button data-category="underwear-man-subcategory" aria-expanded="false">Cuecas</button>
                     <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
@@ -809,7 +812,7 @@ exports[`Fashion Man Shoes Desktop View Socks renders final subcategory "Meias M
             <h3>[0106250834] Adidas</h3>
             <p class="description">Meia de algodão cano alto</p>
             <span class="size">Tamanho: Consultar</span>
-            <span class="price">R$&nbsp;21,90</span>
+            <span class="price">R$&nbsp;24,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/socks/0106250835-adidas.jpeg" alt="[0106250835] Adidas">
@@ -828,20 +831,20 @@ exports[`Fashion Man Shoes Desktop View Socks renders final subcategory "Meias M
             <span class="price">R$&nbsp;12,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/socks/0106250831-tommy-hilfiger.jpeg" alt="[0106250831] Tommy Hilfiger">
+          <img src="images/man/socks/2907251530-nike.jpeg" alt="[2907251530] Nike">
           <div class="product-details">
-            <h3>[0106250831] Tommy Hilfiger</h3>
-            <p class="description">Meia de algodão cano alto</p>
-            <span class="size">Tamanho: Consultar</span>
-            <span class="price">R$&nbsp;21,90</span>
+            <h3>[2907251530] Nike</h3>
+            <p class="description">Meia de algodão cano baixo - soquete</p>
+            <span class="size">Tamanho: 37 ao 44</span>
+            <span class="price">R$&nbsp;24,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/socks/0106250832-tommy-hilfiger.jpeg" alt="[0106250832] Tommy Hilfiger">
+          <img src="images/man/socks/2907251531-nike.jpeg" alt="[2907251531] Nike">
           <div class="product-details">
-            <h3>[0106250832] Tommy Hilfiger</h3>
-            <p class="description">Meia de algodão cano alto</p>
-            <span class="size">Tamanho: Consultar</span>
-            <span class="price">R$&nbsp;21,90</span>
+            <h3>[2907251531] Nike</h3>
+            <p class="description">Meia de algodão cano baixo - soquete</p>
+            <span class="size">Tamanho: 37 ao 44</span>
+            <span class="price">R$&nbsp;24,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/socks/0106250833-oakley.jpeg" alt="[0106250833] Oakley">
@@ -849,7 +852,23 @@ exports[`Fashion Man Shoes Desktop View Socks renders final subcategory "Meias M
             <h3>[0106250833] Oakley</h3>
             <p class="description">Meia de algodão cano alto</p>
             <span class="size">Tamanho: Consultar</span>
-            <span class="price">R$&nbsp;21,90</span>
+            <span class="price">R$&nbsp;24,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/socks/0106250831-tommy-hilfiger.jpeg" alt="[0106250831] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[0106250831] Tommy Hilfiger</h3>
+            <p class="description">Meia de algodão cano alto</p>
+            <span class="size">Tamanho: Consultar</span>
+            <span class="price">R$&nbsp;24,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/socks/0106250832-tommy-hilfiger.jpeg" alt="[0106250832] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[0106250832] Tommy Hilfiger</h3>
+            <p class="description">Meia de algodão cano alto</p>
+            <span class="size">Tamanho: Consultar</span>
+            <span class="price">R$&nbsp;24,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/socks/0106250830-quicksilver.jpeg" alt="[0106250830] Quiksilver">
@@ -863,7 +882,7 @@ exports[`Fashion Man Shoes Desktop View Socks renders final subcategory "Meias M
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.33.205</p>
+    <p>Versão: 5.6.0 - 0.33.228</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -963,6 +982,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
                         <button data-category="dress-shirts-man">Sociais</button>
                       </li>
                     </ul>
+                    <button data-category="underwear-man-subcategory" aria-expanded="false">Cuecas</button>
                     <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
@@ -1332,7 +1352,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.33.205</p>
+    <p>Versão: 5.6.0 - 0.33.228</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1432,6 +1452,7 @@ exports[`Fashion Man Shoes Mobile View Slipers renders final subcategory "Chinel
                         <button data-category="dress-shirts-man">Sociais</button>
                       </li>
                     </ul>
+                    <button data-category="underwear-man-subcategory" aria-expanded="false">Cuecas</button>
                     <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
@@ -1517,7 +1538,7 @@ exports[`Fashion Man Shoes Mobile View Slipers renders final subcategory "Chinel
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.33.205</p>
+    <p>Versão: 5.6.0 - 0.33.228</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1617,6 +1638,7 @@ exports[`Fashion Man Shoes Mobile View Socks renders final subcategory "Meias Ma
                         <button data-category="dress-shirts-man">Sociais</button>
                       </li>
                     </ul>
+                    <button data-category="underwear-man-subcategory" aria-expanded="false">Cuecas</button>
                     <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
@@ -1696,7 +1718,7 @@ exports[`Fashion Man Shoes Mobile View Socks renders final subcategory "Meias Ma
             <h3>[0106250834] Adidas</h3>
             <p class="description">Meia de algodão cano alto</p>
             <span class="size">Tamanho: Consultar</span>
-            <span class="price">R$&nbsp;21,90</span>
+            <span class="price">R$&nbsp;24,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/socks/0106250835-adidas.jpeg" alt="[0106250835] Adidas">
@@ -1715,20 +1737,20 @@ exports[`Fashion Man Shoes Mobile View Socks renders final subcategory "Meias Ma
             <span class="price">R$&nbsp;12,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/socks/0106250831-tommy-hilfiger.jpeg" alt="[0106250831] Tommy Hilfiger">
+          <img src="images/man/socks/2907251530-nike.jpeg" alt="[2907251530] Nike">
           <div class="product-details">
-            <h3>[0106250831] Tommy Hilfiger</h3>
-            <p class="description">Meia de algodão cano alto</p>
-            <span class="size">Tamanho: Consultar</span>
-            <span class="price">R$&nbsp;21,90</span>
+            <h3>[2907251530] Nike</h3>
+            <p class="description">Meia de algodão cano baixo - soquete</p>
+            <span class="size">Tamanho: 37 ao 44</span>
+            <span class="price">R$&nbsp;24,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/socks/0106250832-tommy-hilfiger.jpeg" alt="[0106250832] Tommy Hilfiger">
+          <img src="images/man/socks/2907251531-nike.jpeg" alt="[2907251531] Nike">
           <div class="product-details">
-            <h3>[0106250832] Tommy Hilfiger</h3>
-            <p class="description">Meia de algodão cano alto</p>
-            <span class="size">Tamanho: Consultar</span>
-            <span class="price">R$&nbsp;21,90</span>
+            <h3>[2907251531] Nike</h3>
+            <p class="description">Meia de algodão cano baixo - soquete</p>
+            <span class="size">Tamanho: 37 ao 44</span>
+            <span class="price">R$&nbsp;24,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/socks/0106250833-oakley.jpeg" alt="[0106250833] Oakley">
@@ -1736,7 +1758,23 @@ exports[`Fashion Man Shoes Mobile View Socks renders final subcategory "Meias Ma
             <h3>[0106250833] Oakley</h3>
             <p class="description">Meia de algodão cano alto</p>
             <span class="size">Tamanho: Consultar</span>
-            <span class="price">R$&nbsp;21,90</span>
+            <span class="price">R$&nbsp;24,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/socks/0106250831-tommy-hilfiger.jpeg" alt="[0106250831] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[0106250831] Tommy Hilfiger</h3>
+            <p class="description">Meia de algodão cano alto</p>
+            <span class="size">Tamanho: Consultar</span>
+            <span class="price">R$&nbsp;24,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/socks/0106250832-tommy-hilfiger.jpeg" alt="[0106250832] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[0106250832] Tommy Hilfiger</h3>
+            <p class="description">Meia de algodão cano alto</p>
+            <span class="size">Tamanho: Consultar</span>
+            <span class="price">R$&nbsp;24,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
           <img src="images/man/socks/0106250830-quicksilver.jpeg" alt="[0106250830] Quiksilver">
@@ -1750,7 +1788,7 @@ exports[`Fashion Man Shoes Mobile View Socks renders final subcategory "Meias Ma
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.33.205</p>
+    <p>Versão: 5.6.0 - 0.33.228</p>
   </footer>
 
   <script src="scripts.js"></script>

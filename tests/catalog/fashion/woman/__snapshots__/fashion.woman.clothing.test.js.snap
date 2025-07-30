@@ -76,6 +76,7 @@ exports[`Fashion Woman Clothing Desktop View Pants renders final subcategory "Ca
                         <button data-category="dress-shirts-man">Sociais</button>
                       </li>
                     </ul>
+                    <button data-category="underwear-man-subcategory" aria-expanded="false">Cuecas</button>
                     <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
@@ -177,7 +178,7 @@ exports[`Fashion Woman Clothing Desktop View Pants renders final subcategory "Ca
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.33.205</p>
+    <p>Versão: 5.6.0 - 0.33.228</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -277,6 +278,7 @@ exports[`Fashion Woman Clothing Desktop View Pants renders final subcategory "Ca
                         <button data-category="dress-shirts-man">Sociais</button>
                       </li>
                     </ul>
+                    <button data-category="underwear-man-subcategory" aria-expanded="false">Cuecas</button>
                     <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
@@ -362,7 +364,7 @@ exports[`Fashion Woman Clothing Desktop View Pants renders final subcategory "Ca
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.33.205</p>
+    <p>Versão: 5.6.0 - 0.33.228</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -462,6 +464,7 @@ exports[`Fashion Woman Clothing Desktop View Shorts renders final subcategory "B
                         <button data-category="dress-shirts-man">Sociais</button>
                       </li>
                     </ul>
+                    <button data-category="underwear-man-subcategory" aria-expanded="false">Cuecas</button>
                     <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
@@ -547,7 +550,7 @@ exports[`Fashion Woman Clothing Desktop View Shorts renders final subcategory "B
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.33.205</p>
+    <p>Versão: 5.6.0 - 0.33.228</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -647,6 +650,7 @@ exports[`Fashion Woman Clothing Desktop View Sweatshirts renders final subcatego
                         <button data-category="dress-shirts-man">Sociais</button>
                       </li>
                     </ul>
+                    <button data-category="underwear-man-subcategory" aria-expanded="false">Cuecas</button>
                     <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
@@ -732,7 +736,7 @@ exports[`Fashion Woman Clothing Desktop View Sweatshirts renders final subcatego
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.33.205</p>
+    <p>Versão: 5.6.0 - 0.33.228</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -832,6 +836,7 @@ exports[`Fashion Woman Clothing Mobile View Pants renders final subcategory "Cal
                         <button data-category="dress-shirts-man">Sociais</button>
                       </li>
                     </ul>
+                    <button data-category="underwear-man-subcategory" aria-expanded="false">Cuecas</button>
                     <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
@@ -933,7 +938,7 @@ exports[`Fashion Woman Clothing Mobile View Pants renders final subcategory "Cal
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.33.205</p>
+    <p>Versão: 5.6.0 - 0.33.228</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1033,6 +1038,7 @@ exports[`Fashion Woman Clothing Mobile View Pants renders final subcategory "Cal
                         <button data-category="dress-shirts-man">Sociais</button>
                       </li>
                     </ul>
+                    <button data-category="underwear-man-subcategory" aria-expanded="false">Cuecas</button>
                     <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
@@ -1118,7 +1124,7 @@ exports[`Fashion Woman Clothing Mobile View Pants renders final subcategory "Cal
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.33.205</p>
+    <p>Versão: 5.6.0 - 0.33.228</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1218,6 +1224,7 @@ exports[`Fashion Woman Clothing Mobile View Shorts renders final subcategory "Be
                         <button data-category="dress-shirts-man">Sociais</button>
                       </li>
                     </ul>
+                    <button data-category="underwear-man-subcategory" aria-expanded="false">Cuecas</button>
                     <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
@@ -1303,7 +1310,7 @@ exports[`Fashion Woman Clothing Mobile View Shorts renders final subcategory "Be
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.33.205</p>
+    <p>Versão: 5.6.0 - 0.33.228</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1403,6 +1410,7 @@ exports[`Fashion Woman Clothing Mobile View Sweatshirts renders final subcategor
                         <button data-category="dress-shirts-man">Sociais</button>
                       </li>
                     </ul>
+                    <button data-category="underwear-man-subcategory" aria-expanded="false">Cuecas</button>
                     <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
@@ -1488,7 +1496,7 @@ exports[`Fashion Woman Clothing Mobile View Sweatshirts renders final subcategor
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.33.205</p>
+    <p>Versão: 5.6.0 - 0.33.228</p>
   </footer>
 
   <script src="scripts.js"></script>

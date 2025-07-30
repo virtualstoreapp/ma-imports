@@ -35,7 +35,8 @@ describe('Catalog Behaviour', () => {
             "shorts-jeans-woman": [{ name: "[1107250718] Short Jeans Woman", price: 79.90 }],
             "pants-jeans-woman": [{ name: "[1107251409] Pants Jeans Woman", price: 89.90 }],
             "belts-man": [{ name: "[2307251157] Belt Man", price: 34.90 }],
-            "wallets-man": [{ name: "[2307251256] Armani Exchange", price: 24.99}],
+            "wallets-man": [{ name: "[2307251256] Wallet Man", price: 24.99}],
+            "underwear-man-subcategory": [{ name:"[2907251513] Underwear Man", price: 23.00}]
         };
 
         beforeEach(() => {
@@ -70,7 +71,8 @@ describe('Catalog Behaviour', () => {
             const productNames = productItems.map(item => item.querySelector('h3').textContent);
             
             expect(productNames).toEqual([
-                "[2307251256] Armani Exchange",
+                "[2907251513] Underwear Man",
+                "[2307251256] Wallet Man",
                 "[2307251157] Belt Man",
                 "[1107251409] Pants Jeans Woman",
                 "[1107250718] Short Jeans Woman",
