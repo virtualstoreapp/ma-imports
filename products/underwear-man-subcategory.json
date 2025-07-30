@@ -1,0 +1,152 @@
+[
+    {
+        "name": "[2907251508] Armani",
+        "description": "Cueca Masculina",
+        "oldPrice": 0.0,
+        "price": 23.00,
+        "images": [
+            "images/man/underwear/2907251508-armani.jpeg"
+        ],
+        "size": "M"
+    },
+    {
+        "name": "[2907251502] Armani",
+        "description": "Cueca Masculina",
+        "oldPrice": 0.0,
+        "price": 23.00,
+        "images": [
+            "images/man/underwear/2907251502-armani.jpeg"
+        ],
+        "size": "G"
+    },
+    {
+        "name": "[2907251506] Armani",
+        "description": "Cueca Masculina",
+        "oldPrice": 0.0,
+        "price": 23.00,
+        "images": [
+            "images/man/underwear/2907251506-armani.jpeg"
+        ],
+        "size": "G1"
+    },
+    {
+        "name": "[2907251514] Calvin Klein",
+        "description": "Cueca Masculina",
+        "oldPrice": 0.0,
+        "price": 23.00,
+        "images": [
+            "images/man/underwear/2907251514-calvin-klein.jpeg"
+        ],
+        "size": "G"
+    },
+    {
+        "name": "[2907251504] Gucci",
+        "description": "Cueca Masculina",
+        "oldPrice": 0.0,
+        "price": 23.00,
+        "images": [
+            "images/man/underwear/2907251504-gucci.jpeg"
+        ],
+        "size": "M"
+    },
+    {
+        "name": "[2907251512] Gucci",
+        "description": "Cueca Masculina",
+        "oldPrice": 0.0,
+        "price": 23.00,
+        "images": [
+            "images/man/underwear/2907251512-gucci.jpeg"
+        ],
+        "size": "M"
+    },
+    {
+        "name": "[2907251513] Gucci",
+        "description": "Cueca Masculina",
+        "oldPrice": 0.0,
+        "price": 23.00,
+        "images": [
+            "images/man/underwear/2907251513-gucci.jpeg"
+        ],
+        "size": "G"
+    },
+    {
+        "name": "[2907251500] Gucci",
+        "description": "Cueca Masculina",
+        "oldPrice": 0.0,
+        "price": 23.00,
+        "images": [
+            "images/man/underwear/2907251500-gucci.jpeg"
+        ],
+        "size": "G"
+    },
+    {
+        "name": "[2907251501] Gucci",
+        "description": "Cueca Masculina",
+        "oldPrice": 0.0,
+        "price": 23.00,
+        "images": [
+            "images/man/underwear/2907251501-gucci.jpeg"
+        ],
+        "size": "GG"
+    },
+    {
+        "name": "[2907251511] Hugo Boss",
+        "description": "Cueca Masculina",
+        "oldPrice": 0.0,
+        "price": 23.00,
+        "images": [
+            "images/man/underwear/2907251511-hugo-boss.jpeg"
+        ],
+        "size": "M"
+    },
+    {
+        "name": "[2907251509] Nike Pro",
+        "description": "Cueca Masculina",
+        "oldPrice": 0.0,
+        "price": 23.00,
+        "images": [
+            "images/man/underwear/2907251509-nike-pro.jpeg"
+        ],
+        "size": "M"
+    },
+    {
+        "name": "[2907251503] Nike Pro",
+        "description": "Cueca Masculina",
+        "oldPrice": 0.0,
+        "price": 23.00,
+        "images": [
+            "images/man/underwear/2907251503-nike-pro.jpeg"
+        ],
+        "size": "G"
+    },
+    {
+        "name": "[2907251510] Tommy Hilfiger",
+        "description": "Cueca Masculina",
+        "oldPrice": 0.0,
+        "price": 23.00,
+        "images": [
+            "images/man/underwear/2907251510-tommy-hilfiger.jpeg"
+        ],
+        "size": "M"
+    },
+    {
+        "name": "[2907251505] Tommy Hilfiger",
+        "description": "Cueca Masculina",
+        "oldPrice": 0.0,
+        "price": 23.00,
+        "images": [
+            "images/man/underwear/2907251505-tommy-hilfiger.jpeg"
+        ],
+        "size": "GG"
+    },
+    {
+        "name": "[2907251507] Tommy Hilfiger",
+        "description": "Cueca Masculina",
+        "oldPrice": 0.0,
+        "price": 23.00,
+        "images": [
+            "images/man/underwear/2907251507-tommy-hilfiger.jpeg"
+        ],
+        "size": "GG"
+    }
+]

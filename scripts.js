@@ -26,6 +26,7 @@
     'pants-legging-woman': 'Calças Legging Feminina',
     'slippers-man': 'Chinelos',
     'sweatshirts-set-children': 'Conjuntos Moletom Infantil',
+    'underwear-man-subcategory': 'Cuecas Masculina',
     'socks-man': 'Meias Masculina',
     all: 'Novidades',
     'tank-top-casual-man': 'Regatas Casuais Masculina',
