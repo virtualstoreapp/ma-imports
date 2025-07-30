@@ -1,11 +1,71 @@
 [
     {
+        "name": "[2907251533] Adidas",
+        "description": "",
+        "oldPrice": 0.0,
+        "price": 39.00,
+        "images": [
+            "images/man/caps/2907251533-adidas.jpeg"
+        ],
+        "size": "N/A"
+    },
+    {
+        "name": "[2907251534] Lacoste",
+        "description": "",
+        "oldPrice": 0.0,
+        "price": 39.00,
+        "images": [
+            "images/man/caps/2907251534-lacoste.jpeg"
+        ],
+        "size": "N/A"
+    },
+    {
+        "name": "[2907251536] Los Angeles",
+        "description": "",
+        "oldPrice": 0.0,
+        "price": 39.00,
+        "images": [
+            "images/man/caps/2907251536-los-angeles.jpeg"
+        ],
+        "size": "N/A"
+    },
+    {
+        "name": "[2907251532] Nike",
+        "description": "",
+        "oldPrice": 0.0,
+        "price": 39.00,
+        "images": [
+            "images/man/caps/2907251532-nike.jpeg"
+        ],
+        "size": "N/A"
+    },
+    {
+        "name": "[2907251533] Nike",
+        "description": "",
+        "oldPrice": 0.0,
+        "price": 39.00,
+        "images": [
+            "images/man/caps/2907251533-nike.jpeg"
+        ],
+        "size": "N/A"
+    },
+    {
+        "name": "[2907251535] Nike",
+        "description": "",
+        "oldPrice": 0.0,
+        "price": 39.00,
+        "images": [
+            "images/man/caps/2907251535-nike.jpeg"
+        ],
+        "size": "N/A"
+    },
+    {
         "name": "[0106250949] Polo",
         "description": "Cor: Verde",
         "oldPrice": 0.0,
         "price": 59.90,
         "images": [
-            "images/man/caps/polo/0106250949-polo.jpeg"
+            "images/man/caps/0106250949-polo.jpeg"
         ],
         "size": "N/A"
     },
@@ -15,7 +75,7 @@
         "oldPrice": 0.0,
         "price": 59.90,
         "images": [
-            "images/man/caps/polo/0106250953-polo.jpeg"
+            "images/man/caps/0106250953-polo.jpeg"
         ],
         "size": "N/A"
     },
@@ -25,7 +85,7 @@
         "oldPrice": 0.0,
         "price": 59.90,
         "images": [
-            "images/man/caps/polo/0106250954-polo.jpeg"
+            "images/man/caps/0106250954-polo.jpeg"
         ],
         "size": "N/A"
     },
@@ -35,7 +95,7 @@
         "oldPrice": 0.0,
         "price": 59.90,
         "images": [
-            "images/man/caps/polo/0106250955-polo.jpeg"
+            "images/man/caps/0106250955-polo.jpeg"
         ],
         "size": "N/A"
     },
@@ -45,7 +105,7 @@
         "oldPrice": 0.0,
         "price": 59.90,
         "images": [
-            "images/man/caps/ralph-lauren/0106250956-ralph-lauren.jpeg"
+            "images/man/caps/0106250956-ralph-lauren.jpeg"
         ],
         "size": "N/A"
     }
