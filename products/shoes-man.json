@@ -141,7 +141,8 @@
         "oldPrice": 219.0,
         "price": 209.0,
         "image": "images/man/shoes/nike/1202251733-nike-dunk-low-pro.jpeg",
-        "size": "42"
+        "size": "42",
+        "soldOut": true
     },
     {
         "name": "[1202251707] Nike Jordan",

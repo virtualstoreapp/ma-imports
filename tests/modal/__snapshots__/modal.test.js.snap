@@ -326,7 +326,7 @@ exports[`Modal Functionality copies the correct product ID and category to clipb
             <span class="old-price">R$&nbsp;219,00</span>
              <span class="new-price">R$&nbsp;209,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251707-nike-jordan.jpeg" alt="[1202251707] Nike Jordan">
           <div class="product-details">
             <h3>[1202251707] Nike Jordan</h3>
@@ -796,7 +796,7 @@ exports[`Modal Functionality opens modal on product click and logs GA event 1`] 
             <span class="old-price">R$&nbsp;219,00</span>
              <span class="new-price">R$&nbsp;209,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251707-nike-jordan.jpeg" alt="[1202251707] Nike Jordan">
           <div class="product-details">
             <h3>[1202251707] Nike Jordan</h3>
@@ -1266,7 +1266,7 @@ exports[`Modal Functionality redirects to WhatsApp with correct message when cli
             <span class="old-price">R$&nbsp;219,00</span>
              <span class="new-price">R$&nbsp;209,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251707-nike-jordan.jpeg" alt="[1202251707] Nike Jordan">
           <div class="product-details">
             <h3>[1202251707] Nike Jordan</h3>
@@ -1736,7 +1736,7 @@ exports[`Modal Functionality shows error alert if clipboard copy fails 1`] = `
             <span class="old-price">R$&nbsp;219,00</span>
              <span class="new-price">R$&nbsp;209,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251707-nike-jordan.jpeg" alt="[1202251707] Nike Jordan">
           <div class="product-details">
             <h3>[1202251707] Nike Jordan</h3>
