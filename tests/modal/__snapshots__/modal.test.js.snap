@@ -438,7 +438,7 @@ exports[`Modal Functionality copies the correct product ID and category to clipb
           <div class="product-details">
             <h3>[1202251757] Vans</h3>
             
-            <span class="size">Tamanho: 36</span>
+            <span class="size">Tamanho: 36, 37</span>
             <span class="old-price">R$&nbsp;259,00</span>
              <span class="new-price">R$&nbsp;249,00</span>
           </div>
@@ -446,7 +446,7 @@ exports[`Modal Functionality copies the correct product ID and category to clipb
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.33.228</p>
+    <p>Versão: 5.6.0 - 0.40.228</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -908,7 +908,7 @@ exports[`Modal Functionality opens modal on product click and logs GA event 1`] 
           <div class="product-details">
             <h3>[1202251757] Vans</h3>
             
-            <span class="size">Tamanho: 36</span>
+            <span class="size">Tamanho: 36, 37</span>
             <span class="old-price">R$&nbsp;259,00</span>
              <span class="new-price">R$&nbsp;249,00</span>
           </div>
@@ -916,7 +916,7 @@ exports[`Modal Functionality opens modal on product click and logs GA event 1`] 
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.33.228</p>
+    <p>Versão: 5.6.0 - 0.40.228</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1378,7 +1378,7 @@ exports[`Modal Functionality redirects to WhatsApp with correct message when cli
           <div class="product-details">
             <h3>[1202251757] Vans</h3>
             
-            <span class="size">Tamanho: 36</span>
+            <span class="size">Tamanho: 36, 37</span>
             <span class="old-price">R$&nbsp;259,00</span>
              <span class="new-price">R$&nbsp;249,00</span>
           </div>
@@ -1386,7 +1386,7 @@ exports[`Modal Functionality redirects to WhatsApp with correct message when cli
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.33.228</p>
+    <p>Versão: 5.6.0 - 0.40.228</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1848,7 +1848,7 @@ exports[`Modal Functionality shows error alert if clipboard copy fails 1`] = `
           <div class="product-details">
             <h3>[1202251757] Vans</h3>
             
-            <span class="size">Tamanho: 36</span>
+            <span class="size">Tamanho: 36, 37</span>
             <span class="old-price">R$&nbsp;259,00</span>
              <span class="new-price">R$&nbsp;249,00</span>
           </div>
@@ -1856,7 +1856,7 @@ exports[`Modal Functionality shows error alert if clipboard copy fails 1`] = `
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.33.228</p>
+    <p>Versão: 5.6.0 - 0.40.228</p>
   </footer>
 
   <script src="scripts.js"></script>
