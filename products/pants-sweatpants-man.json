@@ -32,6 +32,7 @@
             "images/man/pants/sweatpants/0407251233-nike-front.jpeg",
             "images/man/pants/sweatpants/0407251233-nike-back.jpeg"
         ],
-        "size": "GG"
+        "size": "GG",
+        "soldOut": true
     }
 ]

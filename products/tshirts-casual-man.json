@@ -120,7 +120,8 @@
         "images": [
             "images/man/tshirts/casual/hugo-boss/1503250633-hugo-boss.jpeg"
         ],
-        "size": "P"
+        "size": "P",
+        "soldOut": true
     },
     {
         "name": "[0103250815] Hugo Boss",

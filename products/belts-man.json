@@ -85,7 +85,8 @@
             "images/man/belts/2307251153-nike-front.jpeg",
             "images/man/belts/2307251153-nike-back.jpeg"
         ],
-        "size": "GG"
+        "size": "GG",
+        "soldOut": true
     },
     {
         "name": "[2307251155] Quicksilver",
