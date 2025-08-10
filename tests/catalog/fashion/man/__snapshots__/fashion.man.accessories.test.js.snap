@@ -222,7 +222,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "B
             
             <span class="price">R$&nbsp;59,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/caps/0106250955-polo.jpeg" alt="[0106250955] Polo">
           <div class="product-details">
             <h3>[0106250955] Polo</h3>
@@ -230,7 +230,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "B
             
             <span class="price">R$&nbsp;59,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/caps/0106250956-ralph-lauren.jpeg" alt="[0106250956] Ralph Lauren">
           <div class="product-details">
             <h3>[0106250956] Ralph Lauren</h3>
@@ -242,7 +242,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "B
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.40.228</p>
+    <p>Versão: 5.6.0 - 0.46.228</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -476,7 +476,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "C
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.40.228</p>
+    <p>Versão: 5.6.0 - 0.46.228</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -726,7 +726,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "C
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.40.228</p>
+    <p>Versão: 5.6.0 - 0.46.228</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -972,7 +972,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Bo
             
             <span class="price">R$&nbsp;59,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/caps/0106250955-polo.jpeg" alt="[0106250955] Polo">
           <div class="product-details">
             <h3>[0106250955] Polo</h3>
@@ -980,7 +980,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Bo
             
             <span class="price">R$&nbsp;59,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/caps/0106250956-ralph-lauren.jpeg" alt="[0106250956] Ralph Lauren">
           <div class="product-details">
             <h3>[0106250956] Ralph Lauren</h3>
@@ -992,7 +992,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Bo
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.40.228</p>
+    <p>Versão: 5.6.0 - 0.46.228</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1226,7 +1226,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Ca
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.40.228</p>
+    <p>Versão: 5.6.0 - 0.46.228</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1476,7 +1476,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Ci
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.40.228</p>
+    <p>Versão: 5.6.0 - 0.46.228</p>
   </footer>
 
   <script src="scripts.js"></script>
