@@ -89,7 +89,8 @@
         "images": [
             "images/man/caps/0106250954-polo.jpeg"
         ],
-        "size": "N/A"
+        "size": "N/A",
+        "soldOut": true
     },
     {
         "name": "[0106250955] Polo",
@@ -99,7 +100,8 @@
         "images": [
             "images/man/caps/0106250955-polo.jpeg"
         ],
-        "size": "N/A"
+        "size": "N/A",
+        "soldOut": true
     },
     {
         "name": "[0106250956] Ralph Lauren",
