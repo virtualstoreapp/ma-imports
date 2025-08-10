@@ -446,7 +446,7 @@ exports[`Modal Functionality copies the correct product ID and category to clipb
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.40.228</p>
+    <p>Versão: 5.6.0 - 0.46.228</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -916,7 +916,7 @@ exports[`Modal Functionality opens modal on product click and logs GA event 1`] 
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.40.228</p>
+    <p>Versão: 5.6.0 - 0.46.228</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1386,7 +1386,7 @@ exports[`Modal Functionality redirects to WhatsApp with correct message when cli
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.40.228</p>
+    <p>Versão: 5.6.0 - 0.46.228</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1856,7 +1856,7 @@ exports[`Modal Functionality shows error alert if clipboard copy fails 1`] = `
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.40.228</p>
+    <p>Versão: 5.6.0 - 0.46.228</p>
   </footer>
 
   <script src="scripts.js"></script>

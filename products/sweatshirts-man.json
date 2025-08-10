@@ -18,7 +18,8 @@
         "images": [
             "images/man/sweatshirts/0207251345-abercrombie.jpeg"
         ],
-        "size": "GG"
+        "size": "GG",
+        "soldOut": true
     },
     {
         "name": "[0207251348] Adidas",
@@ -59,7 +60,8 @@
         "images": [
             "images/man/sweatshirts/0207251347-nike.jpeg"
         ],
-        "size": "M"
+        "size": "M",
+        "soldOut": true
     },
     {
         "name": "[0806251801] Nike",
@@ -69,7 +71,7 @@
         "images": [
             "images/man/sweatshirts/0806251801-nike.jpeg"
         ],
-        "size": "M, G, GG"
+        "size": "GG"
     },
     {
         "name": "[0806251800] Nike",
