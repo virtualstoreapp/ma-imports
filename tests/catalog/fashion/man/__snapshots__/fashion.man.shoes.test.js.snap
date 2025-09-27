@@ -116,7 +116,15 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                        <button data-category="pants-legging-woman">Legging</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="fitness-woman-subcategory" aria-expanded="false">Fitness</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="fitness-legging-woman">Legging</button>
+                        <button data-category="fitness-top-woman">Top</button>
                       </li>
                     </ul>
                   </li>
@@ -586,7 +594,15 @@ exports[`Fashion Man Shoes Desktop View Slipers renders final subcategory "Chine
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                        <button data-category="pants-legging-woman">Legging</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="fitness-woman-subcategory" aria-expanded="false">Fitness</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="fitness-legging-woman">Legging</button>
+                        <button data-category="fitness-top-woman">Top</button>
                       </li>
                     </ul>
                   </li>
@@ -772,7 +788,15 @@ exports[`Fashion Man Shoes Desktop View Socks renders final subcategory "Meias M
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                        <button data-category="pants-legging-woman">Legging</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="fitness-woman-subcategory" aria-expanded="false">Fitness</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="fitness-legging-woman">Legging</button>
+                        <button data-category="fitness-top-woman">Top</button>
                       </li>
                     </ul>
                   </li>
@@ -1022,7 +1046,15 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                        <button data-category="pants-legging-woman">Legging</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="fitness-woman-subcategory" aria-expanded="false">Fitness</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="fitness-legging-woman">Legging</button>
+                        <button data-category="fitness-top-woman">Top</button>
                       </li>
                     </ul>
                   </li>
@@ -1492,7 +1524,15 @@ exports[`Fashion Man Shoes Mobile View Slipers renders final subcategory "Chinel
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                        <button data-category="pants-legging-woman">Legging</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="fitness-woman-subcategory" aria-expanded="false">Fitness</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="fitness-legging-woman">Legging</button>
+                        <button data-category="fitness-top-woman">Top</button>
                       </li>
                     </ul>
                   </li>
@@ -1678,7 +1718,15 @@ exports[`Fashion Man Shoes Mobile View Socks renders final subcategory "Meias Ma
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                        <button data-category="pants-legging-woman">Legging</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="fitness-woman-subcategory" aria-expanded="false">Fitness</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="fitness-legging-woman">Legging</button>
+                        <button data-category="fitness-top-woman">Top</button>
                       </li>
                     </ul>
                   </li>

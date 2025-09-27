@@ -116,7 +116,15 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
                     <ul class="submenu">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                        <button data-category="pants-legging-woman">Legging</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="fitness-woman-subcategory" aria-expanded="false">Fitness</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="fitness-legging-woman">Legging</button>
+                        <button data-category="fitness-top-woman">Top</button>
                       </li>
                     </ul>
                   </li>
@@ -151,6 +159,46 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
   <main>
     <h2 id="category-heading">Novidades</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/woman/pants/legging/2709252027-nike.jpeg" alt="[2709252027] Nike">
+          <div class="product-details">
+            <h3>[2709252027] Nike</h3>
+            <p class="description">Calça Legging Feminina, Cor: Preta</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;79,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/woman/pants/legging/2709252024-nike.jpeg" alt="[2709252024] Nike">
+          <div class="product-details">
+            <h3>[2709252024] Nike</h3>
+            <p class="description">Calça Legging Feminina, Cor: Preta</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;79,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/woman/pants/legging/2709252015-nike-front.jpeg" alt="[2709252015] Nike Pro">
+          <div class="product-details">
+            <h3>[2709252015] Nike Pro</h3>
+            <p class="description">Calça Legging Feminina, Cor: Preta</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;79,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/woman/pants/legging/2709252014-nike.jpeg" alt="[2709252014] Nike">
+          <div class="product-details">
+            <h3>[2709252014] Nike</h3>
+            <p class="description">Calça Legging Feminina, Cor: Azul Marinho</p>
+            <span class="size">Tamanho: M, G, GG</span>
+            <span class="price">R$&nbsp;79,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/woman/fitness/top/2709252000.jpeg" alt="[2709252000]">
+          <div class="product-details">
+            <h3>[2709252000]</h3>
+            <p class="description">Top</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;39,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/caps/2907251536-los-angeles.jpeg" alt="[2907251536] Los Angeles">
           <div class="product-details">
             <h3>[2907251536] Los Angeles</h3>
@@ -2146,7 +2194,15 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
                     <ul class="submenu">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                        <button data-category="pants-legging-woman">Legging</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="fitness-woman-subcategory" aria-expanded="false">Fitness</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="fitness-legging-woman">Legging</button>
+                        <button data-category="fitness-top-woman">Top</button>
                       </li>
                     </ul>
                   </li>
@@ -2181,6 +2237,46 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
   <main>
     <h2 id="category-heading">Novidades</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/woman/pants/legging/2709252027-nike.jpeg" alt="[2709252027] Nike">
+          <div class="product-details">
+            <h3>[2709252027] Nike</h3>
+            <p class="description">Calça Legging Feminina, Cor: Preta</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;79,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/woman/pants/legging/2709252024-nike.jpeg" alt="[2709252024] Nike">
+          <div class="product-details">
+            <h3>[2709252024] Nike</h3>
+            <p class="description">Calça Legging Feminina, Cor: Preta</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;79,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/woman/pants/legging/2709252015-nike-front.jpeg" alt="[2709252015] Nike Pro">
+          <div class="product-details">
+            <h3>[2709252015] Nike Pro</h3>
+            <p class="description">Calça Legging Feminina, Cor: Preta</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;79,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/woman/pants/legging/2709252014-nike.jpeg" alt="[2709252014] Nike">
+          <div class="product-details">
+            <h3>[2709252014] Nike</h3>
+            <p class="description">Calça Legging Feminina, Cor: Azul Marinho</p>
+            <span class="size">Tamanho: M, G, GG</span>
+            <span class="price">R$&nbsp;79,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/woman/fitness/top/2709252000.jpeg" alt="[2709252000]">
+          <div class="product-details">
+            <h3>[2709252000]</h3>
+            <p class="description">Top</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;39,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/caps/2907251536-los-angeles.jpeg" alt="[2907251536] Los Angeles">
           <div class="product-details">
             <h3>[2907251536] Los Angeles</h3>
