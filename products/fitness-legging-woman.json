@@ -1,0 +1,53 @@
+[
+    {
+        "name": "[1107250717]",
+        "description": "Calça Legging Feminina",
+        "oldPrice": 0.0,
+        "price": 89.00,
+        "images": [
+            "images/woman/fitness/legging/1107250717.jpeg"
+        ],
+        "size": "G1"
+    },
+    {
+        "name": "[2709252014] Nike",
+        "description": "Calça Legging Feminina, Cor: Azul Marinho",
+        "oldPrice": 0.0,
+        "price": 79.00,
+        "images": [
+            "images/woman/fitness/legging/2709252014-nike.jpeg"
+        ],
+        "size": "M, G, GG"
+    },
+    {
+        "name": "[2709252015] Nike Pro",
+        "description": "Calça Legging Feminina, Cor: Preta",
+        "oldPrice": 0.0,
+        "price": 79.00,
+        "images": [
+            "images/woman/fitness/legging/2709252015-nike-front.jpeg",
+            "images/woman/fitness/legging/2709252015-nike-back.jpeg"
+        ],
+        "size": "G"
+    },
+    {
+        "name": "[2709252024] Nike",
+        "description": "Calça Legging Feminina, Cor: Preta",
+        "oldPrice": 0.0,
+        "price": 79.00,
+        "images": [
+            "images/woman/fitness/legging/2709252024-nike.jpeg"
+        ],
+        "size": "GG"
+    },
+    {
+        "name": "[2709252027] Nike",
+        "description": "Calça Legging Feminina, Cor: Preta",
+        "oldPrice": 0.0,
+        "price": 79.00,
+        "images": [
+            "images/woman/fitness/legging/2709252027-nike.jpeg"
+        ],
+        "size": "G"
+    }
+]

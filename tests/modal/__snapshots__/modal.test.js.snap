@@ -116,7 +116,15 @@ exports[`Modal Functionality copies the correct product ID and category to clipb
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                        <button data-category="pants-legging-woman">Legging</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="fitness-woman-subcategory" aria-expanded="false">Fitness</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="fitness-legging-woman">Legging</button>
+                        <button data-category="fitness-top-woman">Top</button>
                       </li>
                     </ul>
                   </li>
@@ -586,7 +594,15 @@ exports[`Modal Functionality opens modal on product click and logs GA event 1`] 
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                        <button data-category="pants-legging-woman">Legging</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="fitness-woman-subcategory" aria-expanded="false">Fitness</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="fitness-legging-woman">Legging</button>
+                        <button data-category="fitness-top-woman">Top</button>
                       </li>
                     </ul>
                   </li>
@@ -1056,7 +1072,15 @@ exports[`Modal Functionality redirects to WhatsApp with correct message when cli
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                        <button data-category="pants-legging-woman">Legging</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="fitness-woman-subcategory" aria-expanded="false">Fitness</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="fitness-legging-woman">Legging</button>
+                        <button data-category="fitness-top-woman">Top</button>
                       </li>
                     </ul>
                   </li>
@@ -1526,7 +1550,15 @@ exports[`Modal Functionality shows error alert if clipboard copy fails 1`] = `
                     <ul class="submenu" style="display: none;">
                       <li class="menu-item">
                         <button data-category="pants-jeans-woman">Jeans</button>
-                        <button data-category="pants-legging-woman">Legging</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="fitness-woman-subcategory" aria-expanded="false">Fitness</button>
+                    <ul class="submenu" style="display: none;">
+                      <li class="menu-item">
+                        <button data-category="fitness-legging-woman">Legging</button>
+                        <button data-category="fitness-top-woman">Top</button>
                       </li>
                     </ul>
                   </li>

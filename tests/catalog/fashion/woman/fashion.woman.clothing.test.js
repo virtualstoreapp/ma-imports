@@ -7,7 +7,8 @@ const {
   selectSweatshirtWoman,
   selectShortsJeansWoman,
   selectPantsJeansWoman,
-  selectPantsLeggingWoman,
+  selectFitnessLeggingWoman,
+  selectFitnessTopWoman,
 } = require('../../../utils/catalogActions');
 
 describe('Fashion', () => {
@@ -34,10 +35,16 @@ describe('Fashion', () => {
                 describe('Pants', () => {
                     it('renders final subcategory "Calças Jeans Feminina" correctly on desktop', async () => {
                         await selectPantsJeansWoman();
+                    }); 
+                });
+
+                describe('Fitness', () => {
+                    it('renders final subcategory "Calças Legging Feminina" correctly on desktop', async () => {
+                        await selectFitnessLeggingWoman();
                     });
 
-                    it('renders final subcategory "Calças Legging Feminina" correctly on desktop', async () => {
-                        await selectPantsLeggingWoman();
+                    it('renders final subcategory "Top Feminino" correctly on desktop', async () => {
+                        await selectFitnessTopWoman();
                     });
                 });
             });
@@ -60,12 +67,18 @@ describe('Fashion', () => {
                 });
 
                 describe('Pants', () => {
-                    it('renders final subcategory "Calças Jeans Feminina" correctly on mobile', async () => {
+                    it('renders final subcategory "Calças Jeans Feminina" correctly on desktop', async () => {
                         await selectPantsJeansWoman();
+                    }); 
+                });
+
+                describe('Fitness', () => {
+                    it('renders final subcategory "Calças Legging Feminina" correctly on desktop', async () => {
+                        await selectFitnessLeggingWoman();
                     });
 
-                    it('renders final subcategory "Calças Legging Feminina" correctly on mobile', async () => {
-                        await selectPantsLeggingWoman();
+                    it('renders final subcategory "Top Feminino" correctly on desktop', async () => {
+                        await selectFitnessTopWoman();
                     });
                 });
             });

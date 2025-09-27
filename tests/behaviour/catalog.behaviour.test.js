@@ -31,12 +31,13 @@ describe('Catalog Behaviour', () => {
             "pants-sweatpants-man": [{ name: "[0407251439] Sweatspants Man", price: 99.00 }],
             "pants-jeans-man": [{ name: "[0507251439] Jeans Man", price: 179.00 }],
             "sweatshirts-set-children": [{ name: "[1007251313] Sweatshirt Set Children", price: 199.00 }],
-            "pants-legging-woman": [{ name: "[1107250717] Legging Woman", price: 89.00 }],
+            "fitness-legging-woman": [{ name: "[1107250717] Legging Woman", price: 89.00 }],
             "shorts-jeans-woman": [{ name: "[1107250718] Short Jeans Woman", price: 79.90 }],
             "pants-jeans-woman": [{ name: "[1107251409] Pants Jeans Woman", price: 89.90 }],
             "belts-man": [{ name: "[2307251157] Belt Man", price: 34.90 }],
             "wallets-man": [{ name: "[2307251256] Wallet Man", price: 24.99}],
-            "underwear-man-subcategory": [{ name:"[2907251513] Underwear Man", price: 23.00}]
+            "underwear-man-subcategory": [{ name:"[2907251513] Underwear Man", price: 23.00}],
+            "fitness-top-woman": [{ name: "[2709252000] Top Woman", price: 39.00 }],
         };
 
         beforeEach(() => {
@@ -71,6 +72,7 @@ describe('Catalog Behaviour', () => {
             const productNames = productItems.map(item => item.querySelector('h3').textContent);
             
             expect(productNames).toEqual([
+                "[2709252000] Top Woman",
                 "[2907251513] Underwear Man",
                 "[2307251256] Wallet Man",
                 "[2307251157] Belt Man",

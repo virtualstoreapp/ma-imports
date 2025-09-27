@@ -118,8 +118,12 @@ const selectPantsJeansWoman = async () => {
     await selectProduct("Calças Jeans Feminina", 3, selectClothingWomanSubcategory, 'pants-jeans-woman');
 }
 
-const selectPantsLeggingWoman = async () => {
-    await selectProduct("Calças Legging Feminina", 1, selectClothingWomanSubcategory, 'pants-legging-woman');
+const selectFitnessLeggingWoman = async () => {
+    await selectProduct("Calças Legging Feminina", 5, selectClothingWomanSubcategory, 'fitness-legging-woman');
+}
+
+const selectFitnessTopWoman = async () => {
+  await selectProduct("Top Feminino", 1, selectClothingWomanSubcategory, 'fitness-top-woman');
 }
 
 const selectShoesManSubcategory = async () => {
@@ -188,6 +192,7 @@ module.exports = {
     selectSweatshirtSetChildren,
     selectShortsJeansWoman,
     selectPantsJeansWoman,
-    selectPantsLeggingWoman,
+    selectFitnessLeggingWoman,
+    selectFitnessTopWoman,
     selectUnderwearMan,
 };
