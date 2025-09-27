@@ -5,7 +5,7 @@
         "oldPrice": 0.0,
         "price": 89.00,
         "images": [
-            "images/woman/pants/legging/1107250717.jpeg"
+            "images/woman/fitness/legging/1107250717.jpeg"
         ],
         "size": "G1"
     },
@@ -15,7 +15,7 @@
         "oldPrice": 0.0,
         "price": 79.00,
         "images": [
-            "images/woman/pants/legging/2709252014-nike.jpeg"
+            "images/woman/fitness/legging/2709252014-nike.jpeg"
         ],
         "size": "M, G, GG"
     },
@@ -25,8 +25,8 @@
         "oldPrice": 0.0,
         "price": 79.00,
         "images": [
-            "images/woman/pants/legging/2709252015-nike-front.jpeg",
-            "images/woman/pants/legging/2709252015-nike-back.jpeg"
+            "images/woman/fitness/legging/2709252015-nike-front.jpeg",
+            "images/woman/fitness/legging/2709252015-nike-back.jpeg"
         ],
         "size": "G"
     },
@@ -36,7 +36,7 @@
         "oldPrice": 0.0,
         "price": 79.00,
         "images": [
-            "images/woman/pants/legging/2709252024-nike.jpeg"
+            "images/woman/fitness/legging/2709252024-nike.jpeg"
         ],
         "size": "GG"
     },
@@ -46,7 +46,7 @@
         "oldPrice": 0.0,
         "price": 79.00,
         "images": [
-            "images/woman/pants/legging/2709252027-nike.jpeg"
+            "images/woman/fitness/legging/2709252027-nike.jpeg"
         ],
         "size": "G"
     }
