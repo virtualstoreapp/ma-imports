@@ -159,7 +159,7 @@ exports[`Fashion Woman Clothing Desktop View Fitness renders final subcategory "
   <main>
     <h2 id="category-heading">Calças Legging Feminina</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/woman/pants/legging/1107250717.jpeg" alt="[1107250717]">
+          <img src="images/woman/fitness/legging/1107250717.jpeg" alt="[1107250717]">
           <div class="product-details">
             <h3>[1107250717]</h3>
             <p class="description">Calça Legging Feminina</p>
@@ -167,7 +167,7 @@ exports[`Fashion Woman Clothing Desktop View Fitness renders final subcategory "
             <span class="price">R$&nbsp;89,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/woman/pants/legging/2709252014-nike.jpeg" alt="[2709252014] Nike">
+          <img src="images/woman/fitness/legging/2709252014-nike.jpeg" alt="[2709252014] Nike">
           <div class="product-details">
             <h3>[2709252014] Nike</h3>
             <p class="description">Calça Legging Feminina, Cor: Azul Marinho</p>
@@ -175,7 +175,7 @@ exports[`Fashion Woman Clothing Desktop View Fitness renders final subcategory "
             <span class="price">R$&nbsp;79,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/woman/pants/legging/2709252015-nike-front.jpeg" alt="[2709252015] Nike Pro">
+          <img src="images/woman/fitness/legging/2709252015-nike-front.jpeg" alt="[2709252015] Nike Pro">
           <div class="product-details">
             <h3>[2709252015] Nike Pro</h3>
             <p class="description">Calça Legging Feminina, Cor: Preta</p>
@@ -183,7 +183,7 @@ exports[`Fashion Woman Clothing Desktop View Fitness renders final subcategory "
             <span class="price">R$&nbsp;79,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/woman/pants/legging/2709252024-nike.jpeg" alt="[2709252024] Nike">
+          <img src="images/woman/fitness/legging/2709252024-nike.jpeg" alt="[2709252024] Nike">
           <div class="product-details">
             <h3>[2709252024] Nike</h3>
             <p class="description">Calça Legging Feminina, Cor: Preta</p>
@@ -191,7 +191,7 @@ exports[`Fashion Woman Clothing Desktop View Fitness renders final subcategory "
             <span class="price">R$&nbsp;79,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/woman/pants/legging/2709252027-nike.jpeg" alt="[2709252027] Nike">
+          <img src="images/woman/fitness/legging/2709252027-nike.jpeg" alt="[2709252027] Nike">
           <div class="product-details">
             <h3>[2709252027] Nike</h3>
             <p class="description">Calça Legging Feminina, Cor: Preta</p>
@@ -1177,7 +1177,7 @@ exports[`Fashion Woman Clothing Mobile View Fitness renders final subcategory "C
   <main>
     <h2 id="category-heading">Calças Legging Feminina</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/woman/pants/legging/1107250717.jpeg" alt="[1107250717]">
+          <img src="images/woman/fitness/legging/1107250717.jpeg" alt="[1107250717]">
           <div class="product-details">
             <h3>[1107250717]</h3>
             <p class="description">Calça Legging Feminina</p>
@@ -1185,7 +1185,7 @@ exports[`Fashion Woman Clothing Mobile View Fitness renders final subcategory "C
             <span class="price">R$&nbsp;89,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/woman/pants/legging/2709252014-nike.jpeg" alt="[2709252014] Nike">
+          <img src="images/woman/fitness/legging/2709252014-nike.jpeg" alt="[2709252014] Nike">
           <div class="product-details">
             <h3>[2709252014] Nike</h3>
             <p class="description">Calça Legging Feminina, Cor: Azul Marinho</p>
@@ -1193,7 +1193,7 @@ exports[`Fashion Woman Clothing Mobile View Fitness renders final subcategory "C
             <span class="price">R$&nbsp;79,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/woman/pants/legging/2709252015-nike-front.jpeg" alt="[2709252015] Nike Pro">
+          <img src="images/woman/fitness/legging/2709252015-nike-front.jpeg" alt="[2709252015] Nike Pro">
           <div class="product-details">
             <h3>[2709252015] Nike Pro</h3>
             <p class="description">Calça Legging Feminina, Cor: Preta</p>
@@ -1201,7 +1201,7 @@ exports[`Fashion Woman Clothing Mobile View Fitness renders final subcategory "C
             <span class="price">R$&nbsp;79,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/woman/pants/legging/2709252024-nike.jpeg" alt="[2709252024] Nike">
+          <img src="images/woman/fitness/legging/2709252024-nike.jpeg" alt="[2709252024] Nike">
           <div class="product-details">
             <h3>[2709252024] Nike</h3>
             <p class="description">Calça Legging Feminina, Cor: Preta</p>
@@ -1209,7 +1209,7 @@ exports[`Fashion Woman Clothing Mobile View Fitness renders final subcategory "C
             <span class="price">R$&nbsp;79,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/woman/pants/legging/2709252027-nike.jpeg" alt="[2709252027] Nike">
+          <img src="images/woman/fitness/legging/2709252027-nike.jpeg" alt="[2709252027] Nike">
           <div class="product-details">
             <h3>[2709252027] Nike</h3>
             <p class="description">Calça Legging Feminina, Cor: Preta</p>
