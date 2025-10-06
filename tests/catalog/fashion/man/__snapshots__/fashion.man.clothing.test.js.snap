@@ -1070,7 +1070,7 @@ exports[`Fashion Man Clothing Desktop View Shorts renders final subcategory "Ber
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;69,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shorts/sweatshorts/tommy-hilfiger/2003250854-tommy-hilfiger.jpeg" alt="[2003250854] Tommy Hilfiger">
           <div class="product-details">
             <h3>[2003250854] Tommy Hilfiger</h3>
@@ -4850,7 +4850,7 @@ exports[`Fashion Man Clothing Mobile View Shorts renders final subcategory "Berm
             <span class="size">Tamanho: GG</span>
             <span class="price">R$&nbsp;69,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shorts/sweatshorts/tommy-hilfiger/2003250854-tommy-hilfiger.jpeg" alt="[2003250854] Tommy Hilfiger">
           <div class="product-details">
             <h3>[2003250854] Tommy Hilfiger</h3>
