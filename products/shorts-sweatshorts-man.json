@@ -68,7 +68,8 @@
         "images": [
             "images/man/shorts/sweatshorts/oakley/1507251442-oakley.jpeg"
         ],
-        "size": "GG"
+        "size": "GG",
+        "soldOut": true
     },
     {
         "name": "[2003250854] Tommy Hilfiger",
