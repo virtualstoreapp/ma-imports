@@ -131,7 +131,8 @@
         "images": [
             "images/man/tshirts/casual/hugo-boss/0103250815-hugo-boss.jpeg"
         ],
-        "size": "P"
+        "size": "P",
+        "soldOut": true
     },
     {
         "name": "[0103250810] Hugo Boss",
@@ -306,8 +307,7 @@
         "images": [
             "images/man/tshirts/casual/quiksilver/1903251723-quiksilver.jpeg"
         ],
-        "size": "G",
-        "soldOut": true
+        "size": "G"
     },
     {
         "name": "[0903251015] Tommy Hilfiger",

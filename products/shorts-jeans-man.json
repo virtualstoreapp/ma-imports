@@ -8,7 +8,7 @@
             "images/man/shorts/jeans/calvin-klein/2603251654-calvin-klein-front.jpeg",
             "images/man/shorts/jeans/calvin-klein/2603251654-calvin-klein-back.jpeg"
         ],
-        "size": "42"
+        "size": "48"
     },
     {
         "name": "[2603251645] Hugo Boss",
@@ -86,5 +86,15 @@
             "images/man/shorts/jeans/tommy-hilfiger/2603251702-tommy-hilfiger-back.jpeg"
         ],
         "size": "48"
+    },
+    {
+        "name": "[1110251223]",
+        "description": "",
+        "oldPrice": 0.0,
+        "price": 79.90,
+        "images": [
+            "images/man/shorts/jeans/1109251223.jpeg"
+        ],
+        "size": "42"
     }
 ]

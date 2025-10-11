@@ -245,7 +245,7 @@ exports[`Modal Functionality copies the correct product ID and category to clipb
             <span class="size">Tamanho: 38</span>
             <span class="price">R$&nbsp;479,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251703-nike-air-force.jpeg" alt="[1202251703] Nike Air Force">
           <div class="product-details">
             <h3>[1202251703] Nike Air Force</h3>
@@ -361,7 +361,7 @@ exports[`Modal Functionality copies the correct product ID and category to clipb
             <span class="old-price">R$&nbsp;229,00</span>
              <span class="new-price">R$&nbsp;219,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251658-nike-shox.jpeg" alt="[1202251658] Nike Shox">
           <div class="product-details">
             <h3>[1202251658] Nike Shox</h3>
@@ -414,7 +414,7 @@ exports[`Modal Functionality copies the correct product ID and category to clipb
             <span class="old-price">R$&nbsp;269,00</span>
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1007251158-nike.jpeg" alt="[1007251158] Nike Shox">
           <div class="product-details">
             <h3>[1007251158] Nike Shox</h3>
@@ -454,7 +454,7 @@ exports[`Modal Functionality copies the correct product ID and category to clipb
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.46.228</p>
+    <p>Versão: 5.6.0 - 0.61.234</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -723,7 +723,7 @@ exports[`Modal Functionality opens modal on product click and logs GA event 1`] 
             <span class="size">Tamanho: 38</span>
             <span class="price">R$&nbsp;479,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251703-nike-air-force.jpeg" alt="[1202251703] Nike Air Force">
           <div class="product-details">
             <h3>[1202251703] Nike Air Force</h3>
@@ -839,7 +839,7 @@ exports[`Modal Functionality opens modal on product click and logs GA event 1`] 
             <span class="old-price">R$&nbsp;229,00</span>
              <span class="new-price">R$&nbsp;219,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251658-nike-shox.jpeg" alt="[1202251658] Nike Shox">
           <div class="product-details">
             <h3>[1202251658] Nike Shox</h3>
@@ -892,7 +892,7 @@ exports[`Modal Functionality opens modal on product click and logs GA event 1`] 
             <span class="old-price">R$&nbsp;269,00</span>
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1007251158-nike.jpeg" alt="[1007251158] Nike Shox">
           <div class="product-details">
             <h3>[1007251158] Nike Shox</h3>
@@ -932,7 +932,7 @@ exports[`Modal Functionality opens modal on product click and logs GA event 1`] 
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.46.228</p>
+    <p>Versão: 5.6.0 - 0.61.234</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1201,7 +1201,7 @@ exports[`Modal Functionality redirects to WhatsApp with correct message when cli
             <span class="size">Tamanho: 38</span>
             <span class="price">R$&nbsp;479,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251703-nike-air-force.jpeg" alt="[1202251703] Nike Air Force">
           <div class="product-details">
             <h3>[1202251703] Nike Air Force</h3>
@@ -1317,7 +1317,7 @@ exports[`Modal Functionality redirects to WhatsApp with correct message when cli
             <span class="old-price">R$&nbsp;229,00</span>
              <span class="new-price">R$&nbsp;219,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251658-nike-shox.jpeg" alt="[1202251658] Nike Shox">
           <div class="product-details">
             <h3>[1202251658] Nike Shox</h3>
@@ -1370,7 +1370,7 @@ exports[`Modal Functionality redirects to WhatsApp with correct message when cli
             <span class="old-price">R$&nbsp;269,00</span>
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1007251158-nike.jpeg" alt="[1007251158] Nike Shox">
           <div class="product-details">
             <h3>[1007251158] Nike Shox</h3>
@@ -1410,7 +1410,7 @@ exports[`Modal Functionality redirects to WhatsApp with correct message when cli
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.46.228</p>
+    <p>Versão: 5.6.0 - 0.61.234</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1679,7 +1679,7 @@ exports[`Modal Functionality shows error alert if clipboard copy fails 1`] = `
             <span class="size">Tamanho: 38</span>
             <span class="price">R$&nbsp;479,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251703-nike-air-force.jpeg" alt="[1202251703] Nike Air Force">
           <div class="product-details">
             <h3>[1202251703] Nike Air Force</h3>
@@ -1795,7 +1795,7 @@ exports[`Modal Functionality shows error alert if clipboard copy fails 1`] = `
             <span class="old-price">R$&nbsp;229,00</span>
              <span class="new-price">R$&nbsp;219,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251658-nike-shox.jpeg" alt="[1202251658] Nike Shox">
           <div class="product-details">
             <h3>[1202251658] Nike Shox</h3>
@@ -1848,7 +1848,7 @@ exports[`Modal Functionality shows error alert if clipboard copy fails 1`] = `
             <span class="old-price">R$&nbsp;269,00</span>
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1007251158-nike.jpeg" alt="[1007251158] Nike Shox">
           <div class="product-details">
             <h3>[1007251158] Nike Shox</h3>
@@ -1888,7 +1888,7 @@ exports[`Modal Functionality shows error alert if clipboard copy fails 1`] = `
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.46.228</p>
+    <p>Versão: 5.6.0 - 0.61.234</p>
   </footer>
 
   <script src="scripts.js"></script>

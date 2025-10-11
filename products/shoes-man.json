@@ -69,7 +69,8 @@
         "oldPrice": 0.0,
         "price": 479.0,
         "image": "images/man/shoes/mizuno/1104250021-mizuno.jpeg",
-        "size": "38"
+        "size": "38",
+        "soldOut": true
     },
     {
         "name": "[1202251703] Nike Air Force",
@@ -164,7 +165,8 @@
         "oldPrice": 229.0,
         "price": 219.0,
         "image": "images/man/shoes/nike/1202251716-nike-r4.jpeg",
-        "size": "35"
+        "size": "35",
+        "soldOut": true
     },
     {
         "name": "[1202251658] Nike Shox",
@@ -207,7 +209,8 @@
         "oldPrice": 269.0,
         "price": 259.0,
         "image": "images/man/shoes/nike/1007251157-nike.jpeg",
-        "size": "40"
+        "size": "40",
+        "soldOut": true
     },
     {
         "name": "[1007251158] Nike Shox",
