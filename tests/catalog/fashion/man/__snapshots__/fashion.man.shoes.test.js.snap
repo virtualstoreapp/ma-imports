@@ -245,7 +245,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
             <span class="size">Tamanho: 38</span>
             <span class="price">R$&nbsp;479,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251703-nike-air-force.jpeg" alt="[1202251703] Nike Air Force">
           <div class="product-details">
             <h3>[1202251703] Nike Air Force</h3>
@@ -361,7 +361,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
             <span class="old-price">R$&nbsp;229,00</span>
              <span class="new-price">R$&nbsp;219,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251658-nike-shox.jpeg" alt="[1202251658] Nike Shox">
           <div class="product-details">
             <h3>[1202251658] Nike Shox</h3>
@@ -414,7 +414,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
             <span class="old-price">R$&nbsp;269,00</span>
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1007251158-nike.jpeg" alt="[1007251158] Nike Shox">
           <div class="product-details">
             <h3>[1007251158] Nike Shox</h3>
@@ -454,7 +454,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.46.228</p>
+    <p>Versão: 5.6.0 - 0.61.234</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -648,7 +648,7 @@ exports[`Fashion Man Shoes Desktop View Slipers renders final subcategory "Chine
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.46.228</p>
+    <p>Versão: 5.6.0 - 0.61.234</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -878,7 +878,7 @@ exports[`Fashion Man Shoes Desktop View Socks renders final subcategory "Meias M
             <span class="size">Tamanho: Consultar</span>
             <span class="price">R$&nbsp;24,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/socks/0106250831-tommy-hilfiger.jpeg" alt="[0106250831] Tommy Hilfiger">
           <div class="product-details">
             <h3>[0106250831] Tommy Hilfiger</h3>
@@ -906,7 +906,7 @@ exports[`Fashion Man Shoes Desktop View Socks renders final subcategory "Meias M
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.46.228</p>
+    <p>Versão: 5.6.0 - 0.61.234</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1175,7 +1175,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
             <span class="size">Tamanho: 38</span>
             <span class="price">R$&nbsp;479,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251703-nike-air-force.jpeg" alt="[1202251703] Nike Air Force">
           <div class="product-details">
             <h3>[1202251703] Nike Air Force</h3>
@@ -1291,7 +1291,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
             <span class="old-price">R$&nbsp;229,00</span>
              <span class="new-price">R$&nbsp;219,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1202251658-nike-shox.jpeg" alt="[1202251658] Nike Shox">
           <div class="product-details">
             <h3>[1202251658] Nike Shox</h3>
@@ -1344,7 +1344,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
             <span class="old-price">R$&nbsp;269,00</span>
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/shoes/nike/1007251158-nike.jpeg" alt="[1007251158] Nike Shox">
           <div class="product-details">
             <h3>[1007251158] Nike Shox</h3>
@@ -1384,7 +1384,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.46.228</p>
+    <p>Versão: 5.6.0 - 0.61.234</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1578,7 +1578,7 @@ exports[`Fashion Man Shoes Mobile View Slipers renders final subcategory "Chinel
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.46.228</p>
+    <p>Versão: 5.6.0 - 0.61.234</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -1808,7 +1808,7 @@ exports[`Fashion Man Shoes Mobile View Socks renders final subcategory "Meias Ma
             <span class="size">Tamanho: Consultar</span>
             <span class="price">R$&nbsp;24,90</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/socks/0106250831-tommy-hilfiger.jpeg" alt="[0106250831] Tommy Hilfiger">
           <div class="product-details">
             <h3>[0106250831] Tommy Hilfiger</h3>
@@ -1836,7 +1836,7 @@ exports[`Fashion Man Shoes Mobile View Socks renders final subcategory "Meias Ma
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.46.228</p>
+    <p>Versão: 5.6.0 - 0.61.234</p>
   </footer>
 
   <script src="scripts.js"></script>

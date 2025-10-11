@@ -91,7 +91,7 @@ const selectShortsBasicMan = async () => {
 };
 
 const selectShortsJeansMan = async () => {
-  await selectProduct("Bermudas Jeans Masculina", 8, selectClothingManSubcategory, 'shorts-jeans-man');
+  await selectProduct("Bermudas Jeans Masculina", 9, selectClothingManSubcategory, 'shorts-jeans-man');
 };
 
 const selectShortsJeansWoman = async () => {
