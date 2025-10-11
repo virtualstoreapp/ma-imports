@@ -58,7 +58,8 @@
         "images": [
             "images/man/socks/0106250833-oakley.jpeg"
         ],
-        "size": "Consultar"
+        "size": "Consultar",
+        "soldOut": true
     },
     {
         "name": "[0106250831] Tommy Hilfiger",

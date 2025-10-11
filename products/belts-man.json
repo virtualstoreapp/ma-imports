@@ -41,7 +41,8 @@
             "images/man/belts/2307251150-lacoste-front.jpeg",
             "images/man/belts/2307251150-lacoste-back.jpeg"
         ],
-        "size": "M"
+        "size": "M",
+        "soldOut": true
     },
     {
         "name": "[2307251152] Nike",
@@ -74,7 +75,8 @@
             "images/man/belts/2307251151-nike-front.jpeg",
             "images/man/belts/2307251151-nike-back.jpeg"
         ],
-        "size": "G"
+        "size": "G",
+        "soldOut": true
     },
     {
         "name": "[2307251153] Nike",
@@ -97,6 +99,7 @@
             "images/man/belts/2307251155-quicksilver-front.jpeg",
             "images/man/belts/2307251155-quicksilver-back.jpeg"
         ],
-        "size": "M"
+        "size": "M",
+        "soldOut": true
     }
 ]

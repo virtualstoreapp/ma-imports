@@ -58,7 +58,8 @@
         "images": [
             "images/man/shorts/sweatshorts/oakley/2003250848-oakley.jpeg"
         ],
-        "size": "G1"
+        "size": "G1",
+        "soldOut": true
     },
     {
         "name": "[1507251442] Oakley",

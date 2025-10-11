@@ -38,7 +38,8 @@
         "images": [
             "images/man/wallets/2307251254-quicksilver.jpeg"
         ],
-        "size": "Pequena"
+        "size": "Pequena",
+        "soldOut": true
     },
     {
         "name": "[2307251255] Quicksilver ",
@@ -48,7 +49,8 @@
         "images": [
             "images/man/wallets/2307251255-quicksilver.jpeg"
         ],
-        "size": "Pequena"
+        "size": "Pequena",
+        "soldOut": true
     },
     {
         "name": "[2307251259] Reserva",

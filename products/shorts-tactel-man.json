@@ -57,7 +57,8 @@
         "images": [
             "images/man/shorts/tactel/nike/0304251807-nike.jpeg"
         ],
-        "size": "M"
+        "size": "M",
+        "soldOut": true
     },
     {
         "name": "[0304251808] Nike",
