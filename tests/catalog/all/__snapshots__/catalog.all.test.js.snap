@@ -163,7 +163,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
           <div class="product-details">
             <h3>[2910251955] Calvin Klein</h3>
             <p class="description">Camiseta Polo</p>
-            <span class="size">Tamanho: GG</span>
+            <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
@@ -2305,7 +2305,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
           <div class="product-details">
             <h3>[2910251955] Calvin Klein</h3>
             <p class="description">Camiseta Polo</p>
-            <span class="size">Tamanho: GG</span>
+            <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">

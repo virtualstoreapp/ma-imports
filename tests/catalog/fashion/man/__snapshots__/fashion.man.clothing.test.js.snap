@@ -3265,7 +3265,7 @@ exports[`Fashion Man Clothing Desktop View Tshirts renders final subcategory "Ca
           <div class="product-details">
             <h3>[2910251955] Calvin Klein</h3>
             <p class="description">Camiseta Polo</p>
-            <span class="size">Tamanho: GG</span>
+            <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
@@ -7109,7 +7109,7 @@ exports[`Fashion Man Clothing Mobile View Tshirts renders final subcategory "Cam
           <div class="product-details">
             <h3>[2910251955] Calvin Klein</h3>
             <p class="description">Camiseta Polo</p>
-            <span class="size">Tamanho: GG</span>
+            <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
