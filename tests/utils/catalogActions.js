@@ -59,15 +59,15 @@ const selectSweatshirtsMan = async () => {
 };
 
 const selectTshirtsCasualMan = async () => {
-  await selectProduct("Camisetas Casuais Masculina", 41, selectClothingManSubcategory, 'tshirts-casual-man');
+  await selectProduct("Camisetas Casuais Masculina", 45, selectClothingManSubcategory, 'tshirts-casual-man');
 };
 
 const selectTshirtsDryFitMan = async () => {
-  await selectProduct("Camisetas Dry Fit Masculina", 21, selectClothingManSubcategory, 'tshirts-dryfit-man');
+  await selectProduct("Camisetas Dry Fit Masculina", 22, selectClothingManSubcategory, 'tshirts-dryfit-man');
 };
 
 const selectTshirtsPoloMan = async () => {
-  await selectProduct("Camisetas Polo Masculina", 4, selectClothingManSubcategory, 'tshirts-polo-man');
+  await selectProduct("Camisetas Polo Masculina", 5, selectClothingManSubcategory, 'tshirts-polo-man');
 };
 
 const selectDressShirtsMan = async () => {
@@ -83,7 +83,7 @@ const selectTankTopCasualMan = async () => {
 };
 
 const selectTankTopDryFitCasualMan = async () => {
-  await selectProduct("Regatas Dry Fit Masculina", 8, selectClothingManSubcategory, 'tank-top-dryfit-man');
+  await selectProduct("Regatas Dry Fit Masculina", 9, selectClothingManSubcategory, 'tank-top-dryfit-man');
 };
 
 const selectShortsBasicMan = async () => {

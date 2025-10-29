@@ -159,6 +159,62 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
   <main>
     <h2 id="category-heading">Novidades</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/polo/calvin-klein/2910251955-calvin-klein.jpeg" alt="[2910251955] Calvin Klein">
+          <div class="product-details">
+            <h3>[2910251955] Calvin Klein</h3>
+            <p class="description">Camiseta Polo</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/casual/gucci/2910251954-gucci.jpeg" alt="[2910251954] Gucci">
+          <div class="product-details">
+            <h3>[2910251954] Gucci</h3>
+            
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/casual/tommy-hilfiger/2910251952-tommy-hilfiger.jpeg" alt="[2910251952] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[2910251952] Tommy Hilfiger</h3>
+            
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/casual/hugo-boss/2910251950-hugo-boss.jpeg" alt="[2910251950] Hugo Boss">
+          <div class="product-details">
+            <h3>[2910251950] Hugo Boss</h3>
+            
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/adidas/2810251237-adidas.jpeg" alt="[2810251237] Adidas">
+          <div class="product-details">
+            <h3>[2810251237] Adidas</h3>
+            <p class="description">Dry Fit</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/casual/hang-loose/2810251230-hang-loose.jpeg" alt="[2810251230] Hang Loose">
+          <div class="product-details">
+            <h3>[2810251230] Hang Loose</h3>
+            
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/dryfit/mizuno/2810251224-mizuno.jpeg" alt="[2810251224] Mizuno">
+          <div class="product-details">
+            <h3>[2810251224] Mizuno</h3>
+            <p class="description">Dry-Fit, Cor: Preta</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/shorts/jeans/1109251223.jpeg" alt="[1110251223]">
           <div class="product-details">
             <h3>[1110251223]</h3>
@@ -2062,7 +2118,7 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.61.234</p>
+    <p>Versão: 5.6.0 - 0.61.241</p>
   </footer>
 
   <script src="scripts.js"></script>
@@ -2245,6 +2301,62 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
   <main>
     <h2 id="category-heading">Novidades</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/polo/calvin-klein/2910251955-calvin-klein.jpeg" alt="[2910251955] Calvin Klein">
+          <div class="product-details">
+            <h3>[2910251955] Calvin Klein</h3>
+            <p class="description">Camiseta Polo</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/casual/gucci/2910251954-gucci.jpeg" alt="[2910251954] Gucci">
+          <div class="product-details">
+            <h3>[2910251954] Gucci</h3>
+            
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/casual/tommy-hilfiger/2910251952-tommy-hilfiger.jpeg" alt="[2910251952] Tommy Hilfiger">
+          <div class="product-details">
+            <h3>[2910251952] Tommy Hilfiger</h3>
+            
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/casual/hugo-boss/2910251950-hugo-boss.jpeg" alt="[2910251950] Hugo Boss">
+          <div class="product-details">
+            <h3>[2910251950] Hugo Boss</h3>
+            
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/adidas/2810251237-adidas.jpeg" alt="[2810251237] Adidas">
+          <div class="product-details">
+            <h3>[2810251237] Adidas</h3>
+            <p class="description">Dry Fit</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/casual/hang-loose/2810251230-hang-loose.jpeg" alt="[2810251230] Hang Loose">
+          <div class="product-details">
+            <h3>[2810251230] Hang Loose</h3>
+            
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;39,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tank-top/dryfit/mizuno/2810251224-mizuno.jpeg" alt="[2810251224] Mizuno">
+          <div class="product-details">
+            <h3>[2810251224] Mizuno</h3>
+            <p class="description">Dry-Fit, Cor: Preta</p>
+            <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
           <img src="images/man/shorts/jeans/1109251223.jpeg" alt="[1110251223]">
           <div class="product-details">
             <h3>[1110251223]</h3>
@@ -4148,7 +4260,7 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
   </main>
 
   <footer>
-    <p>Versão: 5.6.0 - 0.61.234</p>
+    <p>Versão: 5.6.0 - 0.61.241</p>
   </footer>
 
   <script src="scripts.js"></script>
