@@ -102,6 +102,26 @@
         "size": "GG"
     },
     {
+        "name": "[2910251954] Gucci",
+        "description": "",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/man/tshirts/casual/gucci/2910251954-gucci.jpeg"
+        ],
+        "size": "GG"
+    },
+    {
+        "name": "[2810251230] Hang Loose",
+        "description": "",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/man/tshirts/casual/hang-loose/2810251230-hang-loose.jpeg"
+        ],
+        "size": "M"
+    },
+    {
         "name": "[0903251012] Hugo Boss",
         "description": "100% Algodão Penteado",
         "oldPrice": 0.0,
@@ -133,6 +153,16 @@
         ],
         "size": "P",
         "soldOut": true
+    },
+    {
+        "name": "[2910251950] Hugo Boss",
+        "description": "",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/man/tshirts/casual/hugo-boss/2910251950-hugo-boss.jpeg"
+        ],
+        "size": "M"
     },
     {
         "name": "[0103250810] Hugo Boss",
@@ -367,6 +397,16 @@
         "price": 39.90,
         "images": [
             "images/man/tshirts/casual/tommy-hilfiger/1503250626-tommy-hilfiger.jpeg"
+        ],
+        "size": "GG"
+    },
+    {
+        "name": "[2910251952] Tommy Hilfiger",
+        "description": "",
+        "oldPrice": 0.0,
+        "price": 39.90,
+        "images": [
+            "images/man/tshirts/casual/tommy-hilfiger/2910251952-tommy-hilfiger.jpeg"
         ],
         "size": "GG"
     },
