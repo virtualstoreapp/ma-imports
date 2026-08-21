@@ -2,10 +2,7 @@ const fs = require('fs');
 const os = require('os');
 const path = require('path');
 
-const {
-  readCategoryDictKeys,
-  validateCatalog,
-} = require('../../tools/lib/validate');
+const { validateCatalog } = require('../../tools/lib/validate');
 
 const ROOT = path.join(__dirname, '../..');
 
@@ -23,12 +20,56 @@ const MANIFEST = { 'images/2907251533-adidas.jpeg': { src: 'images/2907251533-ad
 let fixtureRoot;
 
 /**
- * Writes a throwaway catalog plus the scripts.js that declares its categories.
- * @param {object} categories Map of category slug to product array.
- * @param {string[]} [dictKeys] Keys to declare, defaulting to the categories written.
- * @returns {{productsDir: string, scriptsPath: string}} Fixture paths.
+ * Builds a registry shaped like loadRegistry's output, without touching disk.
+ *
+ * Wave 3 replaced the CATEGORIES_DICT scraper with catalog/categories.json, so
+ * fixtures declare their categories here instead of in a fake scripts.js.
+ * @param {string[]} leafSlugs Leaves to declare.
+ * @param {object} [options] Shape overrides.
+ * @param {string[]} [options.groupSlugs] Nav-only groups to declare.
+ * @param {object} [options.leafOverrides] Per-slug leaf field overrides.
+ * @param {object} [options.brands] Brand registry.
+ * @param {object} [options.aliases] Alias map.
+ * @returns {object} A registry.
  */
-const writeFixture = (categories, dictKeys) => {
+const fixtureRegistry = (leafSlugs, options = {}) => {
+  const { groupSlugs = [], leafOverrides = {}, brands = {}, aliases = {} } = options;
+
+  const leaves = leafSlugs.map((slug) => ({
+    slug,
+    type: 'leaf',
+    label: 'Rótulo',
+    navLabel: 'Rótulo',
+    gender: 'man',
+    category: slug,
+    imageDir: 'images',
+    usesBrandFolders: false,
+    ...(leafOverrides[slug] || {}),
+  }));
+  const groups = groupSlugs.map((slug) => ({ slug, type: 'group', navLabel: 'Grupo', children: [] }));
+  const generated = [{ slug: 'all', type: 'generated', label: 'Novidades', navLabel: 'Início' }];
+  const nodes = [...generated, ...groups, ...leaves];
+
+  return {
+    categories: { nav: nodes, aliases },
+    brands,
+    nodes,
+    leaves,
+    groups,
+    generated,
+    aliases,
+    bySlug: new Map(nodes.map((node) => [node.slug, node])),
+    leafSlugs: leaves.map((leaf) => leaf.slug),
+  };
+};
+
+/**
+ * Writes a throwaway products directory plus the index.html the nav check reads.
+ * @param {object} categories Map of category slug to product array.
+ * @param {object} [options] Passed to fixtureRegistry, plus navSlugs.
+ * @returns {object} Paths and the registry to validate against.
+ */
+const writeFixture = (categories, options = {}) => {
   const dir = fs.mkdtempSync(path.join(fixtureRoot, 'catalog-'));
   const productsDir = path.join(dir, 'products');
   fs.mkdirSync(productsDir);
@@ -37,16 +78,19 @@ const writeFixture = (categories, dictKeys) => {
     fs.writeFileSync(path.join(productsDir, `${category}.json`), JSON.stringify(products));
   }
 
-  const keys = dictKeys || Object.keys(categories);
-  const entries = [...keys.map((key) => `    '${key}': 'Rótulo',`), "    all: 'Novidades',"];
-  const scriptsPath = path.join(dir, 'scripts.js');
-  fs.writeFileSync(scriptsPath, `const CATEGORIES_DICT = {\n${entries.join('\n')}\n  }\n`);
+  const registry = options.registry || fixtureRegistry(Object.keys(categories), options);
+  const navSlugs = options.navSlugs || registry.nodes.map((node) => node.slug);
+  const indexPath = path.join(dir, 'index.html');
+  fs.writeFileSync(
+    indexPath,
+    navSlugs.map((slug) => `<button data-category="${slug}"></button>`).join('\n')
+  );
 
-  return { productsDir, scriptsPath };
+  return { productsDir, indexPath, registry };
 };
 
-const validate = (categories, dictKeys) =>
-  validateCatalog({ ...writeFixture(categories, dictKeys), manifest: MANIFEST });
+const validate = (categories, options = {}) =>
+  validateCatalog({ ...writeFixture(categories, options), manifest: MANIFEST });
 
 const withProduct = (overrides) => ({ 'caps-man': [{ ...VALID_PRODUCT, ...overrides }] });
 
@@ -58,36 +102,84 @@ afterAll(() => {
   fs.rmSync(fixtureRoot, { recursive: true, force: true });
 });
 
-describe('CATEGORIES_DICT parsing', () => {
-  it('reads the keys declared in the real scripts.js', () => {
-    const keys = readCategoryDictKeys(path.join(ROOT, 'scripts.js'));
-    expect(keys).toContain('all');
-    expect(keys).toContain('caps-man');
-    expect(keys.length).toBeGreaterThan(20);
-  });
-
-  it('throws rather than silently skipping the check when the map is gone', () => {
-    const scriptsPath = path.join(fixtureRoot, 'no-dict.js');
-    fs.writeFileSync(scriptsPath, 'const OTHER = { a: 1 };\n');
-    expect(() => readCategoryDictKeys(scriptsPath)).toThrow(/CATEGORIES_DICT/);
-  });
-});
-
-describe('Category coverage', () => {
-  it('accepts a catalog whose files and menu entries line up', () => {
+describe('Registry coverage', () => {
+  // These four defects were previously possible because category identity was
+  // declared in three places and only two were cross-checked.
+  it('accepts a catalog whose files, registry and nav line up', () => {
     expect(validate(withProduct({}))).toEqual({ errors: [], warnings: [] });
   });
 
-  it('rejects a product file with no menu entry, since it is unreachable', () => {
-    const { errors } = validate(withProduct({}), []);
-    expect(errors).toHaveLength(1);
-    expect(errors[0]).toMatch(/caps-man\.json has no CATEGORIES_DICT entry/);
+  it('rejects a product file with no leaf, since it is unreachable from the nav', () => {
+    const { errors } = validate(withProduct({}), {
+      registry: fixtureRegistry([]),
+      navSlugs: ['all'],
+    });
+    expect(errors.filter((e) => /caps-man\.json has no leaf in catalog\/categories\.json/.test(e)))
+      .toHaveLength(1);
   });
 
-  it('rejects a menu entry with no product file, since the merge would 404', () => {
-    const { errors } = validate(withProduct({}), ['caps-man', 'ghost-man']);
-    expect(errors).toHaveLength(1);
-    expect(errors[0]).toMatch(/declares "ghost-man" but products\/ghost-man\.json does not exist/);
+  it('rejects a leaf with no product file, since the fallback merge would 404', () => {
+    const { errors } = validate(withProduct({}), {
+      registry: fixtureRegistry(['caps-man', 'ghost-man']),
+    });
+    expect(errors.filter((e) => /declares leaf "ghost-man" but products\/ghost-man\.json does not exist/.test(e)))
+      .toHaveLength(1);
+  });
+
+  // This is the defect that made underwear-man-subcategory look like a group.
+  it('rejects a nav group that has a products file', () => {
+    const { errors } = validate(withProduct({}), {
+      registry: fixtureRegistry([], { groupSlugs: ['caps-man'] }),
+      navSlugs: ['all', 'caps-man'],
+    });
+    expect(errors.filter((e) => /"caps-man" is a nav group but products\/caps-man\.json exists/.test(e)))
+      .toHaveLength(1);
+  });
+
+  it('rejects a data-category the registry does not declare', () => {
+    const { errors } = validate(withProduct({}), { navSlugs: ['all', 'caps-man', 'mystery-man'] });
+    expect(errors.filter((e) => /data-category="mystery-man", which catalog\/categories\.json does not declare/.test(e)))
+      .toHaveLength(1);
+  });
+
+  it('rejects a leaf the nav never links to', () => {
+    const { errors } = validate(withProduct({}), { navSlugs: ['all'] });
+    expect(errors.filter((e) => /declares leaf "caps-man" but index\.html has no button for it/.test(e)))
+      .toHaveLength(1);
+  });
+});
+
+describe('The real registry', () => {
+  const { loadRegistry } = require('../../tools/lib/registry');
+
+  it('loads and validates against its schemas', () => {
+    expect(() => loadRegistry()).not.toThrow();
+  });
+
+  it('declares one leaf per products file, and no group with a file', () => {
+    const registry = loadRegistry();
+    const files = fs
+      .readdirSync(path.join(ROOT, 'products'))
+      .filter((file) => file.endsWith('.json'))
+      .map((file) => path.basename(file, '.json'));
+
+    expect([...registry.leafSlugs].sort()).toEqual([...files].sort());
+    expect(registry.groups.filter((group) => files.includes(group.slug))).toEqual([]);
+  });
+
+  it('covers every data-category in index.html', () => {
+    const registry = loadRegistry();
+    const html = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
+    const navSlugs = [...new Set([...html.matchAll(/data-category="([^"]+)"/g)].map(([, s]) => s))];
+
+    expect(navSlugs.filter((slug) => !registry.bySlug.has(slug))).toEqual([]);
+    expect(navSlugs).toHaveLength(46);
+  });
+
+  it('keeps the retired underwear slug resolvable', () => {
+    const registry = loadRegistry();
+    expect(registry.aliases['underwear-man-subcategory']).toBe('underwear-man');
+    expect(registry.bySlug.has('underwear-man-subcategory')).toBe(false);
   });
 });
 
@@ -143,7 +235,7 @@ describe('Schema gate', () => {
   it('accepts the real catalog unchanged, as a descriptive schema must', () => {
     const { errors } = validateCatalog({
       productsDir: path.join(ROOT, 'products'),
-      scriptsPath: path.join(ROOT, 'scripts.js'),
+      indexPath: path.join(ROOT, 'index.html'),
     });
     expect(errors).toEqual([]);
   });
@@ -223,9 +315,10 @@ describe('Image filename convention', () => {
       'images/man/belts/2907251533-gucci-back.jpeg': {},
     };
     const { errors } = validateCatalog({
-      ...writeFixture({
-        'caps-man': [{ ...VALID_PRODUCT, images: Object.keys(manifest) }],
-      }),
+      ...writeFixture(
+        { 'caps-man': [{ ...VALID_PRODUCT, images: Object.keys(manifest) }] },
+        { leafOverrides: { 'caps-man': { imageDir: 'images/man/belts' } } }
+      ),
       manifest,
     });
     expect(errors).toEqual([]);
@@ -276,6 +369,83 @@ describe('Image variant suffixes', () => {
   it('rejects a lone variant suffix on a single-image product', () => {
     const { errors } = validateWith(['images/2907251533-adidas-front.jpeg']);
     expect(errors.filter((error) => /its counterpart is missing/.test(error))).toHaveLength(1);
+  });
+});
+
+describe('Image location (rule 4a)', () => {
+  const validateAt = (images, leafOverrides) =>
+    validateCatalog({
+      ...writeFixture(
+        { 'caps-man': [{ ...VALID_PRODUCT, images }] },
+        { leafOverrides: { 'caps-man': leafOverrides }, brands: { nike: { label: 'Nike' } } }
+      ),
+      manifest: Object.fromEntries(images.map((image) => [image, {}])),
+    });
+
+  const FLAT = { imageDir: 'images/man/caps', usesBrandFolders: false };
+  const BRANDED = { imageDir: 'images/man/shoes', usesBrandFolders: true };
+
+  it('accepts a flat category image directly in its directory', () => {
+    expect(validateAt(['images/man/caps/2907251533-adidas.jpeg'], FLAT).errors).toEqual([]);
+  });
+
+  it('rejects an image outside its category directory', () => {
+    const { errors } = validateAt(['images/man/belts/2907251533-adidas.jpeg'], FLAT);
+    expect(errors.filter((e) => /is outside images\/man\/caps\//.test(e))).toHaveLength(1);
+  });
+
+  it('rejects a brand folder in a flat category', () => {
+    const { errors } = validateAt(['images/man/caps/adidas/2907251533-adidas.jpeg'], FLAT);
+    expect(errors.filter((e) => /must sit directly in images\/man\/caps\//.test(e))).toHaveLength(1);
+  });
+
+  it('accepts a branded product inside its brand folder', () => {
+    const { errors } = validateAt(['images/man/shoes/nike/2907251533-nike.jpeg'], {
+      ...BRANDED,
+    });
+    expect(errors.filter((e) => /must sit|is outside|brand folder/.test(e))).toEqual([]);
+  });
+
+  it('rejects a branded product sitting loose in a brand-folder category', () => {
+    const { errors } = validateAt(['images/man/shoes/2907251533-nike.jpeg'], BRANDED);
+    expect(errors.filter((e) => /must sit in a brand folder under images\/man\/shoes\//.test(e)))
+      .toHaveLength(1);
+  });
+
+  it('rejects a brand folder the brand registry does not declare', () => {
+    const { errors } = validateAt(['images/man/shoes/adidas/2907251533-adidas.jpeg'], BRANDED);
+    expect(errors.filter((e) => /uses brand folder "adidas", which catalog\/brands\.json does not declare/.test(e)))
+      .toHaveLength(1);
+  });
+
+  // All 6 brandless products sit directly in their category directory, which is
+  // what makes shorts-jeans-man's apparently mixed shape regular rather than a
+  // defect. A brandless product has no brand folder to go into.
+  it('accepts a brandless product loose in a brand-folder category', () => {
+    const { errors } = validateCatalog({
+      ...writeFixture(
+        { 'caps-man': [{ ...VALID_PRODUCT, name: '[2907251533]', images: ['images/man/shoes/2907251533.jpeg'] }] },
+        { leafOverrides: { 'caps-man': BRANDED } }
+      ),
+      manifest: { 'images/man/shoes/2907251533.jpeg': {} },
+    });
+    expect(errors).toEqual([]);
+  });
+
+  it('rejects a brandless product placed in a brand folder anyway', () => {
+    const { errors } = validateCatalog({
+      ...writeFixture(
+        { 'caps-man': [{ ...VALID_PRODUCT, name: '[2907251533]', images: ['images/man/shoes/nike/2907251533.jpeg'] }] },
+        { leafOverrides: { 'caps-man': BRANDED }, brands: { nike: { label: 'Nike' } } }
+      ),
+      manifest: { 'images/man/shoes/nike/2907251533.jpeg': {} },
+    });
+    expect(errors.filter((e) => /must sit directly in images\/man\/shoes\//.test(e))).toHaveLength(1);
+  });
+
+  it('rejects a path nested deeper than the convention allows', () => {
+    const { errors } = validateAt(['images/man/shoes/nike/air/2907251533-nike.jpeg'], BRANDED);
+    expect(errors.filter((e) => /must sit in a brand folder under/.test(e))).toHaveLength(1);
   });
 });
 
@@ -353,7 +523,7 @@ describe('The real catalog', () => {
   it('has no validation errors', () => {
     const { errors } = validateCatalog({
       productsDir: path.join(ROOT, 'products'),
-      scriptsPath: path.join(ROOT, 'scripts.js'),
+      indexPath: path.join(ROOT, 'index.html'),
     });
     expect(errors).toEqual([]);
   });

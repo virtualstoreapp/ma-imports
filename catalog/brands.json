@@ -1,0 +1,36 @@
+{
+  "$comment": "Canonical brand slugs and their display labels. Wave 3 seeds this with the 30 brands that appear as image-folder segments, because validator rule 4a checks folder segments against it. It is NOT yet the complete brand list: brands appearing only in flat categories (no brand folder) are absent, and products still carry their brand inside `name`. Wave 4 completes this and adds a `brand` field to every product. See docs/architecture/product-image-storage-plan.md §7.6.",
+
+  "brands": {
+    "adidas": { "label": "Adidas" },
+    "aramis": { "label": "Aramis" },
+    "armani": { "label": "Armani" },
+    "asics": { "label": "Asics" },
+    "austman": { "label": "Austman" },
+    "balmain": { "label": "Balmain" },
+    "brooksfield": { "label": "Brooksfield" },
+    "burberry": { "label": "Burberry" },
+    "calvin-klein": { "label": "Calvin Klein" },
+    "diesel": { "label": "Diesel" },
+    "dolce-gabbana": { "label": "Dolce & Gabbana" },
+    "emporio-armani": { "label": "Emporio Armani" },
+    "gucci": { "label": "Gucci" },
+    "hang-loose": { "label": "Hang Loose" },
+    "hugo-boss": { "label": "Hugo Boss" },
+    "hurley": { "label": "Hurley" },
+    "lacoste": { "label": "Lacoste" },
+    "louis-vuitton": { "label": "Louis Vuitton" },
+    "mizuno": { "label": "Mizuno" },
+    "new-balance": { "label": "New Balance" },
+    "nike": { "label": "Nike" },
+    "oakley": { "label": "Oakley" },
+    "puma": { "label": "Puma" },
+    "quiksilver": { "label": "Quiksilver" },
+    "reserva": { "label": "Reserva" },
+    "tommy-hilfiger": { "label": "Tommy Hilfiger" },
+    "under-armor": { "label": "Under Armour" },
+    "vans": { "label": "Vans" },
+    "versace": { "label": "Versace" },
+    "xtc": { "label": "XTC" }
+  }
+}

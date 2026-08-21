@@ -577,7 +577,8 @@ Validator rules, with provenance and severity:
 | 1 | Image basename begins with the product's identifier | **error** | Wave 0 ✅ | `[MEASURED]` — catches all 4 cases in §2.7 |
 | 2 | The leading numeric segment is exactly 10 digits | **error** | Wave 0 ✅ | `[MEASURED]` — 2 of the 4 cases are 11 digits |
 | 3 | Variant suffix from a closed vocabulary (`front`, `back`) | **error** | Wave 2 ✅ | `[MEASURED]` — all 23 multi-image products use exactly one `front` and one `back`; no single-image product carries either |
-| 4 | Where the leaf declares `usesBrandFolders`, the path contains the brand slug | **error** | **Wave 3** | `[MEASURED]` — 40 products currently disagree, all model conflations |
+| 4a | The image sits at the depth its leaf declares — directly in `imageDir` for a flat category, one brand folder deeper for a branded product — and any folder segment is a slug `catalog/brands.json` declares | **error** | Wave 3 ✅ | `[MEASURED]` — holds for all 264 references with zero exceptions |
+| 4b | The brand folder names the product's *own* brand | **error** | **Wave 4** | `[MEASURED]` — 40 products disagree today, all model conflations; needs the `brand` field Wave 4 adds |
 | 5 | Every file under `images/**` is referenced or allow-listed | **warning** | Wave 2 ✅ | `[MEASURED]` — would have caught `comming-soon.jpg` |
 | 6 | Product identifier uniqueness | **error** (promoted from warning) | Wave 2 ✅ | `[MEASURED]` — `validate.js` already warned because duplicates make a WhatsApp order ambiguous; 0 exist today, so enforcing is free |
 | 7 | `size` belongs to a closed per-category vocabulary | **not implemented** | — | `[ASSUMPTION]` — see RD-2 |
@@ -591,6 +592,20 @@ Validator rules, with provenance and severity:
 > the plan was written: since no single-image product carries a `front`/`back` suffix and every
 > multi-image product carries exactly one of each, the rule can key on photo count rather than on
 > distinguishing a brand token from a variant token.
+>
+> **Plan correction (found during Wave 3).** Rule 4 splits. Its structural half — that an image sits at
+> the depth its category declares, in a folder the brand registry knows — needs no product `brand`
+> field and shipped in Wave 3 as **4a**. Its brand-matching half needs `brand`, which is still fused
+> into `name`, and moves to **Wave 4** as **4b**.
+>
+> **RD-6 is resolved differently than its default.** The plan defaulted to "move `shorts-jeans-man`'s
+> loose files into brand folders". Measurement shows that is the wrong fix: the single loose file
+> belongs to `[1110251223]`, a **brandless** product, and there is no brand folder for it to go into.
+> The real rule — *branded products sit in a brand folder where the category uses them; brandless
+> products sit directly in `imageDir`* — holds for **all 264 references with zero exceptions**, and all
+> 6 brandless products already follow it. So `shorts-jeans-man` is not mixed-shape at all; it is the
+> only branded category that happens to contain a brandless product. Rule 4a encodes this, and RD-6 is
+> closed with no file moves.
 
 **v2.2's proposed rule 8 — warn when `size` contains a separator — is not part of this plan.** Under
 CON-10 a separator is legitimate (§2.4).
@@ -1097,9 +1112,9 @@ text entering `<meta content="...">` and JSON-LD needs JSON-string escaping, not
 | 0 Housekeeping + growth monitor | 4 h | high | — | **done** |
 | 1 Decouple tests | 1 d | **blocker** | — | **done** |
 | 2 Schema gate | 1 d | high | — | **done** |
-| 3 Registries (+ rule 4) | 2–3 d | high | Wave 1 | next |
+| 3 Registries (+ rule 4a) | 2–3 d | high | Wave 1 | **done** |
 | 5a Image cache + drop originals | 1–1.5 d | high | — | ready |
-| 4 Product schema v2 | 3–3.5 d | high | Waves 1–3 | blocked on 3 |
+| 4 Product schema v2 (+ rule 4b) | 3–3.5 d | high | Waves 1–3 | next |
 | 5b Runtime v2 + per-size availability + ladder | 2.5–3.5 d | medium | Wave 4 | blocked on 4 |
 | 6 Non-dev authoring | 3–4 d | **goal (CON-8)** | Waves 1–4 | blocked on 4 |
 | 7 Deep links + SEO | 2.5 d | medium (CON-11) | Wave 4 | blocked on 4 |
@@ -1123,6 +1138,24 @@ Wave 2 (`ajv` + `schemas/product.schema.json`) added the schema gate and validat
 taking the validator suite from 25 to 50 tests and the whole suite to 162. The schema accepts the
 catalog at `5be5036` unchanged, as a descriptive schema must. It is also the contract Wave 6's form
 generator will read, which is why every property carries a `description` rather than only a type.
+
+Wave 3 collapsed category identity from three declarations to one. `catalog/categories.json` now holds
+the whole nav tree (26 leaves, 19 groups, 1 generated) with each leaf's `gender`, `category`,
+`imageDir` and `usesBrandFolders`; `catalog/brands.json` holds 30 canonical brand slugs.
+`tools/lib/registry.js` loads and validates both, `tools/sync-registry.js` writes the client payload
+into `index.html` as a committed JSON literal, and the build fails when that block is stale.
+`readCategoryDictKeys` — the brace-matching scraper that recovered category names from a JavaScript
+literal — is deleted, and `underwear-man-subcategory` is renamed to `underwear-man` with an alias
+keeping old links alive. Suite: 207 tests.
+
+Two things to carry forward. The `hasOwnProperty` guard on the untrusted fragment survived the move
+into the registry and now has explicit coverage for `__proto__`, `constructor`, `toString`, `valueOf`
+and `hasOwnProperty` — the registry is parsed JSON, so a plain lookup would resolve those against
+`Object.prototype`. And `tools/sync-registry.js` delimits its generated block with unique
+`registry:start` / `registry:end` markers rather than matching the element itself: a first attempt
+anchored on an optional HTML comment, and because `[^]` matches newlines the comment group ran from
+the Open Graph comment to a later `</script>` and deleted most of `index.html`. That failure has a
+regression test.
 
 ---
 

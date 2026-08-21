@@ -6,35 +6,43 @@
   // --- Constants ---
   const WHATSAPP_NUMBER = '5519999762594';
   const ALL_CATEGORY = 'all';
-  const CATEGORIES_DICT = {
-    'sweatshirts-woman': 'Blusas Feminina',
-    'sweatshirts-man': 'Blusas Masculina',
-    'shorts-basic-man': 'Bermudas Básica Masculina',
-    'shorts-jeans-woman': 'Bermudas Jeans Feminina',
-    'shorts-jeans-man': 'Bermudas Jeans Masculina',
-    'shorts-sweatshorts-man': 'Bermudas Moletom Masculina',
-    'shorts-tactel-man': 'Bermudas Tactel Masculina',
-    'caps-man': 'Bonés Masculino',
-    'tshirts-casual-man': 'Camisetas Casuais Masculina',
-    'tshirts-dryfit-man': 'Camisetas Dry Fit Masculina',
-    'belts-man': 'Cintos Masculino',
-    'tshirts-polo-man': 'Camisetas Polo Masculina',
-    'dress-shirts-man': 'Camisetas Sociais Masculina',
-    'wallets-man': 'Carteiras Masculina',
-    'pants-sweatpants-man': 'Calças Moletom Masculina',
-    'pants-jeans-woman': 'Calças Jeans Feminina',
-    'pants-jeans-man': 'Calças Jeans Masculina',
-    'fitness-legging-woman': 'Calças Legging Feminina',
-    'fitness-top-woman': 'Top Feminino',
-    'slippers-man': 'Chinelos',
-    'sweatshirts-set-children': 'Conjuntos Moletom Infantil',
-    'underwear-man-subcategory': 'Cuecas Masculina',
-    'socks-man': 'Meias Masculina',
-    all: 'Novidades',
-    'tank-top-casual-man': 'Regatas Casuais Masculina',
-    'tank-top-dryfit-man': 'Regatas Dry Fit Masculina',
-    'shoes-man': 'Tênis',
-  }
+
+  // Category identity lives in catalog/categories.json and is injected into
+  // index.html by tools/sync-registry.js. Reading it here replaced a hand-kept
+  // CATEGORIES_DICT that had to stay in step with both the products/ filenames
+  // and the nav markup, with only the first pair ever cross-checked.
+  const readCategoryRegistry = () => {
+    // Enough to keep the homepage rendering if the block is missing: the merged
+    // catalog is one request and does not depend on the leaf list.
+    const fallback = { labels: { [ALL_CATEGORY]: 'Novidades' }, leaves: [], aliases: {} };
+
+    const element = document.getElementById('category-registry');
+    if (!element) {
+      console.error('Category registry block is missing from index.html; run `node tools/sync-registry.js`.');
+      return fallback;
+    }
+
+    try {
+      const parsed = JSON.parse(element.textContent);
+      return {
+        labels: parsed.labels && typeof parsed.labels === 'object' ? parsed.labels : fallback.labels,
+        leaves: Array.isArray(parsed.leaves) ? parsed.leaves : [],
+        aliases: parsed.aliases && typeof parsed.aliases === 'object' ? parsed.aliases : {},
+      };
+    } catch (error) {
+      console.error('Category registry block is not valid JSON:', error);
+      return fallback;
+    }
+  };
+
+  const REGISTRY = readCategoryRegistry();
+
+  // Both maps come from parsed JSON, so every lookup against them uses
+  // hasOwnProperty rather than plain indexing — see categoryFromHash.
+  const CATEGORY_LABELS = REGISTRY.labels;
+  const CATEGORY_ALIASES = REGISTRY.aliases;
+
+  const ownProperty = (object, key) => Object.prototype.hasOwnProperty.call(object, key);
 
   // --- Helper Functions ---
   const formatCurrency = (value) =>
@@ -73,7 +81,9 @@
   };
 
   const updateCategoryHeading = (category, headingEl) => {
-    headingEl.textContent = CATEGORIES_DICT[category] || 'Produtos';
+    headingEl.textContent = ownProperty(CATEGORY_LABELS, category)
+      ? CATEGORY_LABELS[category]
+      : 'Produtos';
   };
 
   const collapseAllSubmenus = () => {
@@ -314,7 +324,7 @@
     // Merge every category client-side, degrading per category so one missing
     // file no longer blanks the whole homepage.
     const mergeAllCategories = async () => {
-      const categories = Object.keys(CATEGORIES_DICT).filter(key => key !== ALL_CATEGORY);
+      const categories = REGISTRY.leaves;
       const settled = await Promise.allSettled(categories.map(fetchCategoryFile));
       const products = settled.flatMap((result, idx) => {
         if (result.status === 'rejected') {
@@ -390,7 +400,12 @@
           }
           // On the homepage the heading reads "Novidades"; the merged catalog
           // carries each product's real category, so WhatsApp gets that instead.
-          Modal.open(product, CATEGORIES_DICT[product.category] || categoryHeading.textContent);
+          Modal.open(
+            product,
+            ownProperty(CATEGORY_LABELS, product.category)
+              ? CATEGORY_LABELS[product.category]
+              : categoryHeading.textContent
+          );
         });
 
         productListContainer.appendChild(li);
@@ -401,7 +416,10 @@
       }
     };
 
-    // The fragment is untrusted, so only known categories are honoured.
+    // The fragment is untrusted, so only known categories are honoured. Both
+    // lookups go through hasOwnProperty: the registry is parsed JSON, so a
+    // fragment of "#__proto__" or "#constructor" would otherwise resolve
+    // against Object.prototype and be treated as a real category.
     const categoryFromHash = () => {
       let raw;
       try {
@@ -409,7 +427,10 @@
       } catch {
         return null;
       }
-      return Object.prototype.hasOwnProperty.call(CATEGORIES_DICT, raw) ? raw : null;
+
+      // A retired slug keeps resolving, so links shared before a rename still work.
+      const resolved = ownProperty(CATEGORY_ALIASES, raw) ? CATEGORY_ALIASES[raw] : raw;
+      return ownProperty(CATEGORY_LABELS, resolved) ? resolved : null;
     };
 
     // renderProducts writes the fragment, so it has to be read back for the

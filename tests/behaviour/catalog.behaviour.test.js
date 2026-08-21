@@ -36,7 +36,7 @@ describe('Catalog Behaviour', () => {
             "pants-jeans-woman": [{ name: "[1107251409] Pants Jeans Woman", price: 89.90 }],
             "belts-man": [{ name: "[2307251157] Belt Man", price: 34.90 }],
             "wallets-man": [{ name: "[2307251256] Wallet Man", price: 24.99}],
-            "underwear-man-subcategory": [{ name:"[2907251513] Underwear Man", price: 23.00}],
+            "underwear-man": [{ name:"[2907251513] Underwear Man", price: 23.00}],
             "fitness-top-woman": [{ name: "[2709252000] Top Woman", price: 39.00 }],
         };
 

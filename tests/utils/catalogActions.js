@@ -88,7 +88,7 @@ const selectDressShirtsMan = async () => {
 };
 
 const selectUnderwearMan = async () => {
-  await selectProduct("Cuecas Masculina", selectClothingManSubcategory, 'underwear-man-subcategory');
+  await selectProduct("Cuecas Masculina", selectClothingManSubcategory, 'underwear-man');
 };
 
 const selectTankTopCasualMan = async () => {

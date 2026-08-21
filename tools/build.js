@@ -12,8 +12,10 @@ const {
   readCategory,
 } = require('./lib/catalog');
 const { buildImageManifest } = require('./lib/images');
+const { loadRegistry, renderRegistryElement } = require('./lib/registry');
 const { buildSocialCard } = require('./lib/social');
 const { validateCatalog } = require('./lib/validate');
+const { applyBlock } = require('./sync-registry');
 
 const ROOT = path.resolve(__dirname, '..');
 const DIST = path.join(ROOT, 'dist');
@@ -169,10 +171,19 @@ const main = async () => {
   const pruned = await pruneImages(manifest, [card.path]);
   if (copied || pruned) log(`images: ${copied} original(s) copied, ${pruned} stale file(s) pruned`);
 
+  // The registry block in index.html is generated and committed, so a stale
+  // block means the catalog and the client disagree about category identity.
+  const html = await fsp.readFile(path.join(ROOT, 'index.html'), 'utf8');
+  if (applyBlock(html, renderRegistryElement(loadRegistry())) !== html) {
+    throw new Error(
+      'index.html registry block is stale — run `node tools/sync-registry.js` and commit the result'
+    );
+  }
+
   // Validated before anything is written, so a bad catalog never reaches dist/.
   const { errors, warnings } = validateCatalog({
     productsDir: PRODUCTS_DIR,
-    scriptsPath: path.join(ROOT, 'scripts.js'),
+    indexPath: path.join(ROOT, 'index.html'),
     manifest,
   });
   warnings.forEach((warning) => log(`warning: ${warning}`));

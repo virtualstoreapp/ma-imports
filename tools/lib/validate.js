@@ -5,16 +5,15 @@ const fs = require('fs');
 const path = require('path');
 
 const {
-  ALL_CATEGORY,
   PRODUCT_DATE_PATTERN,
   listCategories,
   productImages,
   readCategory,
 } = require('./catalog');
-
-const CATEGORIES_DICT_NAME = 'CATEGORIES_DICT';
+const { loadRegistry } = require('./registry');
 
 const DEFAULT_SCHEMA_PATH = path.join(__dirname, '../../schemas/product.schema.json');
+const DEFAULT_INDEX_PATH = path.join(__dirname, '../../index.html');
 
 // Images that legitimately live under images/ without belonging to a product.
 // Kept explicit so an orphan is a reported warning rather than an assumption.
@@ -96,71 +95,102 @@ const formatSchemaError = (error, category) => {
 };
 
 /**
- * Extracts the CATEGORIES_DICT keys declared in scripts.js.
- * The client uses that map for both the headings and the per-category fallback
- * merge, so a category present in only one of the two places is a real defect:
- * an unlisted file is unreachable, and a listed file that does not exist makes
- * the fallback merge request a 404.
- * @param {string} scriptsPath Path to scripts.js.
- * @returns {string[]} Declared category keys, including the generated one.
+ * Checks the registry, the products directory and the nav markup against each
+ * other. Replaces the brace-matching scraper that used to recover category names
+ * from a `CATEGORIES_DICT` literal in scripts.js.
+ *
+ * A leaf without a file is a 404 in the fallback merge; a file without a leaf is
+ * unreachable from the nav; a group with a file is a category that renders an
+ * empty grid headed "Produtos"; and a `data-category` unknown to the registry is
+ * a button that cannot resolve a label.
+ * @param {object} registry Output of loadRegistry.
+ * @param {string[]} categories Category slugs backed by a products file.
+ * @param {string} indexPath Path to index.html.
+ * @returns {string[]} Error messages.
  */
-const readCategoryDictKeys = (scriptsPath) => {
-  const source = fs.readFileSync(scriptsPath, 'utf8');
-  const declaration = source.indexOf(CATEGORIES_DICT_NAME);
-  const start = declaration === -1 ? -1 : source.indexOf('{', declaration);
-  if (start === -1) {
-    throw new Error(`Could not locate ${CATEGORIES_DICT_NAME} in ${scriptsPath}`);
-  }
+const checkRegistryCoverage = (registry, categories, indexPath) => {
+  const errors = [];
+  const onDisk = new Set(categories);
+  const leafSlugs = new Set(registry.leafSlugs);
 
-  let depth = 0;
-  let end = -1;
-  for (let index = start; index < source.length; index += 1) {
-    if (source[index] === '{') depth += 1;
-    else if (source[index] === '}') {
-      depth -= 1;
-      if (depth === 0) {
-        end = index;
-        break;
-      }
-    }
-  }
-  if (end === -1) throw new Error(`Unterminated ${CATEGORIES_DICT_NAME} literal`);
+  registry.leaves
+    .filter((leaf) => !onDisk.has(leaf.slug))
+    .forEach((leaf) =>
+      errors.push(
+        `catalog/categories.json declares leaf "${leaf.slug}" but products/${leaf.slug}.json does not exist`
+      )
+    );
 
-  // Matches `key: '...'` for quoted, double-quoted and bare keys.
-  const keys = [
-    ...source
-      .slice(start, end + 1)
-      .matchAll(/(?:'([^']+)'|"([^"]+)"|([A-Za-z_$][\w$]*))\s*:\s*'/g),
-  ].map(([, single, double, bare]) => single || double || bare);
+  categories
+    .filter((category) => !leafSlugs.has(category))
+    .forEach((category) =>
+      errors.push(
+        `products/${category}.json has no leaf in catalog/categories.json, so its products are unreachable`
+      )
+    );
 
-  if (!keys.length) throw new Error(`No entries parsed from ${CATEGORIES_DICT_NAME}`);
-  return keys;
+  registry.groups
+    .filter((group) => onDisk.has(group.slug))
+    .forEach((group) =>
+      errors.push(
+        `"${group.slug}" is a nav group but products/${group.slug}.json exists — a group renders an empty grid headed "Produtos"`
+      )
+    );
+
+  const html = fs.readFileSync(indexPath, 'utf8');
+  const navSlugs = [...html.matchAll(/data-category="([^"]+)"/g)].map(([, slug]) => slug);
+
+  [...new Set(navSlugs)]
+    .filter((slug) => !registry.bySlug.has(slug))
+    .forEach((slug) =>
+      errors.push(`index.html has data-category="${slug}", which catalog/categories.json does not declare`)
+    );
+
+  // A leaf the nav never links to is unreachable except by hash.
+  const navSet = new Set(navSlugs);
+  registry.leaves
+    .filter((leaf) => !navSet.has(leaf.slug))
+    .forEach((leaf) =>
+      errors.push(`catalog/categories.json declares leaf "${leaf.slug}" but index.html has no button for it`)
+    );
+
+  return errors;
 };
 
 /**
- * Checks that every category file is reachable from the menu map, and vice versa.
- * @param {string[]} categories Category slugs backed by a products file.
- * @param {string[]} dictKeys Keys declared in CATEGORIES_DICT.
- * @returns {string[]} Error messages.
+ * Checks an image path against its category's declared directory shape.
+ *
+ * This is rule 4a: the structural half. Branded products in a brand-folder
+ * category sit one level below imageDir; brandless products sit directly in it,
+ * which holds for all 6 brandless products today and is what makes
+ * shorts-jeans-man's apparently mixed shape regular. Rule 4b — that the folder
+ * names the product's *own* brand — needs the `brand` field Wave 4 adds, since
+ * the brand is still fused into `name` today.
+ * @param {string} source Referenced image path.
+ * @param {object} leaf The category's registry leaf.
+ * @param {boolean} brandless Whether the product declares no brand.
+ * @param {object} brands The brand registry.
+ * @returns {string|null} An error message, or null when the path conforms.
  */
-const checkCategoryCoverage = (categories, dictKeys) => {
-  const declared = new Set(dictKeys.filter((key) => key !== ALL_CATEGORY));
-  const onDisk = new Set(categories);
+const checkImageLocation = (source, leaf, brandless, brands) => {
+  if (!source.startsWith(`${leaf.imageDir}/`)) {
+    return `image ${source} is outside ${leaf.imageDir}/, where ${leaf.slug} images belong`;
+  }
 
-  return [
-    ...categories
-      .filter((category) => !declared.has(category))
-      .map(
-        (category) =>
-          `products/${category}.json has no ${CATEGORIES_DICT_NAME} entry, so its products are unreachable`
-      ),
-    ...[...declared]
-      .filter((category) => !onDisk.has(category))
-      .map(
-        (category) =>
-          `${CATEGORIES_DICT_NAME} declares "${category}" but products/${category}.json does not exist`
-      ),
-  ];
+  const segments = source.slice(leaf.imageDir.length + 1).split('/');
+  const expected = leaf.usesBrandFolders && !brandless ? 2 : 1;
+
+  if (segments.length !== expected) {
+    return expected === 1
+      ? `image ${source} must sit directly in ${leaf.imageDir}/`
+      : `image ${source} must sit in a brand folder under ${leaf.imageDir}/`;
+  }
+
+  if (segments.length === 2 && !Object.prototype.hasOwnProperty.call(brands, segments[0])) {
+    return `image ${source} uses brand folder "${segments[0]}", which catalog/brands.json does not declare`;
+  }
+
+  return null;
 };
 
 /**
@@ -244,9 +274,12 @@ const checkOrphanImages = (manifest, referenced) =>
  * @param {object} product Product entry.
  * @param {string} where Human-readable location for messages.
  * @param {object|null} manifest Image manifest, or null to skip file checks.
+ * @param {object} [context] Registry context for the location rule.
+ * @param {object} [context.leaf] The category's registry leaf, when available.
+ * @param {object} [context.brands] The brand registry.
  * @returns {string[]} Error messages.
  */
-const checkProduct = (product, where, manifest) => {
+const checkProduct = (product, where, manifest, { leaf = null, brands = {} } = {}) => {
   const errors = [];
   const fail = (message) => errors.push(`${where}: ${message}`);
 
@@ -301,6 +334,15 @@ const checkProduct = (product, where, manifest) => {
     }
     const namingError = checkImageName(source, productCode);
     if (namingError) fail(namingError);
+
+    if (leaf) {
+      // Brandless products are the ones whose name is only the code, and they
+      // sit directly in imageDir even in a brand-folder category.
+      const brandless = typeof product.name === 'string'
+        && product.name.replace(PRODUCT_DATE_PATTERN, '').trim() === '';
+      const locationError = checkImageLocation(source, leaf, brandless, brands);
+      if (locationError) fail(locationError);
+    }
   });
   checkImageVariants(images).forEach(fail);
 
@@ -312,17 +354,25 @@ const checkProduct = (product, where, manifest) => {
  * the first, so a catalog update PR reports all its defects in one run.
  * @param {object} options Validation options.
  * @param {string} options.productsDir Path to the products directory.
- * @param {string} options.scriptsPath Path to scripts.js.
+ * @param {string} [options.indexPath] Path to index.html, for the nav check.
  * @param {object} [options.manifest] Image manifest keyed by source path.
  * @param {string} [options.schemaPath] Path to the product schema.
+ * @param {object} [options.registry] Pre-loaded registry, for tests.
  * @returns {{errors: string[], warnings: string[]}} Collected problems.
  */
-const validateCatalog = ({ productsDir, scriptsPath, manifest = null, schemaPath }) => {
+const validateCatalog = ({
+  productsDir,
+  indexPath = DEFAULT_INDEX_PATH,
+  manifest = null,
+  schemaPath,
+  registry = null,
+}) => {
   const errors = [];
   const warnings = [];
 
+  const resolved = registry || loadRegistry();
   const categories = listCategories(productsDir);
-  errors.push(...checkCategoryCoverage(categories, readCategoryDictKeys(scriptsPath)));
+  errors.push(...checkRegistryCoverage(resolved, categories, indexPath));
 
   const matchesSchema = compileProductSchema(schemaPath);
 
@@ -341,10 +391,17 @@ const validateCatalog = ({ productsDir, scriptsPath, manifest = null, schemaPath
       errors.push(...matchesSchema.errors.map((error) => formatSchemaError(error, category)));
     }
 
+    const leaf = resolved.bySlug.get(category) || null;
+
     products.forEach((product, index) => {
       const label = typeof product.name === 'string' ? product.name : '(unnamed)';
       const where = `${category}.json[${index}] "${label}"`;
-      errors.push(...checkProduct(product, where, manifest));
+      errors.push(
+        ...checkProduct(product, where, manifest, {
+          leaf: leaf && leaf.type === 'leaf' ? leaf : null,
+          brands: resolved.brands,
+        })
+      );
 
       productImages(product).forEach((source) => {
         if (typeof source === 'string') referencedImages.add(source);
@@ -369,17 +426,18 @@ const validateCatalog = ({ productsDir, scriptsPath, manifest = null, schemaPath
 };
 
 module.exports = {
+  DEFAULT_INDEX_PATH,
   DEFAULT_SCHEMA_PATH,
   IMAGE_VARIANTS,
   NON_CATALOG_IMAGES,
-  checkCategoryCoverage,
+  checkImageLocation,
   checkImageName,
   checkImageVariants,
   checkOrphanImages,
   checkProduct,
+  checkRegistryCoverage,
   compileProductSchema,
   formatSchemaError,
   imageVariant,
-  readCategoryDictKeys,
   validateCatalog,
 };

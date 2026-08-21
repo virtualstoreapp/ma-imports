@@ -138,7 +138,7 @@ exports[`Fixture catalog renders the site chrome 1`] = `
                         <button data-category="dress-shirts-man">Sociais</button>
                       </li>
                     </ul>
-                    <button data-category="underwear-man-subcategory" aria-expanded="false">Cuecas</button>
+                    <button data-category="underwear-man" aria-expanded="false">Cuecas</button>
                     <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
                     <ul class="submenu">
                       <li class="menu-item">
