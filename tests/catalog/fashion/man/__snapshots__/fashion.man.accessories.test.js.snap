@@ -159,7 +159,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "B
   <main>
     <h2 id="category-heading">Bonés Masculino</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/2907251533-adidas.jpeg" alt="[2907251533] Adidas">
+          <img src="images/man/caps/2907251533-adidas.jpeg" alt="[2907251533] Adidas" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2907251533] Adidas</h3>
             
@@ -167,7 +167,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "B
             <span class="price">R$&nbsp;39,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/2907251534-lacoste.jpeg" alt="[2907251534] Lacoste">
+          <img src="images/man/caps/2907251534-lacoste.jpeg" alt="[2907251534] Lacoste" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2907251534] Lacoste</h3>
             
@@ -175,7 +175,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "B
             <span class="price">R$&nbsp;39,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/2907251536-los-angeles.jpeg" alt="[2907251536] Los Angeles">
+          <img src="images/man/caps/2907251536-los-angeles.jpeg" alt="[2907251536] Los Angeles" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2907251536] Los Angeles</h3>
             
@@ -183,7 +183,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "B
             <span class="price">R$&nbsp;39,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/2907251532-nike.jpeg" alt="[2907251532] Nike">
+          <img src="images/man/caps/2907251532-nike.jpeg" alt="[2907251532] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2907251532] Nike</h3>
             
@@ -191,15 +191,15 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "B
             <span class="price">R$&nbsp;39,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/2907251533-nike.jpeg" alt="[2907251533] Nike">
+          <img src="images/man/caps/2907251537-nike.jpeg" alt="[2907251537] Nike" loading="lazy" decoding="async">
           <div class="product-details">
-            <h3>[2907251533] Nike</h3>
+            <h3>[2907251537] Nike</h3>
             
             
             <span class="price">R$&nbsp;39,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/2907251535-nike.jpeg" alt="[2907251535] Nike">
+          <img src="images/man/caps/2907251535-nike.jpeg" alt="[2907251535] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2907251535] Nike</h3>
             
@@ -207,7 +207,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "B
             <span class="price">R$&nbsp;39,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/0106250949-polo.jpeg" alt="[0106250949] Polo">
+          <img src="images/man/caps/0106250949-polo.jpeg" alt="[0106250949] Polo" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0106250949] Polo</h3>
             <p class="description">Cor: Verde</p>
@@ -215,7 +215,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "B
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/0106250953-polo.jpeg" alt="[0106250953] Polo">
+          <img src="images/man/caps/0106250953-polo.jpeg" alt="[0106250953] Polo" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0106250953] Polo</h3>
             <p class="description">Cor: Branca</p>
@@ -223,7 +223,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "B
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/0106250954-polo.jpeg" alt="[0106250954] Polo">
+          <img src="images/man/caps/0106250954-polo.jpeg" alt="[0106250954] Polo" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0106250954] Polo</h3>
             <p class="description">Cor: Bege</p>
@@ -231,7 +231,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "B
             <span class="price">R$&nbsp;59,90</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/0106250955-polo.jpeg" alt="[0106250955] Polo">
+          <img src="images/man/caps/0106250955-polo.jpeg" alt="[0106250955] Polo" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0106250955] Polo</h3>
             <p class="description">Cor: Amarela</p>
@@ -239,7 +239,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "B
             <span class="price">R$&nbsp;59,90</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/0106250956-ralph-lauren.jpeg" alt="[0106250956] Ralph Lauren">
+          <img src="images/man/caps/0106250956-ralph-lauren.jpeg" alt="[0106250956] Ralph Lauren" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0106250956] Ralph Lauren</h3>
             <p class="description">Cor: Cinza Escuro</p>
@@ -260,7 +260,10 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "B
       <div id="modal-content">
         <button id="modal-close">X</button>
         <div id="modal-image-container" class="modal-image-container">
-          <img id="modal-image" src="" alt="">
+          <picture>
+            <source id="modal-image-source" type="image/webp">
+            <img id="modal-image" src="" alt="">
+          </picture>
         </div>
         <div id="modal-controls">
           <button id="prev-image">&lt;</button>
@@ -433,7 +436,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "C
   <main>
     <h2 id="category-heading">Carteiras Masculina</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/man/wallets/2307251256-armani-exchange.jpeg" alt="[2307251256] Armani Exchange">
+          <img src="images/man/wallets/2307251256-armani-exchange.jpeg" alt="[2307251256] Armani Exchange" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2307251256] Armani Exchange</h3>
             <p class="description">Carteira Masculina, Material: Couro legítimo</p>
@@ -441,7 +444,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "C
             <span class="price">R$&nbsp;24,99</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/wallets/2307251257-armani-exchange-front.jpeg" alt="[2307251257] Armani Exchange">
+          <img src="images/man/wallets/2307251257-armani-exchange-front.jpeg" alt="[2307251257] Armani Exchange" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2307251257] Armani Exchange</h3>
             <p class="description">Carteira Masculina, Material: Couro legítimo</p>
@@ -449,7 +452,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "C
             <span class="price">R$&nbsp;24,99</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/wallets/2307251258-oakley.jpeg" alt="[2307251258] Oakley">
+          <img src="images/man/wallets/2307251258-oakley.jpeg" alt="[2307251258] Oakley" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2307251258] Oakley</h3>
             <p class="description">Carteira Masculina, Material: Couro legítimo</p>
@@ -457,7 +460,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "C
             <span class="price">R$&nbsp;24,99</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/wallets/2307251254-quicksilver.jpeg" alt="[2307251254] Quicksilver ">
+          <img src="images/man/wallets/2307251254-quicksilver.jpeg" alt="[2307251254] Quicksilver " loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2307251254] Quicksilver </h3>
             <p class="description">Carteira Masculina, Material: Couro legítimo</p>
@@ -465,7 +468,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "C
             <span class="price">R$&nbsp;24,99</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/wallets/2307251255-quicksilver.jpeg" alt="[2307251255] Quicksilver ">
+          <img src="images/man/wallets/2307251255-quicksilver.jpeg" alt="[2307251255] Quicksilver " loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2307251255] Quicksilver </h3>
             <p class="description">Carteira Masculina, Material: Couro legítimo</p>
@@ -473,7 +476,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "C
             <span class="price">R$&nbsp;24,99</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/wallets/2307251259-reserva.jpeg" alt="[2307251259] Reserva">
+          <img src="images/man/wallets/2307251259-reserva.jpeg" alt="[2307251259] Reserva" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2307251259] Reserva</h3>
             <p class="description">Carteira Masculina, Material: Couro legítimo</p>
@@ -481,7 +484,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "C
             <span class="price">R$&nbsp;24,99</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/wallets/2307251250-tommy-hilfiger.jpeg" alt="[2307251250] Tommy Hilfiger ">
+          <img src="images/man/wallets/2307251250-tommy-hilfiger.jpeg" alt="[2307251250] Tommy Hilfiger " loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2307251250] Tommy Hilfiger </h3>
             <p class="description">Carteira Masculina</p>
@@ -502,7 +505,10 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "C
       <div id="modal-content">
         <button id="modal-close">X</button>
         <div id="modal-image-container" class="modal-image-container">
-          <img id="modal-image" src="" alt="">
+          <picture>
+            <source id="modal-image-source" type="image/webp">
+            <img id="modal-image" src="" alt="">
+          </picture>
         </div>
         <div id="modal-controls">
           <button id="prev-image">&lt;</button>
@@ -675,7 +681,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "C
   <main>
     <h2 id="category-heading">Cintos Masculino</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/man/belts/2307251157-gucci-front.jpeg" alt="[2307251157] Gucci">
+          <img src="images/man/belts/2307251157-gucci-front.jpeg" alt="[2307251157] Gucci" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2307251157] Gucci</h3>
             <p class="description">Cinto Social Masculino, Material: Couro</p>
@@ -683,7 +689,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "C
             <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/belts/2307251158-louis-vuitton-front.jpeg" alt="[2307251158] Louis Vuitton">
+          <img src="images/man/belts/2307251158-louis-vuitton-front.jpeg" alt="[2307251158] Louis Vuitton" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2307251158] Louis Vuitton</h3>
             <p class="description">Cinto Social Masculino, Material: Couro</p>
@@ -691,7 +697,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "C
             <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/belts/2307251156-adidas-front.jpeg" alt="[2307251156] Adidas">
+          <img src="images/man/belts/2307251156-adidas-front.jpeg" alt="[2307251156] Adidas" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2307251156] Adidas</h3>
             <p class="description">Cinto Elástico Masculino, Cor: Marrom</p>
@@ -699,7 +705,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "C
             <span class="price">R$&nbsp;34,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/belts/2307251150-lacoste-front.jpeg" alt="[2307251150] Lacoste">
+          <img src="images/man/belts/2307251150-lacoste-front.jpeg" alt="[2307251150] Lacoste" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2307251150] Lacoste</h3>
             <p class="description">Cinto Elástico Masculino, Cor: Azul Marinho e Bege</p>
@@ -707,7 +713,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "C
             <span class="price">R$&nbsp;34,90</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/belts/2307251152-nike-front.jpeg" alt="[2307251152] Nike">
+          <img src="images/man/belts/2307251152-nike-front.jpeg" alt="[2307251152] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2307251152] Nike</h3>
             <p class="description">Cinto Elástico Masculino, Cor: Azul Marinho e Bege</p>
@@ -715,7 +721,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "C
             <span class="price">R$&nbsp;34,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/belts/2307251154-nike-front.jpeg" alt="[2307251154] Nike">
+          <img src="images/man/belts/2307251154-nike-front.jpeg" alt="[2307251154] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2307251154] Nike</h3>
             <p class="description">Cinto Elástico Masculino, Cor: Azul Marinho com Listras</p>
@@ -723,7 +729,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "C
             <span class="price">R$&nbsp;34,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/belts/2307251151-nike-front.jpeg" alt="[2307251151] Nike">
+          <img src="images/man/belts/2307251151-nike-front.jpeg" alt="[2307251151] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2307251151] Nike</h3>
             <p class="description">Cinto Elástico Masculino, Cor: Verde Militar</p>
@@ -731,7 +737,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "C
             <span class="price">R$&nbsp;34,90</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/belts/2307251153-nike-front.jpeg" alt="[2307251153] Nike">
+          <img src="images/man/belts/2307251153-nike-front.jpeg" alt="[2307251153] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2307251153] Nike</h3>
             <p class="description">Cinto Elástico Masculino, Cor: Preto</p>
@@ -739,7 +745,7 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "C
             <span class="price">R$&nbsp;34,90</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/belts/2307251155-quicksilver-front.jpeg" alt="[2307251155] Quicksilver">
+          <img src="images/man/belts/2307251155-quicksilver-front.jpeg" alt="[2307251155] Quicksilver" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2307251155] Quicksilver</h3>
             <p class="description">Cinto Elástico Masculino, Cor: Azul Marinho</p>
@@ -760,7 +766,10 @@ exports[`Fashion Man Shoes Desktop View Accessories renders final subcategory "C
       <div id="modal-content">
         <button id="modal-close">X</button>
         <div id="modal-image-container" class="modal-image-container">
-          <img id="modal-image" src="" alt="">
+          <picture>
+            <source id="modal-image-source" type="image/webp">
+            <img id="modal-image" src="" alt="">
+          </picture>
         </div>
         <div id="modal-controls">
           <button id="prev-image">&lt;</button>
@@ -933,7 +942,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Bo
   <main>
     <h2 id="category-heading">Bonés Masculino</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/2907251533-adidas.jpeg" alt="[2907251533] Adidas">
+          <img src="images/man/caps/2907251533-adidas.jpeg" alt="[2907251533] Adidas" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2907251533] Adidas</h3>
             
@@ -941,7 +950,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Bo
             <span class="price">R$&nbsp;39,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/2907251534-lacoste.jpeg" alt="[2907251534] Lacoste">
+          <img src="images/man/caps/2907251534-lacoste.jpeg" alt="[2907251534] Lacoste" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2907251534] Lacoste</h3>
             
@@ -949,7 +958,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Bo
             <span class="price">R$&nbsp;39,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/2907251536-los-angeles.jpeg" alt="[2907251536] Los Angeles">
+          <img src="images/man/caps/2907251536-los-angeles.jpeg" alt="[2907251536] Los Angeles" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2907251536] Los Angeles</h3>
             
@@ -957,7 +966,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Bo
             <span class="price">R$&nbsp;39,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/2907251532-nike.jpeg" alt="[2907251532] Nike">
+          <img src="images/man/caps/2907251532-nike.jpeg" alt="[2907251532] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2907251532] Nike</h3>
             
@@ -965,15 +974,15 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Bo
             <span class="price">R$&nbsp;39,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/2907251533-nike.jpeg" alt="[2907251533] Nike">
+          <img src="images/man/caps/2907251537-nike.jpeg" alt="[2907251537] Nike" loading="lazy" decoding="async">
           <div class="product-details">
-            <h3>[2907251533] Nike</h3>
+            <h3>[2907251537] Nike</h3>
             
             
             <span class="price">R$&nbsp;39,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/2907251535-nike.jpeg" alt="[2907251535] Nike">
+          <img src="images/man/caps/2907251535-nike.jpeg" alt="[2907251535] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2907251535] Nike</h3>
             
@@ -981,7 +990,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Bo
             <span class="price">R$&nbsp;39,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/0106250949-polo.jpeg" alt="[0106250949] Polo">
+          <img src="images/man/caps/0106250949-polo.jpeg" alt="[0106250949] Polo" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0106250949] Polo</h3>
             <p class="description">Cor: Verde</p>
@@ -989,7 +998,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Bo
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/0106250953-polo.jpeg" alt="[0106250953] Polo">
+          <img src="images/man/caps/0106250953-polo.jpeg" alt="[0106250953] Polo" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0106250953] Polo</h3>
             <p class="description">Cor: Branca</p>
@@ -997,7 +1006,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Bo
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/0106250954-polo.jpeg" alt="[0106250954] Polo">
+          <img src="images/man/caps/0106250954-polo.jpeg" alt="[0106250954] Polo" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0106250954] Polo</h3>
             <p class="description">Cor: Bege</p>
@@ -1005,7 +1014,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Bo
             <span class="price">R$&nbsp;59,90</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/0106250955-polo.jpeg" alt="[0106250955] Polo">
+          <img src="images/man/caps/0106250955-polo.jpeg" alt="[0106250955] Polo" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0106250955] Polo</h3>
             <p class="description">Cor: Amarela</p>
@@ -1013,7 +1022,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Bo
             <span class="price">R$&nbsp;59,90</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/0106250956-ralph-lauren.jpeg" alt="[0106250956] Ralph Lauren">
+          <img src="images/man/caps/0106250956-ralph-lauren.jpeg" alt="[0106250956] Ralph Lauren" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0106250956] Ralph Lauren</h3>
             <p class="description">Cor: Cinza Escuro</p>
@@ -1034,7 +1043,10 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Bo
       <div id="modal-content">
         <button id="modal-close">X</button>
         <div id="modal-image-container" class="modal-image-container">
-          <img id="modal-image" src="" alt="">
+          <picture>
+            <source id="modal-image-source" type="image/webp">
+            <img id="modal-image" src="" alt="">
+          </picture>
         </div>
         <div id="modal-controls">
           <button id="prev-image">&lt;</button>
@@ -1207,7 +1219,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Ca
   <main>
     <h2 id="category-heading">Carteiras Masculina</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/man/wallets/2307251256-armani-exchange.jpeg" alt="[2307251256] Armani Exchange">
+          <img src="images/man/wallets/2307251256-armani-exchange.jpeg" alt="[2307251256] Armani Exchange" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2307251256] Armani Exchange</h3>
             <p class="description">Carteira Masculina, Material: Couro legítimo</p>
@@ -1215,7 +1227,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Ca
             <span class="price">R$&nbsp;24,99</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/wallets/2307251257-armani-exchange-front.jpeg" alt="[2307251257] Armani Exchange">
+          <img src="images/man/wallets/2307251257-armani-exchange-front.jpeg" alt="[2307251257] Armani Exchange" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2307251257] Armani Exchange</h3>
             <p class="description">Carteira Masculina, Material: Couro legítimo</p>
@@ -1223,7 +1235,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Ca
             <span class="price">R$&nbsp;24,99</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/wallets/2307251258-oakley.jpeg" alt="[2307251258] Oakley">
+          <img src="images/man/wallets/2307251258-oakley.jpeg" alt="[2307251258] Oakley" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2307251258] Oakley</h3>
             <p class="description">Carteira Masculina, Material: Couro legítimo</p>
@@ -1231,7 +1243,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Ca
             <span class="price">R$&nbsp;24,99</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/wallets/2307251254-quicksilver.jpeg" alt="[2307251254] Quicksilver ">
+          <img src="images/man/wallets/2307251254-quicksilver.jpeg" alt="[2307251254] Quicksilver " loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2307251254] Quicksilver </h3>
             <p class="description">Carteira Masculina, Material: Couro legítimo</p>
@@ -1239,7 +1251,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Ca
             <span class="price">R$&nbsp;24,99</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/wallets/2307251255-quicksilver.jpeg" alt="[2307251255] Quicksilver ">
+          <img src="images/man/wallets/2307251255-quicksilver.jpeg" alt="[2307251255] Quicksilver " loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2307251255] Quicksilver </h3>
             <p class="description">Carteira Masculina, Material: Couro legítimo</p>
@@ -1247,7 +1259,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Ca
             <span class="price">R$&nbsp;24,99</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/wallets/2307251259-reserva.jpeg" alt="[2307251259] Reserva">
+          <img src="images/man/wallets/2307251259-reserva.jpeg" alt="[2307251259] Reserva" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2307251259] Reserva</h3>
             <p class="description">Carteira Masculina, Material: Couro legítimo</p>
@@ -1255,7 +1267,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Ca
             <span class="price">R$&nbsp;24,99</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/wallets/2307251250-tommy-hilfiger.jpeg" alt="[2307251250] Tommy Hilfiger ">
+          <img src="images/man/wallets/2307251250-tommy-hilfiger.jpeg" alt="[2307251250] Tommy Hilfiger " loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2307251250] Tommy Hilfiger </h3>
             <p class="description">Carteira Masculina</p>
@@ -1276,7 +1288,10 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Ca
       <div id="modal-content">
         <button id="modal-close">X</button>
         <div id="modal-image-container" class="modal-image-container">
-          <img id="modal-image" src="" alt="">
+          <picture>
+            <source id="modal-image-source" type="image/webp">
+            <img id="modal-image" src="" alt="">
+          </picture>
         </div>
         <div id="modal-controls">
           <button id="prev-image">&lt;</button>
@@ -1449,7 +1464,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Ci
   <main>
     <h2 id="category-heading">Cintos Masculino</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/man/belts/2307251157-gucci-front.jpeg" alt="[2307251157] Gucci">
+          <img src="images/man/belts/2307251157-gucci-front.jpeg" alt="[2307251157] Gucci" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2307251157] Gucci</h3>
             <p class="description">Cinto Social Masculino, Material: Couro</p>
@@ -1457,7 +1472,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Ci
             <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/belts/2307251158-louis-vuitton-front.jpeg" alt="[2307251158] Louis Vuitton">
+          <img src="images/man/belts/2307251158-louis-vuitton-front.jpeg" alt="[2307251158] Louis Vuitton" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2307251158] Louis Vuitton</h3>
             <p class="description">Cinto Social Masculino, Material: Couro</p>
@@ -1465,7 +1480,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Ci
             <span class="price">R$&nbsp;89,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/belts/2307251156-adidas-front.jpeg" alt="[2307251156] Adidas">
+          <img src="images/man/belts/2307251156-adidas-front.jpeg" alt="[2307251156] Adidas" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2307251156] Adidas</h3>
             <p class="description">Cinto Elástico Masculino, Cor: Marrom</p>
@@ -1473,7 +1488,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Ci
             <span class="price">R$&nbsp;34,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/belts/2307251150-lacoste-front.jpeg" alt="[2307251150] Lacoste">
+          <img src="images/man/belts/2307251150-lacoste-front.jpeg" alt="[2307251150] Lacoste" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2307251150] Lacoste</h3>
             <p class="description">Cinto Elástico Masculino, Cor: Azul Marinho e Bege</p>
@@ -1481,7 +1496,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Ci
             <span class="price">R$&nbsp;34,90</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/belts/2307251152-nike-front.jpeg" alt="[2307251152] Nike">
+          <img src="images/man/belts/2307251152-nike-front.jpeg" alt="[2307251152] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2307251152] Nike</h3>
             <p class="description">Cinto Elástico Masculino, Cor: Azul Marinho e Bege</p>
@@ -1489,7 +1504,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Ci
             <span class="price">R$&nbsp;34,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/belts/2307251154-nike-front.jpeg" alt="[2307251154] Nike">
+          <img src="images/man/belts/2307251154-nike-front.jpeg" alt="[2307251154] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2307251154] Nike</h3>
             <p class="description">Cinto Elástico Masculino, Cor: Azul Marinho com Listras</p>
@@ -1497,7 +1512,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Ci
             <span class="price">R$&nbsp;34,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/belts/2307251151-nike-front.jpeg" alt="[2307251151] Nike">
+          <img src="images/man/belts/2307251151-nike-front.jpeg" alt="[2307251151] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2307251151] Nike</h3>
             <p class="description">Cinto Elástico Masculino, Cor: Verde Militar</p>
@@ -1505,7 +1520,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Ci
             <span class="price">R$&nbsp;34,90</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/belts/2307251153-nike-front.jpeg" alt="[2307251153] Nike">
+          <img src="images/man/belts/2307251153-nike-front.jpeg" alt="[2307251153] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2307251153] Nike</h3>
             <p class="description">Cinto Elástico Masculino, Cor: Preto</p>
@@ -1513,7 +1528,7 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Ci
             <span class="price">R$&nbsp;34,90</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/belts/2307251155-quicksilver-front.jpeg" alt="[2307251155] Quicksilver">
+          <img src="images/man/belts/2307251155-quicksilver-front.jpeg" alt="[2307251155] Quicksilver" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2307251155] Quicksilver</h3>
             <p class="description">Cinto Elástico Masculino, Cor: Azul Marinho</p>
@@ -1534,7 +1549,10 @@ exports[`Fashion Man Shoes Mobile View Accessories renders final subcategory "Ci
       <div id="modal-content">
         <button id="modal-close">X</button>
         <div id="modal-image-container" class="modal-image-container">
-          <img id="modal-image" src="" alt="">
+          <picture>
+            <source id="modal-image-source" type="image/webp">
+            <img id="modal-image" src="" alt="">
+          </picture>
         </div>
         <div id="modal-controls">
           <button id="prev-image">&lt;</button>

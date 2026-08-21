@@ -5,6 +5,10 @@ const path = require('path');
 const { waitFor, fireEvent } = require('@testing-library/dom');
 require('@testing-library/jest-dom');
 
+const { ALL_CATEGORY, buildAllCatalog } = require('../../tools/lib/catalog');
+
+const PRODUCTS_DIR = path.join(__dirname, '../../products');
+
 /**
  * Reads and parses a JSON file from the products directory.
  * @param {string} fileName - Name of the JSON file.
@@ -27,13 +31,19 @@ const setupGlobalFetchMock = () => {
   global.fetch = jest.fn((url) => {
     const match = url.match(/products\/(.*)\.json/);
     const category = match ? match[1] : null;
-    if (category) {
-      return Promise.resolve({
-        ok: true,
-        json: () => Promise.resolve(readProductsJson(`${category}.json`))
-      });
-    }
-    return Promise.reject(new Error(`Unknown URL: ${url}`));
+    if (!category) return Promise.reject(new Error(`Unknown URL: ${url}`));
+
+    // products/all.json is a build artifact, so it is synthesised here with the
+    // same merge/sort logic the build uses. Tests then exercise the single
+    // request the deployed homepage actually makes.
+    const payload = category === ALL_CATEGORY
+      ? buildAllCatalog(PRODUCTS_DIR)
+      : readProductsJson(`${category}.json`);
+
+    return Promise.resolve({
+      ok: true,
+      json: () => Promise.resolve(payload)
+    });
   });
 };
 

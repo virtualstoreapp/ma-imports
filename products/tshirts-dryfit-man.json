@@ -111,12 +111,12 @@
         "size": "GG"
     },
     {
-        "name": "[1104250031] Nike",
+        "name": "[1104250025] Nike",
         "description": "Dry-Fit",
         "oldPrice": 0.0,
         "price": 59.90,
         "images": [
-            "images/man/tshirts/dryfit/nike/1104250031-nike.jpeg"
+            "images/man/tshirts/dryfit/nike/1104250025-nike.jpeg"
         ],
         "size": "M"
     },

@@ -4,7 +4,9 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm install
+# npm ci honours the lockfile, matching what CI installs. sharp resolves its
+# musl prebuilt binary here, which is why node_modules must not be mounted over.
+RUN npm ci
 
 EXPOSE 8000
 

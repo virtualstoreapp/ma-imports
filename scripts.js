@@ -5,6 +5,7 @@
 
   // --- Constants ---
   const WHATSAPP_NUMBER = '5519999762594';
+  const ALL_CATEGORY = 'all';
   const CATEGORIES_DICT = {
     'sweatshirts-woman': 'Blusas Feminina',
     'sweatshirts-man': 'Blusas Masculina',
@@ -42,6 +43,35 @@
       currency: 'BRL',
     }).format(value);
 
+  // Product data is interpolated into markup, so every value is escaped for both
+  // text and quoted-attribute contexts before it reaches innerHTML.
+  const escapeHtml = (value) =>
+    String(value ?? '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+
+  // Returns the build-generated media entry for an image index, when available.
+  const mediaAt = (product, index) =>
+    (Array.isArray(product.media) ? product.media[index] : null) || null;
+
+  // Grid cards prefer the generated WebP thumbnail and declare their intrinsic
+  // size so the layout never shifts. An unbuilt tree falls back to the original.
+  const cardMediaMarkup = (product) => {
+    const alt = escapeHtml(product.name);
+    const media = mediaAt(product, 0);
+    if (!media) {
+      const fallback = Array.isArray(product.images) ? product.images[0] : product.image;
+      return `<img src="${escapeHtml(fallback)}" alt="${alt}" loading="lazy" decoding="async">`;
+    }
+    return `<picture>
+            <source srcset="${escapeHtml(media.thumb)}" type="image/webp">
+            <img src="${escapeHtml(media.thumbFallback)}" alt="${alt}" width="${escapeHtml(media.thumbWidth)}" height="${escapeHtml(media.thumbHeight)}" loading="lazy" decoding="async">
+          </picture>`;
+  };
+
   const updateCategoryHeading = (category, headingEl) => {
     headingEl.textContent = CATEGORIES_DICT[category] || 'Produtos';
   };
@@ -64,14 +94,17 @@
   // --- Modal Module ---
   const Modal = (() => {
     let modal, currentImages = [], currentIndex = 0, currentZoom = 1;
-    let currentProductName = '', currentCategory = '';
+    let currentProductName = '', currentCategory = '', currentProduct = null;
 
     // Build modal HTML markup.
     const createModalMarkup = () => `
       <div id="modal-content">
         <button id="modal-close">X</button>
         <div id="modal-image-container" class="modal-image-container">
-          <img id="modal-image" src="" alt="">
+          <picture>
+            <source id="modal-image-source" type="image/webp">
+            <img id="modal-image" src="" alt="">
+          </picture>
         </div>
         <div id="modal-controls">
           <button id="prev-image">&lt;</button>
@@ -125,6 +158,15 @@
 
     const updateImage = () => {
       const modalImage = document.getElementById('modal-image');
+      const modalSource = document.getElementById('modal-image-source');
+      const media = mediaAt(currentProduct, currentIndex);
+
+      // The <source> carries the generated WebP; the <img> keeps the original
+      // as the fallback for browsers that cannot decode it.
+      if (modalSource) {
+        if (media) modalSource.setAttribute('srcset', media.webp);
+        else modalSource.removeAttribute('srcset');
+      }
       modalImage.src = currentImages[currentIndex];
       modalImage.style.transform = `scale(${currentZoom})`;
     };
@@ -142,6 +184,7 @@
       currentImages = Array.isArray(product.images) ? product.images : [product.image];
       currentIndex = 0;
       currentZoom = 1;
+      currentProduct = product;
       currentProductName = product.name;
       currentCategory = categoryText;
       updateImage();
@@ -240,6 +283,9 @@
     const productListContainer = document.getElementById('product-list');
     const categoryHeading = document.getElementById('category-heading');
 
+    // Category currently on screen, used to ignore redundant hash navigation.
+    let renderedCategory = null;
+
     // Parse date from product name using a 10-digit code.
     const parseProductDate = (name) => {
       const regex = /\[(\d{10})\]/;
@@ -256,28 +302,45 @@
       return new Date(0);
     };
 
-    // Fetch product data for a given category.
-    const fetchCategoryData = async (category) => {
-      try {
-        if (category === 'all') {
-          const categories = Object.keys(CATEGORIES_DICT).filter(key => key !== 'all');
-          const responses = await Promise.all(
-            categories.map(cat => fetch(`products/${cat}.json`))
-          );
-          const jsonData = await Promise.all(
-            responses.map(async (response, idx) => {
-              if (!response.ok) throw new Error(`Failed to fetch data for ${categories[idx]}`);
-              return response.json();
-            })
-          );
-          const products = jsonData.flat();
-          const sortedProducts = products.sort((a, b) => parseProductDate(b.name) - parseProductDate(a.name));
-          return sortedProducts;
-        } else {
-          const response = await fetch(`products/${category}.json`);
-          if (!response.ok) throw new Error(`Failed to fetch data for ${category}`);
-          return response.json();
+    // Fetch and parse one category file.
+    const fetchCategoryFile = async (category) => {
+      const response = await fetch(`products/${category}.json`);
+      if (!response.ok) {
+        throw new Error(`Failed to fetch data for ${category} (HTTP ${response.status})`);
+      }
+      return response.json();
+    };
+
+    // Merge every category client-side, degrading per category so one missing
+    // file no longer blanks the whole homepage.
+    const mergeAllCategories = async () => {
+      const categories = Object.keys(CATEGORIES_DICT).filter(key => key !== ALL_CATEGORY);
+      const settled = await Promise.allSettled(categories.map(fetchCategoryFile));
+      const products = settled.flatMap((result, idx) => {
+        if (result.status === 'rejected') {
+          console.error(`Skipping ${categories[idx]}:`, result.reason);
+          return [];
         }
+        return result.value.map((product) => ({ ...product, category: categories[idx] }));
+      });
+      return products.sort((a, b) => parseProductDate(b.name) - parseProductDate(a.name));
+    };
+
+    // Fetch product data for a given category. The build emits a pre-merged,
+    // pre-sorted products/all.json so the homepage costs a single request; an
+    // unbuilt source tree falls back to merging the categories in the browser.
+    const fetchCategoryData = async (category) => {
+      if (category === ALL_CATEGORY) {
+        try {
+          return await fetchCategoryFile(ALL_CATEGORY);
+        } catch (error) {
+          console.warn('Merged catalog unavailable, merging categories:', error.message);
+          return mergeAllCategories();
+        }
+      }
+
+      try {
+        return await fetchCategoryFile(category);
       } catch (error) {
         console.error(`Error fetching data for ${category}:`, error);
         return [];
@@ -299,14 +362,12 @@
              <span class="new-price">${formatCurrency(product.price)}</span>`
           : `<span class="price">${formatCurrency(product.price)}</span>`;
 
-        const imgSrc = Array.isArray(product.images) ? product.images[0] : product.image;
-
         li.innerHTML = `
-          <img src="${imgSrc}" alt="${product.name}">
+          ${cardMediaMarkup(product)}
           <div class="product-details">
-            <h3>${product.name}</h3>
-            ${product.description ? `<p class="description">${product.description}</p>` : ''}
-            ${product.size && product.size !== 'N/A' ? `<span class="size">Tamanho: ${product.size}</span>` : ''}
+            <h3>${escapeHtml(product.name)}</h3>
+            ${product.description ? `<p class="description">${escapeHtml(product.description)}</p>` : ''}
+            ${product.size && product.size !== 'N/A' ? `<span class="size">Tamanho: ${escapeHtml(product.size)}</span>` : ''}
             ${priceHTML}
           </div>
         `;
@@ -327,12 +388,39 @@
               event_label: product.name,
             });
           }
-          Modal.open(product, categoryHeading.textContent);
+          // On the homepage the heading reads "Novidades"; the merged catalog
+          // carries each product's real category, so WhatsApp gets that instead.
+          Modal.open(product, CATEGORIES_DICT[product.category] || categoryHeading.textContent);
         });
 
         productListContainer.appendChild(li);
       });
-      window.location.hash = category;
+      renderedCategory = category;
+      if (window.location.hash.slice(1) !== category) {
+        window.location.hash = category;
+      }
+    };
+
+    // The fragment is untrusted, so only known categories are honoured.
+    const categoryFromHash = () => {
+      let raw;
+      try {
+        raw = decodeURIComponent(window.location.hash.slice(1));
+      } catch {
+        return null;
+      }
+      return Object.prototype.hasOwnProperty.call(CATEGORIES_DICT, raw) ? raw : null;
+    };
+
+    // renderProducts writes the fragment, so it has to be read back for the
+    // browser's back and forward buttons to work. Re-rendering the category
+    // already on screen is skipped, which also stops the write from looping.
+    const bindHashNavigation = () => {
+      window.addEventListener('hashchange', () => {
+        const category = categoryFromHash();
+        if (!category || category === renderedCategory) return;
+        renderProducts(category);
+      });
     };
 
     // Bind click events for category buttons.
@@ -376,8 +464,8 @@
 
     const init = async () => {
       bindCategoryButtons();
-      const initialCategory = window.location.hash.slice(1) || 'all';
-      await renderProducts(initialCategory);
+      bindHashNavigation();
+      await renderProducts(categoryFromHash() || ALL_CATEGORY);
     };
 
     return { init };

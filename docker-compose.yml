@@ -9,6 +9,9 @@ services:
     ports:
       - 8000:8000
 
+  # The suite runs against jsdom with fetch mocked, so it needs no web server.
+  # Depending on app-server would leave a container holding port 8000 behind,
+  # because `run --rm` only removes the service it was asked to run.
   test-app:
     extends:
       file: docker-compose.common.yaml
@@ -16,16 +19,26 @@ services:
     command: ["npm", "test"]
     tty: true
     stdin_open: true
-    depends_on:
-      app-server:
-        condition: service_started
 
   update-tests-snapshots:
     extends:
       file: docker-compose.common.yaml
       service: node-base
     command: ["npm", "test", "--", "-u"]
-    depends_on:
-      app-server:
-        condition: service_started
 
+  # Runs the production build on Linux/musl, the same platform as CI, so a
+  # native-dependency or catalog problem surfaces before pushing.
+  build-app:
+    extends:
+      file: docker-compose.common.yaml
+      service: node-base
+    command: ["npm", "run", "build"]
+
+  # Serves dist/ exactly as GitHub Pages will. Run build-app first.
+  preview:
+    extends:
+      file: docker-compose.common.yaml
+      service: node-base
+    command: ["node", "serve.js", "dist"]
+    ports:
+      - 8000:8000

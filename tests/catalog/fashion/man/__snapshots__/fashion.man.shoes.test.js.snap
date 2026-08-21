@@ -159,7 +159,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
   <main>
     <h2 id="category-heading">Tênis</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/adidas/1202252201-adidas-campus.jpeg" alt="[1202252201] Adidas Campus">
+          <img src="images/man/shoes/adidas/1202252201-adidas-campus.jpeg" alt="[1202252201] Adidas Campus" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202252201] Adidas Campus</h3>
             
@@ -168,7 +168,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/adidas/1202252202-adidas-campus.jpeg" alt="[1202252202] Adidas Campus">
+          <img src="images/man/shoes/adidas/1202252202-adidas-campus.jpeg" alt="[1202252202] Adidas Campus" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202252202] Adidas Campus</h3>
             
@@ -177,7 +177,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
              <span class="new-price">R$&nbsp;249,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/adidas/1202252208-adidas-campus.jpeg" alt="[1202252208] Adidas Campus">
+          <img src="images/man/shoes/adidas/1202252208-adidas-campus.jpeg" alt="[1202252208] Adidas Campus" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202252208] Adidas Campus</h3>
             
@@ -186,7 +186,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/adidas/1202252211-adidas-campus.jpeg" alt="[1202252211] Adidas Campus">
+          <img src="images/man/shoes/adidas/1202252211-adidas-campus.jpeg" alt="[1202252211] Adidas Campus" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202252211] Adidas Campus</h3>
             
@@ -195,7 +195,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/adidas/1202252155-adidas-campus.jpeg" alt="[1202252155] Adidas Campus">
+          <img src="images/man/shoes/adidas/1202252155-adidas-campus.jpeg" alt="[1202252155] Adidas Campus" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202252155] Adidas Campus</h3>
             
@@ -204,7 +204,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/adidas/1202252210-adidas-campus.jpeg" alt="[1202252210] Adidas Campus">
+          <img src="images/man/shoes/adidas/1202252210-adidas-campus.jpeg" alt="[1202252210] Adidas Campus" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202252210] Adidas Campus</h3>
             
@@ -213,7 +213,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/asics/1007251156-asics.jpeg" alt="[1007251156] Asics">
+          <img src="images/man/shoes/asics/1007251156-asics.jpeg" alt="[1007251156] Asics" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1007251156] Asics</h3>
             
@@ -221,7 +221,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
             <span class="price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/asics/1202251714-asics.jpeg" alt="[1202251714] Asics">
+          <img src="images/man/shoes/asics/1202251714-asics.jpeg" alt="[1202251714] Asics" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251714] Asics</h3>
             
@@ -229,7 +229,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
             <span class="price">R$&nbsp;89,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/asics/1202251736-asics.jpeg" alt="[1202251736] Asics">
+          <img src="images/man/shoes/asics/1202251736-asics.jpeg" alt="[1202251736] Asics" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251736] Asics</h3>
             
@@ -238,7 +238,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/mizuno/1104250021-mizuno.jpeg" alt="[1104250021] Mizuno 14">
+          <img src="images/man/shoes/mizuno/1104250021-mizuno.jpeg" alt="[1104250021] Mizuno 14" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1104250021] Mizuno 14</h3>
             
@@ -246,7 +246,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
             <span class="price">R$&nbsp;479,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202251703-nike-air-force.jpeg" alt="[1202251703] Nike Air Force">
+          <img src="images/man/shoes/nike/1202251703-nike-air-force.jpeg" alt="[1202251703] Nike Air Force" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251703] Nike Air Force</h3>
             
@@ -255,7 +255,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
              <span class="new-price">R$&nbsp;209,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202251710-nike-air-force.jpeg" alt="[1202251710] Nike Air Force">
+          <img src="images/man/shoes/nike/1202251710-nike-air-force.jpeg" alt="[1202251710] Nike Air Force" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251710] Nike Air Force</h3>
             
@@ -264,7 +264,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202251739-nike-air-force.jpeg" alt="[1202251739] Nike Air Force">
+          <img src="images/man/shoes/nike/1202251739-nike-air-force.jpeg" alt="[1202251739] Nike Air Force" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251739] Nike Air Force</h3>
             
@@ -273,7 +273,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
              <span class="new-price">R$&nbsp;209,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202251747-nike-air-force.jpeg" alt="[1202251747] Nike Air Force">
+          <img src="images/man/shoes/nike/1202251747-nike-air-force.jpeg" alt="[1202251747] Nike Air Force" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251747] Nike Air Force</h3>
             
@@ -282,7 +282,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
              <span class="new-price">R$&nbsp;219,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202252200-nike-air-jordan.jpeg" alt="[1202252200] Nike Air Jordan">
+          <img src="images/man/shoes/nike/1202252200-nike-air-jordan.jpeg" alt="[1202252200] Nike Air Jordan" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202252200] Nike Air Jordan</h3>
             
@@ -291,7 +291,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
              <span class="new-price">R$&nbsp;219,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1007251159-nike-dunk-low-pro.jpeg" alt="[1007251159] Nike Dunk Low Pro">
+          <img src="images/man/shoes/nike/1007251159-nike-dunk-low-pro.jpeg" alt="[1007251159] Nike Dunk Low Pro" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1007251159] Nike Dunk Low Pro</h3>
             
@@ -299,7 +299,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
             <span class="price">R$&nbsp;199,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202251737-nike-dunk-low-pro.jpeg" alt="[1202251737] Nike Dunk Low Pro">
+          <img src="images/man/shoes/nike/1202251737-nike-dunk-low-pro.jpeg" alt="[1202251737] Nike Dunk Low Pro" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251737] Nike Dunk Low Pro</h3>
             
@@ -308,7 +308,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202251719-nike-dunk-low-pro.jpeg" alt="[1202251719] Nike Dunk Low Pro">
+          <img src="images/man/shoes/nike/1202251719-nike-dunk-low-pro.jpeg" alt="[1202251719] Nike Dunk Low Pro" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251719] Nike Dunk Low Pro</h3>
             
@@ -317,7 +317,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202252152-nike-dunk-low-pro.jpeg" alt="[1202252152] Nike Dunk Low Pro">
+          <img src="images/man/shoes/nike/1202252152-nike-dunk-low-pro.jpeg" alt="[1202252152] Nike Dunk Low Pro" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202252152] Nike Dunk Low Pro</h3>
             
@@ -326,7 +326,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
              <span class="new-price">R$&nbsp;209,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202251733-nike-dunk-low-pro.jpeg" alt="[1202251733] Nike Dunk Low Pro">
+          <img src="images/man/shoes/nike/1202251733-nike-dunk-low-pro.jpeg" alt="[1202251733] Nike Dunk Low Pro" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251733] Nike Dunk Low Pro</h3>
             
@@ -335,7 +335,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
              <span class="new-price">R$&nbsp;209,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202251707-nike-jordan.jpeg" alt="[1202251707] Nike Jordan">
+          <img src="images/man/shoes/nike/1202251707-nike-jordan.jpeg" alt="[1202251707] Nike Jordan" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251707] Nike Jordan</h3>
             
@@ -344,7 +344,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
              <span class="new-price">R$&nbsp;159,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202251718-nike-r4.jpeg" alt="[1202251718] Nike R4">
+          <img src="images/man/shoes/nike/1202251718-nike-r4.jpeg" alt="[1202251718] Nike R4" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251718] Nike R4</h3>
             
@@ -353,7 +353,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
              <span class="new-price">R$&nbsp;219,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202251716-nike-r4.jpeg" alt="[1202251716] Nike R4">
+          <img src="images/man/shoes/nike/1202251716-nike-r4.jpeg" alt="[1202251716] Nike R4" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251716] Nike R4</h3>
             
@@ -362,7 +362,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
              <span class="new-price">R$&nbsp;219,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202251658-nike-shox.jpeg" alt="[1202251658] Nike Shox">
+          <img src="images/man/shoes/nike/1202251658-nike-shox.jpeg" alt="[1202251658] Nike Shox" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251658] Nike Shox</h3>
             
@@ -371,7 +371,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202252216-nike-shox.jpeg" alt="[1202252216] Nike Shox">
+          <img src="images/man/shoes/nike/1202252216-nike-shox.jpeg" alt="[1202252216] Nike Shox" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202252216] Nike Shox</h3>
             
@@ -380,7 +380,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1007251200-nike-shox.jpeg" alt="[1007251200] Nike Shox">
+          <img src="images/man/shoes/nike/1007251200-nike-shox.jpeg" alt="[1007251200] Nike Shox" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1007251200] Nike Shox</h3>
             
@@ -388,7 +388,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
             <span class="price">R$&nbsp;199,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202251724-nike-shox.jpeg" alt="[1202251724] Nike Shox">
+          <img src="images/man/shoes/nike/1202251724-nike-shox.jpeg" alt="[1202251724] Nike Shox" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251724] Nike Shox</h3>
             
@@ -397,7 +397,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202252214-nike-shox.jpeg" alt="[1202252214] Nike Shox">
+          <img src="images/man/shoes/nike/1202252214-nike-shox.jpeg" alt="[1202252214] Nike Shox" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202252214] Nike Shox</h3>
             
@@ -406,7 +406,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1007251157-nike.jpeg" alt="[1007251157] Nike Shox">
+          <img src="images/man/shoes/nike/1007251157-nike.jpeg" alt="[1007251157] Nike Shox" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1007251157] Nike Shox</h3>
             
@@ -415,7 +415,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1007251158-nike.jpeg" alt="[1007251158] Nike Shox">
+          <img src="images/man/shoes/nike/1007251158-nike.jpeg" alt="[1007251158] Nike Shox" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1007251158] Nike Shox</h3>
             
@@ -424,7 +424,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202251722-nike-shox-neymar.jpeg" alt="[1202251722] Nike Shox Neymar">
+          <img src="images/man/shoes/nike/1202251722-nike-shox-neymar.jpeg" alt="[1202251722] Nike Shox Neymar" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251722] Nike Shox Neymar</h3>
             
@@ -433,7 +433,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202251734-nike-shox-neymar.jpeg" alt="[1202251734] Nike Shox Neymar">
+          <img src="images/man/shoes/nike/1202251734-nike-shox-neymar.jpeg" alt="[1202251734] Nike Shox Neymar" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251734] Nike Shox Neymar</h3>
             
@@ -442,7 +442,7 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/vans/1202251757-vans.jpeg" alt="[1202251757] Vans">
+          <img src="images/man/shoes/vans/1202251757-vans.jpeg" alt="[1202251757] Vans" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251757] Vans</h3>
             
@@ -464,7 +464,10 @@ exports[`Fashion Man Shoes Desktop View Shoes renders final subcategory "Tênis"
       <div id="modal-content">
         <button id="modal-close">X</button>
         <div id="modal-image-container" class="modal-image-container">
-          <img id="modal-image" src="" alt="">
+          <picture>
+            <source id="modal-image-source" type="image/webp">
+            <img id="modal-image" src="" alt="">
+          </picture>
         </div>
         <div id="modal-controls">
           <button id="prev-image">&lt;</button>
@@ -637,7 +640,7 @@ exports[`Fashion Man Shoes Desktop View Slipers renders final subcategory "Chine
   <main>
     <h2 id="category-heading">Chinelos</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/man/slippers/tommy-hilfiger/1702251140-tommy-hilfiger.jpeg" alt="[1702251140] Tommy Hilfiger">
+          <img src="images/man/slippers/tommy-hilfiger/1702251140-tommy-hilfiger.jpeg" alt="[1702251140] Tommy Hilfiger" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1702251140] Tommy Hilfiger</h3>
             
@@ -658,7 +661,10 @@ exports[`Fashion Man Shoes Desktop View Slipers renders final subcategory "Chine
       <div id="modal-content">
         <button id="modal-close">X</button>
         <div id="modal-image-container" class="modal-image-container">
-          <img id="modal-image" src="" alt="">
+          <picture>
+            <source id="modal-image-source" type="image/webp">
+            <img id="modal-image" src="" alt="">
+          </picture>
         </div>
         <div id="modal-controls">
           <button id="prev-image">&lt;</button>
@@ -831,7 +837,7 @@ exports[`Fashion Man Shoes Desktop View Socks renders final subcategory "Meias M
   <main>
     <h2 id="category-heading">Meias Masculina</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/man/socks/0106250834-adidas.jpeg" alt="[0106250834] Adidas">
+          <img src="images/man/socks/0106250834-adidas.jpeg" alt="[0106250834] Adidas" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0106250834] Adidas</h3>
             <p class="description">Meia de algodão cano alto</p>
@@ -839,7 +845,7 @@ exports[`Fashion Man Shoes Desktop View Socks renders final subcategory "Meias M
             <span class="price">R$&nbsp;24,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/socks/0106250835-adidas.jpeg" alt="[0106250835] Adidas">
+          <img src="images/man/socks/0106250835-adidas.jpeg" alt="[0106250835] Adidas" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0106250835] Adidas</h3>
             <p class="description">Meia de algodão cano baixo - soquete</p>
@@ -847,7 +853,7 @@ exports[`Fashion Man Shoes Desktop View Socks renders final subcategory "Meias M
             <span class="price">R$&nbsp;12,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/socks/0106250836-nike.jpeg" alt="[0106250836] Nike">
+          <img src="images/man/socks/0106250836-nike.jpeg" alt="[0106250836] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0106250836] Nike</h3>
             <p class="description">Meia de algodão cano baixo - soquete</p>
@@ -855,7 +861,7 @@ exports[`Fashion Man Shoes Desktop View Socks renders final subcategory "Meias M
             <span class="price">R$&nbsp;12,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/socks/2907251530-nike.jpeg" alt="[2907251530] Nike">
+          <img src="images/man/socks/2907251530-nike.jpeg" alt="[2907251530] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2907251530] Nike</h3>
             <p class="description">Meia de algodão cano baixo - soquete</p>
@@ -863,7 +869,7 @@ exports[`Fashion Man Shoes Desktop View Socks renders final subcategory "Meias M
             <span class="price">R$&nbsp;24,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/socks/2907251531-nike.jpeg" alt="[2907251531] Nike">
+          <img src="images/man/socks/2907251531-nike.jpeg" alt="[2907251531] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2907251531] Nike</h3>
             <p class="description">Meia de algodão cano baixo - soquete</p>
@@ -871,7 +877,7 @@ exports[`Fashion Man Shoes Desktop View Socks renders final subcategory "Meias M
             <span class="price">R$&nbsp;24,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/socks/0106250833-oakley.jpeg" alt="[0106250833] Oakley">
+          <img src="images/man/socks/0106250833-oakley.jpeg" alt="[0106250833] Oakley" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0106250833] Oakley</h3>
             <p class="description">Meia de algodão cano alto</p>
@@ -879,7 +885,7 @@ exports[`Fashion Man Shoes Desktop View Socks renders final subcategory "Meias M
             <span class="price">R$&nbsp;24,90</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/socks/0106250831-tommy-hilfiger.jpeg" alt="[0106250831] Tommy Hilfiger">
+          <img src="images/man/socks/0106250831-tommy-hilfiger.jpeg" alt="[0106250831] Tommy Hilfiger" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0106250831] Tommy Hilfiger</h3>
             <p class="description">Meia de algodão cano alto</p>
@@ -887,7 +893,7 @@ exports[`Fashion Man Shoes Desktop View Socks renders final subcategory "Meias M
             <span class="price">R$&nbsp;24,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/socks/0106250832-tommy-hilfiger.jpeg" alt="[0106250832] Tommy Hilfiger">
+          <img src="images/man/socks/0106250832-tommy-hilfiger.jpeg" alt="[0106250832] Tommy Hilfiger" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0106250832] Tommy Hilfiger</h3>
             <p class="description">Meia de algodão cano alto</p>
@@ -895,7 +901,7 @@ exports[`Fashion Man Shoes Desktop View Socks renders final subcategory "Meias M
             <span class="price">R$&nbsp;24,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/socks/0106250830-quicksilver.jpeg" alt="[0106250830] Quiksilver">
+          <img src="images/man/socks/0106250830-quicksilver.jpeg" alt="[0106250830] Quiksilver" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0106250830] Quiksilver</h3>
             <p class="description">Meia de algodão cano alto</p>
@@ -916,7 +922,10 @@ exports[`Fashion Man Shoes Desktop View Socks renders final subcategory "Meias M
       <div id="modal-content">
         <button id="modal-close">X</button>
         <div id="modal-image-container" class="modal-image-container">
-          <img id="modal-image" src="" alt="">
+          <picture>
+            <source id="modal-image-source" type="image/webp">
+            <img id="modal-image" src="" alt="">
+          </picture>
         </div>
         <div id="modal-controls">
           <button id="prev-image">&lt;</button>
@@ -1089,7 +1098,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
   <main>
     <h2 id="category-heading">Tênis</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/adidas/1202252201-adidas-campus.jpeg" alt="[1202252201] Adidas Campus">
+          <img src="images/man/shoes/adidas/1202252201-adidas-campus.jpeg" alt="[1202252201] Adidas Campus" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202252201] Adidas Campus</h3>
             
@@ -1098,7 +1107,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/adidas/1202252202-adidas-campus.jpeg" alt="[1202252202] Adidas Campus">
+          <img src="images/man/shoes/adidas/1202252202-adidas-campus.jpeg" alt="[1202252202] Adidas Campus" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202252202] Adidas Campus</h3>
             
@@ -1107,7 +1116,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
              <span class="new-price">R$&nbsp;249,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/adidas/1202252208-adidas-campus.jpeg" alt="[1202252208] Adidas Campus">
+          <img src="images/man/shoes/adidas/1202252208-adidas-campus.jpeg" alt="[1202252208] Adidas Campus" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202252208] Adidas Campus</h3>
             
@@ -1116,7 +1125,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/adidas/1202252211-adidas-campus.jpeg" alt="[1202252211] Adidas Campus">
+          <img src="images/man/shoes/adidas/1202252211-adidas-campus.jpeg" alt="[1202252211] Adidas Campus" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202252211] Adidas Campus</h3>
             
@@ -1125,7 +1134,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/adidas/1202252155-adidas-campus.jpeg" alt="[1202252155] Adidas Campus">
+          <img src="images/man/shoes/adidas/1202252155-adidas-campus.jpeg" alt="[1202252155] Adidas Campus" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202252155] Adidas Campus</h3>
             
@@ -1134,7 +1143,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/adidas/1202252210-adidas-campus.jpeg" alt="[1202252210] Adidas Campus">
+          <img src="images/man/shoes/adidas/1202252210-adidas-campus.jpeg" alt="[1202252210] Adidas Campus" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202252210] Adidas Campus</h3>
             
@@ -1143,7 +1152,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/asics/1007251156-asics.jpeg" alt="[1007251156] Asics">
+          <img src="images/man/shoes/asics/1007251156-asics.jpeg" alt="[1007251156] Asics" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1007251156] Asics</h3>
             
@@ -1151,7 +1160,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
             <span class="price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/asics/1202251714-asics.jpeg" alt="[1202251714] Asics">
+          <img src="images/man/shoes/asics/1202251714-asics.jpeg" alt="[1202251714] Asics" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251714] Asics</h3>
             
@@ -1159,7 +1168,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
             <span class="price">R$&nbsp;89,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/asics/1202251736-asics.jpeg" alt="[1202251736] Asics">
+          <img src="images/man/shoes/asics/1202251736-asics.jpeg" alt="[1202251736] Asics" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251736] Asics</h3>
             
@@ -1168,7 +1177,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/mizuno/1104250021-mizuno.jpeg" alt="[1104250021] Mizuno 14">
+          <img src="images/man/shoes/mizuno/1104250021-mizuno.jpeg" alt="[1104250021] Mizuno 14" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1104250021] Mizuno 14</h3>
             
@@ -1176,7 +1185,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
             <span class="price">R$&nbsp;479,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202251703-nike-air-force.jpeg" alt="[1202251703] Nike Air Force">
+          <img src="images/man/shoes/nike/1202251703-nike-air-force.jpeg" alt="[1202251703] Nike Air Force" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251703] Nike Air Force</h3>
             
@@ -1185,7 +1194,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
              <span class="new-price">R$&nbsp;209,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202251710-nike-air-force.jpeg" alt="[1202251710] Nike Air Force">
+          <img src="images/man/shoes/nike/1202251710-nike-air-force.jpeg" alt="[1202251710] Nike Air Force" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251710] Nike Air Force</h3>
             
@@ -1194,7 +1203,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202251739-nike-air-force.jpeg" alt="[1202251739] Nike Air Force">
+          <img src="images/man/shoes/nike/1202251739-nike-air-force.jpeg" alt="[1202251739] Nike Air Force" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251739] Nike Air Force</h3>
             
@@ -1203,7 +1212,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
              <span class="new-price">R$&nbsp;209,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202251747-nike-air-force.jpeg" alt="[1202251747] Nike Air Force">
+          <img src="images/man/shoes/nike/1202251747-nike-air-force.jpeg" alt="[1202251747] Nike Air Force" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251747] Nike Air Force</h3>
             
@@ -1212,7 +1221,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
              <span class="new-price">R$&nbsp;219,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202252200-nike-air-jordan.jpeg" alt="[1202252200] Nike Air Jordan">
+          <img src="images/man/shoes/nike/1202252200-nike-air-jordan.jpeg" alt="[1202252200] Nike Air Jordan" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202252200] Nike Air Jordan</h3>
             
@@ -1221,7 +1230,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
              <span class="new-price">R$&nbsp;219,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1007251159-nike-dunk-low-pro.jpeg" alt="[1007251159] Nike Dunk Low Pro">
+          <img src="images/man/shoes/nike/1007251159-nike-dunk-low-pro.jpeg" alt="[1007251159] Nike Dunk Low Pro" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1007251159] Nike Dunk Low Pro</h3>
             
@@ -1229,7 +1238,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
             <span class="price">R$&nbsp;199,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202251737-nike-dunk-low-pro.jpeg" alt="[1202251737] Nike Dunk Low Pro">
+          <img src="images/man/shoes/nike/1202251737-nike-dunk-low-pro.jpeg" alt="[1202251737] Nike Dunk Low Pro" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251737] Nike Dunk Low Pro</h3>
             
@@ -1238,7 +1247,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202251719-nike-dunk-low-pro.jpeg" alt="[1202251719] Nike Dunk Low Pro">
+          <img src="images/man/shoes/nike/1202251719-nike-dunk-low-pro.jpeg" alt="[1202251719] Nike Dunk Low Pro" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251719] Nike Dunk Low Pro</h3>
             
@@ -1247,7 +1256,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
              <span class="new-price">R$&nbsp;149,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202252152-nike-dunk-low-pro.jpeg" alt="[1202252152] Nike Dunk Low Pro">
+          <img src="images/man/shoes/nike/1202252152-nike-dunk-low-pro.jpeg" alt="[1202252152] Nike Dunk Low Pro" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202252152] Nike Dunk Low Pro</h3>
             
@@ -1256,7 +1265,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
              <span class="new-price">R$&nbsp;209,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202251733-nike-dunk-low-pro.jpeg" alt="[1202251733] Nike Dunk Low Pro">
+          <img src="images/man/shoes/nike/1202251733-nike-dunk-low-pro.jpeg" alt="[1202251733] Nike Dunk Low Pro" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251733] Nike Dunk Low Pro</h3>
             
@@ -1265,7 +1274,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
              <span class="new-price">R$&nbsp;209,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202251707-nike-jordan.jpeg" alt="[1202251707] Nike Jordan">
+          <img src="images/man/shoes/nike/1202251707-nike-jordan.jpeg" alt="[1202251707] Nike Jordan" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251707] Nike Jordan</h3>
             
@@ -1274,7 +1283,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
              <span class="new-price">R$&nbsp;159,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202251718-nike-r4.jpeg" alt="[1202251718] Nike R4">
+          <img src="images/man/shoes/nike/1202251718-nike-r4.jpeg" alt="[1202251718] Nike R4" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251718] Nike R4</h3>
             
@@ -1283,7 +1292,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
              <span class="new-price">R$&nbsp;219,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202251716-nike-r4.jpeg" alt="[1202251716] Nike R4">
+          <img src="images/man/shoes/nike/1202251716-nike-r4.jpeg" alt="[1202251716] Nike R4" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251716] Nike R4</h3>
             
@@ -1292,7 +1301,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
              <span class="new-price">R$&nbsp;219,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202251658-nike-shox.jpeg" alt="[1202251658] Nike Shox">
+          <img src="images/man/shoes/nike/1202251658-nike-shox.jpeg" alt="[1202251658] Nike Shox" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251658] Nike Shox</h3>
             
@@ -1301,7 +1310,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202252216-nike-shox.jpeg" alt="[1202252216] Nike Shox">
+          <img src="images/man/shoes/nike/1202252216-nike-shox.jpeg" alt="[1202252216] Nike Shox" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202252216] Nike Shox</h3>
             
@@ -1310,7 +1319,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1007251200-nike-shox.jpeg" alt="[1007251200] Nike Shox">
+          <img src="images/man/shoes/nike/1007251200-nike-shox.jpeg" alt="[1007251200] Nike Shox" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1007251200] Nike Shox</h3>
             
@@ -1318,7 +1327,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
             <span class="price">R$&nbsp;199,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202251724-nike-shox.jpeg" alt="[1202251724] Nike Shox">
+          <img src="images/man/shoes/nike/1202251724-nike-shox.jpeg" alt="[1202251724] Nike Shox" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251724] Nike Shox</h3>
             
@@ -1327,7 +1336,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202252214-nike-shox.jpeg" alt="[1202252214] Nike Shox">
+          <img src="images/man/shoes/nike/1202252214-nike-shox.jpeg" alt="[1202252214] Nike Shox" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202252214] Nike Shox</h3>
             
@@ -1336,7 +1345,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1007251157-nike.jpeg" alt="[1007251157] Nike Shox">
+          <img src="images/man/shoes/nike/1007251157-nike.jpeg" alt="[1007251157] Nike Shox" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1007251157] Nike Shox</h3>
             
@@ -1345,7 +1354,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1007251158-nike.jpeg" alt="[1007251158] Nike Shox">
+          <img src="images/man/shoes/nike/1007251158-nike.jpeg" alt="[1007251158] Nike Shox" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1007251158] Nike Shox</h3>
             
@@ -1354,7 +1363,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202251722-nike-shox-neymar.jpeg" alt="[1202251722] Nike Shox Neymar">
+          <img src="images/man/shoes/nike/1202251722-nike-shox-neymar.jpeg" alt="[1202251722] Nike Shox Neymar" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251722] Nike Shox Neymar</h3>
             
@@ -1363,7 +1372,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/nike/1202251734-nike-shox-neymar.jpeg" alt="[1202251734] Nike Shox Neymar">
+          <img src="images/man/shoes/nike/1202251734-nike-shox-neymar.jpeg" alt="[1202251734] Nike Shox Neymar" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251734] Nike Shox Neymar</h3>
             
@@ -1372,7 +1381,7 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
              <span class="new-price">R$&nbsp;259,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/shoes/vans/1202251757-vans.jpeg" alt="[1202251757] Vans">
+          <img src="images/man/shoes/vans/1202251757-vans.jpeg" alt="[1202251757] Vans" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1202251757] Vans</h3>
             
@@ -1394,7 +1403,10 @@ exports[`Fashion Man Shoes Mobile View Shoes renders final subcategory "Tênis" 
       <div id="modal-content">
         <button id="modal-close">X</button>
         <div id="modal-image-container" class="modal-image-container">
-          <img id="modal-image" src="" alt="">
+          <picture>
+            <source id="modal-image-source" type="image/webp">
+            <img id="modal-image" src="" alt="">
+          </picture>
         </div>
         <div id="modal-controls">
           <button id="prev-image">&lt;</button>
@@ -1567,7 +1579,7 @@ exports[`Fashion Man Shoes Mobile View Slipers renders final subcategory "Chinel
   <main>
     <h2 id="category-heading">Chinelos</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/man/slippers/tommy-hilfiger/1702251140-tommy-hilfiger.jpeg" alt="[1702251140] Tommy Hilfiger">
+          <img src="images/man/slippers/tommy-hilfiger/1702251140-tommy-hilfiger.jpeg" alt="[1702251140] Tommy Hilfiger" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1702251140] Tommy Hilfiger</h3>
             
@@ -1588,7 +1600,10 @@ exports[`Fashion Man Shoes Mobile View Slipers renders final subcategory "Chinel
       <div id="modal-content">
         <button id="modal-close">X</button>
         <div id="modal-image-container" class="modal-image-container">
-          <img id="modal-image" src="" alt="">
+          <picture>
+            <source id="modal-image-source" type="image/webp">
+            <img id="modal-image" src="" alt="">
+          </picture>
         </div>
         <div id="modal-controls">
           <button id="prev-image">&lt;</button>
@@ -1761,7 +1776,7 @@ exports[`Fashion Man Shoes Mobile View Socks renders final subcategory "Meias Ma
   <main>
     <h2 id="category-heading">Meias Masculina</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/man/socks/0106250834-adidas.jpeg" alt="[0106250834] Adidas">
+          <img src="images/man/socks/0106250834-adidas.jpeg" alt="[0106250834] Adidas" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0106250834] Adidas</h3>
             <p class="description">Meia de algodão cano alto</p>
@@ -1769,7 +1784,7 @@ exports[`Fashion Man Shoes Mobile View Socks renders final subcategory "Meias Ma
             <span class="price">R$&nbsp;24,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/socks/0106250835-adidas.jpeg" alt="[0106250835] Adidas">
+          <img src="images/man/socks/0106250835-adidas.jpeg" alt="[0106250835] Adidas" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0106250835] Adidas</h3>
             <p class="description">Meia de algodão cano baixo - soquete</p>
@@ -1777,7 +1792,7 @@ exports[`Fashion Man Shoes Mobile View Socks renders final subcategory "Meias Ma
             <span class="price">R$&nbsp;12,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/socks/0106250836-nike.jpeg" alt="[0106250836] Nike">
+          <img src="images/man/socks/0106250836-nike.jpeg" alt="[0106250836] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0106250836] Nike</h3>
             <p class="description">Meia de algodão cano baixo - soquete</p>
@@ -1785,7 +1800,7 @@ exports[`Fashion Man Shoes Mobile View Socks renders final subcategory "Meias Ma
             <span class="price">R$&nbsp;12,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/socks/2907251530-nike.jpeg" alt="[2907251530] Nike">
+          <img src="images/man/socks/2907251530-nike.jpeg" alt="[2907251530] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2907251530] Nike</h3>
             <p class="description">Meia de algodão cano baixo - soquete</p>
@@ -1793,7 +1808,7 @@ exports[`Fashion Man Shoes Mobile View Socks renders final subcategory "Meias Ma
             <span class="price">R$&nbsp;24,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/socks/2907251531-nike.jpeg" alt="[2907251531] Nike">
+          <img src="images/man/socks/2907251531-nike.jpeg" alt="[2907251531] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2907251531] Nike</h3>
             <p class="description">Meia de algodão cano baixo - soquete</p>
@@ -1801,7 +1816,7 @@ exports[`Fashion Man Shoes Mobile View Socks renders final subcategory "Meias Ma
             <span class="price">R$&nbsp;24,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/socks/0106250833-oakley.jpeg" alt="[0106250833] Oakley">
+          <img src="images/man/socks/0106250833-oakley.jpeg" alt="[0106250833] Oakley" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0106250833] Oakley</h3>
             <p class="description">Meia de algodão cano alto</p>
@@ -1809,7 +1824,7 @@ exports[`Fashion Man Shoes Mobile View Socks renders final subcategory "Meias Ma
             <span class="price">R$&nbsp;24,90</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/man/socks/0106250831-tommy-hilfiger.jpeg" alt="[0106250831] Tommy Hilfiger">
+          <img src="images/man/socks/0106250831-tommy-hilfiger.jpeg" alt="[0106250831] Tommy Hilfiger" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0106250831] Tommy Hilfiger</h3>
             <p class="description">Meia de algodão cano alto</p>
@@ -1817,7 +1832,7 @@ exports[`Fashion Man Shoes Mobile View Socks renders final subcategory "Meias Ma
             <span class="price">R$&nbsp;24,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/socks/0106250832-tommy-hilfiger.jpeg" alt="[0106250832] Tommy Hilfiger">
+          <img src="images/man/socks/0106250832-tommy-hilfiger.jpeg" alt="[0106250832] Tommy Hilfiger" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0106250832] Tommy Hilfiger</h3>
             <p class="description">Meia de algodão cano alto</p>
@@ -1825,7 +1840,7 @@ exports[`Fashion Man Shoes Mobile View Socks renders final subcategory "Meias Ma
             <span class="price">R$&nbsp;24,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/socks/0106250830-quicksilver.jpeg" alt="[0106250830] Quiksilver">
+          <img src="images/man/socks/0106250830-quicksilver.jpeg" alt="[0106250830] Quiksilver" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0106250830] Quiksilver</h3>
             <p class="description">Meia de algodão cano alto</p>
@@ -1846,7 +1861,10 @@ exports[`Fashion Man Shoes Mobile View Socks renders final subcategory "Meias Ma
       <div id="modal-content">
         <button id="modal-close">X</button>
         <div id="modal-image-container" class="modal-image-container">
-          <img id="modal-image" src="" alt="">
+          <picture>
+            <source id="modal-image-source" type="image/webp">
+            <img id="modal-image" src="" alt="">
+          </picture>
         </div>
         <div id="modal-controls">
           <button id="prev-image">&lt;</button>
