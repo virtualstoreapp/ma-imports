@@ -1,0 +1,19 @@
+[
+  {
+    "name": "[0501251300] Fixture Epsilon",
+    "description": "",
+    "oldPrice": 0.0,
+    "price": 25.5,
+    "size": "Tamanho único",
+    "soldOut": true,
+    "images": ["images/fixtures/epsilon.jpeg"]
+  },
+  {
+    "name": "[0401251200] Fixture Delta",
+    "description": "Produto de fixture padrão",
+    "oldPrice": 0.0,
+    "price": 75.0,
+    "size": "GG",
+    "images": ["images/fixtures/delta.jpeg"]
+  }
+]

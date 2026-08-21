@@ -1,8 +1,21 @@
+"use strict";
+
+const path = require('path');
 const { waitFor } = require('@testing-library/dom');
 
-const assertSnapshot = async () => {
-  expect(document.body.innerHTML).toMatchSnapshot();
-};
+const { buildAllCatalog, productImages, readCategory } = require('../../tools/lib/catalog');
+
+const PRODUCTS_DIR = path.join(__dirname, '../../products');
+
+// Category suites assert invariants against the live catalog rather than
+// snapshotting it. Byte-exact card and modal markup is pinned once, against a
+// fixed fixture, in tests/catalog/fixture/catalog.fixture.test.js.
+//
+// Why: full-DOM snapshots of products/ made every product addition rewrite
+// hundreds of unrelated snapshot lines (products/all.json is a global re-sort),
+// so the snapshots were regenerated wholesale instead of reviewed. Expected
+// counts are derived from the source files for the same reason — a hardcoded
+// 241 has to be hand-edited on every addition.
 
 const assertExpectedHeading = async (expectedHeading) => {
   await waitFor(() => {
@@ -11,24 +24,96 @@ const assertExpectedHeading = async (expectedHeading) => {
 };
 
 const assertExpectedProductQuantity = async (expectedCount) => {
-  await waitFor(() => {    
+  await waitFor(() => {
     expect(document.querySelectorAll('#product-list .product-item').length).toEqual(expectedCount);
   });
 };
 
-const asserts = async (expectedHeading, expectedCount) => {
-  await assertExpectedHeading(expectedHeading);
-  await assertExpectedProductQuantity(expectedCount);
-  await assertSnapshot();
+/**
+ * Asserts that the rendered grid faithfully represents the given products,
+ * without pinning the exact markup.
+ * @param {object[]} products The products that were served, in render order.
+ */
+const assertCardInvariants = (products) => {
+  const cards = Array.from(document.querySelectorAll('#product-list .product-item'));
+  expect(cards).toHaveLength(products.length);
+
+  // Product text reaches the DOM through innerHTML, so nothing in the data may
+  // introduce an element. tests/behaviour/catalog.escaping.test.js covers the
+  // hostile case in detail; this is the catalog-wide guard.
+  expect(document.querySelectorAll('#product-list script')).toHaveLength(0);
+
+  const names = new Set(products.map((product) => product.name));
+
+  cards.forEach((card) => {
+    const heading = card.querySelector('h3');
+    expect(heading).toBeTruthy();
+    // The rendered name round-trips to a name that exists in the source data,
+    // which catches truncation, double-escaping and off-by-one merges.
+    expect(names.has(heading.textContent)).toBe(true);
+
+    const img = card.querySelector('img');
+    expect(img).toBeTruthy();
+    expect(img.getAttribute('src')).toBeTruthy();
+    expect(img.getAttribute('alt')).toBe(heading.textContent);
+    expect(img).toHaveAttribute('loading', 'lazy');
+
+    // Exactly one of the two price shapes, never both and never neither.
+    const plainPrice = card.querySelector('.price');
+    const discounted = card.querySelector('.old-price') && card.querySelector('.new-price');
+    expect(Boolean(plainPrice) !== Boolean(discounted)).toBe(true);
+  });
+
+  // Optional fields render exactly as often as the data declares them.
+  const expected = {
+    soldOut: products.filter((product) => product.soldOut === true).length,
+    description: products.filter((product) => product.description).length,
+    size: products.filter((product) => product.size && product.size !== 'N/A').length,
+  };
+
+  expect(document.querySelectorAll('#product-list .sold-out-label')).toHaveLength(expected.soldOut);
+  expect(document.querySelectorAll('#product-list .description')).toHaveLength(expected.description);
+  expect(document.querySelectorAll('#product-list .size')).toHaveLength(expected.size);
+
+  // Every product contributes at least one image reference, so no card can
+  // silently render without art.
+  products.forEach((product) => {
+    expect(productImages(product).length).toBeGreaterThan(0);
+  });
 };
 
+/**
+ * Asserts a single category renders correctly, deriving the expected count from
+ * the category file rather than a hardcoded number.
+ * @param {string} expectedHeading Heading text for the category.
+ * @param {string} categorySlug Slug matching products/{slug}.json.
+ */
+const assertCategory = async (expectedHeading, categorySlug) => {
+  const products = readCategory(PRODUCTS_DIR, categorySlug);
+  expect(products.length).toBeGreaterThan(0);
+
+  await assertExpectedHeading(expectedHeading);
+  await assertExpectedProductQuantity(products.length);
+  assertCardInvariants(products);
+};
+
+/**
+ * Asserts the homepage renders the full merged catalog.
+ */
 const assertAllProducts = async () => {
-  const expectedHeading = "Novidades";
-  const expectedCount = 241;
-  await asserts(expectedHeading, expectedCount);
+  const products = buildAllCatalog(PRODUCTS_DIR);
+  expect(products.length).toBeGreaterThan(0);
+
+  await assertExpectedHeading('Novidades');
+  await assertExpectedProductQuantity(products.length);
+  assertCardInvariants(products);
 };
 
 module.exports = {
-    asserts,
-    assertAllProducts,
+  PRODUCTS_DIR,
+  assertAllProducts,
+  assertCardInvariants,
+  assertCategory,
+  assertExpectedHeading,
+  assertExpectedProductQuantity,
 };
