@@ -120,7 +120,7 @@ describe('Fixture catalog', () => {
       expect(document.getElementById('modal-image-source'))
         .toHaveAttribute('srcset', 'images/fixtures/0101250900-alpha-front.webp');
       expect(document.getElementById('modal-image'))
-        .toHaveAttribute('src', 'images/fixtures/0101250900-alpha-front.jpeg');
+        .toHaveAttribute('src', 'images/fixtures/0101250900-alpha-front.jpg');
     });
 
     it('marks a sold-out product inside the modal', async () => {

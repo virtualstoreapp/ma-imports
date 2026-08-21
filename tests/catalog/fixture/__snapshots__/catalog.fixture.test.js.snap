@@ -7,7 +7,7 @@ exports[`Fixture catalog modal renders the modal with the expected markup 1`] = 
         <div id="modal-image-container" class="modal-image-container">
           <picture>
             <source id="modal-image-source" type="image/webp" srcset="images/fixtures/0101250900-alpha-front.webp">
-            <img id="modal-image" src="images/fixtures/0101250900-alpha-front.jpeg" alt="" style="transform: scale(1);">
+            <img id="modal-image" src="images/fixtures/0101250900-alpha-front.jpg" alt="" style="transform: scale(1);">
           </picture>
         </div>
         <div id="modal-controls">

@@ -171,13 +171,15 @@
       const modalSource = document.getElementById('modal-image-source');
       const media = mediaAt(currentProduct, currentIndex);
 
-      // The <source> carries the generated WebP; the <img> keeps the original
-      // as the fallback for browsers that cannot decode it.
+      // The <source> carries the generated WebP; the <img> is the fallback for
+      // browsers that cannot decode it. That fallback is now a generated 1200px
+      // JPEG rather than the original, which is no longer copied into dist/.
+      // An unbuilt source tree has no media, so it falls back to the original.
       if (modalSource) {
         if (media) modalSource.setAttribute('srcset', media.webp);
         else modalSource.removeAttribute('srcset');
       }
-      modalImage.src = currentImages[currentIndex];
+      modalImage.src = (media && media.full) || currentImages[currentIndex];
       modalImage.style.transform = `scale(${currentZoom})`;
     };
 

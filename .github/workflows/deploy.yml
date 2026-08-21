@@ -33,12 +33,22 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # dist/images doubles as the WebP conversion cache: only images whose
-      # source changed are re-encoded, keeping the build well under a minute.
+      # dist/images holds the derivatives; .image-cache records the fingerprint
+      # each was rendered from. Both are needed: without the fingerprints every
+      # derivative re-renders, and without the derivatives the fingerprints
+      # describe files that are not there.
+      #
+      # Freshness is decided by content hash, not mtime, which is what makes
+      # restore-keys useful here. Under the old mtime comparison a restored
+      # cache always tested as stale, because actions/checkout writes sources
+      # with the checkout time while actions/cache restores older mtimes — so
+      # the whole tree re-encoded on every run.
       - name: Restore image cache
         uses: actions/cache@v4
         with:
-          path: dist/images
+          path: |
+            dist/images
+            .image-cache
           key: images-${{ hashFiles('images/**') }}
           restore-keys: |
             images-

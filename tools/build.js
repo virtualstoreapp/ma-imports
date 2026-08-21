@@ -11,7 +11,7 @@ const {
   productImages,
   readCategory,
 } = require('./lib/catalog');
-const { buildImageManifest } = require('./lib/images');
+const { buildImageManifest, manifestOutputs } = require('./lib/images');
 const { loadRegistry, renderRegistryElement } = require('./lib/registry');
 const { toRuntime } = require('./lib/runtime');
 const { buildSocialCard } = require('./lib/social');
@@ -89,40 +89,16 @@ const writeProducts = async (manifest, brands) => {
     'utf8'
   );
 
-  return { categories: categories.length, products: all.length };
-};
-
-/**
- * Copies a file only when the destination is missing or stale.
- * @param {string} from Absolute source path.
- * @param {string} to Absolute destination path.
- * @returns {Promise<boolean>} True when the file was copied.
- */
-const copyIfStale = async (from, to) => {
-  const source = await fsp.stat(from);
-  try {
-    const destination = await fsp.stat(to);
-    if (destination.mtimeMs >= source.mtimeMs) return false;
-  } catch {
-    // Destination does not exist yet.
+  // dist/ is incremental, so a renamed or deleted category would otherwise
+  // leave its old file behind forever — a live URL serving a frozen copy of the
+  // catalog. Wave 3's underwear-man rename did exactly that.
+  const expected = new Set([...categories, ALL_CATEGORY].map((slug) => `${slug}.json`));
+  const stale = (await fsp.readdir(outputDir)).filter((file) => !expected.has(file));
+  for (const file of stale) {
+    await fsp.rm(path.join(outputDir, file));
   }
-  await fsp.mkdir(path.dirname(to), { recursive: true });
-  await fsp.copyFile(from, to);
-  return true;
-};
 
-/**
- * Copies the original images so the modal keeps a full-resolution fallback
- * for browsers without WebP support.
- * @param {object} manifest Image manifest keyed by source path.
- * @returns {Promise<number>} Number of originals refreshed.
- */
-const copyOriginals = async (manifest) => {
-  let copied = 0;
-  for (const source of Object.keys(manifest)) {
-    if (await copyIfStale(path.join(ROOT, source), path.join(DIST, source))) copied += 1;
-  }
-  return copied;
+  return { categories: categories.length, products: all.length, stale: stale.length };
 };
 
 /**
@@ -133,15 +109,9 @@ const copyOriginals = async (manifest) => {
  * @returns {Promise<number>} Number of stale files removed.
  */
 const pruneImages = async (manifest, keep = []) => {
-  const expected = new Set([
-    ...keep,
-    ...Object.values(manifest).flatMap((entry) => [
-      entry.src,
-      entry.webp,
-      entry.thumb,
-      entry.thumbFallback,
-    ]),
-  ]);
+  // `entry.src` is deliberately absent: originals are no longer copied into
+  // dist/, so an original still sitting there is stale and should be pruned.
+  const expected = new Set([...keep, ...manifestOutputs(manifest)]);
 
   const walk = async (relative) => {
     const absolute = path.join(DIST, relative);
@@ -170,6 +140,61 @@ const pruneImages = async (manifest, keep = []) => {
   return walk('images');
 };
 
+/**
+ * Asserts dist/images holds exactly the files it should.
+ *
+ * Freshness is now decided by a recorded fingerprint rather than by looking at
+ * the tree, so a cache that claims a derivative exists when it does not would
+ * otherwise ship a broken image. This is the check that makes the cache safe to
+ * trust.
+ * @param {object} manifest Image manifest keyed by source path.
+ * @param {string[]} keep Generated paths that belong to no product.
+ * @returns {Promise<void>} Resolves when the tree is intact.
+ */
+const assertImagesIntact = async (manifest, keep) => {
+  const expected = [...keep, ...manifestOutputs(manifest)];
+
+  const missing = [];
+  for (const relative of expected) {
+    try {
+      await fsp.access(path.join(DIST, relative));
+    } catch {
+      missing.push(relative);
+    }
+  }
+  if (missing.length) {
+    throw new Error(
+      `${missing.length} declared derivative(s) missing from dist/:\n  ${missing.slice(0, 10).join('\n  ')}`
+    );
+  }
+
+  const expectedSet = new Set(expected);
+  const walk = async (relative) => {
+    let entries;
+    try {
+      entries = await fsp.readdir(path.join(DIST, relative), { withFileTypes: true });
+    } catch {
+      return [];
+    }
+    const found = [];
+    for (const entry of entries) {
+      const entryRelative = path.posix.join(relative, entry.name);
+      if (entry.isDirectory()) found.push(...(await walk(entryRelative)));
+      else if (!expectedSet.has(entryRelative)) found.push(entryRelative);
+    }
+    return found;
+  };
+
+  const unexpected = await walk('images');
+  if (unexpected.length) {
+    throw new Error(
+      `${unexpected.length} unreferenced file(s) in dist/images:\n  ${unexpected.slice(0, 10).join('\n  ')}`
+    );
+  }
+};
+
+module.exports = { assertImagesIntact, pruneImages };
+
 const main = async () => {
   const startedAt = process.hrtime.bigint();
   await fsp.mkdir(DIST, { recursive: true });
@@ -184,9 +209,9 @@ const main = async () => {
   const card = await buildSocialCard({ sourceRoot: ROOT, outputRoot: DIST });
   if (card.written) log(`social: ${card.path} rendered`);
 
-  const copied = await copyOriginals(manifest);
   const pruned = await pruneImages(manifest, [card.path]);
-  if (copied || pruned) log(`images: ${copied} original(s) copied, ${pruned} stale file(s) pruned`);
+  if (pruned) log(`images: ${pruned} stale file(s) pruned`);
+  await assertImagesIntact(manifest, [card.path]);
 
   // The registry block in index.html is generated and committed, so a stale
   // block means the catalog and the client disagree about category identity.
@@ -210,8 +235,9 @@ const main = async () => {
     throw new Error(`${errors.length} catalog problem(s):\n  ${errors.join('\n  ')}`);
   }
 
-  const { categories, products } = await writeProducts(manifest, registry.brands);
+  const { categories, products, stale } = await writeProducts(manifest, registry.brands);
   log(`products: ${products} products across ${categories} categories`);
+  if (stale) log(`products: ${stale} stale file(s) pruned`);
   if (warnings.length) log(`products: ${warnings.length} warning(s) above`);
 
   for (const file of STATIC_FILES) {
@@ -225,7 +251,9 @@ const main = async () => {
   log(`build: dist/ ready in ${seconds.toFixed(1)}s`);
 };
 
-main().catch((error) => {
-  process.exitCode = 1;
-  process.stderr.write(`build failed: ${error.message}\n`);
-});
+if (require.main === module) {
+  main().catch((error) => {
+    process.exitCode = 1;
+    process.stderr.write(`build failed: ${error.message}\n`);
+  });
+}

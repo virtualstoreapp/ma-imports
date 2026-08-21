@@ -553,7 +553,7 @@ rendering. `[MEASURED]`
 | Gap | Change | Benefit | Priority |
 |---|---|---|---|
 | Freshness by mtime, unreliable under `actions/checkout` (§2.11) | Key freshness and the CI cache on **content hash** | Build time stops scaling linearly with catalog size; removes the stale-derivative risk | **High** (5a) |
-| Originals copied to `dist/` (§2.10) | Generate a 1200 px JPEG fallback; drop `copyOriginals` | `dist/` 45 MB → ~15 MB; the 169 KB/image factor drops ~⅔ | **High** (5a) |
+| Originals copied to `dist/` (§2.10) | Generate a 1200 px JPEG fallback; drop `copyOriginals` | **Measured: 36.5 → 31.8 MB.** The "→ ~15 MB" here was wrong — 141 of 265 sources are already ≤ 1200 px, so the fallback is a re-encode, not a downscale (Wave 5a) | **Done** (5a) |
 | Only two widths (400, 1200) | Ladder at 400 / 800 / 1200 with real `srcset` + `sizes` | Correct image per viewport for a mobile-first audience | Medium (5b) |
 | No AVIF | Third `<source type="image/avif">` before WebP | ~20–30% smaller than WebP at equal quality | Medium (5b) |
 | No cache busting | Content-hash derivative filenames | Immutable caching; also fixes `logo.jpeg` and `og-card.jpg`, which have none | Medium (5b) |
@@ -1063,13 +1063,33 @@ move.
 
 ### Wave 5a — Image pipeline correctness + stop shipping originals (≈ 1–1.5 days) — high
 
-**First: verify §2.11** by reading one CI build log. Then key freshness and the CI cache on content
-hash rather than mtime; drop `copyOriginals` in favour of a generated 1200 px JPEG fallback; update
-the `deploy.yml` cache key; add a build assertion that `dist/` contains no unreferenced derivative.
+Key freshness and the CI cache on content hash rather than mtime; drop `copyOriginals` in favour of a
+generated 1200 px JPEG fallback; update the `deploy.yml` cache key; add a build assertion that `dist/`
+contains no unreferenced derivative.
 
 Independent of the schema work, so it ships in parallel with Waves 2–4.
 
-**Expected outcome:** `dist/` 45 MB → ~15 MB; build time stops scaling linearly with catalog size.
+**§2.11 is settled by mechanism rather than by a CI log.** `gh` was never available in the working
+environment, so no deploy log was read. Instead the failing condition was reproduced directly: with
+sources dated *now* and derivatives dated a week earlier — exactly what `actions/checkout` plus
+`actions/cache` produce — the old comparison `stat(dist).mtimeMs >= stat(source).mtimeMs` evaluates
+false for every derivative. Under content hashing the same tree writes **0** derivatives. Whether CI
+was actually exhibiting this is now moot: the cache no longer consults mtime, so it is correct either
+way. `tests/tools/images.test.js` pins the case as a regression test.
+
+**Outcome — and a correction to the estimate.** The plan predicted `dist/` 45 MB → ~15 MB. Measured
+result: **36.5 MB → 31.8 MB**, a 13% reduction, not 67%.
+
+The estimate was wrong because it assumed the originals were much larger than a 1200 px derivative.
+They are not: **141 of 265 sources are already ≤ 1200 px wide**, the median is exactly 1200 and the
+maximum is 1600, so the generated fallback is mostly a re-encode rather than a downscale — 16.7 MB
+replacing 21.4 MB. Dropping the fallback quality from 80 to 68 would save roughly a further 5 MB, at
+the cost of visibly worse images for the browsers that need it; not taken, and recorded here as an
+option rather than a plan.
+
+**The real win of this wave is build time, not size.** A warm rebuild writes 0 derivatives in 0.1 s
+against 8.1 s cold, and — unlike the mtime rule — that holds in CI. This is what stops build time
+scaling linearly with catalog size, which is the T3 threshold's whole concern.
 
 ### Wave 5b — Runtime consumes v2 + per-size availability + delivery ladder (≈ 2.5–3.5 days) — medium
 
@@ -1139,7 +1159,7 @@ text entering `<meta content="...">` and JSON-LD needs JSON-string escaping, not
 | 1 Decouple tests | 1 d | **blocker** | — | **done** |
 | 2 Schema gate | 1 d | high | — | **done** |
 | 3 Registries (+ rule 4a) | 2–3 d | high | Wave 1 | **done** |
-| 5a Image cache + drop originals | 1–1.5 d | high | — | ready |
+| 5a Image cache + drop originals | 1–1.5 d | high | — | **done** |
 | 4 Product schema v2 (+ rule 4b) | 3–3.5 d | high | Waves 1–3 | **done** |
 | 5b Runtime v2 + per-size availability + ladder | 2.5–3.5 d | medium | Wave 4 | next |
 | 6 Non-dev authoring | 3–4 d | **goal (CON-8)** | Waves 1–4 | ready |
@@ -1173,6 +1193,16 @@ into `index.html` as a committed JSON literal, and the build fails when that blo
 `readCategoryDictKeys` — the brace-matching scraper that recovered category names from a JavaScript
 literal — is deleted, and `underwear-man-subcategory` is renamed to `underwear-man` with an alias
 keeping old links alive. Suite: 207 tests.
+
+Wave 5a replaced the mtime freshness rule with a content-hash cache (`.image-cache/manifest.json`,
+cached in CI alongside `dist/images`), dropped `copyOriginals` in favour of a generated 1200 px JPEG
+fallback, and added a build assertion that `dist/images` holds exactly its declared derivatives. A warm
+rebuild now writes 0 derivatives in 0.1 s against 8.1 s cold, and that holds in CI — the point of the
+wave. The size win was much smaller than predicted (§8, Wave 5a). Suite: 283 tests.
+
+It also fixed a latent bug found while checking `dist/`: **`writeProducts` never pruned**, so Wave 3's
+`underwear-man` rename left `dist/products/underwear-man-subcategory.json` published indefinitely — a
+live URL serving a frozen copy of the catalog. Renamed and deleted categories are now pruned.
 
 Wave 4 split `name` into `id` / `brand` / `model` / `listedAt` and converted `size` to the multi-unit
 `sizes[]` model, across all 241 products. `catalog/brands.json` is complete at 38 entries (37 brands
@@ -1293,8 +1323,8 @@ None of these blocks any wave. Each is stated so it can be reversed cheaply.
 | Category identity declared in N places | 3 (2 validated) | 1 (fully validated) |
 | Image references with id/filename mismatch | 4 | 0, enforced |
 | Runtime `parseProductDate` implementations | 2 | 0 |
-| `dist/` size | 45 MB | ~15 MB |
-| Derivatives re-encoded per unchanged CI build | ~798 `[UNVERIFIED]` | ~0 |
+| `dist/` size | 36.5 MB | **31.8 MB** — the 45 MB figure was `du` blocks; the ~15 MB target rested on a wrong assumption (Wave 5a) |
+| Derivatives re-encoded per unchanged CI build | ~1,060 | **0** — verified by reproducing the CI mtime condition |
 | Growth thresholds monitored in CI | none | T1/T3/T5 annotated |
 | Products indexable by search engines | 0 of 241 | all |
 | Recurring infrastructure cost | $0 | $0 |
@@ -1316,9 +1346,11 @@ six non-brand strings.
 consequentially the absence of a closed `size` vocabulary (RD-2) and the two brand spelling
 corrections (RD-3), which are the only changes in the plan that alter a rendered product name.
 
-**Rests on an unverified hypothesis:** §2.11, that the CI image cache is inert because of the mtime
-comparison under `actions/checkout`. Verification is one CI log line and is the first task of Wave
-5a. If it is wrong, Wave 5a drops to medium and only its `copyOriginals` half survives.
+**No longer rests on an unverified hypothesis.** §2.11 held that the CI image cache was inert because
+of the mtime comparison. No deploy log was ever readable from the working environment, so it was
+settled by mechanism instead: the failing mtime condition was reproduced directly, and the content-hash
+cache writes 0 derivatives where the old rule would have re-encoded all 1,060. The question is moot
+now that freshness never consults mtime.
 
 **On process.** Two earlier revisions of this document fabricated user answers, and v2.2 tagged the
 fabrications with the very provenance marker introduced to prevent that. v3.0 was therefore rewritten

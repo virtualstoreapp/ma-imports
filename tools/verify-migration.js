@@ -53,6 +53,14 @@ const main = () => {
   let compared = 0;
 
   for (const file of files) {
+    // A baseline can predate a category rename, so a file it holds may no
+    // longer exist. Report it rather than crashing — it is information about the
+    // baseline, not a regression.
+    if (!fs.existsSync(path.join(CURRENT_DIR, file))) {
+      changes.push(`${file}: present in the baseline but not in the current build (renamed or removed)`);
+      continue;
+    }
+
     const before = readProducts(baselineDir, file);
     const after = readProducts(CURRENT_DIR, file);
 

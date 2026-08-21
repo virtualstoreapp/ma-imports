@@ -29,6 +29,7 @@
       {
         "src": "images/fixtures/0101250900-alpha-front.jpeg",
         "webp": "images/fixtures/0101250900-alpha-front.webp",
+        "full": "images/fixtures/0101250900-alpha-front.jpg",
         "thumb": "images/fixtures/0101250900-alpha-front-thumb.webp",
         "thumbFallback": "images/fixtures/0101250900-alpha-front-thumb.jpg",
         "width": 1200,
@@ -39,6 +40,7 @@
       {
         "src": "images/fixtures/0101250900-alpha-back.jpeg",
         "webp": "images/fixtures/0101250900-alpha-back.webp",
+        "full": "images/fixtures/0101250900-alpha-back.jpg",
         "thumb": "images/fixtures/0101250900-alpha-back-thumb.webp",
         "thumbFallback": "images/fixtures/0101250900-alpha-back-thumb.jpg",
         "width": 1200,
