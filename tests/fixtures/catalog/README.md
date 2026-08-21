@@ -28,7 +28,9 @@ than a reimplementation of it. The `[DDMMYYHHmm]` codes are chosen so the sorted
 order is deterministic: Epsilon, Delta, Gamma, Beta, Alpha.
 
 Image paths under `images/fixtures/` are intentionally synthetic; nothing loads
-them in jsdom.
+them in jsdom. Their basenames still follow the `{id}[-brand][-variant]` naming
+convention enforced by validator rules 1 and 2, so the fixture demonstrates the
+convention rather than contradicting it.
 
 ## Changing a fixture
 

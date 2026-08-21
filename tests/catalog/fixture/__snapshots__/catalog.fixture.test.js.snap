@@ -6,8 +6,8 @@ exports[`Fixture catalog modal renders the modal with the expected markup 1`] = 
         <button id="modal-close">X</button>
         <div id="modal-image-container" class="modal-image-container">
           <picture>
-            <source id="modal-image-source" type="image/webp" srcset="images/fixtures/alpha-front.webp">
-            <img id="modal-image" src="images/fixtures/alpha-front.jpeg" alt="" style="transform: scale(1);">
+            <source id="modal-image-source" type="image/webp" srcset="images/fixtures/0101250900-alpha-front.webp">
+            <img id="modal-image" src="images/fixtures/0101250900-alpha-front.jpeg" alt="" style="transform: scale(1);">
           </picture>
         </div>
         <div id="modal-controls">
@@ -24,7 +24,7 @@ exports[`Fixture catalog modal renders the modal with the expected markup 1`] = 
 
 exports[`Fixture catalog renders the product grid with the expected markup 1`] = `
 "<li class="product-item" style="position: relative;">
-          <img src="images/fixtures/epsilon.jpeg" alt="[0501251300] Fixture Epsilon" loading="lazy" decoding="async">
+          <img src="images/fixtures/0501251300-epsilon.jpeg" alt="[0501251300] Fixture Epsilon" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0501251300] Fixture Epsilon</h3>
             
@@ -32,7 +32,7 @@ exports[`Fixture catalog renders the product grid with the expected markup 1`] =
             <span class="price">R$&nbsp;25,50</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/fixtures/delta.jpeg" alt="[0401251200] Fixture Delta" loading="lazy" decoding="async">
+          <img src="images/fixtures/0401251200-delta.jpeg" alt="[0401251200] Fixture Delta" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0401251200] Fixture Delta</h3>
             <p class="description">Produto de fixture padrão</p>
@@ -40,7 +40,7 @@ exports[`Fixture catalog renders the product grid with the expected markup 1`] =
             <span class="price">R$&nbsp;75,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/fixtures/gamma.jpeg" alt="[0301251100] Fixture Gamma" loading="lazy" decoding="async">
+          <img src="images/fixtures/0301251100-gamma.jpeg" alt="[0301251100] Fixture Gamma" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0301251100] Fixture Gamma</h3>
             <p class="description">Produto de fixture com imagem no schema legado</p>
@@ -48,7 +48,7 @@ exports[`Fixture catalog renders the product grid with the expected markup 1`] =
             <span class="price">R$&nbsp;50,00</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
-          <img src="images/fixtures/beta.jpeg" alt="[0201251000] Fixture Beta" loading="lazy" decoding="async">
+          <img src="images/fixtures/0201251000-beta.jpeg" alt="[0201251000] Fixture Beta" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0201251000] Fixture Beta</h3>
             
@@ -58,8 +58,8 @@ exports[`Fixture catalog renders the product grid with the expected markup 1`] =
           </div>
         </li><li class="product-item" style="position: relative;">
           <picture>
-            <source srcset="images/fixtures/alpha-front-thumb.webp" type="image/webp">
-            <img src="images/fixtures/alpha-front-thumb.jpg" alt="[0101250900] Fixture Alpha" width="400" height="500" loading="lazy" decoding="async">
+            <source srcset="images/fixtures/0101250900-alpha-front-thumb.webp" type="image/webp">
+            <img src="images/fixtures/0101250900-alpha-front-thumb.jpg" alt="[0101250900] Fixture Alpha" width="400" height="500" loading="lazy" decoding="async">
           </picture>
           <div class="product-details">
             <h3>[0101250900] Fixture Alpha</h3>

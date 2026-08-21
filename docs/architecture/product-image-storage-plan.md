@@ -1071,22 +1071,32 @@ text entering `<meta content="...">` and JSON-LD needs JSON-string escaping, not
 
 ### Wave summary
 
-| Wave | Effort | Priority | Prerequisite |
-|---|---|---|---|
-| 0 Housekeeping + growth monitor | 4 h | high | — |
-| 1 Decouple tests | 1 d | **blocker** | — |
-| 2 Schema gate | 1 d | high | — |
-| 3 Registries | 2–3 d | high | Wave 1 |
-| 5a Image cache + drop originals | 1–1.5 d | high | — |
-| 4 Product schema v2 | 3–3.5 d | high | Waves 1–3 |
-| 5b Runtime v2 + per-size availability + ladder | 2.5–3.5 d | medium | Wave 4 |
-| 6 Non-dev authoring | 3–4 d | **goal (CON-8)** | Waves 1–4 |
-| 7 Deep links + SEO | 2.5 d | medium (CON-11) | Wave 4 |
+| Wave | Effort | Priority | Prerequisite | Status |
+|---|---|---|---|---|
+| 0 Housekeeping + growth monitor | 4 h | high | — | **done** |
+| 1 Decouple tests | 1 d | **blocker** | — | **done** |
+| 2 Schema gate | 1 d | high | — | next |
+| 3 Registries | 2–3 d | high | Wave 1 | ready |
+| 5a Image cache + drop originals | 1–1.5 d | high | — | ready |
+| 4 Product schema v2 | 3–3.5 d | high | Waves 1–3 | blocked on 3 |
+| 5b Runtime v2 + per-size availability + ladder | 2.5–3.5 d | medium | Wave 4 | blocked on 4 |
+| 6 Non-dev authoring | 3–4 d | **goal (CON-8)** | Waves 1–4 | blocked on 4 |
+| 7 Deep links + SEO | 2.5 d | medium (CON-11) | Wave 4 | blocked on 4 |
 
 **Total ≈ 17–19 days.** No wave is blocked on an unanswered question.
 
-**Buildable immediately — Waves 0, 1, 2, 3 and 5a, ≈ 6 days.** Wave 1 is the real unlock: it is what
-makes machine-generated product PRs reviewable.
+**Delivered so far.** Wave 1 (`0fde48b`) cut snapshots from 59 to 4 and snapshot lines from 19,968 to
+226, removed all 27 hardcoded catalog counts, and added `tests/fixtures/catalog/` as the single place
+product markup is pinned. Wave 0 deleted the unreferenced `comming-soon.jpg`, renamed the 4 mismatched
+image files, normalized the last 33 legacy `image` singulars so all 241 products use `images[]`, added
+validator rules 1 and 2, and added `tools/report-growth.js` to CI.
+
+Two things Wave 0 established that later waves depend on: the id/filename convention is now
+**enforced**, so the class of defect behind those 4 references cannot recur; and the growth thresholds
+are measured on every build rather than remembered. One caveat found while building the monitor —
+`actions/checkout` clones shallow by default, so **git pack size is not measurable in CI**. The
+monitor reports it as unavailable rather than as a falsely small number, and T3 (image count) is the
+earliest threshold anyway, so this costs little in practice.
 
 ---
 

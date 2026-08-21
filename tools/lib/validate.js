@@ -1,6 +1,7 @@
 'use strict';
 
 const fs = require('fs');
+const path = require('path');
 
 const {
   ALL_CATEGORY,
@@ -11,6 +12,38 @@ const {
 } = require('./catalog');
 
 const CATEGORIES_DICT_NAME = 'CATEGORIES_DICT';
+
+// Image filenames are expected to lead with the owning product's 10-digit code.
+// The convention is validated rather than computed: the path stays an explicit
+// field, because four references disagreed with their product code before this
+// check existed and a computed path would have broken on all four.
+const IMAGE_LEADING_DIGITS = /^(\d+)/;
+const PRODUCT_CODE_LENGTH = 10;
+
+/**
+ * Checks one image reference against the filename convention.
+ * @param {string} source Referenced image path.
+ * @param {string|null} productCode The owning product's code, or null when the
+ *   name has no parseable code (already reported separately).
+ * @returns {string|null} An error message, or null when the reference conforms.
+ */
+const checkImageName = (source, productCode) => {
+  if (!productCode) return null;
+
+  const basename = path.posix.basename(source);
+  const leading = IMAGE_LEADING_DIGITS.exec(basename);
+
+  if (!leading) {
+    return `image ${source} must be named after its product code [${productCode}]`;
+  }
+  if (leading[1].length !== PRODUCT_CODE_LENGTH) {
+    return `image ${source} leads with ${leading[1].length} digits; the product code is ${PRODUCT_CODE_LENGTH} (expected [${productCode}])`;
+  }
+  if (leading[1] !== productCode) {
+    return `image ${source} is named for [${leading[1]}] but belongs to [${productCode}]`;
+  }
+  return null;
+};
 
 /**
  * Extracts the CATEGORIES_DICT keys declared in scripts.js.
@@ -91,10 +124,16 @@ const checkProduct = (product, where, manifest) => {
   const errors = [];
   const fail = (message) => errors.push(`${where}: ${message}`);
 
+  let productCode = null;
   if (typeof product.name !== 'string' || !product.name.trim()) {
     fail('name must be a non-empty string');
-  } else if (!PRODUCT_DATE_PATTERN.test(product.name)) {
-    fail('name is missing its [DDMMYYHHmm] code, which drives the newest-first order');
+  } else {
+    const match = product.name.match(PRODUCT_DATE_PATTERN);
+    if (!match) {
+      fail('name is missing its [DDMMYYHHmm] code, which drives the newest-first order');
+    } else {
+      [, productCode] = match;
+    }
   }
 
   if (!Number.isFinite(product.price) || product.price <= 0) {
@@ -134,6 +173,8 @@ const checkProduct = (product, where, manifest) => {
     if (manifest && !manifest[source]) {
       fail(`image ${source} does not exist on disk`);
     }
+    const namingError = checkImageName(source, productCode);
+    if (namingError) fail(namingError);
   });
 
   return errors;
@@ -183,6 +224,7 @@ const validateCatalog = ({ productsDir, scriptsPath, manifest = null }) => {
 
 module.exports = {
   checkCategoryCoverage,
+  checkImageName,
   checkProduct,
   readCategoryDictKeys,
   validateCatalog,

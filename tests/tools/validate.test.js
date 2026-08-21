@@ -15,10 +15,10 @@ const VALID_PRODUCT = {
   oldPrice: 0,
   price: 39,
   size: 'N/A',
-  images: ['images/a.jpeg'],
+  images: ['images/2907251533-adidas.jpeg'],
 };
 
-const MANIFEST = { 'images/a.jpeg': { src: 'images/a.jpeg' } };
+const MANIFEST = { 'images/2907251533-adidas.jpeg': { src: 'images/2907251533-adidas.jpeg' } };
 
 let fixtureRoot;
 
@@ -102,7 +102,7 @@ describe('Product fields', () => {
     ['a non-string description', { description: 5 }, /description must be a string/],
     ['no image reference', { images: undefined }, /must reference at least one image/],
     ['an empty image list', { images: [] }, /must reference at least one image/],
-    ['an image missing on disk', { images: ['images/gone.jpeg'] }, /does not exist on disk/],
+    ['an image missing on disk', { images: ['images/2907251533-gone.jpeg'] }, /does not exist on disk/],
   ])('rejects %s', (_label, overrides, expected) => {
     const { errors } = validate(withProduct(overrides));
     expect(errors).toHaveLength(1);
@@ -110,7 +110,7 @@ describe('Product fields', () => {
   });
 
   it('accepts the legacy singular "image" field', () => {
-    const { errors } = validate(withProduct({ images: undefined, image: 'images/a.jpeg' }));
+    const { errors } = validate(withProduct({ images: undefined, image: 'images/2907251533-adidas.jpeg' }));
     expect(errors).toEqual([]);
   });
 
@@ -118,10 +118,62 @@ describe('Product fields', () => {
     const { errors } = validate({
       'caps-man': [
         { ...VALID_PRODUCT, price: 0 },
-        { ...VALID_PRODUCT, name: 'no code', images: ['images/gone.jpeg'] },
+        { ...VALID_PRODUCT, name: 'no code', images: ['images/2907251533-gone.jpeg'] },
       ],
     });
     expect(errors).toHaveLength(3);
+  });
+});
+
+describe('Image filename convention', () => {
+  // Each case is a defect that existed in the catalog and was invisible to the
+  // old gate, which only checked that the referenced file resolved.
+  it.each([
+    [
+      'an 11-digit code from a stray leading zero',
+      'images/04507251850-star.jpeg',
+      /leads with 11 digits; the product code is 10/,
+    ],
+    [
+      'a code that disagrees with the product',
+      'images/1109251223-adidas.jpeg',
+      /named for \[1109251223\] but belongs to \[2907251533\]/,
+    ],
+    [
+      'transposed digits',
+      'images/2907521533-adidas.jpeg',
+      /named for \[2907521533\] but belongs to \[2907251533\]/,
+    ],
+    [
+      'a filename with no leading code at all',
+      'images/adidas.jpeg',
+      /must be named after its product code \[2907251533\]/,
+    ],
+  ])('rejects %s', (_label, image, expected) => {
+    const { errors } = validate(withProduct({ images: [image] }));
+    // The manifest check fires too, since these paths are not in it. Only the
+    // naming error is asserted here.
+    expect(errors.filter((error) => expected.test(error))).toHaveLength(1);
+  });
+
+  it('accepts a conforming name, including brand and variant suffixes', () => {
+    const manifest = {
+      'images/man/belts/2907251533-gucci-front.jpeg': {},
+      'images/man/belts/2907251533-gucci-back.jpeg': {},
+    };
+    const { errors } = validateCatalog({
+      ...writeFixture({
+        'caps-man': [{ ...VALID_PRODUCT, images: Object.keys(manifest) }],
+      }),
+      manifest,
+    });
+    expect(errors).toEqual([]);
+  });
+
+  it('stays silent when the name has no code, leaving that error to speak once', () => {
+    const { errors } = validate(withProduct({ name: 'Adidas', images: ['images/whatever.jpeg'] }));
+    expect(errors.filter((error) => /must be named after/.test(error))).toEqual([]);
+    expect(errors.filter((error) => /missing its \[DDMMYYHHmm\] code/.test(error))).toHaveLength(1);
   });
 });
 

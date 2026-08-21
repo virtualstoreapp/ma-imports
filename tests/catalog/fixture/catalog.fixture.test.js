@@ -54,10 +54,10 @@ describe('Fixture catalog', () => {
       const card = cardFor('[0101250900] Fixture Alpha');
       const source = card.querySelector('picture source');
       expect(source).toHaveAttribute('type', 'image/webp');
-      expect(source).toHaveAttribute('srcset', 'images/fixtures/alpha-front-thumb.webp');
+      expect(source).toHaveAttribute('srcset', 'images/fixtures/0101250900-alpha-front-thumb.webp');
 
       const img = card.querySelector('picture img');
-      expect(img).toHaveAttribute('src', 'images/fixtures/alpha-front-thumb.jpg');
+      expect(img).toHaveAttribute('src', 'images/fixtures/0101250900-alpha-front-thumb.jpg');
       expect(img).toHaveAttribute('width', '400');
       expect(img).toHaveAttribute('height', '500');
     });
@@ -65,12 +65,12 @@ describe('Fixture catalog', () => {
     it('falls back to a plain <img> for an unbuilt source tree', () => {
       const card = cardFor('[0401251200] Fixture Delta');
       expect(card.querySelector('picture')).toBeNull();
-      expect(card.querySelector('img')).toHaveAttribute('src', 'images/fixtures/delta.jpeg');
+      expect(card.querySelector('img')).toHaveAttribute('src', 'images/fixtures/0401251200-delta.jpeg');
     });
 
     it('still renders a product using the legacy single-image field', () => {
       const card = cardFor('[0301251100] Fixture Gamma');
-      expect(card.querySelector('img')).toHaveAttribute('src', 'images/fixtures/gamma.jpeg');
+      expect(card.querySelector('img')).toHaveAttribute('src', 'images/fixtures/0301251100-gamma.jpeg');
     });
   });
 
@@ -118,9 +118,9 @@ describe('Fixture catalog', () => {
     it('serves the full-size WebP with the original as fallback', async () => {
       await openModalFor('[0101250900] Fixture Alpha');
       expect(document.getElementById('modal-image-source'))
-        .toHaveAttribute('srcset', 'images/fixtures/alpha-front.webp');
+        .toHaveAttribute('srcset', 'images/fixtures/0101250900-alpha-front.webp');
       expect(document.getElementById('modal-image'))
-        .toHaveAttribute('src', 'images/fixtures/alpha-front.jpeg');
+        .toHaveAttribute('src', 'images/fixtures/0101250900-alpha-front.jpeg');
     });
 
     it('marks a sold-out product inside the modal', async () => {
