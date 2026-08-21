@@ -159,7 +159,7 @@ exports[`Fashion Children Clothing Desktop View Sweatshirts Set renders final su
   <main>
     <h2 id="category-heading">Conjuntos Moletom Infantil</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/children/sweatshirts/1007251301-nike.jpeg" alt="[1007251301] Nike">
+          <img src="images/children/sweatshirts/1007251301-nike.jpeg" alt="[1007251301] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1007251301] Nike</h3>
             <p class="description">Conjunto Moleton Infantil, Cor: Preta</p>
@@ -167,7 +167,7 @@ exports[`Fashion Children Clothing Desktop View Sweatshirts Set renders final su
             <span class="price">R$&nbsp;199,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/children/sweatshirts/1007251302-nike.jpeg" alt="[1007251302] Nike">
+          <img src="images/children/sweatshirts/1007251302-nike.jpeg" alt="[1007251302] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1007251302] Nike</h3>
             <p class="description">Conjunto Moleton Infantil, Cor: Preta</p>
@@ -175,7 +175,7 @@ exports[`Fashion Children Clothing Desktop View Sweatshirts Set renders final su
             <span class="price">R$&nbsp;199,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/children/sweatshirts/1007251303-nike.jpeg" alt="[1007251303] Nike">
+          <img src="images/children/sweatshirts/1007251303-nike.jpeg" alt="[1007251303] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1007251303] Nike</h3>
             <p class="description">Conjunto Moleton Infantil, Cor: Azul Marinho</p>
@@ -183,7 +183,7 @@ exports[`Fashion Children Clothing Desktop View Sweatshirts Set renders final su
             <span class="price">R$&nbsp;199,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/children/sweatshirts/1007251304-jordan.jpeg" alt="[1007251304] Jordan">
+          <img src="images/children/sweatshirts/1007251304-jordan.jpeg" alt="[1007251304] Jordan" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1007251304] Jordan</h3>
             <p class="description">Conjunto Moleton Infantil, Cor: Preta</p>
@@ -191,7 +191,7 @@ exports[`Fashion Children Clothing Desktop View Sweatshirts Set renders final su
             <span class="price">R$&nbsp;199,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/children/sweatshirts/0207251346-lacoste.jpeg" alt="[0207251346] Lacoste">
+          <img src="images/children/sweatshirts/0207251346-lacoste.jpeg" alt="[0207251346] Lacoste" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0207251346] Lacoste</h3>
             <p class="description">Conjunto Moleton Infantil, Cor: Branca</p>
@@ -212,7 +212,10 @@ exports[`Fashion Children Clothing Desktop View Sweatshirts Set renders final su
       <div id="modal-content">
         <button id="modal-close">X</button>
         <div id="modal-image-container" class="modal-image-container">
-          <img id="modal-image" src="" alt="">
+          <picture>
+            <source id="modal-image-source" type="image/webp">
+            <img id="modal-image" src="" alt="">
+          </picture>
         </div>
         <div id="modal-controls">
           <button id="prev-image">&lt;</button>
@@ -385,7 +388,7 @@ exports[`Fashion Children Clothing Mobile View Sweatshirts Set renders final sub
   <main>
     <h2 id="category-heading">Conjuntos Moletom Infantil</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/children/sweatshirts/1007251301-nike.jpeg" alt="[1007251301] Nike">
+          <img src="images/children/sweatshirts/1007251301-nike.jpeg" alt="[1007251301] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1007251301] Nike</h3>
             <p class="description">Conjunto Moleton Infantil, Cor: Preta</p>
@@ -393,7 +396,7 @@ exports[`Fashion Children Clothing Mobile View Sweatshirts Set renders final sub
             <span class="price">R$&nbsp;199,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/children/sweatshirts/1007251302-nike.jpeg" alt="[1007251302] Nike">
+          <img src="images/children/sweatshirts/1007251302-nike.jpeg" alt="[1007251302] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1007251302] Nike</h3>
             <p class="description">Conjunto Moleton Infantil, Cor: Preta</p>
@@ -401,7 +404,7 @@ exports[`Fashion Children Clothing Mobile View Sweatshirts Set renders final sub
             <span class="price">R$&nbsp;199,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/children/sweatshirts/1007251303-nike.jpeg" alt="[1007251303] Nike">
+          <img src="images/children/sweatshirts/1007251303-nike.jpeg" alt="[1007251303] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1007251303] Nike</h3>
             <p class="description">Conjunto Moleton Infantil, Cor: Azul Marinho</p>
@@ -409,7 +412,7 @@ exports[`Fashion Children Clothing Mobile View Sweatshirts Set renders final sub
             <span class="price">R$&nbsp;199,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/children/sweatshirts/1007251304-jordan.jpeg" alt="[1007251304] Jordan">
+          <img src="images/children/sweatshirts/1007251304-jordan.jpeg" alt="[1007251304] Jordan" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1007251304] Jordan</h3>
             <p class="description">Conjunto Moleton Infantil, Cor: Preta</p>
@@ -417,7 +420,7 @@ exports[`Fashion Children Clothing Mobile View Sweatshirts Set renders final sub
             <span class="price">R$&nbsp;199,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/children/sweatshirts/0207251346-lacoste.jpeg" alt="[0207251346] Lacoste">
+          <img src="images/children/sweatshirts/0207251346-lacoste.jpeg" alt="[0207251346] Lacoste" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0207251346] Lacoste</h3>
             <p class="description">Conjunto Moleton Infantil, Cor: Branca</p>
@@ -438,7 +441,10 @@ exports[`Fashion Children Clothing Mobile View Sweatshirts Set renders final sub
       <div id="modal-content">
         <button id="modal-close">X</button>
         <div id="modal-image-container" class="modal-image-container">
-          <img id="modal-image" src="" alt="">
+          <picture>
+            <source id="modal-image-source" type="image/webp">
+            <img id="modal-image" src="" alt="">
+          </picture>
         </div>
         <div id="modal-controls">
           <button id="prev-image">&lt;</button>

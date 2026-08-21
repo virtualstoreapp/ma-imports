@@ -1,8 +1,15 @@
 services:
   node-base:
-    image: brunorodrigoss/ma-imports-node-24:alpine-dev
+    # Built from the local Dockerfile rather than pulled, so the image always
+    # matches the current package.json (sharp is a native dependency, and the
+    # published tag was amd64-only).
+    build:
+      context: .
+    image: ma-imports-node-24:alpine-dev
     tty: true
     stdin_open: true
     volumes:
       - .:/app
+      # Anonymous volume keeps the image's Linux node_modules from being
+      # shadowed by the host's, whose sharp binary is built for the host OS.
       - /app/node_modules

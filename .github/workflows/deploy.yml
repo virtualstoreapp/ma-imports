@@ -3,27 +3,65 @@ name: Deploy GitHub Pages
 on:
   push:
     branches:
-      - main  
+      - main
+  workflow_dispatch:
+
+# GITHUB_TOKEN needs these to publish through the Pages deployment API.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 concurrency:
   group: github-pages
   cancel-in-progress: true
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          branch: main
-          folder: .
-          clean: true  
-          force: true
+          node-version: '24'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # dist/images doubles as the WebP conversion cache: only images whose
+      # source changed are re-encoded, keeping the build well under a minute.
+      - name: Restore image cache
+        uses: actions/cache@v4
+        with:
+          path: dist/images
+          key: images-${{ hashFiles('images/**') }}
+          restore-keys: |
+            images-
+
+      - name: Build site
+        run: npm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

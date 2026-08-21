@@ -159,7 +159,7 @@ exports[`Fashion Woman Clothing Desktop View Fitness renders final subcategory "
   <main>
     <h2 id="category-heading">Calças Legging Feminina</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/woman/fitness/legging/1107250717.jpeg" alt="[1107250717]">
+          <img src="images/woman/fitness/legging/1107250717.jpeg" alt="[1107250717]" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1107250717]</h3>
             <p class="description">Calça Legging Feminina</p>
@@ -167,7 +167,7 @@ exports[`Fashion Woman Clothing Desktop View Fitness renders final subcategory "
             <span class="price">R$&nbsp;89,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/woman/fitness/legging/2709252014-nike.jpeg" alt="[2709252014] Nike">
+          <img src="images/woman/fitness/legging/2709252014-nike.jpeg" alt="[2709252014] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2709252014] Nike</h3>
             <p class="description">Calça Legging Feminina, Cor: Azul Marinho</p>
@@ -175,7 +175,7 @@ exports[`Fashion Woman Clothing Desktop View Fitness renders final subcategory "
             <span class="price">R$&nbsp;79,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/woman/fitness/legging/2709252015-nike-front.jpeg" alt="[2709252015] Nike Pro">
+          <img src="images/woman/fitness/legging/2709252015-nike-front.jpeg" alt="[2709252015] Nike Pro" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2709252015] Nike Pro</h3>
             <p class="description">Calça Legging Feminina, Cor: Preta</p>
@@ -183,7 +183,7 @@ exports[`Fashion Woman Clothing Desktop View Fitness renders final subcategory "
             <span class="price">R$&nbsp;79,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/woman/fitness/legging/2709252024-nike.jpeg" alt="[2709252024] Nike">
+          <img src="images/woman/fitness/legging/2709252024-nike.jpeg" alt="[2709252024] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2709252024] Nike</h3>
             <p class="description">Calça Legging Feminina, Cor: Preta</p>
@@ -191,7 +191,7 @@ exports[`Fashion Woman Clothing Desktop View Fitness renders final subcategory "
             <span class="price">R$&nbsp;79,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/woman/fitness/legging/2709252027-nike.jpeg" alt="[2709252027] Nike">
+          <img src="images/woman/fitness/legging/2709252027-nike.jpeg" alt="[2709252027] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2709252027] Nike</h3>
             <p class="description">Calça Legging Feminina, Cor: Preta</p>
@@ -212,7 +212,10 @@ exports[`Fashion Woman Clothing Desktop View Fitness renders final subcategory "
       <div id="modal-content">
         <button id="modal-close">X</button>
         <div id="modal-image-container" class="modal-image-container">
-          <img id="modal-image" src="" alt="">
+          <picture>
+            <source id="modal-image-source" type="image/webp">
+            <img id="modal-image" src="" alt="">
+          </picture>
         </div>
         <div id="modal-controls">
           <button id="prev-image">&lt;</button>
@@ -385,7 +388,7 @@ exports[`Fashion Woman Clothing Desktop View Fitness renders final subcategory "
   <main>
     <h2 id="category-heading">Top Feminino</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/woman/fitness/top/2709252000.jpeg" alt="[2709252000]">
+          <img src="images/woman/fitness/top/2709252000.jpeg" alt="[2709252000]" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2709252000]</h3>
             <p class="description">Top</p>
@@ -406,7 +409,10 @@ exports[`Fashion Woman Clothing Desktop View Fitness renders final subcategory "
       <div id="modal-content">
         <button id="modal-close">X</button>
         <div id="modal-image-container" class="modal-image-container">
-          <img id="modal-image" src="" alt="">
+          <picture>
+            <source id="modal-image-source" type="image/webp">
+            <img id="modal-image" src="" alt="">
+          </picture>
         </div>
         <div id="modal-controls">
           <button id="prev-image">&lt;</button>
@@ -579,7 +585,7 @@ exports[`Fashion Woman Clothing Desktop View Pants renders final subcategory "Ca
   <main>
     <h2 id="category-heading">Calças Jeans Feminina</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/woman/pants/jeans/1107251407.jpeg" alt="[1107251407] Jeans">
+          <img src="images/woman/pants/jeans/1107251407.jpeg" alt="[1107251407] Jeans" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1107251407] Jeans</h3>
             <p class="description">Calça Jeans Feminina</p>
@@ -587,7 +593,7 @@ exports[`Fashion Woman Clothing Desktop View Pants renders final subcategory "Ca
             <span class="price">R$&nbsp;89,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/woman/pants/jeans/1107251408-up.jpeg" alt="[1107251408] Up">
+          <img src="images/woman/pants/jeans/1107251408-up.jpeg" alt="[1107251408] Up" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1107251408] Up</h3>
             <p class="description">Calça Jeans Feminina</p>
@@ -595,7 +601,7 @@ exports[`Fashion Woman Clothing Desktop View Pants renders final subcategory "Ca
             <span class="price">R$&nbsp;59,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/woman/pants/jeans/1107251409-kaiccies.jpeg" alt="[1107251409] Kaiccies">
+          <img src="images/woman/pants/jeans/1107251409-kaiccies.jpeg" alt="[1107251409] Kaiccies" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1107251409] Kaiccies</h3>
             <p class="description">Calça Jeans Feminina</p>
@@ -616,7 +622,10 @@ exports[`Fashion Woman Clothing Desktop View Pants renders final subcategory "Ca
       <div id="modal-content">
         <button id="modal-close">X</button>
         <div id="modal-image-container" class="modal-image-container">
-          <img id="modal-image" src="" alt="">
+          <picture>
+            <source id="modal-image-source" type="image/webp">
+            <img id="modal-image" src="" alt="">
+          </picture>
         </div>
         <div id="modal-controls">
           <button id="prev-image">&lt;</button>
@@ -789,7 +798,7 @@ exports[`Fashion Woman Clothing Desktop View Shorts renders final subcategory "B
   <main>
     <h2 id="category-heading">Bermudas Jeans Feminina</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/woman/shorts/jeans/1107250718.jpeg" alt="[1107250718]">
+          <img src="images/woman/shorts/jeans/1107250718.jpeg" alt="[1107250718]" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1107250718]</h3>
             <p class="description">Bermuda Jeans Feminina</p>
@@ -810,7 +819,10 @@ exports[`Fashion Woman Clothing Desktop View Shorts renders final subcategory "B
       <div id="modal-content">
         <button id="modal-close">X</button>
         <div id="modal-image-container" class="modal-image-container">
-          <img id="modal-image" src="" alt="">
+          <picture>
+            <source id="modal-image-source" type="image/webp">
+            <img id="modal-image" src="" alt="">
+          </picture>
         </div>
         <div id="modal-controls">
           <button id="prev-image">&lt;</button>
@@ -983,7 +995,7 @@ exports[`Fashion Woman Clothing Desktop View Sweatshirts renders final subcatego
   <main>
     <h2 id="category-heading">Blusas Feminina</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/woman/sweatshirts/0207251330.jpeg" alt="[0207251330]">
+          <img src="images/woman/sweatshirts/0207251330.jpeg" alt="[0207251330]" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0207251330]</h3>
             <p class="description">Blusa Feminina</p>
@@ -1004,7 +1016,10 @@ exports[`Fashion Woman Clothing Desktop View Sweatshirts renders final subcatego
       <div id="modal-content">
         <button id="modal-close">X</button>
         <div id="modal-image-container" class="modal-image-container">
-          <img id="modal-image" src="" alt="">
+          <picture>
+            <source id="modal-image-source" type="image/webp">
+            <img id="modal-image" src="" alt="">
+          </picture>
         </div>
         <div id="modal-controls">
           <button id="prev-image">&lt;</button>
@@ -1177,7 +1192,7 @@ exports[`Fashion Woman Clothing Mobile View Fitness renders final subcategory "C
   <main>
     <h2 id="category-heading">Calças Legging Feminina</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/woman/fitness/legging/1107250717.jpeg" alt="[1107250717]">
+          <img src="images/woman/fitness/legging/1107250717.jpeg" alt="[1107250717]" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1107250717]</h3>
             <p class="description">Calça Legging Feminina</p>
@@ -1185,7 +1200,7 @@ exports[`Fashion Woman Clothing Mobile View Fitness renders final subcategory "C
             <span class="price">R$&nbsp;89,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/woman/fitness/legging/2709252014-nike.jpeg" alt="[2709252014] Nike">
+          <img src="images/woman/fitness/legging/2709252014-nike.jpeg" alt="[2709252014] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2709252014] Nike</h3>
             <p class="description">Calça Legging Feminina, Cor: Azul Marinho</p>
@@ -1193,7 +1208,7 @@ exports[`Fashion Woman Clothing Mobile View Fitness renders final subcategory "C
             <span class="price">R$&nbsp;79,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/woman/fitness/legging/2709252015-nike-front.jpeg" alt="[2709252015] Nike Pro">
+          <img src="images/woman/fitness/legging/2709252015-nike-front.jpeg" alt="[2709252015] Nike Pro" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2709252015] Nike Pro</h3>
             <p class="description">Calça Legging Feminina, Cor: Preta</p>
@@ -1201,7 +1216,7 @@ exports[`Fashion Woman Clothing Mobile View Fitness renders final subcategory "C
             <span class="price">R$&nbsp;79,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/woman/fitness/legging/2709252024-nike.jpeg" alt="[2709252024] Nike">
+          <img src="images/woman/fitness/legging/2709252024-nike.jpeg" alt="[2709252024] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2709252024] Nike</h3>
             <p class="description">Calça Legging Feminina, Cor: Preta</p>
@@ -1209,7 +1224,7 @@ exports[`Fashion Woman Clothing Mobile View Fitness renders final subcategory "C
             <span class="price">R$&nbsp;79,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/woman/fitness/legging/2709252027-nike.jpeg" alt="[2709252027] Nike">
+          <img src="images/woman/fitness/legging/2709252027-nike.jpeg" alt="[2709252027] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2709252027] Nike</h3>
             <p class="description">Calça Legging Feminina, Cor: Preta</p>
@@ -1230,7 +1245,10 @@ exports[`Fashion Woman Clothing Mobile View Fitness renders final subcategory "C
       <div id="modal-content">
         <button id="modal-close">X</button>
         <div id="modal-image-container" class="modal-image-container">
-          <img id="modal-image" src="" alt="">
+          <picture>
+            <source id="modal-image-source" type="image/webp">
+            <img id="modal-image" src="" alt="">
+          </picture>
         </div>
         <div id="modal-controls">
           <button id="prev-image">&lt;</button>
@@ -1403,7 +1421,7 @@ exports[`Fashion Woman Clothing Mobile View Fitness renders final subcategory "T
   <main>
     <h2 id="category-heading">Top Feminino</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/woman/fitness/top/2709252000.jpeg" alt="[2709252000]">
+          <img src="images/woman/fitness/top/2709252000.jpeg" alt="[2709252000]" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2709252000]</h3>
             <p class="description">Top</p>
@@ -1424,7 +1442,10 @@ exports[`Fashion Woman Clothing Mobile View Fitness renders final subcategory "T
       <div id="modal-content">
         <button id="modal-close">X</button>
         <div id="modal-image-container" class="modal-image-container">
-          <img id="modal-image" src="" alt="">
+          <picture>
+            <source id="modal-image-source" type="image/webp">
+            <img id="modal-image" src="" alt="">
+          </picture>
         </div>
         <div id="modal-controls">
           <button id="prev-image">&lt;</button>
@@ -1597,7 +1618,7 @@ exports[`Fashion Woman Clothing Mobile View Pants renders final subcategory "Cal
   <main>
     <h2 id="category-heading">Calças Jeans Feminina</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/woman/pants/jeans/1107251407.jpeg" alt="[1107251407] Jeans">
+          <img src="images/woman/pants/jeans/1107251407.jpeg" alt="[1107251407] Jeans" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1107251407] Jeans</h3>
             <p class="description">Calça Jeans Feminina</p>
@@ -1605,7 +1626,7 @@ exports[`Fashion Woman Clothing Mobile View Pants renders final subcategory "Cal
             <span class="price">R$&nbsp;89,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/woman/pants/jeans/1107251408-up.jpeg" alt="[1107251408] Up">
+          <img src="images/woman/pants/jeans/1107251408-up.jpeg" alt="[1107251408] Up" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1107251408] Up</h3>
             <p class="description">Calça Jeans Feminina</p>
@@ -1613,7 +1634,7 @@ exports[`Fashion Woman Clothing Mobile View Pants renders final subcategory "Cal
             <span class="price">R$&nbsp;59,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/woman/pants/jeans/1107251409-kaiccies.jpeg" alt="[1107251409] Kaiccies">
+          <img src="images/woman/pants/jeans/1107251409-kaiccies.jpeg" alt="[1107251409] Kaiccies" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1107251409] Kaiccies</h3>
             <p class="description">Calça Jeans Feminina</p>
@@ -1634,7 +1655,10 @@ exports[`Fashion Woman Clothing Mobile View Pants renders final subcategory "Cal
       <div id="modal-content">
         <button id="modal-close">X</button>
         <div id="modal-image-container" class="modal-image-container">
-          <img id="modal-image" src="" alt="">
+          <picture>
+            <source id="modal-image-source" type="image/webp">
+            <img id="modal-image" src="" alt="">
+          </picture>
         </div>
         <div id="modal-controls">
           <button id="prev-image">&lt;</button>
@@ -1807,7 +1831,7 @@ exports[`Fashion Woman Clothing Mobile View Shorts renders final subcategory "Be
   <main>
     <h2 id="category-heading">Bermudas Jeans Feminina</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/woman/shorts/jeans/1107250718.jpeg" alt="[1107250718]">
+          <img src="images/woman/shorts/jeans/1107250718.jpeg" alt="[1107250718]" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1107250718]</h3>
             <p class="description">Bermuda Jeans Feminina</p>
@@ -1828,7 +1852,10 @@ exports[`Fashion Woman Clothing Mobile View Shorts renders final subcategory "Be
       <div id="modal-content">
         <button id="modal-close">X</button>
         <div id="modal-image-container" class="modal-image-container">
-          <img id="modal-image" src="" alt="">
+          <picture>
+            <source id="modal-image-source" type="image/webp">
+            <img id="modal-image" src="" alt="">
+          </picture>
         </div>
         <div id="modal-controls">
           <button id="prev-image">&lt;</button>
@@ -2001,7 +2028,7 @@ exports[`Fashion Woman Clothing Mobile View Sweatshirts renders final subcategor
   <main>
     <h2 id="category-heading">Blusas Feminina</h2>
     <ul id="product-list"><li class="product-item" style="position: relative;">
-          <img src="images/woman/sweatshirts/0207251330.jpeg" alt="[0207251330]">
+          <img src="images/woman/sweatshirts/0207251330.jpeg" alt="[0207251330]" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0207251330]</h3>
             <p class="description">Blusa Feminina</p>
@@ -2022,7 +2049,10 @@ exports[`Fashion Woman Clothing Mobile View Sweatshirts renders final subcategor
       <div id="modal-content">
         <button id="modal-close">X</button>
         <div id="modal-image-container" class="modal-image-container">
-          <img id="modal-image" src="" alt="">
+          <picture>
+            <source id="modal-image-source" type="image/webp">
+            <img id="modal-image" src="" alt="">
+          </picture>
         </div>
         <div id="modal-controls">
           <button id="prev-image">&lt;</button>

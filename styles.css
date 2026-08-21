@@ -312,7 +312,13 @@
     align-items: center;
     overflow: hidden;
   }
-  
+
+  /* Keeps #modal-image the flex item so the sizing rules below still apply
+     now that it is wrapped in a <picture> for WebP delivery. */
+  .modal-image-container picture {
+    display: contents;
+  }
+
   @media (min-width: 769px) {
     .modal-image-container {
       width: 100%;
