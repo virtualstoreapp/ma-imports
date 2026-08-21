@@ -1,12 +1,16 @@
 [
     {
-        "name": "[2103251150] Nike",
-        "description": "",
-        "oldPrice": 0.0,
-        "price": 28.00,
+        "id": "2103251150",
+        "brand": "nike",
+        "price": 28,
+        "sizes": [
+            {
+                "size": "G"
+            }
+        ],
         "images": [
             "images/man/shorts/basic/nike/2103251150-nike.jpeg"
         ],
-        "size": "G"
+        "listedAt": "2025-03-21T11:50:00Z"
     }
 ]

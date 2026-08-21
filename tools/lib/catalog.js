@@ -61,6 +61,24 @@ const readCategory = (productsDir, category) => {
 };
 
 /**
+ * Returns the timestamp a product sorts by, newest first.
+ *
+ * v2 states this explicitly in `listedAt`, in UTC. v1 derived it by regex from
+ * the display name using local-time construction, so the build host's timezone
+ * affected tie ordering. The v1 path remains for fixtures that still use the old
+ * shape, and goes with the rest of it in Wave 5b.
+ * @param {object} product Product entry.
+ * @returns {number} Milliseconds since the epoch.
+ */
+const productSortKey = (product) => {
+  if (typeof product.listedAt === 'string') {
+    const parsed = Date.parse(product.listedAt);
+    if (!Number.isNaN(parsed)) return parsed;
+  }
+  return parseProductDate(product.name).getTime();
+};
+
+/**
  * Returns the image paths referenced by a product, newest schema first.
  * @param {object} product Product entry.
  * @returns {string[]} Referenced image paths.
@@ -82,7 +100,7 @@ const buildAllCatalog = (productsDir) =>
     .flatMap((category) =>
       readCategory(productsDir, category).map((product) => ({ ...product, category }))
     )
-    .sort((a, b) => parseProductDate(b.name) - parseProductDate(a.name));
+    .sort((a, b) => productSortKey(b) - productSortKey(a));
 
 module.exports = {
   ALL_CATEGORY,
@@ -91,5 +109,6 @@ module.exports = {
   listCategories,
   parseProductDate,
   productImages,
+  productSortKey,
   readCategory,
 };

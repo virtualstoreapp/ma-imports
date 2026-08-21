@@ -7,13 +7,17 @@ const { validateCatalog } = require('../../tools/lib/validate');
 const ROOT = path.join(__dirname, '../..');
 
 const VALID_PRODUCT = {
-  name: '[2907251533] Adidas',
-  description: '',
-  oldPrice: 0,
+  id: '2907251533',
+  brand: 'adidas',
   price: 39,
-  size: 'N/A',
+  sizes: [{ size: 'G' }],
   images: ['images/2907251533-adidas.jpeg'],
+  listedAt: '2025-07-29T15:33:00Z',
 };
+
+// fixtureRegistry declares no brands by default, so the brand check would fire
+// on every case. Every fixture validates against this.
+const FIXTURE_BRANDS = { adidas: { label: 'Adidas' }, unbranded: { label: '' } };
 
 const MANIFEST = { 'images/2907251533-adidas.jpeg': { src: 'images/2907251533-adidas.jpeg' } };
 
@@ -33,7 +37,7 @@ let fixtureRoot;
  * @returns {object} A registry.
  */
 const fixtureRegistry = (leafSlugs, options = {}) => {
-  const { groupSlugs = [], leafOverrides = {}, brands = {}, aliases = {} } = options;
+  const { groupSlugs = [], leafOverrides = {}, brands = FIXTURE_BRANDS, aliases = {} } = options;
 
   const leaves = leafSlugs.map((slug) => ({
     slug,
@@ -190,28 +194,39 @@ describe('Product fields', () => {
   // schema states the shape, and the hand-written rules state the things JSON
   // Schema cannot express.
   it.each([
-    ['a name without its date code', { name: 'Adidas' }, /missing its \[DDMMYYHHmm\] code/],
+    ['a malformed id', { id: '290725' }, /id/],
     ['a zero price', { price: 0 }, /price must be a positive number/],
     ['a non-numeric price', { price: '39' }, /price must be a positive number/],
     ['an oldPrice below price', { oldPrice: 10, price: 39 }, /must exceed price/],
     ['an oldPrice equal to price', { oldPrice: 39, price: 39 }, /must exceed price/],
-    ['a non-boolean soldOut', { soldOut: 'yes' }, /soldOut must be a boolean/],
-    ['a non-string description', { description: 5 }, /description must be a string/],
-    ['no image reference', { images: undefined }, /must reference at least one image/],
-    ['an empty image list', { images: [] }, /must reference at least one image/],
+    ['an oldPrice of zero, which v2 omits instead', { oldPrice: 0 }, /oldPrice/],
+    ['an unknown brand', { brand: 'ghost' }, /brand "ghost" is not declared/],
+    ['no image reference', { images: undefined }, /images/],
+    ['an empty image list', { images: [] }, /images/],
     ['an image missing on disk', { images: ['images/2907251533-gone.jpeg'] }, /does not exist on disk/],
+    ['an empty description, which v2 omits instead', { description: '' }, /description/],
+    ['a listedAt disagreeing with the id', { listedAt: '2020-01-01T00:00:00Z' }, /disagrees with id/],
+    ['both sizes and a sizeNote', { sizeNote: 'Consultar' }, /cannot carry both/],
+    ['a redundant "N\\/A" sizeNote', { sizes: [], sizeNote: 'N/A' }, /redundant/],
+    ['a row-level soldOut alongside sizes', { soldOut: true }, /belongs on the individual sizes/],
+    ['the same size listed twice', { sizes: [{ size: 'G' }, { size: 'G' }] }, /listed twice/],
   ])('rejects %s', (_label, overrides, expected) => {
     const { errors } = validate(withProduct(overrides));
-    expect(errors.filter((error) => expected.test(error))).toHaveLength(1);
+    expect(errors.filter((error) => expected.test(error)).length).toBeGreaterThan(0);
   });
 
   it.each([
-    ['an oldPrice equal to zero, the no-discount sentinel', { oldPrice: 0 }],
     ['an omitted oldPrice', { oldPrice: undefined }],
+    ['a real discount', { oldPrice: 49 }],
     ['an omitted description', { description: undefined }],
-    ['an empty description, which 26 products still carry', { description: '' }],
-    ['soldOut present and true', { soldOut: true }],
-    ['a multi-size value, since a row may hold several units', { size: '39, 42' }],
+    ['a model', { model: 'Campus' }],
+    ['several units, since a row may hold more than one', { sizes: [{ size: '39' }, { size: '42' }] }],
+    ['a partly sold-out row', { sizes: [{ size: '39', soldOut: true }, { size: '42' }] }],
+    ['a fully sold-out row', { sizes: [{ size: '39', soldOut: true }] }],
+    ['no sizes at all, as a cap or wallet has', { sizes: [] }],
+    ['no sizes plus a note', { sizes: [], sizeNote: 'Consultar' }],
+    ['no sizes plus a row-level soldOut', { sizes: [], soldOut: true }],
+    ['an unbranded product', { brand: 'unbranded', model: 'Star' }],
   ])('accepts %s', (_label, overrides) => {
     expect(validate(withProduct(overrides))).toEqual({ errors: [], warnings: [] });
   });
@@ -220,13 +235,13 @@ describe('Product fields', () => {
     const { errors } = validate({
       'caps-man': [
         { ...VALID_PRODUCT, price: 0 },
-        { ...VALID_PRODUCT, name: 'no code', images: ['images/2907251533-gone.jpeg'] },
+        { ...VALID_PRODUCT, brand: 'ghost', images: ['images/2907251533-gone.jpeg'] },
       ],
     });
     // Two products, three distinct defects: the price, the missing code, and the
     // absent file. Schema errors add to this, so the assertion is on coverage.
     expect(errors.filter((error) => /price must be a positive number/.test(error))).toHaveLength(1);
-    expect(errors.filter((error) => /missing its \[DDMMYYHHmm\] code/.test(error))).toHaveLength(1);
+    expect(errors.filter((error) => /brand "ghost" is not declared/.test(error))).toHaveLength(1);
     expect(errors.filter((error) => /does not exist on disk/.test(error))).toHaveLength(1);
   });
 });
@@ -324,10 +339,12 @@ describe('Image filename convention', () => {
     expect(errors).toEqual([]);
   });
 
-  it('stays silent when the name has no code, leaving that error to speak once', () => {
-    const { errors } = validate(withProduct({ name: 'Adidas', images: ['images/whatever.jpeg'] }));
+  // Without an id there is nothing to compare a filename against, so the rule
+  // stays quiet and lets the schema report the missing field once.
+  it('stays silent when the product has no id', () => {
+    const { errors } = validate(withProduct({ id: undefined, images: ['images/whatever.jpeg'] }));
     expect(errors.filter((error) => /must be named after/.test(error))).toEqual([]);
-    expect(errors.filter((error) => /missing its \[DDMMYYHHmm\] code/.test(error))).toHaveLength(1);
+    expect(errors.filter((error) => /id/.test(error)).length).toBeGreaterThan(0);
   });
 });
 
@@ -377,7 +394,7 @@ describe('Image location (rule 4a)', () => {
     validateCatalog({
       ...writeFixture(
         { 'caps-man': [{ ...VALID_PRODUCT, images }] },
-        { leafOverrides: { 'caps-man': leafOverrides }, brands: { nike: { label: 'Nike' } } }
+        { leafOverrides: { 'caps-man': leafOverrides }, brands: { ...FIXTURE_BRANDS, nike: { label: 'Nike' } } }
       ),
       manifest: Object.fromEntries(images.map((image) => [image, {}])),
     });
@@ -413,9 +430,23 @@ describe('Image location (rule 4a)', () => {
   });
 
   it('rejects a brand folder the brand registry does not declare', () => {
-    const { errors } = validateAt(['images/man/shoes/adidas/2907251533-adidas.jpeg'], BRANDED);
-    expect(errors.filter((e) => /uses brand folder "adidas", which catalog\/brands\.json does not declare/.test(e)))
+    const { errors } = validateAt(['images/man/shoes/ghostbrand/2907251533-adidas.jpeg'], BRANDED);
+    expect(errors.filter((e) => /uses brand folder "ghostbrand", which catalog\/brands\.json does not declare/.test(e)))
       .toHaveLength(1);
+  });
+
+  // Rule 4b. Wave 3 could only check the folder was *a* known brand; the v2
+  // brand field makes ownership checkable, which resolves the 40 products whose
+  // folder disagreed with the brand their name implied.
+  it('rejects a brand folder that names a different brand', () => {
+    const { errors } = validateAt(['images/man/shoes/nike/2907251533-adidas.jpeg'], BRANDED);
+    expect(errors.filter((e) => /sits in the "nike" folder but the product's brand is "adidas"/.test(e)))
+      .toHaveLength(1);
+  });
+
+  it('accepts a brand folder that names the product\'s own brand', () => {
+    const { errors } = validateAt(['images/man/shoes/adidas/2907251533-adidas.jpeg'], BRANDED);
+    expect(errors).toEqual([]);
   });
 
   // All 6 brandless products sit directly in their category directory, which is
@@ -424,7 +455,7 @@ describe('Image location (rule 4a)', () => {
   it('accepts a brandless product loose in a brand-folder category', () => {
     const { errors } = validateCatalog({
       ...writeFixture(
-        { 'caps-man': [{ ...VALID_PRODUCT, name: '[2907251533]', images: ['images/man/shoes/2907251533.jpeg'] }] },
+        { 'caps-man': [{ ...VALID_PRODUCT, brand: 'unbranded', images: ['images/man/shoes/2907251533.jpeg'] }] },
         { leafOverrides: { 'caps-man': BRANDED } }
       ),
       manifest: { 'images/man/shoes/2907251533.jpeg': {} },
@@ -435,8 +466,8 @@ describe('Image location (rule 4a)', () => {
   it('rejects a brandless product placed in a brand folder anyway', () => {
     const { errors } = validateCatalog({
       ...writeFixture(
-        { 'caps-man': [{ ...VALID_PRODUCT, name: '[2907251533]', images: ['images/man/shoes/nike/2907251533.jpeg'] }] },
-        { leafOverrides: { 'caps-man': BRANDED }, brands: { nike: { label: 'Nike' } } }
+        { 'caps-man': [{ ...VALID_PRODUCT, brand: 'unbranded', images: ['images/man/shoes/nike/2907251533.jpeg'] }] },
+        { leafOverrides: { 'caps-man': BRANDED }, brands: { ...FIXTURE_BRANDS, nike: { label: 'Nike' } } }
       ),
       manifest: { 'images/man/shoes/nike/2907251533.jpeg': {} },
     });
@@ -494,9 +525,9 @@ describe('Duplicate product codes', () => {
   // collisions exist today, which is what makes this free to enforce now.
   it('fails the build, naming both locations', () => {
     const { errors } = validate({
-      'caps-man': [VALID_PRODUCT, { ...VALID_PRODUCT, name: '[2907251533] Nike' }],
+      'caps-man': [VALID_PRODUCT, { ...VALID_PRODUCT }],
     });
-    const duplicates = errors.filter((error) => /duplicate product code \[2907251533\]/.test(error));
+    const duplicates = errors.filter((error) => /duplicate product id \[2907251533\]/.test(error));
     expect(duplicates).toHaveLength(1);
     expect(duplicates[0]).toContain('caps-man.json[0]');
     expect(duplicates[0]).toContain('caps-man.json[1]');
@@ -505,16 +536,16 @@ describe('Duplicate product codes', () => {
   it('catches a collision spanning two category files', () => {
     const { errors } = validate({
       'caps-man': [VALID_PRODUCT],
-      'belts-man': [{ ...VALID_PRODUCT, name: '[2907251533] Gucci' }],
+      'belts-man': [{ ...VALID_PRODUCT }],
     });
-    expect(errors.filter((error) => /duplicate product code/.test(error))).toHaveLength(1);
+    expect(errors.filter((error) => /duplicate product id/.test(error))).toHaveLength(1);
   });
 
   it('accepts distinct codes', () => {
     const { errors } = validate({
-      'caps-man': [VALID_PRODUCT, { ...VALID_PRODUCT, name: '[2907251534] Nike' }],
+      'caps-man': [VALID_PRODUCT, { ...VALID_PRODUCT, id: '2907251534', listedAt: '2025-07-29T15:34:00Z', images: ['images/2907251534-adidas.jpeg'] }],
     });
-    expect(errors.filter((error) => /duplicate product code/.test(error))).toEqual([]);
+    expect(errors.filter((error) => /duplicate product id/.test(error))).toEqual([]);
   });
 });
 

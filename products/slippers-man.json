@@ -1,11 +1,19 @@
 [
     {
-        "name": "[1702251140] Tommy Hilfiger",
-        "oldPrice": 0.0,
-        "price": 29.90,
+        "id": "1702251140",
+        "brand": "tommy-hilfiger",
+        "price": 29.9,
+        "sizes": [
+            {
+                "size": "37/38"
+            },
+            {
+                "size": "39/40"
+            }
+        ],
         "images": [
             "images/man/slippers/tommy-hilfiger/1702251140-tommy-hilfiger.jpeg"
         ],
-        "size": "37/38, 39/40"
+        "listedAt": "2025-02-17T11:40:00Z"
     }
 ]

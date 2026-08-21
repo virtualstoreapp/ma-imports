@@ -1,100 +1,136 @@
 [
     {
-        "name": "[2603251654] Calvin Klein",
-        "description": "",
-        "oldPrice": 0.0,
-        "price": 79.90,
+        "id": "2603251654",
+        "brand": "calvin-klein",
+        "price": 79.9,
+        "sizes": [
+            {
+                "size": "48"
+            }
+        ],
         "images": [
             "images/man/shorts/jeans/calvin-klein/2603251654-calvin-klein-front.jpeg",
             "images/man/shorts/jeans/calvin-klein/2603251654-calvin-klein-back.jpeg"
         ],
-        "size": "48"
+        "listedAt": "2025-03-26T16:54:00Z"
     },
     {
-        "name": "[2603251645] Hugo Boss",
-        "description": "",
-        "oldPrice": 0.0,
-        "price": 79.90,
+        "id": "2603251645",
+        "brand": "hugo-boss",
+        "price": 79.9,
+        "sizes": [
+            {
+                "size": "36"
+            }
+        ],
         "images": [
             "images/man/shorts/jeans/hugo-boss/2603251645-hugo-boss-front.jpeg",
             "images/man/shorts/jeans/hugo-boss/2603251645-hugo-boss-back.jpeg"
         ],
-        "size": "36"
+        "listedAt": "2025-03-26T16:45:00Z"
     },
     {
-        "name": "[2603251652] Lacoste",
-        "description": "",
-        "oldPrice": 0.0,
-        "price": 79.90,
+        "id": "2603251652",
+        "brand": "lacoste",
+        "price": 79.9,
+        "sizes": [
+            {
+                "size": "40"
+            }
+        ],
         "images": [
             "images/man/shorts/jeans/lacoste/2603251652-lacoste-front.jpeg",
             "images/man/shorts/jeans/lacoste/2603251652-lacoste-back.jpeg"
         ],
-        "size": "40"
+        "listedAt": "2025-03-26T16:52:00Z"
     },
     {
-        "name": "[2603251704] Oakley",
-        "description": "",
-        "oldPrice": 0.0,
-        "price": 79.90,
+        "id": "2603251704",
+        "brand": "oakley",
+        "price": 79.9,
+        "sizes": [
+            {
+                "size": "42"
+            }
+        ],
         "images": [
             "images/man/shorts/jeans/oakley/2603251704-oakley-front.jpeg",
             "images/man/shorts/jeans/oakley/2603251704-oakley-back.jpeg"
         ],
-        "size": "42"
+        "listedAt": "2025-03-26T17:04:00Z"
     },
     {
-        "name": "[2603251657] Reserva",
-        "description": "",
-        "oldPrice": 0.0,
-        "price": 79.90,
+        "id": "2603251657",
+        "brand": "reserva",
+        "price": 79.9,
+        "sizes": [
+            {
+                "size": "44"
+            }
+        ],
         "images": [
             "images/man/shorts/jeans/reserva/2603251657-reserva-front.jpeg",
             "images/man/shorts/jeans/reserva/2603251657-reserva-back.jpeg"
         ],
-        "size": "44"
+        "listedAt": "2025-03-26T16:57:00Z"
     },
     {
-        "name": "[2603251649] Tommy Hilfiger",
-        "description": "",
-        "oldPrice": 0.0,
-        "price": 79.90,
+        "id": "2603251649",
+        "brand": "tommy-hilfiger",
+        "price": 79.9,
+        "sizes": [
+            {
+                "size": "38"
+            }
+        ],
         "images": [
             "images/man/shorts/jeans/tommy-hilfiger/2603251649-tommy-hilfiger-front.jpeg",
             "images/man/shorts/jeans/tommy-hilfiger/2603251649-tommy-hilfiger-back.jpeg"
         ],
-        "size": "38"
+        "listedAt": "2025-03-26T16:49:00Z"
     },
     {
-        "name": "[2603251700] Tommy Hilfiger",
-        "description": "",
-        "oldPrice": 0.0,
-        "price": 79.90,
+        "id": "2603251700",
+        "brand": "tommy-hilfiger",
+        "price": 79.9,
+        "sizes": [
+            {
+                "size": "46"
+            }
+        ],
         "images": [
             "images/man/shorts/jeans/tommy-hilfiger/2603251700-tommy-hilfiger-front.jpeg",
             "images/man/shorts/jeans/tommy-hilfiger/2603251700-tommy-hilfiger-back.jpeg"
         ],
-        "size": "46"
+        "listedAt": "2025-03-26T17:00:00Z"
     },
     {
-        "name": "[2603251702] Tommy Hilfiger",
-        "description": "",
-        "oldPrice": 0.0,
-        "price": 79.90,
+        "id": "2603251702",
+        "brand": "tommy-hilfiger",
+        "price": 79.9,
+        "sizes": [
+            {
+                "size": "48"
+            }
+        ],
         "images": [
             "images/man/shorts/jeans/tommy-hilfiger/2603251702-tommy-hilfiger-front.jpeg",
             "images/man/shorts/jeans/tommy-hilfiger/2603251702-tommy-hilfiger-back.jpeg"
         ],
-        "size": "48"
+        "listedAt": "2025-03-26T17:02:00Z"
     },
     {
-        "name": "[1110251223]",
-        "description": "",
-        "oldPrice": 0.0,
-        "price": 79.90,
+        "id": "1110251223",
+        "brand": "unbranded",
+        "price": 79.9,
+        "sizes": [
+            {
+                "size": "42"
+            }
+        ],
         "images": [
             "images/man/shorts/jeans/1110251223.jpeg"
         ],
-        "size": "42"
+        "listedAt": "2025-10-11T12:23:00Z"
     }
 ]

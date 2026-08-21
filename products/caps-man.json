@@ -1,116 +1,122 @@
 [
     {
-        "name": "[2907251533] Adidas",
-        "description": "",
-        "oldPrice": 0.0,
-        "price": 39.00,
+        "id": "2907251533",
+        "brand": "adidas",
+        "price": 39,
+        "sizes": [],
         "images": [
             "images/man/caps/2907251533-adidas.jpeg"
         ],
-        "size": "N/A"
+        "listedAt": "2025-07-29T15:33:00Z"
     },
     {
-        "name": "[2907251534] Lacoste",
-        "description": "",
-        "oldPrice": 0.0,
-        "price": 39.00,
+        "id": "2907251534",
+        "brand": "lacoste",
+        "price": 39,
+        "sizes": [],
         "images": [
             "images/man/caps/2907251534-lacoste.jpeg"
         ],
-        "size": "N/A"
+        "listedAt": "2025-07-29T15:34:00Z"
     },
     {
-        "name": "[2907251536] Los Angeles",
-        "description": "",
-        "oldPrice": 0.0,
-        "price": 39.00,
+        "id": "2907251536",
+        "brand": "unbranded",
+        "model": "Los Angeles",
+        "price": 39,
+        "sizes": [],
         "images": [
             "images/man/caps/2907251536-los-angeles.jpeg"
         ],
-        "size": "N/A"
+        "listedAt": "2025-07-29T15:36:00Z"
     },
     {
-        "name": "[2907251532] Nike",
-        "description": "",
-        "oldPrice": 0.0,
-        "price": 39.00,
+        "id": "2907251532",
+        "brand": "nike",
+        "price": 39,
+        "sizes": [],
         "images": [
             "images/man/caps/2907251532-nike.jpeg"
         ],
-        "size": "N/A"
+        "listedAt": "2025-07-29T15:32:00Z"
     },
     {
-        "name": "[2907251537] Nike",
-        "description": "",
-        "oldPrice": 0.0,
-        "price": 39.00,
+        "id": "2907251537",
+        "brand": "nike",
+        "price": 39,
+        "sizes": [],
+        "soldOut": true,
         "images": [
             "images/man/caps/2907251537-nike.jpeg"
         ],
-        "size": "N/A",
-        "soldOut": true
+        "listedAt": "2025-07-29T15:37:00Z"
     },
     {
-        "name": "[2907251535] Nike",
-        "description": "",
-        "oldPrice": 0.0,
-        "price": 39.00,
+        "id": "2907251535",
+        "brand": "nike",
+        "price": 39,
+        "sizes": [],
+        "soldOut": true,
         "images": [
             "images/man/caps/2907251535-nike.jpeg"
         ],
-        "size": "N/A",
-        "soldOut": true
+        "listedAt": "2025-07-29T15:35:00Z"
     },
     {
-        "name": "[0106250949] Polo",
+        "id": "0106250949",
+        "brand": "polo",
+        "price": 59.9,
+        "sizes": [],
         "description": "Cor: Verde",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/caps/0106250949-polo.jpeg"
         ],
-        "size": "N/A"
+        "listedAt": "2025-06-01T09:49:00Z"
     },
     {
-        "name": "[0106250953] Polo",
+        "id": "0106250953",
+        "brand": "polo",
+        "price": 59.9,
+        "sizes": [],
         "description": "Cor: Branca",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/caps/0106250953-polo.jpeg"
         ],
-        "size": "N/A"
+        "listedAt": "2025-06-01T09:53:00Z"
     },
     {
-        "name": "[0106250954] Polo",
+        "id": "0106250954",
+        "brand": "polo",
+        "price": 59.9,
+        "sizes": [],
+        "soldOut": true,
         "description": "Cor: Bege",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/caps/0106250954-polo.jpeg"
         ],
-        "size": "N/A",
-        "soldOut": true
+        "listedAt": "2025-06-01T09:54:00Z"
     },
     {
-        "name": "[0106250955] Polo",
+        "id": "0106250955",
+        "brand": "polo",
+        "price": 59.9,
+        "sizes": [],
+        "soldOut": true,
         "description": "Cor: Amarela",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/caps/0106250955-polo.jpeg"
         ],
-        "size": "N/A",
-        "soldOut": true
+        "listedAt": "2025-06-01T09:55:00Z"
     },
     {
-        "name": "[0106250956] Ralph Lauren",
+        "id": "0106250956",
+        "brand": "ralph-lauren",
+        "price": 59.9,
+        "sizes": [],
         "description": "Cor: Cinza Escuro",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/caps/0106250956-ralph-lauren.jpeg"
         ],
-        "size": "N/A"
+        "listedAt": "2025-06-01T09:56:00Z"
     }
 ]

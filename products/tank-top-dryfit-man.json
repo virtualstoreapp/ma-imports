@@ -1,92 +1,137 @@
 [
     {
-        "name": "[1104250029] Mizuno",
+        "id": "1104250029",
+        "brand": "mizuno",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "P"
+            }
+        ],
         "description": "Dry-Fit",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/tank-top/dryfit/mizuno/1104250029-mizuno.jpeg"
         ],
-        "size": "P"
+        "listedAt": "2025-04-11T00:29:00Z"
     },
     {
-        "name": "[2810251224] Mizuno",
+        "id": "2810251224",
+        "brand": "mizuno",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "P"
+            }
+        ],
         "description": "Dry-Fit, Cor: Preta",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/tank-top/dryfit/mizuno/2810251224-mizuno.jpeg"
         ],
-        "size": "P"
+        "listedAt": "2025-10-28T12:24:00Z"
     },
     {
-        "name": "[0703251717] Mizuno",
+        "id": "0703251717",
+        "brand": "mizuno",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "G"
+            }
+        ],
         "description": "Dry-Fit, Cor: Preta",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/tank-top/dryfit/mizuno/0703251717-mizuno.jpeg"
         ],
-        "size": "G"
+        "listedAt": "2025-03-07T17:17:00Z"
     },
     {
-        "name": "[1104250034] New Balance",
+        "id": "1104250034",
+        "brand": "new-balance",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "P"
+            }
+        ],
         "description": "Dry-Fit",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/tank-top/dryfit/new-balance/1104250034-new-balance.jpeg"
         ],
-        "size": "P"
+        "listedAt": "2025-04-11T00:34:00Z"
     },
     {
-        "name": "[1104250036] New Balance",
+        "id": "1104250036",
+        "brand": "new-balance",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "GG"
+            }
+        ],
         "description": "Dry-Fit",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/tank-top/dryfit/new-balance/1104250036-new-balance.jpeg"
         ],
-        "size": "GG"
+        "listedAt": "2025-04-11T00:36:00Z"
     },
     {
-        "name": "[1104250030] Nike",
+        "id": "1104250030",
+        "brand": "nike",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "M"
+            }
+        ],
         "description": "Dry-Fit",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/tank-top/dryfit/nike/1104250030-nike.jpeg"
         ],
-        "size": "M"
+        "listedAt": "2025-04-11T00:30:00Z"
     },
     {
-        "name": "[1104250031] Nike",
+        "id": "1104250031",
+        "brand": "nike",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "M"
+            }
+        ],
         "description": "Dry-Fit",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/tank-top/dryfit/nike/1104250031-nike.jpeg"
         ],
-        "size": "M"
+        "listedAt": "2025-04-11T00:31:00Z"
     },
     {
-        "name": "[0703251712] Puma",
+        "id": "0703251712",
+        "brand": "puma",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "G"
+            }
+        ],
         "description": "Dry-Fit, Cor: Azul Marinho",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/tank-top/dryfit/puma/0703251712-puma.jpeg"
         ],
-        "size": "G"
+        "listedAt": "2025-03-07T17:12:00Z"
     },
     {
-        "name": "[0703251715] Puma",
+        "id": "0703251715",
+        "brand": "puma",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "GG"
+            }
+        ],
         "description": "Dry-Fit, Cor: Cinza",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/tank-top/dryfit/puma/0703251715-puma.jpeg"
         ],
-        "size": "GG"
+        "listedAt": "2025-03-07T17:15:00Z"
     }
 ]

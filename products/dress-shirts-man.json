@@ -1,52 +1,77 @@
 [
     {
-        "name": "[0806251831] Reserva",
+        "id": "0806251831",
+        "brand": "reserva",
+        "price": 139.9,
+        "sizes": [
+            {
+                "size": "XXL"
+            }
+        ],
         "description": "Manga Longa",
-        "oldPrice": 0.0,
-        "price": 139.90,
         "images": [
             "images/man/dress-shirts/0806251831-reserva.jpeg"
         ],
-        "size": "XXL"
+        "listedAt": "2025-06-08T18:31:00Z"
     },
     {
-        "name": "[0806251832] Reserva",
+        "id": "0806251832",
+        "brand": "reserva",
+        "price": 139.9,
+        "sizes": [
+            {
+                "size": "XXL"
+            }
+        ],
         "description": "Manga Longa",
-        "oldPrice": 0.0,
-        "price": 139.90,
         "images": [
             "images/man/dress-shirts/0806251832-reserva.jpeg"
         ],
-        "size": "XXL"
+        "listedAt": "2025-06-08T18:32:00Z"
     },
     {
-        "name": "[0806251833] Reserva",
+        "id": "0806251833",
+        "brand": "reserva",
+        "price": 139.9,
+        "sizes": [
+            {
+                "size": "XXL"
+            }
+        ],
         "description": "Manga Longa",
-        "oldPrice": 0.0,
-        "price": 139.90,
         "images": [
             "images/man/dress-shirts/0806251833-reserva.jpeg"
         ],
-        "size": "XXL"
+        "listedAt": "2025-06-08T18:33:00Z"
     },
     {
-        "name": "[0806251830] Ricardo Almeida",
+        "id": "0806251830",
+        "brand": "ricardo-almeida",
+        "price": 139.9,
+        "sizes": [
+            {
+                "size": "46"
+            }
+        ],
         "description": "Manga Longa",
-        "oldPrice": 0.0,
-        "price": 139.90,
         "images": [
             "images/man/dress-shirts/0806251830-ricardo-almeida.jpeg"
         ],
-        "size": "46"
+        "listedAt": "2025-06-08T18:30:00Z"
     },
     {
-        "name": "[0806251834] Sergio K",
+        "id": "0806251834",
+        "brand": "sergio-k",
+        "price": 139.9,
+        "sizes": [
+            {
+                "size": "XXXL"
+            }
+        ],
         "description": "Manga Longa",
-        "oldPrice": 0.0,
-        "price": 139.90,
         "images": [
             "images/man/dress-shirts/0806251834-sergio-k.jpeg"
         ],
-        "size": "XXXL"
+        "listedAt": "2025-06-08T18:34:00Z"
     }
 ]

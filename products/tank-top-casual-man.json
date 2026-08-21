@@ -1,32 +1,47 @@
 [
     {
-        "name": "[1903251706] Calvin Klein",
+        "id": "1903251706",
+        "brand": "calvin-klein",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "G"
+            }
+        ],
         "description": "100% Algodão",
-        "oldPrice": 0.0,
-        "price": 39.90,
         "images": [
             "images/man/tank-top/casual/calvin-klein/1903251706-calvin-klein.jpeg"
         ],
-        "size": "G"
+        "listedAt": "2025-03-19T17:06:00Z"
     },
     {
-        "name": "[1903251708] Calvin Klein",
+        "id": "1903251708",
+        "brand": "calvin-klein",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "GG"
+            }
+        ],
         "description": "100% Algodão",
-        "oldPrice": 0.0,
-        "price": 39.90,
         "images": [
             "images/man/tank-top/casual/calvin-klein/1903251708-calvin-klein.jpeg"
         ],
-        "size": "GG"
+        "listedAt": "2025-03-19T17:08:00Z"
     },
     {
-        "name": "[1903251705] Hugo Boss",
+        "id": "1903251705",
+        "brand": "hugo-boss",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "P"
+            }
+        ],
         "description": "100% Algodão",
-        "oldPrice": 0.0,
-        "price": 39.90,
         "images": [
             "images/man/tank-top/casual/hugo-boss/1903251705-hugo-boss.jpeg"
         ],
-        "size": "P"
+        "listedAt": "2025-03-19T17:05:00Z"
     }
 ]

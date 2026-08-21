@@ -4,8 +4,23 @@ const path = require('path');
 const { waitFor } = require('@testing-library/dom');
 
 const { buildAllCatalog, productImages, readCategory } = require('../../tools/lib/catalog');
+const { loadRegistry } = require('../../tools/lib/registry');
+const { toRuntime } = require('../../tools/lib/runtime');
 
 const PRODUCTS_DIR = path.join(__dirname, '../../products');
+
+// products/ holds the v2 authoring shape; the client reads the runtime shape the
+// build derives from it. The invariants below describe rendering, so they compare
+// the DOM against that derived shape rather than against the authoring fields.
+//
+// Note what this cannot catch: it checks rendering against the *current* data, so
+// it cannot detect data lost during a migration. That is what
+// tools/verify-migration.js is for — it compared against a pre-migration
+// baseline and caught nine sold-out products that had silently gone back on sale.
+const runtimeProducts = (products) => {
+  const { brands } = loadRegistry();
+  return products.map((product) => toRuntime(product, brands));
+};
 
 // Category suites assert invariants against the live catalog rather than
 // snapshotting it. Byte-exact card and modal markup is pinned once, against a
@@ -89,7 +104,7 @@ const assertCardInvariants = (products) => {
  * @param {string} categorySlug Slug matching products/{slug}.json.
  */
 const assertCategory = async (expectedHeading, categorySlug) => {
-  const products = readCategory(PRODUCTS_DIR, categorySlug);
+  const products = runtimeProducts(readCategory(PRODUCTS_DIR, categorySlug));
   expect(products.length).toBeGreaterThan(0);
 
   await assertExpectedHeading(expectedHeading);
@@ -101,7 +116,7 @@ const assertCategory = async (expectedHeading, categorySlug) => {
  * Asserts the homepage renders the full merged catalog.
  */
 const assertAllProducts = async () => {
-  const products = buildAllCatalog(PRODUCTS_DIR);
+  const products = runtimeProducts(buildAllCatalog(PRODUCTS_DIR));
   expect(products.length).toBeGreaterThan(0);
 
   await assertExpectedHeading('Novidades');

@@ -20,8 +20,7 @@
         "properties": {
           "label": {
             "type": "string",
-            "description": "Display name, as it should appear to a customer. May legitimately differ from the slug where the on-disk folder preserves a misspelling — 'under-armor' labels as 'Under Armour'.",
-            "minLength": 1
+            "description": "Display name, as it should appear to a customer. May legitimately differ from the slug where the on-disk folder preserves a misspelling — 'under-armor' labels as 'Under Armour'. Empty only for 'unbranded', the sentinel for a product with no brand, whose rendered name is its model alone."
           }
         }
       }

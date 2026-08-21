@@ -127,7 +127,9 @@ describe('loadRegistry', () => {
     expect(registry.leaves).toHaveLength(26);
     expect(registry.groups).toHaveLength(19);
     expect(registry.generated).toHaveLength(1);
-    expect(Object.keys(registry.brands)).toHaveLength(30);
+    // Completed in Wave 4: every brand in the catalog, plus the `unbranded` sentinel.
+    expect(Object.keys(registry.brands)).toHaveLength(38);
+    expect(registry.brands.unbranded.label).toBe('');
   });
 });
 

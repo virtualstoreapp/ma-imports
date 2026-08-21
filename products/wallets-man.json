@@ -1,75 +1,89 @@
 [
     {
-        "name": "[2307251256] Armani Exchange",
-        "description": "Carteira Masculina, Material: Couro legítimo",
-        "oldPrice": 0.0,
+        "id": "2307251256",
+        "brand": "armani-exchange",
         "price": 24.99,
+        "sizes": [],
+        "sizeNote": "Pequena",
+        "description": "Carteira Masculina, Material: Couro legítimo",
         "images": [
             "images/man/wallets/2307251256-armani-exchange.jpeg"
         ],
-        "size": "Pequena"
+        "listedAt": "2025-07-23T12:56:00Z"
     },
     {
-        "name": "[2307251257] Armani Exchange",
-        "description": "Carteira Masculina, Material: Couro legítimo",
-        "oldPrice": 0.0,
+        "id": "2307251257",
+        "brand": "armani-exchange",
         "price": 24.99,
+        "sizes": [],
+        "sizeNote": "Pequena",
+        "description": "Carteira Masculina, Material: Couro legítimo",
         "images": [
             "images/man/wallets/2307251257-armani-exchange-front.jpeg",
             "images/man/wallets/2307251257-armani-exchange-back.jpeg"
         ],
-        "size": "Pequena"
+        "listedAt": "2025-07-23T12:57:00Z"
     },
     {
-        "name": "[2307251258] Oakley",
-        "description": "Carteira Masculina, Material: Couro legítimo",
-        "oldPrice": 0.0,
+        "id": "2307251258",
+        "brand": "oakley",
         "price": 24.99,
+        "sizes": [],
+        "sizeNote": "Pequena",
+        "description": "Carteira Masculina, Material: Couro legítimo",
         "images": [
             "images/man/wallets/2307251258-oakley.jpeg"
         ],
-        "size": "Pequena"
+        "listedAt": "2025-07-23T12:58:00Z"
     },
     {
-        "name": "[2307251254] Quicksilver ",
-        "description": "Carteira Masculina, Material: Couro legítimo",
-        "oldPrice": 0.0,
+        "id": "2307251254",
+        "brand": "quiksilver",
         "price": 24.99,
+        "sizes": [],
+        "sizeNote": "Pequena",
+        "soldOut": true,
+        "description": "Carteira Masculina, Material: Couro legítimo",
         "images": [
             "images/man/wallets/2307251254-quicksilver.jpeg"
         ],
-        "size": "Pequena",
-        "soldOut": true
+        "listedAt": "2025-07-23T12:54:00Z"
     },
     {
-        "name": "[2307251255] Quicksilver ",
-        "description": "Carteira Masculina, Material: Couro legítimo",
-        "oldPrice": 0.0,
+        "id": "2307251255",
+        "brand": "quiksilver",
         "price": 24.99,
+        "sizes": [],
+        "sizeNote": "Pequena",
+        "soldOut": true,
+        "description": "Carteira Masculina, Material: Couro legítimo",
         "images": [
             "images/man/wallets/2307251255-quicksilver.jpeg"
         ],
-        "size": "Pequena",
-        "soldOut": true
+        "listedAt": "2025-07-23T12:55:00Z"
     },
     {
-        "name": "[2307251259] Reserva",
-        "description": "Carteira Masculina, Material: Couro legítimo",
-        "oldPrice": 0.0,
+        "id": "2307251259",
+        "brand": "reserva",
         "price": 24.99,
+        "sizes": [],
+        "sizeNote": "Pequena",
+        "description": "Carteira Masculina, Material: Couro legítimo",
         "images": [
             "images/man/wallets/2307251259-reserva.jpeg"
         ],
-        "size": "Pequena"
+        "listedAt": "2025-07-23T12:59:00Z"
     },
     {
-        "name": "[2307251250] Tommy Hilfiger ",
-        "description": "Carteira Masculina",
-        "oldPrice": 0.0,
+        "id": "2307251250",
+        "brand": "tommy-hilfiger",
         "price": 24.99,
+        "sizes": [],
+        "sizeNote": "Pequena",
+        "description": "Carteira Masculina",
         "images": [
             "images/man/wallets/2307251250-tommy-hilfiger.jpeg"
         ],
-        "size": "Pequena"
+        "listedAt": "2025-07-23T12:50:00Z"
     }
 ]

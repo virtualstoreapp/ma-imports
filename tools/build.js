@@ -13,6 +13,7 @@ const {
 } = require('./lib/catalog');
 const { buildImageManifest } = require('./lib/images');
 const { loadRegistry, renderRegistryElement } = require('./lib/registry');
+const { toRuntime } = require('./lib/runtime');
 const { buildSocialCard } = require('./lib/social');
 const { validateCatalog } = require('./lib/validate');
 const { applyBlock } = require('./sync-registry');
@@ -43,12 +44,23 @@ const withMedia = (product, manifest) => ({
 });
 
 /**
+ * Compiles a v2 authoring product into what the client reads.
+ * The runtime shape is still v1, so Wave 4's data migration ships without
+ * touching scripts.js; Wave 5b switches the client over and this collapses.
+ * @param {object} product v2 product.
+ * @param {object} manifest Image manifest keyed by source path.
+ * @param {object} brands Brand registry.
+ * @returns {object} Runtime product with media attached.
+ */
+const compileProduct = (product, manifest, brands) => withMedia(toRuntime(product, brands), manifest);
+
+/**
  * Writes the generated product payloads: one file per category plus the
  * pre-merged `all.json` that replaces 26 homepage requests with one.
  * @param {object} manifest Image manifest keyed by source path.
  * @returns {Promise<{categories: number, products: number}>} Generation summary.
  */
-const writeProducts = async (manifest) => {
+const writeProducts = async (manifest, brands) => {
   const outputDir = path.join(DIST, 'products');
   await fsp.mkdir(outputDir, { recursive: true });
 
@@ -56,7 +68,7 @@ const writeProducts = async (manifest) => {
 
   for (const category of categories) {
     const products = readCategory(PRODUCTS_DIR, category).map((product) =>
-      withMedia(product, manifest)
+      compileProduct(product, manifest, brands)
     );
     await fsp.writeFile(
       path.join(outputDir, `${category}.json`),
@@ -65,7 +77,12 @@ const writeProducts = async (manifest) => {
     );
   }
 
-  const all = buildAllCatalog(PRODUCTS_DIR).map((product) => withMedia(product, manifest));
+  // The merged catalog tags each product with its source category, so the
+  // homepage can report the real one instead of the "Novidades" heading.
+  // `category` is added before `media` so the emitted key order is unchanged.
+  const all = buildAllCatalog(PRODUCTS_DIR).map((product) =>
+    withMedia({ ...toRuntime(product, brands), category: product.category }, manifest)
+  );
   await fsp.writeFile(
     path.join(outputDir, `${ALL_CATEGORY}.json`),
     JSON.stringify(all),
@@ -173,8 +190,9 @@ const main = async () => {
 
   // The registry block in index.html is generated and committed, so a stale
   // block means the catalog and the client disagree about category identity.
+  const registry = loadRegistry();
   const html = await fsp.readFile(path.join(ROOT, 'index.html'), 'utf8');
-  if (applyBlock(html, renderRegistryElement(loadRegistry())) !== html) {
+  if (applyBlock(html, renderRegistryElement(registry)) !== html) {
     throw new Error(
       'index.html registry block is stale — run `node tools/sync-registry.js` and commit the result'
     );
@@ -185,13 +203,14 @@ const main = async () => {
     productsDir: PRODUCTS_DIR,
     indexPath: path.join(ROOT, 'index.html'),
     manifest,
+    registry,
   });
   warnings.forEach((warning) => log(`warning: ${warning}`));
   if (errors.length) {
     throw new Error(`${errors.length} catalog problem(s):\n  ${errors.join('\n  ')}`);
   }
 
-  const { categories, products } = await writeProducts(manifest);
+  const { categories, products } = await writeProducts(manifest, registry.brands);
   log(`products: ${products} products across ${categories} categories`);
   if (warnings.length) log(`products: ${warnings.length} warning(s) above`);
 

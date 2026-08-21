@@ -1,52 +1,77 @@
 [
     {
-        "name": "[1007251301] Nike",
+        "id": "1007251301",
+        "brand": "nike",
+        "price": 199,
+        "sizes": [
+            {
+                "size": "8"
+            }
+        ],
         "description": "Conjunto Moleton Infantil, Cor: Preta",
-        "oldPrice": 0.0,
-        "price": 199.00,
         "images": [
             "images/children/sweatshirts/1007251301-nike.jpeg"
         ],
-        "size": "8"
+        "listedAt": "2025-07-10T13:01:00Z"
     },
     {
-        "name": "[1007251302] Nike",
+        "id": "1007251302",
+        "brand": "nike",
+        "price": 199,
+        "sizes": [
+            {
+                "size": "12"
+            }
+        ],
         "description": "Conjunto Moleton Infantil, Cor: Preta",
-        "oldPrice": 0.0,
-        "price": 199.00,
         "images": [
             "images/children/sweatshirts/1007251302-nike.jpeg"
         ],
-        "size": "12"
+        "listedAt": "2025-07-10T13:02:00Z"
     },
     {
-        "name": "[1007251303] Nike",
+        "id": "1007251303",
+        "brand": "nike",
+        "price": 199,
+        "sizes": [
+            {
+                "size": "16"
+            }
+        ],
         "description": "Conjunto Moleton Infantil, Cor: Azul Marinho",
-        "oldPrice": 0.0,
-        "price": 199.00,
         "images": [
             "images/children/sweatshirts/1007251303-nike.jpeg"
         ],
-        "size": "16"
+        "listedAt": "2025-07-10T13:03:00Z"
     },
     {
-        "name": "[1007251304] Jordan",
+        "id": "1007251304",
+        "brand": "jordan",
+        "price": 199,
+        "sizes": [
+            {
+                "size": "14"
+            }
+        ],
         "description": "Conjunto Moleton Infantil, Cor: Preta",
-        "oldPrice": 0.0,
-        "price": 199.00,
         "images": [
             "images/children/sweatshirts/1007251304-jordan.jpeg"
         ],
-        "size": "14"
+        "listedAt": "2025-07-10T13:04:00Z"
     },
     {
-        "name": "[0207251346] Lacoste",
+        "id": "0207251346",
+        "brand": "lacoste",
+        "price": 179,
+        "sizes": [
+            {
+                "size": "10"
+            }
+        ],
         "description": "Conjunto Moleton Infantil, Cor: Branca",
-        "oldPrice": 0.0,
-        "price": 179.00,
         "images": [
             "images/children/sweatshirts/0207251346-lacoste.jpeg"
         ],
-        "size": "10"
+        "listedAt": "2025-07-02T13:46:00Z"
     }
 ]

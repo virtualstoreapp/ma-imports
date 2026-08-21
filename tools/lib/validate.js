@@ -194,6 +194,30 @@ const checkImageLocation = (source, leaf, brandless, brands) => {
 };
 
 /**
+ * Checks that a brand folder names the product's own brand — rule 4b.
+ *
+ * Wave 3 could only check the folder was *a* known brand, because the brand was
+ * still fused into `name`: 40 products had a folder disagreeing with the brand
+ * their name implied, all of them model conflations ("Nike Shox" in nike/). The
+ * v2 `brand` field makes ownership checkable, and resolves those 40.
+ * @param {string} source Referenced image path.
+ * @param {object} leaf The category's registry leaf.
+ * @param {string} brand The product's brand slug.
+ * @returns {string|null} An error message, or null when the folder agrees.
+ */
+const checkImageBrand = (source, leaf, brand) => {
+  if (!leaf.usesBrandFolders || brand === 'unbranded') return null;
+  if (!source.startsWith(`${leaf.imageDir}/`)) return null;
+
+  const segments = source.slice(leaf.imageDir.length + 1).split('/');
+  if (segments.length !== 2) return null;
+
+  return segments[0] === brand
+    ? null
+    : `image ${source} sits in the "${segments[0]}" folder but the product's brand is "${brand}"`;
+};
+
+/**
  * Returns the trailing `-front` / `-back` suffix of an image basename, if any.
  * @param {string} source Referenced image path.
  * @returns {string|null} The variant name, or null when the name carries none.
@@ -283,46 +307,71 @@ const checkProduct = (product, where, manifest, { leaf = null, brands = {} } = {
   const errors = [];
   const fail = (message) => errors.push(`${where}: ${message}`);
 
-  let productCode = null;
-  if (typeof product.name !== 'string' || !product.name.trim()) {
-    fail('name must be a non-empty string');
-  } else {
-    const match = product.name.match(PRODUCT_DATE_PATTERN);
-    if (!match) {
-      fail('name is missing its [DDMMYYHHmm] code, which drives the newest-first order');
-    } else {
-      [, productCode] = match;
-    }
-  }
+  // The schema states the shape (id pattern, required fields, types). What
+  // remains here is what JSON Schema cannot express: relationships between
+  // fields, and agreement with the registry and the filesystem.
+  const productCode = typeof product.id === 'string' ? product.id : null;
 
   if (!Number.isFinite(product.price) || product.price <= 0) {
     fail(`price must be a positive number (got ${JSON.stringify(product.price)})`);
   }
 
   if (product.oldPrice !== undefined) {
-    if (!Number.isFinite(product.oldPrice) || product.oldPrice < 0) {
-      fail(`oldPrice must be a non-negative number (got ${JSON.stringify(product.oldPrice)})`);
-    } else if (product.oldPrice > 0 && product.oldPrice <= product.price) {
+    if (!Number.isFinite(product.oldPrice) || product.oldPrice <= 0) {
+      fail(`oldPrice must be a positive number when present, or omitted (got ${JSON.stringify(product.oldPrice)})`);
+    } else if (product.oldPrice <= product.price) {
       // The card strikes oldPrice through, so this would advertise a rise as a cut.
       fail(`oldPrice ${product.oldPrice} must exceed price ${product.price} to read as a discount`);
     }
   }
 
-  if (product.description !== undefined && typeof product.description !== 'string') {
-    fail('description must be a string when present');
+  if (typeof product.brand === 'string' && !Object.prototype.hasOwnProperty.call(brands, product.brand)) {
+    fail(`brand "${product.brand}" is not declared in catalog/brands.json`);
   }
 
-  if (product.size !== undefined && typeof product.size !== 'string') {
-    fail('size must be a string when present');
+  // An empty `sizes` with no note is legitimate — a cap or a wallet has no
+  // meaningful size, and the card renders "N/A" for it. What is not legitimate
+  // is holding both, since sizeNote renders *in place of* the sizes.
+  if (Array.isArray(product.sizes) && product.sizes.length && product.sizeNote) {
+    fail('sizeNote renders in place of sizes, so a product cannot carry both');
   }
 
-  if (product.soldOut !== undefined && typeof product.soldOut !== 'boolean') {
-    fail(`soldOut must be a boolean when present (got ${JSON.stringify(product.soldOut)})`);
+  // "N/A" is what the card already shows for a product with no sizes, so
+  // spelling it out as a note is redundant and would render twice over.
+  if (product.sizeNote === 'N/A') {
+    fail('sizeNote "N/A" is redundant — omit it and leave sizes empty');
+  }
+
+  // A row with units derives its sold-out state from them, so a row-level flag
+  // would be a second source of truth that could disagree.
+  if (product.soldOut !== undefined && Array.isArray(product.sizes) && product.sizes.length) {
+    fail('soldOut belongs on the individual sizes when a row lists any, not on the row');
+  }
+
+  if (Array.isArray(product.sizes)) {
+    const seen = new Set();
+    product.sizes
+      .filter((unit) => unit && typeof unit.size === 'string')
+      .forEach((unit) => {
+        if (seen.has(unit.size)) {
+          fail(`size "${unit.size}" is listed twice; each unit in a row is one item`);
+        }
+        seen.add(unit.size);
+      });
+  }
+
+  // listedAt drives the newest-first order and is derived from the code, so a
+  // disagreement means one of the two was edited alone.
+  if (typeof product.listedAt === 'string' && productCode) {
+    const expected = `20${productCode.slice(4, 6)}-${productCode.slice(2, 4)}-${productCode.slice(0, 2)}T${productCode.slice(6, 8)}:${productCode.slice(8, 10)}:00Z`;
+    if (product.listedAt !== expected) {
+      fail(`listedAt ${product.listedAt} disagrees with id [${productCode}], which reads ${expected}`);
+    }
   }
 
   const images = productImages(product);
   if (!images.length) {
-    fail('must reference at least one image via "images" or "image"');
+    fail('must reference at least one image');
   }
   images.forEach((source) => {
     if (typeof source !== 'string' || !source.trim()) {
@@ -336,12 +385,14 @@ const checkProduct = (product, where, manifest, { leaf = null, brands = {} } = {
     if (namingError) fail(namingError);
 
     if (leaf) {
-      // Brandless products are the ones whose name is only the code, and they
-      // sit directly in imageDir even in a brand-folder category.
-      const brandless = typeof product.name === 'string'
-        && product.name.replace(PRODUCT_DATE_PATTERN, '').trim() === '';
+      // An unbranded product has no brand folder to sit in, so it stays directly
+      // in imageDir even where its category uses brand folders.
+      const brandless = product.brand === 'unbranded';
       const locationError = checkImageLocation(source, leaf, brandless, brands);
       if (locationError) fail(locationError);
+
+      const ownershipError = checkImageBrand(source, leaf, product.brand);
+      if (ownershipError) fail(ownershipError);
     }
   });
   checkImageVariants(images).forEach(fail);
@@ -394,8 +445,8 @@ const validateCatalog = ({
     const leaf = resolved.bySlug.get(category) || null;
 
     products.forEach((product, index) => {
-      const label = typeof product.name === 'string' ? product.name : '(unnamed)';
-      const where = `${category}.json[${index}] "${label}"`;
+      const label = typeof product.id === 'string' ? `[${product.id}]` : '(no id)';
+      const where = `${category}.json[${index}] ${label}`;
       errors.push(
         ...checkProduct(product, where, manifest, {
           leaf: leaf && leaf.type === 'leaf' ? leaf : null,
@@ -407,15 +458,14 @@ const validateCatalog = ({
         if (typeof source === 'string') referencedImages.add(source);
       });
 
-      const match = typeof product.name === 'string' && product.name.match(PRODUCT_DATE_PATTERN);
-      if (!match) return;
-      const previous = seenIds.get(match[1]);
+      if (typeof product.id !== 'string') return;
+      const previous = seenIds.get(product.id);
       if (previous) {
         errors.push(
-          `duplicate product code [${match[1]}]: ${previous} and ${where} — the WhatsApp message cannot distinguish them`
+          `duplicate product id [${product.id}]: ${previous} and ${where} — the WhatsApp message cannot distinguish them`
         );
       } else {
-        seenIds.set(match[1], where);
+        seenIds.set(product.id, where);
       }
     });
   }
@@ -431,6 +481,7 @@ module.exports = {
   IMAGE_VARIANTS,
   NON_CATALOG_IMAGES,
   checkImageLocation,
+  checkImageBrand,
   checkImageName,
   checkImageVariants,
   checkOrphanImages,

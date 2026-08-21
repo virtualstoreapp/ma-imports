@@ -1,12 +1,17 @@
 [
     {
-        "name": "[1107250718]",
+        "id": "1107250718",
+        "brand": "unbranded",
+        "price": 79.9,
+        "sizes": [
+            {
+                "size": "42"
+            }
+        ],
         "description": "Bermuda Jeans Feminina",
-        "oldPrice": 0.0,
-        "price": 79.90,
         "images": [
             "images/woman/shorts/jeans/1107250718.jpeg"
         ],
-        "size": "42"
+        "listedAt": "2025-07-11T07:18:00Z"
     }
 ]

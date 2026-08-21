@@ -1,12 +1,17 @@
 [
     {
-        "name": "[0207251330]",
+        "id": "0207251330",
+        "brand": "unbranded",
+        "price": 269,
+        "sizes": [
+            {
+                "size": "GG"
+            }
+        ],
         "description": "Blusa Feminina",
-        "oldPrice": 0.0,
-        "price": 269.00,
         "images": [
             "images/woman/sweatshirts/0207251330.jpeg"
         ],
-        "size": "GG"
+        "listedAt": "2025-07-02T13:30:00Z"
     }
 ]

@@ -736,6 +736,7 @@ file uploads, so it fails at exactly the hard part of *adding* — but it is exc
 | `sizes` | array | yes | **list of `{size, soldOut?}`**; may be empty | **`[ANSWERED]` OQ-4 / CON-10** |
 | `sizes[].size` | string | yes | non-empty | `[MEASURED]` |
 | `sizes[].soldOut` | boolean | no | omit when false | **`[ANSWERED]` OQ-4** — units sell independently |
+| `soldOut` | boolean | no | row level; **only valid when `sizes` is empty** | `[MEASURED]` — 9 sold-out products have no unit to carry it |
 | `sizeNote` | string | no | free text: range-fit (`37 ao 44`), `Consultar`, `Tamanho único`, `Pequena` | `[MEASURED]` 27 non-value rows + 2 range rows |
 | `images` | string[] | yes | `minItems: 1`; each exists; matches §7.7 | `[MEASURED]` |
 | `description` | string | no | non-empty when present; omit rather than `""` | `[MEASURED]` 26 empty strings |
@@ -753,8 +754,12 @@ file uploads, so it fails at exactly the hard part of *adding* — but it is exc
 }
 ```
 
-Note there is no product-level `soldOut` in the authoring shape — it is derived (§7.2). A row is sold
-out when every unit is.
+**Correction made during Wave 4.** The plan said there is *no* row-level `soldOut` in the authoring
+shape, only per-unit. That is wrong for **9 products** — sold-out caps, socks and wallets whose `sizes`
+is empty, because they have no meaningful size and therefore no unit to carry the flag. v2 keeps an
+optional row-level `soldOut`, valid **only** when `sizes` is empty; a row with units derives it from
+them, and the validator rejects carrying both. Without this the 9 would have quietly gone back on sale
+(§8, Wave 4).
 
 ### 7.2 Runtime shape — `dist/products/{slug}.json`
 
@@ -765,7 +770,7 @@ so `scripts.js` and the tests need no change:
 |---|---|
 | `name` | `"[" + id + "] " + brands[brand].label + (model ? " " + model : "")`, trimmed |
 | `size` | `sizes.length ? sizes.map(s => s.size).join(", ") : (sizeNote ?? "N/A")` |
-| `soldOut` | `sizes.length ? sizes.every(s => s.soldOut) : soldOut` |
+| `soldOut` | `sizes.length ? sizes.every(s => s.soldOut) : soldOut === true` — the row flag is the fallback for a row with no units |
 | `oldPrice` | `oldPrice ?? 0` |
 | `description` | `description ?? ""` |
 | `images`, `price`, `media[]`, `category` | passthrough |
@@ -809,7 +814,7 @@ This deletes `tools/lib/validate.js:readCategoryDictKeys` — a net reduction in
 
 - **`sizes` is a list, not a scalar.** Each entry is one unit with its own `soldOut` state. This is
   the shape v2.1 proposed, v2.2 wrongly dropped, and the real answer requires.
-- **Product-level `soldOut` is derived, not authored** — true when every unit is sold. This keeps the
+- **Product-level `soldOut` is derived wherever a row has units** — true when every one is sold. This keeps the
   runtime contract byte-identical while making the underlying state finer-grained.
 - **`sizeNote` carries what is not a list**: the 27 rows with no meaningful size, and the 2 genuine
   range-fit rows (`37 ao 44` — one pair that fits 37–44, which is not the same as two pairs).
@@ -830,7 +835,8 @@ answer it. Wave 5b renders this.
 | `37 ao 44` | 2 | `sizes: []`, `sizeNote: "37 ao 44"` |
 
 Existing product-level `soldOut: true` (51 products) is applied to **every** unit in the row, which
-derives back to `soldOut: true` and preserves the runtime output exactly.
+derives back to `soldOut: true`. For the 9 rows with no units it stays at row level. Both paths were
+verified against a pre-migration baseline: 42 + 9 = 51, unchanged.
 
 **No closed vocabulary is enforced** (validator rule 7 stays off) — see RD-2. The `[MEASURED]`
 grouping is retained for whenever that is revisited:
@@ -1024,11 +1030,31 @@ fan existing `soldOut` out across units; drop the `0.0` sentinels and `""` descr
 `image` → `images`. Tighten `product.schema.json` to v2. Teach the build to emit the **current**
 runtime shape from v2 input (§7.2) — `scripts.js` is not touched.
 
-**Acceptance gate:** `dist/products/*.json` byte-identical before and after, except a reviewed
-exception list of **exactly 5 products** — the 4 spelling corrections (`Quicksilver` ×3, `Under
-Armor` ×1) and `[1202251722] Nike Shox Neymar` (`40,41` → `40, 41`). Decline the spelling corrections
-and the list is 1. Everything else, including all 13 brandless rows and all 51 sold-out rows, is
-byte-identical by construction.
+**Acceptance gate — corrected during the wave.** The plan asked for `dist/products/*.json`
+**byte-identical** before and after. That is not achievable, and the reason matters: v1 had three
+states for "no description" (absent ×34, empty string ×26, present ×181) and two for "no discount"
+(absent ×2, `0` ×211). v2 collapses each to one, so the derived output cannot distinguish the members
+of a collapsed pair. Emitting `description: ""` and `oldPrice: 0` always — the choice that keeps the
+client's reads correct — makes **36 products gain a key v1 omitted**.
+
+The guarantee that actually matters is identical *rendering*, and `tools/verify-migration.js` checks
+exactly that: for every product it compares the render-relevant projection (`name`, `description || ''`,
+`oldPrice || 0`, `price`, `images`, `size`, `soldOut === true`, `category`, `media[].src`) against a
+pre-migration baseline. The 36 added keys are reported separately, and are provably inert because the
+client reads both through a falsy fallback (`product.description ? … : ''`,
+`product.oldPrice && product.oldPrice > 0`).
+
+**Result: exactly 6 products differ**, each appearing twice (its category file and `all.json`):
+
+| Product | Change | Why |
+|---|---|---|
+| `[2307251155]`, `[2307251254]`, `[2307251255]` | `Quicksilver` → `Quiksilver` | RD-3 — misspelling; the on-disk folder already reads `quiksilver` |
+| `[1104250026]` | `Under Armor` → `Under Armour` | RD-3 — misspelling |
+| `[2307251250]` | `Tommy Hilfiger ` → `Tommy Hilfiger` | trailing space in the source name, dropped |
+| `[1202251722]` | size `40,41` → `40, 41` | separator normalized by the join |
+
+Decline RD-3 and the list drops to 2. Everything else — all 12 unbranded rows, all 40 model
+conflations, all 51 sold-out rows — renders identically.
 
 **Tests:** `productImages` loses its legacy branch; sorting reads `listedAt`; fixtures migrate to v2;
 a new `tests/tools/migrate-v2.test.js` asserts the runtime output is unchanged for a fixture set and
@@ -1114,10 +1140,10 @@ text entering `<meta content="...">` and JSON-LD needs JSON-string escaping, not
 | 2 Schema gate | 1 d | high | — | **done** |
 | 3 Registries (+ rule 4a) | 2–3 d | high | Wave 1 | **done** |
 | 5a Image cache + drop originals | 1–1.5 d | high | — | ready |
-| 4 Product schema v2 (+ rule 4b) | 3–3.5 d | high | Waves 1–3 | next |
-| 5b Runtime v2 + per-size availability + ladder | 2.5–3.5 d | medium | Wave 4 | blocked on 4 |
-| 6 Non-dev authoring | 3–4 d | **goal (CON-8)** | Waves 1–4 | blocked on 4 |
-| 7 Deep links + SEO | 2.5 d | medium (CON-11) | Wave 4 | blocked on 4 |
+| 4 Product schema v2 (+ rule 4b) | 3–3.5 d | high | Waves 1–3 | **done** |
+| 5b Runtime v2 + per-size availability + ladder | 2.5–3.5 d | medium | Wave 4 | next |
+| 6 Non-dev authoring | 3–4 d | **goal (CON-8)** | Waves 1–4 | ready |
+| 7 Deep links + SEO | 2.5 d | medium (CON-11) | Wave 4 | ready |
 
 **Total ≈ 17–19 days.** No wave is blocked on an unanswered question.
 
@@ -1148,7 +1174,27 @@ into `index.html` as a committed JSON literal, and the build fails when that blo
 literal — is deleted, and `underwear-man-subcategory` is renamed to `underwear-man` with an alias
 keeping old links alive. Suite: 207 tests.
 
-Two things to carry forward. The `hasOwnProperty` guard on the untrusted fragment survived the move
+Wave 4 split `name` into `id` / `brand` / `model` / `listedAt` and converted `size` to the multi-unit
+`sizes[]` model, across all 241 products. `catalog/brands.json` is complete at 38 entries (37 brands
+plus the `unbranded` sentinel); `tools/lib/runtime.js` re-derives the v1 runtime shape so `scripts.js`
+was not touched; rule 4b now checks that a brand folder names the product's *own* brand, resolving the
+40 model conflations. `tools/migrate-v2.js` is **kept rather than deleted** — the plan said to delete
+it after use, but it is the only record of how 241 products were transformed, and its brand map is the
+auditable part. Suite: 268 tests.
+
+**The acceptance gate earned its keep.** It caught a bug the test suite could not: 9 sold-out products
+had silently gone back on sale, because they have no sizes and my migration attached sold-out only to
+units. The invariant tests compare rendering against *current* data, so a value lost during migration
+looks consistent to them — only a comparison against a pre-migration baseline can see it. Anything
+that reshapes existing data needs that kind of check, not just a green suite.
+
+Two measurement refinements: there are **58** distinct `name` tails, not the 55 recorded earlier — two
+are trailing-whitespace duplicates (`"Quicksilver "`, `"Tommy Hilfiger "`), which is also why one
+exception is a name differing only by a trailing space. And `Polo` (4 caps) is treated as a brand
+rather than a placeholder: OQ-8 never listed it, and the evidence is ambiguous, so the conservative
+reading keeps it.
+
+Two things to carry forward from Wave 3. The `hasOwnProperty` guard on the untrusted fragment survived the move
 into the registry and now has explicit coverage for `__proto__`, `constructor`, `toString`, `valueOf`
 and `hasOwnProperty` — the registry is parsed JSON, so a plain lookup would resolve those against
 `Object.prototype`. And `tools/sync-registry.js` delimits its generated block with unique
