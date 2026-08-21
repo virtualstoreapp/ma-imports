@@ -263,6 +263,14 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;39,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
+          <img src="images/man/caps/2907251537-nike.jpeg" alt="[2907251537] Nike" loading="lazy" decoding="async">
+          <div class="product-details">
+            <h3>[2907251537] Nike</h3>
+            
+            
+            <span class="price">R$&nbsp;39,00</span>
+          </div>
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/caps/2907251536-los-angeles.jpeg" alt="[2907251536] Los Angeles" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2907251536] Los Angeles</h3>
@@ -295,14 +303,6 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;39,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/2907251533-nike.jpeg" alt="[2907251533] Nike" loading="lazy" decoding="async">
-          <div class="product-details">
-            <h3>[2907251533] Nike</h3>
-            
-            
-            <span class="price">R$&nbsp;39,00</span>
-          </div>
-        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/caps/2907251532-nike.jpeg" alt="[2907251532] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2907251532] Nike</h3>
@@ -1121,14 +1121,6 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/dryfit/nike/1104250031-nike.jpeg" alt="[1104250031] Nike" loading="lazy" decoding="async">
-          <div class="product-details">
-            <h3>[1104250031] Nike</h3>
-            <p class="description">Dry-Fit</p>
-            <span class="size">Tamanho: M</span>
-            <span class="price">R$&nbsp;59,90</span>
-          </div>
-        </li><li class="product-item" style="position: relative;">
           <img src="images/man/tank-top/dryfit/nike/1104250030-nike.jpeg" alt="[1104250030] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1104250030] Nike</h3>
@@ -1166,6 +1158,14 @@ exports[`Catalog All Desktop View renders "All Products" correctly 1`] = `
             <h3>[1104250026] Under Armor</h3>
             <p class="description">Dry Fit Manga longa, Proteção UV</p>
             <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/nike/1104250025-nike.jpeg" alt="[1104250025] Nike" loading="lazy" decoding="async">
+          <div class="product-details">
+            <h3>[1104250025] Nike</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
@@ -2408,6 +2408,14 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
             <span class="price">R$&nbsp;39,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
+          <img src="images/man/caps/2907251537-nike.jpeg" alt="[2907251537] Nike" loading="lazy" decoding="async">
+          <div class="product-details">
+            <h3>[2907251537] Nike</h3>
+            
+            
+            <span class="price">R$&nbsp;39,00</span>
+          </div>
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/caps/2907251536-los-angeles.jpeg" alt="[2907251536] Los Angeles" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2907251536] Los Angeles</h3>
@@ -2440,14 +2448,6 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
             <span class="price">R$&nbsp;39,00</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/caps/2907251533-nike.jpeg" alt="[2907251533] Nike" loading="lazy" decoding="async">
-          <div class="product-details">
-            <h3>[2907251533] Nike</h3>
-            
-            
-            <span class="price">R$&nbsp;39,00</span>
-          </div>
-        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/man/caps/2907251532-nike.jpeg" alt="[2907251532] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[2907251532] Nike</h3>
@@ -3266,14 +3266,6 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
-          <img src="images/man/tshirts/dryfit/nike/1104250031-nike.jpeg" alt="[1104250031] Nike" loading="lazy" decoding="async">
-          <div class="product-details">
-            <h3>[1104250031] Nike</h3>
-            <p class="description">Dry-Fit</p>
-            <span class="size">Tamanho: M</span>
-            <span class="price">R$&nbsp;59,90</span>
-          </div>
-        </li><li class="product-item" style="position: relative;">
           <img src="images/man/tank-top/dryfit/nike/1104250030-nike.jpeg" alt="[1104250030] Nike" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[1104250030] Nike</h3>
@@ -3311,6 +3303,14 @@ exports[`Catalog All Mobile View renders "All Products" correctly on mobile 1`] 
             <h3>[1104250026] Under Armor</h3>
             <p class="description">Dry Fit Manga longa, Proteção UV</p>
             <span class="size">Tamanho: P</span>
+            <span class="price">R$&nbsp;59,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/man/tshirts/dryfit/nike/1104250025-nike.jpeg" alt="[1104250025] Nike" loading="lazy" decoding="async">
+          <div class="product-details">
+            <h3>[1104250025] Nike</h3>
+            <p class="description">Dry-Fit</p>
+            <span class="size">Tamanho: M</span>
             <span class="price">R$&nbsp;59,90</span>
           </div>
         </li><li class="product-item" style="position: relative;">
