@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "product.schema.json",
+  "title": "ma-imports category file",
+  "description": "One products/{category-slug}.json file: an array of the products in that category. Written descriptively against the catalog as of commit 5be5036, so it accepts every product that exists today and rejects shapes that have never appeared. Tighten it deliberately, not by accident.",
+  "type": "array",
+  "minItems": 1,
+  "items": { "$ref": "#/definitions/product" },
+
+  "definitions": {
+    "product": {
+      "type": "object",
+      "description": "A single catalog entry.",
+      "additionalProperties": false,
+      "required": ["name", "price", "size", "images"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Display name, opening with the product's [DDMMYYHHmm] code. The code identifies the product in the WhatsApp message and drives the newest-first ordering, so it is required and must lead the string.",
+          "pattern": "^\\[[0-9]{10}\\]",
+          "minLength": 12
+        },
+        "price": {
+          "type": "number",
+          "description": "Current price in BRL. Rendered through formatCurrency, so it must be a positive number rather than a formatted string.",
+          "exclusiveMinimum": 0
+        },
+        "oldPrice": {
+          "type": "number",
+          "description": "Pre-discount price in BRL, struck through on the card. 0 is the current sentinel for 'no discount'; when non-zero it must exceed price, which JSON Schema cannot express and validate.js checks separately.",
+          "minimum": 0
+        },
+        "size": {
+          "type": "string",
+          "description": "Free text today, spanning several vocabularies (P/M/G, waist numbers, shoe numbers, children's ages) plus non-sizes such as 'N/A', 'Consultar' and 'Tamanho único'. A row may list several sizes, since one row can hold multiple units. Deliberately unconstrained: see RD-2 in the storage plan.",
+          "minLength": 1
+        },
+        "soldOut": {
+          "type": "boolean",
+          "description": "Omitted when false. Present on 51 of 241 products."
+        },
+        "description": {
+          "type": "string",
+          "description": "Optional prose shown under the name. An empty string is accepted because 26 products currently carry one, and normalising that away is Wave 4's job, not this gate's."
+        },
+        "images": {
+          "type": "array",
+          "description": "Repository-relative paths to the product's photos, in display order. The path is stored rather than computed, because four references disagreed with their product code before validation caught it and a computed path would have broken on all four.",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "description": "A .jpeg under images/, whose filename leads with the owning product's 10-digit code. validate.js enforces the code and variant-suffix conventions, which JSON Schema cannot express because they depend on the product's own name.",
+            "pattern": "^images/[A-Za-z0-9._/-]+\\.jpeg$"
+          }
+        }
+      }
+    }
+  }
+}

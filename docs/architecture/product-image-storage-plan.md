@@ -572,15 +572,25 @@ migration and neither depends on the schema work.
 
 Validator rules, with provenance and severity:
 
-| # | Rule | Severity | Provenance |
-|---|---|---|---|
-| 1 | Image basename begins with the product's identifier | **error** | `[MEASURED]` — catches all 4 cases in §2.7 |
-| 2 | The leading numeric segment is exactly 10 digits | **error** | `[MEASURED]` — 2 of the 4 cases are 11 digits |
-| 3 | Variant suffix from a closed vocabulary (`front`, `back`) | **error** | `[MEASURED]` — only these two are in use |
-| 4 | Where the leaf declares `usesBrandFolders`, the path contains the brand slug | **error** | `[MEASURED]` — 40 products currently disagree, all model conflations |
-| 5 | Every file under `images/**` is referenced or allow-listed | **warning** | `[MEASURED]` — would have caught `comming-soon.jpg` |
-| 6 | Product identifier uniqueness | **error** (promoted from warning) | `[MEASURED]` — `validate.js` already warns because duplicates make a WhatsApp order ambiguous; 0 exist today, so enforcing is free |
-| 7 | `size` belongs to a closed per-category vocabulary | **not implemented** | `[ASSUMPTION]` — see RD-2 |
+| # | Rule | Severity | Ships in | Provenance |
+|---|---|---|---|---|
+| 1 | Image basename begins with the product's identifier | **error** | Wave 0 ✅ | `[MEASURED]` — catches all 4 cases in §2.7 |
+| 2 | The leading numeric segment is exactly 10 digits | **error** | Wave 0 ✅ | `[MEASURED]` — 2 of the 4 cases are 11 digits |
+| 3 | Variant suffix from a closed vocabulary (`front`, `back`) | **error** | Wave 2 ✅ | `[MEASURED]` — all 23 multi-image products use exactly one `front` and one `back`; no single-image product carries either |
+| 4 | Where the leaf declares `usesBrandFolders`, the path contains the brand slug | **error** | **Wave 3** | `[MEASURED]` — 40 products currently disagree, all model conflations |
+| 5 | Every file under `images/**` is referenced or allow-listed | **warning** | Wave 2 ✅ | `[MEASURED]` — would have caught `comming-soon.jpg` |
+| 6 | Product identifier uniqueness | **error** (promoted from warning) | Wave 2 ✅ | `[MEASURED]` — `validate.js` already warned because duplicates make a WhatsApp order ambiguous; 0 exist today, so enforcing is free |
+| 7 | `size` belongs to a closed per-category vocabulary | **not implemented** | — | `[ASSUMPTION]` — see RD-2 |
+
+> **Plan correction (found during Wave 2).** v3.0 assigned rules 3–6 to Wave 2, but **rule 4 cannot
+> ship there**: it reads `usesBrandFolders` from `catalog/categories.json`, which Wave 3 creates. Rule 4
+> therefore moves to Wave 3, alongside the registry it depends on. Rules 3, 5 and 6 shipped in Wave 2 as
+> planned.
+>
+> Rule 3 also turned out to be implementable *without* the brand registry, which was not obvious when
+> the plan was written: since no single-image product carries a `front`/`back` suffix and every
+> multi-image product carries exactly one of each, the rule can key on photo count rather than on
+> distinguishing a brand token from a variant token.
 
 **v2.2's proposed rule 8 — warn when `size` contains a separator — is not part of this plan.** Under
 CON-10 a separator is legitimate (§2.4).
@@ -961,9 +971,15 @@ being read.
 
 Add `ajv`; add `schemas/product.schema.json`, written **descriptively** so it accepts today's catalog
 unchanged. Wire it into `validateCatalog` alongside the existing hand-written business rules, which
-stay. Add validator rules 3–6. Rule 7 is not added (RD-2).
+stay. Add validator rules **3, 5 and 6** — rule 4 moves to Wave 3 with the registry it reads (see the
+correction under §5.5). Rule 7 is not added (RD-2).
 
 **Breaks:** nothing. Rule 6 passes today (0 collisions).
+
+One consequence worth stating: because Wave 0 normalized the last 33 legacy `image` singulars, a
+descriptive schema with `additionalProperties: false` now **rejects** that key. `productImages()` and
+`scripts.js` keep their fallback branch until Wave 5b, so rendering an old-shaped product still works —
+the schema governs authoring, not rendering.
 
 ### Wave 3 — Registries: categories + brands (≈ 2–3 days) — high
 
@@ -972,6 +988,11 @@ Add `catalog/categories.json`, `catalog/brands.json` and their schemas. Generate
 instead of `CATEGORIES_DICT`. **Delete `readCategoryDictKeys`.** Add validators: every
 `data-category` exists in the registry; every leaf has a products file; no group has one. Rename
 `underwear-man-subcategory` → `underwear-man` with an alias.
+
+**Also add validator rule 4** here rather than in Wave 2, since it reads `usesBrandFolders` from the
+registry this wave creates. Note that 40 products currently have a brand folder disagreeing with the
+brand derived from `name` — all model conflations (`Nike Shox` filed under `nike/`) — so rule 4 must
+land together with the brand registry that resolves them, or it would fail the build on arrival.
 
 **Security:** `categoryFromHash` currently allow-lists the untrusted fragment with
 `Object.prototype.hasOwnProperty.call`. The registry lookup **must** keep that guard — a naive
@@ -1075,8 +1096,8 @@ text entering `<meta content="...">` and JSON-LD needs JSON-string escaping, not
 |---|---|---|---|---|
 | 0 Housekeeping + growth monitor | 4 h | high | — | **done** |
 | 1 Decouple tests | 1 d | **blocker** | — | **done** |
-| 2 Schema gate | 1 d | high | — | next |
-| 3 Registries | 2–3 d | high | Wave 1 | ready |
+| 2 Schema gate | 1 d | high | — | **done** |
+| 3 Registries (+ rule 4) | 2–3 d | high | Wave 1 | next |
 | 5a Image cache + drop originals | 1–1.5 d | high | — | ready |
 | 4 Product schema v2 | 3–3.5 d | high | Waves 1–3 | blocked on 3 |
 | 5b Runtime v2 + per-size availability + ladder | 2.5–3.5 d | medium | Wave 4 | blocked on 4 |
@@ -1097,6 +1118,11 @@ are measured on every build rather than remembered. One caveat found while build
 `actions/checkout` clones shallow by default, so **git pack size is not measurable in CI**. The
 monitor reports it as unavailable rather than as a falsely small number, and T3 (image count) is the
 earliest threshold anyway, so this costs little in practice.
+
+Wave 2 (`ajv` + `schemas/product.schema.json`) added the schema gate and validator rules 3, 5 and 6,
+taking the validator suite from 25 to 50 tests and the whole suite to 162. The schema accepts the
+catalog at `5be5036` unchanged, as a descriptive schema must. It is also the contract Wave 6's form
+generator will read, which is why every property carries a `description` rather than only a type.
 
 ---
 

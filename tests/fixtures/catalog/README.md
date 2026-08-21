@@ -19,6 +19,12 @@ being coupled to catalog content.
 | `[0101250900] Fixture Alpha` | `media[]` present → `<picture>` with WebP `<source>` and intrinsic dimensions; two images, so the modal has a second frame |
 | `[0201251000] Fixture Beta` | `images[]` only → plain `<img>` fallback for an unbuilt tree; `oldPrice > 0` → `.old-price` + `.new-price`; `size: "N/A"` → size suppressed; no `description` key |
 | `[0301251100] Fixture Gamma` | legacy `image` string instead of `images[]`; `soldOut: true` → `.sold-out-label` |
+
+> Gamma keeps the legacy `image` shape on purpose. From Wave 2 the schema
+> **rejects** that key for `products/`, since Wave 0 normalized the last 33 uses
+> of it — but `productImages()` and `scripts.js` keep their fallback branch until
+> Wave 5b, and this fixture is what covers it. The schema governs authoring;
+> these fixtures cover rendering, and are not schema-validated.
 | `[0401251200] Fixture Delta` | the ordinary case — `images[]`, description, size, plain `.price` |
 | `[0501251300] Fixture Epsilon` | `description: ""` (the empty-string variant of "no description"); `soldOut: true`; a non-numeric size that is not `N/A` |
 

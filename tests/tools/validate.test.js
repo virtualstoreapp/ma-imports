@@ -92,6 +92,11 @@ describe('Category coverage', () => {
 });
 
 describe('Product fields', () => {
+  // Several of these are now caught by both the schema and the hand-written
+  // business rules, so each case asserts that its own message is present rather
+  // than that exactly one error was produced. The layering is deliberate: the
+  // schema states the shape, and the hand-written rules state the things JSON
+  // Schema cannot express.
   it.each([
     ['a name without its date code', { name: 'Adidas' }, /missing its \[DDMMYYHHmm\] code/],
     ['a zero price', { price: 0 }, /price must be a positive number/],
@@ -105,13 +110,18 @@ describe('Product fields', () => {
     ['an image missing on disk', { images: ['images/2907251533-gone.jpeg'] }, /does not exist on disk/],
   ])('rejects %s', (_label, overrides, expected) => {
     const { errors } = validate(withProduct(overrides));
-    expect(errors).toHaveLength(1);
-    expect(errors[0]).toMatch(expected);
+    expect(errors.filter((error) => expected.test(error))).toHaveLength(1);
   });
 
-  it('accepts the legacy singular "image" field', () => {
-    const { errors } = validate(withProduct({ images: undefined, image: 'images/2907251533-adidas.jpeg' }));
-    expect(errors).toEqual([]);
+  it.each([
+    ['an oldPrice equal to zero, the no-discount sentinel', { oldPrice: 0 }],
+    ['an omitted oldPrice', { oldPrice: undefined }],
+    ['an omitted description', { description: undefined }],
+    ['an empty description, which 26 products still carry', { description: '' }],
+    ['soldOut present and true', { soldOut: true }],
+    ['a multi-size value, since a row may hold several units', { size: '39, 42' }],
+  ])('accepts %s', (_label, overrides) => {
+    expect(validate(withProduct(overrides))).toEqual({ errors: [], warnings: [] });
   });
 
   it('reports every problem in one run rather than stopping at the first', () => {
@@ -121,7 +131,58 @@ describe('Product fields', () => {
         { ...VALID_PRODUCT, name: 'no code', images: ['images/2907251533-gone.jpeg'] },
       ],
     });
-    expect(errors).toHaveLength(3);
+    // Two products, three distinct defects: the price, the missing code, and the
+    // absent file. Schema errors add to this, so the assertion is on coverage.
+    expect(errors.filter((error) => /price must be a positive number/.test(error))).toHaveLength(1);
+    expect(errors.filter((error) => /missing its \[DDMMYYHHmm\] code/.test(error))).toHaveLength(1);
+    expect(errors.filter((error) => /does not exist on disk/.test(error))).toHaveLength(1);
+  });
+});
+
+describe('Schema gate', () => {
+  it('accepts the real catalog unchanged, as a descriptive schema must', () => {
+    const { errors } = validateCatalog({
+      productsDir: path.join(ROOT, 'products'),
+      scriptsPath: path.join(ROOT, 'scripts.js'),
+    });
+    expect(errors).toEqual([]);
+  });
+
+  it('rejects an unknown property, which is how a typo surfaces', () => {
+    const { errors } = validate(withProduct({ imgaes: ['images/2907251533-adidas.jpeg'] }));
+    expect(errors.filter((error) => /has unknown property "imgaes"/.test(error))).toHaveLength(1);
+  });
+
+  it('names the offending product by index so it can be found', () => {
+    const { errors } = validate({
+      'caps-man': [VALID_PRODUCT, { ...VALID_PRODUCT, price: 'free' }],
+    });
+    expect(errors.some((error) => error.includes('caps-man.json[1].price'))).toBe(true);
+  });
+
+  // Wave 0 normalised the last 33 legacy singulars, so every product now uses
+  // images[]. The schema locks that in; scripts.js and productImages() keep
+  // their fallback branch until Wave 5b, so rendering an old shape still works.
+  it('rejects the legacy singular "image" field now that no product uses it', () => {
+    const { errors } = validate(withProduct({ images: undefined, image: 'images/2907251533-adidas.jpeg' }));
+    expect(errors.filter((error) => /has unknown property "image"/.test(error))).toHaveLength(1);
+  });
+
+  it.each([
+    ['a name not opening with the code', { name: 'Adidas [2907251533]' }, /name/],
+    ['a non-jpeg image', { images: ['images/2907251533-adidas.png'] }, /images\[0\]/],
+    ['a duplicated image reference', {
+      images: ['images/2907251533-adidas.jpeg', 'images/2907251533-adidas.jpeg'],
+    }, /duplicate items/],
+    ['an empty size', { size: '' }, /size/],
+  ])('rejects %s', (_label, overrides, expected) => {
+    const { errors } = validate(withProduct(overrides));
+    expect(errors.some((error) => expected.test(error))).toBe(true);
+  });
+
+  it('rejects an empty category file', () => {
+    const { errors } = validate({ 'caps-man': [] });
+    expect(errors.some((error) => /caps-man\.json/.test(error))).toBe(true);
   });
 });
 
@@ -177,16 +238,113 @@ describe('Image filename convention', () => {
   });
 });
 
-describe('Duplicate product codes', () => {
-  it('warns without failing the build, naming both locations', () => {
-    const { errors, warnings } = validate({
-      'caps-man': [VALID_PRODUCT, { ...VALID_PRODUCT, name: '[2907251533] Nike' }],
+describe('Image variant suffixes', () => {
+  const pair = ['images/2907251533-adidas-front.jpeg', 'images/2907251533-adidas-back.jpeg'];
+  const manifest = Object.fromEntries(pair.map((source) => [source, {}]));
+
+  const validateWith = (images, extraManifest = manifest) =>
+    validateCatalog({
+      ...writeFixture({ 'caps-man': [{ ...VALID_PRODUCT, images }] }),
+      manifest: { ...extraManifest, ...Object.fromEntries(images.map((i) => [i, {}])) },
     });
+
+  it('accepts a front/back pair', () => {
+    expect(validateWith(pair).errors).toEqual([]);
+  });
+
+  it('accepts a single image with no variant suffix', () => {
+    expect(validateWith(['images/2907251533-adidas.jpeg']).errors).toEqual([]);
+  });
+
+  it('rejects a second image with no suffix to order it by', () => {
+    const { errors } = validateWith([
+      'images/2907251533-adidas.jpeg',
+      'images/2907251533-adidas-2.jpeg',
+    ]);
+    expect(errors.filter((error) => /needs a "front" or "back" suffix/.test(error))).toHaveLength(2);
+  });
+
+  it('rejects two images claiming the same variant', () => {
+    const { errors } = validateWith([
+      'images/2907251533-adidas-front.jpeg',
+      'images/2907251533-adidas-alt-front.jpeg',
+    ]);
+    expect(errors.filter((error) => /both claim the "front" variant/.test(error))).toHaveLength(1);
+  });
+
+  // A lone -front is nearly always a -back that was forgotten on upload.
+  it('rejects a lone variant suffix on a single-image product', () => {
+    const { errors } = validateWith(['images/2907251533-adidas-front.jpeg']);
+    expect(errors.filter((error) => /its counterpart is missing/.test(error))).toHaveLength(1);
+  });
+});
+
+describe('Orphaned images', () => {
+  const referenced = 'images/2907251533-adidas.jpeg';
+
+  const validateWithManifest = (manifestKeys) =>
+    validateCatalog({
+      ...writeFixture({ 'caps-man': [VALID_PRODUCT] }),
+      manifest: Object.fromEntries(manifestKeys.map((key) => [key, {}])),
+    });
+
+  it('warns without failing the build, since an orphan breaks nothing', () => {
+    const { errors, warnings } = validateWithManifest([referenced, 'images/9999999999-ghost.jpeg']);
     expect(errors).toEqual([]);
     expect(warnings).toHaveLength(1);
-    expect(warnings[0]).toMatch(/duplicate product code \[2907251533\]/);
-    expect(warnings[0]).toContain('caps-man.json[0]');
-    expect(warnings[0]).toContain('caps-man.json[1]');
+    expect(warnings[0]).toMatch(/9999999999-ghost\.jpeg is not referenced by any product/);
+  });
+
+  it('allows images used outside the catalog', () => {
+    const { warnings } = validateWithManifest([referenced, 'images/logo.jpeg']);
+    expect(warnings).toEqual([]);
+  });
+
+  it('stays silent when no manifest is supplied, since disk was not read', () => {
+    const { warnings } = validateCatalog(writeFixture({ 'caps-man': [VALID_PRODUCT] }));
+    expect(warnings).toEqual([]);
+  });
+
+  it('reports orphans in a stable order', () => {
+    const { warnings } = validateWithManifest([
+      referenced,
+      'images/9999999999-b.jpeg',
+      'images/9999999999-a.jpeg',
+    ]);
+    expect(warnings.map((warning) => warning.split(' ')[0])).toEqual([
+      'images/9999999999-a.jpeg',
+      'images/9999999999-b.jpeg',
+    ]);
+  });
+});
+
+describe('Duplicate product codes', () => {
+  // Promoted from warning to error in Wave 2. The code exists to tell two
+  // same-brand products apart, so a collision defeats its only purpose. Zero
+  // collisions exist today, which is what makes this free to enforce now.
+  it('fails the build, naming both locations', () => {
+    const { errors } = validate({
+      'caps-man': [VALID_PRODUCT, { ...VALID_PRODUCT, name: '[2907251533] Nike' }],
+    });
+    const duplicates = errors.filter((error) => /duplicate product code \[2907251533\]/.test(error));
+    expect(duplicates).toHaveLength(1);
+    expect(duplicates[0]).toContain('caps-man.json[0]');
+    expect(duplicates[0]).toContain('caps-man.json[1]');
+  });
+
+  it('catches a collision spanning two category files', () => {
+    const { errors } = validate({
+      'caps-man': [VALID_PRODUCT],
+      'belts-man': [{ ...VALID_PRODUCT, name: '[2907251533] Gucci' }],
+    });
+    expect(errors.filter((error) => /duplicate product code/.test(error))).toHaveLength(1);
+  });
+
+  it('accepts distinct codes', () => {
+    const { errors } = validate({
+      'caps-man': [VALID_PRODUCT, { ...VALID_PRODUCT, name: '[2907251534] Nike' }],
+    });
+    expect(errors.filter((error) => /duplicate product code/.test(error))).toEqual([]);
   });
 });
 

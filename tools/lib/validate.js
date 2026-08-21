@@ -1,5 +1,6 @@
 'use strict';
 
+const Ajv = require('ajv');
 const fs = require('fs');
 const path = require('path');
 
@@ -12,6 +13,17 @@ const {
 } = require('./catalog');
 
 const CATEGORIES_DICT_NAME = 'CATEGORIES_DICT';
+
+const DEFAULT_SCHEMA_PATH = path.join(__dirname, '../../schemas/product.schema.json');
+
+// Images that legitimately live under images/ without belonging to a product.
+// Kept explicit so an orphan is a reported warning rather than an assumption.
+const NON_CATALOG_IMAGES = new Set(['images/logo.jpeg']);
+
+// Multi-image products distinguish their photos with these suffixes. Both are in
+// use across all 23 multi-image products, and no single-image product carries
+// one, so the vocabulary is closed rather than merely conventional.
+const IMAGE_VARIANTS = new Set(['front', 'back']);
 
 // Image filenames are expected to lead with the owning product's 10-digit code.
 // The convention is validated rather than computed: the path stays an explicit
@@ -43,6 +55,44 @@ const checkImageName = (source, productCode) => {
     return `image ${source} is named for [${leading[1]}] but belongs to [${productCode}]`;
   }
   return null;
+};
+
+/**
+ * Compiles the product schema.
+ * Kept as a factory so tests can validate against a schema of their own without
+ * reaching into module state.
+ * @param {string} [schemaPath] Path to the schema document.
+ * @returns {Function} An ajv validate function carrying `.errors`.
+ */
+const compileProductSchema = (schemaPath = DEFAULT_SCHEMA_PATH) => {
+  const schema = JSON.parse(fs.readFileSync(schemaPath, 'utf8'));
+  // allErrors so a catalog update PR sees every schema defect in one run, which
+  // is the same reason the hand-written checks collect rather than fail fast.
+  return new Ajv({ allErrors: true, strict: true }).compile(schema);
+};
+
+/**
+ * Renders one ajv error against a category file as a human-readable message.
+ * `/0/price` reads as `[0].price`, so the message points at the product a
+ * reviewer can actually find.
+ * @param {object} error An ajv error object.
+ * @param {string} category Category slug.
+ * @returns {string} Error message.
+ */
+const formatSchemaError = (error, category) => {
+  const location = error.instancePath
+    .replace(/^\//, '')
+    .split('/')
+    .map((segment) => (/^\d+$/.test(segment) ? `[${segment}]` : `.${segment}`))
+    .join('')
+    .replace(/^\./, '');
+
+  const where = location ? `${category}.json${location.startsWith('[') ? '' : '.'}${location}` : `${category}.json`;
+  const detail = error.keyword === 'additionalProperties'
+    ? `has unknown property "${error.params.additionalProperty}"`
+    : error.message;
+
+  return `${where} ${detail}`;
 };
 
 /**
@@ -114,6 +164,82 @@ const checkCategoryCoverage = (categories, dictKeys) => {
 };
 
 /**
+ * Returns the trailing `-front` / `-back` suffix of an image basename, if any.
+ * @param {string} source Referenced image path.
+ * @returns {string|null} The variant name, or null when the name carries none.
+ */
+const imageVariant = (source) => {
+  const basename = path.posix.basename(source, path.posix.extname(source));
+  const last = basename.split('-').pop();
+  return IMAGE_VARIANTS.has(last) ? last : null;
+};
+
+/**
+ * Checks that a product's photos are distinguishable by variant suffix.
+ *
+ * A product with several photos needs them ordered deterministically, since the
+ * card shows images[0] and the modal steps through the rest. A lone `-front`
+ * usually means its `-back` was forgotten.
+ * @param {string[]} images The product's image references.
+ * @returns {string[]} Error messages.
+ */
+const checkImageVariants = (images) => {
+  const usable = images.filter((source) => typeof source === 'string' && source.trim());
+  const variants = usable.map((source) => ({ source, variant: imageVariant(source) }));
+
+  if (usable.length === 1) {
+    const [only] = variants;
+    return only.variant
+      ? [
+          `image ${only.source} carries the "${only.variant}" suffix but is the product's only photo — its counterpart is missing`,
+        ]
+      : [];
+  }
+
+  const errors = [];
+  const missing = variants.filter((entry) => !entry.variant);
+  missing.forEach(({ source }) => {
+    errors.push(
+      `image ${source} needs a "${[...IMAGE_VARIANTS].join('" or "')}" suffix, because the product has ${usable.length} photos to order`
+    );
+  });
+
+  const seen = new Map();
+  variants
+    .filter((entry) => entry.variant)
+    .forEach(({ source, variant }) => {
+      const previous = seen.get(variant);
+      if (previous) {
+        errors.push(`images ${previous} and ${source} both claim the "${variant}" variant`);
+      } else {
+        seen.set(variant, source);
+      }
+    });
+
+  return errors;
+};
+
+/**
+ * Finds images on disk that no product references.
+ *
+ * A warning rather than an error: an orphan wastes repository space and shows up
+ * in `dist/`, but it never breaks the site, and failing a build over one would
+ * block a deploy for a tidiness problem.
+ * @param {object} manifest Image manifest keyed by source path — effectively the
+ *   list of every image file on disk.
+ * @param {Set<string>} referenced Image paths referenced by the catalog.
+ * @returns {string[]} Warning messages.
+ */
+const checkOrphanImages = (manifest, referenced) =>
+  Object.keys(manifest)
+    .filter((source) => !referenced.has(source) && !NON_CATALOG_IMAGES.has(source))
+    .sort()
+    .map(
+      (source) =>
+        `${source} is not referenced by any product — delete it, or add it to NON_CATALOG_IMAGES if it is used outside the catalog`
+    );
+
+/**
  * Validates one product's fields.
  * @param {object} product Product entry.
  * @param {string} where Human-readable location for messages.
@@ -176,6 +302,7 @@ const checkProduct = (product, where, manifest) => {
     const namingError = checkImageName(source, productCode);
     if (namingError) fail(namingError);
   });
+  checkImageVariants(images).forEach(fail);
 
   return errors;
 };
@@ -187,30 +314,47 @@ const checkProduct = (product, where, manifest) => {
  * @param {string} options.productsDir Path to the products directory.
  * @param {string} options.scriptsPath Path to scripts.js.
  * @param {object} [options.manifest] Image manifest keyed by source path.
+ * @param {string} [options.schemaPath] Path to the product schema.
  * @returns {{errors: string[], warnings: string[]}} Collected problems.
  */
-const validateCatalog = ({ productsDir, scriptsPath, manifest = null }) => {
+const validateCatalog = ({ productsDir, scriptsPath, manifest = null, schemaPath }) => {
   const errors = [];
   const warnings = [];
 
   const categories = listCategories(productsDir);
   errors.push(...checkCategoryCoverage(categories, readCategoryDictKeys(scriptsPath)));
 
+  const matchesSchema = compileProductSchema(schemaPath);
+
   // Product codes identify a product in the WhatsApp message, so a collision
-  // leaves the seller unable to tell which item was requested.
+  // leaves the seller unable to tell which item was requested. Enforced as an
+  // error: none exist today, which makes now the only cheap moment to close it.
   const seenIds = new Map();
+  const referencedImages = new Set();
 
   for (const category of categories) {
-    readCategory(productsDir, category).forEach((product, index) => {
+    const products = readCategory(productsDir, category);
+
+    // Schema first: it catches shape defects (unknown property, wrong type) that
+    // would otherwise surface as a confusing cascade of field-level messages.
+    if (!matchesSchema(products)) {
+      errors.push(...matchesSchema.errors.map((error) => formatSchemaError(error, category)));
+    }
+
+    products.forEach((product, index) => {
       const label = typeof product.name === 'string' ? product.name : '(unnamed)';
       const where = `${category}.json[${index}] "${label}"`;
       errors.push(...checkProduct(product, where, manifest));
+
+      productImages(product).forEach((source) => {
+        if (typeof source === 'string') referencedImages.add(source);
+      });
 
       const match = typeof product.name === 'string' && product.name.match(PRODUCT_DATE_PATTERN);
       if (!match) return;
       const previous = seenIds.get(match[1]);
       if (previous) {
-        warnings.push(
+        errors.push(
           `duplicate product code [${match[1]}]: ${previous} and ${where} — the WhatsApp message cannot distinguish them`
         );
       } else {
@@ -219,13 +363,23 @@ const validateCatalog = ({ productsDir, scriptsPath, manifest = null }) => {
     });
   }
 
+  if (manifest) warnings.push(...checkOrphanImages(manifest, referencedImages));
+
   return { errors, warnings };
 };
 
 module.exports = {
+  DEFAULT_SCHEMA_PATH,
+  IMAGE_VARIANTS,
+  NON_CATALOG_IMAGES,
   checkCategoryCoverage,
   checkImageName,
+  checkImageVariants,
+  checkOrphanImages,
   checkProduct,
+  compileProductSchema,
+  formatSchemaError,
+  imageVariant,
   readCategoryDictKeys,
   validateCatalog,
 };
