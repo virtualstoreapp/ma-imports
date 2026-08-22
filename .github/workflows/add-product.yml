@@ -32,7 +32,18 @@ concurrency:
 
 jobs:
   add:
-    if: contains(github.event.issue.labels.*.name, 'novo-produto')
+    # The form's own shape is the trigger, not a label. GitHub applies a label
+    # named in an issue template only if it already exists in the repository, and
+    # `novo-produto` did not — so a label-gated job never ran and the submission
+    # failed silently, with nothing on the issue to say why. `### Categoria` and
+    # `### Fotos` are the headings parseIssueBody reads, and both answers are
+    # required by the form, so a body carrying them is a submission by
+    # construction. The label still triggers a run, which is how an issue filed
+    # before this change can be replayed by labelling it.
+    if: >-
+      (contains(github.event.issue.body, '### Categoria')
+      && contains(github.event.issue.body, '### Fotos'))
+      || contains(github.event.issue.labels.*.name, 'novo-produto')
     runs-on: ubuntu-latest
 
     steps:
@@ -90,6 +101,20 @@ jobs:
           } > "$RUNNER_TEMP/comment.md"
           gh issue comment "$ISSUE_NUMBER" --body-file "$RUNNER_TEMP/comment.md"
           exit 1
+
+      # The label is no longer what triggers the job, but the PR still carries it
+      # so submissions can be filtered. Created here rather than assumed, because
+      # a missing label is what broke this path in the first place. `--force`
+      # makes the step idempotent instead of failing on the second run.
+      - name: Ensure the tracking label exists
+        if: steps.build.outcome == 'success' && steps.validate.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh label create novo-produto \
+            --color 0E8A16 \
+            --description 'Cadastro de produto pelo formulário' \
+            --force
 
       - name: Open the pull request
         if: steps.build.outcome == 'success' && steps.validate.outcome == 'success'

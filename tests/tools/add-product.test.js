@@ -257,4 +257,17 @@ describe('The generated issue form', () => {
       expect(template).not.toContain(`- "${group.navLabel}"\n`);
     });
   });
+
+  // The workflow decides whether an issue is a submission by looking for these
+  // two headings in its body, rather than for a label GitHub only applies when
+  // it already exists. That makes the field labels load-bearing twice over, so
+  // they are pinned here too: renaming one without updating the gate would stop
+  // the workflow from firing at all, which is the silent failure this replaced.
+  it('is recognised by the workflow that reads it', () => {
+    const workflow = fs.readFileSync(path.join(ROOT, '.github/workflows/add-product.yml'), 'utf8');
+
+    expect(workflow).toContain(`'### ${FIELDS.category}'`);
+    expect(workflow).toContain(`'### ${FIELDS.photos}'`);
+    expect(workflow).not.toMatch(/^\s*if: contains\(github\.event\.issue\.labels/m);
+  });
 });
