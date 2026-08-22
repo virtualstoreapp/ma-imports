@@ -1164,7 +1164,7 @@ text entering `<meta content="...">` and JSON-LD needs JSON-string escaping, not
 | 5b-i Runtime v2 + per-size availability | 1.5 d | medium | Wave 4 | **done** |
 | 5b-ii Delivery ladder + hashing | 1–2 d | low | Wave 4 | deferred — see note |
 | 6 Non-dev authoring | 3–4 d | **goal (CON-8)** | Waves 1–4 | **done** |
-| 7 Deep links + SEO | 2.5 d | medium (CON-11) | Wave 4 | ready |
+| 7 Deep links + SEO | 2.5 d | medium (CON-11) | Wave 4 | **done** |
 
 **Total ≈ 17–19 days.** No wave is blocked on an unanswered question.
 
@@ -1194,6 +1194,30 @@ into `index.html` as a committed JSON literal, and the build fails when that blo
 `readCategoryDictKeys` — the brace-matching scraper that recovered category names from a JavaScript
 literal — is deleted, and `underwear-man-subcategory` is renamed to `underwear-man` with an alias
 keeping old links alive. Suite: 207 tests.
+
+Wave 7 closed the SEO gap measured in §2.9, which was the largest remaining one in plain terms: **0 of
+241 products were indexable and every shared link previewed the same logo card**, for a business whose
+entire funnel is WhatsApp link-sharing. Both tiers shipped.
+
+**Tier 1** is a `#p/{id}` fragment. Opening a product writes it, closing hands it back to the category,
+and arriving on one renders the whole catalog first so the product is found wherever it lives. The
+fragment is matched against a fixed 10-digit shape and then resolved by *scanning* the rendered
+products — never used to index an object — so it inherits `categoryFromHash`'s discipline. Covered for
+`p/__proto__`, `p/constructor`, `p/../../etc/passwd` and malformed lengths.
+
+**Tier 2** generates `dist/p/{id}/index.html` per product, plus `sitemap.xml` and `robots.txt`. These
+are **real pages, not redirects**: a crawler sees the product without executing JavaScript, and a person
+landing on one sees it too, with a link into the catalog. A redirect would give the crawler nothing.
+
+The JSON-LD escaping is the part worth remembering. The hazard in a script block is not `<` in an
+attribute — it is a `</script>` inside a product description closing the block early, after which the
+rest is parsed as markup. `JSON.stringify` escapes quotes but **not** `<`, so `jsonLd` additionally
+escapes `<`, `>`, `&` and the U+2028/U+2029 separators, which are valid in JSON but not in a JavaScript
+string literal. Two escaping contexts, different rules, both covered.
+
+One bug caught while wiring Tier 1: `renderProducts` writes its category into the fragment, which
+replaced `#p/{id}` with `#all` before the modal could open — so every shared link landed on the
+homepage. The write is now skipped while a product fragment is present.
 
 Wave 6 delivered CON-8, the goal the previous five waves were prerequisites for. A generated Issue Form
 (`.github/ISSUE_TEMPLATE/add-product.yml`, 64 dropdown options straight from the registries) plus
@@ -1356,7 +1380,7 @@ None of these blocks any wave. Each is stated so it can be reversed cheaply.
 | `dist/` size | 36.5 MB | **31.8 MB** — the 45 MB figure was `du` blocks; the ~15 MB target rested on a wrong assumption (Wave 5a) |
 | Derivatives re-encoded per unchanged CI build | ~1,060 | **0** — verified by reproducing the CI mtime condition |
 | Growth thresholds monitored in CI | none | T1/T3/T5 annotated |
-| Products indexable by search engines | 0 of 241 | all |
+| Products indexable by search engines | 0 of 241 | **241 of 241 (Wave 7 done)** |
 | Recurring infrastructure cost | $0 | $0 |
 
 ## 14. What This Plan Assumes

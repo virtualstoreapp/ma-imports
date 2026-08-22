@@ -13,6 +13,7 @@ const {
 } = require('./lib/catalog');
 const { buildImageManifest, manifestOutputs } = require('./lib/images');
 const { TEMPLATE_PATH, renderIssueForm } = require('./lib/issue-form');
+const { renderProductPage, renderRobots, renderSitemap } = require('./lib/product-pages');
 const { loadRegistry, renderRegistryElement } = require('./lib/registry');
 const { toRuntime } = require('./lib/runtime');
 const { buildSocialCard } = require('./lib/social');
@@ -99,7 +100,49 @@ const writeProducts = async (manifest, brands) => {
     await fsp.rm(path.join(outputDir, file));
   }
 
-  return { categories: categories.length, products: all.length, stale: stale.length };
+  return { categories: categories.length, products: all.length, stale: stale.length, all };
+};
+
+/**
+ * Writes a page per product, plus the sitemap and robots.txt.
+ *
+ * Before this, no product content was server-rendered, so none of the 241 was
+ * indexable and every shared link previewed the same logo card (§2.9).
+ * @param {object[]} products Compiled runtime products, with media and category.
+ * @param {object} registry Output of loadRegistry.
+ * @returns {Promise<number>} Pages written.
+ */
+const writeProductPages = async (products, registry) => {
+  const label = (slug) => {
+    const node = registry.bySlug.get(slug);
+    return node && node.label ? node.label : 'Produtos';
+  };
+
+  for (const product of products) {
+    const directory = path.join(DIST, 'p', product.id);
+    await fsp.mkdir(directory, { recursive: true });
+    await fsp.writeFile(
+      path.join(directory, 'index.html'),
+      renderProductPage(product, label(product.category)),
+      'utf8'
+    );
+  }
+
+  await fsp.writeFile(path.join(DIST, 'sitemap.xml'), renderSitemap(products), 'utf8');
+  await fsp.writeFile(path.join(DIST, 'robots.txt'), renderRobots(), 'utf8');
+
+  // A deleted product would otherwise keep its page and stay in the sitemap, so
+  // the same pruning the product payloads get applies here.
+  const live = new Set(products.map((product) => product.id));
+  const existing = await fsp.readdir(path.join(DIST, 'p')).catch(() => []);
+  let pruned = 0;
+  for (const entry of existing) {
+    if (live.has(entry)) continue;
+    await fsp.rm(path.join(DIST, 'p', entry), { recursive: true, force: true });
+    pruned += 1;
+  }
+
+  return { pages: products.length, pruned };
 };
 
 // Files scanned for direct image references. These are served verbatim, so any
@@ -331,9 +374,13 @@ const main = async () => {
     throw new Error(`${errors.length} catalog problem(s):\n  ${errors.join('\n  ')}`);
   }
 
-  const { categories, products, stale } = await writeProducts(manifest, registry.brands);
+  const { categories, products, stale, all } = await writeProducts(manifest, registry.brands);
   log(`products: ${products} products across ${categories} categories`);
   if (stale) log(`products: ${stale} stale file(s) pruned`);
+
+  const pages = await writeProductPages(all, registry);
+  log(`pages: ${pages.pages} product page(s), sitemap and robots.txt`);
+  if (pages.pruned) log(`pages: ${pages.pruned} stale page(s) pruned`);
   if (warnings.length) log(`products: ${warnings.length} warning(s) above`);
 
   for (const file of STATIC_FILES) {
