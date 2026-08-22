@@ -1,0 +1,137 @@
+# TEMPORARY probe. Full form minus every placeholder.
+name: Probe B3 no placeholders
+description: Cadastrar um novo produto no catálogo
+title: "Novo produto: "
+labels: ["novo-produto"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Preencha os campos abaixo e **anexe a foto do produto** no último campo.
+        Ao enviar, um robô cria a alteração e abre um Pull Request para revisão.
+  - type: dropdown
+    id: category
+    attributes:
+      label: "Categoria"
+      description: Onde o produto aparece no catálogo
+      options:
+        - "Bermudas Básica Masculina"
+        - "Bermudas Jeans Feminina"
+        - "Bermudas Jeans Masculina"
+        - "Bermudas Moletom Masculina"
+        - "Bermudas Tactel Masculina"
+        - "Blusas Feminina"
+        - "Blusas Masculina"
+        - "Bonés Masculino"
+        - "Calças Jeans Feminina"
+        - "Calças Jeans Masculina"
+        - "Calças Legging Feminina"
+        - "Calças Moletom Masculina"
+        - "Camisetas Casuais Masculina"
+        - "Camisetas Dry Fit Masculina"
+        - "Camisetas Polo Masculina"
+        - "Camisetas Sociais Masculina"
+        - "Carteiras Masculina"
+        - "Chinelos"
+        - "Cintos Masculino"
+        - "Conjuntos Moletom Infantil"
+        - "Cuecas Masculina"
+        - "Meias Masculina"
+        - "Regatas Casuais Masculina"
+        - "Regatas Dry Fit Masculina"
+        - "Tênis"
+        - "Top Feminino"
+    validations:
+      required: true
+  - type: dropdown
+    id: brand
+    attributes:
+      label: "Marca"
+      description: Escolha "Sem marca" se o produto não tem marca
+      options:
+        - "Sem marca"
+        - "Abercrombie"
+        - "Adidas"
+        - "Aramis"
+        - "Armani"
+        - "Armani Exchange"
+        - "Asics"
+        - "Austman"
+        - "Balmain"
+        - "Brooksfield"
+        - "Burberry"
+        - "Calvin Klein"
+        - "Diesel"
+        - "Dolce & Gabbana"
+        - "Emporio Armani"
+        - "Gucci"
+        - "Hang Loose"
+        - "Hugo Boss"
+        - "Hurley"
+        - "Jordan"
+        - "Lacoste"
+        - "Louis Vuitton"
+        - "Mizuno"
+        - "New Balance"
+        - "Nike"
+        - "Oakley"
+        - "Polo"
+        - "Puma"
+        - "Quiksilver"
+        - "Ralph Lauren"
+        - "Reserva"
+        - "Ricardo Almeida"
+        - "Sergio K"
+        - "Tommy Hilfiger"
+        - "Under Armour"
+        - "Vans"
+        - "Versace"
+        - "XTC"
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: "Modelo"
+      description: Linha do produto, quando houver. Por exemplo, Shox ou Campus
+  - type: input
+    id: price
+    attributes:
+      label: "Preço"
+      description: Preço de venda, em reais
+    validations:
+      required: true
+  - type: input
+    id: old-price
+    attributes:
+      label: "Preço antigo"
+      description: Só preencha se o produto está com desconto. Precisa ser maior que o preço
+  - type: input
+    id: sizes
+    attributes:
+      label: "Tamanhos"
+      description: |
+        Os tamanhos disponíveis, separados por vírgula. Cada tamanho é uma peça:
+        se vender só uma, a peça sai do catálogo sozinha.
+        Deixe em branco para produtos sem tamanho, como bonés e carteiras.
+  - type: input
+    id: size-note
+    attributes:
+      label: "Observação de tamanho"
+      description: |
+        Use no lugar de Tamanhos quando não for uma lista.
+        Por exemplo: Tamanho único, Consultar, 37 ao 44.
+  - type: textarea
+    id: description
+    attributes:
+      label: "Descrição"
+      description: Detalhes que aparecem no cartão do produto
+  - type: textarea
+    id: photos
+    attributes:
+      label: "Fotos"
+      description: |
+        Arraste a foto para cá, ou toque para escolher da galeria.
+        Pode enviar duas: a primeira é a frente e a segunda o verso.
+    validations:
+      required: true

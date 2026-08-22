@@ -1,0 +1,127 @@
+# TEMPORARY probe. Full form minus every field description.
+name: Probe B2 no descriptions
+description: Cadastrar um novo produto no catálogo
+title: "Novo produto: "
+labels: ["novo-produto"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Preencha os campos abaixo e **anexe a foto do produto** no último campo.
+        Ao enviar, um robô cria a alteração e abre um Pull Request para revisão.
+  - type: dropdown
+    id: category
+    attributes:
+      label: "Categoria"
+      options:
+        - "Bermudas Básica Masculina"
+        - "Bermudas Jeans Feminina"
+        - "Bermudas Jeans Masculina"
+        - "Bermudas Moletom Masculina"
+        - "Bermudas Tactel Masculina"
+        - "Blusas Feminina"
+        - "Blusas Masculina"
+        - "Bonés Masculino"
+        - "Calças Jeans Feminina"
+        - "Calças Jeans Masculina"
+        - "Calças Legging Feminina"
+        - "Calças Moletom Masculina"
+        - "Camisetas Casuais Masculina"
+        - "Camisetas Dry Fit Masculina"
+        - "Camisetas Polo Masculina"
+        - "Camisetas Sociais Masculina"
+        - "Carteiras Masculina"
+        - "Chinelos"
+        - "Cintos Masculino"
+        - "Conjuntos Moletom Infantil"
+        - "Cuecas Masculina"
+        - "Meias Masculina"
+        - "Regatas Casuais Masculina"
+        - "Regatas Dry Fit Masculina"
+        - "Tênis"
+        - "Top Feminino"
+    validations:
+      required: true
+  - type: dropdown
+    id: brand
+    attributes:
+      label: "Marca"
+      options:
+        - "Sem marca"
+        - "Abercrombie"
+        - "Adidas"
+        - "Aramis"
+        - "Armani"
+        - "Armani Exchange"
+        - "Asics"
+        - "Austman"
+        - "Balmain"
+        - "Brooksfield"
+        - "Burberry"
+        - "Calvin Klein"
+        - "Diesel"
+        - "Dolce & Gabbana"
+        - "Emporio Armani"
+        - "Gucci"
+        - "Hang Loose"
+        - "Hugo Boss"
+        - "Hurley"
+        - "Jordan"
+        - "Lacoste"
+        - "Louis Vuitton"
+        - "Mizuno"
+        - "New Balance"
+        - "Nike"
+        - "Oakley"
+        - "Polo"
+        - "Puma"
+        - "Quiksilver"
+        - "Ralph Lauren"
+        - "Reserva"
+        - "Ricardo Almeida"
+        - "Sergio K"
+        - "Tommy Hilfiger"
+        - "Under Armour"
+        - "Vans"
+        - "Versace"
+        - "XTC"
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: "Modelo"
+      placeholder: Shox
+  - type: input
+    id: price
+    attributes:
+      label: "Preço"
+      placeholder: 89,90
+    validations:
+      required: true
+  - type: input
+    id: old-price
+    attributes:
+      label: "Preço antigo"
+      placeholder: 129,90
+  - type: input
+    id: sizes
+    attributes:
+      label: "Tamanhos"
+      placeholder: P, M, G
+  - type: input
+    id: size-note
+    attributes:
+      label: "Observação de tamanho"
+      placeholder: Tamanho único
+  - type: textarea
+    id: description
+    attributes:
+      label: "Descrição"
+      placeholder: "Camiseta Dry Fit, Cor: Preta"
+  - type: textarea
+    id: photos
+    attributes:
+      label: "Fotos"
+    validations:
+      required: true
