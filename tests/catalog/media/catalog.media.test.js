@@ -6,6 +6,7 @@ const { waitFor, fireEvent, setupDOM } = require('../../utils/catalogCommon');
 const MEDIA = {
   src: 'images/man/caps/2907251533-adidas.jpeg',
   webp: 'images/man/caps/2907251533-adidas.webp',
+  full: 'images/man/caps/2907251533-adidas.jpg',
   thumb: 'images/man/caps/2907251533-adidas-thumb.webp',
   thumbFallback: 'images/man/caps/2907251533-adidas-thumb.jpg',
   width: 1200,
@@ -74,7 +75,9 @@ describe('Generated media rendering', () => {
   it('serves the full-size WebP in the modal, keeping the original as fallback', async () => {
     await openModal();
     expect(document.getElementById('modal-image-source')).toHaveAttribute('srcset', MEDIA.webp);
-    expect(document.getElementById('modal-image')).toHaveAttribute('src', MEDIA.src);
+    // The fallback is the generated 1200px JPEG, not the original: originals are
+    // no longer copied into dist/, so MEDIA.src would 404.
+    expect(document.getElementById('modal-image')).toHaveAttribute('src', MEDIA.full);
   });
 
   it('reports the real category on the homepage rather than the "Novidades" heading', async () => {

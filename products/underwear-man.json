@@ -1,0 +1,229 @@
+[
+    {
+        "id": "2907251508",
+        "brand": "armani",
+        "price": 23,
+        "sizes": [
+            {
+                "size": "M"
+            }
+        ],
+        "description": "Cueca Masculina",
+        "images": [
+            "images/man/underwear/2907251508-armani.jpeg"
+        ],
+        "listedAt": "2025-07-29T15:08:00Z"
+    },
+    {
+        "id": "2907251502",
+        "brand": "armani",
+        "price": 23,
+        "sizes": [
+            {
+                "size": "G"
+            }
+        ],
+        "description": "Cueca Masculina",
+        "images": [
+            "images/man/underwear/2907251502-armani.jpeg"
+        ],
+        "listedAt": "2025-07-29T15:02:00Z"
+    },
+    {
+        "id": "2907251506",
+        "brand": "armani",
+        "price": 23,
+        "sizes": [
+            {
+                "size": "G1"
+            }
+        ],
+        "description": "Cueca Masculina",
+        "images": [
+            "images/man/underwear/2907251506-armani.jpeg"
+        ],
+        "listedAt": "2025-07-29T15:06:00Z"
+    },
+    {
+        "id": "2907251514",
+        "brand": "calvin-klein",
+        "price": 23,
+        "sizes": [
+            {
+                "size": "G"
+            }
+        ],
+        "description": "Cueca Masculina",
+        "images": [
+            "images/man/underwear/2907251514-calvin-klein.jpeg"
+        ],
+        "listedAt": "2025-07-29T15:14:00Z"
+    },
+    {
+        "id": "2907251504",
+        "brand": "gucci",
+        "price": 23,
+        "sizes": [
+            {
+                "size": "M"
+            }
+        ],
+        "description": "Cueca Masculina",
+        "images": [
+            "images/man/underwear/2907251504-gucci.jpeg"
+        ],
+        "listedAt": "2025-07-29T15:04:00Z"
+    },
+    {
+        "id": "2907251512",
+        "brand": "gucci",
+        "price": 23,
+        "sizes": [
+            {
+                "size": "M"
+            }
+        ],
+        "description": "Cueca Masculina",
+        "images": [
+            "images/man/underwear/2907251512-gucci.jpeg"
+        ],
+        "listedAt": "2025-07-29T15:12:00Z"
+    },
+    {
+        "id": "2907251513",
+        "brand": "gucci",
+        "price": 23,
+        "sizes": [
+            {
+                "size": "G"
+            }
+        ],
+        "description": "Cueca Masculina",
+        "images": [
+            "images/man/underwear/2907251513-gucci.jpeg"
+        ],
+        "listedAt": "2025-07-29T15:13:00Z"
+    },
+    {
+        "id": "2907251500",
+        "brand": "gucci",
+        "price": 23,
+        "sizes": [
+            {
+                "size": "G"
+            }
+        ],
+        "description": "Cueca Masculina",
+        "images": [
+            "images/man/underwear/2907251500-gucci.jpeg"
+        ],
+        "listedAt": "2025-07-29T15:00:00Z"
+    },
+    {
+        "id": "2907251501",
+        "brand": "gucci",
+        "price": 23,
+        "sizes": [
+            {
+                "size": "GG"
+            }
+        ],
+        "description": "Cueca Masculina",
+        "images": [
+            "images/man/underwear/2907251501-gucci.jpeg"
+        ],
+        "listedAt": "2025-07-29T15:01:00Z"
+    },
+    {
+        "id": "2907251511",
+        "brand": "hugo-boss",
+        "price": 23,
+        "sizes": [
+            {
+                "size": "M"
+            }
+        ],
+        "description": "Cueca Masculina",
+        "images": [
+            "images/man/underwear/2907251511-hugo-boss.jpeg"
+        ],
+        "listedAt": "2025-07-29T15:11:00Z"
+    },
+    {
+        "id": "2907251509",
+        "brand": "nike",
+        "model": "Pro",
+        "price": 23,
+        "sizes": [
+            {
+                "size": "M"
+            }
+        ],
+        "description": "Cueca Masculina",
+        "images": [
+            "images/man/underwear/2907251509-nike-pro.jpeg"
+        ],
+        "listedAt": "2025-07-29T15:09:00Z"
+    },
+    {
+        "id": "2907251503",
+        "brand": "nike",
+        "model": "Pro",
+        "price": 23,
+        "sizes": [
+            {
+                "size": "G"
+            }
+        ],
+        "description": "Cueca Masculina",
+        "images": [
+            "images/man/underwear/2907251503-nike-pro.jpeg"
+        ],
+        "listedAt": "2025-07-29T15:03:00Z"
+    },
+    {
+        "id": "2907251510",
+        "brand": "tommy-hilfiger",
+        "price": 23,
+        "sizes": [
+            {
+                "size": "M"
+            }
+        ],
+        "description": "Cueca Masculina",
+        "images": [
+            "images/man/underwear/2907251510-tommy-hilfiger.jpeg"
+        ],
+        "listedAt": "2025-07-29T15:10:00Z"
+    },
+    {
+        "id": "2907251505",
+        "brand": "tommy-hilfiger",
+        "price": 23,
+        "sizes": [
+            {
+                "size": "GG"
+            }
+        ],
+        "description": "Cueca Masculina",
+        "images": [
+            "images/man/underwear/2907251505-tommy-hilfiger.jpeg"
+        ],
+        "listedAt": "2025-07-29T15:05:00Z"
+    },
+    {
+        "id": "2907251507",
+        "brand": "tommy-hilfiger",
+        "price": 23,
+        "sizes": [
+            {
+                "size": "GG"
+            }
+        ],
+        "description": "Cueca Masculina",
+        "images": [
+            "images/man/underwear/2907251507-tommy-hilfiger.jpeg"
+        ],
+        "listedAt": "2025-07-29T15:07:00Z"
+    }
+]

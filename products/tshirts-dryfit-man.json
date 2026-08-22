@@ -1,224 +1,334 @@
 [
     {
-        "name": "[2703251658] Adidas",
+        "id": "2703251658",
+        "brand": "adidas",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "M"
+            }
+        ],
         "description": "Dry Fit, Cor: Azul Marinho",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/tshirts/dryfit/adidas/2703251658-adidas.jpeg"
         ],
-        "size": "M"
+        "listedAt": "2025-03-27T16:58:00Z"
     },
     {
-        "name": "[2810251237] Adidas",
+        "id": "2810251237",
+        "brand": "adidas",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "M"
+            }
+        ],
         "description": "Dry Fit",
-        "oldPrice": 0.0,
-        "price": 39.90,
         "images": [
             "images/man/tshirts/dryfit/adidas/2810251237-adidas.jpeg"
         ],
-        "size": "M"
+        "listedAt": "2025-10-28T12:37:00Z"
     },
     {
-        "name": "[1104250039] Adidas",
+        "id": "1104250039",
+        "brand": "adidas",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "G1",
+                "soldOut": true
+            }
+        ],
         "description": "Dry-Fit",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/tshirts/dryfit/adidas/1104250039-adidas.jpeg"
         ],
-        "size": "G1",
-        "soldOut": true
+        "listedAt": "2025-04-11T00:39:00Z"
     },
     {
-        "name": "[1104250032] Austman",
+        "id": "1104250032",
+        "brand": "austman",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "G"
+            }
+        ],
         "description": "Dry-Fit",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/tshirts/dryfit/austman/1104250032-austman.jpeg"
         ],
-        "size": "G"
+        "listedAt": "2025-04-11T00:32:00Z"
     },
     {
-        "name": "[1104250037] Diesel",
+        "id": "1104250037",
+        "brand": "diesel",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "GG"
+            }
+        ],
         "description": "Dry-Fit",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/tshirts/dryfit/diesel/1104250037-diesel.jpeg"
         ],
-        "size": "GG"
+        "listedAt": "2025-04-11T00:37:00Z"
     },
     {
-        "name": "[1104250038] Mizuno",
+        "id": "1104250038",
+        "brand": "mizuno",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "P"
+            }
+        ],
         "description": "Dry-Fit",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/tshirts/dryfit/mizuno/1104250038-mizuno.jpeg"
         ],
-        "size": "P"
+        "listedAt": "2025-04-11T00:38:00Z"
     },
     {
-        "name": "[1104250027] Mizuno",
+        "id": "1104250027",
+        "brand": "mizuno",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "M"
+            }
+        ],
         "description": "Dry Fit Manga longa, Proteção UV",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/tshirts/dryfit/mizuno/1104250027-mizuno.jpeg"
         ],
-        "size": "M"
+        "listedAt": "2025-04-11T00:27:00Z"
     },
     {
-        "name": "[1104250040] Mizuno",
+        "id": "1104250040",
+        "brand": "mizuno",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "M"
+            }
+        ],
         "description": "Dry-Fit",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/tshirts/dryfit/mizuno/1104250040-mizuno.jpeg"
         ],
-        "size": "M"
+        "listedAt": "2025-04-11T00:40:00Z"
     },
     {
-        "name": "[2703251659] Mizuno",
+        "id": "2703251659",
+        "brand": "mizuno",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "G"
+            }
+        ],
         "description": "Dry Fit",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/tshirts/dryfit/mizuno/2703251659-mizuno.jpeg"
         ],
-        "size": "G"
+        "listedAt": "2025-03-27T16:59:00Z"
     },
     {
-        "name": "[1104250033] Mizuno",
+        "id": "1104250033",
+        "brand": "mizuno",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "G2"
+            }
+        ],
         "description": "Dry-Fit",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/tshirts/dryfit/mizuno/1104250033-mizuno.jpeg"
         ],
-        "size": "G2"
+        "listedAt": "2025-04-11T00:33:00Z"
     },
     {
-        "name": "[1104250028] Mizuno",
+        "id": "1104250028",
+        "brand": "mizuno",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "GG"
+            }
+        ],
         "description": "Dry Fit Manga longa, Proteção UV",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/tshirts/dryfit/mizuno/1104250028-mizuno.jpeg"
         ],
-        "size": "GG"
+        "listedAt": "2025-04-11T00:28:00Z"
     },
     {
-        "name": "[1104250025] Nike",
+        "id": "1104250025",
+        "brand": "nike",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "M"
+            }
+        ],
         "description": "Dry-Fit",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/tshirts/dryfit/nike/1104250025-nike.jpeg"
         ],
-        "size": "M"
+        "listedAt": "2025-04-11T00:25:00Z"
     },
     {
-        "name": "[0703251709] Nike",
+        "id": "0703251709",
+        "brand": "nike",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "G"
+            }
+        ],
         "description": "Dry-Fit, Cor: Preta",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/tshirts/dryfit/nike/0703251709-nike.jpeg"
         ],
-        "size": "G"
+        "listedAt": "2025-03-07T17:09:00Z"
     },
     {
-        "name": "[2703251702] Nike",
+        "id": "2703251702",
+        "brand": "nike",
+        "price": 69.9,
+        "sizes": [
+            {
+                "size": "G"
+            }
+        ],
         "description": "Dry Fit Manga longa, Proteção UV",
-        "oldPrice": 0.0,
-        "price": 69.90,
         "images": [
             "images/man/tshirts/dryfit/nike/2703251702-nike.jpeg"
         ],
-        "size": "G"
+        "listedAt": "2025-03-27T17:02:00Z"
     },
     {
-        "name": "[2703251703] Nike",
+        "id": "2703251703",
+        "brand": "nike",
+        "price": 69.9,
+        "sizes": [
+            {
+                "size": "G",
+                "soldOut": true
+            }
+        ],
         "description": "Dry Fit Manga longa, Proteção UV",
-        "oldPrice": 0.0,
-        "price": 69.90,
         "images": [
             "images/man/tshirts/dryfit/nike/2703251703-nike.jpeg"
         ],
-        "size": "G",
-        "soldOut": true
+        "listedAt": "2025-03-27T17:03:00Z"
     },
     {
-        "name": "[1104250024] Nike",
+        "id": "1104250024",
+        "brand": "nike",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "G"
+            }
+        ],
         "description": "Dry Fit Manga longa, Proteção UV",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/tshirts/dryfit/nike/1104250024-nike.jpeg"
         ],
-        "size": "G"
+        "listedAt": "2025-04-11T00:24:00Z"
     },
     {
-        "name": "[2703251656] Nike",
+        "id": "2703251656",
+        "brand": "nike",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "GG"
+            }
+        ],
         "description": "Dry Fit",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/tshirts/dryfit/nike/2703251656-nike.jpeg"
         ],
-        "size": "GG"
+        "listedAt": "2025-03-27T16:56:00Z"
     },
     {
-        "name": "[1007251626] Nike",
+        "id": "1007251626",
+        "brand": "nike",
+        "price": 69.9,
+        "sizes": [
+            {
+                "size": "GG"
+            }
+        ],
         "description": "Dry Fit",
-        "oldPrice": 0.0,
-        "price": 69.90,
         "images": [
             "images/man/tshirts/dryfit/nike/1007251626-nike.jpeg"
         ],
-        "size": "GG"
+        "listedAt": "2025-07-10T16:26:00Z"
     },
     {
-        "name": "[2703251701] Oakley",
+        "id": "2703251701",
+        "brand": "oakley",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "P"
+            }
+        ],
         "description": "Dry Fit",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/tshirts/dryfit/oakley/2703251701-oakley.jpeg"
         ],
-        "size": "P"
+        "listedAt": "2025-03-27T17:01:00Z"
     },
     {
-        "name": "[1104250035] Oakley",
+        "id": "1104250035",
+        "brand": "oakley",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "P"
+            }
+        ],
         "description": "Dry-Fit",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/tshirts/dryfit/oakley/1104250035-oakley.jpeg"
         ],
-        "size": "P"
+        "listedAt": "2025-04-11T00:35:00Z"
     },
     {
-        "name": "[1104250022] Puma",
+        "id": "1104250022",
+        "brand": "puma",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "M"
+            }
+        ],
         "description": "Dry Fit Manga longa, Proteção UV",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/tshirts/dryfit/puma/1104250022-puma.jpeg"
         ],
-        "size": "M"
+        "listedAt": "2025-04-11T00:22:00Z"
     },
     {
-        "name": "[1104250026] Under Armor",
+        "id": "1104250026",
+        "brand": "under-armor",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "P"
+            }
+        ],
         "description": "Dry Fit Manga longa, Proteção UV",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/tshirts/dryfit/under-armor/1104250026-under-armor.jpeg"
         ],
-        "size": "P"
+        "listedAt": "2025-04-11T00:26:00Z"
     }
 ]

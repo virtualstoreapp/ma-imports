@@ -1,136 +1,202 @@
 [
     {
-        "name": "[0207251340] Abercrombie",
+        "id": "0207251340",
+        "brand": "abercrombie",
+        "price": 159,
+        "sizes": [
+            {
+                "size": "G",
+                "soldOut": true
+            }
+        ],
         "description": "Moleton",
-        "oldPrice": 0.0,
-        "price": 159.00,
         "images": [
             "images/man/sweatshirts/0207251340-abercrombie.jpeg"
         ],
-        "size": "G",
-        "soldOut": true
+        "listedAt": "2025-07-02T13:40:00Z"
     },
     {
-        "name": "[0207251345] Abercrombie",
+        "id": "0207251345",
+        "brand": "abercrombie",
+        "price": 159,
+        "sizes": [
+            {
+                "size": "GG",
+                "soldOut": true
+            }
+        ],
         "description": "Moleton",
-        "oldPrice": 0.0,
-        "price": 159.00,
         "images": [
             "images/man/sweatshirts/0207251345-abercrombie.jpeg"
         ],
-        "size": "GG",
-        "soldOut": true
+        "listedAt": "2025-07-02T13:45:00Z"
     },
     {
-        "name": "[0207251348] Adidas",
+        "id": "0207251348",
+        "brand": "adidas",
+        "price": 129,
+        "sizes": [
+            {
+                "size": "M"
+            }
+        ],
         "description": "Moleton",
-        "oldPrice": 0.0,
-        "price": 129.00,
         "images": [
             "images/man/sweatshirts/0207251348-adidas.jpeg"
         ],
-        "size": "M"
+        "listedAt": "2025-07-02T13:48:00Z"
     },
     {
-        "name": "[0207251336] Hugo Boss",
+        "id": "0207251336",
+        "brand": "hugo-boss",
+        "price": 159,
+        "sizes": [
+            {
+                "size": "GG",
+                "soldOut": true
+            }
+        ],
         "description": "Moleton, Cor: Cinza",
-        "oldPrice": 0.0,
-        "price": 159.00,
         "images": [
             "images/man/sweatshirts/0207251336-hugo-boss.jpeg"
         ],
-        "size": "GG",
-        "soldOut": true
+        "listedAt": "2025-07-02T13:36:00Z"
     },
     {
-        "name": "[0207251339] Louis Vuitton",
+        "id": "0207251339",
+        "brand": "louis-vuitton",
+        "price": 159,
+        "sizes": [
+            {
+                "size": "G"
+            }
+        ],
         "description": "Moleton",
-        "oldPrice": 0.0,
-        "price": 159.00,
         "images": [
             "images/man/sweatshirts/0207251339-louis-vuitton.jpeg"
         ],
-        "size": "G"
+        "listedAt": "2025-07-02T13:39:00Z"
     },
     {
-        "name": "[0207251347] Nike",
+        "id": "0207251347",
+        "brand": "nike",
+        "price": 129,
+        "sizes": [
+            {
+                "size": "M",
+                "soldOut": true
+            }
+        ],
         "description": "Moleton",
-        "oldPrice": 0.0,
-        "price": 129.00,
         "images": [
             "images/man/sweatshirts/0207251347-nike.jpeg"
         ],
-        "size": "M",
-        "soldOut": true
+        "listedAt": "2025-07-02T13:47:00Z"
     },
     {
-        "name": "[0806251801] Nike",
+        "id": "0806251801",
+        "brand": "nike",
+        "price": 139,
+        "sizes": [
+            {
+                "size": "GG"
+            }
+        ],
         "description": "Moleton, Cor: Azul Marinho",
-        "oldPrice": 0.0,
-        "price": 139.00,
         "images": [
             "images/man/sweatshirts/0806251801-nike.jpeg"
         ],
-        "size": "GG"
+        "listedAt": "2025-06-08T18:01:00Z"
     },
     {
-        "name": "[0806251800] Nike",
+        "id": "0806251800",
+        "brand": "nike",
+        "price": 139,
+        "sizes": [
+            {
+                "size": "G"
+            }
+        ],
         "description": "Moleton, Cor: Preta",
-        "oldPrice": 0.0,
-        "price": 139.00,
         "images": [
             "images/man/sweatshirts/0806251800-nike.jpeg"
         ],
-        "size": "G"
+        "listedAt": "2025-06-08T18:00:00Z"
     },
     {
-        "name": "[0806251802] Nike",
+        "id": "0806251802",
+        "brand": "nike",
+        "price": 139,
+        "sizes": [
+            {
+                "size": "GG"
+            }
+        ],
         "description": "Moleton, Cor: Cinza",
-        "oldPrice": 0.0,
-        "price": 139.00,
         "images": [
             "images/man/sweatshirts/0806251802-nike.jpeg"
         ],
-        "size": "GG"
+        "listedAt": "2025-06-08T18:02:00Z"
     },
     {
-        "name": "[0106250801] Nike",
+        "id": "0106250801",
+        "brand": "nike",
+        "price": 119,
+        "sizes": [
+            {
+                "size": "G"
+            }
+        ],
         "description": "Moleton, Cor: Marrom",
-        "oldPrice": 0.0,
-        "price": 119.00,
         "images": [
             "images/man/sweatshirts/0106250801-nike.jpeg"
         ],
-        "size": "G"
+        "listedAt": "2025-06-01T08:01:00Z"
     },
     {
-        "name": "[0106250802] J. H. Bao",
+        "id": "0106250802",
+        "brand": "unbranded",
+        "model": "J. H. Bao",
+        "price": 299,
+        "sizes": [
+            {
+                "size": "G5"
+            }
+        ],
         "description": "Couro Sintético, Cor: Marrom",
-        "oldPrice": 0.0,
-        "price": 299.00,
         "images": [
             "images/man/sweatshirts/0106250802-jhbao.jpeg"
         ],
-        "size": "G5"
+        "listedAt": "2025-06-01T08:02:00Z"
     },
     {
-        "name": "[0106250800]",
+        "id": "0106250800",
+        "brand": "unbranded",
+        "price": 299,
+        "sizes": [
+            {
+                "size": "P"
+            }
+        ],
         "description": "Blusa com touca e zíper, Cor: Cinza Claro",
-        "oldPrice": 0.0,
-        "price": 299.00,
         "images": [
             "images/man/sweatshirts/0106250800.jpeg"
         ],
-        "size": "P"
+        "listedAt": "2025-06-01T08:00:00Z"
     },
     {
-        "name": "[0207251338] Versace",
+        "id": "0207251338",
+        "brand": "versace",
+        "price": 159,
+        "sizes": [
+            {
+                "size": "M"
+            }
+        ],
         "description": "Moleton, Cor: Vermelha",
-        "oldPrice": 0.0,
-        "price": 159.00,
         "images": [
             "images/man/sweatshirts/0207251338-versace.jpeg"
         ],
-        "size": "M"
+        "listedAt": "2025-07-02T13:38:00Z"
     }
 ]

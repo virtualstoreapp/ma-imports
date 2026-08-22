@@ -1,0 +1,219 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Fixture catalog modal renders the modal with the expected markup 1`] = `
+"
+      <div id="modal-content">
+        <button id="modal-close">X</button>
+        <div id="modal-image-container" class="modal-image-container">
+          <picture>
+            <source id="modal-image-source" type="image/webp" srcset="images/fixtures/0101250900-alpha-front.webp">
+            <img id="modal-image" src="images/fixtures/0101250900-alpha-front.jpg" alt="" style="transform: scale(1);">
+          </picture>
+        </div>
+        <div id="modal-controls">
+          <button id="prev-image">&lt;</button>
+          <button id="zoom-out">-</button>
+          <button id="copy-product-id">ID</button>
+          <button id="zoom-in">+</button>
+          <button id="next-image">&gt;</button>
+          <button id="buy-product">Comprar</button>
+        </div>
+      </div>
+    "
+`;
+
+exports[`Fixture catalog renders the product grid with the expected markup 1`] = `
+"<li class="product-item" style="position: relative;">
+          <img src="images/fixtures/0501251300-epsilon.jpeg" alt="[0501251300] Fixture Epsilon" loading="lazy" decoding="async">
+          <div class="product-details">
+            <h3>[0501251300] Fixture Epsilon</h3>
+            
+            <span class="size">Tamanho: Tamanho único</span>
+            <span class="price">R$&nbsp;25,50</span>
+          </div>
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
+          <img src="images/fixtures/0401251200-delta.jpeg" alt="[0401251200] Fixture Delta" loading="lazy" decoding="async">
+          <div class="product-details">
+            <h3>[0401251200] Fixture Delta</h3>
+            <p class="description">Produto de fixture padrão</p>
+            <span class="size">Tamanho: GG</span>
+            <span class="price">R$&nbsp;75,00</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <img src="images/fixtures/0301251100-gamma.jpeg" alt="[0301251100] Fixture Gamma" loading="lazy" decoding="async">
+          <div class="product-details">
+            <h3>[0301251100] Fixture Gamma</h3>
+            <p class="description">Produto de fixture com imagem no schema legado</p>
+            <span class="size">Tamanho: M</span>
+            <span class="price">R$&nbsp;50,00</span>
+          </div>
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
+          <img src="images/fixtures/0201251000-beta.jpeg" alt="[0201251000] Fixture Beta" loading="lazy" decoding="async">
+          <div class="product-details">
+            <h3>[0201251000] Fixture Beta</h3>
+            
+            
+            <span class="old-price">R$&nbsp;150,00</span>
+             <span class="new-price">R$&nbsp;99,90</span>
+          </div>
+        </li><li class="product-item" style="position: relative;">
+          <picture>
+            <source srcset="images/fixtures/0101250900-alpha-front-thumb.webp" type="image/webp">
+            <img src="images/fixtures/0101250900-alpha-front-thumb.jpg" alt="[0101250900] Fixture Alpha" width="400" height="500" loading="lazy" decoding="async">
+          </picture>
+          <div class="product-details">
+            <h3>[0101250900] Fixture Alpha</h3>
+            <p class="description">Produto de fixture com media gerada pelo build</p>
+            <span class="size">Tamanho: G</span>
+            <span class="price">R$&nbsp;100,00</span>
+          </div>
+        </li>"
+`;
+
+exports[`Fixture catalog renders the site chrome 1`] = `
+"
+    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+    <ul id="nav-menu">
+      <li class="menu-item">
+        <button data-category="all">Início</button>
+      </li>
+      <li class="menu-item has-submenu">
+        <button data-category="fashion-category" aria-expanded="false">Moda</button>
+        <ul class="submenu">
+          <li class="menu-item has-submenu">
+            <button data-category="man-subcategory" aria-expanded="false">Masculino</button>
+            <ul class="submenu">
+              <li class="menu-item has-submenu">
+                <button data-category="accessories-man-subcategory" aria-expanded="false">Acessórios</button>
+                <ul class="submenu">
+                  <li class="menu-item">
+                    <button data-category="caps-man">Bonés</button>
+                    <button data-category="wallets-man">Carteiras</button>
+                    <button data-category="belts-man">Cintos</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="shoes-man-subcategory" aria-expanded="false">Calçados</button>
+                <ul class="submenu">
+                  <li class="menu-item">
+                    <button data-category="slippers-man">Chinelos</button>
+                    <button data-category="socks-man">Meias</button>
+                    <button data-category="shoes-man">Tênis</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-man-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu">
+                  <li class="menu-item has-submenu">
+                    <button data-category="shorts-man-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="shorts-basic-man">Básica</button>
+                        <button data-category="shorts-jeans-man">Jeans</button>
+                        <button data-category="shorts-sweatshorts-man">Moletom</button>
+                        <button data-category="shorts-tactel-man">Tactel</button>
+                      </li>
+                    </ul>
+                    <button data-category="sweatshirts-man-subcategory" aria-expanded="false">Blusas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-man">Blusas</button>
+                      </li>
+                    </ul>
+                    <button data-category="pants-man-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-man">Jeans</button>
+                        <button data-category="pants-sweatpants-man">Moletom</button>
+                      </li>
+                    </ul>
+                    <button data-category="tshirts-man-subcategory" aria-expanded="false">Camisetas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="tshirts-casual-man">Casuais</button>
+                        <button data-category="tshirts-dryfit-man">Dry Fit</button>
+                        <button data-category="tshirts-polo-man">Polo</button>
+                        <button data-category="dress-shirts-man">Sociais</button>
+                      </li>
+                    </ul>
+                    <button data-category="underwear-man" aria-expanded="false">Cuecas</button>
+                    <button data-category="tank-top-man-subcategory" aria-expanded="false">Regatas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="tank-top-casual-man">Casuais</button>
+                        <button data-category="tank-top-dryfit-man">Dry Fit</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item has-submenu">
+            <button data-category="woman-subcategory" aria-expanded="false">Feminino</button>
+            <ul class="submenu">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-woman-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sweatshirts-woman-subcategory" aria-expanded="false">Blusas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-woman">Blusas</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="shorts-woman-subcategory" aria-expanded="false">Bermudas</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="shorts-jeans-woman">Jeans</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="pants-woman-subcategory" aria-expanded="false">Calças</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="pants-jeans-woman">Jeans</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item has-submenu">
+                    <button data-category="fitness-woman-subcategory" aria-expanded="false">Fitness</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="fitness-legging-woman">Legging</button>
+                        <button data-category="fitness-top-woman">Top</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item has-submenu">
+            <button data-category="children-subcategory" aria-expanded="false">Infantil</button>
+            <ul class="submenu">
+              <li class="menu-item has-submenu">
+                <button data-category="clothing-children-subcategory" aria-expanded="false">Roupas</button>
+                <ul class="submenu">
+                  <li class="menu-item has-submenu">
+                    <button data-category="sets-children-subcategory" aria-expanded="false">Conjuntos</button>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <button data-category="sweatshirts-set-children">Moletom</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  "
+`;

@@ -1,143 +1,215 @@
 [
     {
-        "name": "[0304251758] Nike",
+        "id": "0304251758",
+        "brand": "nike",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "P"
+            }
+        ],
         "description": "Tactel - Preta",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/shorts/tactel/nike/0304251758-nike.jpeg"
         ],
-        "size": "P"
+        "listedAt": "2025-04-03T17:58:00Z"
     },
     {
-        "name": "[0304251759] Nike",
+        "id": "0304251759",
+        "brand": "nike",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "P"
+            }
+        ],
         "description": "Tactel - Preta",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/shorts/tactel/nike/0304251759-nike.jpeg"
         ],
-        "size": "P"
+        "listedAt": "2025-04-03T17:59:00Z"
     },
     {
-        "name": "[0304251800] Nike",
+        "id": "0304251800",
+        "brand": "nike",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "P"
+            }
+        ],
         "description": "Tactel - Azul Marinho",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/shorts/tactel/nike/0304251800-nike.jpeg"
         ],
-        "size": "P"
+        "listedAt": "2025-04-03T18:00:00Z"
     },
     {
-        "name": "[0304251802] Nike",
+        "id": "0304251802",
+        "brand": "nike",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "P"
+            }
+        ],
         "description": "Tactel",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/shorts/tactel/nike/0304251802-nike.jpeg"
         ],
-        "size": "P"
+        "listedAt": "2025-04-03T18:02:00Z"
     },
     {
-        "name": "[0304251801] Nike",
+        "id": "0304251801",
+        "brand": "nike",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "M"
+            }
+        ],
         "description": "Tactel - Preta",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/shorts/tactel/nike/0304251801-nike.jpeg"
         ],
-        "size": "M"
+        "listedAt": "2025-04-03T18:01:00Z"
     },
     {
-        "name": "[0304251807] Nike",
+        "id": "0304251807",
+        "brand": "nike",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "M",
+                "soldOut": true
+            }
+        ],
         "description": "Tactel - Vermelha",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/shorts/tactel/nike/0304251807-nike.jpeg"
         ],
-        "size": "M",
-        "soldOut": true
+        "listedAt": "2025-04-03T18:07:00Z"
     },
     {
-        "name": "[0304251808] Nike",
+        "id": "0304251808",
+        "brand": "nike",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "M"
+            }
+        ],
         "description": "Tactel - Azul Marinho",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/shorts/tactel/nike/0304251808-nike.jpeg"
         ],
-        "size": "M"
+        "listedAt": "2025-04-03T18:08:00Z"
     },
     {
-        "name": "[0304251803] Nike",
+        "id": "0304251803",
+        "brand": "nike",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "M"
+            }
+        ],
         "description": "Tactel - Preta",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/shorts/tactel/nike/0304251803-nike.jpeg"
         ],
-        "size": "M"
+        "listedAt": "2025-04-03T18:03:00Z"
     },
     {
-        "name": "[0304251810] Nike",
+        "id": "0304251810",
+        "brand": "nike",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "M"
+            }
+        ],
         "description": "Tactel - Preta",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/shorts/tactel/nike/0304251810-nike.jpeg"
         ],
-        "size": "M"
+        "listedAt": "2025-04-03T18:10:00Z"
     },
     {
-        "name": "[0304251804] Nike",
+        "id": "0304251804",
+        "brand": "nike",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "G"
+            }
+        ],
         "description": "Tactel - Vermelha",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/shorts/tactel/nike/0304251804-nike.jpeg"
         ],
-        "size": "G"
+        "listedAt": "2025-04-03T18:04:00Z"
     },
     {
-        "name": "[0304251805] Nike Air",
+        "id": "0304251805",
+        "brand": "nike",
+        "model": "Air",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "G"
+            }
+        ],
         "description": "Tactel - Preta",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/shorts/tactel/nike/0304251805-nike-air.jpeg"
         ],
-        "size": "G"
+        "listedAt": "2025-04-03T18:05:00Z"
     },
     {
-        "name": "[0304251806] Nike Air",
+        "id": "0304251806",
+        "brand": "nike",
+        "model": "Air",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "G"
+            }
+        ],
         "description": "Tactel - Azul Marinho",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/shorts/tactel/nike/0304251806-nike-air.jpeg"
         ],
-        "size": "G"
+        "listedAt": "2025-04-03T18:06:00Z"
     },
     {
-        "name": "[0304251809] Nike",
+        "id": "0304251809",
+        "brand": "nike",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "GG"
+            }
+        ],
         "description": "Tactel - Preta",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/shorts/tactel/nike/0304251809-nike.jpeg"
         ],
-        "size": "GG"
+        "listedAt": "2025-04-03T18:09:00Z"
     },
     {
-        "name": "[0304251757] Nike",
+        "id": "0304251757",
+        "brand": "nike",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "GG"
+            }
+        ],
         "description": "Tactel - Azul Marinho",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/shorts/tactel/nike/0304251757-nike.jpeg"
         ],
-        "size": "GG"
+        "listedAt": "2025-04-03T17:57:00Z"
     }
 ]

@@ -1,22 +1,33 @@
 [
     {
-        "name": "[0507251850] Star",
-        "description": "Jeans",
-        "oldPrice": 0.0,
-        "price": 79.90,
-        "images": [
-            "images/man/pants/jeans/04507251850-star.jpeg"
+        "id": "0507251850",
+        "brand": "unbranded",
+        "model": "Star",
+        "price": 79.9,
+        "sizes": [
+            {
+                "size": "42"
+            }
         ],
-        "size": "42"
+        "description": "Jeans",
+        "images": [
+            "images/man/pants/jeans/0507251850-star.jpeg"
+        ],
+        "listedAt": "2025-07-05T18:50:00Z"
     },
     {
-        "name": "[0507251858] Diesel",
-        "description": "Jeans",
-        "oldPrice": 0.0,
-        "price": 179.00,
-        "images": [
-            "images/man/pants/jeans/04507251858-diesel.jpeg"
+        "id": "0507251858",
+        "brand": "diesel",
+        "price": 179,
+        "sizes": [
+            {
+                "size": "48"
+            }
         ],
-        "size": "48"
+        "description": "Jeans",
+        "images": [
+            "images/man/pants/jeans/0507251858-diesel.jpeg"
+        ],
+        "listedAt": "2025-07-05T18:58:00Z"
     }
 ]

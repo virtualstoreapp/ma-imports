@@ -1,12 +1,17 @@
 [
     {
-        "name": "[2709252000]",
+        "id": "2709252000",
+        "brand": "unbranded",
+        "price": 39,
+        "sizes": [
+            {
+                "size": "G"
+            }
+        ],
         "description": "Top",
-        "oldPrice": 0.0,
-        "price": 39.00,
         "images": [
             "images/woman/fitness/top/2709252000.jpeg"
         ],
-        "size": "G"
+        "listedAt": "2025-09-27T20:00:00Z"
     }
 ]

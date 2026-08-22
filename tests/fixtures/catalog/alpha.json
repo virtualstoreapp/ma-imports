@@ -1,0 +1,53 @@
+[
+  {
+    "name": "[0301251100] Fixture Gamma",
+    "description": "Produto de fixture com imagem no schema legado",
+    "oldPrice": 0.0,
+    "price": 50.0,
+    "size": "M",
+    "soldOut": true,
+    "image": "images/fixtures/0301251100-gamma.jpeg"
+  },
+  {
+    "name": "[0201251000] Fixture Beta",
+    "oldPrice": 150.0,
+    "price": 99.9,
+    "size": "N/A",
+    "images": ["images/fixtures/0201251000-beta.jpeg"]
+  },
+  {
+    "name": "[0101250900] Fixture Alpha",
+    "description": "Produto de fixture com media gerada pelo build",
+    "oldPrice": 0.0,
+    "price": 100.0,
+    "size": "G",
+    "images": [
+      "images/fixtures/0101250900-alpha-front.jpeg",
+      "images/fixtures/0101250900-alpha-back.jpeg"
+    ],
+    "media": [
+      {
+        "src": "images/fixtures/0101250900-alpha-front.jpeg",
+        "webp": "images/fixtures/0101250900-alpha-front.webp",
+        "full": "images/fixtures/0101250900-alpha-front.jpg",
+        "thumb": "images/fixtures/0101250900-alpha-front-thumb.webp",
+        "thumbFallback": "images/fixtures/0101250900-alpha-front-thumb.jpg",
+        "width": 1200,
+        "height": 1500,
+        "thumbWidth": 400,
+        "thumbHeight": 500
+      },
+      {
+        "src": "images/fixtures/0101250900-alpha-back.jpeg",
+        "webp": "images/fixtures/0101250900-alpha-back.webp",
+        "full": "images/fixtures/0101250900-alpha-back.jpg",
+        "thumb": "images/fixtures/0101250900-alpha-back-thumb.webp",
+        "thumbFallback": "images/fixtures/0101250900-alpha-back-thumb.jpg",
+        "width": 1200,
+        "height": 1500,
+        "thumbWidth": 400,
+        "thumbHeight": 500
+      }
+    ]
+  }
+]

@@ -1,0 +1,113 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "categories.schema.json",
+  "title": "Category registry",
+  "description": "catalog/categories.json — the single source of truth for category identity. Before this existed, a category was declared in three places (products/*.json filenames, CATEGORIES_DICT in scripts.js, data-category in index.html) and only two of the three were cross-checked.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["nav"],
+  "properties": {
+    "$comment": { "type": "string" },
+    "aliases": {
+      "type": "object",
+      "description": "Retired slug -> current slug. Keeps an existing #hash deep link resolving after a rename.",
+      "additionalProperties": { "type": "string", "pattern": "^[a-z0-9-]+$" }
+    },
+    "nav": {
+      "type": "array",
+      "description": "The navigation tree, in display order.",
+      "minItems": 1,
+      "items": { "$ref": "#/definitions/node" }
+    }
+  },
+
+  "definitions": {
+    "slug": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+
+    "node": {
+      "type": "object",
+      "required": ["slug", "type"],
+      "properties": {
+        "slug": { "$ref": "#/definitions/slug" },
+        "type": { "enum": ["generated", "group", "leaf"] }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "type": { "const": "leaf" } } },
+          "then": { "$ref": "#/definitions/leaf" }
+        },
+        {
+          "if": { "properties": { "type": { "const": "group" } } },
+          "then": { "$ref": "#/definitions/group" }
+        },
+        {
+          "if": { "properties": { "type": { "const": "generated" } } },
+          "then": { "$ref": "#/definitions/generated" }
+        }
+      ]
+    },
+
+    "leaf": {
+      "type": "object",
+      "description": "A selectable category backed by exactly one products/{slug}.json file.",
+      "additionalProperties": false,
+      "required": ["slug", "type", "label", "navLabel", "gender", "category", "imageDir", "usesBrandFolders"],
+      "properties": {
+        "slug": { "$ref": "#/definitions/slug" },
+        "type": { "const": "leaf" },
+        "label": {
+          "type": "string",
+          "description": "Heading text, also used in the WhatsApp message. What CATEGORIES_DICT used to hold.",
+          "minLength": 1
+        },
+        "navLabel": {
+          "type": "string",
+          "description": "Nav button text. Shorter than label, because the nav supplies context — 'Bonés' under Masculino/Acessórios, versus the 'Bonés Masculino' heading.",
+          "minLength": 1
+        },
+        "gender": { "enum": ["man", "woman", "children"] },
+        "category": { "$ref": "#/definitions/slug" },
+        "subcategory": { "$ref": "#/definitions/slug" },
+        "imageDir": {
+          "type": "string",
+          "description": "Directory holding this category's images. Derived from gender/category/subcategory today, but stated explicitly so the tree can be reorganised without a schema change.",
+          "pattern": "^images/[a-z0-9/-]+$"
+        },
+        "usesBrandFolders": {
+          "type": "boolean",
+          "description": "When true, a branded product's image sits one level deeper, in a folder named for its brand slug. Brandless products always sit directly in imageDir — that holds for all 6 brandless products today, and is what makes shorts-jeans-man's apparently mixed shape regular."
+        }
+      }
+    },
+
+    "group": {
+      "type": "object",
+      "description": "A nav-only node. Must never have a products file: clicking it toggles its submenu rather than rendering.",
+      "additionalProperties": false,
+      "required": ["slug", "type", "navLabel", "children"],
+      "properties": {
+        "slug": { "$ref": "#/definitions/slug" },
+        "type": { "const": "group" },
+        "navLabel": { "type": "string", "minLength": 1 },
+        "children": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/definitions/node" }
+        }
+      }
+    },
+
+    "generated": {
+      "type": "object",
+      "description": "A category whose contents the build generates rather than reading from a hand-edited file — currently only `all`.",
+      "additionalProperties": false,
+      "required": ["slug", "type", "label", "navLabel"],
+      "properties": {
+        "slug": { "$ref": "#/definitions/slug" },
+        "type": { "const": "generated" },
+        "label": { "type": "string", "minLength": 1 },
+        "navLabel": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

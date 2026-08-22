@@ -1,105 +1,144 @@
 [
     {
-        "name": "[2307251157] Gucci",
+        "id": "2307251157",
+        "brand": "gucci",
+        "price": 89.9,
+        "sizes": [],
+        "sizeNote": "Tamanho único",
         "description": "Cinto Social Masculino, Material: Couro",
-        "oldPrice": 0.0,
-        "price": 89.90,
         "images": [
             "images/man/belts/2307251157-gucci-front.jpeg",
             "images/man/belts/2307251157-gucci-back.jpeg"
         ],
-        "size": "Tamanho único"
+        "listedAt": "2025-07-23T11:57:00Z"
     },
     {
-        "name": "[2307251158] Louis Vuitton",
+        "id": "2307251158",
+        "brand": "louis-vuitton",
+        "price": 89.9,
+        "sizes": [],
+        "sizeNote": "Tamanho único",
         "description": "Cinto Social Masculino, Material: Couro",
-        "oldPrice": 0.0,
-        "price": 89.90,
         "images": [
             "images/man/belts/2307251158-louis-vuitton-front.jpeg",
             "images/man/belts/2307251158-louis-vuitton-back.jpeg"
         ],
-        "size": "Tamanho único"
+        "listedAt": "2025-07-23T11:58:00Z"
     },
     {
-        "name": "[2307251156] Adidas",
+        "id": "2307251156",
+        "brand": "adidas",
+        "price": 34.9,
+        "sizes": [
+            {
+                "size": "GG"
+            }
+        ],
         "description": "Cinto Elástico Masculino, Cor: Marrom",
-        "oldPrice": 0.0,
-        "price": 34.90,
         "images": [
             "images/man/belts/2307251156-adidas-front.jpeg",
             "images/man/belts/2307251156-adidas-back.jpeg"
         ],
-        "size": "GG"
+        "listedAt": "2025-07-23T11:56:00Z"
     },
     {
-        "name": "[2307251150] Lacoste",
+        "id": "2307251150",
+        "brand": "lacoste",
+        "price": 34.9,
+        "sizes": [
+            {
+                "size": "M",
+                "soldOut": true
+            }
+        ],
         "description": "Cinto Elástico Masculino, Cor: Azul Marinho e Bege",
-        "oldPrice": 0.0,
-        "price": 34.90,
         "images": [
             "images/man/belts/2307251150-lacoste-front.jpeg",
             "images/man/belts/2307251150-lacoste-back.jpeg"
         ],
-        "size": "M",
-        "soldOut": true
+        "listedAt": "2025-07-23T11:50:00Z"
     },
     {
-        "name": "[2307251152] Nike",
+        "id": "2307251152",
+        "brand": "nike",
+        "price": 34.9,
+        "sizes": [
+            {
+                "size": "M"
+            }
+        ],
         "description": "Cinto Elástico Masculino, Cor: Azul Marinho e Bege",
-        "oldPrice": 0.0,
-        "price": 34.90,
         "images": [
             "images/man/belts/2307251152-nike-front.jpeg",
             "images/man/belts/2307251152-nike-back.jpeg"
         ],
-        "size": "M"
+        "listedAt": "2025-07-23T11:52:00Z"
     },
     {
-        "name": "[2307251154] Nike",
+        "id": "2307251154",
+        "brand": "nike",
+        "price": 34.9,
+        "sizes": [
+            {
+                "size": "M"
+            }
+        ],
         "description": "Cinto Elástico Masculino, Cor: Azul Marinho com Listras",
-        "oldPrice": 0.0,
-        "price": 34.90,
         "images": [
             "images/man/belts/2307251154-nike-front.jpeg",
             "images/man/belts/2307251154-nike-back.jpeg"
         ],
-        "size": "M"
+        "listedAt": "2025-07-23T11:54:00Z"
     },
     {
-        "name": "[2307251151] Nike",
+        "id": "2307251151",
+        "brand": "nike",
+        "price": 34.9,
+        "sizes": [
+            {
+                "size": "G",
+                "soldOut": true
+            }
+        ],
         "description": "Cinto Elástico Masculino, Cor: Verde Militar",
-        "oldPrice": 0.0,
-        "price": 34.90,
         "images": [
             "images/man/belts/2307251151-nike-front.jpeg",
             "images/man/belts/2307251151-nike-back.jpeg"
         ],
-        "size": "G",
-        "soldOut": true
+        "listedAt": "2025-07-23T11:51:00Z"
     },
     {
-        "name": "[2307251153] Nike",
+        "id": "2307251153",
+        "brand": "nike",
+        "price": 34.9,
+        "sizes": [
+            {
+                "size": "GG",
+                "soldOut": true
+            }
+        ],
         "description": "Cinto Elástico Masculino, Cor: Preto",
-        "oldPrice": 0.0,
-        "price": 34.90,
         "images": [
             "images/man/belts/2307251153-nike-front.jpeg",
             "images/man/belts/2307251153-nike-back.jpeg"
         ],
-        "size": "GG",
-        "soldOut": true
+        "listedAt": "2025-07-23T11:53:00Z"
     },
     {
-        "name": "[2307251155] Quicksilver",
+        "id": "2307251155",
+        "brand": "quiksilver",
+        "price": 34.9,
+        "sizes": [
+            {
+                "size": "M",
+                "soldOut": true
+            }
+        ],
         "description": "Cinto Elástico Masculino, Cor: Azul Marinho",
-        "oldPrice": 0.0,
-        "price": 34.90,
         "images": [
             "images/man/belts/2307251155-quicksilver-front.jpeg",
             "images/man/belts/2307251155-quicksilver-back.jpeg"
         ],
-        "size": "M",
-        "soldOut": true
+        "listedAt": "2025-07-23T11:55:00Z"
     }
 ]

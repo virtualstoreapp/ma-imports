@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "brands.schema.json",
+  "title": "Brand registry",
+  "description": "catalog/brands.json — canonical brand slugs and display labels. Exists because the catalog currently carries 55 distinct name-tails for roughly 30 brands, model names having been fused into the brand string ('Nike Shox Neymar'), and because an authoring form needs a dropdown source.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["brands"],
+  "properties": {
+    "$comment": { "type": "string" },
+    "brands": {
+      "type": "object",
+      "description": "Slug -> brand. The slug is the image-folder name, so it is lowercase and hyphenated.",
+      "minProperties": 1,
+      "propertyNames": { "pattern": "^[a-z0-9-]+$" },
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["label"],
+        "properties": {
+          "label": {
+            "type": "string",
+            "description": "Display name, as it should appear to a customer. May legitimately differ from the slug where the on-disk folder preserves a misspelling — 'under-armor' labels as 'Under Armour'. Empty only for 'unbranded', the sentinel for a product with no brand, whose rendered name is its model alone."
+          }
+        }
+      }
+    }
+  }
+}

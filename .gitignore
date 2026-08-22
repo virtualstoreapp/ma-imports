@@ -28,3 +28,7 @@ Thumbs.db
 .aiox-core/local/
 .claude/settings.local.json
 .aiox/install-log.txt
+
+# Image derivative fingerprints. Rebuilt by the build; cached in CI alongside
+# dist/images so unchanged images are not re-encoded.
+.image-cache/

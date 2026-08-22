@@ -1,464 +1,685 @@
 [
     {
-        "name": "[0304251751] Aramis",
+        "id": "0304251751",
+        "brand": "aramis",
+        "price": 79.9,
+        "sizes": [
+            {
+                "size": "GG"
+            }
+        ],
         "description": "Algodão Peruano",
-        "oldPrice": 0.0,
-        "price": 79.90,
         "images": [
             "images/man/tshirts/casual/aramis/0304251751-aramis.jpeg"
         ],
-        "size": "GG"
+        "listedAt": "2025-04-03T17:51:00Z"
     },
     {
-        "name": "[1707251459] Armani",
+        "id": "1707251459",
+        "brand": "armani",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "M"
+            }
+        ],
         "description": "Camiseta Casual Masculina, 100% Algodão",
-        "oldPrice": 0.0,
-        "price": 39.90,
         "images": [
             "images/man/tshirts/casual/armani/1707251459-armani.jpeg"
         ],
-        "size": "M"
+        "listedAt": "2025-07-17T14:59:00Z"
     },
     {
-        "name": "[2802251105] Balmain",
+        "id": "2802251105",
+        "brand": "balmain",
+        "price": 89.9,
+        "sizes": [
+            {
+                "size": "G"
+            }
+        ],
         "description": "Algodão Italiano Oversized",
-        "oldPrice": 0.0,
-        "price": 89.90,
         "images": [
             "images/man/tshirts/casual/balmain/2802251105-balmain.jpeg"
         ],
-        "size": "G"
+        "listedAt": "2025-02-28T11:05:00Z"
     },
     {
-        "name": "[2702251016] Burberry",
+        "id": "2702251016",
+        "brand": "burberry",
+        "price": 79.9,
+        "sizes": [
+            {
+                "size": "M",
+                "soldOut": true
+            }
+        ],
         "description": "Algodão Peruano",
-        "oldPrice": 0.0,
-        "price": 79.90,
         "images": [
             "images/man/tshirts/casual/burberry/2702251016-burberry.jpeg"
         ],
-        "size": "M",
-        "soldOut": true
+        "listedAt": "2025-02-27T10:16:00Z"
     },
     {
-        "name": "[2702250957] Dolce & Gabbana",
+        "id": "2702250957",
+        "brand": "dolce-gabbana",
+        "price": 79.9,
+        "sizes": [
+            {
+                "size": "GG"
+            }
+        ],
         "description": "Algodão Peruano",
-        "oldPrice": 0.0,
-        "price": 79.90,
         "images": [
             "images/man/tshirts/casual/dolce-gabbana/2702250957-dolce-gabbana.jpeg"
         ],
-        "size": "GG"
+        "listedAt": "2025-02-27T09:57:00Z"
     },
     {
-        "name": "[2702251001] Emporio Armani",
+        "id": "2702251001",
+        "brand": "emporio-armani",
+        "price": 79.9,
+        "sizes": [
+            {
+                "size": "M",
+                "soldOut": true
+            }
+        ],
         "description": "Algodão Peruano",
-        "oldPrice": 0.0,
-        "price": 79.90,
         "images": [
             "images/man/tshirts/casual/emporio-armani/2702251001-emporio-armani.jpeg"
         ],
-        "size": "M",
-        "soldOut": true
+        "listedAt": "2025-02-27T10:01:00Z"
     },
     {
-        "name": "[0103250820] Emporio Armani",
+        "id": "0103250820",
+        "brand": "emporio-armani",
+        "price": 89.9,
+        "sizes": [
+            {
+                "size": "M"
+            }
+        ],
         "description": "Algodão Italiano Oversized",
-        "oldPrice": 0.0,
-        "price": 89.90,
         "images": [
             "images/man/tshirts/casual/emporio-armani/0103250820-emporio-armani.jpeg"
         ],
-        "size": "M"
+        "listedAt": "2025-03-01T08:20:00Z"
     },
     {
-        "name": "[1403251214] Emporio Armani",
+        "id": "1403251214",
+        "brand": "emporio-armani",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "GG"
+            }
+        ],
         "description": "100% Algodão",
-        "oldPrice": 0.0,
-        "price": 39.90,
         "images": [
             "images/man/tshirts/casual/emporio-armani/1403251214-emporio-armani.jpeg"
         ],
-        "size": "GG"
+        "listedAt": "2025-03-14T12:14:00Z"
     },
     {
-        "name": "[1503250631] Gucci",
+        "id": "1503250631",
+        "brand": "gucci",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "P"
+            }
+        ],
         "description": "100% Algodão",
-        "oldPrice": 0.0,
-        "price": 39.90,
         "images": [
             "images/man/tshirts/casual/gucci/1503250631-gucci.jpeg"
         ],
-        "size": "P"
+        "listedAt": "2025-03-15T06:31:00Z"
     },
     {
-        "name": "[1403251216] Gucci",
+        "id": "1403251216",
+        "brand": "gucci",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "GG"
+            }
+        ],
         "description": "100% Algodão",
-        "oldPrice": 0.0,
-        "price": 39.90,
         "images": [
             "images/man/tshirts/casual/gucci/1403251216-gucci.jpeg"
         ],
-        "size": "GG"
+        "listedAt": "2025-03-14T12:16:00Z"
     },
     {
-        "name": "[2910251954] Gucci",
-        "description": "",
-        "oldPrice": 0.0,
-        "price": 39.90,
+        "id": "2910251954",
+        "brand": "gucci",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "GG"
+            }
+        ],
         "images": [
             "images/man/tshirts/casual/gucci/2910251954-gucci.jpeg"
         ],
-        "size": "GG"
+        "listedAt": "2025-10-29T19:54:00Z"
     },
     {
-        "name": "[2810251230] Hang Loose",
-        "description": "",
-        "oldPrice": 0.0,
-        "price": 39.90,
+        "id": "2810251230",
+        "brand": "hang-loose",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "M"
+            }
+        ],
         "images": [
             "images/man/tshirts/casual/hang-loose/2810251230-hang-loose.jpeg"
         ],
-        "size": "M"
+        "listedAt": "2025-10-28T12:30:00Z"
     },
     {
-        "name": "[0903251012] Hugo Boss",
+        "id": "0903251012",
+        "brand": "hugo-boss",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "P",
+                "soldOut": true
+            }
+        ],
         "description": "100% Algodão Penteado",
-        "oldPrice": 0.0,
-        "price": 39.90,
         "images": [
             "images/man/tshirts/casual/hugo-boss/0903251012-hugo-boss.jpeg"
         ],
-        "size": "P",
-        "soldOut": true
+        "listedAt": "2025-03-09T10:12:00Z"
     },
     {
-        "name": "[1503250633] Hugo Boss",
+        "id": "1503250633",
+        "brand": "hugo-boss",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "P",
+                "soldOut": true
+            }
+        ],
         "description": "100% Algodão",
-        "oldPrice": 0.0,
-        "price": 39.90,
         "images": [
             "images/man/tshirts/casual/hugo-boss/1503250633-hugo-boss.jpeg"
         ],
-        "size": "P",
-        "soldOut": true
+        "listedAt": "2025-03-15T06:33:00Z"
     },
     {
-        "name": "[0103250815] Hugo Boss",
+        "id": "0103250815",
+        "brand": "hugo-boss",
+        "price": 79.9,
+        "sizes": [
+            {
+                "size": "P",
+                "soldOut": true
+            }
+        ],
         "description": "Algodão Peruano",
-        "oldPrice": 0.0,
-        "price": 79.90,
         "images": [
             "images/man/tshirts/casual/hugo-boss/0103250815-hugo-boss.jpeg"
         ],
-        "size": "P",
-        "soldOut": true
+        "listedAt": "2025-03-01T08:15:00Z"
     },
     {
-        "name": "[2910251950] Hugo Boss",
-        "description": "",
-        "oldPrice": 0.0,
-        "price": 39.90,
+        "id": "2910251950",
+        "brand": "hugo-boss",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "M"
+            }
+        ],
         "images": [
             "images/man/tshirts/casual/hugo-boss/2910251950-hugo-boss.jpeg"
         ],
-        "size": "M"
+        "listedAt": "2025-10-29T19:50:00Z"
     },
     {
-        "name": "[0103250810] Hugo Boss",
+        "id": "0103250810",
+        "brand": "hugo-boss",
+        "price": 89.9,
+        "sizes": [
+            {
+                "size": "GG",
+                "soldOut": true
+            }
+        ],
         "description": "Algodão Italiano Oversized",
-        "oldPrice": 0.0,
-        "price": 89.90,
         "images": [
             "images/man/tshirts/casual/hugo-boss/0103250810-hugo-boss.jpeg"
         ],
-        "size": "GG",
-        "soldOut": true
+        "listedAt": "2025-03-01T08:10:00Z"
     },
     {
-        "name": "[0803251044] Hurley",
+        "id": "0803251044",
+        "brand": "hurley",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "GG"
+            }
+        ],
         "description": "100% Algodão Penteado",
-        "oldPrice": 0.0,
-        "price": 39.90,
         "images": [
             "images/man/tshirts/casual/hurley/0803251044-hurley.jpeg"
         ],
-        "size": "GG"
+        "listedAt": "2025-03-08T10:44:00Z"
     },
     {
-        "name": "[0803251046] Hurley",
+        "id": "0803251046",
+        "brand": "hurley",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "GG"
+            }
+        ],
         "description": "100% Algodão Penteado",
-        "oldPrice": 0.0,
-        "price": 39.90,
         "images": [
             "images/man/tshirts/casual/hurley/0803251046-hurley.jpeg"
         ],
-        "size": "GG"
+        "listedAt": "2025-03-08T10:46:00Z"
     },
     {
-        "name": "[1403251212] Lacoste",
+        "id": "1403251212",
+        "brand": "lacoste",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "P"
+            }
+        ],
         "description": "100% Algodão",
-        "oldPrice": 0.0,
-        "price": 39.90,
         "images": [
             "images/man/tshirts/casual/lacoste/1403251212-lacoste.jpeg"
         ],
-        "size": "P"
+        "listedAt": "2025-03-14T12:12:00Z"
     },
     {
-        "name": "[1403251211] Lacoste",
+        "id": "1403251211",
+        "brand": "lacoste",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "P"
+            }
+        ],
         "description": "100% Algodão",
-        "oldPrice": 0.0,
-        "price": 39.90,
         "images": [
             "images/man/tshirts/casual/lacoste/1403251211-lacoste.jpeg"
         ],
-        "size": "P"
+        "listedAt": "2025-03-14T12:11:00Z"
     },
     {
-        "name": "[1503250630] Lacoste",
+        "id": "1503250630",
+        "brand": "lacoste",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "P"
+            }
+        ],
         "description": "100% Algodão",
-        "oldPrice": 0.0,
-        "price": 39.90,
         "images": [
             "images/man/tshirts/casual/lacoste/1503250630-lacoste.jpeg"
         ],
-        "size": "P"
+        "listedAt": "2025-03-15T06:30:00Z"
     },
     {
-        "name": "[1403251109] Lacoste",
+        "id": "1403251109",
+        "brand": "lacoste",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "GG"
+            }
+        ],
         "description": "100% Algodão",
-        "oldPrice": 0.0,
-        "price": 39.90,
         "images": [
             "images/man/tshirts/casual/lacoste/1403251109-lacoste.jpeg"
         ],
-        "size": "GG"
+        "listedAt": "2025-03-14T11:09:00Z"
     },
     {
-        "name": "[2802251130] Louis Vuitton",
+        "id": "2802251130",
+        "brand": "louis-vuitton",
+        "price": 89.9,
+        "sizes": [
+            {
+                "size": "M"
+            }
+        ],
         "description": "Algodão Italiano Oversized",
-        "oldPrice": 0.0,
-        "price": 89.90,
         "images": [
             "images/man/tshirts/casual/louis-vuitton/2802251130-louis-vuitton.jpeg"
         ],
-        "size": "M"
+        "listedAt": "2025-02-28T11:30:00Z"
     },
     {
-        "name": "[1007252253] Louis Vuitton",
+        "id": "1007252253",
+        "brand": "louis-vuitton",
+        "price": 79.9,
+        "sizes": [
+            {
+                "size": "GG"
+            }
+        ],
         "description": "Algodão Peruano",
-        "oldPrice": 0.0,
-        "price": 79.90,
         "images": [
             "images/man/tshirts/casual/louis-vuitton/1007252253-louis-vuitton.jpeg"
         ],
-        "size": "GG"
+        "listedAt": "2025-07-10T22:53:00Z"
     },
     {
-        "name": "[2702250956] Louis Vuitton",
+        "id": "2702250956",
+        "brand": "louis-vuitton",
+        "price": 89.9,
+        "sizes": [
+            {
+                "size": "GG",
+                "soldOut": true
+            }
+        ],
         "description": "Algodão Italiano Oversized",
-        "oldPrice": 0.0,
-        "price": 89.90,
         "images": [
             "images/man/tshirts/casual/louis-vuitton/2702250956-louis-vuitton.jpeg"
         ],
-        "size": "GG",
-        "soldOut": true
+        "listedAt": "2025-02-27T09:56:00Z"
     },
     {
-        "name": "[0803251049] Nike",
+        "id": "0803251049",
+        "brand": "nike",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "P",
+                "soldOut": true
+            }
+        ],
         "description": "100% Algodão Penteado",
-        "oldPrice": 0.0,
-        "price": 39.90,
         "images": [
             "images/man/tshirts/casual/nike/0803251049-nike.jpeg"
         ],
-        "size": "P",
-        "soldOut": true
+        "listedAt": "2025-03-08T10:49:00Z"
     },
     {
-        "name": "[1007251715] Nike",
+        "id": "1007251715",
+        "brand": "nike",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "M"
+            }
+        ],
         "description": "100% Algodão Penteado",
-        "oldPrice": 0.0,
-        "price": 39.90,
         "images": [
             "images/man/tshirts/casual/nike/1007251715-nike.jpeg"
         ],
-        "size": "M"
+        "listedAt": "2025-07-10T17:15:00Z"
     },
     {
-        "name": "[1007251717] Nike",
+        "id": "1007251717",
+        "brand": "nike",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "M"
+            }
+        ],
         "description": "100% Algodão Penteado",
-        "oldPrice": 0.0,
-        "price": 39.90,
         "images": [
             "images/man/tshirts/casual/nike/1007251717-nike.jpeg"
         ],
-        "size": "M"
+        "listedAt": "2025-07-10T17:17:00Z"
     },
     {
-        "name": "[2802251120] Nike",
+        "id": "2802251120",
+        "brand": "nike",
+        "price": 79.9,
+        "sizes": [
+            {
+                "size": "G"
+            }
+        ],
         "description": "Algodão Peruano",
-        "oldPrice": 0.0,
-        "price": 79.90,
         "images": [
             "images/man/tshirts/casual/nike/2802251120-nike-front.jpeg",
             "images/man/tshirts/casual/nike/2802251120-nike-back.jpeg"
         ],
-        "size": "G"
+        "listedAt": "2025-02-28T11:20:00Z"
     },
     {
-        "name": "[1707251449] Nike",
+        "id": "1707251449",
+        "brand": "nike",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "M"
+            }
+        ],
         "description": "Camiseta Casual Masculina, 100% Algodão",
-        "oldPrice": 0.0,
-        "price": 39.90,
         "images": [
             "images/man/tshirts/casual/nike/1707251449-nike.jpeg"
         ],
-        "size": "M"
+        "listedAt": "2025-07-17T14:49:00Z"
     },
     {
-        "name": "[1503250629] Nike",
+        "id": "1503250629",
+        "brand": "nike",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "G",
+                "soldOut": true
+            }
+        ],
         "description": "100% Algodão",
-        "oldPrice": 0.0,
-        "price": 39.90,
         "images": [
             "images/man/tshirts/casual/nike/1503250629-nike.jpeg"
         ],
-        "size": "G",
-        "soldOut": true
+        "listedAt": "2025-03-15T06:29:00Z"
     },
     {
-        "name": "[1903251723] Quiksilver",
+        "id": "1903251723",
+        "brand": "quiksilver",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "G"
+            }
+        ],
         "description": "100% Algodão",
-        "oldPrice": 0.0,
-        "price": 39.90,
         "images": [
             "images/man/tshirts/casual/quiksilver/1903251723-quiksilver.jpeg"
         ],
-        "size": "G"
+        "listedAt": "2025-03-19T17:23:00Z"
     },
     {
-        "name": "[0903251015] Tommy Hilfiger",
+        "id": "0903251015",
+        "brand": "tommy-hilfiger",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "P"
+            }
+        ],
         "description": "100% Algodão Penteado",
-        "oldPrice": 0.0,
-        "price": 39.90,
         "images": [
             "images/man/tshirts/casual/tommy-hilfiger/0903251015-tommy-hilfiger.jpeg"
         ],
-        "size": "P"
+        "listedAt": "2025-03-09T10:15:00Z"
     },
     {
-        "name": "[0903251009] Tommy Hilfiger",
+        "id": "0903251009",
+        "brand": "tommy-hilfiger",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "P"
+            }
+        ],
         "description": "100% Algodão Penteado",
-        "oldPrice": 0.0,
-        "price": 39.90,
         "images": [
             "images/man/tshirts/casual/tommy-hilfiger/0903251009-tommy-hilfiger.jpeg"
         ],
-        "size": "P"
+        "listedAt": "2025-03-09T10:09:00Z"
     },
     {
-        "name": "[2802251109] Tommy Hilfiger",
+        "id": "2802251109",
+        "brand": "tommy-hilfiger",
+        "price": 89.9,
+        "sizes": [
+            {
+                "size": "G"
+            }
+        ],
         "description": "Algodão Italiano Oversized",
-        "oldPrice": 0.0,
-        "price": 89.90,
         "images": [
             "images/man/tshirts/casual/tommy-hilfiger/2802251109-tommy-hilfiger.jpeg"
         ],
-        "size": "G"
+        "listedAt": "2025-02-28T11:09:00Z"
     },
     {
-        "name": "[2802251122] Tommy Hilfiger",
+        "id": "2802251122",
+        "brand": "tommy-hilfiger",
+        "price": 89.9,
+        "sizes": [
+            {
+                "size": "G",
+                "soldOut": true
+            }
+        ],
         "description": "Algodão Italiano Oversized",
-        "oldPrice": 0.0,
-        "price": 89.90,
         "images": [
             "images/man/tshirts/casual/tommy-hilfiger/2802251122-tommy-hilfiger.jpeg"
         ],
-        "size": "G",
-        "soldOut": true
+        "listedAt": "2025-02-28T11:22:00Z"
     },
     {
-        "name": "[1403251118] Tommy Hilfiger",
+        "id": "1403251118",
+        "brand": "tommy-hilfiger",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "GG"
+            }
+        ],
         "description": "100% Algodão",
-        "oldPrice": 0.0,
-        "price": 39.90,
         "images": [
             "images/man/tshirts/casual/tommy-hilfiger/1403251118-tommy-hilfiger.jpeg"
         ],
-        "size": "GG"
+        "listedAt": "2025-03-14T11:18:00Z"
     },
     {
-        "name": "[1503250626] Tommy Hilfiger",
+        "id": "1503250626",
+        "brand": "tommy-hilfiger",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "GG"
+            }
+        ],
         "description": "100% Algodão",
-        "oldPrice": 0.0,
-        "price": 39.90,
         "images": [
             "images/man/tshirts/casual/tommy-hilfiger/1503250626-tommy-hilfiger.jpeg"
         ],
-        "size": "GG"
+        "listedAt": "2025-03-15T06:26:00Z"
     },
     {
-        "name": "[2910251952] Tommy Hilfiger",
-        "description": "",
-        "oldPrice": 0.0,
-        "price": 39.90,
+        "id": "2910251952",
+        "brand": "tommy-hilfiger",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "GG"
+            }
+        ],
         "images": [
             "images/man/tshirts/casual/tommy-hilfiger/2910251952-tommy-hilfiger.jpeg"
         ],
-        "size": "GG"
+        "listedAt": "2025-10-29T19:52:00Z"
     },
     {
-        "name": "[0803251047] Vans",
+        "id": "0803251047",
+        "brand": "vans",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "P"
+            }
+        ],
         "description": "100% Algodão Penteado",
-        "oldPrice": 0.0,
-        "price": 39.90,
         "images": [
             "images/man/tshirts/casual/vans/0803251047-vans.jpeg"
         ],
-        "size": "P"
+        "listedAt": "2025-03-08T10:47:00Z"
     },
     {
-        "name": "[0903251011] Vans",
+        "id": "0903251011",
+        "brand": "vans",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "P"
+            }
+        ],
         "description": "100% Algodão Penteado",
-        "oldPrice": 0.0,
-        "price": 39.90,
         "images": [
             "images/man/tshirts/casual/vans/0903251011-vans.jpeg"
         ],
-        "size": "P"
+        "listedAt": "2025-03-09T10:11:00Z"
     },
     {
-        "name": "[0103250813] Versace",
+        "id": "0103250813",
+        "brand": "versace",
+        "price": 79.9,
+        "sizes": [
+            {
+                "size": "M",
+                "soldOut": true
+            }
+        ],
         "description": "Algodão Peruano",
-        "oldPrice": 0.0,
-        "price": 79.90,
         "images": [
             "images/man/tshirts/casual/versace/0103250813-versace.jpeg"
         ],
-        "size": "M",
-        "soldOut": true
+        "listedAt": "2025-03-01T08:13:00Z"
     },
     {
-        "name": "[0803251811] Versace",
+        "id": "0803251811",
+        "brand": "versace",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "GG"
+            }
+        ],
         "description": "100% Algodão Penteado",
-        "oldPrice": 0.0,
-        "price": 39.90,
         "images": [
             "images/man/tshirts/casual/versace/0803251811-versace.jpeg"
         ],
-        "size": "GG"
+        "listedAt": "2025-03-08T18:11:00Z"
     },
     {
-        "name": "[1903251811] XTC",
+        "id": "1903251811",
+        "brand": "xtc",
+        "price": 39.9,
+        "sizes": [
+            {
+                "size": "G"
+            }
+        ],
         "description": "100% Algodão",
-        "oldPrice": 0.0,
-        "price": 39.90,
         "images": [
             "images/man/tshirts/casual/xtc/1903251811-xtc.jpeg"
         ],
-        "size": "G"
+        "listedAt": "2025-03-19T18:11:00Z"
     }
 ]

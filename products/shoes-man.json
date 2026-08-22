@@ -1,243 +1,542 @@
 [
     {
-        "name": "[1202252201] Adidas Campus",
-        "oldPrice": 159.0,
-        "price": 149.0,
-        "image": "images/man/shoes/adidas/1202252201-adidas-campus.jpeg",
-        "size": "35",
-        "soldOut": true
+        "id": "1202252201",
+        "brand": "adidas",
+        "model": "Campus",
+        "price": 149,
+        "oldPrice": 159,
+        "sizes": [
+            {
+                "size": "35",
+                "soldOut": true
+            }
+        ],
+        "images": [
+            "images/man/shoes/adidas/1202252201-adidas-campus.jpeg"
+        ],
+        "listedAt": "2025-02-12T22:01:00Z"
     },
     {
-        "name": "[1202252202] Adidas Campus",
-        "oldPrice": 259.0,
-        "price": 249.0,
-        "image": "images/man/shoes/adidas/1202252202-adidas-campus.jpeg",
-        "size": "35"
+        "id": "1202252202",
+        "brand": "adidas",
+        "model": "Campus",
+        "price": 249,
+        "oldPrice": 259,
+        "sizes": [
+            {
+                "size": "35"
+            }
+        ],
+        "images": [
+            "images/man/shoes/adidas/1202252202-adidas-campus.jpeg"
+        ],
+        "listedAt": "2025-02-12T22:02:00Z"
     },
     {
-        "name": "[1202252208] Adidas Campus",
-        "oldPrice": 159.0,
-        "price": 149.0,
-        "image": "images/man/shoes/adidas/1202252208-adidas-campus.jpeg",
-        "size": "36"
+        "id": "1202252208",
+        "brand": "adidas",
+        "model": "Campus",
+        "price": 149,
+        "oldPrice": 159,
+        "sizes": [
+            {
+                "size": "36"
+            }
+        ],
+        "images": [
+            "images/man/shoes/adidas/1202252208-adidas-campus.jpeg"
+        ],
+        "listedAt": "2025-02-12T22:08:00Z"
     },
     {
-        "name": "[1202252211] Adidas Campus",
-        "oldPrice": 159.0,
-        "price": 149.0,
-        "image": "images/man/shoes/adidas/1202252211-adidas-campus.jpeg",
-        "size": "39"
+        "id": "1202252211",
+        "brand": "adidas",
+        "model": "Campus",
+        "price": 149,
+        "oldPrice": 159,
+        "sizes": [
+            {
+                "size": "39"
+            }
+        ],
+        "images": [
+            "images/man/shoes/adidas/1202252211-adidas-campus.jpeg"
+        ],
+        "listedAt": "2025-02-12T22:11:00Z"
     },
     {
-        "name": "[1202252155] Adidas Campus",
-        "oldPrice": 159.0,
-        "price": 149.0,
-        "image": "images/man/shoes/adidas/1202252155-adidas-campus.jpeg",
-        "size": "41"
+        "id": "1202252155",
+        "brand": "adidas",
+        "model": "Campus",
+        "price": 149,
+        "oldPrice": 159,
+        "sizes": [
+            {
+                "size": "41"
+            }
+        ],
+        "images": [
+            "images/man/shoes/adidas/1202252155-adidas-campus.jpeg"
+        ],
+        "listedAt": "2025-02-12T21:55:00Z"
     },
     {
-        "name": "[1202252210] Adidas Campus",
-        "oldPrice": 159.0,
-        "price": 149.0,
-        "image": "images/man/shoes/adidas/1202252210-adidas-campus.jpeg",
-        "size": "42"
+        "id": "1202252210",
+        "brand": "adidas",
+        "model": "Campus",
+        "price": 149,
+        "oldPrice": 159,
+        "sizes": [
+            {
+                "size": "42"
+            }
+        ],
+        "images": [
+            "images/man/shoes/adidas/1202252210-adidas-campus.jpeg"
+        ],
+        "listedAt": "2025-02-12T22:10:00Z"
     },
     {
-        "name": "[1007251156] Asics",
-        "oldPrice": 0.0,
-        "price": 259.0,
-        "image": "images/man/shoes/asics/1007251156-asics.jpeg",
-        "size": "41"
+        "id": "1007251156",
+        "brand": "asics",
+        "price": 259,
+        "sizes": [
+            {
+                "size": "41"
+            }
+        ],
+        "images": [
+            "images/man/shoes/asics/1007251156-asics.jpeg"
+        ],
+        "listedAt": "2025-07-10T11:56:00Z"
     },
     {
-        "name": "[1202251714] Asics",
-        "oldPrice": 0.0,
-        "price": 89.0,
-        "image": "images/man/shoes/asics/1202251714-asics.jpeg",
-        "size": "38",
-        "soldOut": true
+        "id": "1202251714",
+        "brand": "asics",
+        "price": 89,
+        "sizes": [
+            {
+                "size": "38",
+                "soldOut": true
+            }
+        ],
+        "images": [
+            "images/man/shoes/asics/1202251714-asics.jpeg"
+        ],
+        "listedAt": "2025-02-12T17:14:00Z"
     },
     {
-        "name": "[1202251736] Asics",
-        "oldPrice": 269.0,
-        "price": 259.0,
-        "image": "images/man/shoes/asics/1202251736-asics.jpeg",
-        "size": "41"
+        "id": "1202251736",
+        "brand": "asics",
+        "price": 259,
+        "oldPrice": 269,
+        "sizes": [
+            {
+                "size": "41"
+            }
+        ],
+        "images": [
+            "images/man/shoes/asics/1202251736-asics.jpeg"
+        ],
+        "listedAt": "2025-02-12T17:36:00Z"
     },
     {
-        "name": "[1104250021] Mizuno 14",
-        "oldPrice": 0.0,
-        "price": 479.0,
-        "image": "images/man/shoes/mizuno/1104250021-mizuno.jpeg",
-        "size": "38",
-        "soldOut": true
+        "id": "1104250021",
+        "brand": "mizuno",
+        "model": "14",
+        "price": 479,
+        "sizes": [
+            {
+                "size": "38",
+                "soldOut": true
+            }
+        ],
+        "images": [
+            "images/man/shoes/mizuno/1104250021-mizuno.jpeg"
+        ],
+        "listedAt": "2025-04-11T00:21:00Z"
     },
     {
-        "name": "[1202251703] Nike Air Force",
-        "oldPrice": 219.0,
-        "price": 209.0,
-        "image": "images/man/shoes/nike/1202251703-nike-air-force.jpeg",
-        "size": "39"
+        "id": "1202251703",
+        "brand": "nike",
+        "model": "Air Force",
+        "price": 209,
+        "oldPrice": 219,
+        "sizes": [
+            {
+                "size": "39"
+            }
+        ],
+        "images": [
+            "images/man/shoes/nike/1202251703-nike-air-force.jpeg"
+        ],
+        "listedAt": "2025-02-12T17:03:00Z"
     },
     {
-        "name": "[1202251710] Nike Air Force",
-        "oldPrice": 269.0,
-        "price": 259.0,
-        "image": "images/man/shoes/nike/1202251710-nike-air-force.jpeg",
-        "size": "43"
+        "id": "1202251710",
+        "brand": "nike",
+        "model": "Air Force",
+        "price": 259,
+        "oldPrice": 269,
+        "sizes": [
+            {
+                "size": "43"
+            }
+        ],
+        "images": [
+            "images/man/shoes/nike/1202251710-nike-air-force.jpeg"
+        ],
+        "listedAt": "2025-02-12T17:10:00Z"
     },
     {
-        "name": "[1202251739] Nike Air Force",
-        "oldPrice": 219.0,
-        "price": 209.0,
-        "image": "images/man/shoes/nike/1202251739-nike-air-force.jpeg",
-        "size": "42",
-        "soldOut": true
+        "id": "1202251739",
+        "brand": "nike",
+        "model": "Air Force",
+        "price": 209,
+        "oldPrice": 219,
+        "sizes": [
+            {
+                "size": "42",
+                "soldOut": true
+            }
+        ],
+        "images": [
+            "images/man/shoes/nike/1202251739-nike-air-force.jpeg"
+        ],
+        "listedAt": "2025-02-12T17:39:00Z"
     },
     {
-        "name": "[1202251747] Nike Air Force",
-        "oldPrice": 229,
+        "id": "1202251747",
+        "brand": "nike",
+        "model": "Air Force",
         "price": 219,
-        "image": "images/man/shoes/nike/1202251747-nike-air-force.jpeg",
-        "size": "38"
+        "oldPrice": 229,
+        "sizes": [
+            {
+                "size": "38"
+            }
+        ],
+        "images": [
+            "images/man/shoes/nike/1202251747-nike-air-force.jpeg"
+        ],
+        "listedAt": "2025-02-12T17:47:00Z"
     },
     {
-        "name": "[1202252200] Nike Air Jordan",
-        "oldPrice": 229.0,
-        "price": 219.0,
-        "image": "images/man/shoes/nike/1202252200-nike-air-jordan.jpeg",
-        "size": "41"
+        "id": "1202252200",
+        "brand": "nike",
+        "model": "Air Jordan",
+        "price": 219,
+        "oldPrice": 229,
+        "sizes": [
+            {
+                "size": "41"
+            }
+        ],
+        "images": [
+            "images/man/shoes/nike/1202252200-nike-air-jordan.jpeg"
+        ],
+        "listedAt": "2025-02-12T22:00:00Z"
     },
     {
-        "name": "[1007251159] Nike Dunk Low Pro",
-        "price": 199.0,
-        "image": "images/man/shoes/nike/1007251159-nike-dunk-low-pro.jpeg",
-        "size": "34"
+        "id": "1007251159",
+        "brand": "nike",
+        "model": "Dunk Low Pro",
+        "price": 199,
+        "sizes": [
+            {
+                "size": "34"
+            }
+        ],
+        "images": [
+            "images/man/shoes/nike/1007251159-nike-dunk-low-pro.jpeg"
+        ],
+        "listedAt": "2025-07-10T11:59:00Z"
     },
     {
-        "name": "[1202251737] Nike Dunk Low Pro",
-        "oldPrice": 159.0,
-        "price": 149.0,
-        "image": "images/man/shoes/nike/1202251737-nike-dunk-low-pro.jpeg",
-        "size": "35",
-        "soldOut": true
+        "id": "1202251737",
+        "brand": "nike",
+        "model": "Dunk Low Pro",
+        "price": 149,
+        "oldPrice": 159,
+        "sizes": [
+            {
+                "size": "35",
+                "soldOut": true
+            }
+        ],
+        "images": [
+            "images/man/shoes/nike/1202251737-nike-dunk-low-pro.jpeg"
+        ],
+        "listedAt": "2025-02-12T17:37:00Z"
     },
     {
-        "name": "[1202251719] Nike Dunk Low Pro",
-        "oldPrice": 159.0,
-        "price": 149.0,
-        "image": "images/man/shoes/nike/1202251719-nike-dunk-low-pro.jpeg",
-        "size": "36",
-        "soldOut": true
+        "id": "1202251719",
+        "brand": "nike",
+        "model": "Dunk Low Pro",
+        "price": 149,
+        "oldPrice": 159,
+        "sizes": [
+            {
+                "size": "36",
+                "soldOut": true
+            }
+        ],
+        "images": [
+            "images/man/shoes/nike/1202251719-nike-dunk-low-pro.jpeg"
+        ],
+        "listedAt": "2025-02-12T17:19:00Z"
     },
     {
-        "name": "[1202252152] Nike Dunk Low Pro",
-        "oldPrice": 219.0,
-        "price": 209.0,
-        "image": "images/man/shoes/nike/1202252152-nike-dunk-low-pro.jpeg",
-        "size": "39, 42"
+        "id": "1202252152",
+        "brand": "nike",
+        "model": "Dunk Low Pro",
+        "price": 209,
+        "oldPrice": 219,
+        "sizes": [
+            {
+                "size": "39"
+            },
+            {
+                "size": "42"
+            }
+        ],
+        "images": [
+            "images/man/shoes/nike/1202252152-nike-dunk-low-pro.jpeg"
+        ],
+        "listedAt": "2025-02-12T21:52:00Z"
     },
     {
-        "name": "[1202251733] Nike Dunk Low Pro",
-        "oldPrice": 219.0,
-        "price": 209.0,
-        "image": "images/man/shoes/nike/1202251733-nike-dunk-low-pro.jpeg",
-        "size": "42",
-        "soldOut": true
+        "id": "1202251733",
+        "brand": "nike",
+        "model": "Dunk Low Pro",
+        "price": 209,
+        "oldPrice": 219,
+        "sizes": [
+            {
+                "size": "42",
+                "soldOut": true
+            }
+        ],
+        "images": [
+            "images/man/shoes/nike/1202251733-nike-dunk-low-pro.jpeg"
+        ],
+        "listedAt": "2025-02-12T17:33:00Z"
     },
     {
-        "name": "[1202251707] Nike Jordan",
-        "oldPrice": 169.0,
-        "price": 159.0,
-        "image": "images/man/shoes/nike/1202251707-nike-jordan.jpeg",
-        "size": "38",
-        "soldOut": true
+        "id": "1202251707",
+        "brand": "nike",
+        "model": "Jordan",
+        "price": 159,
+        "oldPrice": 169,
+        "sizes": [
+            {
+                "size": "38",
+                "soldOut": true
+            }
+        ],
+        "images": [
+            "images/man/shoes/nike/1202251707-nike-jordan.jpeg"
+        ],
+        "listedAt": "2025-02-12T17:07:00Z"
     },
     {
-        "name": "[1202251718] Nike R4",
-        "oldPrice": 229.0,
-        "price": 219.0,
-        "image": "images/man/shoes/nike/1202251718-nike-r4.jpeg",
-        "size": "34"
+        "id": "1202251718",
+        "brand": "nike",
+        "model": "R4",
+        "price": 219,
+        "oldPrice": 229,
+        "sizes": [
+            {
+                "size": "34"
+            }
+        ],
+        "images": [
+            "images/man/shoes/nike/1202251718-nike-r4.jpeg"
+        ],
+        "listedAt": "2025-02-12T17:18:00Z"
     },
     {
-        "name": "[1202251716] Nike R4",
-        "oldPrice": 229.0,
-        "price": 219.0,
-        "image": "images/man/shoes/nike/1202251716-nike-r4.jpeg",
-        "size": "35",
-        "soldOut": true
+        "id": "1202251716",
+        "brand": "nike",
+        "model": "R4",
+        "price": 219,
+        "oldPrice": 229,
+        "sizes": [
+            {
+                "size": "35",
+                "soldOut": true
+            }
+        ],
+        "images": [
+            "images/man/shoes/nike/1202251716-nike-r4.jpeg"
+        ],
+        "listedAt": "2025-02-12T17:16:00Z"
     },
     {
-        "name": "[1202251658] Nike Shox",
-        "oldPrice": 269.0,
-        "price": 259.0,
-        "image": "images/man/shoes/nike/1202251658-nike-shox.jpeg",
-        "size": "37"
+        "id": "1202251658",
+        "brand": "nike",
+        "model": "Shox",
+        "price": 259,
+        "oldPrice": 269,
+        "sizes": [
+            {
+                "size": "37"
+            }
+        ],
+        "images": [
+            "images/man/shoes/nike/1202251658-nike-shox.jpeg"
+        ],
+        "listedAt": "2025-02-12T16:58:00Z"
     },
     {
-        "name": "[1202252216] Nike Shox",
-        "oldPrice": 269.0,
-        "price": 259.0,
-        "image": "images/man/shoes/nike/1202252216-nike-shox.jpeg",
-        "size": "37",
-        "soldOut": true
+        "id": "1202252216",
+        "brand": "nike",
+        "model": "Shox",
+        "price": 259,
+        "oldPrice": 269,
+        "sizes": [
+            {
+                "size": "37",
+                "soldOut": true
+            }
+        ],
+        "images": [
+            "images/man/shoes/nike/1202252216-nike-shox.jpeg"
+        ],
+        "listedAt": "2025-02-12T22:16:00Z"
     },
     {
-        "name": "[1007251200] Nike Shox",
-        "price": 199.0,
-        "image": "images/man/shoes/nike/1007251200-nike-shox.jpeg",
-        "size": "38"
+        "id": "1007251200",
+        "brand": "nike",
+        "model": "Shox",
+        "price": 199,
+        "sizes": [
+            {
+                "size": "38"
+            }
+        ],
+        "images": [
+            "images/man/shoes/nike/1007251200-nike-shox.jpeg"
+        ],
+        "listedAt": "2025-07-10T12:00:00Z"
     },
     {
-        "name": "[1202251724] Nike Shox",
-        "oldPrice": 269.0,
-        "price": 259.0,
-        "image": "images/man/shoes/nike/1202251724-nike-shox.jpeg",
-        "size": "40",
-        "soldOut": true
+        "id": "1202251724",
+        "brand": "nike",
+        "model": "Shox",
+        "price": 259,
+        "oldPrice": 269,
+        "sizes": [
+            {
+                "size": "40",
+                "soldOut": true
+            }
+        ],
+        "images": [
+            "images/man/shoes/nike/1202251724-nike-shox.jpeg"
+        ],
+        "listedAt": "2025-02-12T17:24:00Z"
     },
     {
-        "name": "[1202252214] Nike Shox",
-        "oldPrice": 269.0,
-        "price": 259.0,
-        "image": "images/man/shoes/nike/1202252214-nike-shox.jpeg",
-        "size": "40"
+        "id": "1202252214",
+        "brand": "nike",
+        "model": "Shox",
+        "price": 259,
+        "oldPrice": 269,
+        "sizes": [
+            {
+                "size": "40"
+            }
+        ],
+        "images": [
+            "images/man/shoes/nike/1202252214-nike-shox.jpeg"
+        ],
+        "listedAt": "2025-02-12T22:14:00Z"
     },
     {
-        "name": "[1007251157] Nike Shox",
-        "oldPrice": 269.0,
-        "price": 259.0,
-        "image": "images/man/shoes/nike/1007251157-nike.jpeg",
-        "size": "40",
-        "soldOut": true
+        "id": "1007251157",
+        "brand": "nike",
+        "model": "Shox",
+        "price": 259,
+        "oldPrice": 269,
+        "sizes": [
+            {
+                "size": "40",
+                "soldOut": true
+            }
+        ],
+        "images": [
+            "images/man/shoes/nike/1007251157-nike.jpeg"
+        ],
+        "listedAt": "2025-07-10T11:57:00Z"
     },
     {
-        "name": "[1007251158] Nike Shox",
-        "oldPrice": 269.0,
-        "price": 259.0,
-        "image": "images/man/shoes/nike/1007251158-nike.jpeg",
-        "size": "42"
+        "id": "1007251158",
+        "brand": "nike",
+        "model": "Shox",
+        "price": 259,
+        "oldPrice": 269,
+        "sizes": [
+            {
+                "size": "42"
+            }
+        ],
+        "images": [
+            "images/man/shoes/nike/1007251158-nike.jpeg"
+        ],
+        "listedAt": "2025-07-10T11:58:00Z"
     },
     {
-        "name": "[1202251722] Nike Shox Neymar",
-        "oldPrice": 269.0,
-        "price": 259.0,
-        "image": "images/man/shoes/nike/1202251722-nike-shox-neymar.jpeg",
-        "size": "40,41"
+        "id": "1202251722",
+        "brand": "nike",
+        "model": "Shox Neymar",
+        "price": 259,
+        "oldPrice": 269,
+        "sizes": [
+            {
+                "size": "40"
+            },
+            {
+                "size": "41"
+            }
+        ],
+        "images": [
+            "images/man/shoes/nike/1202251722-nike-shox-neymar.jpeg"
+        ],
+        "listedAt": "2025-02-12T17:22:00Z"
     },
     {
-        "name": "[1202251734] Nike Shox Neymar",
-        "oldPrice": 269.0,
-        "price": 259.0,
-        "image": "images/man/shoes/nike/1202251734-nike-shox-neymar.jpeg",
-        "size": "41"
+        "id": "1202251734",
+        "brand": "nike",
+        "model": "Shox Neymar",
+        "price": 259,
+        "oldPrice": 269,
+        "sizes": [
+            {
+                "size": "41"
+            }
+        ],
+        "images": [
+            "images/man/shoes/nike/1202251734-nike-shox-neymar.jpeg"
+        ],
+        "listedAt": "2025-02-12T17:34:00Z"
     },
     {
-        "name": "[1202251757] Vans",
-        "oldPrice": 259.0,
-        "price": 249.0,
-        "image": "images/man/shoes/vans/1202251757-vans.jpeg",
-        "size": "36, 37"
+        "id": "1202251757",
+        "brand": "vans",
+        "price": 249,
+        "oldPrice": 259,
+        "sizes": [
+            {
+                "size": "36"
+            },
+            {
+                "size": "37"
+            }
+        ],
+        "images": [
+            "images/man/shoes/vans/1202251757-vans.jpeg"
+        ],
+        "listedAt": "2025-02-12T17:57:00Z"
     }
 ]

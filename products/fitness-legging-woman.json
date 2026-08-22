@@ -1,53 +1,85 @@
 [
     {
-        "name": "[1107250717]",
+        "id": "1107250717",
+        "brand": "unbranded",
+        "price": 89,
+        "sizes": [
+            {
+                "size": "G1"
+            }
+        ],
         "description": "Calça Legging Feminina",
-        "oldPrice": 0.0,
-        "price": 89.00,
         "images": [
             "images/woman/fitness/legging/1107250717.jpeg"
         ],
-        "size": "G1"
+        "listedAt": "2025-07-11T07:17:00Z"
     },
     {
-        "name": "[2709252014] Nike",
+        "id": "2709252014",
+        "brand": "nike",
+        "price": 79,
+        "sizes": [
+            {
+                "size": "M"
+            },
+            {
+                "size": "G"
+            },
+            {
+                "size": "GG"
+            }
+        ],
         "description": "Calça Legging Feminina, Cor: Azul Marinho",
-        "oldPrice": 0.0,
-        "price": 79.00,
         "images": [
             "images/woman/fitness/legging/2709252014-nike.jpeg"
         ],
-        "size": "M, G, GG"
+        "listedAt": "2025-09-27T20:14:00Z"
     },
     {
-        "name": "[2709252015] Nike Pro",
+        "id": "2709252015",
+        "brand": "nike",
+        "model": "Pro",
+        "price": 79,
+        "sizes": [
+            {
+                "size": "G"
+            }
+        ],
         "description": "Calça Legging Feminina, Cor: Preta",
-        "oldPrice": 0.0,
-        "price": 79.00,
         "images": [
             "images/woman/fitness/legging/2709252015-nike-front.jpeg",
             "images/woman/fitness/legging/2709252015-nike-back.jpeg"
         ],
-        "size": "G"
+        "listedAt": "2025-09-27T20:15:00Z"
     },
     {
-        "name": "[2709252024] Nike",
+        "id": "2709252024",
+        "brand": "nike",
+        "price": 79,
+        "sizes": [
+            {
+                "size": "GG"
+            }
+        ],
         "description": "Calça Legging Feminina, Cor: Preta",
-        "oldPrice": 0.0,
-        "price": 79.00,
         "images": [
             "images/woman/fitness/legging/2709252024-nike.jpeg"
         ],
-        "size": "GG"
+        "listedAt": "2025-09-27T20:24:00Z"
     },
     {
-        "name": "[2709252027] Nike",
+        "id": "2709252027",
+        "brand": "nike",
+        "price": 79,
+        "sizes": [
+            {
+                "size": "G"
+            }
+        ],
         "description": "Calça Legging Feminina, Cor: Preta",
-        "oldPrice": 0.0,
-        "price": 79.00,
         "images": [
             "images/woman/fitness/legging/2709252027-nike.jpeg"
         ],
-        "size": "G"
+        "listedAt": "2025-09-27T20:27:00Z"
     }
 ]

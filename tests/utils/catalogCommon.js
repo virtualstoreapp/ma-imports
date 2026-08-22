@@ -6,6 +6,8 @@ const { waitFor, fireEvent } = require('@testing-library/dom');
 require('@testing-library/jest-dom');
 
 const { ALL_CATEGORY, buildAllCatalog } = require('../../tools/lib/catalog');
+const { loadRegistry } = require('../../tools/lib/registry');
+const { toRuntime } = require('../../tools/lib/runtime');
 
 const PRODUCTS_DIR = path.join(__dirname, '../../products');
 
@@ -33,12 +35,17 @@ const setupGlobalFetchMock = () => {
     const category = match ? match[1] : null;
     if (!category) return Promise.reject(new Error(`Unknown URL: ${url}`));
 
-    // products/all.json is a build artifact, so it is synthesised here with the
-    // same merge/sort logic the build uses. Tests then exercise the single
-    // request the deployed homepage actually makes.
+    // The mock stands in for dist/products/*.json, so it applies the same
+    // derivation the build does: products/ holds the v2 authoring shape, and
+    // the client reads the runtime shape compiled from it. Without this the
+    // tests would serve authoring fields to a client that cannot read them.
+    const { brands } = loadRegistry();
     const payload = category === ALL_CATEGORY
-      ? buildAllCatalog(PRODUCTS_DIR)
-      : readProductsJson(`${category}.json`);
+      ? buildAllCatalog(PRODUCTS_DIR).map((product) => ({
+          ...toRuntime(product, brands),
+          category: product.category,
+        }))
+      : readProductsJson(`${category}.json`).map((product) => toRuntime(product, brands));
 
     return Promise.resolve({
       ok: true,

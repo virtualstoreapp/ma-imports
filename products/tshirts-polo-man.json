@@ -1,54 +1,79 @@
 [
     {
-        "name": "[1603250851] Calvin Klein",
+        "id": "1603250851",
+        "brand": "calvin-klein",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "M"
+            }
+        ],
         "description": "Camiseta Polo",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/tshirts/polo/calvin-klein/1603250851-calvin-klein.jpeg"
         ],
-        "size": "M"
+        "listedAt": "2025-03-16T08:51:00Z"
     },
     {
-        "name": "[1603250848] Calvin Klein",
+        "id": "1603250848",
+        "brand": "calvin-klein",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "GG"
+            }
+        ],
         "description": "Camiseta Polo",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/tshirts/polo/calvin-klein/1603250848-calvin-klein.jpeg"
         ],
-        "size": "GG"
+        "listedAt": "2025-03-16T08:48:00Z"
     },
     {
-        "name": "[2910251955] Calvin Klein",
+        "id": "2910251955",
+        "brand": "calvin-klein",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "M"
+            }
+        ],
         "description": "Camiseta Polo",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/tshirts/polo/calvin-klein/2910251955-calvin-klein.jpeg"
         ],
-        "size": "M"
+        "listedAt": "2025-10-29T19:55:00Z"
     },
     {
-        "name": "[1603250846] Lacoste",
+        "id": "1603250846",
+        "brand": "lacoste",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "G1",
+                "soldOut": true
+            }
+        ],
         "description": "Camiseta Polo",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/tshirts/polo/lacoste/1603250846-lacoste.jpeg"
         ],
-        "size": "G1",
-        "soldOut": true
+        "listedAt": "2025-03-16T08:46:00Z"
     },
     {
-        "name": "[1603250850] Nike",
+        "id": "1603250850",
+        "brand": "nike",
+        "price": 59.9,
+        "sizes": [
+            {
+                "size": "G",
+                "soldOut": true
+            }
+        ],
         "description": "Camiseta Polo",
-        "oldPrice": 0.0,
-        "price": 59.90,
         "images": [
             "images/man/tshirts/polo/nike/1603250850-nike.jpeg"
         ],
-        "size": "G",
-        "soldOut": true
+        "listedAt": "2025-03-16T08:50:00Z"
     }
 ]

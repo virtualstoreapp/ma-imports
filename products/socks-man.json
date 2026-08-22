@@ -1,95 +1,113 @@
 [
     {
-        "name": "[0106250834] Adidas",
+        "id": "0106250834",
+        "brand": "adidas",
+        "price": 24.9,
+        "sizes": [],
+        "sizeNote": "Consultar",
         "description": "Meia de algodão cano alto",
-        "oldPrice": 0.0,
-        "price": 24.90,
         "images": [
             "images/man/socks/0106250834-adidas.jpeg"
         ],
-        "size": "Consultar"
+        "listedAt": "2025-06-01T08:34:00Z"
     },
     {
-        "name": "[0106250835] Adidas",
+        "id": "0106250835",
+        "brand": "adidas",
+        "price": 12,
+        "sizes": [],
+        "sizeNote": "Consultar",
+        "soldOut": true,
         "description": "Meia de algodão cano baixo - soquete",
-        "oldPrice": 0.0,
-        "price": 12.00,
         "images": [
             "images/man/socks/0106250835-adidas.jpeg"
         ],
-        "size": "Consultar",
-        "soldOut": true
+        "listedAt": "2025-06-01T08:35:00Z"
     },
     {
-        "name": "[0106250836] Nike",
+        "id": "0106250836",
+        "brand": "nike",
+        "price": 12,
+        "sizes": [],
+        "sizeNote": "Consultar",
         "description": "Meia de algodão cano baixo - soquete",
-        "oldPrice": 0.0,
-        "price": 12.00,
         "images": [
             "images/man/socks/0106250836-nike.jpeg"
         ],
-        "size": "Consultar"
+        "listedAt": "2025-06-01T08:36:00Z"
     },
     {
-        "name": "[2907251530] Nike",
+        "id": "2907251530",
+        "brand": "nike",
+        "price": 24.9,
+        "sizes": [],
+        "sizeNote": "37 ao 44",
         "description": "Meia de algodão cano baixo - soquete",
-        "oldPrice": 0.0,
-        "price": 24.90,
         "images": [
             "images/man/socks/2907251530-nike.jpeg"
         ],
-        "size": "37 ao 44"
+        "listedAt": "2025-07-29T15:30:00Z"
     },
     {
-        "name": "[2907251531] Nike",
+        "id": "2907251531",
+        "brand": "nike",
+        "price": 24.9,
+        "sizes": [],
+        "sizeNote": "37 ao 44",
         "description": "Meia de algodão cano baixo - soquete",
-        "oldPrice": 0.0,
-        "price": 24.90,
         "images": [
             "images/man/socks/2907251531-nike.jpeg"
         ],
-        "size": "37 ao 44"
+        "listedAt": "2025-07-29T15:31:00Z"
     },
     {
-        "name": "[0106250833] Oakley",
+        "id": "0106250833",
+        "brand": "oakley",
+        "price": 24.9,
+        "sizes": [],
+        "sizeNote": "Consultar",
+        "soldOut": true,
         "description": "Meia de algodão cano alto",
-        "oldPrice": 0.0,
-        "price": 24.90,
         "images": [
             "images/man/socks/0106250833-oakley.jpeg"
         ],
-        "size": "Consultar",
-        "soldOut": true
+        "listedAt": "2025-06-01T08:33:00Z"
     },
     {
-        "name": "[0106250831] Tommy Hilfiger",
+        "id": "0106250831",
+        "brand": "tommy-hilfiger",
+        "price": 24.9,
+        "sizes": [],
+        "sizeNote": "Consultar",
         "description": "Meia de algodão cano alto",
-        "oldPrice": 0.0,
-        "price": 24.90,
         "images": [
             "images/man/socks/0106250831-tommy-hilfiger.jpeg"
         ],
-        "size": "Consultar"
+        "listedAt": "2025-06-01T08:31:00Z"
     },
     {
-        "name": "[0106250832] Tommy Hilfiger",
+        "id": "0106250832",
+        "brand": "tommy-hilfiger",
+        "price": 24.9,
+        "sizes": [],
+        "sizeNote": "Consultar",
         "description": "Meia de algodão cano alto",
-        "oldPrice": 0.0,
-        "price": 24.90,
         "images": [
             "images/man/socks/0106250832-tommy-hilfiger.jpeg"
         ],
-        "size": "Consultar"
+        "listedAt": "2025-06-01T08:32:00Z"
     },
     {
-        "name": "[0106250830] Quiksilver",
+        "id": "0106250830",
+        "brand": "quiksilver",
+        "price": 12,
+        "sizes": [],
+        "sizeNote": "Consultar",
+        "soldOut": true,
         "description": "Meia de algodão cano alto",
-        "oldPrice": 0.0,
-        "price": 12.00,
         "images": [
             "images/man/socks/0106250830-quicksilver.jpeg"
         ],
-        "size": "Consultar",
-        "soldOut": true
+        "listedAt": "2025-06-01T08:30:00Z"
     }
 ]

@@ -1,7 +1,10 @@
+"use strict";
+
 const { fireEvent } = require('@testing-library/dom');
-const {
-  asserts,
-} = require('./catalogAsserts');
+const { assertCategory } = require('./catalogAsserts');
+
+// Product counts are derived from products/{slug}.json by assertCategory, so
+// adding a product no longer means hand-editing a number in this file.
 
 const selectMenuOption = async (dataCategory) => {
   const menuOption = document.querySelector(`button[data-category="${dataCategory}"]`);
@@ -25,7 +28,7 @@ const selectWomanSubcategory = async () => {
 
 const selectChildrenSubcategory = async () => {
   await clickMenuOptions(['fashion-category', 'children-subcategory']);
-}
+};
 
 const selectClothingManSubcategory = async () => {
   await selectManSubcategory();
@@ -40,107 +43,11 @@ const selectClothingWomanSubcategory = async () => {
 const selectClothingChildrenSubcategory = async () => {
   await selectChildrenSubcategory();
   await selectMenuOption('sets-children-subcategory');
-}
-
-const selectProduct = async (
-  heading, productCount, subcategoryFunction, dataCategory
-) => {
-  const expectedHeading = heading;
-  const expectedCount = productCount;
-
-  await subcategoryFunction();
-  await selectMenuOption(dataCategory);
-
-  await asserts(expectedHeading, expectedCount);
 };
-
-const selectSweatshirtsMan = async () => {
-  await selectProduct("Blusas Masculina", 13, selectClothingManSubcategory, 'sweatshirts-man');
-};
-
-const selectTshirtsCasualMan = async () => {
-  await selectProduct("Camisetas Casuais Masculina", 45, selectClothingManSubcategory, 'tshirts-casual-man');
-};
-
-const selectTshirtsDryFitMan = async () => {
-  await selectProduct("Camisetas Dry Fit Masculina", 22, selectClothingManSubcategory, 'tshirts-dryfit-man');
-};
-
-const selectTshirtsPoloMan = async () => {
-  await selectProduct("Camisetas Polo Masculina", 5, selectClothingManSubcategory, 'tshirts-polo-man');
-};
-
-const selectDressShirtsMan = async () => {
-  await selectProduct("Camisetas Sociais Masculina", 5, selectClothingManSubcategory, 'dress-shirts-man');
-};
-
-const selectUnderwearMan = async () => {
-  await selectProduct("Cuecas Masculina", 15, selectClothingManSubcategory, 'underwear-man-subcategory')
-}
-
-const selectTankTopCasualMan = async () => {
-  await selectProduct("Regatas Casuais Masculina", 3, selectClothingManSubcategory, 'tank-top-casual-man');
-};
-
-const selectTankTopDryFitCasualMan = async () => {
-  await selectProduct("Regatas Dry Fit Masculina", 9, selectClothingManSubcategory, 'tank-top-dryfit-man');
-};
-
-const selectShortsBasicMan = async () => {
-  await selectProduct("Bermudas Básica Masculina", 1, selectClothingManSubcategory, 'shorts-basic-man');
-};
-
-const selectShortsJeansMan = async () => {
-  await selectProduct("Bermudas Jeans Masculina", 9, selectClothingManSubcategory, 'shorts-jeans-man');
-};
-
-const selectShortsJeansWoman = async () => {
-  await selectProduct("Bermudas Jeans Feminina", 1, selectClothingWomanSubcategory, 'shorts-jeans-woman');
-};
-
-const selectShortsSweatshortsMan = async () => {
-  await selectProduct("Bermudas Moletom Masculina", 9, selectClothingManSubcategory, 'shorts-sweatshorts-man');
-};
-
-const selectShortsTactelMan = async () => {
-  await selectProduct("Bermudas Tactel Masculina", 14, selectClothingManSubcategory, 'shorts-tactel-man');
-};
-
-const selectPantsSweatpantsMan = async () => {
-  await selectProduct("Calças Moletom Masculina", 3, selectClothingManSubcategory, 'pants-sweatpants-man');
-}
-
-const selectPantsJeansMan = async () => {
-    await selectProduct("Calças Jeans Masculina", 2, selectClothingManSubcategory, 'pants-jeans-man');
-}
-
-const selectPantsJeansWoman = async () => {
-    await selectProduct("Calças Jeans Feminina", 3, selectClothingWomanSubcategory, 'pants-jeans-woman');
-}
-
-const selectFitnessLeggingWoman = async () => {
-    await selectProduct("Calças Legging Feminina", 5, selectClothingWomanSubcategory, 'fitness-legging-woman');
-}
-
-const selectFitnessTopWoman = async () => {
-  await selectProduct("Top Feminino", 1, selectClothingWomanSubcategory, 'fitness-top-woman');
-}
 
 const selectShoesManSubcategory = async () => {
   await selectManSubcategory();
   await selectMenuOption('shoes-man-subcategory');
-};
-
-const selectShoesMan = async () => {
-  await selectProduct("Tênis", 33, selectShoesManSubcategory, 'shoes-man');
-};
-
-const selectSlippersMan = async () => {
-  await selectProduct("Chinelos", 1, selectShoesManSubcategory, 'slippers-man');
-};
-
-const selectSocksMan = async () => {
-  await selectProduct("Meias Masculina", 9, selectShoesManSubcategory, 'socks-man');
 };
 
 const selectAccessoriesManSubcategory = async () => {
@@ -148,25 +55,121 @@ const selectAccessoriesManSubcategory = async () => {
   await selectMenuOption('accessories-man-subcategory');
 };
 
+/**
+ * Navigates to a leaf category and asserts it rendered correctly.
+ * @param {string} heading Expected category heading.
+ * @param {Function} subcategoryFunction Navigation steps to reach the leaf.
+ * @param {string} dataCategory data-category slug, matching products/{slug}.json.
+ */
+const selectProduct = async (heading, subcategoryFunction, dataCategory) => {
+  await subcategoryFunction();
+  await selectMenuOption(dataCategory);
+  await assertCategory(heading, dataCategory);
+};
+
+const selectSweatshirtsMan = async () => {
+  await selectProduct("Blusas Masculina", selectClothingManSubcategory, 'sweatshirts-man');
+};
+
+const selectTshirtsCasualMan = async () => {
+  await selectProduct("Camisetas Casuais Masculina", selectClothingManSubcategory, 'tshirts-casual-man');
+};
+
+const selectTshirtsDryFitMan = async () => {
+  await selectProduct("Camisetas Dry Fit Masculina", selectClothingManSubcategory, 'tshirts-dryfit-man');
+};
+
+const selectTshirtsPoloMan = async () => {
+  await selectProduct("Camisetas Polo Masculina", selectClothingManSubcategory, 'tshirts-polo-man');
+};
+
+const selectDressShirtsMan = async () => {
+  await selectProduct("Camisetas Sociais Masculina", selectClothingManSubcategory, 'dress-shirts-man');
+};
+
+const selectUnderwearMan = async () => {
+  await selectProduct("Cuecas Masculina", selectClothingManSubcategory, 'underwear-man');
+};
+
+const selectTankTopCasualMan = async () => {
+  await selectProduct("Regatas Casuais Masculina", selectClothingManSubcategory, 'tank-top-casual-man');
+};
+
+const selectTankTopDryFitCasualMan = async () => {
+  await selectProduct("Regatas Dry Fit Masculina", selectClothingManSubcategory, 'tank-top-dryfit-man');
+};
+
+const selectShortsBasicMan = async () => {
+  await selectProduct("Bermudas Básica Masculina", selectClothingManSubcategory, 'shorts-basic-man');
+};
+
+const selectShortsJeansMan = async () => {
+  await selectProduct("Bermudas Jeans Masculina", selectClothingManSubcategory, 'shorts-jeans-man');
+};
+
+const selectShortsJeansWoman = async () => {
+  await selectProduct("Bermudas Jeans Feminina", selectClothingWomanSubcategory, 'shorts-jeans-woman');
+};
+
+const selectShortsSweatshortsMan = async () => {
+  await selectProduct("Bermudas Moletom Masculina", selectClothingManSubcategory, 'shorts-sweatshorts-man');
+};
+
+const selectShortsTactelMan = async () => {
+  await selectProduct("Bermudas Tactel Masculina", selectClothingManSubcategory, 'shorts-tactel-man');
+};
+
+const selectPantsSweatpantsMan = async () => {
+  await selectProduct("Calças Moletom Masculina", selectClothingManSubcategory, 'pants-sweatpants-man');
+};
+
+const selectPantsJeansMan = async () => {
+  await selectProduct("Calças Jeans Masculina", selectClothingManSubcategory, 'pants-jeans-man');
+};
+
+const selectPantsJeansWoman = async () => {
+  await selectProduct("Calças Jeans Feminina", selectClothingWomanSubcategory, 'pants-jeans-woman');
+};
+
+const selectFitnessLeggingWoman = async () => {
+  await selectProduct("Calças Legging Feminina", selectClothingWomanSubcategory, 'fitness-legging-woman');
+};
+
+const selectFitnessTopWoman = async () => {
+  await selectProduct("Top Feminino", selectClothingWomanSubcategory, 'fitness-top-woman');
+};
+
+const selectShoesMan = async () => {
+  await selectProduct("Tênis", selectShoesManSubcategory, 'shoes-man');
+};
+
+const selectSlippersMan = async () => {
+  await selectProduct("Chinelos", selectShoesManSubcategory, 'slippers-man');
+};
+
+const selectSocksMan = async () => {
+  await selectProduct("Meias Masculina", selectShoesManSubcategory, 'socks-man');
+};
+
 const selectCapsMan = async () => {
-  await selectProduct("Bonés Masculino", 11, selectAccessoriesManSubcategory, 'caps-man');
+  await selectProduct("Bonés Masculino", selectAccessoriesManSubcategory, 'caps-man');
 };
 
 const selectWalletsMan = async () => {
-  await selectProduct("Carteiras Masculina", 7, selectAccessoriesManSubcategory, 'wallets-man');
-}
+  await selectProduct("Carteiras Masculina", selectAccessoriesManSubcategory, 'wallets-man');
+};
 
 const selectBeltsMan = async () => {
-  await selectProduct("Cintos Masculino", 9, selectAccessoriesManSubcategory, 'belts-man');
-}
+  await selectProduct("Cintos Masculino", selectAccessoriesManSubcategory, 'belts-man');
+};
 
 const selectSweatshirtWoman = async () => {
-  await selectProduct("Blusas Feminina", 1, selectClothingWomanSubcategory, 'sweatshirts-woman');
+  await selectProduct("Blusas Feminina", selectClothingWomanSubcategory, 'sweatshirts-woman');
 };
 
 const selectSweatshirtSetChildren = async () => {
-  await selectProduct("Conjuntos Moletom Infantil", 5, selectClothingChildrenSubcategory, 'sweatshirts-set-children')
-}
+  await selectProduct("Conjuntos Moletom Infantil", selectClothingChildrenSubcategory, 'sweatshirts-set-children');
+};
 
 module.exports = {
     selectSweatshirtsMan,

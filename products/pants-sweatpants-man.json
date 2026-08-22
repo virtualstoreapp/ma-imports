@@ -1,38 +1,53 @@
 [
     {
-        "name": "[0407251231] Nike",
+        "id": "0407251231",
+        "brand": "nike",
+        "price": 89,
+        "sizes": [
+            {
+                "size": "GG",
+                "soldOut": true
+            }
+        ],
         "description": "Calça Moletom",
-        "oldPrice": 0.0,
-        "price": 89.00,
         "images": [
             "images/man/pants/sweatpants/0407251231-nike-front.jpeg",
             "images/man/pants/sweatpants/0407251231-nike-back.jpeg"
         ],
-        "size": "GG",
-        "soldOut": true
+        "listedAt": "2025-07-04T12:31:00Z"
     },
     {
-        "name": "[0407251232] Nike",
+        "id": "0407251232",
+        "brand": "nike",
+        "price": 99,
+        "sizes": [
+            {
+                "size": "GG",
+                "soldOut": true
+            }
+        ],
         "description": "Calça Moletom",
-        "oldPrice": 0.0,
-        "price": 99.00,
         "images": [
             "images/man/pants/sweatpants/0407251232-nike-front.jpeg",
             "images/man/pants/sweatpants/0407251232-nike-back.jpeg"
         ],
-        "size": "GG",
-        "soldOut": true
+        "listedAt": "2025-07-04T12:32:00Z"
     },
     {
-        "name": "[0407251233] Nike",
+        "id": "0407251233",
+        "brand": "nike",
+        "price": 99,
+        "sizes": [
+            {
+                "size": "GG",
+                "soldOut": true
+            }
+        ],
         "description": "Calça Moletom",
-        "oldPrice": 0.0,
-        "price": 99.00,
         "images": [
             "images/man/pants/sweatpants/0407251233-nike-front.jpeg",
             "images/man/pants/sweatpants/0407251233-nike-back.jpeg"
         ],
-        "size": "GG",
-        "soldOut": true
+        "listedAt": "2025-07-04T12:33:00Z"
     }
 ]

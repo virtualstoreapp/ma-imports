@@ -1,0 +1,424 @@
+{
+  "$comment": "Source of truth for category identity. Replaces CATEGORIES_DICT in scripts.js, the nav labels in index.html, and the implicit image-directory convention. Validated by tools/lib/registry.js; injected into index.html by tools/sync-registry.js. See docs/architecture/product-image-storage-plan.md §7.3.",
+
+  "aliases": {
+    "underwear-man-subcategory": "underwear-man"
+  },
+
+  "nav": [
+    {
+      "slug": "all",
+      "type": "generated",
+      "label": "Novidades",
+      "navLabel": "Início"
+    },
+    {
+      "slug": "fashion-category",
+      "type": "group",
+      "navLabel": "Moda",
+      "children": [
+        {
+          "slug": "man-subcategory",
+          "type": "group",
+          "navLabel": "Masculino",
+          "children": [
+            {
+              "slug": "accessories-man-subcategory",
+              "type": "group",
+              "navLabel": "Acessórios",
+              "children": [
+                {
+                  "slug": "caps-man",
+                  "type": "leaf",
+                  "label": "Bonés Masculino",
+                  "navLabel": "Bonés",
+                  "gender": "man",
+                  "category": "caps",
+                  "imageDir": "images/man/caps",
+                  "usesBrandFolders": false
+                },
+                {
+                  "slug": "wallets-man",
+                  "type": "leaf",
+                  "label": "Carteiras Masculina",
+                  "navLabel": "Carteiras",
+                  "gender": "man",
+                  "category": "wallets",
+                  "imageDir": "images/man/wallets",
+                  "usesBrandFolders": false
+                },
+                {
+                  "slug": "belts-man",
+                  "type": "leaf",
+                  "label": "Cintos Masculino",
+                  "navLabel": "Cintos",
+                  "gender": "man",
+                  "category": "belts",
+                  "imageDir": "images/man/belts",
+                  "usesBrandFolders": false
+                }
+              ]
+            },
+            {
+              "slug": "shoes-man-subcategory",
+              "type": "group",
+              "navLabel": "Calçados",
+              "children": [
+                {
+                  "slug": "slippers-man",
+                  "type": "leaf",
+                  "label": "Chinelos",
+                  "navLabel": "Chinelos",
+                  "gender": "man",
+                  "category": "slippers",
+                  "imageDir": "images/man/slippers",
+                  "usesBrandFolders": true
+                },
+                {
+                  "slug": "socks-man",
+                  "type": "leaf",
+                  "label": "Meias Masculina",
+                  "navLabel": "Meias",
+                  "gender": "man",
+                  "category": "socks",
+                  "imageDir": "images/man/socks",
+                  "usesBrandFolders": false
+                },
+                {
+                  "slug": "shoes-man",
+                  "type": "leaf",
+                  "label": "Tênis",
+                  "navLabel": "Tênis",
+                  "gender": "man",
+                  "category": "shoes",
+                  "imageDir": "images/man/shoes",
+                  "usesBrandFolders": true
+                }
+              ]
+            },
+            {
+              "slug": "clothing-man-subcategory",
+              "type": "group",
+              "navLabel": "Roupas",
+              "children": [
+                {
+                  "slug": "shorts-man-subcategory",
+                  "type": "group",
+                  "navLabel": "Bermudas",
+                  "children": [
+                    {
+                      "slug": "shorts-basic-man",
+                      "type": "leaf",
+                      "label": "Bermudas Básica Masculina",
+                      "navLabel": "Básica",
+                      "gender": "man",
+                      "category": "shorts",
+                      "subcategory": "basic",
+                      "imageDir": "images/man/shorts/basic",
+                      "usesBrandFolders": true
+                    },
+                    {
+                      "slug": "shorts-jeans-man",
+                      "type": "leaf",
+                      "label": "Bermudas Jeans Masculina",
+                      "navLabel": "Jeans",
+                      "gender": "man",
+                      "category": "shorts",
+                      "subcategory": "jeans",
+                      "imageDir": "images/man/shorts/jeans",
+                      "usesBrandFolders": true
+                    },
+                    {
+                      "slug": "shorts-sweatshorts-man",
+                      "type": "leaf",
+                      "label": "Bermudas Moletom Masculina",
+                      "navLabel": "Moletom",
+                      "gender": "man",
+                      "category": "shorts",
+                      "subcategory": "sweatshorts",
+                      "imageDir": "images/man/shorts/sweatshorts",
+                      "usesBrandFolders": true
+                    },
+                    {
+                      "slug": "shorts-tactel-man",
+                      "type": "leaf",
+                      "label": "Bermudas Tactel Masculina",
+                      "navLabel": "Tactel",
+                      "gender": "man",
+                      "category": "shorts",
+                      "subcategory": "tactel",
+                      "imageDir": "images/man/shorts/tactel",
+                      "usesBrandFolders": true
+                    }
+                  ]
+                },
+                {
+                  "slug": "sweatshirts-man-subcategory",
+                  "type": "group",
+                  "navLabel": "Blusas",
+                  "children": [
+                    {
+                      "slug": "sweatshirts-man",
+                      "type": "leaf",
+                      "label": "Blusas Masculina",
+                      "navLabel": "Blusas",
+                      "gender": "man",
+                      "category": "sweatshirts",
+                      "imageDir": "images/man/sweatshirts",
+                      "usesBrandFolders": false
+                    }
+                  ]
+                },
+                {
+                  "slug": "pants-man-subcategory",
+                  "type": "group",
+                  "navLabel": "Calças",
+                  "children": [
+                    {
+                      "slug": "pants-jeans-man",
+                      "type": "leaf",
+                      "label": "Calças Jeans Masculina",
+                      "navLabel": "Jeans",
+                      "gender": "man",
+                      "category": "pants",
+                      "subcategory": "jeans",
+                      "imageDir": "images/man/pants/jeans",
+                      "usesBrandFolders": false
+                    },
+                    {
+                      "slug": "pants-sweatpants-man",
+                      "type": "leaf",
+                      "label": "Calças Moletom Masculina",
+                      "navLabel": "Moletom",
+                      "gender": "man",
+                      "category": "pants",
+                      "subcategory": "sweatpants",
+                      "imageDir": "images/man/pants/sweatpants",
+                      "usesBrandFolders": false
+                    }
+                  ]
+                },
+                {
+                  "slug": "tshirts-man-subcategory",
+                  "type": "group",
+                  "navLabel": "Camisetas",
+                  "children": [
+                    {
+                      "slug": "tshirts-casual-man",
+                      "type": "leaf",
+                      "label": "Camisetas Casuais Masculina",
+                      "navLabel": "Casuais",
+                      "gender": "man",
+                      "category": "tshirts",
+                      "subcategory": "casual",
+                      "imageDir": "images/man/tshirts/casual",
+                      "usesBrandFolders": true
+                    },
+                    {
+                      "slug": "tshirts-dryfit-man",
+                      "type": "leaf",
+                      "label": "Camisetas Dry Fit Masculina",
+                      "navLabel": "Dry Fit",
+                      "gender": "man",
+                      "category": "tshirts",
+                      "subcategory": "dryfit",
+                      "imageDir": "images/man/tshirts/dryfit",
+                      "usesBrandFolders": true
+                    },
+                    {
+                      "slug": "tshirts-polo-man",
+                      "type": "leaf",
+                      "label": "Camisetas Polo Masculina",
+                      "navLabel": "Polo",
+                      "gender": "man",
+                      "category": "tshirts",
+                      "subcategory": "polo",
+                      "imageDir": "images/man/tshirts/polo",
+                      "usesBrandFolders": true
+                    },
+                    {
+                      "slug": "dress-shirts-man",
+                      "type": "leaf",
+                      "label": "Camisetas Sociais Masculina",
+                      "navLabel": "Sociais",
+                      "gender": "man",
+                      "category": "dress-shirts",
+                      "imageDir": "images/man/dress-shirts",
+                      "usesBrandFolders": false
+                    }
+                  ]
+                },
+                {
+                  "slug": "underwear-man",
+                  "type": "leaf",
+                  "label": "Cuecas Masculina",
+                  "navLabel": "Cuecas",
+                  "gender": "man",
+                  "category": "underwear",
+                  "imageDir": "images/man/underwear",
+                  "usesBrandFolders": false
+                },
+                {
+                  "slug": "tank-top-man-subcategory",
+                  "type": "group",
+                  "navLabel": "Regatas",
+                  "children": [
+                    {
+                      "slug": "tank-top-casual-man",
+                      "type": "leaf",
+                      "label": "Regatas Casuais Masculina",
+                      "navLabel": "Casuais",
+                      "gender": "man",
+                      "category": "tank-top",
+                      "subcategory": "casual",
+                      "imageDir": "images/man/tank-top/casual",
+                      "usesBrandFolders": true
+                    },
+                    {
+                      "slug": "tank-top-dryfit-man",
+                      "type": "leaf",
+                      "label": "Regatas Dry Fit Masculina",
+                      "navLabel": "Dry Fit",
+                      "gender": "man",
+                      "category": "tank-top",
+                      "subcategory": "dryfit",
+                      "imageDir": "images/man/tank-top/dryfit",
+                      "usesBrandFolders": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "woman-subcategory",
+          "type": "group",
+          "navLabel": "Feminino",
+          "children": [
+            {
+              "slug": "clothing-woman-subcategory",
+              "type": "group",
+              "navLabel": "Roupas",
+              "children": [
+                {
+                  "slug": "sweatshirts-woman-subcategory",
+                  "type": "group",
+                  "navLabel": "Blusas",
+                  "children": [
+                    {
+                      "slug": "sweatshirts-woman",
+                      "type": "leaf",
+                      "label": "Blusas Feminina",
+                      "navLabel": "Blusas",
+                      "gender": "woman",
+                      "category": "sweatshirts",
+                      "imageDir": "images/woman/sweatshirts",
+                      "usesBrandFolders": false
+                    }
+                  ]
+                },
+                {
+                  "slug": "shorts-woman-subcategory",
+                  "type": "group",
+                  "navLabel": "Bermudas",
+                  "children": [
+                    {
+                      "slug": "shorts-jeans-woman",
+                      "type": "leaf",
+                      "label": "Bermudas Jeans Feminina",
+                      "navLabel": "Jeans",
+                      "gender": "woman",
+                      "category": "shorts",
+                      "subcategory": "jeans",
+                      "imageDir": "images/woman/shorts/jeans",
+                      "usesBrandFolders": false
+                    }
+                  ]
+                },
+                {
+                  "slug": "pants-woman-subcategory",
+                  "type": "group",
+                  "navLabel": "Calças",
+                  "children": [
+                    {
+                      "slug": "pants-jeans-woman",
+                      "type": "leaf",
+                      "label": "Calças Jeans Feminina",
+                      "navLabel": "Jeans",
+                      "gender": "woman",
+                      "category": "pants",
+                      "subcategory": "jeans",
+                      "imageDir": "images/woman/pants/jeans",
+                      "usesBrandFolders": false
+                    }
+                  ]
+                },
+                {
+                  "slug": "fitness-woman-subcategory",
+                  "type": "group",
+                  "navLabel": "Fitness",
+                  "children": [
+                    {
+                      "slug": "fitness-legging-woman",
+                      "type": "leaf",
+                      "label": "Calças Legging Feminina",
+                      "navLabel": "Legging",
+                      "gender": "woman",
+                      "category": "fitness",
+                      "subcategory": "legging",
+                      "imageDir": "images/woman/fitness/legging",
+                      "usesBrandFolders": false
+                    },
+                    {
+                      "slug": "fitness-top-woman",
+                      "type": "leaf",
+                      "label": "Top Feminino",
+                      "navLabel": "Top",
+                      "gender": "woman",
+                      "category": "fitness",
+                      "subcategory": "top",
+                      "imageDir": "images/woman/fitness/top",
+                      "usesBrandFolders": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "children-subcategory",
+          "type": "group",
+          "navLabel": "Infantil",
+          "children": [
+            {
+              "slug": "clothing-children-subcategory",
+              "type": "group",
+              "navLabel": "Roupas",
+              "children": [
+                {
+                  "slug": "sets-children-subcategory",
+                  "type": "group",
+                  "navLabel": "Conjuntos",
+                  "children": [
+                    {
+                      "slug": "sweatshirts-set-children",
+                      "type": "leaf",
+                      "label": "Conjuntos Moletom Infantil",
+                      "navLabel": "Moletom",
+                      "gender": "children",
+                      "category": "sweatshirts",
+                      "imageDir": "images/children/sweatshirts",
+                      "usesBrandFolders": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
