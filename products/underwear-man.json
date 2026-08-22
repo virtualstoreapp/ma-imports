@@ -218,7 +218,8 @@
         "price": 23,
         "sizes": [
             {
-                "size": "GG"
+                "size": "GG",
+                "soldOut": true
             }
         ],
         "description": "Cueca Masculina",
