@@ -164,18 +164,42 @@ describe('The brand map against the real catalog', () => {
     expect(stale).toEqual([]);
   });
 
-  it('resolves the 40 model conflations onto their base brand', () => {
+  // The six placeholder brand strings the migration moved into `model` on an
+  // unbranded row. Pinned by identity rather than by count: how many rows carry
+  // a model is a fact about how many products the catalog happens to hold, and
+  // pinning it failed the first submission that filled in Modelo — a product
+  // added through the issue form turned 40 into 41 and reddened a PR that had
+  // nothing to do with the migration.
+  const PLACEHOLDER_BRAND_ROWS = [
+    '2907251536',
+    '0507251850',
+    '1107251407',
+    '1107251408',
+    '1107251409',
+    '0106250802',
+  ];
+
+  it('resolves every model conflation onto a declared brand', () => {
     const withModel = all.filter((entry) => entry.model);
-    expect(withModel).toHaveLength(40);
-    // Six of those models are placeholder brand strings kept for the record.
-    expect(withModel.filter((entry) => entry.brand === 'unbranded')).toHaveLength(6);
+    expect(withModel.length).toBeGreaterThan(0);
+    expect(
+      withModel.filter((entry) => !Object.prototype.hasOwnProperty.call(brands, entry.brand))
+    ).toEqual([]);
+  });
+
+  it('keeps every placeholder brand string as the model of an unbranded row', () => {
+    const byId = new Map(all.map((entry) => [entry.id, entry]));
+    PLACEHOLDER_BRAND_ROWS.forEach((id) => {
+      expect(byId.get(id)).toMatchObject({ brand: 'unbranded' });
+      expect(byId.get(id).model).toBeTruthy();
+    });
   });
 
   it('renders the two corrected brands', () => {
     const names = all.map((entry) => toRuntime(entry, brands).name);
-    expect(names.filter((name) => name.includes('Quiksilver'))).toHaveLength(5);
+    expect(names.some((name) => name.includes('Quiksilver'))).toBe(true);
     expect(names.filter((name) => name.includes('Quicksilver'))).toEqual([]);
-    expect(names.filter((name) => name.includes('Under Armour'))).toHaveLength(1);
+    expect(names.some((name) => name.includes('Under Armour'))).toBe(true);
     expect(names.filter((name) => name.includes('Under Armor '))).toEqual([]);
   });
 });
