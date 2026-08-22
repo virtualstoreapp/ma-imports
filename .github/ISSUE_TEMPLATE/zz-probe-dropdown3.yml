@@ -1,0 +1,14 @@
+# TEMPORARY probe. Isolates the dropdown type itself, with three options.
+name: Probe small dropdown
+description: Temporary diagnostic
+body:
+  - type: dropdown
+    id: pick
+    attributes:
+      label: "Escolha"
+      options:
+        - "Um"
+        - "Dois"
+        - "Tres"
+    validations:
+      required: true
