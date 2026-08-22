@@ -141,6 +141,22 @@
     let modal, currentImages = [], currentIndex = 0, currentZoom = 1;
     let currentProductName = '', currentCategory = '', currentProduct = null;
 
+    // Set by the catalog module, which owns the URL fragment.
+    let onProductOpen = null;
+    let onProductClose = null;
+
+    /**
+     * Registers the fragment callbacks.
+     * @param {object} handlers Open and close handlers.
+     */
+    const onNavigate = ({ opened, closed }) => {
+      onProductOpen = opened;
+      onProductClose = closed;
+    };
+
+    /** @returns {object|null} The product currently on screen, if any. */
+    const currentlyOpen = () => currentProduct;
+
     // Build modal HTML markup.
     const createModalMarkup = () => `
       <div id="modal-content">
@@ -258,6 +274,13 @@
       }
 
       modal.style.display = 'flex';
+
+      // An open product is a shareable URL (CON-11). Writing the fragment here
+      // means the browser's own share and copy-link actions carry the product,
+      // with no extra UI. onProductOpen is supplied by the catalog module, which
+      // owns the fragment.
+      if (typeof onProductOpen === 'function') onProductOpen(product);
+
       if (window.gtag) {
         gtag('event', 'open_modal', {
           event_category: 'Product',
@@ -268,6 +291,10 @@
 
     const close = () => {
       modal.style.display = 'none';
+      currentProduct = null;
+      // Hand the fragment back to the category, so closing the modal does not
+      // leave a product URL pointing at a closed modal.
+      if (typeof onProductClose === 'function') onProductClose();
     };
 
     const showPrev = () => {
@@ -321,7 +348,7 @@
       bindModalEvents();
     };
 
-    return { init, open, close };
+    return { init, open, close, onNavigate, currentlyOpen };
   })();
 
   // --- Catalog Module ---
@@ -336,6 +363,10 @@
     // Incremented per render so a slower earlier render cannot append over a
     // newer one. See renderProducts.
     let renderToken = 0;
+
+    // The products currently on screen, so a #p/{id} link can find one without
+    // a second fetch.
+    let renderedProducts = [];
 
     // Newest first. Products carry an explicit UTC `listedAt`, so this replaced
     // a regex that recovered the date from the display name — one of two
@@ -452,9 +483,40 @@
         productListContainer.appendChild(li);
       });
       renderedCategory = category;
-      if (window.location.hash.slice(1) !== category) {
+      renderedProducts = products;
+
+      // A product fragment is more specific than the category behind it, so
+      // rendering the grid must not overwrite it — that would break a shared
+      // link by replacing #p/{id} with #all before the modal could open.
+      if (!productIdFromHash() && window.location.hash.slice(1) !== category) {
         window.location.hash = category;
       }
+    };
+
+    /** @returns {string} The raw fragment, or '' when it cannot be decoded. */
+    const rawHash = () => {
+      try {
+        return decodeURIComponent(window.location.hash.slice(1));
+      } catch {
+        return '';
+      }
+    };
+
+    // A product deep link. `p/` cannot collide with a category, because every
+    // category slug is [a-z0-9-] and carries no slash.
+    const PRODUCT_HASH = /^p\/(\d{10})$/;
+
+    /**
+     * Reads a product id out of the fragment.
+     *
+     * The id is matched against a fixed 10-digit shape and then looked up in the
+     * rendered catalog — never used to index anything directly. Same discipline
+     * as categoryFromHash: the fragment is untrusted.
+     * @returns {string|null} The id, or null when the fragment is not one.
+     */
+    const productIdFromHash = () => {
+      const match = PRODUCT_HASH.exec(rawHash());
+      return match ? match[1] : null;
     };
 
     // The fragment is untrusted, so only known categories are honoured. Both
@@ -462,16 +524,41 @@
     // fragment of "#__proto__" or "#constructor" would otherwise resolve
     // against Object.prototype and be treated as a real category.
     const categoryFromHash = () => {
-      let raw;
-      try {
-        raw = decodeURIComponent(window.location.hash.slice(1));
-      } catch {
-        return null;
-      }
+      const raw = rawHash();
+      if (!raw || PRODUCT_HASH.test(raw)) return null;
 
       // A retired slug keeps resolving, so links shared before a rename still work.
       const resolved = ownProperty(CATEGORY_ALIASES, raw) ? CATEGORY_ALIASES[raw] : raw;
       return ownProperty(CATEGORY_LABELS, resolved) ? resolved : null;
+    };
+
+    /**
+     * Opens the product named by the fragment, if it is on screen.
+     *
+     * Looked up by scanning the rendered products rather than by keying into an
+     * object, so a crafted id cannot reach a prototype property.
+     * @returns {boolean} Whether a product was opened.
+     */
+    const openProductFromHash = () => openProduct(productIdFromHash());
+
+    /**
+     * Opens a product by id, if it is among those rendered.
+     * @param {string|null} id The product id.
+     * @returns {boolean} Whether a product was opened.
+     */
+    const openProduct = (id) => {
+      if (!id) return false;
+
+      const product = renderedProducts.find((entry) => entry.id === id);
+      if (!product) return false;
+
+      Modal.open(
+        product,
+        ownProperty(CATEGORY_LABELS, product.category)
+          ? CATEGORY_LABELS[product.category]
+          : categoryHeading.textContent
+      );
+      return true;
     };
 
     // renderProducts writes the fragment, so it has to be read back for the
@@ -479,6 +566,13 @@
     // already on screen is skipped, which also stops the write from looping.
     const bindHashNavigation = () => {
       window.addEventListener('hashchange', () => {
+        // A product link on an already-rendered catalog only opens the modal.
+        if (openProductFromHash()) return;
+
+        // Coming back from a product link to a category: close the modal rather
+        // than leaving it over the grid.
+        if (Modal.currentlyOpen()) Modal.close();
+
         const category = categoryFromHash();
         if (!category || category === renderedCategory) return;
         renderProducts(category);
@@ -527,7 +621,27 @@
     const init = async () => {
       bindCategoryButtons();
       bindHashNavigation();
-      await renderProducts(categoryFromHash() || ALL_CATEGORY);
+
+      // Opening a product writes #p/{id}, and closing it hands the fragment back
+      // to the category. The modal owns neither, so the catalog supplies both.
+      Modal.onNavigate({
+        opened: (product) => {
+          const fragment = `p/${product.id}`;
+          if (window.location.hash.slice(1) !== fragment) window.location.hash = fragment;
+        },
+        closed: () => {
+          if (productIdFromHash() && renderedCategory) {
+            window.location.hash = renderedCategory;
+          }
+        },
+      });
+
+      // A shared link arrives as #p/{id}, which names a product rather than a
+      // category. The whole catalog is rendered first so the product can be found
+      // wherever it lives, then its modal opens.
+      const deepLinked = productIdFromHash();
+      await renderProducts(deepLinked ? ALL_CATEGORY : categoryFromHash() || ALL_CATEGORY);
+      if (deepLinked) openProduct(deepLinked);
     };
 
     return { init };

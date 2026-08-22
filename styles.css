@@ -436,3 +436,52 @@
     font-size: 1.5rem;
   }
   
+/* Product pages (dist/p/{id}/). Generated per product so a crawler sees the
+   product and a shared link previews it — neither was true before, since no
+   product content was server-rendered. */
+.product-page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.product-page h1 {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  margin-bottom: 16px;
+}
+
+.product-page img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-page-category {
+  font-size: 0.9rem;
+  color: var(--muted-text);
+  margin: 12px 0 4px;
+}
+
+.product-page .price {
+  display: block;
+  margin: 12px 0;
+}
+
+.product-page .sold-out-label {
+  position: static;
+  display: inline-block;
+  margin: 8px 0;
+  font-size: 1.1rem;
+}
+
+.product-page-link {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+}
