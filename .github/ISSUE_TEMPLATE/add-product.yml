@@ -99,14 +99,12 @@ body:
     attributes:
       label: "Modelo"
       description: Linha do produto, quando houver. Por exemplo, Shox ou Campus
-      placeholder: Shox
 
   - type: input
     id: price
     attributes:
       label: "Preço"
-      description: Preço de venda, em reais
-      placeholder: 89,90
+      description: Preço de venda, em reais. Por exemplo, 89,90
     validations:
       required: true
 
@@ -114,8 +112,7 @@ body:
     id: old-price
     attributes:
       label: "Preço antigo"
-      description: Só preencha se o produto está com desconto. Precisa ser maior que o preço
-      placeholder: 129,90
+      description: Só preencha se o produto está com desconto. Precisa ser maior que o preço. Por exemplo, 129,90
 
   - type: input
     id: sizes
@@ -125,7 +122,7 @@ body:
         Os tamanhos disponíveis, separados por vírgula. Cada tamanho é uma peça:
         se vender só uma, a peça sai do catálogo sozinha.
         Deixe em branco para produtos sem tamanho, como bonés e carteiras.
-      placeholder: P, M, G
+        Por exemplo: P, M, G
 
   - type: input
     id: size-note
@@ -134,14 +131,14 @@ body:
       description: |
         Use no lugar de Tamanhos quando não for uma lista.
         Por exemplo: Tamanho único, Consultar, 37 ao 44.
-      placeholder: Tamanho único
 
   - type: textarea
     id: description
     attributes:
       label: "Descrição"
-      description: Detalhes que aparecem no cartão do produto
-      placeholder: "Camiseta Dry Fit, Cor: Preta"
+      description: |
+        Detalhes que aparecem no cartão do produto.
+        Por exemplo: Camiseta Dry Fit, Cor: Preta
 
   - type: textarea
     id: photos

@@ -258,6 +258,16 @@ describe('The generated issue form', () => {
     });
   });
 
+  // GitHub refuses to render the form when any field carries a placeholder: it
+  // vanishes from the chooser and ?template= falls through to a blank issue,
+  // with no error to say why. The form is valid by every documented rule, so
+  // nothing but this test stands between a helpful-looking edit and a form
+  // nobody can open. Each hint lives in a `description` instead.
+  it('carries no placeholder', () => {
+    const template = fs.readFileSync(path.join(ROOT, TEMPLATE_PATH), 'utf8');
+    expect(template).not.toMatch(/placeholder:/);
+  });
+
   // The workflow decides whether an issue is a submission by looking for these
   // two headings in its body, rather than for a label GitHub only applies when
   // it already exists. That makes the field labels load-bearing twice over, so

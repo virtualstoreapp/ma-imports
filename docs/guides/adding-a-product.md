@@ -89,6 +89,10 @@ Nada vai para o site sem duas verificações:
 - O formulário em `.github/ISSUE_TEMPLATE/add-product.yml` é **gerado** a partir
   de `catalog/categories.json` e `catalog/brands.json`. Não edite à mão: rode
   `node tools/sync-issue-form.js`. O build falha se estiver desatualizado.
+- Nenhum campo tem `placeholder`. Com eles, o GitHub **não renderiza** o
+  formulário: ele desaparece da lista de templates e `?template=` cai num issue
+  em branco, sem erro nenhum. Os exemplos ficam no `description` de cada campo.
+  Um teste garante isso — não reintroduza `placeholder` sem conferir a lista.
 - Adicionar uma marca é uma linha em `catalog/brands.json` mais um
   `node tools/sync-issue-form.js`.
 - A lógica está em `tools/lib/authoring.js` e `tools/authoring/`, com testes em
