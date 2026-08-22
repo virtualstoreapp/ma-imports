@@ -1,0 +1,93 @@
+name: Edit product
+
+# The other half of CON-8 (option 6-C). An Issue Form is the right shape for
+# *adding* a product, because that needs a photo and only the issue editor can
+# accept an upload from a phone. Editing needs no photo, so a workflow_dispatch
+# form is simpler and faster: pick the product, change the price or mark a size
+# sold, and this opens a PR.
+#
+# Same controls as add-product: the actor is checked, every value reaches the
+# script through the environment, the catalog gate runs, and a PR is opened
+# rather than committing to main.
+
+on:
+  workflow_dispatch:
+    inputs:
+      product_id:
+        description: 'Código do produto, 10 dígitos (por exemplo 2307251157)'
+        required: true
+        type: string
+      price:
+        description: 'Novo preço, em reais. Deixe em branco para não mudar'
+        required: false
+        type: string
+      old_price:
+        description: 'Novo preço antigo. Escreva "remover" para tirar o desconto'
+        required: false
+        type: string
+      sold_out_sizes:
+        description: 'Tamanhos esgotados, separados por vírgula. Escreva "nenhum" para liberar todos'
+        required: false
+        type: string
+      description:
+        description: 'Nova descrição. Escreva "remover" para apagar'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: edit-product-${{ inputs.product_id }}
+  cancel-in-progress: false
+
+jobs:
+  edit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '24'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Apply the edit
+        id: edit
+        env:
+          PRODUCT_ID: ${{ inputs.product_id }}
+          NEW_PRICE: ${{ inputs.price }}
+          NEW_OLD_PRICE: ${{ inputs.old_price }}
+          SOLD_OUT_SIZES: ${{ inputs.sold_out_sizes }}
+          NEW_DESCRIPTION: ${{ inputs.description }}
+          ACTOR: ${{ github.actor }}
+          ALLOWED_AUTHORS: ${{ vars.PRODUCT_AUTHORS }}
+        run: node tools/authoring/edit-product.js
+
+      - name: Validate the catalog
+        run: npm run build
+
+      - name: Open the pull request
+        uses: peter-evans/create-pull-request@22a9089034f40e5a961c8808d113e2c98fb63676 # v7
+        with:
+          branch: edit-product/${{ inputs.product_id }}
+          base: main
+          title: 'Atualiza produto [${{ inputs.product_id }}]'
+          commit-message: |
+            chore: update product [${{ inputs.product_id }}]
+
+            Applied by @${{ github.actor }} via the edit-product workflow.
+          body: |
+            Alterações no produto `[${{ inputs.product_id }}]`:
+
+            ${{ steps.edit.outputs.summary }}
+
+            A validação do catálogo passou.
+          delete-branch: true

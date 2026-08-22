@@ -1161,8 +1161,9 @@ text entering `<meta content="...">` and JSON-LD needs JSON-string escaping, not
 | 3 Registries (+ rule 4a) | 2–3 d | high | Wave 1 | **done** |
 | 5a Image cache + drop originals | 1–1.5 d | high | — | **done** |
 | 4 Product schema v2 (+ rule 4b) | 3–3.5 d | high | Waves 1–3 | **done** |
-| 5b Runtime v2 + per-size availability + ladder | 2.5–3.5 d | medium | Wave 4 | next |
-| 6 Non-dev authoring | 3–4 d | **goal (CON-8)** | Waves 1–4 | ready |
+| 5b-i Runtime v2 + per-size availability | 1.5 d | medium | Wave 4 | **done** |
+| 5b-ii Delivery ladder + hashing | 1–2 d | low | Wave 4 | deferred — see note |
+| 6 Non-dev authoring | 3–4 d | **goal (CON-8)** | Waves 1–4 | **done** |
 | 7 Deep links + SEO | 2.5 d | medium (CON-11) | Wave 4 | ready |
 
 **Total ≈ 17–19 days.** No wave is blocked on an unanswered question.
@@ -1193,6 +1194,35 @@ into `index.html` as a committed JSON literal, and the build fails when that blo
 `readCategoryDictKeys` — the brace-matching scraper that recovered category names from a JavaScript
 literal — is deleted, and `underwear-man-subcategory` is renamed to `underwear-man` with an alias
 keeping old links alive. Suite: 207 tests.
+
+Wave 6 delivered CON-8, the goal the previous five waves were prerequisites for. A generated Issue Form
+(`.github/ISSUE_TEMPLATE/add-product.yml`, 64 dropdown options straight from the registries) plus
+`add-product.yml` opens a PR from a filed issue; `edit-product.yml` handles price, discount, description
+and per-size sold-out through a `workflow_dispatch` form. $0, nothing outside GitHub, no secret beyond
+`GITHUB_TOKEN`. The build fails when the form is stale, which is the closure that keeps the registries
+load-bearing. `docs/guides/adding-a-product.md` is written for the seller, not for a developer.
+
+**The architecture is thin-workflow, thick-tested-script.** A workflow cannot be unit-tested, so it does
+nothing but pass inputs through the environment and open a PR. Everything that can be wrong — parsing,
+validation, id allocation, path construction, the author check, the image decode — lives in
+`tools/lib/authoring.js` and `tools/authoring/`, with 124 tests including the adversarial cases the plan
+asked for: `../` in a category and in a brand, a nav group as a category, an off-GitHub photo host, an
+oversized upload whose `content-length` lies, a payload that is not an image, a same-minute double
+submission, and a duplicated size.
+
+Two notes for whoever picks this up. **`PRODUCT_AUTHORS` must be set** as a repository variable before
+the workflows accept anything — with it unset, every submission is refused, which is the correct
+default but looks like a broken robot. And **the workflows themselves are unverified**: they cannot run
+outside GitHub, so the end-to-end proof here is a dry run of the real script against a real
+GitHub-shaped issue body, not a real Actions run. The first live submission is the test.
+
+Wave 5b was split. **5b-i** (runtime reads v2, per-size availability, `sizeNote` rendered as a note) is
+done. **5b-ii** (400/800/1200 ladder, AVIF, content-hashed names) is **deferred rather than dropped**:
+measured, AVIF is 31% smaller than WebP but 6× slower to encode, and the full ladder takes `dist/` from
+~32 MB to roughly 77 MB because it holds every variant. That is the right trade in principle — build
+artifact up, per-visitor bytes down — but it is the weakest ratio left in the plan, and the ladder's real
+defect fix (cards serve a 400px image into a 400 CSS px slot, so they are soft on every retina phone) can
+be had from the 800px tier alone without AVIF.
 
 Wave 5a replaced the mtime freshness rule with a content-hash cache (`.image-cache/manifest.json`,
 cached in CI alongside `dist/images`), dropped `copyOriginals` in favour of a generated 1200 px JPEG
