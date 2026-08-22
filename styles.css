@@ -221,9 +221,48 @@
     color: var(--primary-color);
   }
   
-  .size {
+  /* A row can hold several units, so the card lists which sizes are left rather
+     than showing one all-or-nothing badge. */
+  .sizes {
     font-size: 0.9rem;
     color: var(--muted-text);
+    margin-bottom: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .size-label {
+    color: var(--muted-text);
+  }
+
+  .size-chip {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1px 7px;
+    line-height: 1.5;
+    color: var(--text-color);
+    background-color: #fff;
+  }
+
+  /* Struck through as well as faded, so availability does not rest on colour
+     alone; the chip also carries an aria-label. */
+  .size-chip-sold-out {
+    color: var(--gray-text);
+    background-color: #f4f4f4;
+    border-color: #eee;
+    text-decoration: line-through;
+  }
+
+  /* "Consultar", "Tamanho único" — read as a note, not as a size value, which is
+     why they carry no "Tamanho:" prefix. */
+  .size-note {
+    font-size: 0.9rem;
+    color: var(--muted-text);
+    font-style: italic;
+    margin-bottom: 8px;
   }
   
   .price {

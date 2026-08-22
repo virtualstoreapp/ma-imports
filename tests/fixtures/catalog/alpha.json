@@ -1,30 +1,46 @@
 [
   {
+    "id": "0301251100",
     "name": "[0301251100] Fixture Gamma",
-    "description": "Produto de fixture com imagem no schema legado",
-    "oldPrice": 0.0,
+    "brand": "fixture",
+    "brandLabel": "Fixture",
+    "model": "Gamma",
     "price": 50.0,
-    "size": "M",
-    "soldOut": true,
-    "image": "images/fixtures/0301251100-gamma.jpeg"
+    "description": "Produto de fixture parcialmente esgotado",
+    "sizes": [
+      { "size": "P", "soldOut": true },
+      { "size": "M" },
+      { "size": "G", "soldOut": true }
+    ],
+    "images": ["images/fixtures/0301251100-gamma.jpeg"],
+    "listedAt": "2025-01-03T11:00:00Z"
   },
   {
+    "id": "0201251000",
     "name": "[0201251000] Fixture Beta",
-    "oldPrice": 150.0,
+    "brand": "fixture",
+    "brandLabel": "Fixture",
+    "model": "Beta",
     "price": 99.9,
-    "size": "N/A",
-    "images": ["images/fixtures/0201251000-beta.jpeg"]
+    "oldPrice": 150.0,
+    "sizes": [],
+    "images": ["images/fixtures/0201251000-beta.jpeg"],
+    "listedAt": "2025-01-02T10:00:00Z"
   },
   {
+    "id": "0101250900",
     "name": "[0101250900] Fixture Alpha",
-    "description": "Produto de fixture com media gerada pelo build",
-    "oldPrice": 0.0,
+    "brand": "fixture",
+    "brandLabel": "Fixture",
+    "model": "Alpha",
     "price": 100.0,
-    "size": "G",
+    "description": "Produto de fixture com media gerada pelo build",
+    "sizes": [{ "size": "G" }],
     "images": [
       "images/fixtures/0101250900-alpha-front.jpeg",
       "images/fixtures/0101250900-alpha-back.jpeg"
     ],
+    "listedAt": "2025-01-01T09:00:00Z",
     "media": [
       {
         "src": "images/fixtures/0101250900-alpha-front.jpeg",

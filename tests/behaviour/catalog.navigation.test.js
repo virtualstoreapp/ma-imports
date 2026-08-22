@@ -70,3 +70,31 @@ describe('Fragment navigation', () => {
     expect(itemCount()).toBe(before);
   });
 });
+
+describe('Overlapping renders', () => {
+  // The grid is cleared synchronously and filled after an await, so two renders
+  // in flight at once would both clear and then both append — leaving a grid
+  // holding two categories at once. Found by rendering the real catalog and
+  // getting exactly twice the expected card count.
+  it('keeps only the newest render when two overlap', async () => {
+    const { readCategory } = require('../../tools/lib/catalog');
+    const path = require('path');
+    const count = (slug) => readCategory(path.join(__dirname, '../../products'), slug).length;
+    const caps = count('caps-man');
+    const belts = count('belts-man');
+
+    bootstrap();
+    await waitFor(() => expect(itemCount()).toBeGreaterThan(0));
+
+    // Both clicks land before either fetch resolves, so both renders are in
+    // flight at once.
+    fireEvent.click(document.querySelector('nav button[data-category="caps-man"]'));
+    fireEvent.click(document.querySelector('nav button[data-category="belts-man"]'));
+
+    await waitFor(() => expect(heading()).toBe('Cintos Masculino'));
+    await waitFor(() => expect(itemCount()).toBe(belts));
+
+    // Without the render token this would settle at caps + belts.
+    expect(itemCount()).not.toBe(caps + belts);
+  });
+});

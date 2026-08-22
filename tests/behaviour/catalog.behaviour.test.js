@@ -11,7 +11,19 @@ describe('Catalog Behaviour', () => {
     });
     
     describe('Sorting Order', () => {
-        const customData = {
+        // Products now sort by an explicit UTC `listedAt` rather than by a regex
+        // over the display name, so these fixtures derive it from the same
+        // [DDMMYYHHmm] code the name carries — which is exactly the relationship
+        // the migration established.
+        const withListedAt = (products) =>
+            products.map((product) => {
+                const code = /\[(\d{10})\]/.exec(product.name)[1];
+                const listedAt = `20${code.slice(4, 6)}-${code.slice(2, 4)}-${code.slice(0, 2)}`
+                    + `T${code.slice(6, 8)}:${code.slice(8, 10)}:00Z`;
+                return { ...product, id: code, listedAt, sizes: [], images: ['images/x.jpeg'] };
+            });
+
+        const rawData = {
             "shoes-man": [{ name: "[1202252201] Shoe Man", price: 149 }],
             "slippers-man": [{ name: "[1702251140] Slipper Man", price: 29.90 }],
             "tshirts-casual-man": [{ name: "[0103250820] Tshirt Casual Man", price: 89.90 }],
@@ -39,6 +51,10 @@ describe('Catalog Behaviour', () => {
             "underwear-man": [{ name:"[2907251513] Underwear Man", price: 23.00}],
             "fitness-top-woman": [{ name: "[2709252000] Top Woman", price: 39.00 }],
         };
+
+        const customData = Object.fromEntries(
+            Object.entries(rawData).map(([slug, products]) => [slug, withListedAt(products)])
+        );
 
         beforeEach(() => {
             // Reset modules and override fetch BEFORE initializing the catalog.

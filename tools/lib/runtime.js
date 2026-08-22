@@ -1,12 +1,19 @@
 'use strict';
 
 /**
- * Derives the v1 runtime product shape from a v2 authoring product.
+ * Compiles a v2 authoring product into the shape the client reads.
  *
- * The build is a compiler, which is what lets the data migration and the runtime
- * change ship in separate waves: during the overlap it emits exactly the shape
- * scripts.js already consumes, so Wave 4 touches no client code and no test.
- * Wave 5b switches the client to read v2 fields directly and this module goes.
+ * Through Wave 4 this module re-derived the *v1* runtime shape, so the data
+ * migration could ship without touching scripts.js. Wave 5b switches the client
+ * over, so it now emits v2 and only the genuinely derived fields are computed:
+ * the display name, and the row-level sold-out state.
+ *
+ * What is deliberately still emitted rather than left to the client:
+ *  - `name`, because it is the customer-facing product reference in the
+ *    WhatsApp message and the clipboard (CON-4). Deriving it in two places is
+ *    how the brand/model split went wrong in the first place.
+ *  - `soldOut`, because "every unit is sold" is a rule about the data, not a
+ *    rendering concern.
  */
 
 /**
@@ -17,7 +24,7 @@
  * neither reads "[1107250717]" with nothing trailing.
  * @param {object} product v2 product.
  * @param {object} brands Brand registry.
- * @returns {string} The v1 display name.
+ * @returns {string} The display name.
  */
 const deriveName = (product, brands) => {
   const brand = brands[product.brand];
@@ -26,27 +33,7 @@ const deriveName = (product, brands) => {
 };
 
 /**
- * Rebuilds the single size string.
- *
- * v1 stored one free-text value; v2 stores a list of independently sellable
- * units plus a note for anything that is not a size. Joining with ", "
- * reproduces every multi-value row verbatim except one, which read "40,41".
- * @param {object} product v2 product.
- * @returns {string} The v1 size string.
- */
-const deriveSize = (product) => {
-  if (product.sizes && product.sizes.length) {
-    return product.sizes.map((entry) => entry.size).join(', ');
-  }
-  return product.sizeNote || 'N/A';
-};
-
-/**
  * A row is sold out when every unit in it is.
- *
- * v1 carried one boolean per product. v2 tracks it per unit, so the row-level
- * flag becomes derived — which is what lets Wave 5b show which sizes are left
- * without changing the data again.
  *
  * A row with no units (a cap, a wallet) has nothing to carry the flag, so it
  * keeps a row-level `soldOut`. Reading only the units would put nine sold-out
@@ -62,28 +49,38 @@ const deriveSoldOut = (product) => {
 };
 
 /**
- * Converts a v2 product to the shape scripts.js consumes.
+ * Converts a v2 authoring product to the runtime shape.
  *
- * Key order matches what v1 emitted, so `dist/products/*.json` stays
- * byte-identical and the Wave 4 acceptance gate is a plain file comparison.
+ * Optional fields are omitted rather than given sentinel values: v1 carried
+ * `description: ""` and `oldPrice: 0` for "absent", which is why it had three
+ * states for "no description". The client tests for presence.
  * @param {object} product v2 product.
  * @param {object} brands Brand registry.
- * @returns {object} v1 runtime product.
+ * @returns {object} Runtime product.
  */
 const toRuntime = (product, brands) => {
+  const brand = brands[product.brand];
+
   const runtime = {
+    id: product.id,
     name: deriveName(product, brands),
-    description: product.description || '',
-    oldPrice: product.oldPrice || 0,
-    price: product.price,
-    images: product.images,
-    size: deriveSize(product),
+    brand: product.brand,
+    brandLabel: brand ? brand.label : '',
   };
 
-  // v1 omitted soldOut when false, and the client re-derived the default.
+  if (product.model) runtime.model = product.model;
+  runtime.price = product.price;
+  if (product.oldPrice) runtime.oldPrice = product.oldPrice;
+  if (product.description) runtime.description = product.description;
+
+  runtime.sizes = product.sizes || [];
+  if (product.sizeNote) runtime.sizeNote = product.sizeNote;
   if (deriveSoldOut(product)) runtime.soldOut = true;
+
+  runtime.images = product.images;
+  runtime.listedAt = product.listedAt;
 
   return runtime;
 };
 
-module.exports = { deriveName, deriveSize, deriveSoldOut, toRuntime };
+module.exports = { deriveName, deriveSoldOut, toRuntime };
