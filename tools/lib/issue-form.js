@@ -12,6 +12,15 @@
  * Field labels here must match the labels tools/lib/authoring.js reads, since
  * GitHub renders each answer under its field label. The two are pinned together
  * by a test.
+ *
+ * No field carries a `placeholder`. GitHub silently refused to render the form
+ * while they were present — it never appeared in the chooser and `?template=`
+ * fell through to a blank issue, with no error anywhere to say why. The form was
+ * valid by every rule GitHub documents and against the published issue-forms
+ * schema, so it was found by bisection: probes that removed one dimension at a
+ * time, and the one without placeholders was the one that rendered. Each hint
+ * lives in its field's `description` instead, which is unaffected. Do not
+ * reintroduce them without checking the chooser still lists the form.
  */
 
 const { NO_BRAND_OPTION } = require('./authoring');
@@ -96,14 +105,12 @@ const renderIssueForm = (registry) => {
     '    attributes:',
     `      label: ${yaml(FIELDS.model)}`,
     '      description: Linha do produto, quando houver. Por exemplo, Shox ou Campus',
-    '      placeholder: Shox',
     '',
     '  - type: input',
     '    id: price',
     '    attributes:',
     `      label: ${yaml(FIELDS.price)}`,
-    '      description: Preço de venda, em reais',
-    '      placeholder: 89,90',
+    '      description: Preço de venda, em reais. Por exemplo, 89,90',
     '    validations:',
     '      required: true',
     '',
@@ -111,8 +118,7 @@ const renderIssueForm = (registry) => {
     '    id: old-price',
     '    attributes:',
     `      label: ${yaml(FIELDS.oldPrice)}`,
-    '      description: Só preencha se o produto está com desconto. Precisa ser maior que o preço',
-    '      placeholder: 129,90',
+    '      description: Só preencha se o produto está com desconto. Precisa ser maior que o preço. Por exemplo, 129,90',
     '',
     '  - type: input',
     '    id: sizes',
@@ -122,7 +128,7 @@ const renderIssueForm = (registry) => {
     '        Os tamanhos disponíveis, separados por vírgula. Cada tamanho é uma peça:',
     '        se vender só uma, a peça sai do catálogo sozinha.',
     '        Deixe em branco para produtos sem tamanho, como bonés e carteiras.',
-    '      placeholder: P, M, G',
+    '        Por exemplo: P, M, G',
     '',
     '  - type: input',
     '    id: size-note',
@@ -131,14 +137,14 @@ const renderIssueForm = (registry) => {
     '      description: |',
     '        Use no lugar de Tamanhos quando não for uma lista.',
     '        Por exemplo: Tamanho único, Consultar, 37 ao 44.',
-    '      placeholder: Tamanho único',
     '',
     '  - type: textarea',
     '    id: description',
     '    attributes:',
     `      label: ${yaml(FIELDS.description)}`,
-    '      description: Detalhes que aparecem no cartão do produto',
-    '      placeholder: "Camiseta Dry Fit, Cor: Preta"',
+    '      description: |',
+    '        Detalhes que aparecem no cartão do produto.',
+    '        Por exemplo: Camiseta Dry Fit, Cor: Preta',
     '',
     '  - type: textarea',
     '    id: photos',
