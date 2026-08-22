@@ -1,0 +1,37 @@
+# TEMPORARY probe. Isolates the 26-option Categoria dropdown, options copied verbatim.
+name: Probe categories dropdown
+description: Temporary diagnostic
+body:
+  - type: dropdown
+    id: pick
+    attributes:
+      label: "Categoria"
+      options:
+        - "Bermudas Básica Masculina"
+        - "Bermudas Jeans Feminina"
+        - "Bermudas Jeans Masculina"
+        - "Bermudas Moletom Masculina"
+        - "Bermudas Tactel Masculina"
+        - "Blusas Feminina"
+        - "Blusas Masculina"
+        - "Bonés Masculino"
+        - "Calças Jeans Feminina"
+        - "Calças Jeans Masculina"
+        - "Calças Legging Feminina"
+        - "Calças Moletom Masculina"
+        - "Camisetas Casuais Masculina"
+        - "Camisetas Dry Fit Masculina"
+        - "Camisetas Polo Masculina"
+        - "Camisetas Sociais Masculina"
+        - "Carteiras Masculina"
+        - "Chinelos"
+        - "Cintos Masculino"
+        - "Conjuntos Moletom Infantil"
+        - "Cuecas Masculina"
+        - "Meias Masculina"
+        - "Regatas Casuais Masculina"
+        - "Regatas Dry Fit Masculina"
+        - "Tênis"
+        - "Top Feminino"
+    validations:
+      required: true
