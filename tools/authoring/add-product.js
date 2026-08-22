@@ -109,20 +109,26 @@ const reencode = async (bytes) => {
 };
 
 /**
- * Inserts a product into its category file, newest first.
+ * Inserts a product at the head of its category file.
  *
  * Parsed and re-serialised rather than appended textually, so a crafted value
- * cannot break out of the JSON.
+ * cannot break out of the JSON. Nothing but the new entry moves: sorting the
+ * array here rewrote the whole file, because the committed order is not
+ * listedAt order, and buried one added product under a few hundred lines of
+ * reordering that a reviewer then had to read to be sure nothing else changed.
+ * Nothing needed that sort — display order is derived, by buildAllCatalog for
+ * products/all.json and by scripts.js for the in-browser fallback — so the
+ * order on disk is cosmetic.
  * @param {string} category Category slug.
  * @param {object} product The product to add.
+ * @param {string} [productsDir] Directory holding the category files.
  * @returns {Promise<number>} The resulting product count.
  */
-const insertProduct = async (category, product) => {
-  const file = path.join(PRODUCTS_DIR, `${category}.json`);
-  const products = readCategory(PRODUCTS_DIR, category);
+const insertProduct = async (category, product, productsDir = PRODUCTS_DIR) => {
+  const file = path.join(productsDir, `${category}.json`);
+  const products = readCategory(productsDir, category);
 
   products.unshift(product);
-  products.sort((a, b) => Date.parse(b.listedAt) - Date.parse(a.listedAt));
 
   await fsp.writeFile(file, `${JSON.stringify(products, null, 4)}\n`, 'utf8');
   return products.length;
