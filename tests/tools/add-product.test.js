@@ -1,4 +1,5 @@
 const fs = require('fs');
+const os = require('os');
 const path = require('path');
 const sharp = require('sharp');
 
@@ -220,6 +221,53 @@ describe('processIssue', () => {
     const first = allocateId(new Set(), NOW);
     const second = allocateId(new Set([first]), NOW);
     expect(second).not.toBe(first);
+  });
+});
+
+describe('insertProduct', () => {
+  const { insertProduct } = require('../../tools/authoring/add-product');
+
+  // The committed files are not in listedAt order — the site sorts at display
+  // time, so the order on disk never mattered. Sorting on insert therefore
+  // rewrote whole files: PR #91 added one product to tshirts-casual-man and
+  // came out +277/-258, which a reviewer cannot read as "one product added".
+  const catalogDir = () => {
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'insert-'));
+    fs.writeFileSync(
+      path.join(dir, 'caps-man.json'),
+      `${JSON.stringify(
+        [
+          { id: '0304251751', brand: 'nike', price: 39, sizes: [], images: ['images/man/caps/0304251751-nike.jpeg'], listedAt: '2025-04-03T17:51:00Z' },
+          { id: '2910251954', brand: 'adidas', price: 49, sizes: [], images: ['images/man/caps/2910251954-adidas.jpeg'], listedAt: '2025-10-29T19:54:00Z' },
+          { id: '1707251459', brand: 'puma', price: 45, sizes: [], images: ['images/man/caps/1707251459-puma.jpeg'], listedAt: '2025-07-17T14:59:00Z' },
+        ],
+        null,
+        4
+      )}\n`
+    );
+    return dir;
+  };
+
+  const added = { id: '2208262009', brand: 'brooksfield', price: 101.5, sizes: [], images: ['images/man/caps/2208262009-brooksfield.jpeg'], listedAt: '2026-08-22T20:09:00Z' };
+
+  it('adds the product without moving any other', async () => {
+    const dir = catalogDir();
+    const before = JSON.parse(fs.readFileSync(path.join(dir, 'caps-man.json'), 'utf8'));
+
+    const count = await insertProduct('caps-man', added, dir);
+    const after = JSON.parse(fs.readFileSync(path.join(dir, 'caps-man.json'), 'utf8'));
+
+    expect(count).toBe(4);
+    expect(after[0].id).toBe(added.id);
+    expect(after.slice(1)).toEqual(before);
+  });
+
+  it('leaves the file re-serialisable without a diff', async () => {
+    const dir = catalogDir();
+    await insertProduct('caps-man', added, dir);
+    const raw = fs.readFileSync(path.join(dir, 'caps-man.json'), 'utf8');
+
+    expect(raw).toBe(`${JSON.stringify(JSON.parse(raw), null, 4)}\n`);
   });
 });
 
