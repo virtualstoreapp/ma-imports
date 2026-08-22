@@ -1,24 +1,5 @@
 [
     {
-        "id": "2208262029",
-        "brand": "brooksfield",
-        "model": "Modelo Test",
-        "price": 999.99,
-        "oldPrice": 1000,
-        "sizes": [
-            {
-                "size": "P"
-            },
-            {
-                "size": "G"
-            }
-        ],
-        "images": [
-            "images/man/tshirts/casual/brooksfield/2208262029-brooksfield.jpeg"
-        ],
-        "listedAt": "2026-08-22T20:29:00Z"
-    },
-    {
         "id": "0304251751",
         "brand": "aramis",
         "price": 79.9,
