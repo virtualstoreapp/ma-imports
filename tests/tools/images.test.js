@@ -193,6 +193,7 @@ describe('assertImagesIntact', () => {
 
   it('accepts the real tree after a build', async () => {
     const { buildImageManifest: build } = require('../../tools/lib/images');
+    const { collectSiteAssets } = require('../../tools/build');
     const ROOT = path.join(__dirname, '../..');
     if (!fs.existsSync(path.join(ROOT, 'dist', 'images'))) return; // dist is gitignored
 
@@ -200,6 +201,44 @@ describe('assertImagesIntact', () => {
       sourceRoot: ROOT,
       outputRoot: path.join(ROOT, 'dist'),
     });
-    await expect(assertImagesIntact(manifest, ['images/og-card.jpg'])).resolves.toBeUndefined();
+    // The keep-list is the social card plus the verbatim site assets; without
+    // them the copied logo reads as an unreferenced file.
+    const keep = ['images/og-card.jpg', ...(await collectSiteAssets())];
+    await expect(assertImagesIntact(manifest, keep)).resolves.toBeUndefined();
+  });
+});
+
+describe('Site assets', () => {
+  const { assertReferencesResolve, collectSiteAssets } = require('../../tools/build');
+  const ROOT = path.join(__dirname, '../..');
+
+  // Wave 5a stopped copying originals into dist/ and took the header logo with
+  // them, 404ing it on the built site. index.html cannot simply point at the
+  // generated images/logo.jpg instead: CON-2 requires the same markup to work in
+  // an unbuilt tree, where only the original exists. So site assets are copied
+  // verbatim, and this is the check that they arrived.
+  it('finds the images the site markup references', async () => {
+    expect(await collectSiteAssets()).toContain('images/logo.jpeg');
+  });
+
+  it('accepts a reference that resolves in dist', async () => {
+    if (!fs.existsSync(path.join(ROOT, 'dist', 'images', 'logo.jpeg'))) return; // dist is gitignored
+    await expect(assertReferencesResolve(['images/logo.jpeg'])).resolves.toBeUndefined();
+  });
+
+  it('rejects a reference with no file behind it', async () => {
+    await expect(assertReferencesResolve(['images/absent-asset.jpeg']))
+      .rejects.toThrow(/referenced by the site are missing from dist/);
+  });
+
+  it('keeps the referenced original out of the manifest outputs', async () => {
+    // The logo has derivatives too, but the reference is to the original, so the
+    // original is what has to be copied.
+    const { buildImageManifest: build } = require('../../tools/lib/images');
+    if (!fs.existsSync(path.join(ROOT, 'dist', 'images'))) return;
+
+    const { manifest } = await build({ sourceRoot: ROOT, outputRoot: path.join(ROOT, 'dist') });
+    expect(manifestOutputs(manifest)).not.toContain('images/logo.jpeg');
+    expect(manifestOutputs(manifest)).toContain('images/logo.jpg');
   });
 });

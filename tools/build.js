@@ -101,6 +101,52 @@ const writeProducts = async (manifest, brands) => {
   return { categories: categories.length, products: all.length, stale: stale.length };
 };
 
+// Files scanned for direct image references. These are served verbatim, so any
+// image they name has to exist in dist/ under exactly that path.
+const REFERENCING_FILES = ['index.html', 'styles.css'];
+
+/**
+ * Collects the image paths that index.html and styles.css reference directly.
+ *
+ * These are site assets, not product images: the header logo rather than a
+ * photo of a cap. They must be copied verbatim rather than replaced by a
+ * generated derivative, because CON-2 requires the same markup to work in an
+ * unbuilt source tree — where `images/logo.jpg` does not exist and only the
+ * original `images/logo.jpeg` does.
+ * @returns {Promise<string[]>} Referenced image paths, relative to the root.
+ */
+const collectSiteAssets = async () => {
+  const refs = new Set();
+  for (const file of REFERENCING_FILES) {
+    const source = await fsp.readFile(path.join(ROOT, file), 'utf8');
+    for (const [, ref] of source.matchAll(/(?:src|href)="(images\/[^"]+)"/g)) refs.add(ref);
+    for (const [, , ref] of source.matchAll(/url\((["']?)(images\/[^)"']+)\1\)/g)) refs.add(ref);
+  }
+  return [...refs].sort();
+};
+
+/**
+ * Copies the site assets into dist/, so markup that names them keeps working.
+ * @param {string[]} assets Image paths relative to the root.
+ * @returns {Promise<number>} Number of assets copied.
+ */
+const copySiteAssets = async (assets) => {
+  let copied = 0;
+  for (const relative of assets) {
+    const from = path.join(ROOT, relative);
+    const to = path.join(DIST, relative);
+    try {
+      await fsp.access(from);
+    } catch {
+      throw new Error(`${relative} is referenced by the site but does not exist in the source tree`);
+    }
+    await fsp.mkdir(path.dirname(to), { recursive: true });
+    await fsp.copyFile(from, to);
+    copied += 1;
+  }
+  return copied;
+};
+
 /**
  * Removes generated image files whose source no longer exists.
  * `dist/images` doubles as the conversion cache, so it is pruned instead of wiped.
@@ -193,7 +239,38 @@ const assertImagesIntact = async (manifest, keep) => {
   }
 };
 
-module.exports = { assertImagesIntact, pruneImages };
+/**
+ * Asserts every image the site markup names resolves in dist/.
+ *
+ * Wave 5a stopped copying originals into dist/ and, with them, the header logo
+ * that index.html references — a 404 nothing checked for. Validator rule 5
+ * catches a file no product references; this is the opposite direction, a
+ * reference with no file.
+ * @param {string[]} assets Referenced image paths, relative to the root.
+ * @returns {Promise<void>} Resolves when every reference resolves.
+ */
+const assertReferencesResolve = async (assets) => {
+  const missing = [];
+  for (const relative of assets) {
+    try {
+      await fsp.access(path.join(DIST, relative));
+    } catch {
+      missing.push(relative);
+    }
+  }
+  if (missing.length) {
+    const list = missing.join('\n  ');
+    throw new Error(`${missing.length} image(s) referenced by the site are missing from dist/:\n  ${list}`);
+  }
+};
+
+module.exports = {
+  assertImagesIntact,
+  assertReferencesResolve,
+  collectSiteAssets,
+  copySiteAssets,
+  pruneImages,
+};
 
 const main = async () => {
   const startedAt = process.hrtime.bigint();
@@ -209,9 +286,16 @@ const main = async () => {
   const card = await buildSocialCard({ sourceRoot: ROOT, outputRoot: DIST });
   if (card.written) log(`social: ${card.path} rendered`);
 
-  const pruned = await pruneImages(manifest, [card.path]);
-  if (pruned) log(`images: ${pruned} stale file(s) pruned`);
-  await assertImagesIntact(manifest, [card.path]);
+  // Site assets are copied verbatim and must survive both the prune and the
+  // integrity check, or the header logo 404s on the built site.
+  const siteAssets = await collectSiteAssets();
+  const copied = await copySiteAssets(siteAssets);
+  const keep = [card.path, ...siteAssets];
+
+  const pruned = await pruneImages(manifest, keep);
+  if (copied || pruned) log(`images: ${copied} site asset(s) copied, ${pruned} stale file(s) pruned`);
+  await assertImagesIntact(manifest, keep);
+  await assertReferencesResolve(siteAssets);
 
   // The registry block in index.html is generated and committed, so a stale
   // block means the catalog and the client disagree about category identity.
