@@ -1,0 +1,116 @@
+name: Add product from issue
+
+# The non-developer authoring path (CON-8). The owner files an issue from the
+# template, drags in a photo, and this opens a PR with the catalog change.
+#
+# This is the first write path in the repository driven by external input, so the
+# controls are deliberate:
+#  - the author is checked against an allow-list before anything is read;
+#  - every value is passed through the environment, never interpolated into a
+#    `run:` script, so nothing in an issue body can become shell;
+#  - all logic lives in tools/authoring/add-product.js, which is unit-tested
+#    against adversarial bodies — a workflow cannot be;
+#  - a PR is opened rather than committing to main, so the build gate and a human
+#    both run before anything ships;
+#  - third-party actions are pinned to a commit SHA.
+
+on:
+  issues:
+    types: [opened, edited, labeled]
+
+# Least privilege. `contents` to push the branch, `pull-requests` to open the PR,
+# `issues` to report back on the issue.
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+# One run per issue; a rapid edit supersedes the run it interrupted.
+concurrency:
+  group: add-product-${{ github.event.issue.number }}
+  cancel-in-progress: true
+
+jobs:
+  add:
+    if: contains(github.event.issue.labels.*.name, 'novo-produto')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '24'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # The issue body reaches the script only through the environment. It is
+      # never interpolated into a shell command, which is what stops a body
+      # containing backticks or $() from executing.
+      - name: Build the catalog change
+        id: build
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+          ALLOWED_AUTHORS: ${{ vars.PRODUCT_AUTHORS }}
+        run: node tools/authoring/add-product.js > "$RUNNER_TEMP/result.md"
+        continue-on-error: true
+
+      # The same gate a hand-written PR faces: schema, registries, image
+      # conventions, id uniqueness.
+      - name: Validate the catalog
+        id: validate
+        if: steps.build.outcome == 'success'
+        run: npm run build
+        continue-on-error: true
+
+      - name: Report a rejection back to the issue
+        if: steps.build.outcome != 'success' || steps.validate.outcome != 'success'
+        env:
+          # gh reads its token from GH_TOKEN.
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          STAGE: ${{ steps.build.outcome != 'success' && 'form' || 'catalog' }}
+        run: |
+          {
+            echo "O produto não pôde ser adicionado."
+            echo
+            if [ "$STAGE" = "form" ]; then
+              cat "$RUNNER_TEMP/result.md"
+            else
+              echo "O formulário está correto, mas a validação do catálogo falhou."
+              echo "Veja o log da execução para os detalhes."
+            fi
+            echo
+            echo "Corrija e edite a issue — isso executa a verificação de novo."
+          } > "$RUNNER_TEMP/comment.md"
+          gh issue comment "$ISSUE_NUMBER" --body-file "$RUNNER_TEMP/comment.md"
+          exit 1
+
+      - name: Open the pull request
+        if: steps.build.outcome == 'success' && steps.validate.outcome == 'success'
+        uses: peter-evans/create-pull-request@22a9089034f40e5a961c8808d113e2c98fb63676 # v7
+        with:
+          branch: add-product/issue-${{ github.event.issue.number }}
+          base: main
+          title: 'Novo produto: ${{ steps.build.outputs.product_id }} (${{ steps.build.outputs.category }})'
+          commit-message: |
+            feat: add product [${{ steps.build.outputs.product_id }}]
+
+            From issue #${{ github.event.issue.number }}, filed by
+            @${{ github.event.issue.user.login }}.
+          body: |
+            Gerado a partir da issue #${{ github.event.issue.number }}.
+
+            - Produto: `[${{ steps.build.outputs.product_id }}]`
+            - Categoria: `${{ steps.build.outputs.category }}`
+
+            A validação do catálogo passou. Revise a foto e os dados antes de aprovar.
+
+            Closes #${{ github.event.issue.number }}
+          labels: novo-produto
+          delete-branch: true

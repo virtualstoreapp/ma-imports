@@ -12,6 +12,7 @@ const {
   readCategory,
 } = require('./lib/catalog');
 const { buildImageManifest, manifestOutputs } = require('./lib/images');
+const { TEMPLATE_PATH, renderIssueForm } = require('./lib/issue-form');
 const { loadRegistry, renderRegistryElement } = require('./lib/registry');
 const { toRuntime } = require('./lib/runtime');
 const { buildSocialCard } = require('./lib/social');
@@ -304,6 +305,17 @@ const main = async () => {
   if (applyBlock(html, renderRegistryElement(registry)) !== html) {
     throw new Error(
       'index.html registry block is stale — run `node tools/sync-registry.js` and commit the result'
+    );
+  }
+
+  // The Issue Form's dropdowns *are* the registries, so a stale template means
+  // the seller is offered categories or brands that no longer exist. This is the
+  // closure that keeps the registries load-bearing rather than decorative.
+  const formPath = path.join(ROOT, TEMPLATE_PATH);
+  const currentForm = await fsp.readFile(formPath, 'utf8').catch(() => null);
+  if (currentForm !== renderIssueForm(registry)) {
+    throw new Error(
+      `${TEMPLATE_PATH} is stale — run \`node tools/sync-issue-form.js\` and commit the result`
     );
   }
 
