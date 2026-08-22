@@ -123,20 +123,31 @@ describe('The real catalog', () => {
 
   it('derives a name for every product', () => {
     const names = all.map((entry) => toRuntime(entry, brands).name);
-    expect(names).toHaveLength(241);
+    // Not a pinned total: authoring changes it by design, and a hardcoded count
+    // has to be hand-edited on every addition (see tests/utils/catalogAsserts.js).
+    // The floor is still needed — an empty read would satisfy the filters below
+    // vacuously.
+    expect(names.length).toBeGreaterThan(0);
     expect(names.filter((name) => !/^\[\d{10}\]/.test(name))).toEqual([]);
     // No double space, which is what naive concatenation of an empty label gives.
     expect(names.filter((name) => name.includes('  '))).toEqual([]);
     expect(names.filter((name) => name !== name.trim())).toEqual([]);
   });
 
-  it('preserves the sold-out total across the migration', () => {
-    // 51 rows were sold out before the migration: 42 now carry it on their units
-    // and 9 on the row, because they have no units.
+  it('classifies every sold-out row into exactly one representation', () => {
+    // The migration left two representations and no third: a row with units
+    // carries sold-out on them, a row without carries it on itself. That is the
+    // durable property. The pre-migration totals it replaced (51 rows = 42 + 9)
+    // were correct when written but pinned live catalog data, so marking one
+    // size sold out — the whole point of the edit-product workflow — failed CI.
     const soldOut = all.filter((entry) => deriveSoldOut(entry));
-    expect(soldOut).toHaveLength(51);
-    expect(soldOut.filter((entry) => entry.sizes.length)).toHaveLength(42);
-    expect(soldOut.filter((entry) => !entry.sizes.length)).toHaveLength(9);
+    const onUnits = soldOut.filter((entry) => entry.sizes.length);
+    const onRow = soldOut.filter((entry) => !entry.sizes.length);
+
+    expect(soldOut.length).toBeGreaterThan(0);
+    expect(onUnits.length + onRow.length).toBe(soldOut.length);
+    onRow.forEach((entry) => expect(entry.soldOut).toBe(true));
+    onUnits.forEach((entry) => expect(entry.sizes.every((unit) => unit.soldOut === true)).toBe(true));
   });
 
   it('derives every id uniquely', () => {
