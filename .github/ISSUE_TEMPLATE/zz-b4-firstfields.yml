@@ -1,0 +1,100 @@
+# TEMPORARY probe. First four fields only.
+name: Probe B4 first fields
+description: Cadastrar um novo produto no catálogo
+title: "Novo produto: "
+labels: ["novo-produto"]
+body:
+  - type: dropdown
+    id: category
+    attributes:
+      label: "Categoria"
+      description: Onde o produto aparece no catálogo
+      options:
+        - "Bermudas Básica Masculina"
+        - "Bermudas Jeans Feminina"
+        - "Bermudas Jeans Masculina"
+        - "Bermudas Moletom Masculina"
+        - "Bermudas Tactel Masculina"
+        - "Blusas Feminina"
+        - "Blusas Masculina"
+        - "Bonés Masculino"
+        - "Calças Jeans Feminina"
+        - "Calças Jeans Masculina"
+        - "Calças Legging Feminina"
+        - "Calças Moletom Masculina"
+        - "Camisetas Casuais Masculina"
+        - "Camisetas Dry Fit Masculina"
+        - "Camisetas Polo Masculina"
+        - "Camisetas Sociais Masculina"
+        - "Carteiras Masculina"
+        - "Chinelos"
+        - "Cintos Masculino"
+        - "Conjuntos Moletom Infantil"
+        - "Cuecas Masculina"
+        - "Meias Masculina"
+        - "Regatas Casuais Masculina"
+        - "Regatas Dry Fit Masculina"
+        - "Tênis"
+        - "Top Feminino"
+    validations:
+      required: true
+  - type: dropdown
+    id: brand
+    attributes:
+      label: "Marca"
+      description: Escolha "Sem marca" se o produto não tem marca
+      options:
+        - "Sem marca"
+        - "Abercrombie"
+        - "Adidas"
+        - "Aramis"
+        - "Armani"
+        - "Armani Exchange"
+        - "Asics"
+        - "Austman"
+        - "Balmain"
+        - "Brooksfield"
+        - "Burberry"
+        - "Calvin Klein"
+        - "Diesel"
+        - "Dolce & Gabbana"
+        - "Emporio Armani"
+        - "Gucci"
+        - "Hang Loose"
+        - "Hugo Boss"
+        - "Hurley"
+        - "Jordan"
+        - "Lacoste"
+        - "Louis Vuitton"
+        - "Mizuno"
+        - "New Balance"
+        - "Nike"
+        - "Oakley"
+        - "Polo"
+        - "Puma"
+        - "Quiksilver"
+        - "Ralph Lauren"
+        - "Reserva"
+        - "Ricardo Almeida"
+        - "Sergio K"
+        - "Tommy Hilfiger"
+        - "Under Armour"
+        - "Vans"
+        - "Versace"
+        - "XTC"
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: "Modelo"
+      description: Linha do produto, quando houver. Por exemplo, Shox ou Campus
+      placeholder: Shox
+  - type: input
+    id: price
+    attributes:
+      label: "Preço"
+      description: Preço de venda, em reais
+      placeholder: 89,90
+    validations:
+      required: true
