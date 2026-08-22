@@ -71,13 +71,48 @@
     const alt = escapeHtml(product.name);
     const media = mediaAt(product, 0);
     if (!media) {
-      const fallback = Array.isArray(product.images) ? product.images[0] : product.image;
+      // No media means an unbuilt source tree, where the original is all there
+      // is. The legacy singular `image` field is gone: every product has used
+      // `images[]` since Wave 0, and the schema rejects the old key.
+      const fallback = (product.images || [])[0];
       return `<img src="${escapeHtml(fallback)}" alt="${alt}" loading="lazy" decoding="async">`;
     }
     return `<picture>
             <source srcset="${escapeHtml(media.thumb)}" type="image/webp">
             <img src="${escapeHtml(media.thumbFallback)}" alt="${alt}" width="${escapeHtml(media.thumbWidth)}" height="${escapeHtml(media.thumbHeight)}" loading="lazy" decoding="async">
           </picture>`;
+  };
+
+  // A row can hold several units, each independently sellable, so the card shows
+  // which sizes are actually left rather than one all-or-nothing badge. This is
+  // the question a customer asks most often — "do you have it in G?" — and the
+  // data could not answer it before the v2 size model.
+  //
+  // `sizeNote` renders in place of the sizes, without the "Tamanho:" prefix: the
+  // notes are things like "Consultar" and "Tamanho único", which read as
+  // nonsense prefixed ("Tamanho: Consultar") and fine on their own.
+  const sizesMarkup = (product) => {
+    const sizes = Array.isArray(product.sizes) ? product.sizes : [];
+
+    if (sizes.length) {
+      const label = sizes.length > 1 ? 'Tamanhos' : 'Tamanho';
+      const chips = sizes
+        .map((unit) => {
+          const size = escapeHtml(unit.size);
+          return unit.soldOut === true
+            ? `<span class="size-chip size-chip-sold-out" aria-label="${size} (esgotado)">${size}</span>`
+            : `<span class="size-chip">${size}</span>`;
+        })
+        .join('');
+      return `<p class="sizes"><span class="size-label">${label}:</span>${chips}</p>`;
+    }
+
+    if (product.sizeNote) {
+      return `<p class="size-note">${escapeHtml(product.sizeNote)}</p>`;
+    }
+
+    // A cap or a wallet has no meaningful size; v1 rendered "N/A" here.
+    return '';
   };
 
   const updateCategoryHeading = (category, headingEl) => {
@@ -202,8 +237,8 @@
       updateImage();
       updateNavButtons();
 
-      // Default soldOut to false if not provided.
-      const isSoldOut = product.hasOwnProperty('soldOut') ? product.soldOut : false;
+      // Derived by the build from the units, and omitted when false.
+      const isSoldOut = product.soldOut === true;
       const buyButton = document.getElementById('buy-product');
       const modalImageContainer = document.getElementById('modal-image-container');
 
@@ -298,20 +333,17 @@
     // Category currently on screen, used to ignore redundant hash navigation.
     let renderedCategory = null;
 
-    // Parse date from product name using a 10-digit code.
-    const parseProductDate = (name) => {
-      const regex = /\[(\d{10})\]/;
-      const match = name ? name.match(regex) : null;
-      if (match) {
-        const code = match[1];
-        const day = parseInt(code.substring(0, 2), 10);
-        const month = parseInt(code.substring(2, 4), 10) - 1;
-        const year = parseInt(code.substring(4, 6), 10) + 2000;
-        const hour = parseInt(code.substring(6, 8), 10);
-        const minute = parseInt(code.substring(8, 10), 10);
-        return new Date(year, month, day, hour, minute);
-      }
-      return new Date(0);
+    // Incremented per render so a slower earlier render cannot append over a
+    // newer one. See renderProducts.
+    let renderToken = 0;
+
+    // Newest first. Products carry an explicit UTC `listedAt`, so this replaced
+    // a regex that recovered the date from the display name — one of two
+    // duplicate implementations, both using local-time construction, so the
+    // reader's timezone could reorder products that shared a minute.
+    const listedAtOf = (product) => {
+      const parsed = Date.parse(product.listedAt);
+      return Number.isNaN(parsed) ? 0 : parsed;
     };
 
     // Fetch and parse one category file.
@@ -335,7 +367,7 @@
         }
         return result.value.map((product) => ({ ...product, category: categories[idx] }));
       });
-      return products.sort((a, b) => parseProductDate(b.name) - parseProductDate(a.name));
+      return products.sort((a, b) => listedAtOf(b) - listedAtOf(a));
     };
 
     // Fetch product data for a given category. The build emits a pre-merged,
@@ -360,10 +392,17 @@
     };
 
     // Render product items based on selected category.
+    //
+    // The grid is cleared synchronously but filled after an await, so two
+    // overlapping renders would both clear and then both append, leaving a grid
+    // holding both categories. Each render takes a token and drops out if a
+    // newer one started while it was fetching.
     const renderProducts = async (category) => {
+      const token = (renderToken += 1);
       productListContainer.innerHTML = '';
       updateCategoryHeading(category, categoryHeading);
       const products = await fetchCategoryData(category);
+      if (token !== renderToken) return;
       products.forEach((product) => {
         const li = document.createElement('li');
         li.classList.add('product-item');
@@ -379,14 +418,14 @@
           <div class="product-details">
             <h3>${escapeHtml(product.name)}</h3>
             ${product.description ? `<p class="description">${escapeHtml(product.description)}</p>` : ''}
-            ${product.size && product.size !== 'N/A' ? `<span class="size">Tamanho: ${escapeHtml(product.size)}</span>` : ''}
+            ${sizesMarkup(product)}
             ${priceHTML}
           </div>
         `;
 
-        // Add sold-out label if the product is sold out (default false).
-        const isSoldOut = product.hasOwnProperty('soldOut') ? product.soldOut : false;
-        if (isSoldOut) {
+        // The row-level flag is derived by the build from the units, so the
+        // client no longer re-derives it defensively.
+        if (product.soldOut === true) {
           const label = document.createElement('div');
           label.className = 'sold-out-label';
           label.textContent = 'Esgotado';

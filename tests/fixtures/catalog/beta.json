@@ -1,19 +1,31 @@
 [
   {
+    "id": "0501251300",
     "name": "[0501251300] Fixture Epsilon",
-    "description": "",
-    "oldPrice": 0.0,
+    "brand": "fixture",
+    "brandLabel": "Fixture",
+    "model": "Epsilon",
     "price": 25.5,
-    "size": "Tamanho único",
+    "sizes": [],
+    "sizeNote": "Tamanho único",
     "soldOut": true,
-    "images": ["images/fixtures/0501251300-epsilon.jpeg"]
+    "images": ["images/fixtures/0501251300-epsilon.jpeg"],
+    "listedAt": "2025-01-05T13:00:00Z"
   },
   {
+    "id": "0401251200",
     "name": "[0401251200] Fixture Delta",
-    "description": "Produto de fixture padrão",
-    "oldPrice": 0.0,
+    "brand": "fixture",
+    "brandLabel": "Fixture",
+    "model": "Delta",
     "price": 75.0,
-    "size": "GG",
-    "images": ["images/fixtures/0401251200-delta.jpeg"]
+    "description": "Produto de fixture padrão",
+    "sizes": [
+      { "size": "GG", "soldOut": true },
+      { "size": "G1", "soldOut": true }
+    ],
+    "soldOut": true,
+    "images": ["images/fixtures/0401251200-delta.jpeg"],
+    "listedAt": "2025-01-04T12:00:00Z"
   }
 ]

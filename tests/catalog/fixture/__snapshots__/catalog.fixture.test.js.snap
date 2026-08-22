@@ -28,7 +28,7 @@ exports[`Fixture catalog renders the product grid with the expected markup 1`] =
           <div class="product-details">
             <h3>[0501251300] Fixture Epsilon</h3>
             
-            <span class="size">Tamanho: Tamanho único</span>
+            <p class="size-note">Tamanho único</p>
             <span class="price">R$&nbsp;25,50</span>
           </div>
         <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
@@ -36,18 +36,18 @@ exports[`Fixture catalog renders the product grid with the expected markup 1`] =
           <div class="product-details">
             <h3>[0401251200] Fixture Delta</h3>
             <p class="description">Produto de fixture padrão</p>
-            <span class="size">Tamanho: GG</span>
+            <p class="sizes"><span class="size-label">Tamanhos:</span><span class="size-chip size-chip-sold-out" aria-label="GG (esgotado)">GG</span><span class="size-chip size-chip-sold-out" aria-label="G1 (esgotado)">G1</span></p>
             <span class="price">R$&nbsp;75,00</span>
           </div>
-        </li><li class="product-item" style="position: relative;">
+        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
           <img src="images/fixtures/0301251100-gamma.jpeg" alt="[0301251100] Fixture Gamma" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0301251100] Fixture Gamma</h3>
-            <p class="description">Produto de fixture com imagem no schema legado</p>
-            <span class="size">Tamanho: M</span>
+            <p class="description">Produto de fixture parcialmente esgotado</p>
+            <p class="sizes"><span class="size-label">Tamanhos:</span><span class="size-chip size-chip-sold-out" aria-label="P (esgotado)">P</span><span class="size-chip">M</span><span class="size-chip size-chip-sold-out" aria-label="G (esgotado)">G</span></p>
             <span class="price">R$&nbsp;50,00</span>
           </div>
-        <div class="sold-out-label">Esgotado</div></li><li class="product-item" style="position: relative;">
+        </li><li class="product-item" style="position: relative;">
           <img src="images/fixtures/0201251000-beta.jpeg" alt="[0201251000] Fixture Beta" loading="lazy" decoding="async">
           <div class="product-details">
             <h3>[0201251000] Fixture Beta</h3>
@@ -64,7 +64,7 @@ exports[`Fixture catalog renders the product grid with the expected markup 1`] =
           <div class="product-details">
             <h3>[0101250900] Fixture Alpha</h3>
             <p class="description">Produto de fixture com media gerada pelo build</p>
-            <span class="size">Tamanho: G</span>
+            <p class="sizes"><span class="size-label">Tamanho:</span><span class="size-chip">G</span></p>
             <span class="price">R$&nbsp;100,00</span>
           </div>
         </li>"

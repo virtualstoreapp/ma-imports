@@ -80,15 +80,37 @@ const assertCardInvariants = (products) => {
   });
 
   // Optional fields render exactly as often as the data declares them.
+  //
+  // These count sizes per *unit*, not per product. The previous version tested
+  // `product.size`, a v1 field, and after the v2 switch it compared 0 against 0
+  // — passing without checking anything. Counting units keeps the assertion
+  // anchored to something that exists.
+  const units = products.flatMap((product) => product.sizes || []);
+
   const expected = {
     soldOut: products.filter((product) => product.soldOut === true).length,
     description: products.filter((product) => product.description).length,
-    size: products.filter((product) => product.size && product.size !== 'N/A').length,
+    sizeBlocks: products.filter((product) => (product.sizes || []).length).length,
+    notes: products.filter((product) => !(product.sizes || []).length && product.sizeNote).length,
+    chips: units.length,
+    soldOutChips: units.filter((unit) => unit.soldOut === true).length,
   };
 
   expect(document.querySelectorAll('#product-list .sold-out-label')).toHaveLength(expected.soldOut);
   expect(document.querySelectorAll('#product-list .description')).toHaveLength(expected.description);
-  expect(document.querySelectorAll('#product-list .size')).toHaveLength(expected.size);
+  expect(document.querySelectorAll('#product-list .sizes')).toHaveLength(expected.sizeBlocks);
+  expect(document.querySelectorAll('#product-list .size-note')).toHaveLength(expected.notes);
+  expect(document.querySelectorAll('#product-list .size-chip')).toHaveLength(expected.chips);
+  expect(document.querySelectorAll('#product-list .size-chip-sold-out'))
+    .toHaveLength(expected.soldOutChips);
+
+  // A row is badged only when every unit in it is gone, so a partly sold-out row
+  // keeps selling — the whole point of tracking availability per unit.
+  products
+    .filter((product) => (product.sizes || []).length && !product.sizes.every((u) => u.soldOut === true))
+    .forEach((product) => {
+      expect(product.soldOut).not.toBe(true);
+    });
 
   // Every product contributes at least one image reference, so no card can
   // silently render without art.

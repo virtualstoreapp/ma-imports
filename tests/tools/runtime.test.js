@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const { deriveName, deriveSize, deriveSoldOut, toRuntime } = require('../../tools/lib/runtime');
+const { deriveName, deriveSoldOut, toRuntime } = require('../../tools/lib/runtime');
 const { loadRegistry } = require('../../tools/lib/registry');
 const { readCategory, listCategories } = require('../../tools/lib/catalog');
 
@@ -52,24 +52,6 @@ describe('deriveName', () => {
   });
 });
 
-describe('deriveSize', () => {
-  it('renders a single unit as its size', () => {
-    expect(deriveSize(product({ sizes: [{ size: 'G' }] }))).toBe('G');
-  });
-
-  it('joins several units with a comma and a space', () => {
-    expect(deriveSize(product({ sizes: [{ size: '39' }, { size: '42' }] }))).toBe('39, 42');
-  });
-
-  it('renders the note when there are no units', () => {
-    expect(deriveSize(product({ sizes: [], sizeNote: 'Consultar' }))).toBe('Consultar');
-  });
-
-  it('falls back to "N/A" when there is neither, as a cap has', () => {
-    expect(deriveSize(product({ sizes: [] }))).toBe('N/A');
-  });
-});
-
 describe('deriveSoldOut', () => {
   it('is false when no unit is sold', () => {
     expect(deriveSoldOut(product({ sizes: [{ size: 'M' }, { size: 'G' }] }))).toBe(false);
@@ -95,9 +77,9 @@ describe('deriveSoldOut', () => {
 });
 
 describe('toRuntime', () => {
-  it('emits the v1 field order, so the compiled output is comparable', () => {
+  it('emits the v2 runtime fields', () => {
     expect(Object.keys(toRuntime(product({}), BRANDS)))
-      .toEqual(['name', 'description', 'oldPrice', 'price', 'images', 'size']);
+      .toEqual(['id', 'name', 'brand', 'brandLabel', 'price', 'sizes', 'images', 'listedAt']);
   });
 
   it('appends soldOut only when the row is sold out', () => {
@@ -105,10 +87,29 @@ describe('toRuntime', () => {
     expect(toRuntime(product({ sizes: [{ size: 'G', soldOut: true }] }), BRANDS).soldOut).toBe(true);
   });
 
-  it('substitutes the v1 sentinels the client still expects', () => {
+  it('passes sizes through untouched, per-unit sold-out state included', () => {
+    const sizes = [{ size: 'M' }, { size: 'G', soldOut: true }];
+    expect(toRuntime(product({ sizes }), BRANDS).sizes).toEqual(sizes);
+  });
+
+  it('carries sizeNote when present', () => {
+    expect(toRuntime(product({ sizes: [], sizeNote: 'Consultar' }), BRANDS).sizeNote)
+      .toBe('Consultar');
+  });
+
+  it('resolves the brand label the client displays', () => {
+    expect(toRuntime(product({ brand: 'under-armor' }), BRANDS).brandLabel).toBe('Under Armour');
+  });
+
+  // v1 carried description:"" and oldPrice:0 for "absent", which is how it ended
+  // up with three states for "no description". v2 omits them and the client
+  // tests for presence.
+  it('omits absent optional fields rather than giving them sentinels', () => {
     const runtime = toRuntime(product({}), BRANDS);
-    expect(runtime.description).toBe('');
-    expect(runtime.oldPrice).toBe(0);
+    expect('description' in runtime).toBe(false);
+    expect('oldPrice' in runtime).toBe(false);
+    expect('sizeNote' in runtime).toBe(false);
+    expect('model' in runtime).toBe(false);
   });
 
   it('passes a real discount through', () => {

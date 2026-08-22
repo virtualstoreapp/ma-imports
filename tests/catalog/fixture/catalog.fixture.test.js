@@ -68,7 +68,10 @@ describe('Fixture catalog', () => {
       expect(card.querySelector('img')).toHaveAttribute('src', 'images/fixtures/0401251200-delta.jpeg');
     });
 
-    it('still renders a product using the legacy single-image field', () => {
+    // The legacy singular `image` field is gone from both the data and the
+    // client: every product has used images[] since Wave 0, and the schema
+    // rejects the old key.
+    it('renders a product whose only image comes from images[]', () => {
       const card = cardFor('[0301251100] Fixture Gamma');
       expect(card.querySelector('img')).toHaveAttribute('src', 'images/fixtures/0301251100-gamma.jpeg');
     });
@@ -86,19 +89,50 @@ describe('Fixture catalog', () => {
       expect(plain.querySelector('.old-price')).toBeNull();
     });
 
-    it('labels sold-out products and leaves the others unlabelled', () => {
-      expect(cardFor('[0301251100] Fixture Gamma').querySelector('.sold-out-label'))
+    // The badge means the whole row is gone. A row with one size left keeps
+    // selling, which is the point of tracking availability per unit.
+    it('labels only rows where every unit is sold', () => {
+      expect(cardFor('[0401251200] Fixture Delta').querySelector('.sold-out-label'))
         .toHaveTextContent('Esgotado');
       expect(cardFor('[0501251300] Fixture Epsilon').querySelector('.sold-out-label'))
         .toBeInTheDocument();
-      expect(cardFor('[0401251200] Fixture Delta').querySelector('.sold-out-label'))
+      // Gamma has P and G sold but M available, so the row stays up.
+      expect(cardFor('[0301251100] Fixture Gamma').querySelector('.sold-out-label'))
         .toBeNull();
     });
 
-    it('suppresses the size line for "N/A" but keeps other size text', () => {
-      expect(cardFor('[0201251000] Fixture Beta').querySelector('.size')).toBeNull();
-      expect(cardFor('[0501251300] Fixture Epsilon').querySelector('.size'))
-        .toHaveTextContent('Tamanho: Tamanho único');
+    it('shows which sizes are left on a partly sold-out row', () => {
+      const chips = [...cardFor('[0301251100] Fixture Gamma').querySelectorAll('.size-chip')];
+      expect(chips.map((chip) => chip.textContent)).toEqual(['P', 'M', 'G']);
+      expect(chips.map((chip) => chip.classList.contains('size-chip-sold-out')))
+        .toEqual([true, false, true]);
+    });
+
+    // Availability must not rest on colour alone.
+    it('marks a sold-out size for assistive technology too', () => {
+      const soldOut = cardFor('[0301251100] Fixture Gamma').querySelector('.size-chip-sold-out');
+      expect(soldOut).toHaveAttribute('aria-label', 'P (esgotado)');
+    });
+
+    it('pluralises the size label', () => {
+      expect(cardFor('[0301251100] Fixture Gamma').querySelector('.size-label'))
+        .toHaveTextContent('Tamanhos:');
+      expect(cardFor('[0101250900] Fixture Alpha').querySelector('.size-label'))
+        .toHaveTextContent('Tamanho:');
+    });
+
+    // "Tamanho: Consultar" read as nonsense, so a note renders on its own.
+    it('renders a size note without the "Tamanho:" prefix', () => {
+      const card = cardFor('[0501251300] Fixture Epsilon');
+      expect(card.querySelector('.size-note')).toHaveTextContent('Tamanho único');
+      expect(card.querySelector('.size-label')).toBeNull();
+      expect(card.querySelector('.size-chip')).toBeNull();
+    });
+
+    it('renders nothing where a product has no size at all', () => {
+      const card = cardFor('[0201251000] Fixture Beta');
+      expect(card.querySelector('.sizes')).toBeNull();
+      expect(card.querySelector('.size-note')).toBeNull();
     });
 
     it('omits the description for both a missing key and an empty string', () => {
@@ -123,9 +157,15 @@ describe('Fixture catalog', () => {
         .toHaveAttribute('src', 'images/fixtures/0101250900-alpha-front.jpg');
     });
 
-    it('marks a sold-out product inside the modal', async () => {
-      await openModalFor('[0301251100] Fixture Gamma');
+    it('marks a fully sold-out product inside the modal', async () => {
+      await openModalFor('[0401251200] Fixture Delta');
       expect(document.querySelector('#product-modal .sold-out-label')).toBeInTheDocument();
+    });
+
+    it('leaves a partly sold-out product buyable in the modal', async () => {
+      await openModalFor('[0301251100] Fixture Gamma');
+      expect(document.querySelector('#product-modal .sold-out-label')).toBeNull();
+      expect(document.getElementById('buy-product')).not.toBeDisabled();
     });
   });
 });
